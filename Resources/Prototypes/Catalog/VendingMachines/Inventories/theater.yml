@@ -20,13 +20,36 @@
     ClothingHeadHatPwig: 2
     ClothingHeadHatRedRacoon: 2
     ClothingHeadHatSantahat: 2
-    # ClothingHeadHatShrineMaidenWig: 2 # imp edit - giving this religious outfit the sanctity it deserves
+    ClothingHeadHatShrineMaidenWig: 2
     ClothingHeadHatSkub: 2
     ClothingHeadHatSombrero: 2
     ClothingHeadHatWitch1: 2
     ClothingHeadPaperSack: 2
     ClothingHeadPaperSackSmile: 2
     ClothingHeadRastaHat: 2
+    ClothingUniformSchoolGakuranBlack: 2
+    UniformSchoolgirlBlack: 1
+    UniformSchoolgirlBlue: 1
+    UniformSchoolgirlCyan: 1
+    UniformSchoolgirlGreen: 1
+    UniformSchoolgirlOrange: 1
+    UniformSchoolgirlPink: 1
+    UniformSchoolgirlPurple: 1
+    UniformSchoolgirlRed: 1
+    UniformSchoolgirlDusk: 1
+    UniformSchoolgirlBlazerTan: 1
+    UniformGeisha: 1
+    ClothingKimonoBlue: 2
+    ClothingKimonoPink: 2
+    ClothingKimonoPurple: 2
+    ClothingKimonoSky: 2
+    ClothingKimonoGreen: 2
+    ClothingMaskOniBlue: 1
+    ClothingMaskOniRed: 1
+    ClothingCostumeArcDress: 1
+    ClothingCostumeMioSkirt: 1
+    ClothingCostumeNaota: 1
+    ClothingCostumeBunnySuit: 2
     ClothingMaskClownNose: 3 #imp
     ClothingMaskJoy: 2
     ClothingMaskSadMime: 1
@@ -45,7 +68,7 @@
     ClothingOuterSkub: 2
     ClothingOuterSuitChicken: 2
     ClothingOuterSuitMonkey: 2
-    # ClothingOuterSuitShrineMaiden: 2
+    ClothingOuterSuitShrineMaiden: 2
     ClothingOuterSuitWitchRobes: 2
     ClothingOuterWinterMusician: 1
     ClothingOuterWinterClown: 1
@@ -91,7 +114,7 @@
     ClothingOuterWhitePoncho: 2 #imp
     ClothingOuterBlackPoncho: 2 #imp
     ClothingOuterRainCape: 3 #imp
-    # Gohei: 2
+    Gohei: 2
   contrabandInventory: # imp
     ClothingShoesSlippers: 1
     ClothingShoesTourist: 1
