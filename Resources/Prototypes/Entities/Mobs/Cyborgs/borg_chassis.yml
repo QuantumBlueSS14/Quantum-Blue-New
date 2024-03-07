@@ -56,6 +56,8 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: engineering
+  - type: SiliconLawProvider # Delta-V - Adds custom lawset for Engineering Cyborg
+    laws: Engineer 
 
 - type: entity
   id: BorgChassisJanitor
@@ -64,6 +66,8 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: janitor
+  - type: SiliconLawProvider # Delta-V Adds custom lawset for Janitor Cyborg
+    laws: Janitor
 
 - type: entity
   id: BorgChassisMedical
@@ -72,6 +76,8 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: medical
+  - type: SiliconLawProvider # Delta-V - Adds custom lawset for Medical cyborg
+    laws: Medical
 
 - type: entity
   id: BorgChassisService

@@ -421,6 +421,7 @@
     visible: false
   - type: SiliconLawProvider
     laws: NTDefault # QB: Was Crewsimov
+  - type: IonStormTarget # QB: Ion stormable
   - type: SiliconLawBound
   - type: ActionGrant
     actions:
