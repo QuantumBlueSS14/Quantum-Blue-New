@@ -523,7 +523,7 @@
     accentVColor: "#a23e3e"
   - type: Icon
     state: pda-qm
-  - type: CartridgeLoader
+  - type: CartridgeLoader # DeltaV
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
@@ -533,6 +533,7 @@
     - NanoChatCartridge # DV
     - MailMetricsCartridge  # DV - turning this off until i can fix it with the rest of the mail
     - SOSCartridge # Imp
+    - StockTradingCartridge # DV
 
 - type: entity
   parent: BasePDA
@@ -559,6 +560,7 @@
       - NewsReaderCartridge
       - NanoChatCartridge # DeltaV
       - SOSCartridge # Imp
+      - StockTradingCartridge # DeltaV - StockTrading
 
 - type: entity
   parent: BasePDA
@@ -1042,6 +1044,7 @@
       - AstroNavCartridge
       - NanoChatCartridge # DV
       - SOSCartridge # Imp
+      - StockTradingCartridge # DeltaV - StockTrading
 
   - type: Tag #  Ignore Chameleon tags
     tags:
@@ -1384,6 +1387,12 @@
     borderColor: "#3f3f74"
   - type: Icon
     state: pda-reporter
+  - type: CartridgeLoader # DeltaV
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge # DeltaV - StockTrading
 
 - type: entity
   parent: BasePDA
