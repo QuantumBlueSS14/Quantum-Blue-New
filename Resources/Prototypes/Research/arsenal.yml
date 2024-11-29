@@ -171,6 +171,7 @@
   recipeUnlocks:
   - WeaponXrayCannon
   - WeaponDisablerCarbine #imp
+  - WeaponBeamCannon # DeltaV - Adds Beam cannon
 
 - type: technology
   id: KineticModifications

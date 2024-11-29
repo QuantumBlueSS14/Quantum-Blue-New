@@ -61,6 +61,7 @@
   - WeaponBlasterPistol
   - WeaponBlasterCannon
   - WeaponBlasterMagnum
+  - WeaponBeamCannon # DeltaV
 
 - type: latheRecipePack
   id: SecurityDisablersImp
