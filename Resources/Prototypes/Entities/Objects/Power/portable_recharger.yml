@@ -37,3 +37,6 @@
         whitelist:
           components:
           - BatteryAmmoProvider
+        blacklist: # DeltaV - Disallows recharging of superweapon
+          tags:
+          - GamblagatorCartridge
