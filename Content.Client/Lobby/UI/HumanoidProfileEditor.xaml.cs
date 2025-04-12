@@ -1,3 +1,72 @@
+// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
+// SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 RemberBL <timmermanrembrandt@gmail.com>
+// SPDX-FileCopyrightText: 2021 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 bgare89 <Rockdtben@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leeroy <97187620+elthundercloud@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morber <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 S1ss3l <45254902+S1ss3l@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 James Simonson <jamessimo89@gmail.com>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ray <vigersray@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ciac32 <aknoxlor@gmail.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PoTeletubby <151896601+PoTeletubby@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Winkarst-cpu <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Lyndomen <49795619+Lyndomen@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Mish <bluscout78@yahoo.com>
+// SPDX-FileCopyrightText: 2025 SaffronFennec <firefoxwolf2020@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
+// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
 using System.IO;
 using System.Linq;
 using System.Numerics;
@@ -6,8 +75,8 @@ using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
-using Content.Client.Stylesheets;
 using Content.Client.Sprite;
+using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
@@ -35,10 +104,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
 // Begin CD - Character Records
-using Content.Client._CD.Records.UI;
-using Content.Shared._CD.Records;
+using Content.Client._Funkystation.Medical.Records.UI;
+using Content.Shared._Funkystation.Records;
 // End CD - Character Records
-using Content.Shared._Impstation.Traits; // imp
 
 namespace Content.Client.Lobby.UI
 {
@@ -57,10 +125,6 @@ namespace Content.Client.Lobby.UI
         private readonly LobbyUIController _controller;
 
         private readonly SpriteSystem _sprite;
-
-        // CCvar.
-        private int _maxNameLength;
-        private bool _allowFlavorText;
 
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
@@ -108,11 +172,12 @@ namespace Content.Client.Lobby.UI
 
         private bool _isDirty;
 
-        private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
-
         // Begin CD - Station Records
         private readonly RecordEditorGui _recordsTab;
         // End CD - Station Records
+
+        [ValidatePrototypeId<GuideEntryPrototype>]
+        private const string DefaultSpeciesGuidebook = "Species";
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
@@ -143,10 +208,6 @@ namespace Content.Client.Lobby.UI
             _requirements = requirements;
             _controller = UserInterfaceManager.GetUIController<LobbyUIController>();
             _sprite = _entManager.System<SpriteSystem>();
-
-            _maxNameLength = _cfgManager.GetCVar(CCVars.MaxNameLength);
-            _allowFlavorText = _cfgManager.GetCVar(CCVars.FlavorText);
-
             ImportButton.OnPressed += args =>
             {
                 ImportProfile();
@@ -182,9 +243,7 @@ namespace Content.Client.Lobby.UI
             #region Name
 
             NameEdit.OnTextChanged += args => { SetName(args.Text); };
-            NameEdit.IsValid = args => args.Length <= _maxNameLength;
             NameRandomize.OnPressed += args => RandomizeName();
-            AppearanceRandomize.OnPressed += args => { RandomizeAppearance(); }; // IMP
             RandomizeEverythingButton.OnPressed += args => { RandomizeEverything(); };
             WarningLabel.SetMarkup($"[color=red]{Loc.GetString("humanoid-profile-editor-naming-rules-warning")}[/color]");
 
@@ -216,6 +275,19 @@ namespace Content.Client.Lobby.UI
 
             #endregion Age
 
+            // # Goobstation - Preferred Cyborg Name Thing
+
+            #region BorgName
+
+            BorgNameRandomize.OnPressed += args => RandomizeBorgName();
+            BorgNameEdit.OnTextChanged += args =>
+            {
+                if (!string.IsNullOrEmpty(args.Text))
+                    SetBorgName(args.Text);
+            };
+
+            #endregion BorgName
+
             #region Gender
 
             PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), (int) Gender.Male);
@@ -237,7 +309,6 @@ namespace Content.Client.Lobby.UI
             {
                 SpeciesButton.SelectId(args.Id);
                 SetSpecies(_species[args.Id].ID);
-                RefreshTraits(); // DeltaV - Allows for hiding traits
                 UpdateHairPickers();
                 OnSkinColorOnValueChanged();
             };
@@ -250,7 +321,6 @@ namespace Content.Client.Lobby.UI
             };
 
             RgbSkinColorContainer.AddChild(_rgbSkinColorSelector = new ColorSelectorSliders());
-            _rgbSkinColorSelector.SelectorType = ColorSelectorSliders.ColorSelectorType.Hsv; // defaults color selector to HSV
             _rgbSkinColorSelector.OnColorChanged += _ =>
             {
                 OnSkinColorOnValueChanged();
@@ -322,7 +392,7 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
-            HairStylePicker.OnSlotAdd += delegate()
+            HairStylePicker.OnSlotAdd += delegate ()
             {
                 if (Profile is null)
                     return;
@@ -342,7 +412,7 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
-            FacialHairPicker.OnSlotAdd += delegate()
+            FacialHairPicker.OnSlotAdd += delegate ()
             {
                 if (Profile is null)
                     return;
@@ -439,7 +509,7 @@ namespace Content.Client.Lobby.UI
             // Begin CD - Character Records
             #region CosmaticRecords
 
-            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords, prototypeManager);
             TabContainer.AddChild(_recordsTab);
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
@@ -481,14 +551,18 @@ namespace Content.Client.Lobby.UI
         /// </summary>
         public void RefreshFlavorText()
         {
-            if (_allowFlavorText)
+            if (_cfgManager.GetCVar(CCVars.FlavorText))
             {
                 if (_flavorText != null)
                     return;
 
                 _flavorText = new FlavorText.FlavorText();
-                TabContainer.AddChild(_flavorText);
-                TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
+
+                // begin funky - flavor text is in the Records tab now
+                _recordsTab.PersonalInfoContainer.Visible = true;
+                _recordsTab.PersonalInfoContainer.AddChild(_flavorText);
+                // end funky
+
                 _flavorTextEdit = _flavorText.CFlavorTextInput;
 
                 _flavorText.OnFlavorTextChanged += OnFlavorTextChange;
@@ -498,7 +572,11 @@ namespace Content.Client.Lobby.UI
                 if (_flavorText == null)
                     return;
 
-                TabContainer.RemoveChild(_flavorText);
+                // begin funky - flavor text is in the Records tab now
+                _recordsTab.PersonalInfoContainer.Visible = false;
+                _recordsTab.PersonalInfoContainer.RemoveChild(_flavorText);
+                // end funky
+
                 _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
                 _flavorText.Dispose();
                 _flavorTextEdit?.Dispose();
@@ -512,11 +590,12 @@ namespace Content.Client.Lobby.UI
         /// </summary>
         public void RefreshTraits()
         {
-            TraitsList.RemoveAllChildren();
+            TraitsList.DisposeAllChildren();
 
-            // imp edit -- sort trait points by their cost, then their name
-            var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderByDescending(t => t.Cost).ThenBy(t => Loc.GetString(t.Name)).ToList();
-            // imp edit end
+            var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>()
+                .OrderByDescending(t => t.Cost)
+                .ThenBy(t => Loc.GetString(t.Name))
+                .ToList();
             TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
             if (traits.Count < 1)
@@ -536,14 +615,6 @@ namespace Content.Client.Lobby.UI
 
             foreach (var trait in traits)
             {
-                // Begin DeltaV Additions - Species trait exlusion
-                if (Profile?.Species is { } selectedSpecies && trait.ExcludedSpecies.Contains(selectedSpecies))
-                {
-                    Profile = Profile?.WithoutTraitPreference(trait.ID, _prototypeManager);
-                    continue;
-                }
-                // End DeltaV Additions
-
                 if (trait.Category == null)
                 {
                     defaultTraits.Add(trait.ID);
@@ -570,37 +641,46 @@ namespace Content.Client.Lobby.UI
                     {
                         Text = Loc.GetString(category.Name),
                         Margin = new Thickness(0, 10, 0, 0),
-                        StyleClasses = { StyleClass.LabelHeading },
+                        StyleClasses = { StyleBase.StyleClassLabelHeading },
                     });
                 }
 
                 List<TraitPreferenceSelector?> selectors = new();
-                List<ProtoId<TraitSubcategoryPrototype>> usedSubcategories = []; // imp addition
                 var selectionCount = 0;
 
                 foreach (var traitProto in categoryTraits)
                 {
                     var trait = _prototypeManager.Index<TraitPrototype>(traitProto);
-                    var selector = new TraitPreferenceSelector(trait);
+                    var selector = new TraitPreferenceSelector(
+                        Loc.GetString(trait.Name),
+                        trait.Cost,
+                        trait.Description != null ? Loc.GetString(trait.Description) : null);
 
                     selector.Preference = Profile?.TraitPreferences.Contains(trait.ID) == true;
                     if (selector.Preference)
-                    // begin Imp edits - ignore any traits that conflict with subcategories of already selected traits
-                    {
                         selectionCount += trait.Cost;
-                        foreach (var subcategory in trait.Subcategories)
+
+                    // Check species restrictions
+                    if (trait.SpeciesRestrictions != null && Profile?.Species != null && trait.SpeciesRestrictions.Contains<string>(Profile.Species))
+                    {
+                        selector.Checkbox.Disabled = true;
+                        selector.Checkbox.Label.FontColorOverride = Color.Orange;
+                        var tooltip = new PanelContainer
                         {
-                            if (!usedSubcategories.Contains(subcategory))
+                            StyleClasses = { StyleNano.StyleClassTooltipPanel },
+                            Children =
                             {
-                                usedSubcategories.Add(subcategory);
+                                new Label
+                                {
+                                    Text = Loc.GetString("trait-species-restricted"),
+                                    HorizontalAlignment = HAlignment.Center,
+                                    FontColorOverride = Color.FromHex("#C8C8C8")
+                                }
                             }
-                            else
-                            {
-                                Profile = Profile?.WithoutTraitPreference(trait.ID, _prototypeManager);
-                            }
-                        }
+                        };
+                        selector.Checkbox.TooltipSupplier = _ => tooltip;
+                        selector.Preference = false;
                     }
-                    // end imp edits
 
                     selector.PreferenceChanged += preference =>
                     {
@@ -622,35 +702,12 @@ namespace Content.Client.Lobby.UI
                 // Selection counter
                 if (category is { MaxTraitPoints: >= 0 })
                 {
-                    if (category.MaxTraitPoints != null) //imp - extremely stupid null check because rider isn't happy about the potential of subtracting from a nullable int
+                    TraitsList.AddChild(new Label
                     {
-                        int maxPoints = (int)category.MaxTraitPoints; //imp - cast to a non-nullable int
-                        TraitsList.AddChild(new Label
-                        {
-                            Text = Loc.GetString("humanoid-profile-editor-trait-count-hint", ("current", maxPoints - selectionCount)), // imp edit -- count points backwards
-                            FontColorOverride = Color.Gray
-                        });
-                    }
+                        Text = Loc.GetString("humanoid-profile-editor-trait-count-hint", ("current", selectionCount), ("max", category.MaxTraitPoints)),
+                        FontColorOverride = Color.Gray
+                    });
                 }
-
-                // imp addition start:
-                // instead of appending everything to traitslist, we make a new boxcontainer and put the selectors in there.
-                var traitColumn1 = new BoxContainer
-                {
-                    Orientation = LayoutOrientation.Vertical,
-                    Margin = new Thickness(10, 0, 10, 0)
-                };
-                var traitColumn2 = new BoxContainer
-                {
-                    Orientation = LayoutOrientation.Vertical
-                };
-
-                var traitBoxContainer = new BoxContainer { };
-                traitBoxContainer.AddChild(traitColumn1);
-                traitBoxContainer.AddChild(traitColumn2);
-
-                var i = 0;
-                // imp end
 
                 foreach (var selector in selectors)
                 {
@@ -663,27 +720,8 @@ namespace Content.Client.Lobby.UI
                         selector.Checkbox.Label.FontColorOverride = Color.Red;
                     }
 
-                    // begin Imp additions -- disallow players from selecting multiple traits in the same subcategory
-                    if (!selector.Preference && selector.Subcategories.Overlaps(usedSubcategories))
-                    {
-                        selector.Checkbox.Label.FontColorOverride = Color.Red;
-                    }
-                    // end Imp additions
-
-                    // imp start: ui layout
-                    if (i == 0)
-                    {
-                        traitColumn1.AddChild(selector);
-                        i += 1;
-                    }
-                    else
-                    {
-                        traitColumn2.AddChild(selector);
-                        i -= 1;
-                    }
+                    TraitsList.AddChild(selector);
                 }
-                TraitsList.AddChild(traitBoxContainer);
-                // imp end
             }
         }
 
@@ -696,7 +734,6 @@ namespace Content.Client.Lobby.UI
             _species.Clear();
 
             _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
-            _species.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.CurrentCultureIgnoreCase));
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)
@@ -722,12 +759,14 @@ namespace Content.Client.Lobby.UI
 
         public void RefreshAntags()
         {
-            AntagList.RemoveAllChildren();
+            AntagList.DisposeAllChildren();
             var items = new[]
             {
                 ("humanoid-profile-editor-antag-preference-yes-button", 0),
                 ("humanoid-profile-editor-antag-preference-no-button", 1)
             };
+
+            AntagList.AddChild(new Label { Text = Loc.GetString("humanoid-profile-editor-antag-roll-before-jobs") }); // Goobstation
 
             foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
             {
@@ -750,10 +789,8 @@ namespace Content.Client.Lobby.UI
                 selector.Setup(items, title, 250, description, guides: antag.Guides);
                 selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
 
-                if (!_requirements.IsAllowed(
-                        antag,
-                        (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter,
-                        out var reason))
+                var requirements = _entManager.System<SharedRoleSystem>().GetAntagRequirement(antag);
+                if (!_requirements.CheckRoleRequirements(requirements, (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter, out var reason))
                 {
                     selector.LockRequirements(reason);
                     Profile = Profile?.WithAntagPreference(antag.ID, false);
@@ -849,6 +886,8 @@ namespace Content.Client.Lobby.UI
 
             UpdateNameEdit();
             UpdateFlavorTextEdit();
+            // #Goobstation - Borg Preferred Name
+            UpdateBorgNameEdit();
             UpdateSexControls();
             UpdateGenderControls();
             UpdateSkinColor();
@@ -904,14 +943,14 @@ namespace Content.Client.Lobby.UI
             var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
             var page = DefaultSpeciesGuidebook;
             if (_prototypeManager.HasIndex<GuideEntryPrototype>(species))
-                page = new ProtoId<GuideEntryPrototype>(species.Id); // Gross. See above todo comment.
+                page = species;
 
-            if (_prototypeManager.Resolve(DefaultSpeciesGuidebook, out var guideRoot))
+            if (_prototypeManager.TryIndex<GuideEntryPrototype>(DefaultSpeciesGuidebook, out var guideRoot))
             {
                 var dict = new Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry>();
                 dict.Add(DefaultSpeciesGuidebook, guideRoot);
                 //TODO: Don't close the guidebook if its already open, just go to the correct page
-                guidebookController.OpenGuidebook(dict, includeChildren:true, selected: page);
+                guidebookController.OpenGuidebook(dict, includeChildren: true, selected: page);
             }
         }
 
@@ -920,7 +959,7 @@ namespace Content.Client.Lobby.UI
         /// </summary>
         public void RefreshJobs()
         {
-            JobList.RemoveAllChildren();
+            JobList.DisposeAllChildren();
             _jobCategories.Clear();
             _jobPriorities.Clear();
             var firstCategory = true;
@@ -939,10 +978,8 @@ namespace Content.Client.Lobby.UI
 
             var items = new[]
             {
-                ("humanoid-profile-editor-job-priority-never-button", (int) JobPriority.Never),
-                ("humanoid-profile-editor-job-priority-low-button", (int) JobPriority.Low),
-                ("humanoid-profile-editor-job-priority-medium-button", (int) JobPriority.Medium),
-                ("humanoid-profile-editor-job-priority-high-button", (int) JobPriority.High),
+                ("humanoid-profile-editor-antag-preference-yes-button", 0),
+                ("humanoid-profile-editor-antag-preference-no-button", 1)
             };
 
             foreach (var department in departments)
@@ -973,7 +1010,7 @@ namespace Content.Client.Lobby.UI
 
                     category.AddChild(new PanelContainer
                     {
-                        PanelOverride = new StyleBoxFlat {BackgroundColor = Color.FromHex("#464966")},
+                        PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#464966") },
                         Children =
                         {
                             new Label
@@ -1017,7 +1054,7 @@ namespace Content.Client.Lobby.UI
                     icon.Texture = _sprite.Frame0(jobIcon.Icon);
                     selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
 
-                    if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
+                    if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter, out var reason))
                     {
                         selector.LockRequirements(reason);
                     }
@@ -1026,32 +1063,12 @@ namespace Content.Client.Lobby.UI
                         selector.UnlockRequirements();
                     }
 
-                    selector.OnSelected += selectedPrio =>
+                    selector.OnSelected += selection =>
                     {
-                        var selectedJobPrio = (JobPriority) selectedPrio;
-                        Profile = Profile?.WithJobPriority(job.ID, selectedJobPrio);
+                        var include = selection == 0;
+                        Profile = Profile?.WithJob(job.ID, include);
 
-                        foreach (var (jobId, other) in _jobPriorities)
-                        {
-                            // Sync other selectors with the same job in case of multiple department jobs
-                            if (jobId == job.ID)
-                            {
-                                other.Select(selectedPrio);
-                                continue;
-                            }
-
-                            if (selectedJobPrio != JobPriority.High || (JobPriority) other.Selected != JobPriority.High)
-                                continue;
-
-                            // Lower any other high priorities to medium.
-                            other.Select((int)JobPriority.Medium);
-                            Profile = Profile?.WithJobPriority(jobId, JobPriority.Medium);
-                        }
-
-                        // TODO: Only reload on high change (either to or from).
-                        ReloadPreview();
-
-                        UpdateJobPriorities();
+                        UpdateJobPreferences();
                         SetDirty();
                     };
 
@@ -1099,7 +1116,7 @@ namespace Content.Client.Lobby.UI
                 }
             }
 
-            UpdateJobPriorities();
+            UpdateJobPreferences();
         }
 
         private void OpenLoadout(JobPrototype? jobProto, RoleLoadout roleLoadout, RoleLoadoutPrototype roleLoadoutProto)
@@ -1116,7 +1133,7 @@ namespace Content.Client.Lobby.UI
 
             _loadoutWindow = new LoadoutWindow(Profile, roleLoadout, roleLoadoutProto, _playerManager.LocalSession, collection)
             {
-                Title = Loc.GetString("loadout-window-title-loadout", ("job", $"{jobProto?.LocalizedName}")),
+                Title = jobProto?.ID + "-loadout",
             };
 
             // Refresh the buttons etc.
@@ -1158,7 +1175,7 @@ namespace Content.Client.Lobby.UI
             if (Profile is null)
                 return;
 
-            UpdateJobPriorities();
+            UpdateJobPreferences();
         }
 
         // Start CD - Character Records
@@ -1194,40 +1211,63 @@ namespace Content.Client.Lobby.UI
             if (Profile is null) return;
 
             var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
-            var strategy = _prototypeManager.Index(skin).Strategy;
 
-            switch (strategy.InputType)
+            switch (skin)
             {
-                case SkinColorationStrategyInput.Unary:
-                {
-                    if (!Skin.Visible)
+                case HumanoidSkinColor.HumanToned:
                     {
-                        Skin.Visible = true;
-                        RgbSkinColorContainer.Visible = false;
+                        if (!Skin.Visible)
+                        {
+                            Skin.Visible = true;
+                            RgbSkinColorContainer.Visible = false;
+                        }
+
+                        var color = SkinColor.HumanSkinTone((int) Skin.Value);
+
+                        Markings.CurrentSkinColor = color;
+                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));//
+                        break;
                     }
-
-                    var color = strategy.FromUnary(Skin.Value);
-
-                    Markings.CurrentSkinColor = color;
-                    Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
-
-                    break;
-                }
-                case SkinColorationStrategyInput.Color:
-                {
-                    if (!RgbSkinColorContainer.Visible)
+                case HumanoidSkinColor.Hues:
                     {
-                        Skin.Visible = false;
-                        RgbSkinColorContainer.Visible = true;
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
+
+                        Markings.CurrentSkinColor = _rgbSkinColorSelector.Color;
+                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(_rgbSkinColorSelector.Color));
+                        break;
                     }
+                case HumanoidSkinColor.TintedHues:
+                    {
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
 
-                    var color = strategy.ClosestSkinColor(_rgbSkinColorSelector.Color);
+                        var color = SkinColor.TintedHues(_rgbSkinColorSelector.Color);
 
-                    Markings.CurrentSkinColor = color;
-                    Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
+                        Markings.CurrentSkinColor = color;
+                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
+                        break;
+                    }
+                case HumanoidSkinColor.VoxFeathers:
+                    {
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
 
-                    break;
-                }
+                        var color = SkinColor.ClosestVoxColor(_rgbSkinColorSelector.Color);
+
+                        Markings.CurrentSkinColor = color;
+                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
+                        break;
+                    }
             }
 
             ReloadProfilePreview();
@@ -1260,6 +1300,16 @@ namespace Content.Client.Lobby.UI
         {
             Profile = Profile?.WithAge(newAge);
             ReloadPreview();
+        }
+
+        // #Goobstation - Prefered Cyborg Name Stuff
+        private void SetBorgName(string newBName)
+        {
+            Profile = Profile?.WithBorgName(newBName);
+            SetDirty();
+
+            if (!IsDirty)
+                return;
         }
 
         private void SetSex(Sex newSex)
@@ -1352,15 +1402,20 @@ namespace Content.Client.Lobby.UI
             AgeEdit.Text = Profile?.Age.ToString() ?? "";
         }
 
+        // #Goobstation - More Borg Name Stuff
+        private void UpdateBorgNameEdit()
+        {
+            BorgNameEdit.Text = Profile?.BorgName.ToString() ?? "";
+        }
+
         /// <summary>
         /// Updates selected job priorities to the profile's.
         /// </summary>
-        private void UpdateJobPriorities()
+        private void UpdateJobPreferences()
         {
             foreach (var (jobId, prioritySelector) in _jobPriorities)
             {
-                var priority = Profile?.JobPriorities.GetValueOrDefault(jobId, JobPriority.Never) ?? JobPriority.Never;
-                prioritySelector.Select((int) priority);
+                prioritySelector.Select((Profile?.JobPreferences.Contains(jobId) ?? false) ? 0 : 1);
             }
         }
 
@@ -1374,7 +1429,7 @@ namespace Content.Client.Lobby.UI
             var sexes = new List<Sex>();
 
             // add species sex options, default to just none if we are in bizzaro world and have no species
-            if (_prototypeManager.Resolve<SpeciesPrototype>(Profile.Species, out var speciesProto))
+            if (_prototypeManager.TryIndex<SpeciesPrototype>(Profile.Species, out var speciesProto))
             {
                 foreach (var sex in speciesProto.Sexes)
                 {
@@ -1404,35 +1459,59 @@ namespace Content.Client.Lobby.UI
                 return;
 
             var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
-            var strategy = _prototypeManager.Index(skin).Strategy;
 
-            switch (strategy.InputType)
+            switch (skin)
             {
-                case SkinColorationStrategyInput.Unary:
-                {
-                    if (!Skin.Visible)
+                case HumanoidSkinColor.HumanToned:
                     {
-                        Skin.Visible = true;
-                        RgbSkinColorContainer.Visible = false;
+                        if (!Skin.Visible)
+                        {
+                            Skin.Visible = true;
+                            RgbSkinColorContainer.Visible = false;
+                        }
+
+                        Skin.Value = SkinColor.HumanSkinToneFromColor(Profile.Appearance.SkinColor);
+
+                        break;
                     }
-
-                    Skin.Value = strategy.ToUnary(Profile.Appearance.SkinColor);
-
-                    break;
-                }
-                case SkinColorationStrategyInput.Color:
-                {
-                    if (!RgbSkinColorContainer.Visible)
+                case HumanoidSkinColor.Hues:
                     {
-                        Skin.Visible = false;
-                        RgbSkinColorContainer.Visible = true;
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
+
+                        // set the RGB values to the direct values otherwise
+                        _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
+                        break;
                     }
+                case HumanoidSkinColor.TintedHues:
+                    {
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
 
-                    _rgbSkinColorSelector.Color = strategy.ClosestSkinColor(Profile.Appearance.SkinColor);
+                        // set the RGB values to the direct values otherwise
+                        _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
+                        break;
+                    }
+                case HumanoidSkinColor.VoxFeathers:
+                    {
+                        if (!RgbSkinColorContainer.Visible)
+                        {
+                            Skin.Visible = false;
+                            RgbSkinColorContainer.Visible = true;
+                        }
 
-                    break;
-                }
+                        _rgbSkinColorSelector.Color = SkinColor.ClosestVoxColor(Profile.Appearance.SkinColor);
+
+                        break;
+                    }
             }
+
         }
 
         public void UpdateSpeciesGuidebookIcon()
@@ -1443,7 +1522,7 @@ namespace Content.Client.Lobby.UI
             if (species is null)
                 return;
 
-            if (!_prototypeManager.Resolve<SpeciesPrototype>(species, out var speciesProto))
+            if (!_prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesProto))
                 return;
 
             // Don't display the info button if no guide entry is found
@@ -1451,7 +1530,7 @@ namespace Content.Client.Lobby.UI
                 return;
 
             const string style = "SpeciesInfoDefault";
-            SpeciesInfoButton.StyleIdentifier = style;
+            SpeciesInfoButton.StyleClasses.Add(style);
         }
 
         private void UpdateMarkings()
@@ -1492,13 +1571,17 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-            var hairMarking = Profile.Appearance.HairStyleId == HairStyles.DefaultHairStyle
-                ? new List<Marking>()
-                : new() { new(Profile.Appearance.HairStyleId, new List<Color>() { Profile.Appearance.HairColor }) };
+            var hairMarking = Profile.Appearance.HairStyleId switch
+            {
+                HairStyles.DefaultHairStyle => new List<Marking>(),
+                _ => new() { new(Profile.Appearance.HairStyleId, new List<Color>() { Profile.Appearance.HairColor }) },
+            };
 
-            var facialHairMarking = Profile.Appearance.FacialHairStyleId == HairStyles.DefaultFacialHairStyle
-                ? new List<Marking>()
-                : new() { new(Profile.Appearance.FacialHairStyleId, new List<Color>() { Profile.Appearance.FacialHairColor }) };
+            var facialHairMarking = Profile.Appearance.FacialHairStyleId switch
+            {
+                HairStyles.DefaultFacialHairStyle => new List<Marking>(),
+                _ => new() { new(Profile.Appearance.FacialHairStyleId, new List<Color>() { Profile.Appearance.FacialHairColor }) },
+            };
 
             HairStylePicker.UpdateData(
                 hairMarking,
@@ -1519,7 +1602,7 @@ namespace Content.Client.Lobby.UI
 
             // hair color
             Color? hairColor = null;
-            if ( Profile.Appearance.HairStyleId != HairStyles.DefaultHairStyle &&
+            if (Profile.Appearance.HairStyleId != HairStyles.DefaultHairStyle &&
                 _markingManager.Markings.TryGetValue(Profile.Appearance.HairStyleId, out var hairProto)
             )
             {
@@ -1537,7 +1620,7 @@ namespace Content.Client.Lobby.UI
             }
             if (hairColor != null)
             {
-                Markings.HairMarking = new (Profile.Appearance.HairStyleId, new List<Color>() { hairColor.Value });
+                Markings.HairMarking = new(Profile.Appearance.HairStyleId, new List<Color>() { hairColor.Value });
             }
             else
             {
@@ -1554,7 +1637,7 @@ namespace Content.Client.Lobby.UI
 
             // facial hair color
             Color? facialHairColor = null;
-            if ( Profile.Appearance.FacialHairStyleId != HairStyles.DefaultFacialHairStyle &&
+            if (Profile.Appearance.FacialHairStyleId != HairStyles.DefaultFacialHairStyle &&
                 _markingManager.Markings.TryGetValue(Profile.Appearance.FacialHairStyleId, out var facialHairProto))
             {
                 if (_markingManager.CanBeApplied(Profile.Species, Profile.Sex, facialHairProto, _prototypeManager))
@@ -1571,7 +1654,7 @@ namespace Content.Client.Lobby.UI
             }
             if (facialHairColor != null)
             {
-                Markings.FacialHairMarking = new (Profile.Appearance.FacialHairStyleId, new List<Color>() { facialHairColor.Value });
+                Markings.FacialHairMarking = new(Profile.Appearance.FacialHairStyleId, new List<Color>() { facialHairColor.Value });
             }
             else
             {
@@ -1608,27 +1691,6 @@ namespace Content.Client.Lobby.UI
             SetDirty();
         }
 
-        // IMP EDIT START: randomize appearance without touching species
-        private void RandomizeAppearance()
-        {
-            if (Profile == null)
-            {
-                return;
-            }
-            HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex);
-            Profile = new HumanoidCharacterProfile()
-            {
-                Name = Profile.Name,
-                Sex = Profile.Sex,
-                Age = Profile.Age,
-                Gender = Profile.Gender,
-                Species = Profile.Species,
-                Appearance = HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex),
-            };
-            SetProfile(Profile, CharacterSlot);
-        }
-        // IMP EDIT END
-
         private void RandomizeName()
         {
             if (Profile == null) return;
@@ -1637,6 +1699,14 @@ namespace Content.Client.Lobby.UI
             UpdateNameEdit();
 
             _recordsTab.Update(Profile); // CD - Character Records
+        }
+        // #Goobstation - Borg Preferred Name
+        private void RandomizeBorgName()
+        {
+            if (Profile == null) return;
+            var name = HumanoidCharacterProfile.GetBorgName();
+            SetBorgName(name);
+            UpdateBorgNameEdit();
         }
 
         private async void ExportImage()
@@ -1658,7 +1728,7 @@ namespace Content.Client.Lobby.UI
                 return;
 
             StartExport();
-            await using var file = await _dialogManager.OpenFile(new FileDialogFilters(new FileDialogFilters.Group("yml")), FileAccess.Read);
+            await using var file = await _dialogManager.OpenFile(new FileDialogFilters(new FileDialogFilters.Group("yml")));
 
             if (file == null)
             {

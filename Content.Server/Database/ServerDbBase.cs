@@ -1,3 +1,45 @@
+﻿// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PoTeletubby <151896601+PoTeletubby@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Lyndomen <49795619+Lyndomen@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -9,8 +51,8 @@ using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Shared.Administration.Logs;
-using Content.Shared.Construction.Prototypes;
 using Content.Shared.Database;
+using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Preferences;
@@ -22,15 +64,15 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Server._CD.Records; // CD - Character Records
-using Content.Shared._CD.Records; // CD - Character Records
-using Content.Shared._Impstation.Notifier; // imp - notifier
+using Content.Server._Funkystation.Records; // CD - Character Records
+using Content.Shared._Funkystation.Records; // CD - Character Records
 
 namespace Content.Server.Database
 {
     public abstract class ServerDbBase
     {
         private readonly ISawmill _opsLog;
+
         public event Action<DatabaseNotification>? OnNotificationReceived;
 
         /// <param name="opsLog">Sawmill to trace log database operations to.</param>
@@ -53,13 +95,13 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
                 // Begin CD - Character Records
                 .Include(p => p.Profiles)
-                .ThenInclude(h => h.CDProfile)
-                .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                    .ThenInclude(h => h.CDProfile)
                 // End CD - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
                     .ThenInclude(group => group.Loadouts)
+                .Include(p => p.JobPreferences)
                 .AsSplitQuery()
                 .SingleOrDefaultAsync(p => p.UserId == userId.UserId, cancel);
 
@@ -73,11 +115,9 @@ namespace Content.Server.Database
                 profiles[profile.Slot] = ConvertProfiles(profile);
             }
 
-            var constructionFavorites = new List<ProtoId<ConstructionPrototype>>(prefs.ConstructionFavorites.Count);
-            foreach (var favorite in prefs.ConstructionFavorites)
-                constructionFavorites.Add(new ProtoId<ConstructionPrototype>(favorite));
+            var jobPreferences = prefs.JobPreferences.ToDictionary(j => new ProtoId<JobPrototype>(j.JobName), j => (JobPriority) j.Priority);
 
-            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), constructionFavorites);
+            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), jobPreferences);
         }
 
         public async Task SaveSelectedCharacterIndexAsync(NetUserId userId, int index)
@@ -108,7 +148,6 @@ namespace Content.Server.Database
 
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.CDProfile) // CD - Character Records
-                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -134,6 +173,29 @@ namespace Content.Server.Database
             await db.DbContext.SaveChangesAsync();
         }
 
+        public async Task SaveJobPrioritiesAsync(NetUserId userId, Dictionary<ProtoId<JobPrototype>, JobPriority> newJobPriorities)
+        {
+            await using var db = await GetDb();
+
+            var oldPref = db.DbContext.Preference
+                .Include(p => p.JobPreferences)
+                .Single(p => p.UserId == userId.UserId);
+
+            var newPrefs = new List<JobPreference>();
+            foreach (var (job, priority) in newJobPriorities)
+            {
+                var newPref = new JobPreference
+                {
+                    JobName = job,
+                    Priority = (DbJobPriority)priority,
+                };
+                newPrefs.Add(newPref);
+            }
+            oldPref.JobPreferences = newPrefs;
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
         private static async Task DeleteCharacterSlot(ServerDbContext db, NetUserId userId, int slot)
         {
             var profile = await db.Profile.Include(p => p.Preference)
@@ -152,13 +214,21 @@ namespace Content.Server.Database
         {
             await using var db = await GetDb();
 
+            var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
+                { { SharedGameTicker.FallbackOverflowJob, JobPriority.High } };
+
+            var dbPriorities = priorities
+                .Where(j => j.Value != JobPriority.Never)
+                .Select(j => new JobPreference { JobName = j.Key, Priority = (DbJobPriority)j.Value })
+                .ToList();
+
             var profile = ConvertProfiles((HumanoidCharacterProfile) defaultProfile, 0);
             var prefs = new Preference
             {
                 UserId = userId.UserId,
                 SelectedCharacterSlot = 0,
                 AdminOOCColor = Color.Red.ToHex(),
-                ConstructionFavorites = [],
+                JobPreferences = dbPriorities,
             };
 
             prefs.Profiles.Add(profile);
@@ -167,7 +237,12 @@ namespace Content.Server.Database
 
             await db.DbContext.SaveChangesAsync();
 
-            return new PlayerPreferences(new[] { new KeyValuePair<int, ICharacterProfile>(0, defaultProfile) }, 0, Color.FromHex(prefs.AdminOOCColor), []);
+            return new PlayerPreferences(
+                new[] {new KeyValuePair<int, ICharacterProfile>(0, defaultProfile)},
+                0,
+                Color.FromHex(prefs.AdminOOCColor),
+                priorities
+                );
         }
 
         public async Task DeleteSlotAndSetSelectedIndex(NetUserId userId, int deleteSlot, int newSlot)
@@ -193,19 +268,6 @@ namespace Content.Server.Database
 
         }
 
-        public async Task SaveConstructionFavoritesAsync(NetUserId userId, List<ProtoId<ConstructionPrototype>> constructionFavorites)
-        {
-            await using var db = await GetDb();
-            var prefs = await db.DbContext.Preference.SingleAsync(p => p.UserId == userId.UserId);
-
-            var favorites = new List<string>(constructionFavorites.Count);
-            foreach (var favorite in constructionFavorites)
-                favorites.Add(favorite.Id);
-            prefs.ConstructionFavorites = favorites;
-
-            await db.DbContext.SaveChangesAsync();
-        }
-
         private static async Task SetSelectedCharacterSlotAsync(NetUserId userId, int newSlot, ServerDbContext db)
         {
             var prefs = await db.Preference.SingleAsync(p => p.UserId == userId.UserId);
@@ -214,7 +276,7 @@ namespace Content.Server.Database
 
         private static HumanoidCharacterProfile ConvertProfiles(Profile profile)
         {
-            var jobs = profile.Jobs.ToDictionary(j => new ProtoId<JobPrototype>(j.JobName), j => (JobPriority) j.Priority);
+            var jobs = profile.Jobs.Select(j => new ProtoId<JobPrototype>(j.JobName)).ToHashSet();
             var antags = profile.Antags.Select(a => new ProtoId<AntagPrototype>(a.AntagName));
             var traits = profile.Traits.Select(t => new ProtoId<TraitPrototype>(t.TraitName));
 
@@ -246,7 +308,7 @@ namespace Content.Server.Database
 
             // Begin CD - Chracter Records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
-                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
             // End CD - Character Records
             var loadouts = new Dictionary<string, RoleLoadout>();
@@ -277,6 +339,8 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
+                // #Goobstation - Borg Preferred Name
+                profile.BorgName,
                 profile.Age,
                 sex,
                 gender,
@@ -296,6 +360,7 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
+                profile.Enabled,
                 cdRecords // CD - Character Records
             );
         }
@@ -313,6 +378,8 @@ namespace Content.Server.Database
 
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
+            // #Goobstation - Borg Preferred Name
+            profile.BorgName = humanoid.BorgName;
             profile.Species = humanoid.Species;
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
@@ -327,35 +394,30 @@ namespace Content.Server.Database
             profile.Markings = markings;
             profile.Slot = slot;
             profile.PreferenceUnavailable = (DbPreferenceUnavailableMode) humanoid.PreferenceUnavailable;
+            profile.Enabled = humanoid.Enabled;
 
             profile.Jobs.Clear();
             profile.Jobs.AddRange(
-                humanoid.JobPriorities
-                    .Where(j => j.Value != JobPriority.Never)
-                    .Select(j => new Job {JobName = j.Key, Priority = (DbJobPriority) j.Value})
+                humanoid.JobPreferences
+                    .Select(j => new Job {JobName = j})
             );
 
             profile.Antags.Clear();
             profile.Antags.AddRange(
                 humanoid.AntagPreferences
-                    .Select(a => new Antag {AntagName = a})
+                    .Select(a => new Antag { AntagName = a })
             );
 
             profile.Traits.Clear();
             profile.Traits.AddRange(
                 humanoid.TraitPreferences
-                        .Select(t => new Trait {TraitName = t})
+                        .Select(t => new Trait { TraitName = t })
             );
 
             // Begin CD - Character Records
             profile.CDProfile ??= new CDModel.CDProfile();
             // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
             profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
-            if (humanoid.CDCharacterRecords != null)
-            {
-                profile.CDProfile.CharacterRecordEntries.Clear();
-                profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
-            }
             // End CD - Character Records
 
             profile.Loadouts.Clear();
@@ -1412,7 +1474,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 ban.LastEditedAt,
                 ban.ExpirationTime,
                 ban.Hidden,
-                new [] { ban.RoleId.Replace(BanManager.PrefixJob, null).Replace(BanManager.PrefixAntag, null) },
+                new[] { ban.RoleId.Replace(BanManager.JobPrefix, null) },
                 MakePlayerRecord(unbanningAdmin),
                 ban.Unban?.UnbanTime);
         }
@@ -1576,10 +1638,10 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         protected async Task<List<AdminWatchlistRecord>> GetActiveWatchlistsImpl(DbGuard db, Guid player)
         {
             var entities = await (from watchlist in db.DbContext.AdminWatchlists
-                          where watchlist.PlayerUserId == player &&
-                                !watchlist.Deleted &&
-                                (watchlist.ExpirationTime == null || DateTime.UtcNow < watchlist.ExpirationTime)
-                          select watchlist)
+                                  where watchlist.PlayerUserId == player &&
+                                        !watchlist.Deleted &&
+                                        (watchlist.ExpirationTime == null || DateTime.UtcNow < watchlist.ExpirationTime)
+                                  select watchlist)
                 .Include(note => note.Round)
                 .ThenInclude(r => r!.Server)
                 .Include(note => note.CreatedBy)
@@ -1604,9 +1666,9 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         protected async Task<List<AdminMessageRecord>> GetMessagesImpl(DbGuard db, Guid player)
         {
             var entities = await (from message in db.DbContext.AdminMessages
-                        where message.PlayerUserId == player && !message.Deleted &&
-                              (message.ExpirationTime == null || DateTime.UtcNow < message.ExpirationTime)
-                        select message).Include(note => note.Round)
+                                  where message.PlayerUserId == player && !message.Deleted &&
+                                        (message.ExpirationTime == null || DateTime.UtcNow < message.ExpirationTime)
+                                  select message).Include(note => note.Round)
                     .ThenInclude(r => r!.Server)
                     .Include(note => note.CreatedBy)
                     .Include(note => note.LastEditedBy)
@@ -1685,7 +1747,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             // Client side query, as EF can't do groups yet
             var bansEnumerable = bansQuery
-                    .GroupBy(ban => new { ban.BanTime, CreatedBy = (Player?)ban.CreatedBy, ban.Reason, Unbanned = ban.Unban == null })
+                    .GroupBy(ban => new { ban.BanTime, CreatedBy = (Player?) ban.CreatedBy, ban.Reason, Unbanned = ban.Unban == null })
                     .Select(banGroup => banGroup)
                     .ToArray();
 
@@ -1712,7 +1774,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                     NormalizeDatabaseTime(firstBan.LastEditedAt),
                     NormalizeDatabaseTime(firstBan.ExpirationTime),
                     firstBan.Hidden,
-                    banGroup.Select(ban => ban.RoleId.Replace(BanManager.PrefixJob, null).Replace(BanManager.PrefixAntag, null)).ToArray(),
+                    banGroup.Select(ban => ban.RoleId.Replace(BanManager.JobPrefix, null)).ToArray(),
                     MakePlayerRecord(unbanningAdmin),
                     NormalizeDatabaseTime(firstBan.Unban?.UnbanTime)));
             }
@@ -1844,60 +1906,6 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             await db.DbContext.SaveChangesAsync();
             return true;
-        }
-
-        #endregion
-
-        #region Notifier Settings
-        private static async Task DeletePlayerNotifierSettings(ServerDbContext db, NetUserId userId)
-        {
-            var notifierData = await db.NotifierData
-                .Where(c => c.UserId == userId.UserId)
-                .SingleOrDefaultAsync();
-
-            if (notifierData is null)
-            {
-                return;
-            }
-
-            db.NotifierData.Remove(notifierData);
-        }
-        public async Task SavePlayerNotifierSettingsAsync(NetUserId userId, PlayerNotifierSettings? notifierSettings)
-        {
-            await using var db = await GetDb();
-
-            if (notifierSettings is null)
-            {
-                await DeletePlayerNotifierSettings(db.DbContext, userId);
-                await db.DbContext.SaveChangesAsync();
-                return;
-            }
-
-            var currentNotifierData = await db.DbContext.NotifierData.AsSplitQuery().SingleOrDefaultAsync(p => p.UserId == userId.UserId);
-
-            if (currentNotifierData is null)
-            {
-                currentNotifierData = new NotifierData() { UserId = userId};
-
-                db.DbContext.NotifierData.Add(currentNotifierData);
-            }
-
-            currentNotifierData.NotifierFreetext = notifierSettings.Freetext;
-            currentNotifierData.Enabled = notifierSettings.Enabled;
-
-            await db.DbContext.SaveChangesAsync();
-        }
-
-        public async Task<PlayerNotifierSettings> GetPlayerNotifierSettingsAsync(NetUserId userId)
-        {
-            await using var db = await GetDb();
-
-            var notifierData = await db.DbContext.NotifierData.SingleOrDefaultAsync(p => p.UserId == userId.UserId);
-
-            if (notifierData is null)
-                return new();
-
-            return new(notifierData.NotifierFreetext, notifierData.Enabled);
         }
 
         #endregion

@@ -1,5 +1,13 @@
-using Content.Shared.Construction.Prototypes;
+// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
 using Content.Shared.Preferences;
+using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby
@@ -15,10 +23,11 @@ namespace Content.Client.Lobby
         void Initialize();
         void SelectCharacter(ICharacterProfile profile);
         void SelectCharacter(int slot);
+        void SetCharacterEnable(int slot, bool enable);
         void UpdateCharacter(ICharacterProfile profile, int slot);
         void CreateCharacter(ICharacterProfile profile);
         void DeleteCharacter(ICharacterProfile profile);
         void DeleteCharacter(int slot);
-        void UpdateConstructionFavorites(List<ProtoId<ConstructionPrototype>> favorites);
+        void UpdateJobPriorities(Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities);
     }
 }
