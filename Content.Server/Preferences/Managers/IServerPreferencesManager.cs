@@ -26,6 +26,8 @@ namespace Content.Server.Preferences.Managers
 
         Task SetProfile(NetUserId userId, int slot, ICharacterProfile profile);
         Task SetConstructionFavorites(NetUserId userId, List<ProtoId<ConstructionPrototype>> favorites);
+        Task SetJobPriorities(NetUserId userId, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities); // QB edit: expose direct job-priority updates for integration test helpers and server-side callers.
+        Task DeleteProfile(NetUserId userId, int slot); // QB edit: expose profile deletion for integration test cleanup paths.
     }
 
     public sealed class PlayerJobPriorityChangedEvent : EntityEventArgs

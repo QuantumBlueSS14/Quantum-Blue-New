@@ -165,11 +165,13 @@ namespace Content.Server.Preferences.Managers
                 await _db.SaveConstructionFavoritesAsync(userId, favorites);
         }
 
-        private async void HandleDeleteCharacterMessage(MsgDeleteCharacter message)
+        private void HandleDeleteCharacterMessage(MsgDeleteCharacter message)
         {
-            var slot = message.Slot;
-            var userId = message.MsgChannel.UserId;
+            DeleteProfile(message.MsgChannel.UserId, message.Slot).Wait(); // QB edit: route message handling through shared async method used by tests and cleanup logic.
+        }
 
+        public async Task DeleteProfile(NetUserId userId, int slot)
+        {
             if (!_cachedPlayerPrefs.TryGetValue(userId, out var prefsData) || !prefsData.PrefsLoaded)
             {
                 Logger.WarningS("prefs", $"User {userId} tried to modify preferences before they loaded.");
@@ -177,11 +179,10 @@ namespace Content.Server.Preferences.Managers
             }
 
             if (slot < 0 || slot >= MaxCharacterSlots)
-            {
                 return;
-            }
 
             var curPrefs = prefsData.Prefs!;
+            var session = _playerManager.GetSessionById(userId);
 
             // If they try to delete the slot they have selected then we switch to another one.
             // Of course, that's only if they HAVE another slot.
@@ -189,32 +190,25 @@ namespace Content.Server.Preferences.Managers
             if (curPrefs.SelectedCharacterIndex == slot)
             {
                 // That ! on the end is because Rider doesn't like .NET 5.
-                var (ns, profile) = curPrefs.Characters.FirstOrDefault(p => p.Key != message.Slot)!;
+                var (ns, profile) = curPrefs.Characters.FirstOrDefault(p => p.Key != slot)!;
                 if (profile == null)
-                {
-                    // Only slot left, can't delete.
                     return;
-                }
 
                 nextSlot = ns;
             }
 
-            var arr = new Dictionary<int, ICharacterProfile>(curPrefs.Characters);
-            arr.Remove(slot);
+            var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters);
+            profiles.Remove(slot);
 
-            prefsData.Prefs = new PlayerPreferences(arr, nextSlot ?? curPrefs.SelectedCharacterIndex, curPrefs.AdminOOCColor, curPrefs.JobPriorities, curPrefs.ConstructionFavorites);
+            prefsData.Prefs = new PlayerPreferences(profiles, nextSlot ?? curPrefs.SelectedCharacterIndex, curPrefs.AdminOOCColor, curPrefs.JobPriorities, curPrefs.ConstructionFavorites);
 
-            if (ShouldStorePrefs(message.MsgChannel.AuthType))
-            {
-                if (nextSlot != null)
-                {
-                    await _db.DeleteSlotAndSetSelectedIndex(userId, slot, nextSlot.Value);
-                }
-                else
-                {
-                    await _db.SaveCharacterSlotAsync(userId, null, slot);
-                }
-            }
+            if (!ShouldStorePrefs(session.Channel.AuthType))
+                return;
+
+            if (nextSlot != null)
+                await _db.DeleteSlotAndSetSelectedIndex(userId, slot, nextSlot.Value);
+            else
+                await _db.SaveCharacterSlotAsync(userId, null, slot);
         }
 
         private async void HandleSetCharacterEnableMessage(MsgSetCharacterEnable message)
@@ -254,10 +248,13 @@ namespace Content.Server.Preferences.Managers
                 await _db.SaveCharacterSlotAsync(userId, profile, slot);
         }
 
-        public async void HandleUpdateJobPrioritiesMessage(MsgUpdateJobPriorities message)
+        public void HandleUpdateJobPrioritiesMessage(MsgUpdateJobPriorities message)
         {
-            var userId = message.MsgChannel.UserId;
+            SetJobPriorities(message.MsgChannel.UserId, message.JobPriorities).Wait(); // QB edit: use shared mutation method for net messages and test helpers.
+        }
 
+        public async Task SetJobPriorities(NetUserId userId, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities)
+        {
             if (!_cachedPlayerPrefs.TryGetValue(userId, out var prefsData) || !prefsData.PrefsLoaded)
             {
                 Logger.WarningS("prefs", $"User {userId} tried to modify preferences before they loaded.");
@@ -270,13 +267,13 @@ namespace Content.Server.Preferences.Managers
             prefsData.Prefs = new PlayerPreferences(curPrefs.Characters,
                 curPrefs.SelectedCharacterIndex,
                 curPrefs.AdminOOCColor,
-                message.JobPriorities,
+                jobPriorities,
                 curPrefs.ConstructionFavorites);
 
             if (ShouldStorePrefs(session.Channel.AuthType))
-                await _db.SaveJobPrioritiesAsync(userId, message.JobPriorities);
+                await _db.SaveJobPrioritiesAsync(userId, jobPriorities);
 
-            var evt = new PlayerJobPriorityChangedEvent(session, curPrefs.JobPriorities, message.JobPriorities); // QB edit: notify manifest and other listeners when ready players change their job priority selections.
+            var evt = new PlayerJobPriorityChangedEvent(session, curPrefs.JobPriorities, jobPriorities); // QB edit: preserve job-priority change notifications for ready-manifest and related listeners.
             _entityManager.EventBus.QueueEvent(EventSource.Local, evt);
         }
 
