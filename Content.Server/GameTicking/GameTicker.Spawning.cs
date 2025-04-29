@@ -110,9 +110,8 @@ namespace Content.Server.GameTicking
             return spawnableStations;
         }
 
-        // TODO: I don't think SpawnPlayers needs the HumanoidCharacterProfiles anymore
         private void SpawnPlayers(List<ICommonSession> readyPlayers,
-            Dictionary<NetUserId, HumanoidCharacterProfile> profiles,
+            HashSet<NetUserId> profiles,
             bool force)
         {
             // Allow game rules to spawn players by themselves if needed. (For example, nuke ops or wizard)
@@ -126,7 +125,7 @@ namespace Content.Server.GameTicking
             {
                 var toRemove = new RemQueue<NetUserId>();
 
-                foreach (var (player, _) in profiles)
+                foreach (var player in profiles)
                 {
                     if (playerNetIds.Contains(player))
                         continue;
@@ -142,8 +141,6 @@ namespace Content.Server.GameTicking
 
             var spawnableStations = GetSpawnableStations();
             var assignedJobs = _stationJobs.AssignJobs(profiles, spawnableStations);
-
-            _stationJobs.AssignOverflowJobs(ref assignedJobs, playerNetIds, profiles, spawnableStations);
 
             // Calculate extended access for stations.
             var stationJobCounts = spawnableStations.ToDictionary(e => e, _ => 0);
@@ -171,25 +168,17 @@ namespace Content.Server.GameTicking
                 if (job == null)
                     continue;
 
-                var playerSession = _playerManager.GetSessionById(player);
-
                 // Select a profile for the player
                 var playerPrefs = _preferencesManager.GetPreferences(player);
                 var playerProfiles = playerPrefs.GetAllEnabledProfilesForJob(job.Value);
-                var filteredPlayerProfiles = playerProfiles.Values.AsEnumerable(); // QB edit: preserve branch spawn behavior while still allowing antag/profile compatibility filtering.
-
-                // If the player is preselected for antags, filter out profiles that aren't requesting these antags.
-                var antags = _antagSelection.GetPreSelectedAntags(playerSession);
-                if (antags.Count > 0)
-                {
-                    // For each antag definition, make sure that at least one of the AntagPrototypes is in
-                    // the character's preferences.
-                    foreach (var antagSet in antags)
-                    {
-                        filteredPlayerProfiles =
-                            filteredPlayerProfiles.Where(profile => antagSet.Overlaps(profile.AntagPreferences));
-                    }
-                }
+                var filteredPlayerProfiles = playerProfiles.Values.Where(profile =>
+                    JobRequirements.TryRequirementsMet(job.Value,
+                        null,
+                        out _,
+                        EntityManager,
+                        _prototypeManager,
+                        profile)
+                    );
 
                 var finalPlayerProfiles = filteredPlayerProfiles.ToList();
                 if (finalPlayerProfiles.Count == 0)
@@ -197,7 +186,7 @@ namespace Content.Server.GameTicking
 
                 var profile = _robustRandom.Pick(finalPlayerProfiles.ToList());
 
-                SpawnPlayer(playerSession, profile, station, job, false);
+                SpawnPlayer(_playerManager.GetSessionById(player), profile, station, job, false);
             }
 
             RefreshLateJoinAllowed();
@@ -215,29 +204,23 @@ namespace Content.Server.GameTicking
             bool lateJoin = true,
             bool silent = false)
         {
-            var character = GetPlayerProfile(player);
-
             var jobBans = _banManager.GetJobBans(player.UserId);
-            if (jobId != null && jobBans is not null && jobBans.Contains(jobId)) // QB edit: a null/empty ban set must not silently reject a valid latejoin.
+            if (jobBans == null || jobId != null && jobBans.Contains(jobId))
                 return;
 
             if (jobId != null)
             {
-                if (!_prototypeManager.TryIndex<JobPrototype>(jobId, out var requestedJob))
-                    return;
-
-                var disallowed = new HashSet<ProtoId<JobPrototype>>();
-                var disallowedEvent = new GetDisallowedJobsEvent(player, disallowed);
-                RaiseLocalEvent(ref disallowedEvent);
-                if (disallowed.Contains(new ProtoId<JobPrototype>(requestedJob.ID)))
+                var ev = new IsJobAllowedEvent(player, new ProtoId<JobPrototype>(jobId));
+                RaiseLocalEvent(ref ev);
+                if (ev.Cancelled)
                     return;
             }
 
-            SpawnPlayer(player, character, station, jobId, lateJoin, silent);
+            SpawnPlayer(player, null, station, jobId, lateJoin, silent);
         }
 
         private void SpawnPlayer(ICommonSession player,
-            HumanoidCharacterProfile character,
+            HumanoidCharacterProfile? character,
             EntityUid station,
             string? jobId = null,
             bool lateJoin = true,
@@ -306,6 +289,19 @@ namespace Content.Server.GameTicking
                 return;
             }
 
+            // Job has been selected concretely, let's make sure the character profile is concrete
+            character ??= playerPreferences.SelectProfileForJob(jobId);
+            if (character == null)
+            {
+                if (!LobbyEnabled)
+                {
+                    JoinAsObserver(player);
+                }
+                _chatManager.DispatchServerMessage(player,
+                    Loc.GetString("game-ticker-player-no-character-for-job-available-when-joining", ("job", jobId)));
+                return;
+            }
+
             PlayerJoinGame(player, silent);
 
             var data = player.ContentData();
@@ -339,7 +335,7 @@ namespace Content.Server.GameTicking
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
-                        null,
+                        playDefaultSound: false,
                         colorOverride: Color.Gold);
                 }
                 else
@@ -350,7 +346,7 @@ namespace Content.Server.GameTicking
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
-                        null);
+                        playDefaultSound: false);
                 }
             }
 
@@ -432,11 +428,6 @@ namespace Content.Server.GameTicking
         /// <summary>
         /// Makes a player join into the game and spawn on a station
         /// </summary>
-        /// <remarks>
-        /// This is currently used by:
-        /// RespawnRuleSystem (for like deathmatch I think?)
-        /// Join Game command (late join)
-        /// </remarks>
         /// <param name="player">The player joining</param>
         /// <param name="profile">The humanoid profile they're spawning with</param>
         /// <param name="station">The station they're spawning on</param>
@@ -452,6 +443,7 @@ namespace Content.Server.GameTicking
 
             SpawnPlayer(player, profile, station, jobId, silent: silent);
         }
+
         /// <summary>
         /// Causes the given player to join the current game as observer ghost. See also <see cref="SpawnObserver"/>
         /// </summary>
@@ -478,7 +470,8 @@ namespace Content.Server.GameTicking
             Entity<MindComponent?>? mind = player.GetMind();
             if (mind == null)
             {
-                var name = GetPlayerProfile(player).Name;
+                // There is no selected character anymore, just use the player's name directly
+                var name = player.Name;
                 var (mindId, mindComp) = _mind.CreateMind(player.UserId, name);
                 mind = (mindId, mindComp);
                 _mind.SetUserId(mind.Value, player.UserId);
