@@ -24,6 +24,9 @@ namespace Content.Client.Lobby.UI;
 [GenerateTypedNameReferences]
 public sealed partial class CharacterPickerButton : ContainerButton
 {
+    private const string EnabledLoc = "character-setup-gui-character-picker-button-enabled-button";
+    private const string DisabledLoc = "character-setup-gui-character-picker-button-disabled-button";
+
     private IEntityManager _entManager;
 
     private EntityUid _previewDummy;
@@ -69,10 +72,10 @@ public sealed partial class CharacterPickerButton : ContainerButton
         }
 
         Pressed = isSelected;
-        DeleteButton.Visible = !isSelected;
 
         View.SetEntity(_previewDummy);
         DescriptionLabel.Text = description;
+        EnabledCheck.Text = Loc.GetString(EnabledCheck.Pressed ? EnabledLoc : DisabledLoc);
 
         foreach (var panel in new List<PanelContainer>
                      { EnabledCheckOutline, DeleteButtonOutline, ConfirmDeleteButtonOutline })
@@ -104,6 +107,7 @@ public sealed partial class CharacterPickerButton : ContainerButton
         EnabledCheck.OnToggled += args =>
         {
             OnEnableToggled?.Invoke(args.Pressed);
+            EnabledCheck.Text = Loc.GetString(args.Pressed ? EnabledLoc : DisabledLoc);
         };
     }
 
