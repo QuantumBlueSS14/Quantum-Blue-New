@@ -458,4 +458,39 @@ public sealed partial class AntagSelectionSystem
 
         return result;
     }
+
+    /// <summary>
+    /// Returns a list of AntagSelectionDefinitions that this session has been preselected for
+    /// </summary>
+    public List<AntagSelectionDefinition> GetPreSelectedAntagDefinitions(ICommonSession session)
+    {
+        var result = new List<AntagSelectionDefinition>();
+        var query = QueryAllRules();
+        while (query.MoveNext(out var uid, out var comp, out _))
+        {
+            if (HasComp<EndedGameRuleComponent>(uid))
+                continue;
+
+            foreach (var def in comp.Definitions)
+            {
+                if (comp.PreSelectedSessions.TryGetValue(def, out var set) && set.Contains(session))
+                    result.Add(def);
+            }
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Returns a list, each item being a set of AntagPrototype IDs for each Antag definition the session has been
+    /// preselected for. These entries can be compared to a HumanoidCharacterProfile's AntagPreferences.
+    /// </summary>
+    public List<HashSet<ProtoId<AntagPrototype>>> GetPreSelectedAntags(ICommonSession session)
+    {
+        var antagDefinitions = GetPreSelectedAntagDefinitions(session);
+
+        return antagDefinitions.Select(def =>
+            def.PrefRoles.Union(def.FallbackRoles).ToHashSet())
+            .ToList();
+    }
 }
