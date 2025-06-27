@@ -458,9 +458,15 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
     {
         _adminLogger.Add(LogType.AntagSelection, $"Start trying to make {session} become the antagonist: {ToPrettyString(ent)}");
 
-        if (!IsSessionValid(ent, session, def))
+        if (checkPref && !HasPrimaryAntagPreference(session, def, ent.Comp.SelectionTime))
         {
-            _adminLogger.Add(LogType.AntagSelection, $"{session} didn't have valid session"); // QB edit: preserve explicit admin-log reasoning when selection fails at the session gate.
+            _adminLogger.Add(LogType.AntagSelection, $"{session} didn't have antagonist preference for {ToPrettyString(ent)}");
+            return false;
+        }
+
+        if (!IsSessionValid(ent, session, def) || !IsEntityValid(session?.AttachedEntity, def))
+        {
+            _adminLogger.Add(LogType.AntagSelection, $"{session} didn't have valid session/entity for {ToPrettyString(ent)}"); // QB edit: preserve explicit admin-log reasoning when selection fails at validation gates.
             return false;
         }
 
@@ -645,12 +651,11 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
             if (ent.Comp.PreSelectedSessions.TryGetValue(def, out var preSelected) && preSelected.Contains(session))
                 continue;
 
-            // Add player to the appropriate antag pool
-            if (ValidAntagPreference(session, def.PrefRoles))
+            if (HasPrimaryAntagPreference(session, def, ent.Comp.SelectionTime))
             {
                 preferredList.Add(session);
             }
-            else if (ValidAntagPreference(session, def.FallbackRoles))
+            else if (HasFallbackAntagPreference(session, def, ent.Comp.SelectionTime))
             {
                 fallbackList.Add(session);
             }

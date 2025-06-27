@@ -111,5 +111,80 @@ namespace Content.Shared.Preferences
             var random = new System.Random();
             return pool.Count == 0 ? null : random.Pick(pool);
         }
+        /// <summary>
+        /// Get all enabled profiles asking for a job
+        /// </summary>
+        public Dictionary<int, HumanoidCharacterProfile> GetAllEnabledProfilesForJob(ProtoId<JobPrototype> job)
+        {
+            return GetAllProfilesForJobInternal(job, onlyEnabled: true);
+        }
+
+        /// <summary>
+        /// Get all profiles asking for a job
+        /// </summary>
+        public Dictionary<int, HumanoidCharacterProfile> GetAllProfilesForJob(ProtoId<JobPrototype> job)
+        {
+            return GetAllProfilesForJobInternal(job, onlyEnabled: false);
+        }
+
+        private Dictionary<int, HumanoidCharacterProfile> GetAllProfilesForJobInternal(ProtoId<JobPrototype> job, bool onlyEnabled)
+        {
+            var result = new Dictionary<int, HumanoidCharacterProfile>();
+            foreach (var (slot, profile) in Characters)
+            {
+                if (profile is not HumanoidCharacterProfile humanoid)
+                    continue;
+                if (onlyEnabled && !humanoid.Enabled)
+                    continue;
+                if (humanoid.JobPreferences.Contains(job))
+                    result.Add(slot, humanoid);
+            }
+
+            return result;
+        }
+
+
+        /// <summary>
+        /// Get any random enabled profile
+        /// </summary>
+        public HumanoidCharacterProfile? GetRandomEnabledProfile()
+        {
+            var random = IoCManager.Resolve<IRobustRandom>();
+            var pool = Characters.Values.Where(p => p is HumanoidCharacterProfile { Enabled: true }).ToList();
+            return pool.Count == 0 ? null : random.Pick(pool) as HumanoidCharacterProfile;
+        }
+
+        /// <summary>
+        /// Given an antag, return a random enabled character asking for this antag
+        /// </summary>
+        public HumanoidCharacterProfile? SelectProfileForAntag(ICollection<ProtoId<AntagPrototype>> antags)
+        {
+            var pool = new HashSet<HumanoidCharacterProfile>();
+            foreach (var profile in Characters.Values)
+            {
+                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
+                    continue;
+                foreach (var antag in antags)
+                {
+                    if (humanoid.AntagPreferences.Contains(antag))
+                        pool.Add(humanoid);
+                }
+            }
+
+            var random = IoCManager.Resolve<IRobustRandom>();
+            return pool.Count == 0 ? null : random.Pick(pool);
+        }
+
+        /// <summary>
+        /// Return true if the profile in the slot exists and is a HumanoidCharacterProfile
+        /// </summary>
+        public bool TryGetHumanoidInSlot(int slot, [NotNullWhen(true)] out HumanoidCharacterProfile? humanoid)
+        {
+            humanoid = null;
+            if (!Characters.TryGetValue(slot, out var profile))
+                return false;
+            humanoid = profile as HumanoidCharacterProfile;
+            return humanoid != null;
+        }
     }
 }

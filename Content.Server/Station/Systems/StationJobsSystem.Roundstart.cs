@@ -5,6 +5,7 @@ using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
 using Content.Server.Station.Components;
 using Content.Server.Station.Events;
+using Content.Shared.Antag;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Server.Player;
@@ -359,10 +360,13 @@ public sealed partial class StationJobsSystem
 
         foreach (var (player, profile) in profiles)
         {
+            if (!_player.TryGetSessionById(player, out var session))
+                continue;
+
             var roleBans = _banManager.GetJobBans(player);
-            var antagBlocked = _antag.GetPreSelectedAntagSessions();
-            var hasSession = _player.TryGetSessionById(player, out var session);
-            var isPreselectedAntag = hasSession && antagBlocked.Contains(session!);
+            var isPreselectedAntag = _antag.GetPreSelectedAntagSessions().Contains(session);
+            var preselectedAntags = _antag.GetPreSelectedAntagDefinitions(session);
+
             if (onlyAntags && !isPreselectedAntag)
                 continue;
             var playerJobs = profile.JobPriorities; // QB edit: tests and assignment callers in this branch provide profile/job inputs directly via AssignJobs.
@@ -382,7 +386,14 @@ public sealed partial class StationJobsSystem
                 if (!_prototypeManager.Resolve(jobId, out var job))
                     continue;
 
-                if (!job.CanBeAntag && (!hasSession || isPreselectedAntag))
+                // If we're an antag but the job can't be an antag, don't allow this job
+                if (isPreselectedAntag && !job.CanBeAntag)
+                    continue;
+
+                // If we're an antag, make sure that we have a character that is eligible to
+                // become all of our selected antags
+                if (isPreselectedAntag && !preselectedAntags.All(antag =>
+                        _antag.HasPrimaryAntagPreference(session, antag, AntagSelectionTime.IntraPlayerSpawn, job)))
                     continue;
 
                 if (weight is not null && job.Weight != weight.Value)
