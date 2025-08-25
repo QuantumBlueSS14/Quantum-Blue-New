@@ -104,16 +104,19 @@ public sealed partial class StationJobsSystem
         // Ok so the general algorithm:
         // We start with the highest weight jobs and work our way down. We filter jobs by weight when selecting as well.
         // Weight > Priority > Station.
-        foreach (var weight in _orderedWeights)
+        // QB edit: run an antag-only pass first so pre-selected antagonists get first assignment priority.
+        foreach (var antagonistPass in new[] { true, false })
         {
-            for (var selectedPriority = JobPriority.High; selectedPriority > JobPriority.Never; selectedPriority--)
+            foreach (var weight in _orderedWeights)
             {
-                if (profiles.Count == 0)
-                    goto endFunc;
+                for (var selectedPriority = JobPriority.High; selectedPriority > JobPriority.Never; selectedPriority--)
+                {
+                    if (profiles.Count == 0)
+                        goto endFunc;
 
-                var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles.Keys);
+                    var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles.Keys, onlyAntags: antagonistPass);
 
-                var optionsRemaining = 0;
+                    var optionsRemaining = 0;
 
                 // Assigns a player to the given station, updating all the bookkeeping while at it.
                 void AssignPlayer(NetUserId player, ProtoId<JobPrototype> job, EntityUid station)
@@ -262,7 +265,8 @@ public sealed partial class StationJobsSystem
                         }
                     } while (priorCount != stationShares[station]);
                 }
-                done: ;
+                    done: ;
+                }
             }
         }
 
@@ -343,8 +347,9 @@ public sealed partial class StationJobsSystem
     /// <param name="weight">Weight to find, if any.</param>
     /// <param name="selectedPriority">Priority to find, if any.</param>
     /// <param name="profiles">Profiles to look in.</param>
+    /// <param name="onlyAntags">If true, only include players preselected as antagonists.</param>
     /// <returns>Players and a list of their matching jobs.</returns>
-    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(int? weight, JobPriority? selectedPriority, ICollection<NetUserId> players)
+    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(int? weight, JobPriority? selectedPriority, ICollection<NetUserId> players, bool onlyAntags = false)
     {
         var outputDict = new Dictionary<NetUserId, List<string>>(players.Count);
 
@@ -352,6 +357,10 @@ public sealed partial class StationJobsSystem
         {
             var roleBans = _banManager.GetJobBans(player);
             var antagBlocked = _antag.GetPreSelectedAntagSessions();
+            var hasSession = _player.TryGetSessionById(player, out var session);
+            var isPreselectedAntag = hasSession && antagBlocked.Contains(session);
+            if (onlyAntags && !isPreselectedAntag)
+                continue;
             var playerPrefs = _serverPreferences.GetPreferences(player);
             var playerJobs = playerPrefs.JobPriorities;
             var allCharacterJobs = new HashSet<ProtoId<JobPrototype>>();
@@ -387,7 +396,7 @@ public sealed partial class StationJobsSystem
                 if (!_prototypeManager.Resolve(jobId, out var job))
                     continue;
 
-                if (!job.CanBeAntag && (!_player.TryGetSessionById(player, out var session) || antagBlocked.Contains(session)))
+                if (!job.CanBeAntag && (!hasSession || isPreselectedAntag))
                     continue;
 
                 if (weight is not null && job.Weight != weight.Value)
