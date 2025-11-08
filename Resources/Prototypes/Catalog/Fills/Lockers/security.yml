@@ -50,6 +50,7 @@
     - id: TicketPad #imp special
     - id: BoxToken #imp
     - id: BaseSeclinkRadio #imp
+    - id: SecBreachingHammer # qb
 
 - type: entityTable
   id: FillLockerWardenHarduit
