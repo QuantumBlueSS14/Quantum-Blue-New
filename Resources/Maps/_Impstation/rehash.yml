@@ -94410,23 +94410,6 @@ entities:
     - type: Transform
       pos: 1.2603917,-47.619095
       parent: 2
-- proto: PlushieSorb
-  entities:
-  - uid: 10276
-    components:
-    - type: Transform
-      pos: 25.442972,43.5328
-      parent: 2
-  - uid: 10277
-    components:
-    - type: Transform
-      pos: 25.661722,43.298424
-      parent: 2
-  - uid: 10278
-    components:
-    - type: Transform
-      pos: 25.817972,43.610924
-      parent: 2
 - proto: PlushieTeddyBearRecolorableRandom
   entities:
   - uid: 10279
