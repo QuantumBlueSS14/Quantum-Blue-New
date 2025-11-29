@@ -24,6 +24,28 @@
       types:
         Blunt: 7.5
         Structural: 10
+  # make throwable -QB
+  - type: LandAtCursor
+  - type: StaminaDamageOnHit
+    damage: 20
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          vertices:
+            - -0.40,-0.30
+            - -0.30,-0.40
+            - 0.40,0.30
+            - 0.30,0.40
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: DamageOtherOnHit
+    meleeDamageMultiplier: 1.5 # matt wanted this like fireaxe
+    staminaCost: 20
+  # end make throwable
   - type: Tool
     qualities:
       - Prying
