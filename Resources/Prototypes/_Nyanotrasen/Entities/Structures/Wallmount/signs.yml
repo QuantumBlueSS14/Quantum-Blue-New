@@ -1,0 +1,9 @@
+- type: entity
+  parent: BaseSign
+  id: SignDojo
+  name: dojo sign
+  description: A sign indicating a place with discipline and tatami mats.
+  components:
+  - type: Sprite
+    sprite: _Nyanotrasen/Structures/Wallmounts/doujou.rsi
+    state: doujousign
