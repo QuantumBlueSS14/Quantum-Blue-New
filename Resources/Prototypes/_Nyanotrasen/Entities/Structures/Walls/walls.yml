@@ -25,13 +25,11 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          path: /Audio/Effects/metalbreak3.ogg
       - !type:ChangeConstructionNodeBehavior
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    destroySound:
-      path: /Audio/Effects/metalbreak.ogg
   - type: IconSmooth
     key: walls
     base: paperwall
