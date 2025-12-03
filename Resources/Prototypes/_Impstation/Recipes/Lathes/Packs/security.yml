@@ -54,6 +54,8 @@
   - MagazinePistolP2ExtendedEmpty
   - MagazinePistolP2Incendiary
   - MagazinePistolP2Uranium
+  - MagazineLightRifleUranium #qb, adding other .30 mags
+  - MagazineLightRifleIncendiary #qb, adding other .30 mags
 
 - type: latheRecipePack
   id: SecurityWeaponsImp

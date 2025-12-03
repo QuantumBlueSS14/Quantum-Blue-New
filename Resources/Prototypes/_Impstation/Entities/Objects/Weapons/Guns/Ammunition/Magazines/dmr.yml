@@ -1,6 +1,6 @@
 - type: entity
   id: MagazineDMR
-  name: "magazine (.30 rifle)"
+  name: "DMR magazine (.30 rifle)" #qb, distinguishing this and the other .30 magazine
   description: A 20-round .30 rifle DMR magazine, marked as live-fire ammo.
   parent: BaseMagazineLightRifle
   components:
@@ -30,7 +30,7 @@
 
 - type: entity
   id: MagazineDMREmpty
-  name: "magazine (.30 rifle any)"
+  name: "DMR magazine (.30 rifle any)" #qb, distinguishing this and the other .30 magazine
   description: A 20-round .30 rifle DMR magazine with no apparent markings.
   suffix: empty
   parent: MagazineDMR
@@ -52,7 +52,7 @@
 
 - type: entity
   id: MagazineDMRPractice
-  name: "magazine (.30 rifle practice)"
+  name: "DMR magazine (.30 rifle practice)" #qb, distinguishing this and the other .30 magazine
   description: A 20-round .30 rifle DMR magazine, marked as practice ammo.
   parent: MagazineDMR
   components:
@@ -77,7 +77,7 @@
 
 - type: entity
   id: MagazineDMRUranium
-  name: "magazine (.30 rifle uranium)"
+  name: "DMR magazine (.30 rifle uranium)" #qb, distinguishing this and the other .30 magazine
   description: A 20-round .30 rifle DMR magazine, marked as uranium ammo.
   parent: MagazineDMR
   components:
@@ -102,7 +102,7 @@
 
 - type: entity
   id: MagazineDMRIncendiary
-  name: "magazine (.30 rifle incendiary)"
+  name: "DMR magazine (.30 rifle incendiary)" # qb, distinguishing this and the other .30 magazine
   description: A 20-round .30 rifle DMR magazine, marked as incendiary ammo.
   parent: MagazineDMR
   components:

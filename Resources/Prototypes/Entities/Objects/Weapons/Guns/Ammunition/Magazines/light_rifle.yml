@@ -2,7 +2,7 @@
 - type: entity
   id: BaseMagazineLightRifle
   name: "magazine (.30 rifle)"
-  description: A 23-round .30 rifle magazine. #imp
+  description: A 30-round .30 rifle magazine. #qb, makin em 30 rounders
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
@@ -15,7 +15,7 @@
       tags:
         - CartridgeLightRifle
     proto: CartridgeLightRifle
-    capacity: 23 #imp
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -63,7 +63,7 @@
   id: MagazineLightRifle
   name: "magazine (.30 rifle)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as live-fire ammo. #imp
+  description: A 30-round .30 rifle magazine, marked as live-fire ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifle
@@ -89,7 +89,7 @@
   name: "magazine (.30 rifle any)"
   suffix: empty
   parent: MagazineLightRifle
-  description: A 23-round .30 rifle magazine with no apparent markings. #imp
+  description: A 30-round .30 rifle magazine with no apparent markings. #qb, makin em 30 rounders
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -110,7 +110,7 @@
   id: MagazineLightRiflePractice
   name: "magazine (.30 rifle practice)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as practice ammo. #imp
+  description: A 30-round .30 rifle magazine, marked as practice ammo. #qb, makin em 30 rounders
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -137,7 +137,7 @@
   id: MagazineLightRifleUranium
   name: "magazine (.30 rifle uranium)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as uranium ammo. #imp
+  description: A 30-round .30 rifle magazine, marked as uranium ammo. #qb, makin em 30 rounders
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium
@@ -164,7 +164,7 @@
   id: MagazineLightRifleIncendiary
   name: "magazine (.30 rifle incendiary)"
   parent: MagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as incendiary ammo. #imp
+  description: A 30-round .30 rifle magazine, marked as incendiary ammo. #qb, makin em 30 rounders
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
