@@ -40,7 +40,7 @@ namespace Content.Server.Forensics
             SubscribeLocalEvent<FingerprintComponent, MapInitEvent>(OnFingerprintInit, after: new[] { typeof(BloodstreamSystem) });
             // The solution entities are spawned on MapInit as well, so we have to wait for that to be able to set the DNA in the bloodstream correctly without ResolveSolution failing
             SubscribeLocalEvent<DnaComponent, MapInitEvent>(OnDNAInit, after: new[] { typeof(BloodstreamSystem) });
-            SubscribeLocalEvent<FiberComponent, MapInitEvent>(OnFiberInit); // DeltaV #1455 - unique glove fibers
+            SubscribeLocalEvent<FiberComponent, MapInitEvent>(OnFiberInit, after: new[] { typeof(BloodstreamSystem) }); // DeltaV #1455 - unique glove fibers
 
 
             SubscribeLocalEvent<ForensicsComponent, GibbedBeforeDeletionEvent>(OnBeingGibbed);
@@ -72,9 +72,9 @@ namespace Content.Server.Forensics
         }
 
         // DeltaV #1455 - unique glove fibers
-        private void OnFiberInit(EntityUid uid, FiberComponent component, MapInitEvent args)
+        private void OnFiberInit(Entity<FiberComponent> ent, ref MapInitEvent args)
         {
-            component.Fiberprint = GenerateFingerprint(length: 7);
+            ent.Comp.Fiberprint = GenerateFingerprint(length: 7);
         }
         // End of DeltaV code
 
@@ -330,8 +330,9 @@ namespace Content.Server.Forensics
                 }
                 // End of DeltaV code
 
-            if (TryComp<FingerprintComponent>(user, out var fingerprint) && CanAccessFingerprint(user, out _))
-                component.Fingerprints.Add(fingerprint.Fingerprint ?? "");
+                if (TryComp<FingerprintComponent>(user, out var fingerprint) && CanAccessFingerprint(user, out _))
+                    component.Fingerprints.Add(fingerprint.Fingerprint ?? "");
+            }
         }
 
         // TODO: Delete this. A lot of systems are manually raising this method event instead of calling the identical <see cref="TransferDna"/> method.
