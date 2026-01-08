@@ -39,22 +39,22 @@
       path: alerts/delta.ogg
     - id: alertEpsilon # The station has been terminated, good luck survivors!
       path: alerts/epsilon.ogg
-    - id: alertPink # Please don't form a union
-      path: alerts/pink.ogg
-    - id: alertAmber # It's Dino Wars
-      path: alerts/amber.ogg
-    - id: alertBurgundy # Don't move!
-      path: alerts/burgundy.ogg
-    - id: khaki # oh fuck
-      path: alerts/khaki.ogg
-    - id: alertDenim # It's clown time!
-      path: alerts/denim.ogg
-    - id: alertChartreuse # Wha?
-      path: alerts/chartreuse.ogg
+#    - id: alertPink # Please don't form a union
+#      path: alerts/pink.ogg
+#    - id: alertAmber # It's Dino Wars
+#      path: alerts/amber.ogg
+#    - id: alertBurgundy # Don't move!
+#      path: alerts/burgundy.ogg
+#    - id: khaki # oh fuck
+#      path: alerts/khaki.ogg
+#    - id: alertDenim # It's clown time!
+#      path: alerts/denim.ogg
+#    - id: alertChartreuse # Wha?
+#      path: alerts/chartreuse.ogg
     - id: alertWhite # There's ghosts! Not to be confused with the one from DV.
       path: alerts/white.ogg
-    - id: alertPuce # don't eat anything
-      path: alerts/puce.ogg
+#    - id: alertPuce # don't eat anything
+#      path: alerts/puce.ogg
 
     # Events
     ## Wizard's Den
