@@ -1091,8 +1091,8 @@
       types:
         Heat: 1500 #dont map this
     popupText: powered-light-component-burn-hand
-  - type: Contraband
-    severity: TierXContraband
+#  - type: Contraband # QB: No more valid vision
+#    severity: TierXContraband
   - type: Destructible
     thresholds:
     - trigger:

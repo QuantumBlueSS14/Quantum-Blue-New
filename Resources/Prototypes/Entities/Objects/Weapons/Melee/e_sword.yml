@@ -214,8 +214,8 @@
       malus: 0.4
     - type: Execution
       doAfterDuration: 4.0
-    - type: Contraband
-      severity: Syndicate
+#    - type: Contraband #QB No more valid vision
+#      severity: Syndicate
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger.rsi
     layers:

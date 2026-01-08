@@ -1,10 +1,10 @@
 - type: entity
   id: BaseMagicContraband
   abstract: true
-  components:
-  - type: Contraband
-    severity: Magic
-    allowedDepartments: []
+#  components:
+#  - type: Contraband
+#    severity: Magic
+#    allowedDepartments: []
 
 - type: contrabandSeverity
   id: Magic

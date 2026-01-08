@@ -184,7 +184,7 @@
     enabled: true
     radius: 5
     color: "#3db83b"
-  - type: Contraband
+#  - type: Contraband #QB: No more valid vision/contra info
   - type: StaticPrice
     price: 100
   - type: GasTank # imp - someone said this should spit out an extremely small amount of plasma. so here you go

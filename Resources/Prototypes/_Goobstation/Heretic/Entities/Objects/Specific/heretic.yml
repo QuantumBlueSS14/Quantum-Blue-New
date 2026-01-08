@@ -37,8 +37,8 @@
   - type: ComponentToggler
     components:
     - type: HereticMagicItem
-    - type: Contraband
-      severity: TierXContraband
+#    - type: Contraband QB: No more valid vision
+#      severity: TierXContraband
     - type: Paper #imp heretic book now writeable
       contentSize: 12000
     - type: UserInterface
