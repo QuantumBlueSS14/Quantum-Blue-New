@@ -8,17 +8,17 @@
   - Decapoid # imp
   - Diona
   - Dwarf
+  - Gastropoid # imp
   - Gray # imp
   - Human
   - Kodepiia # imp
   - Moth
   - Reptilian
   - SlimePerson # imp
-  - Snail # imp
   - Thaven # imp
   - Ungu # imp
   - Vox
-  #- Vulpkanin # imp, disabled roundstart
+  - Vulpkanin # imp, disabled roundstart
 
 - type: guideEntry
   id: Arachnid

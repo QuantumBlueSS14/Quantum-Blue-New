@@ -51,6 +51,8 @@
     - id: BoxToken #imp
     - id: BaseSeclinkRadio #imp
     - id: SecBreachingHammer # qb
+    - id: TckutFlatpack # imp
+    - id: Multitool
 
 - type: entityTable
   id: FillLockerWardenHarduit
