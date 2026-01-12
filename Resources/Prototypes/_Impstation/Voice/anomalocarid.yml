@@ -60,3 +60,5 @@
       path: /Audio/_Impstation/Voice/Anomalocarid/anomalocarid_bubbles.ogg
     Pop:
       collection: Pops
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
