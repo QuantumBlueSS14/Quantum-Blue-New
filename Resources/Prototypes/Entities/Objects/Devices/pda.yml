@@ -1049,9 +1049,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-deathsquadron
+        pda-centcom # QB
   - type: Icon
-    state: pda-deathsquadron
+    state: pda-centcom # QB
   - type: PdaBorderColor
     borderColor: "#640202"
     accentHColor: "#06064B"
@@ -1175,9 +1175,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-operative
+       pda-syndi # QB
   - type: Icon
-    state: pda-syndi-operative
+    state: pda-syndi # QB
 
 - type: entity
   parent: [ SyndiOperativePDA, BaseSyndicateContraband ]
@@ -1191,9 +1191,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-corpsman
+       pda-syndi-agent # QB
   - type: Icon
-    state: pda-syndi-corpsman
+    state: pda-syndi-agent # QB
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -1214,9 +1214,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-commander
+       pda-syndi # QB
   - type: Icon
-    state: pda-syndi-commander
+    state: pda-syndi # QB
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1319,9 +1319,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-cburn
+        pda-centcom #QB
   - type: Icon
-    state: pda-cburn
+    state: pda-centcom #QB
   # imp edit end
 
 - type: entity

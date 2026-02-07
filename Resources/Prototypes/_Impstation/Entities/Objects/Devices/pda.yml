@@ -274,11 +274,11 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-cargo
+        pda-mailcarrier # QB
   - type: PdaBorderColor
     borderColor: "#e39751"
   - type: Icon
-    state: pda-cargo
+    state: pda-mailcarrier # QB
   - type: CartridgeLoader # DeltaV - MailMetrics courier tracker
     preinstalled:
     - CrewManifestCartridge
