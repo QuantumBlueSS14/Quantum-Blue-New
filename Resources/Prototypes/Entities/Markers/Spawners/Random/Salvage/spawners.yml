@@ -414,7 +414,7 @@
       - !type:AllSelector
         weight: 1
         children:
-        #- id: LandMineExplosive #imp. die
+        - id: LandMineExplosive # QB - Matt is evil
         - !type:NestedSelector # what's that thing underneath the scrap?
           prob: 0.33
           tableId: SalvageScrapSpawnerCommon
