@@ -1579,12 +1579,12 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-seniorcourier
+       pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
   - type: PdaBorderColor
     borderColor: "#e39751"
     accentVColor: "#DFDFDF"
   - type: Icon
-    state: pda-seniorcourier
+    state: pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
 
 - type: entity
   parent: [ BaseMajorContraband, SyndiPDA ]
