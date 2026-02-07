@@ -593,7 +593,7 @@
     state: pda-bartender
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA # QB - use DV PDA resprite; there's no resprited wide PDA. Was BaseWidePDA
   id: LibrarianPDA
   name: librarian PDA
   description: Smells like books.
