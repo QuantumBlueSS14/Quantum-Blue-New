@@ -341,7 +341,7 @@ public sealed partial class SalvageSystem
             if (offering is AsteroidOffering or DebrisOffering)
             {
                 _metaData.SetEntityName(mapChild, Loc.GetString("salvage-asteroid-name"));
-                _gravity.EnableGravity(mapChild);
+                // _gravity.EnableGravity(mapChild); // QB - no gravity on debris
             }
         }
 
