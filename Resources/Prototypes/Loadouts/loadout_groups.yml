@@ -472,6 +472,7 @@
   - ChaplainMask
   - ChaplainMaskClayshaper # imp
   - ChaplainMaskFire # imp
+  - ChaplainClown # imp
 
 - type: loadoutGroup
   id: ChaplainJumpsuit

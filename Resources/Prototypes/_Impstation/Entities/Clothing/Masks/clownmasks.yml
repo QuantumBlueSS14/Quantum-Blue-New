@@ -98,7 +98,7 @@
 #captain clown mask
 #admeme
 
-# QB EDIT START - noclown
+# QB EDIT START - noclown, chaplain can stay
 # - type: entity
 #   parent: ClothingMaskClownBase
 #   id: ClothingMaskClownChameleonCaptain
@@ -299,103 +299,103 @@
 
 # #chaplain clown mask
 
-# - type: entity
-#   parent: ClothingMaskClownBase
-#   id: ClothingMaskClownChameleonChaplain
-#   abstract: true
-#   name: chaplain clown mask and wig
-#   description: A clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     sprite: _Impstation/Clothing/Mask/clown_chaplain.rsi
-#   - type: Clothing
-#     sprite: _Impstation/Clothing/Mask/clown_chaplain.rsi
-#   - type: ChameleonClothing
-#     slot: mask
-#     requireTag: ClownMaskChaplain
-#     AffectedByEmp: False
-#   - type: UserInterface
-#     interfaces:
-#       enum.ChameleonUiKey.Key:
-#         type: ChameleonBoundUserInterface
-#   - type: Tag
-#     tags:
-#     - ClownMask
-#     - HamsterWearable
-#     - WhitelistChameleon
-#     - ClownMaskChaplain
+- type: entity
+  parent: ClothingMaskClownBase
+  id: ClothingMaskClownChameleonChaplain
+  abstract: true
+  name: chaplain clown mask and wig
+  description: A clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/Mask/clown_chaplain.rsi
+  - type: Clothing
+    sprite: _Impstation/Clothing/Mask/clown_chaplain.rsi
+  - type: ChameleonClothing
+    slot: mask
+    requireTag: ClownMaskChaplain
+    AffectedByEmp: False
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: Tag
+    tags:
+    - ClownMask
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClownMaskChaplain
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplain
-#   components:
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplain
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplain
+  components:
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplain
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplainWigless
-#   name: chaplain clown mask
-#   description: A clown mask made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     state: icon-wigless
-#   - type: Clothing
-#     equippedPrefix: wigless
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplainWigless
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplainWigless
+  name: chaplain clown mask
+  description: A clown mask made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    state: icon-wigless
+  - type: Clothing
+    equippedPrefix: wigless
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplainWigless
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplainSmile
-#   name: smiling chaplain clown mask and wig
-#   description: A smiling clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     state: icon-smile
-#   - type: Clothing
-#     equippedPrefix: smile
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplainSmile
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplainSmile
+  name: smiling chaplain clown mask and wig
+  description: A smiling clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    state: icon-smile
+  - type: Clothing
+    equippedPrefix: smile
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplainSmile
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplainSmileWigless
-#   name: smiling chaplain clown mask
-#   description: A smiling clown mask made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     state: icon-smilewigless
-#   - type: Clothing
-#     equippedPrefix: smilewigless
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplainSmileWigless
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplainSmileWigless
+  name: smiling chaplain clown mask
+  description: A smiling clown mask made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    state: icon-smilewigless
+  - type: Clothing
+    equippedPrefix: smilewigless
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplainSmileWigless
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplainBignose
-#   name: big nose chaplain clown mask and wig
-#   description: A big nosed clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     state: icon-bignose
-#   - type: Clothing
-#     equippedPrefix: bignose
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplainBignose
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplainBignose
+  name: big nose chaplain clown mask and wig
+  description: A big nosed clown mask and wig made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    state: icon-bignose
+  - type: Clothing
+    equippedPrefix: bignose
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplainBignose
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonChaplain
-#   id: ClothingMaskClownChaplainBignoseWigless
-#   name: big nose chaplain clown mask
-#   description: A big nosed clown mask made in the image of the Honkmother. For clowns of the cloth.
-#   components:
-#   - type: Sprite
-#     state: icon-bignosewigless
-#   - type: Clothing
-#     equippedPrefix: bignosewigless
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownChaplainBignoseWigless
+- type: entity
+  parent: ClothingMaskClownChameleonChaplain
+  id: ClothingMaskClownChaplainBignoseWigless
+  name: big nose chaplain clown mask
+  description: A big nosed clown mask made in the image of the Honkmother. For clowns of the cloth.
+  components:
+  - type: Sprite
+    state: icon-bignosewigless
+  - type: Clothing
+    equippedPrefix: bignosewigless
+  - type: ChameleonClothing
+    default: ClothingMaskClownChaplainBignoseWigless
 
 # # engineer clown mask
 

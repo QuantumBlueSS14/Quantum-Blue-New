@@ -72,15 +72,15 @@
 - type: Tag
   id: ClownMaskBasic
 
-# QB EDIT START
+# QB EDIT START - noclown, chaplain is fine
 # - type: Tag
 #   id: ClownMaskCargo
 
 # - type: Tag
 #   id: ClownMaskCaptain
 
-# - type: Tag
-#   id: ClownMaskChaplain
+- type: Tag
+  id: ClownMaskChaplain
 
 # - type: Tag
 #   id: ClownMaskEngineer
