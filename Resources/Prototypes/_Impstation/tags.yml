@@ -69,10 +69,10 @@
 - type: Tag
   id: ClothFood
 
-# QB EDIT START
-# - type: Tag
-#   id: ClownMaskBasic
+- type: Tag
+  id: ClownMaskBasic
 
+# QB EDIT START
 # - type: Tag
 #   id: ClownMaskCargo
 
