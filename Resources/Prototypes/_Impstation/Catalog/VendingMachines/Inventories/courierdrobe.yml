@@ -15,5 +15,5 @@
     ClothingNeckScarfStripedBrown: 3
     ClothingNeckScarfStripedBlue: 3
     ClothingShoesBootsWinterCourier: 2
-  contrabandInventory:
-    ClothingMaskClownCargo: 1
+  # contrabandInventory: # QB
+  #   ClothingMaskClownCargo: 1 # QB
