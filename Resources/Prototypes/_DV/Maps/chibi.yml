@@ -1,10 +1,9 @@
 - type: gameMap
   id: Chibi
   mapName: 'Chibi'
-  mapPath: /Maps/chibi.yml
+  mapPath: /Maps/_DV/chibi.yml
   minPlayers: 0
-  maxPlayers: 4
-  maxPlayers: 8
+  maxPlayers: 10
   stations:
     Chibi:
       stationProto: StandardNanotrasenStation

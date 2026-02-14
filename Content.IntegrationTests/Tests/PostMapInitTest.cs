@@ -93,6 +93,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Impstation/xeno.yml", // Contains PTK-800 "Matter Dematerializer"
             "/Maps/_Impstation/eclipse.yml", // Contains PTK-800 "Matter Dematerializer", LSE-400c "Svalinn machine gun"
             "/Maps/_Impstation/monarch.yml", // Contains ship cannons
+            "/Maps/_DV/chibi.yml", // Contains command toys like the Handheld Crew Monitor
 
 
             // Shuttles
