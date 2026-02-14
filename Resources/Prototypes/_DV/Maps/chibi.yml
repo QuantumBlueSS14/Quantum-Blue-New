@@ -32,7 +32,6 @@
             Chemist: [ 1, 1 ]
             MedicalDoctor: [ 1, 1 ]
             MedicalIntern: [ 1, 1 ]
-            Paramedic: [ 1, 1 ]
           #science
             ResearchAssistant: [ 1, 1 ]
             Scientist: [ 1, 1 ]
@@ -45,5 +44,6 @@
             CargoTechnician: [ 1, 1 ]
             CargoAssistant: [ 1, 1 ]
             SalvageSpecialist: [ 1, 1 ]
+            Courier: [ 1, 1 ]
           #civilian
             Passenger: [ -1, -1 ]
