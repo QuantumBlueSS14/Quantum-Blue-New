@@ -151,7 +151,7 @@
   - type: Icon
     sprite: _QB/Structures/Walls/steelwoodwall.rsi # QB
   - type: IconSmooth
-    key: walls
+    key: woods # QB
     base: steelwoodwall
   - type: Construction
     graph: Girder
@@ -193,7 +193,7 @@
   - type: Icon
     sprite: _QB/Structures/Walls/reinforcedsteelwoodwall.rsi # QB
   - type: IconSmooth
-    key: walls
+    key: woods # QB
     base: reinforcedsteelwoodwall
   - type: Construction
     graph: Girder

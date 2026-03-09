@@ -60,7 +60,7 @@
     sprite: _QB/Structures/Windows/plastitanium_window.rsi # QB
     state: full
   - type: IconSmooth
-    key: windows
+    key: plastitanium # QB
     base: ptwindow
   - type: Airtight
   - type: Fixtures
@@ -145,7 +145,7 @@
     state: state0
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: plastitanium # QB
     base: state
   - type: Fixtures
     fixtures:

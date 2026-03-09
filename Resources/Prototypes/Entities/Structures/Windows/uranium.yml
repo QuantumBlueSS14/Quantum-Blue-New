@@ -35,6 +35,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: solid # QB
     base: uwindow
   - type: Construction
     graph: Window
@@ -123,7 +124,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
     sprite: _QB/Structures/Windows/uranium_window.rsi # QB

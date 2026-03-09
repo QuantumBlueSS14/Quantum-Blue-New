@@ -111,7 +111,7 @@
     sprite: _QB/Structures/Walls/clockwork_grille.rsi
     state: full
   - type: IconSmooth
-    key: walls
+    key: clock_grille
     base: grille # End of QB changes - Iconsmoothening
   - type: Construction
     graph: ClockGrille
@@ -216,7 +216,7 @@
     node: grilleDiagonal
   - type: IconSmooth # IconSmooth added by QB
     mode: Diagonal
-    key: walls
+    key: grille
     base: diagonal # QB changes end
 
 - type: entity
@@ -258,5 +258,5 @@
     node: clockworkGrilleDiagonal
   - type: IconSmooth # IconSmooth added by QB
     mode: Diagonal
-    key: walls
+    key: clock_grille
     base: diagonal # QB changes end

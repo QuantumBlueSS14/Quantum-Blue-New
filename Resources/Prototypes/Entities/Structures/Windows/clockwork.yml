@@ -41,6 +41,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: brass # QB
     base: cwindow
   - type: Construction
     graph: Window
@@ -128,7 +129,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: brass # QB
     base: state
   - type: Icon
     sprite: _QB/Structures/Windows/clockwork_window.rsi # QB
