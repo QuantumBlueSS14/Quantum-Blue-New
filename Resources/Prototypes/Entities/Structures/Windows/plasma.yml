@@ -37,6 +37,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: solid # QB
     base: pwindow
   - type: Construction
     graph: Window
@@ -128,7 +129,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
     sprite: _QB/Structures/Windows/plasma_window.rsi # QB

@@ -35,6 +35,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: xeno # QB
     base: xwindow
   - type: DamageVisuals
     thresholds: [5, 10, 20]

@@ -44,7 +44,7 @@
         layer:
         - WallLayer
   - type: IconSmooth
-    key: walls
+    key: rock
     base: rock_
 
 - type: entity
@@ -74,7 +74,7 @@
     oreChance: 0.33
     oreRarityPrototypeId: RandomOreDistributionStandard
   - type: IconSmooth
-    key: walls
+    key: rock
     base: ore_
 
 - type: entity
@@ -117,7 +117,7 @@
         layer:
         - WallLayer
   - type: IconSmooth
-    key: walls
+    key: rock
     base: bedrock_
 
 - type: entity

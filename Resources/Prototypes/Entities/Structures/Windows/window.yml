@@ -76,7 +76,7 @@
         acts: [ "Destruction" ]
   - type: Airtight
   - type: IconSmooth
-    key: windows
+    key: solid # QB
     base: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
@@ -266,7 +266,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
     sprite: _QB/Structures/Windows/window.rsi # QB

@@ -44,6 +44,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: solid # QB
     base: rwindow
   - type: Construction
     graph: Window
@@ -135,7 +136,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
     sprite: _QB/Structures/Windows/reinforced_window.rsi # QB

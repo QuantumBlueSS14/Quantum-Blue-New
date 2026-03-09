@@ -92,7 +92,7 @@
     sprite: _QB/Structures/Walls/decor_grille.rsi
     state: full
   - type: IconSmooth
-    key: walls
+    key: decor_grille
     base: grille
   - type: Destructible # Has 40 less health than regular grilles
     thresholds:
@@ -147,7 +147,7 @@
         - GlassLayer
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: decor_grille
     base: diagonal
 
 - type: entity
@@ -182,7 +182,7 @@
     sprite: _QB/Structures/Walls/grille.rsi
     state: rustfull
   - type: IconSmooth
-    key: walls
+    key: grille
     base: rustgrille
   - type: Destructible # Has 40 less health than regular grilles
     thresholds:
@@ -236,7 +236,7 @@
         - GlassLayer
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: grille
     base: rustdiagonal
 
 - type: entity
@@ -269,7 +269,7 @@
     sprite: _QB/Structures/Walls/grille.rsi
     state: meltedfull
   - type: IconSmooth
-    key: walls
+    key: grille
     base: meltedgrille
   - type: Destructible # Has 40 less health than regular grilles
     thresholds:
@@ -323,7 +323,7 @@
         - GlassLayer
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: grille
     base: melteddiagonal
 
 - type: entity
@@ -360,7 +360,7 @@
     sprite: _QB/Structures/Walls/xeno_grille.rsi
     state: full
   - type: IconSmooth
-    key: walls
+    key: xeno_grille
     base: grille
   - type: Destructible # Has 40 less health than regular grilles
     thresholds:

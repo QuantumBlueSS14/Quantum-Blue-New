@@ -123,7 +123,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: brick # QB
     base: brick
 
 - type: entity
@@ -152,7 +152,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: brass # QB
     base: clock
 
 - type: entity
@@ -185,7 +185,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: bananium # QB
     base: bananium # QB
   - type: Fixtures
     fixtures:
@@ -316,7 +316,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: diamond # QB
     base: diamond
 
 - type: entity
@@ -369,7 +369,7 @@
         - WallLayer
         density: 4000
   - type: IconSmooth
-    key: walls
+    key: gold # QB
     base: gold
 
 - type: entity
@@ -437,7 +437,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: plasma # QB
     base: plasma
   - type: RadiationBlocker
     resistance: 5
@@ -481,7 +481,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: plastic # QB
     base: plastic
 
 - type: entity
@@ -495,7 +495,7 @@
     - type: Icon
       sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     - type: IconSmooth
-      key: walls
+      key: plastitanium # QB
       base: plastitanium
     - type: Fixtures
       fixtures:
@@ -622,7 +622,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: solid # QB
     base: reinf_over
   - type: Appearance
   - type: GenericVisualizer
@@ -667,7 +667,7 @@
     graph: Girder
     node: reinforcedWallRust
   - type: IconSmooth
-    key: walls
+    key: solid # QB
     base: reinf_over
   - type: Destructible
     thresholds:
@@ -759,7 +759,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: solid # QB
     base: riveted
   - type: StaticPrice
     price: 150
@@ -833,7 +833,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: silver # QB
     base: silver
 
 #shuttle walls
@@ -903,6 +903,10 @@
     resistance: 5
   - type: StaticPrice
     price: 200
+  - type: IconSmooth # Iconsmooth added by QB
+    key: shuttle
+    base: state
+    mode: Diagonal # QB changes end
 
 - type: entity
   parent: BaseWall
@@ -947,7 +951,7 @@
     graph: Girder
     node: shuttleWall
   - type: IconSmooth
-    key: walls
+    key: shuttle # QB
     base: shuttle
   - type: Appearance
   - type: GenericVisualizer
@@ -1015,7 +1019,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: solid # QB
     base: solid
 
 - type: entity
@@ -1067,7 +1071,7 @@
     graph: Girder
     node: wallrust
   - type: IconSmooth
-    key: walls
+    key: solid # QB
     base: solid
   - type: Destructible
     thresholds:
@@ -1127,7 +1131,7 @@
   - type: Icon
     sprite: _QB/Structures/Walls/xeno.rsi # QB
   - type: IconSmooth
-    key: chitin
+    key: xeno # QB
     base: solid
   - type: Construction
     graph: Girder
@@ -1189,7 +1193,7 @@
   - type: RadiationBlocker
     resistance: 5
   - type: IconSmooth
-    key: chitin
+    key: xeno # QB
     base: reinf_over
   - type: Construction
     graph: Girder
@@ -1205,7 +1209,7 @@
   - type: Icon
     sprite: _QB/Structures/Walls/xenoborg.rsi # QB
   - type: IconSmooth
-    key: walls
+    key: xeno # QB
     base: xenoborg
 
 - type: entity
@@ -1221,6 +1225,10 @@
   - type: Icon
     sprite: _QB/Structures/Walls/xenoborg.rsi # QB
     state: diagonal0 # QB
+  - type: IconSmooth # IconSmooth added by QB
+    mode: Diagonal
+    key: xeno
+    base: diagonal # QB changes end
 
 - type: entity
   parent: BaseWall
@@ -1268,7 +1276,7 @@
         - WallLayer
         density: 6000
   - type: IconSmooth
-    key: walls
+    key: uranium # QB
     base: uranium
   - type: RadiationBlocker
     resistance: 6
@@ -1406,7 +1414,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls
+    key: mining # QB
     base: mining
   - type: Construction #imp
     graph: Girder
@@ -1435,7 +1443,7 @@
     state: diagonal0 # QB
   - type: IconSmooth # IconSmooth added by QB
     mode: Diagonal
-    key: walls
+    key: mining
     base: diagonal # QB changes end
   - type: Damageable
     damageContainer: StructuralInorganic
