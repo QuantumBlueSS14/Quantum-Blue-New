@@ -1,0 +1,5 @@
+- files: ["white_squiggly.png", "white_dirty.png", "white_damaged.png", "white.png", "white_diagonal.png", "white_mini.png", "white_offset.png", "white_pavement.png", "white_plastic.png", "white_diagonal_mini.png", "white_herringbone.png", "white_mono.png", "white_pavement_vertical.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"
+  
