@@ -1,0 +1,11 @@
+- type: tile
+  id: FloorTechMaintGreen
+  name: tiles-techmaint-floor-green
+  sprite: /Textures/_QB/Tiles/Maint/tech_maint_green.png # QB Edit
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaintGreen
+  heatCapacity: 10000

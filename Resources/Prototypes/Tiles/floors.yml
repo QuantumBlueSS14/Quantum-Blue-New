@@ -1,7 +1,7 @@
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
-  sprite: /Textures/_Impstation/Tiles/Steel/steel.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -19,7 +19,7 @@
 - type: tile
   id: FloorSteelCheckerLight
   name: tiles-steel-floor-checker-light
-  sprite: /Textures/_Impstation/Tiles/Misc/cafeteria.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/cafeteria.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -37,7 +37,7 @@
 - type: tile
   id: FloorSteelCheckerDark
   name: tiles-steel-floor-checker-dark
-  sprite: /Textures/_Impstation/Tiles/Misc/checker_dark.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/checker_dark.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -55,7 +55,7 @@
 - type: tile
   id: FloorSteelMini
   name: tiles-steel-floor-mini
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -73,7 +73,7 @@
 - type: tile
   id: FloorSteelPavement
   name: tiles-steel-floor-pavement
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_pavement.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_pavement.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -91,7 +91,7 @@
 - type: tile
   id: FloorSteelDiagonal
   name: tiles-steel-floor-diagonal
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_diagonal.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_diagonal.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -109,7 +109,7 @@
 - type: tile
   id: FloorSteelOffset
   name: tiles-steel-floor-offset
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_offset.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_offset.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -121,7 +121,7 @@
 - type: tile
   id: FloorSteelMono
   name: tiles-steel-floor-mono
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_mono.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -139,7 +139,7 @@
 - type: tile
   id: FloorSteelPavementVertical
   name: tiles-steel-floor-pavement-vertical
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_pavement_vertical.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_pavement_vertical.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -157,7 +157,7 @@
 - type: tile
   id: FloorSteelHerringbone
   name: tiles-steel-floor-herringbone
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_herringbone.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_herringbone.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -175,7 +175,7 @@
 - type: tile
   id: FloorSteelDiagonalMini
   name: tiles-steel-floor-diagonal-mini
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_diagonal_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_diagonal_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -217,7 +217,7 @@
 - type: tile
   id: FloorPlastic
   name: tiles-plastic-floor
-  sprite: /Textures/_Impstation/Tiles/Steel/plastic.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/plastic.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -235,7 +235,7 @@
 - type: tile
   id: FloorWood
   name: tiles-wood
-  sprite: /Textures/Tiles/wood.png
+  sprite: /Textures/_QB/Tiles/Wood/wood.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -255,7 +255,7 @@
 - type: tile
   id: FloorWhite
   name: tiles-white-floor
-  sprite: /Textures/_Impstation/Tiles/White/white.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -273,7 +273,7 @@
 - type: tile
   id: FloorWhiteMini
   name: tiles-white-floor-mini
-  sprite: /Textures/_Impstation/Tiles/White/white_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -291,7 +291,7 @@
 - type: tile
   id: FloorWhitePavement
   name: tiles-white-floor-pavement
-  sprite: /Textures/_Impstation/Tiles/White/white_pavement.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_pavement.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -309,7 +309,7 @@
 - type: tile
   id: FloorWhiteDiagonal
   name: tiles-white-floor-diagonal
-  sprite: /Textures/_Impstation/Tiles/White/white_diagonal.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_diagonal.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -327,7 +327,7 @@
 - type: tile
   id: FloorWhiteOffset
   name: tiles-white-floor-offset
-  sprite: /Textures/_Impstation/Tiles/White/white_offset.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_offset.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -339,7 +339,7 @@
 - type: tile
   id: FloorWhiteMono
   name: tiles-white-floor-mono
-  sprite: /Textures/_Impstation/Tiles/White/white_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_mono.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -357,7 +357,7 @@
 - type: tile
   id: FloorWhitePavementVertical
   name: tiles-white-floor-pavement-vertical
-  sprite: /Textures/_Impstation/Tiles/White/white_pavement_vertical.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_pavement_vertical.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -375,7 +375,7 @@
 - type: tile
   id: FloorWhiteHerringbone
   name: tiles-white-floor-herringbone
-  sprite: /Textures/_Impstation/Tiles/White/white_herringbone.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_herringbone.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -393,7 +393,7 @@
 - type: tile
   id: FloorWhiteDiagonalMini
   name: tiles-white-floor-diagonal-mini
-  sprite: /Textures/_Impstation/Tiles/White/white_diagonal_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_diagonal_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -411,7 +411,7 @@
 - type: tile
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
-  sprite: /Textures/_Impstation/Tiles/White/white_plastic.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/White/white_plastic.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -429,7 +429,7 @@
 - type: tile
   id: FloorDark
   name: tiles-dark-floor
-  sprite: /Textures/_Impstation/Tiles/Dark/dark.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -447,7 +447,7 @@
 - type: tile
   id: FloorDarkMini
   name: tiles-dark-floor-mini
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_mini.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -465,7 +465,7 @@
 - type: tile
   id: FloorDarkPavement
   name: tiles-dark-floor-pavement
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_pavement.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_pavement.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -483,7 +483,7 @@
 - type: tile
   id: FloorDarkDiagonal
   name: tiles-dark-floor-diagonal
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_diagonal.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_diagonal.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -501,7 +501,7 @@
 - type: tile
   id: FloorDarkOffset
   name: tiles-dark-floor-offset
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_offset.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_offset.png # QB edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -513,7 +513,7 @@
 - type: tile
   id: FloorDarkMono
   name: tiles-dark-floor-mono
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_mono.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -531,7 +531,7 @@
 - type: tile
   id: FloorDarkPavementVertical
   name: tiles-dark-floor-pavement-vertical
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_pavement_vertical.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_pavement_vertical.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -549,7 +549,7 @@
 - type: tile
   id: FloorDarkHerringbone
   name: tiles-dark-floor-herringbone
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_herringbone.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_herringbone.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -567,7 +567,7 @@
 - type: tile
   id: FloorDarkDiagonalMini
   name: tiles-dark-floor-diagonal-mini
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_diagonal_mini.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Dark/dark_diagonal_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -585,7 +585,7 @@
 - type: tile
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_plastic.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Plastic/dark_plastic.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -603,7 +603,7 @@
 - type: tile
   id: FloorTechMaint
   name: tiles-techmaint-floor
-  sprite: /Textures/_Impstation/Tiles/Maint/tech_maint.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Maint/tech_maint.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -615,7 +615,7 @@
 - type: tile
   id: FloorTechMaintDark
   name: tiles-techmaint-floor-dark
-  sprite: /Textures/_Impstation/Tiles/Maint/tech_maint_dark.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Maint/tech_maint_dark.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -627,7 +627,7 @@
 - type: tile
   id: FloorReinforced
   name: tiles-reinforced-floor
-  sprite: /Textures/Tiles/reinforced.png
+  sprite: /Textures/_QB/Tiles/Plating/reinforced.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -639,7 +639,7 @@
 - type: tile
   id: FloorMono
   name: tiles-mono-floor
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/mono.png # QB Edit
   variants: 4
   baseTurf: Plating
   isSubfloor: false
@@ -652,7 +652,7 @@
 - type: tile
   id: FloorLino
   name: tiles-linoleum-floor
-  sprite: /Textures/Tiles/lino.png
+  sprite: /Textures/_QB/Tiles/lino.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -664,7 +664,7 @@
 - type: tile
   id: FloorSteelDirty
   name: tiles-dirty-steel-floor
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_dirty.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_dirty.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -682,7 +682,7 @@
 - type: tile
   id: FloorElevatorShaft
   name: tiles-elevator-shaft
-  sprite: /Textures/_Impstation/Tiles/Misc/elevator_shaft.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/elevator_shaft.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -694,7 +694,7 @@
 - type: tile
   id: FloorMetalDiamond
   name: tiles-diamond-plate-floor
-  sprite: /Textures/Tiles/metaldiamond.png
+  sprite: /Textures/_QB/Tiles/metaldiamond.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -718,7 +718,7 @@
 - type: tile
   id: FloorBlue
   name: tiles-blue-tile
-  sprite: /Textures/_Impstation/Tiles/Misc/blue.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/blue.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -730,7 +730,7 @@
 - type: tile
   id: FloorSteelLime
   name: tiles-lime-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/lime.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/lime.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -748,7 +748,7 @@
 - type: tile
   id: FloorMining
   name: tiles-mining-tile
-  sprite: /Textures/_Impstation/Tiles/Mining/mining_floor.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Mining/mining_floor.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -760,7 +760,7 @@
 - type: tile
   id: FloorMiningDark
   name: tiles-mining-dark-tile
-  sprite: /Textures/_Impstation/Tiles/Mining/mining_floor_dark.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Mining/mining_floor_dark.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -772,7 +772,7 @@
 - type: tile
   id: FloorMiningLight
   name: tiles-mining-light-tile
-  sprite: /Textures/_Impstation/Tiles/Mining/mining_floor_light.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Mining/mining_floor_light.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -785,7 +785,7 @@
 - type: tile
   id: FloorFreezer
   name: tiles-freezer
-  sprite: /Textures/_Impstation/Tiles/Misc/freezer.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/freezer.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -797,7 +797,7 @@
 - type: tile
   id: FloorShowroom
   name: tiles-showroom-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/showroom.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/showroom.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -821,7 +821,7 @@
 - type: tile
   id: FloorBar
   name: tiles-bar-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/bar.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/bar.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -839,7 +839,7 @@
 - type: tile
   id: FloorClown
   name: tiles-clown-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/clown.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/clown.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -851,7 +851,7 @@
 - type: tile
   id: FloorMime
   name: tiles-mime-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/mime.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/mime.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -863,7 +863,7 @@
 - type: tile
   id: FloorKitchen
   name: tiles-kitchen-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/kitchen.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/kitchen.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -875,7 +875,7 @@
 - type: tile
   id: FloorLaundry
   name: tiles-laundry-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/laundry.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/laundry.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -887,7 +887,7 @@
 - type: tile
   id: FloorSteelDamaged
   name: tiles-damaged-steel-floor # Imp Edit, previously they had the same name as regular steel tiles whereas now their name reflects the fact they're damaged
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_damaged.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Steel/steel_damaged.png # QB Edit
   variants: 5
   placementVariants:
   - 1.0
@@ -907,7 +907,7 @@
 - type: tile
   id: FloorConcrete
   name: tiles-concrete-tile
-  sprite: /Textures/_Impstation/Tiles/Concrete/concrete.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/concrete.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -925,7 +925,7 @@
 - type: tile
   id: FloorConcreteMono
   name: tiles-concrete-slab
-  sprite: /Textures/_Impstation/Tiles/Concrete/concrete_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/concrete_mono.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -943,7 +943,7 @@
 - type: tile
   id: FloorConcreteSmooth
   name: tiles-concrete-smooth
-  sprite: /Textures/_Impstation/Tiles/Concrete/concrete_smooth.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/concrete_smooth.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -961,7 +961,7 @@
 - type: tile
   id: FloorGrayConcrete
   name: tiles-gray-concrete-tile
-  sprite: /Textures/_Impstation/Tiles/Concrete/grayconcrete.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/grayconcrete.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -979,7 +979,7 @@
 - type: tile
   id: FloorGrayConcreteMono
   name: tiles-gray-concrete-slab
-  sprite: /Textures/_Impstation/Tiles/Concrete/grayconcrete_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/grayconcrete_mono.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -997,7 +997,7 @@
 - type: tile
   id: FloorGrayConcreteSmooth
   name: tiles-gray-concrete-smooth
-  sprite: /Textures/_Impstation/Tiles/Concrete/grayconcrete_smooth.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/grayconcrete_smooth.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1015,7 +1015,7 @@
 - type: tile
   id: FloorOldConcrete
   name: tiles-old-concrete-tile
-  sprite: /Textures/_Impstation/Tiles/Concrete/oldconcrete.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/oldconcrete.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1033,7 +1033,7 @@
 - type: tile
   id: FloorOldConcreteMono
   name: tiles-old-concrete-slab
-  sprite: /Textures/_Impstation/Tiles/Concrete/oldconcrete_mono.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/oldconcrete_mono.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1051,7 +1051,7 @@
 - type: tile
   id: FloorOldConcreteSmooth
   name: tiles-old-concrete-smooth
-  sprite: /Textures/_Impstation/Tiles/Concrete/oldconcrete_smooth.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Concrete/oldconcrete_smooth.png # QB edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1327,7 +1327,7 @@
 - type: tile
   id: FloorGold
   name: tiles-gold-tile
-  sprite: /Textures/_Impstation/Tiles/Misc/gold.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Misc/gold.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1339,7 +1339,7 @@
 - type: tile
   id: FloorSilver
   name: tiles-silver-tile
-  sprite: /Textures/Tiles/silver.png
+  sprite: /Textures/_QB/Tiles/silver.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1351,7 +1351,7 @@
 - type: tile
   id: FloorGlass
   name: tiles-glass-floor
-  sprite: /Textures/_Impstation/Tiles/Glass/glass.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Glass/glass.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1369,7 +1369,7 @@
 - type: tile
   id: FloorRGlass
   name: tiles-reinforced-glass-floor
-  sprite: /Textures/_Impstation/Tiles/Glass/rglass.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Glass/rglass.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1387,7 +1387,7 @@
 - type: tile
   id: FloorMetalFoam
   name: tiles-metal-foam
-  sprite: /Textures/_Impstation/Tiles/Plating/foam_metal.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Plating/foam_metal.png # QB Edit
   variants: 1
   placementVariants:
   - 1.0
@@ -1814,7 +1814,7 @@
 - type: tile
   id: FloorTechMaint2
   name: tiles-techmaint2-floor
-  sprite: /Textures/_Impstation/Tiles/Maint/steel_maint.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Maint/steel_maint.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1826,7 +1826,7 @@
 - type: tile
   id: FloorTechMaint3
   name: tiles-techmaint3-floor
-  sprite: /Textures/_Impstation/Tiles/Maint/grating_maint.png # Imp Edit
+  sprite: /Textures/_QB/Tiles/Maint/grating_maint.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1844,7 +1844,7 @@
 - type: tile
   id: FloorWoodTile
   name: tiles-wood2
-  sprite: /Textures/Tiles/wood_tile.png
+  sprite: /Textures/_QB/Tiles/Wood/wood_tile.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -1864,7 +1864,7 @@
 - type: tile
   id: FloorBrokenWood
   name: tiles-wood3
-  sprite: /Textures/Tiles/wood_broken.png
+  sprite: /Textures/_QB/Tiles/Wood/wood_broken.png # QB Edit
   variants: 7
   placementVariants:
   - 1.0
@@ -1921,7 +1921,7 @@
 - type: tile
   id: FloorHull
   name: tiles-hull
-  sprite: /Textures/_Impstation/Tiles/Misc/hull.png # Imp
+  sprite: /Textures/_QB/Tiles/Misc/hull.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   footstepSounds:
@@ -1932,7 +1932,7 @@
 - type: tile
   id: FloorHullReinforced
   name: tiles-hull-reinforced
-  sprite: /Textures/_Impstation/Tiles/Misc/hull_reinforced.png # Imp
+  sprite: /Textures/_QB/Tiles/Misc/hull_reinforced.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   footstepSounds:
@@ -2075,7 +2075,7 @@
 - type: tile
   id: FloorWoodLarge
   name: tiles-wood-large
-  sprite: /Textures/Tiles/wood_large.png
+  sprite: /Textures/_QB/Tiles/Wood/wood_large.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -2095,7 +2095,7 @@
 - type: tile
   id: FloorXenoborg
   name: tiles-xenoborg-floor
-  sprite: /Textures/Tiles/exoborg.png
+  sprite: /Textures/_QB/Tiles/Xeno/exoborg.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -2107,7 +2107,7 @@
 - type: tile
   id: FloorXeno
   name: tiles-xeno-floor
-  sprite: /Textures/Tiles/xeno_flooring.png
+  sprite: /Textures/_QB/Tiles/Xeno/xeno_flooring.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -2119,7 +2119,7 @@
 - type: tile
   id: FloorXenoSteel
   name: tiles-xeno-steel
-  sprite: /Textures/Tiles/xeno_steel.png
+  sprite: /Textures/_QB/Tiles/Xeno/xeno_steel.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -2132,7 +2132,7 @@
 - type: tile
   id: FloorXenoSteelCorner
   name: tiles-xeno-steel-corner
-  sprite: /Textures/Tiles/xeno_steel_corner.png
+  sprite: /Textures/_QB/Tiles/Xeno/xeno_steel_corner.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -2145,7 +2145,7 @@
 - type: tile
   id: FloorDarkSquiggly
   name: tiles-dark-squiggly
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_squiggly.png
+  sprite: /Textures/_QB/Tiles/Dark/dark_squiggly.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -2164,7 +2164,7 @@
 - type: tile
   id: FloorXenoMaint
   name: tiles-xeno-maint
-  sprite: /Textures/Tiles/xeno_maint.png
+  sprite: /Textures/_QB/Tiles/Xeno/xeno_maint.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
