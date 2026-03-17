@@ -26,6 +26,7 @@ using Content.Shared.Zombies;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using System.Linq;
 
 namespace Content.Server.Zombies
 {
@@ -235,47 +236,43 @@ namespace Content.Server.Zombies
             return MathF.Max(chance, zombieComponent.MinZombieInfectionChance);
         }
 
-        private void OnMeleeHit(Entity<ZombieComponent> entity, ref MeleeHitEvent args)
+        private void OnMeleeHit(EntityUid uid, ZombieComponent component, MeleeHitEvent args)
         {
-            if (!args.IsHit)
+            if (!TryComp<ZombieComponent>(args.User, out _))
                 return;
 
-            var cannotSpread = HasComp<NonSpreaderZombieComponent>(args.User);
+            if (!args.HitEntities.Any())
+                return;
 
-            foreach (var uid in args.HitEntities)
+            foreach (var entity in args.HitEntities)
             {
-                if (args.User == uid)
+                if (args.User == entity)
                     continue;
 
-                if (!TryComp<MobStateComponent>(uid, out var mobState))
+                if (!TryComp<MobStateComponent>(entity, out var mobState))
                     continue;
 
-                if (HasComp<ZombieComponent>(uid) || HasComp<IncurableZombieComponent>(uid))
+                if (HasComp<ZombieComponent>(entity))
                 {
-                    // Don't infect, don't deal damage, do not heal from bites, don't pass go!
-                    args.Handled = true;
-                    continue;
-                }
-
-                if (_mobState.IsAlive(uid, mobState))
-                {
-                    _damageable.TryChangeDamage(args.User, entity.Comp.HealingOnBite, true, false);
-
-                    // If we cannot infect the living target, the zed will just heal itself.
-                    if (HasComp<ZombieImmuneComponent>(uid) || cannotSpread || _random.Prob(GetZombieInfectionChance(uid, entity.Comp)))
-                        continue;
-
-                    EnsureComp<PendingZombieComponent>(uid);
-                    EnsureComp<ZombifyOnDeathComponent>(uid);
+                    args.BonusDamage = -args.BaseDamage;
                 }
                 else
                 {
-                    if (HasComp<ZombieImmuneComponent>(uid) || cannotSpread)
-                        continue;
+                    if (!HasComp<ZombieImmuneComponent>(entity) && !HasComp<NonSpreaderZombieComponent>(args.User) && _random.Prob(GetZombieInfectionChance(entity, component)))
+                    {
+                        EnsureComp<PendingZombieComponent>(entity);
+                        EnsureComp<ZombifyOnDeathComponent>(entity);
+                    }
+                }
 
-                    // If the target is dead and can be infected, infect.
-                    ZombifyEntity(uid);
-                    args.Handled = true;
+                if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity) && !HasComp<NonSpreaderZombieComponent>(args.User))
+                {
+                    ZombifyEntity(entity);
+                    args.BonusDamage = -args.BaseDamage;
+                }
+                else if (mobState.CurrentState == MobState.Alive) //heals when zombies bite live entities
+                {
+                    _damageable.TryChangeDamage(uid, component.HealingOnBite, true, false);
                 }
             }
         }

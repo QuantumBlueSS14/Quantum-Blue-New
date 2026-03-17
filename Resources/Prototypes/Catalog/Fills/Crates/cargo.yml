@@ -207,7 +207,6 @@
     - id: PlushieMoth
     - id: PlushieVulp
     - id: PlushieArachind
-    - id: PlushieLizardJobMultiweh # the exceedingly rare multiweh!
     - id: PlushieThrongler #hehe
       weight: 0.05
     - id: PrizeBall # imp. let's go gambling!
@@ -265,5 +264,4 @@
     - id: ClothingOuterHardsuitMaxim # i hit the juckport 1 trillion$
       weight: 0.1
     - id: TippyTrumpMysteryPack
-      weight: 5
-    - id: JailCard
+      prob: 0.05

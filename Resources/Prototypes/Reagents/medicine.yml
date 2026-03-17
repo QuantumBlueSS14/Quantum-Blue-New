@@ -728,14 +728,6 @@
         damage:
           types:
             Poison: 4
-      - !type:PopupMessage
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Anomalocarid ]
-        type: Local
-        visualType: Medium
-        messages: [ "saline-anomalocarid-effect-home" ]
-        probability: 0.1
     # imp edit end
 
 - type: reagent
@@ -1351,37 +1343,6 @@
             mobstate: Dead
 
 - type: reagent
-  id: Arcryox
-  name: reagent-name-arcryox
-  group: Medicine
-  desc: reagent-desc-arcryox
-  physicalDesc: reagent-physical-desc-arcryox
-  flavor: medicine
-  color: "#0cbfe9"
-  worksOnTheDead: true
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:EvenHealthChange
-        conditions:
-        - !type:TemperatureCondition
-          max: 213.0
-        - !type:TotalDamageCondition
-          min: 199.9
-        damage:
-          Brute: -2
-          Burn: -2
-      - !type:EvenHealthChange
-        conditions:
-        - !type:TemperatureCondition
-          max: 213.0
-        - !type:TotalDamageCondition
-          min: 500
-        damage:
-          Brute: -4
-          Burn: -4
-
-- type: reagent
   id: Necrosol
   name: reagent-name-necrosol
   group: Medicine
@@ -1574,27 +1535,3 @@
       - !type:AdjustReagent
         reagent: MindbreakerToxin
         amount: -3.0
-
-- type: reagent
-  id: Warfarin
-  name: reagent-name-warfarin
-  group: Medicine
-  desc: reagent-desc-warfarin
-  physicalDesc: reagent-physical-desc-thin
-  allowedDepartments:
-  - Medical
-  flavor: medicine
-  color: "#d0e21b"
-  metabolisms:
-    Medicine:
-      effects: # One day this could be useful for treating blood clots, if we get those
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectAnticoagulant
-        time: 30 # 10 bleed ticks, you bleed every 3 seconds by default.
-        type: Update
-      - !type:ModifyBleed
-        conditions:
-        - !type:ReagentCondition
-          reagent: Warfarin
-          min: 15
-        amount: 0.25

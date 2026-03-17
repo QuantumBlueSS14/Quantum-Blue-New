@@ -515,14 +515,19 @@
   description: flavor-base-gooey
 
 - type: flavor
+  id: concerning
+  flavorType: Complex
+  description: flavor-complex-concerning
+
+- type: flavor
+  id: magic
+  flavorType: Complex
+  description: flavor-complex-magic
+
+- type: flavor
   id: treatchunk
   flavorType: Complex
   description: flavor-complex-treatchunk
-
-- type: flavor
-  id: ants
-  flavorType: Base
-  description: flavor-base-ants
 
 - type: flavor
   id: lightactually #the other light is "like a light gone out", which is insane to just call "light"

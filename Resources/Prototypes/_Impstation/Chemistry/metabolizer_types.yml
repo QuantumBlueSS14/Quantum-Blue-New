@@ -29,7 +29,3 @@
 - type: metabolizerType
   id: Anomalocarid
   name: metabolizer-type-anomalocarid
-
-- type: metabolizerType
-  id: Dinosaur
-  name: metabolizer-type-dinosaur

@@ -26,11 +26,9 @@
   - CommonBackpack # imp reorder
   - Survival
   - Trinkets
-  - ZookeeperJobTrinkets
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # imp special
   - GroupTankHarness # imp reorder
-  - GroupTankHarnessAquatic #imp special
 
 - type: roleLoadout
   id: JobBoxer
@@ -41,8 +39,6 @@
   - CommonBackpack # imp reorder
   - Survival
   - Trinkets
-  - BoxerJobTrinkets
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # imp special
   - GroupTankHarness # imp reorder
-  - GroupTankHarnessAquatic #imp special
