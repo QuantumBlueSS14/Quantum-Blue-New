@@ -723,7 +723,7 @@
         - to: wall #imp edit
           steps:
             - tool: Derusting
-              doAfter: 4
+              doAfter: 2
 
     - node: reinforcedWallRust
       entity: WallReinforcedRust
@@ -739,7 +739,7 @@
         - to: reinforcedWall #imp edit
           steps:
             - tool: Derusting
-              doAfter: 4
+              doAfter: 2
 
     - node: techWall #imp
       entity: WallTech

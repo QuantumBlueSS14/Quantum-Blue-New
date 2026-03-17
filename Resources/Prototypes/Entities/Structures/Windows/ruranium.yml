@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _QB/Structures/Windows/reinforced_uranium_window.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _QB/Structures/Windows/reinforced_uranium_window.rsi # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -37,6 +37,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: solid # QB
     base: ruwindow
   - type: Construction
     graph: Window
@@ -57,17 +58,17 @@
   id: UraniumReinforcedWindowDirectional
   parent: [BaseDeltaPressureReinforcedPlasmaQuarter, WindowDirectionalRCDResistant]
   name: directional reinforced uranium window
-  description:  Zii yaer smudge vru thusd glass keb there. # imp
+  description: Don't smudge up the glass down there.
   placement:
     mode: SnapgridCenter
     snap:
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: uranium_reinforced_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: uranium_reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -122,7 +123,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _QB/Structures/Windows/reinforced_uranium_window.rsi # QB
     state: state0
   - type: Tag
     tags:
@@ -130,10 +131,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
-    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
+    sprite: _QB/Structures/Windows/reinforced_uranium_window.rsi # QB
     state: state0
   - type: Fixtures
     fixtures:

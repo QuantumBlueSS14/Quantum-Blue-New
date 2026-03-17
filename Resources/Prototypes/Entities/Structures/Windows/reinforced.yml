@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: _QB/Structures/Windows/reinforced_window.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: _QB/Structures/Windows/reinforced_window.rsi # QB
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -44,6 +44,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: solid # QB
     base: rwindow
   - type: Construction
     graph: Window
@@ -67,10 +68,10 @@
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: reinforced_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: reinforced_window
   - type: Construction
     graph: WindowDirectional
@@ -127,7 +128,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_window_diagonal.rsi
+    sprite: _QB/Structures/Windows/reinforced_window.rsi # QB
     state: state0
   - type: Tag
     tags:
@@ -135,10 +136,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: solid # QB
     base: state
   - type: Icon
-    sprite: Structures/Windows/reinforced_window_diagonal.rsi
+    sprite: _QB/Structures/Windows/reinforced_window.rsi # QB
     state: state0
   - type: Fixtures
     fixtures:

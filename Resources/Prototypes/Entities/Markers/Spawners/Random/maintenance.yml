@@ -124,7 +124,6 @@
       - id: MysteryFigureBox
       - id: FoodTreatChunk # imp
       - id: TreatChunkBag # imp
-      - id: JailCard # imp
       # Cult
       - !type:AllSelector
         children:
@@ -336,7 +335,7 @@
       weight: 95
       children:
       - id: Machete
-      - id: Claymore
+#     - id: Claymore #imp
       - id: BaseBallBat
       - id: CombatKnife
       - id: Spear
@@ -348,6 +347,7 @@
     - !type:GroupSelector
       weight: 5
       children:
+      - id: Claymore #imp
       - id: Lighter
       - id: Matchbox
       - id: ClothingEyesBlindfold

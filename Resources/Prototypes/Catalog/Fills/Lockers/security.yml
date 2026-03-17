@@ -38,7 +38,6 @@
     children:
     - id: FlashlightSeclite
     - id: WeaponDisabler
-    - id: WeaponTaser
     - id: ClothingBeltSecurityFilled
     - id: Flash
     - id: ClothingEyesGlassesSecurity
@@ -91,7 +90,6 @@
     - id: FlashlightSeclite
       prob: 0.8
     #- id: WeaponDisabler #imp, included in SecLink
-    - id: WeaponTaser
     - id: ClothingUniformJumpsuitSecGrey
       prob: 0.3
     - id: ClothingHeadHelmetBasic
@@ -111,7 +109,7 @@
       prob: 0.5
     # imp edit start
     - id: TicketPad
-    - id: BaseSeclinkRadio
+    - id: UtilityToken1
     - !type:GroupSelector
       children:
         - id: ClothingOuterArmorBasic
@@ -135,7 +133,6 @@
     children:
     - id: ClothingEyesGlassesSecurity
     #- id: WeaponDisabler #imp, included in SecLink
-    - id: WeaponTaser
     - id: TrackingImplanter
       amount: 2
     - id: ClothingOuterHardsuitBrigmedic
@@ -166,7 +163,7 @@
       prob: 0.15
     # imp edit start
     - id: TicketPad
-    - id: BaseSeclinkRadio
+    - id: UtilityToken1
     # imp edit end
 
 - type: entity

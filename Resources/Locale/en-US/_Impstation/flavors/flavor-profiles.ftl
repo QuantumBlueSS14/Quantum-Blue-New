@@ -9,8 +9,6 @@ flavor-base-weird = weird
 flavor-base-ectoplasm = ghastly
 flavor-base-fatty = fatty
 flavor-base-gooey = gooey
-flavor-base-ants = like ants
-flavor-base-light = light
 
 flavor-complex-raktaccino = fantastically bitter
 flavor-complex-moscowmule = like a kick in the teeth
@@ -121,3 +119,5 @@ flavor-complex-irwizine = like wrestling an alligator
 flavor-complex-rose = like a garden in the summer
 flavor-complex-allulalo = like hand sanitizer
 flavor-complex-pear = like pear
+flavor-complex-concerning = Concerning
+flavor-complex-magic = like your head is swirling and spinning

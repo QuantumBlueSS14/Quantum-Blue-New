@@ -2,8 +2,8 @@
   id: PlasmaImp
   mapName: 'Plasma'
   mapPath: /Maps/_Impstation/plasma.yml
-  minPlayers: 45
-  maxPlayers: 75 #everyone talks about how damn big this map is, so let's try this
+  minPlayers: 35
+  maxPlayers: 69
   stations:
     Plasma:
       stationProto: StandardNanotrasenStation
