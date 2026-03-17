@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original artwork by MattFright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "state0",
+      "directions": 4
+    },
+    {
+      "name": "state1",
+      "directions": 4
+    },
+    {
+      "name": "pwindow0",
+      "directions": 4
+    },
+    {
+      "name": "pwindow1",
+      "directions": 4
+    },
+    {
+      "name": "pwindow2",
+      "directions": 4
+    },
+    {
+      "name": "pwindow3",
+      "directions": 4
+    },
+    {
+      "name": "pwindow4",
+      "directions": 4
+    },
+    {
+      "name": "pwindow5",
+      "directions": 4
+    },
+    {
+      "name": "pwindow6",
+      "directions": 4
+    },
+    {
+      "name": "pwindow7",
+      "directions": 4
+    }
+  ]
+}

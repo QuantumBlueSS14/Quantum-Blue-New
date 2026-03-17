@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original iconsmooth walls by Jellvisk and heavily modified by MattFright, original wall gear by MattFright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+	    "name": "wall_gear"
+    },
+    {
+      "name": "clock0",
+	    "directions": 4
+    },
+    {
+      "name": "clock1",
+	    "directions": 4
+    },
+    {
+      "name": "clock2",
+	    "directions": 4
+    },
+    {
+      "name": "clock3",
+	    "directions": 4
+    },
+    {
+      "name": "clock4",
+	    "directions": 4
+    },
+    {
+      "name": "clock5",
+	    "directions": 4
+    },
+    {
+      "name": "clock6",
+	    "directions": 4
+    },
+    {
+      "name": "clock7",
+	    "directions": 4
+    },
+	  {
+	    "name": "full"
+	  }
+  ]
+}

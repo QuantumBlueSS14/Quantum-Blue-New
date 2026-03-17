@@ -1,14 +1,14 @@
 - type: entity
   id: ClockworkWindow
-  name: clockwork window
-  description: Qba'g fzhqtr hc gur tynff qbja gurer. # imp
+  name: brass window # QB
+  description: An ornate and steampunk looking window reinforced with brass. # QB
   parent: Window
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/clockwork_window.rsi
+    sprite: _QB/Structures/Windows/clockwork_window.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/clockwork_window.rsi
+    sprite: _QB/Structures/Windows/clockwork_window.rsi # QB
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -41,6 +41,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: brass # QB
     base: cwindow
   - type: Construction
     graph: Window
@@ -56,18 +57,18 @@
 - type: entity
   id: WindowClockworkDirectional
   parent: WindowDirectional
-  name: directional clockwork window
-  description: Qba'g fzhqtr hc gur tynff qbja gurer. # imp
+  name: directional brass window # QB
+  description: An ornate and steampunk looking directional window reinforced with brass. # QB
   placement:
     mode: SnapgridCenter
     snap:
     - Window
   components:
   - type: Sprite
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: clock_window
   - type: Icon
-    sprite: Structures/Windows/directional.rsi
+    sprite: _QB/Structures/Windows/directional.rsi # QB
     state: clock_window
   - type: Construction
     graph: WindowDirectional
@@ -120,7 +121,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/clockwork_diagonal.rsi
+    sprite: _QB/Structures/Windows/clockwork_window.rsi # QB
     state: state0
   - type: Tag
     tags:
@@ -128,10 +129,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: brass # QB
     base: state
   - type: Icon
-    sprite: Structures/Windows/clockwork_diagonal.rsi
+    sprite: _QB/Structures/Windows/clockwork_window.rsi # QB
     state: state0
   - type: Fixtures
     fixtures:

@@ -5,10 +5,10 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/xenoborg.rsi
+    sprite: _QB/Structures/Windows/xenoborg.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/xenoborg.rsi
+    sprite: _QB/Structures/Windows/xenoborg.rsi # QB
     state: full
   - type: IconSmooth
-    key: windows
+    key: xeno # QB
     base: xenoborg

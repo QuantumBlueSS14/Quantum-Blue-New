@@ -1,0 +1,144 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright.",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "full"
+      },
+      {
+        "name": "rustfull"
+      },
+      {
+        "name": "meltedfull"
+      },
+      {
+        "name": "grille_broken"
+      },
+      {
+        "name": "rustgrille_broken"
+      },
+      {
+        "name": "meltedgrille_broken"
+      },
+      {
+        "name": "diagonal0"
+      },
+      {
+        "name": "diagonal1"
+      },
+      {
+        "name": "rustdiagonal0"
+      },
+      {
+        "name": "rustdiagonal1"
+      },
+      {
+        "name": "melteddiagonal0"
+      },
+      {
+        "name": "melteddiagonal1"
+      },
+      {
+        "name": "grille0",
+        "directions": 4
+      },
+      {
+        "name": "grille1",
+        "directions": 4
+      },
+      {
+        "name": "grille2",
+        "directions": 4
+      },
+      {
+        "name": "grille3",
+        "directions": 4
+      },
+      {
+        "name": "grille4",
+        "directions": 4
+      },
+      {
+        "name": "grille5",
+        "directions": 4
+      },
+      {
+        "name": "grille6",
+        "directions": 4
+      },
+      {
+        "name": "grille7",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille0",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille1",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille2",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille3",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille4",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille5",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille6",
+        "directions": 4
+      },
+      {
+        "name": "rustgrille7",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille0",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille1",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille2",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille3",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille4",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille5",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille6",
+        "directions": 4
+      },
+      {
+        "name": "meltedgrille7",
+        "directions": 4
+      }
+    ]
+}
+  

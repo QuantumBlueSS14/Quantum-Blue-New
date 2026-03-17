@@ -109,7 +109,7 @@
       prob: 0.5
     # imp edit start
     - id: TicketPad
-    - id: BaseSeclinkRadio
+    - id: UtilityToken1
     - !type:GroupSelector
       children:
         - id: ClothingOuterArmorBasic
@@ -163,7 +163,7 @@
       prob: 0.15
     # imp edit start
     - id: TicketPad
-    - id: BaseSeclinkRadio
+    - id: UtilityToken1
     # imp edit end
 
 - type: entity

@@ -1,14 +1,14 @@
 - type: entity
   parent: ReinforcedWindow
   id: XenoResinWindow
-  name: resin window
-  description: Transparent and hardened, yet slightly sticky to the touch. Slightly stronger than a normal reinforced window.
+  name: xeno resin window # QB
+  description: Transparent and hardened yet slightly sticky to the touch, around a sturdy chitin frame. Slightly stronger than a normal reinforced window. # QB
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/xeno_resin.rsi
+    sprite: _QB/Structures/Windows/xeno_resin.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/xeno_resin.rsi
+    sprite: _QB/Structures/Windows/xeno_resin.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -35,6 +35,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: xeno # QB
     base: xwindow
   - type: DamageVisuals
     thresholds: [5, 10, 20]
