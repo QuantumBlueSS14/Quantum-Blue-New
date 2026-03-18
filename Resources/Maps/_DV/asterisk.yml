@@ -3649,7 +3649,7 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
-      parallax: TrainStation
+      parallax: BagelStation
 - proto: AccordionInstrument
   entities:
   - uid: 11923
