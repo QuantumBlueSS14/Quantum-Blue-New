@@ -16,7 +16,7 @@ bwoink-system-introductory-message =
 
     We are currently a small team, so please be patient if it takes us some time to respond, or if we happen to not be immediately available at the time. Ahelps are still relayed to us over discord, so don't be afraid to contact us even if you know no admins are in-game.
 
-    In any case, please do not be afraid to contact us! We're humans too, you won't be punished for an innocent ahelp.
+    In any case, please do not be afraid to contact us! We're humans too. You won't be punished for an innocent ahelp.
 
 bwoink-system-typing-indicator = {$players} {$count ->
 [one] is
