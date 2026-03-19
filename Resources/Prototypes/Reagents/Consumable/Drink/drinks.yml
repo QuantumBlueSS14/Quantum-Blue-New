@@ -450,16 +450,6 @@
       effects:
       - !type:SatiateThirst
         factor: 4
-      #imp edit start
-      - !type:PopupMessage
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Anomalocarid ]
-        type: Local
-        visualType: Medium
-        messages: [ "water-anomalocarid-effect-home" ]
-        probability: 0.005 #you drink water often enough that this probably shouldnt be ppopping up all the time
-      #imp edit end
     Gas:
       effects:
       - !type:HealthChange
@@ -636,15 +626,15 @@
             Poison: 4
 
 - type: reagent
-  id: OrangeLimeSoda
-  name: reagent-name-orange-lime-soda
+  id: KiraSpecial
+  name: reagent-name-kira-special
   parent: BaseDrink
-  desc: reagent-desc-orange-lime-soda
+  desc: reagent-desc-kira-special
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: sweet
   color: "#CCCC99"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/orangelime_soda.rsi
+    sprite: Objects/Consumable/Drinks/kiraspecial.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-

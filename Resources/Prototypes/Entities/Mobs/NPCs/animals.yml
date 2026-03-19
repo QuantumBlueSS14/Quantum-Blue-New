@@ -2930,6 +2930,13 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+    blackboard: # imp edit start
+      NavClimb: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true # imp edit end
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-giant-spider-name
@@ -3349,7 +3356,7 @@
   # imp edit end
 
 - type: entity
-  parent: [DogBarkBase, MobCorgiBase] # imp edit
+  parent: [DogTackleBase, MobCorgiBase] # imp edit
   id: MobCorgi
   components:
   - type: DamageStateVisuals

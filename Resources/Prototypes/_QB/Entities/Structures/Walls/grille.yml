@@ -1,0 +1,394 @@
+# Please use QBBaseGrille if you make a new grille
+
+- type: entity
+  abstract: true
+  id: QBBaseGrille
+  parent: BaseStructure
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/grille_hit.ogg"
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 4
+    fx: EffectRCDDeconstruct4
+  - type: CanBuildWindowOnTop
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: PerforatedMetallic
+  - type: Electrified
+    requirePower: true
+    noWindowInTile: true
+    highVoltageNode: high
+    mediumVoltageNode: medium
+    lowVoltageNode: low
+  - type: NodeContainer
+    nodes:
+      high:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower
+      medium:
+        !type:CableDeviceNode
+        nodeGroupID: MVPower
+      low:
+        !type:CableDeviceNode
+        nodeGroupID: Apc
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - GlassLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 130
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ElectrifiedVisuals.ShowSparks:
+        enum.ElectrifiedLayers.Sparks:
+          True: { visible: True }
+          False: { visible: False }
+  - type: AnimationPlayer
+
+- type: entity
+  id: DecorGrille
+  parent: QBBaseGrille
+  name: decorative grille
+  description: An artful framework of iron rods. It looks fragile.
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    layers:
+      - state: full
+      - state: electrified
+        sprite: Effects/electricity.rsi
+        map: ["enum.ElectrifiedLayers.Sparks"]
+        shader: unshaded
+        visible: false
+  - type: PlacementReplacement
+    key: grilles
+  - type: Icon
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    state: full
+  - type: IconSmooth
+    key: decor_grille
+    base: grille
+  - type: Destructible # Has 40 less health than regular grilles
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  id: DecorGrilleDiagonal
+  parent: DecorGrille
+  name: diagonal decorative grille
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    layers:
+    - state: diagonal0
+    - state: electrified_diagonal
+      sprite: Effects/electricity.rsi
+      map: ["enum.ElectrifiedLayers.Sparks"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    state: diagonal0
+  - type: Tag
+    tags:
+    - Diagonal
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: IconSmooth
+    mode: Diagonal
+    key: decor_grille
+    base: diagonal
+
+- type: entity
+  id: DecorGrilleBroken
+  parent: GrilleBroken
+  name: decorative grille
+  description: An artful framework of iron rods. It has seen better days.
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    state: brokengrille
+  - type: Icon
+    sprite: _QB/Structures/Walls/decor_grille.rsi
+    state: brokengrille
+
+- type: entity
+  id: RustGrille
+  parent: Grille # Parented off of the regular Grille for the name and description
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    layers:
+      - state: rustfull
+      - state: electrified
+        sprite: Effects/electricity.rsi
+        map: ["enum.ElectrifiedLayers.Sparks"]
+        shader: unshaded
+        visible: false
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: rustfull
+  - type: IconSmooth
+    key: grille
+    base: rustgrille
+  - type: Destructible # Has 40 less health than regular grilles
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  id: RustGrilleDiagonal
+  parent: RustGrille
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    layers:
+    - state: rustdiagonal0
+    - state: electrified_diagonal
+      sprite: Effects/electricity.rsi
+      map: ["enum.ElectrifiedLayers.Sparks"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: rustdiagonal0
+  - type: Tag
+    tags:
+    - Diagonal
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: IconSmooth
+    mode: Diagonal
+    key: grille
+    base: rustdiagonal
+
+- type: entity
+  id: RustGrilleBroken
+  parent: GrilleBroken
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: rustgrille_broken
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: rustgrille_broken
+
+- type: entity
+  id: MeltedGrille
+  parent: Grille # Parented off of the regular Grille for the name and description
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    layers:
+      - state: meltedfull
+      - state: electrified
+        sprite: Effects/electricity.rsi
+        map: ["enum.ElectrifiedLayers.Sparks"]
+        shader: unshaded
+        visible: false
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: meltedfull
+  - type: IconSmooth
+    key: grille
+    base: meltedgrille
+  - type: Destructible # Has 40 less health than regular grilles
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  id: MeltedGrilleDiagonal
+  parent: MeltedGrille
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    layers:
+    - state: melteddiagonal0
+    - state: electrified_diagonal
+      sprite: Effects/electricity.rsi
+      map: ["enum.ElectrifiedLayers.Sparks"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: melteddiagonal0
+  - type: Tag
+    tags:
+    - Diagonal
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: IconSmooth
+    mode: Diagonal
+    key: grille
+    base: melteddiagonal
+
+- type: entity
+  id: MeltedGrilleBroken
+  parent: GrilleBroken
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: meltedgrille_broken
+  - type: Icon
+    sprite: _QB/Structures/Walls/grille.rsi
+    state: meltedgrille_broken
+
+- type: entity
+  id: XenoGrille
+  parent: QBBaseGrille
+  name: xeno grille
+  description: An odd looking framework of iron rods.
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/xeno_grille.rsi
+    layers:
+      - state: full
+      - state: electrified
+        sprite: Effects/electricity.rsi
+        map: ["enum.ElectrifiedLayers.Sparks"]
+        shader: unshaded
+        visible: false
+  - type: PlacementReplacement
+    key: grilles
+  - type: Icon
+    sprite: _QB/Structures/Walls/xeno_grille.rsi
+    state: full
+  - type: IconSmooth
+    key: xeno_grille
+    base: grille
+  - type: Destructible # Has 40 less health than regular grilles
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  id: XenoGrilleBroken
+  parent: GrilleBroken
+  name: xeno grille
+  description: An odd looking framework of iron rods. It has seen better days.
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _QB/Structures/Walls/xeno_grille.rsi
+    state: brokengrille
+  - type: Icon
+    sprite: _QB/Structures/Walls/xeno_grille.rsi
+    state: brokengrille

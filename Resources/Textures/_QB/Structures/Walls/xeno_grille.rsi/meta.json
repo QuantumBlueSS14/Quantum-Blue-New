@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Base taken from tgstation at https://github.com/tgstation/tgstation/blob/f64e687250f028359d811b2c7e9d4974b2e7ffeb/icons/effects/clockwork.dmi and heavily modified by MattFright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "brokengrille"
+    },
+    {
+      "name": "grille0",
+	    "directions": 4
+    },
+    {
+      "name": "grille1",
+	    "directions": 4
+    },
+    {
+      "name": "grille2",
+	    "directions": 4
+    },
+    {
+      "name": "grille3",
+	    "directions": 4
+    },
+    {
+      "name": "grille4",
+	    "directions": 4
+    },
+    {
+      "name": "grille5",
+	    "directions": 4
+    },
+    {
+      "name": "grille6",
+	    "directions": 4
+    },
+    {
+      "name": "grille7",
+	    "directions": 4
+    }
+  ]
+}

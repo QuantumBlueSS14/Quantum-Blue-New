@@ -31,14 +31,14 @@
       scrolling: "-0.01, 0.0"
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/_Impstation/Parallaxes/debris_large.png" # Imp Edit
+        path: "/Textures/Parallaxes/debris_large.png"
       slowness: 0.97
       scale: "0.45, 0.45"
       scrolling: "0.02, 0.0"
       worldHomePosition: "0.0, -100"
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/_Impstation/Parallaxes/debris_small.png" # Imp Edit
+        path: "/Textures/Parallaxes/debris_small.png"
       slowness: 0.95
       scale: "0.50, 0.50"
       scrolling: "-0.02, 0.0"

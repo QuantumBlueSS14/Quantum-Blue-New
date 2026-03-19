@@ -37,7 +37,6 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
-            Reporter: [ 1, 1 ]
             # engineering - 2-3
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 1, 1 ]

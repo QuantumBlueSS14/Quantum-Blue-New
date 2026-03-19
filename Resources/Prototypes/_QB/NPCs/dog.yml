@@ -1,0 +1,19 @@
+- type: htnCompound
+  id: MeleeDogCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: DogSimpleHostileCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+- type: htnCompound
+  id: DogSimpleHostileCompound # this one is a copy of SimpleHostileCompound that checks if they are not in a container first
+  branches:
+    - preconditions:
+        - !type:InContainerPrecondition # am i NOT in a container, if yes proceed
+          isInContainer: false
+      tasks:
+        - !type:HTNCompoundTask # bark!
+          task: SimpleHostileCompound

@@ -6,7 +6,7 @@
   components:
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/Windoors/windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/windoor.rsi # QB
     layers:
     - state: assembly
   - type: Physics
@@ -56,7 +56,7 @@
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/windoor.rsi # QB
     layers:
     - state: secure_underlay
     - state: assembly
@@ -79,12 +79,12 @@
 
 - type: entity
   id: WindoorAssemblyClockwork
-  name: clockwork windoor assembly
+  name: brass windoor assembly # QB
   description: It opens, it closes, and you can see through it! This one looks tough.
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/clockwork_windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/clockwork_windoor.rsi # QB
     layers:
     - state: open
   - type: Destructible
@@ -112,7 +112,7 @@
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/plasma.rsi
+    sprite: _QB/Structures/Doors/Windoors/plasma.rsi # QB
     layers:
     - state: assembly
   - type: Destructible
@@ -142,7 +142,7 @@
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/plasma.rsi
+    sprite: _QB/Structures/Doors/Windoors/plasma.rsi # QB
     layers:
     - state: secure_underlay
     - state: assembly
@@ -174,7 +174,7 @@
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/uranium.rsi
+    sprite: _QB/Structures/Doors/Windoors/uranium.rsi # QB
     layers:
     - state: assembly
   - type: Destructible
@@ -204,7 +204,7 @@
   parent: WindoorAssembly
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/uranium.rsi
+    sprite: _QB/Structures/Doors/Windoors/uranium.rsi # QB
     layers:
     - state: secure_underlay
     - state: assembly

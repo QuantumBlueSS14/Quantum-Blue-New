@@ -1,0 +1,116 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "rock_0",
+            "directions": 4
+        },
+        {
+            "name": "rock_1",
+            "directions": 4
+        },
+        {
+            "name": "rock_2",
+            "directions": 4
+        },
+        {
+            "name": "rock_3",
+            "directions": 4
+        },
+        {
+            "name": "rock_4",
+            "directions": 4
+        },
+        {
+            "name": "rock_5",
+            "directions": 4
+        },
+        {
+            "name": "rock_6",
+            "directions": 4
+        },
+        {
+            "name": "rock_7",
+            "directions": 4
+        },
+        {
+            "name": "full"
+        },
+        {
+            "name": "bedrock_0",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_1",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_2",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_3",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_4",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_5",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_6",
+            "directions": 4
+        },
+        {
+            "name": "bedrock_7",
+            "directions": 4
+        },
+        {
+            "name": "bedrockfull"
+        },
+        {
+            "name": "ore_0",
+            "directions": 4
+        },
+        {
+            "name": "ore_1",
+            "directions": 4
+        },
+        {
+            "name": "ore_2",
+            "directions": 4
+        },
+        {
+            "name": "ore_3",
+            "directions": 4
+        },
+        {
+            "name": "ore_4",
+            "directions": 4
+        },
+        {
+            "name": "ore_5",
+            "directions": 4
+        },
+        {
+            "name": "ore_6",
+            "directions": 4
+        },
+        {
+            "name": "ore_7",
+            "directions": 4
+        },
+        {
+            "name": "orefull"
+        }
+    ]
+}

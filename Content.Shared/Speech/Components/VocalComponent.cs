@@ -29,7 +29,7 @@ public sealed partial class VocalComponent : Component
 
     [DataField("wilhelm")]
     [AutoNetworkedField]
-    public SoundSpecifier Wilhelm = new SoundCollectionSpecifier("ImpWilhelms"); // imp :)
+    public SoundSpecifier Wilhelm = new SoundPathSpecifier("/Audio/Voice/Human/wilhelm_scream.ogg");
 
     [DataField("wilhelmProbability")]
     [AutoNetworkedField]
