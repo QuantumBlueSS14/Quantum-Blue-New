@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/shuttle_window.rsi
+    sprite: _QB/Structures/Windows/shuttle_window.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/shuttle_window.rsi
+    sprite: _QB/Structures/Windows/shuttle_window.rsi # QB
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
@@ -40,6 +40,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: shuttle # QB
     base: swindow
   - type: Construction
     graph: Window
@@ -65,7 +66,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/shuttle_window_diagonal.rsi
+    sprite: _QB/Structures/Windows/shuttle_window.rsi # QB
     state: state0
   - type: Tag
     tags:
@@ -73,10 +74,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: shuttle # QB
     base: state
   - type: Icon
-    sprite: Structures/Windows/shuttle_window_diagonal.rsi
+    sprite: _QB/Structures/Windows/shuttle_window.rsi # QB
     state: state0
   - type: Fixtures
     fixtures:

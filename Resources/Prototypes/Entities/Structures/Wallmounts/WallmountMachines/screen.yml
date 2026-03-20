@@ -11,7 +11,7 @@
     rows: 2
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: Structures/Wallmounts/screen.rsi
+    sprite: _QB/Structures/Wallmounts/screen.rsi # QB
     state: screen
     noRot: true
   - type: Appearance

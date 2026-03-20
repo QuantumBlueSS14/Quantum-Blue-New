@@ -1,0 +1,70 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright.",
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "state0"
+        },
+        {
+            "name": "state1"
+        },
+        {
+            "name": "shuttle0",
+            "directions": 4
+        },
+        {
+            "name": "shuttle1",
+            "directions": 4
+        },
+        {
+            "name": "shuttle2",
+            "directions": 4
+        },
+        {
+            "name": "shuttle3",
+            "directions": 4
+        },
+        {
+            "name": "shuttle4",
+            "directions": 4
+        },
+        {
+            "name": "shuttle5",
+            "directions": 4
+        },
+        {
+            "name": "shuttle6",
+            "directions": 4
+        },
+        {
+            "name": "shuttle7",
+            "directions": 4
+        },
+        {
+            "name": "shuttle_construct-0"
+        },
+        {
+            "name": "shuttle_construct-1"
+        },
+        {
+            "name": "shuttle_construct-2"
+        },
+        {
+            "name": "shuttle_construct-3"
+        },
+        {
+            "name": "shuttle_construct-4"
+        },
+        {
+            "name": "shuttle_construct-5"
+        }
+    ]
+}
