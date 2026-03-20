@@ -708,6 +708,10 @@
   - type: Icon
     sprite: _QB/Structures/Walls/solid.rsi # QB
     state: reinf_diagonal0 # QB
+  - type: IconSmooth # QB
+    mode: Diagonal # QB
+    key: solid # QB
+    base: reinf_diagonal # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -1038,6 +1042,10 @@
   - type: Icon
     sprite: _QB/Structures/Walls/solid.rsi # QB
     state: diagonal0 # QB
+  - type: IconSmooth # QB
+    mode: Diagonal # QB
+    key: solid # QB
+    base: diagonal # QB
   - type: Destructible
     thresholds:
     - trigger:
