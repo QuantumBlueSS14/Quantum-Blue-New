@@ -6,9 +6,9 @@
   description: You'd know it if you couldn't see it. # imp
   components:
   - type: Sprite
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _QB/Objects/Materials/Glass/glass.rsi # QB
   - type: Item
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _QB/Objects/Materials/Glass/glass.rsi # QB
     size: Normal
   - type: StaticPrice
     price: 0
@@ -144,6 +144,7 @@
     - rglass_2
     - rglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/rglass.rsi # QB
     state: rglass_3
     layers:
     - state: rglass_3
@@ -236,6 +237,7 @@
     - pglass_2
     - pglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/plasmaglass.rsi # QB
     state: pglass_3
     layers:
     - state: pglass_3
@@ -367,6 +369,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/rplasmaglass.rsi # QB
     state: rpglass
   - type: Stack
     stackType: ReinforcedPlasmaGlass
@@ -390,6 +393,7 @@
     - uglass_2
     - uglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/uraniumglass.rsi # QB
     state: uglass_3
     layers:
     - state: uglass_3
@@ -476,6 +480,7 @@
     - ruglass_2
     - ruglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/ruraniumglass.rsi # QB
     state: ruglass_3
     layers:
     - state: ruglass_3
@@ -543,6 +548,7 @@
     - cglass_2
     - cglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/cglass.rsi # QB
     state: cglass_3
     layers:
     - state: cglass_3

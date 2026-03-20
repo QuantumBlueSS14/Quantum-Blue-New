@@ -59,6 +59,7 @@
     - steel_2
     - steel_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/steel.rsi # QB
     state: steel_3
     layers:
     - state: steel_3
@@ -137,6 +138,7 @@
     - brass_2
     - brass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/brass.rsi # QB
     state: brass_3
     layers:
     - state: brass_3
@@ -214,6 +216,7 @@
     - plasteel_2
     - plasteel_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/plasteel.rsi # QB
     state: plasteel_3
     layers:
     - state: plasteel_3
