@@ -304,6 +304,12 @@
   id: FloorGreenOffset
   name: tiles-green-floor-offset
   sprite: /Textures/_QB/Tiles/Green/green_offset.png # QB Edit
+  variants: 4 # QB Edit
+  placementVariants: # QB Edit
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]

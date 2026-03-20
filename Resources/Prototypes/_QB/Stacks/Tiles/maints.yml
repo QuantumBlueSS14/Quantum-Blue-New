@@ -1,0 +1,5 @@
+- type: stack
+  parent: BaseTileStack
+  id: FloorTileTechmaintGreen
+  name: stack-techmaint-floor-green
+  spawn: FloorTileItemTechmaintGreen

@@ -11,3 +11,5 @@ tiles-plastic-green-floor = overgrown plastic tile
 tiles-green-squiggly = overgrown steel squiggly tile
 tiles-dirty-green-floor = overgrown rusted steel tile
 tiles-damaged-green-floor = overgrown damaged steel tile
+
+tiles-techmaint-floor-green = overgrown techmaint floor

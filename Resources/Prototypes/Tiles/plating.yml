@@ -13,8 +13,11 @@
   id: PlatingDamaged
   name: tiles-plating
   sprite: /Textures/_QB/Tiles/Plating/plating_damaged.png # QB Edit
-  variants: 3
+  variants: 6
   placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
   - 1.0
   - 1.0
   - 1.0
