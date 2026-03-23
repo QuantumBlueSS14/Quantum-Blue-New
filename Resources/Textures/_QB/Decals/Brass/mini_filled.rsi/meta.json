@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Original artwork by Ecramox, edited by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "minibrassfilled_box"
+        },
+        {
+            "name": "minibrassfilled_corner_ne"
+        },
+        {
+            "name": "minibrassfilled_corner_se"
+        },
+        {
+            "name": "minibrassfilled_corner_nw"
+        },
+        {
+            "name": "minibrassfilled_corner_sw"
+        },
+        {
+            "name": "minibrassfilled_end_n"
+        },
+        {
+            "name": "minibrassfilled_end_e"
+        },
+        {
+            "name": "minibrassfilled_end_s"
+        },
+        {
+            "name": "minibrassfilled_end_w"
+        },
+        {
+            "name": "minibrassfilled_line_n"
+        },
+        {
+            "name": "minibrassfilled_line_e"
+        },
+        {
+            "name": "minibrassfilled_line_s"
+        },
+        {
+            "name": "minibrassfilled_line_w"
+        },
+        {
+            "name": "minibrassfilled_inner_ne"
+        },
+        {
+            "name": "minibrassfilled_inner_se"
+        },
+        {
+            "name": "minibrassfilled_inner_nw"
+        },
+        {
+            "name": "minibrassfilled_inner_sw"
+        }
+    ]
+}

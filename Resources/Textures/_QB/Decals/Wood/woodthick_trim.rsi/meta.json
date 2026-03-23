@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "woodthick_box"
+        },
+        {
+            "name": "woodthick_corner_ne"
+        },
+        {
+            "name": "woodthick_corner_se"
+        },
+        {
+            "name": "woodthick_corner_nw"
+        },
+        {
+            "name": "woodthick_corner_sw"
+        },
+        {
+            "name": "woodthick_end_n"
+        },
+        {
+            "name": "woodthick_end_e"
+        },
+        {
+            "name": "woodthick_end_s"
+        },
+        {
+            "name": "woodthick_end_w"
+        },
+        {
+            "name": "woodthick_line_n"
+        },
+        {
+            "name": "woodthick_line_e"
+        },
+        {
+            "name": "woodthick_line_s"
+        },
+        {
+            "name": "woodthick_line_w"
+        },
+        {
+            "name": "woodthick_inner_ne"
+        },
+        {
+            "name": "woodthick_inner_se"
+        },
+        {
+            "name": "woodthick_inner_nw"
+        },
+        {
+            "name": "woodthick_inner_sw"
+        }
+    ]
+}
