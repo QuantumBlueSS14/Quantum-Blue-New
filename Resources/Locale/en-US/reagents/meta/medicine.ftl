@@ -134,9 +134,6 @@ reagent-desc-insuzine = Rapidly repairs dead tissue caused by electrocution, but
 reagent-name-opporozidone = opporozidone
 reagent-desc-opporozidone= A difficult to synthesize cryogenic drug used to regenerate rotting tissue and brain matter.
 
-reagent-name-arcryox = arcryox
-reagent-desc-arcryox = A sickeningly blue cryogenics chemical that is able to heal extreme wounds even on the dead. It has trouble stabilizing patients however.
-
 reagent-name-necrosol = necrosol
 reagent-desc-necrosol = A necrotic substance that seems to be able to heal frozen corpses. It can treat and rejuvenate plants when applied in small doses.
 
@@ -154,6 +151,3 @@ reagent-desc-potassium-iodide = Will reduce the damaging effects of radiation by
 
 reagent-name-haloperidol = haloperidol
 reagent-desc-haloperidol = Removes most stimulating and hallucinogenic drugs. Reduces druggy effects and jitteriness. Causes drowsiness.
-
-reagent-name-warfarin = warfarin
-reagent-desc-warfarin = Commonly used as an anticoagulant medication. Causes blood to have difficulty forming clots. Can cause internal bleeding when overdosed.

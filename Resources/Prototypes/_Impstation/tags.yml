@@ -148,7 +148,7 @@
   id: Electropack
 
 - type: Tag
-  id: EncryptionKeyRevolution # QB: Adding this back manually until the real revert.
+  id: EncryptionKeyRevolution
 
 - type: Tag
   id: EvidenceMarker
@@ -438,5 +438,3 @@
 - type: Tag
   id: WeldingTool
 
-- type: Tag
-  id: DecapoidSilicon

@@ -34,14 +34,14 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Sprite
-    sprite: _Wizden/Structures/Walls/shuttleinterior.rsi
+    sprite: _QB/Structures/Walls/shuttleinterior.rsi # QB
   - type: Icon
-    sprite: _Wizden/Structures/Walls/shuttleinterior.rsi
+    sprite: _QB/Structures/Walls/shuttleinterior.rsi # QB
   - type: Construction
     graph: Girder
     node: shuttleInteriorWall
   - type: IconSmooth
-    key: walls
-    base: state
+    key: shuttle # QB
+    base: shuttle # QB
   - type: Reflect
     reflectProb: 1

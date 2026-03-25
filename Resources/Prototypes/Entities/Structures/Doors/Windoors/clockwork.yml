@@ -1,11 +1,11 @@
 ﻿- type: entity
   id: BaseClockworkWindoor
-  name: clockwork windoor
+  name: brass windoor # QB
   parent: BaseWindoor
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/clockwork_windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/clockwork_windoor.rsi # QB
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]

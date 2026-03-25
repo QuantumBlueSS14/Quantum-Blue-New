@@ -62,10 +62,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      entity_storage: !type:NestedSelector
-        tableId: AllLizardPlushieTable
-        rolls: !type:ConstantNumberSelector
-          value: 6
+      entity_storage: !type:AllSelector
+        children:
+        - id: PlushieLizard
+          amount: !type:ConstantNumberSelector
+            value: 3
+        - id: PlushieSpaceLizard
+          amount: !type:ConstantNumberSelector
+            value: 3
 
 - type: entity
   parent: CrateGenericSteel

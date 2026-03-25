@@ -1,0 +1,18 @@
+- type: entity
+  id: DogTackleBase
+  abstract: true
+  components:
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 0
+    soundHit:
+      path: /Audio/Animals/dog_bark1.ogg
+  - type: StaminaDamageOnHit
+    damage: 15
+  - type: HTN
+    rootTask:
+      task: MeleeDogCompound

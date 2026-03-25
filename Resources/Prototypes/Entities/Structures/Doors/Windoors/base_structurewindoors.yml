@@ -29,7 +29,7 @@
         layer:
         - GlassAirlockLayer
   - type: Sprite
-    sprite: Structures/Doors/Windoors/windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/windoor.rsi # QB
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -175,6 +175,9 @@
   - type: StaticPrice
     price: 150
   - type: PryUnpowered
+  - type: AcousticData # VDS
+    absorption: 5
+    reflectRay: true
 
 - type: entity
   id: BaseSecureWindoor
@@ -182,7 +185,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/windoor.rsi
+    sprite: _QB/Structures/Doors/Windoors/windoor.rsi # QB
     layers:
     - state: secure_underlay
     - state: closed
@@ -258,7 +261,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/plasma.rsi
+    sprite: _QB/Structures/Doors/Windoors/plasma.rsi # QB
     layers:
     - state: closed
       map: [ "enum.DoorVisualLayers.Base" ]
@@ -327,7 +330,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/plasma.rsi
+    sprite: _QB/Structures/Doors/Windoors/plasma.rsi # QB
     layers:
     - state: secure_underlay
     - state: closed
@@ -403,7 +406,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/uranium.rsi
+    sprite: _QB/Structures/Doors/Windoors/uranium.rsi # QB
     layers:
     - state: closed
       map: [ "enum.DoorVisualLayers.Base" ]
@@ -472,7 +475,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Doors/Windoors/uranium.rsi
+    sprite: _QB/Structures/Doors/Windoors/uranium.rsi # QB
     layers:
     - state: secure_underlay
     - state: closed

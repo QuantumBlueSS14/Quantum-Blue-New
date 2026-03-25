@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original artwork by MattFright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "brokengrille"
+    },
+    {
+      "name": "diagonal0"
+    },
+    {
+      "name": "diagonal1"
+    },
+    {
+      "name": "grille0",
+	    "directions": 4
+    },
+    {
+      "name": "grille1",
+	    "directions": 4
+    },
+    {
+      "name": "grille2",
+	    "directions": 4
+    },
+    {
+      "name": "grille3",
+	    "directions": 4
+    },
+    {
+      "name": "grille4",
+	    "directions": 4
+    },
+    {
+      "name": "grille5",
+	    "directions": 4
+    },
+    {
+      "name": "grille6",
+	    "directions": 4
+    },
+    {
+      "name": "grille7",
+	    "directions": 4
+    }
+  ]
+}

@@ -5,8 +5,7 @@
   description: A small wall mounted cabinet designed to hold a fire extinguisher.
   components:
     - type: Sprite
-      sprite: Structures/Wallmounts/extinguisher_cabinet.rsi
-      snapCardinals: true
+      sprite: _QB/Structures/Wallmounts/extinguisher_cabinet.rsi # QB
       layers:
       - state: frame
       - state: extinguisher

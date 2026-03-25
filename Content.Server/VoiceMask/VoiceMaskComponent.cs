@@ -27,12 +27,6 @@ public sealed partial class VoiceMaskComponent : Component
     public ProtoId<SpeechVerbPrototype>? VoiceMaskSpeechVerb;
 
     /// <summary>
-    ///     If true will override the users identity with whatever <see cref="VoiceMaskName"/> is.
-    /// </summary>
-    [DataField]
-    public bool OverrideIdentity;
-
-    /// <summary>
     ///     imp. allows disabling of the voice change action - used for the Griffy head
     /// </summary>
     [DataField]
@@ -62,4 +56,3 @@ public sealed partial class VoiceMaskComponent : Component
     [DataField]
     public bool AccentHide = true;
 }
-

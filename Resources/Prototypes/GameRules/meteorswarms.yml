@@ -250,9 +250,6 @@
     - id: ImmovableRodBaguette # imp
       prob: 0.0075
       orGroup: rodProto
-    - id: ImmovableRodUncle # imp
-      prob: 0.0075
-      orGroup: rodProto
 
 - type: entity
   parent: GameRuleMeteorSwarm
