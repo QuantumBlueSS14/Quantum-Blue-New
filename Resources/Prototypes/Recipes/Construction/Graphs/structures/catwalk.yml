@@ -33,7 +33,7 @@
               amount: 1
               doAfter: 1
 
-    - node: ReinforcedCatwalk # vermist
+    - node: ReinforcedCatwalk # VDS
       entity: ReinforcedCatwalk
       edges:
         - to: Catwalk

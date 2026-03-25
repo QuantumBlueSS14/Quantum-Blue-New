@@ -667,7 +667,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
 
-- type: construction #vermist
+- type: construction #VDS
   id: ReinforcedCatwalk
   graph: Catwalk
   startNode: start
