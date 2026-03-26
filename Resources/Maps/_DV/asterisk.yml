@@ -3686,19 +3686,8 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 3510
-      - 4504
       - 2771
       - 6169
-      - 3505
-      - 3519
-      - 7951
-      - 8549
-      - 9933
-      - 11665
-      - 11664
-      - 11666
-      - 11667
     - type: Fixtures
       fixtures: {}
   - uid: 2045
@@ -4353,7 +4342,6 @@ entities:
       - 8491
       - 9928
       - 9929
-      - 9933
       - 9939
       - 9940
       - 9941
@@ -4372,8 +4360,6 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 11665
-      - 11664
       - 7952
       - 8544
       - 9913
@@ -4441,12 +4427,10 @@ entities:
       - 7930
       - 9907
       - 9950
-      - 11667
       - 8961
       - 7929
       - 9948
       - 9949
-      - 11666
     - type: Fixtures
       fixtures: {}
   - uid: 9956
@@ -33734,16 +33718,6 @@ entities:
     - type: Transform
       pos: -26.5,9.5
       parent: 2
-  - uid: 9933
-    components:
-    - type: Transform
-      pos: -33.5,3.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
   - uid: 9938
     components:
     - type: Transform
@@ -33907,41 +33881,6 @@ entities:
     - type: Transform
       pos: -21.5,1.5
       parent: 2
-  - uid: 11664
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -31.5,-0.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-      - 9943
-  - uid: 11665
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -31.5,0.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-      - 9943
-  - uid: 11666
-    components:
-    - type: Transform
-      pos: -38.5,-3.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-      - 9952
 - proto: FirelockGlass
   entities:
   - uid: 293
@@ -34470,17 +34409,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 11413
-  - uid: 11667
-    components:
-    - type: Transform
-      pos: -42.5,-3.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-      - 9952
 - proto: Fireplace
   entities:
   - uid: 2360
@@ -49447,18 +49375,6 @@ entities:
       - 9890
     - type: AtmosPipeColor
       color: '#0088FFFF'
-  - uid: 3505
-    components:
-    - type: Transform
-      pos: -39.5,1.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-    - type: AtmosPipeColor
-      color: '#0088FFFF'
   - uid: 3723
     components:
     - type: Transform
@@ -49481,32 +49397,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -41.5,5.5
       parent: 2
-    - type: AtmosPipeColor
-      color: '#0088FFFF'
-  - uid: 4504
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -42.5,-1.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-    - type: AtmosPipeColor
-      color: '#0088FFFF'
-  - uid: 6169
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -44.5,-0.49999997
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
     - type: AtmosPipeColor
       color: '#0088FFFF'
   - uid: 6265
@@ -50221,19 +50111,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0088FFFF'
-  - uid: 8549
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -33.5,-2.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-    - type: AtmosPipeColor
-      color: '#0088FFFF'
   - uid: 8579
     components:
     - type: Transform
@@ -50598,19 +50475,6 @@ entities:
       - 9890
     - type: AtmosPipeColor
       color: '#FFAA00FF'
-  - uid: 2771
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -44.5,-2.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
   - uid: 2843
     components:
     - type: Transform
@@ -50624,31 +50488,6 @@ entities:
     - type: Transform
       pos: 11.5,-29.5
       parent: 2
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
-  - uid: 3510
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -42.5,-0.49999997
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
-  - uid: 3519
-    components:
-    - type: Transform
-      pos: -37.5,1.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 3974
@@ -51305,19 +51144,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -40.5,-5.5
       parent: 2
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
-  - uid: 7951
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -32.5,0.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 137
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 7952
