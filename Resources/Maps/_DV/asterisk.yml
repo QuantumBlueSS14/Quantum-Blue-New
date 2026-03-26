@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 03/26/2026 04:09:46
-  entityCount: 12714
+  time: 03/26/2026 05:23:03
+  entityCount: 12716
 maps:
 - 7928
 grids:
@@ -65738,6 +65738,18 @@ entities:
     components:
     - type: Transform
       pos: -12.5,14.5
+      parent: 2
+- proto: SpawnPointLogisticsAssistant
+  entities:
+  - uid: 9933
+    components:
+    - type: Transform
+      pos: -1.5,13.5
+      parent: 2
+  - uid: 10294
+    components:
+    - type: Transform
+      pos: -0.5,13.5
       parent: 2
 - proto: SpawnPointMedicalDoctor
   entities:
