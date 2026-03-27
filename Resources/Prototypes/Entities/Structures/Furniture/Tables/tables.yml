@@ -321,9 +321,9 @@
   description: Cardboard sheets wrapped around a metal table frame.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/card.rsi
+    sprite: _QB/Structures/Furniture/Tables/card.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/card.rsi
+    sprite: _QB/Structures/Furniture/Tables/card.rsi # QB
   - type: GlassTable #they named it that cause 'it would never be used elsewhere' or something, smh
     climberDamage:
       types:
@@ -496,9 +496,9 @@
   description: A shiny, corrosion resistant brass table. Steampunk!
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/brass.rsi
+    sprite: _QB/Structures/Furniture/Tables/brass.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/brass.rsi
+    sprite: _QB/Structures/Furniture/Tables/brass.rsi # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -649,9 +649,9 @@
   description: Literally the sturdiest thing you have ever seen.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/stone.rsi
+    sprite: _QB/Structures/Furniture/Tables/stone.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/stone.rsi
+    sprite: _QB/Structures/Furniture/Tables/stone.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -718,9 +718,9 @@
   description: I wouldn't put the silverware on it.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/xeno.rsi
+    sprite: _QB/Structures/Furniture/Tables/xeno.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/xeno.rsi
+    sprite: _QB/Structures/Furniture/Tables/xeno.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
