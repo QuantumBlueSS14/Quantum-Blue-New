@@ -1,7 +1,7 @@
 - type: gameMap
   id: Glacier
   mapName: Glacier
-  mapPath: /Maps/glacier.yml
+  mapPath: /Maps/_DV/glacier.yml
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 15
@@ -29,7 +29,7 @@
           HeadOfPersonnel: [ 1, 1 ]
           Bartender: [ 2, 2 ]
           Botanist: [ 2, 3 ]
-          Boxer: [ 1, 2 ]
+#          Boxer: [ 1, 2 ]
           Chef: [ 2, 3 ]
           Clown: [ 1, 2 ]
           Librarian: [ 1, 1 ]
@@ -43,24 +43,24 @@
           StationEngineer: [ 2, 3 ]
           TechnicalAssistant: [ 2, 2 ]
         #justice
-          ChiefJustice: [ 1, 1 ]
-          Clerk: [ 1, 1 ]
+#          ChiefJustice: [ 1, 1 ]
+#          Clerk: [ 1, 1 ]
           Lawyer: [ 2, 2 ]
-          Prosecutor: [ 1, 1 ]
+#          Prosecutor: [ 1, 1 ]
         #medical
           ChiefMedicalOfficer: [ 1, 1 ]
           Chemist: [ 1, 2 ]
           Paramedic: [ 1, 2 ]
-          Psychologist: [ 1, 1 ]
+#          Psychologist: [ 1, 1 ]
           MedicalDoctor: [ 2, 3 ]
           MedicalIntern: [ 2, 2 ]
-          MedicalBorg: [ 1, 2 ]
-          Surgeon: [ 1, 2 ]
+#          MedicalBorg: [ 1, 2 ]
+#          Surgeon: [ 1, 2 ]
         #science
           ResearchDirector: [ 1, 1 ]
-          Chaplain: [ 1, 1 ]
-          ForensicMantis: [ 1, 1 ]
-          Roboticist: [ 1, 2 ]
+#          Chaplain: [ 1, 1 ]
+#          ForensicMantis: [ 1, 1 ]
+#          Roboticist: [ 1, 2 ]
           Scientist: [ 2, 3 ]
           ResearchAssistant: [ 2, 2 ]
           Borg: [ 2, 3 ]
@@ -76,6 +76,6 @@
           Courier: [ 2, 3 ]
           SalvageSpecialist: [ 2, 3 ]
           CargoTechnician: [ 2, 3 ]
-          CargoAssistant: [ 2, 2 ]
+#          CargoAssistant: [ 2, 2 ]
         #civilian
           Passenger: [ -1, -1 ]
