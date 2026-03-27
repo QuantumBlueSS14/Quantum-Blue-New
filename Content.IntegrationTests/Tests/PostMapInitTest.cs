@@ -193,7 +193,8 @@ namespace Content.IntegrationTests.Tests
             //"Skimmer",
 
             // from deltav:
-            "Asterisk"
+            "Asterisk",
+            "Glacier",
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
