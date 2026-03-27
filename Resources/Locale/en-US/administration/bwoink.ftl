@@ -8,11 +8,15 @@ bwoink-system-messages-being-relayed-to-discord =
     Issues may be handled without a response.
 
 bwoink-system-introductory-message =
-    Please describe the issue that you have encountered in detail. Assume that the game administrator who is resolving the problem does not have first-hand knowledge of what has occurred.
-    Please do not ask for special events or punishments for other players.
-    Any bugs and other related issues should be reported through Discord or Github.
-    
-#imp edit, delete last line, previously was "Misuse of this message system may result in disciplinary action."
+    You may use Ahelp for any issues, questions, concerns and whatever else you want to ask admins!
+    Please be responsible in how you use it.
+
+    If reporting an admnistrative issue, please describe the issue in detail assuming the admins have no first-hand knowledge of the situation.
+    The more information you provide us, the better we can help!
+
+    We are currently a small team, so please be patient if it takes us some time to respond, or if we happen to not be immediately available at the time. Ahelps are still relayed to us over discord, so don't be afraid to contact us even if you know no admins are in-game.
+
+    In any case, please do not be afraid to contact us! We're humans too. You won't be punished for an innocent ahelp.
 
 bwoink-system-typing-indicator = {$players} {$count ->
 [one] is
