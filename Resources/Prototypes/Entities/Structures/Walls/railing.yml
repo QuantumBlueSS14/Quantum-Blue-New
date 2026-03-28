@@ -7,9 +7,9 @@
   components:
   - type: Sprite
     drawdepth: SmallObjects
-    sprite: Structures/Walls/railing.rsi
+    sprite: _QB/Structures/Misc/railing.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/railing.rsi
+    sprite: _QB/Structures/Misc/railing.rsi # QB
   - type: Physics
     bodyType: Static
   - type: InteractionOutline

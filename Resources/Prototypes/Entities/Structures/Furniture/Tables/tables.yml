@@ -6,9 +6,9 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/frame.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/frame.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame.rsi # QB
     state: full
   - type: Fixtures
     fixtures:
@@ -66,9 +66,9 @@
   components:
   - type: SpriteFade
   - type: Sprite
-    sprite:  _Impstation/Structures/Furniture/Tables/frame_counter.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame_counter.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/frame_counter.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame_counter.rsi # QB
     state: full
   - type: Fixtures
     fixtures:
@@ -122,9 +122,9 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/frame_counter.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame_counter.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/frame_counter.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/frame_counter.rsi # QB
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -167,9 +167,9 @@
   description: A square piece of metal standing on four metal legs.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/table.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/table.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/table.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/table.rsi # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -214,9 +214,9 @@
   description: A square piece of metal standing on four metal legs. Extra robust.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/table_reinforced.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/table_reinforced.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/table_reinforced.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/table_reinforced.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -264,9 +264,9 @@
   description: A square piece of glass, standing on four metal legs.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/glass.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/glass.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/glass.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/glass.rsi # QB
   - type: GlassTable
     climberDamage:
       types:
@@ -321,9 +321,9 @@
   description: Cardboard sheets wrapped around a metal table frame.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/card.rsi
+    sprite: _QB/Structures/Furniture/Tables/card.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/card.rsi
+    sprite: _QB/Structures/Furniture/Tables/card.rsi # QB
   - type: GlassTable #they named it that cause 'it would never be used elsewhere' or something, smh
     climberDamage:
       types:
@@ -376,9 +376,9 @@
   description: A square piece of glass, standing on four metal legs. Extra robust.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/glass_reinforced.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/glass_reinforced.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/glass_reinforced.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/glass_reinforced.rsi # QB
   - type: GlassTable
     climberDamage:
       types:
@@ -436,9 +436,9 @@
   description: A square piece of plasma glass, standing on four metal legs. Pretty!
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/glass_plasma.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/glass_plasma.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/glass_plasma.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/glass_plasma.rsi # QB
   - type: GlassTable
     climberDamage:
       types:
@@ -496,9 +496,9 @@
   description: A shiny, corrosion resistant brass table. Steampunk!
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/brass.rsi
+    sprite: _QB/Structures/Furniture/Tables/brass.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/brass.rsi
+    sprite: _QB/Structures/Furniture/Tables/brass.rsi # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -542,9 +542,9 @@
   description: Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/table_wood.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/table_wood.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/table_wood.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/table_wood.rsi # QB
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
@@ -594,9 +594,9 @@
   description: Play em' cowboy.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/table_wood_poker.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/table_wood_poker.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/table_wood_poker.rsi # Imp
+    sprite: _QB/Structures/Furniture/Tables/table_wood_poker.rsi # QB
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
@@ -649,9 +649,9 @@
   description: Literally the sturdiest thing you have ever seen.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/stone.rsi
+    sprite: _QB/Structures/Furniture/Tables/stone.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/stone.rsi
+    sprite: _QB/Structures/Furniture/Tables/stone.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -718,9 +718,9 @@
   description: I wouldn't put the silverware on it.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/xeno.rsi
+    sprite: _QB/Structures/Furniture/Tables/xeno.rsi # QB
   - type: Icon
-    sprite: Structures/Furniture/Tables/xeno.rsi
+    sprite: _QB/Structures/Furniture/Tables/xeno.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -995,9 +995,9 @@
   description: Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/counter_wood.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/counter_wood.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/counter_wood.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/counter_wood.rsi # QB
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1043,9 +1043,9 @@
   description: Looks like a good place to put a drink down.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/counter.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/counter.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/counter.rsi # imp
+    sprite: _QB/Structures/Furniture/Tables/counter.rsi # QB
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
