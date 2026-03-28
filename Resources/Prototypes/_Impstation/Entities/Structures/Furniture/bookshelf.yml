@@ -5,7 +5,7 @@
   description: Completely filled with guidebooks.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/guidebookshelf.rsi
+    sprite: _QB/Structures/Furniture/Misc/Bookshelves/guidebookshelf.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:

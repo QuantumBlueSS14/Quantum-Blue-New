@@ -108,6 +108,7 @@
   parent: ChairBase
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/chair.rsi # QB
     state: chair
   - type: Construction
     graph: Seat
@@ -120,6 +121,7 @@
   suffix: White
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/chair.rsi # QB
     state: chair-greyscale
 
 - type: entity
@@ -140,6 +142,7 @@
   parent: StoolBase
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/bar.rsi # QB
     state: bar
   - type: Construction
     graph: Seat
@@ -151,6 +154,7 @@
   parent: StoolBase
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/brass.rsi # QB
     state: brass_chair
   - type: Construction
     graph: Seat
@@ -162,7 +166,7 @@
   parent: OfficeChairBase
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/chair_office.rsi # imp
+    sprite: _QB/Structures/Furniture/Chairs/chair_office.rsi # QB
     state: office-white
   - type: Construction
     graph: Seat
@@ -174,7 +178,7 @@
   parent: ChairOfficeLight
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/chair_office.rsi # imp
+    sprite: _QB/Structures/Furniture/Chairs/chair_office.rsi # QB
     state: office-dark
   - type: Construction
     graph: Seat
@@ -187,7 +191,7 @@
   description: It looks comfy.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/chair_comfy.rsi # imp
+    sprite: _QB/Structures/Furniture/Chairs/chair_comfy.rsi # QB
     state: comfy
   - type: Construction
     graph: Seat
@@ -200,6 +204,7 @@
   description: The pilot seat of a prestigious ship.
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/chair_shuttle.rsi # QB
     state: shuttle
   - type: Construction
     graph: Seat
@@ -211,8 +216,8 @@
   parent: UnanchoredChairBase
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/chair_wooden.rsi # imp
-    state: icon # imp
+    sprite: _QB/Structures/Furniture/Chairs/chair_wooden.rsi # QB
+    state: icon # QB
   - type: Construction
     graph: Seat
     node: chairWood
@@ -372,7 +377,7 @@
   components:
   - type: Rotatable
   - type: Sprite
-    sprite: Structures/Furniture/folding_chair.rsi
+    sprite: _QB/Structures/Furniture/Chairs/folding_chair.rsi # QB
     layers:
     - state: folding
       map: ["unfoldedLayer"]
@@ -384,7 +389,7 @@
     shape: #imp
     - 0,0,3,0
     storedSprite: #imp
-      sprite: Structures/Furniture/folding_chair.rsi
+      sprite: _QB/Structures/Furniture/Chairs/folding_chair.rsi # QB
       state: storage
   - type: Appearance
   - type: MeleeWeapon
@@ -417,6 +422,7 @@
   description: A long chair made for a metro. Really standard design.
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/bench_steel.rsi # QB
     state: steel-bench
   - type: Construction
     graph: Seat
@@ -466,8 +472,8 @@
   description: Did you get a splinter? Well, at least it’s eco friendly.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/bench_wooden.rsi # imp
-    state: icon # imp
+    sprite: _QB/Structures/Furniture/Chairs/bench_wooden.rsi # QB
+    state: icon # QB
   - type: Construction
     graph: Seat
     node: chairWoodBench
@@ -507,4 +513,5 @@
   name: xeno chair
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/chair_xeno.rsi # QB
     state: xeno-chair
