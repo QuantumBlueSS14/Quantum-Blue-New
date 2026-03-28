@@ -15,7 +15,7 @@
       tags:
         - CartridgeLightRifle
     proto: CartridgeLightRifle
-    capacity: 23
+    capacity: 30 #QB, was 23, updatin descriptions too
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -38,7 +38,7 @@
   id: MagazineLightRifle
   name: "magazine (.30 rifle)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as live-fire ammo.
+  description: A 30-round .30 rifle magazine, marked as live-fire ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifle
@@ -64,7 +64,7 @@
   name: "magazine (.30 rifle any)"
   suffix: empty
   parent: MagazineLightRifle
-  description: A 23-round .30 rifle magazine with no apparent markings.
+  description: A 30-round .30 rifle magazine with no apparent markings.
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -85,7 +85,7 @@
   id: MagazineLightRiflePractice
   name: "magazine (.30 rifle practice)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as practice ammo.
+  description: A 30-round .30 rifle magazine, marked as practice ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -110,7 +110,7 @@
   id: MagazineLightRifleUranium
   name: "magazine (.30 rifle uranium)"
   parent: BaseMagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as uranium ammo.
+  description: A 30-round .30 rifle magazine, marked as uranium ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium
@@ -135,7 +135,7 @@
   id: MagazineLightRifleIncendiary
   name: "magazine (.30 rifle incendiary)"
   parent: MagazineLightRifle
-  description: A 23-round .30 rifle magazine, marked as incendiary ammo.
+  description: A 30-round .30 rifle magazine, marked as incendiary ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
