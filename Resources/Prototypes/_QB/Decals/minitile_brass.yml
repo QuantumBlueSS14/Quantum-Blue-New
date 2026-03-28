@@ -1,0 +1,237 @@
+- type: decal
+  id: MiniBrassBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_box
+
+- type: decal
+  id: MiniBrassCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_corner_ne
+
+- type: decal
+  id: MiniBrassCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_corner_se
+
+- type: decal
+  id: MiniBrassCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_corner_nw
+
+- type: decal
+  id: MiniBrassCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_corner_sw
+
+- type: decal
+  id: MiniBrassInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_inner_ne
+
+- type: decal
+  id: MiniBrassInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_inner_se
+
+- type: decal
+  id: MiniBrassInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_inner_nw
+
+- type: decal
+  id: MiniBrassInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_inner_sw
+
+- type: decal
+  id: MiniBrassEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_end_n
+
+- type: decal
+  id: MiniBrassEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_end_e
+
+- type: decal
+  id: MiniBrassEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_end_s
+
+- type: decal
+  id: MiniBrassEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_end_w
+
+- type: decal
+  id: MiniBrassLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_line_n
+
+- type: decal
+  id: MiniBrassLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_line_e
+
+- type: decal
+  id: MiniBrassLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_line_s
+
+- type: decal
+  id: MiniBrassLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini.rsi
+    state: minibrass_line_w
+
+- type: decal
+  id: MiniBrassFilledBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_box
+
+- type: decal
+  id: MiniBrassFilledCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_corner_ne
+
+- type: decal
+  id: MiniBrassFilledCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_corner_se
+
+- type: decal
+  id: MiniBrassFilledCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_corner_nw
+
+- type: decal
+  id: MiniBrassFilledCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_corner_sw
+
+- type: decal
+  id: MiniBrassFilledInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_inner_ne
+
+- type: decal
+  id: MiniBrassFilledInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_inner_se
+
+- type: decal
+  id: MiniBrassFilledInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_inner_nw
+
+- type: decal
+  id: MiniBrassFilledInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_inner_sw
+
+- type: decal
+  id: MiniBrassFilledEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_end_n
+
+- type: decal
+  id: MiniBrassFilledEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_end_e
+
+- type: decal
+  id: MiniBrassFilledEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_end_s
+
+- type: decal
+  id: MiniBrassFilledEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_end_w
+
+- type: decal
+  id: MiniBrassFilledLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_line_n
+
+- type: decal
+  id: MiniBrassFilledLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_line_e
+
+- type: decal
+  id: MiniBrassFilledLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_line_s
+
+- type: decal
+  id: MiniBrassFilledLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/mini_filled.rsi
+    state: filledminibrass_line_w

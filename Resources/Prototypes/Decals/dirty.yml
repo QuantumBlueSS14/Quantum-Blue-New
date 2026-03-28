@@ -5,7 +5,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: dirt
 
 - type: decal
@@ -13,7 +13,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: dirtlight
 
 - type: decal
@@ -21,7 +21,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: dirtmedium
 
 - type: decal
@@ -29,7 +29,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: dirtheavy
 
 - type: decal
@@ -37,7 +37,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: dirtheavy-mono
 
 - type: decal
@@ -45,7 +45,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: damaged
 
 - type: decal
@@ -61,7 +61,7 @@
   tags: ["station", "dirty"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/dirty.rsi
+    sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: rust
 
 
