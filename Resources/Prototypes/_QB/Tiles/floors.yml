@@ -253,7 +253,7 @@
 - type: tile
   id: FloorWoodTileDarkOld
   name: tiles-wood-dark-old
-  sprite: /Textures/_QB/Tiles/Wood/Black/darkwood_tile_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_tile_old.png
   variants: 4
   placementVariants:
   - 1.0
@@ -273,7 +273,7 @@
 - type: tile
   id: FloorWoodTileDarkLargeOld
   name: tiles-wood-dark-large-old
-  sprite: /Textures/_QB/Tiles/Wood/Black/darkwood_large_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_large_old.png
   variants: 4
   placementVariants:
   - 1.0
@@ -293,7 +293,7 @@
 - type: tile
   id: FloorWoodTileDarkTileOld
   name: tiles-wood-dark-tile-old
-  sprite: /Textures/_QB/Tiles/Wood/Black/darkwood_tile_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_tile_old.png
   variants: 4
   placementVariants:
   - 1.0

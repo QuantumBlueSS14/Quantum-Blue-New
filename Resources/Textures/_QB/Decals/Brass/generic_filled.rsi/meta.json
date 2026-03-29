@@ -8,55 +8,55 @@
     },
     "states": [
         {
-            "name": "brassfilled_box"
+            "name": "filledbrass_box"
         },
         {
-            "name": "brassfilled_corner_ne"
+            "name": "filledbrass_corner_ne"
         },
         {
-            "name": "brassfilled_corner_se"
+            "name": "filledbrass_corner_se"
         },
         {
-            "name": "brassfilled_corner_nw"
+            "name": "filledbrass_corner_nw"
         },
         {
-            "name": "brassfilled_corner_sw"
+            "name": "filledbrass_corner_sw"
         },
         {
-            "name": "brassfilled_end_n"
+            "name": "filledbrass_end_n"
         },
         {
-            "name": "brassfilled_end_e"
+            "name": "filledbrass_end_e"
         },
         {
-            "name": "brassfilled_end_s"
+            "name": "filledbrass_end_s"
         },
         {
-            "name": "brassfilled_end_w"
+            "name": "filledbrass_end_w"
         },
         {
-            "name": "brassfilled_line_n"
+            "name": "filledbrass_line_n"
         },
         {
-            "name": "brassfilled_line_e"
+            "name": "filledbrass_line_e"
         },
         {
-            "name": "brassfilled_line_s"
+            "name": "filledbrass_line_s"
         },
         {
-            "name": "brassfilled_line_w"
+            "name": "filledbrass_line_w"
         },
         {
-            "name": "brassfilled_inner_ne"
+            "name": "filledbrass_inner_ne"
         },
         {
-            "name": "brassfilled_inner_se"
+            "name": "filledbrass_inner_se"
         },
         {
-            "name": "brassfilled_inner_nw"
+            "name": "filledbrass_inner_nw"
         },
         {
-            "name": "brassfilled_inner_sw"
+            "name": "filledbrass_inner_sw"
         }
     ]
 }
