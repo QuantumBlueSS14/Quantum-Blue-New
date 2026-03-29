@@ -229,13 +229,7 @@
 - type: tile
   id: FloorWood
   name: tiles-wood
-  sprite: /Textures/_QB/Tiles/Wood/wood.png # QB Edit
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1845,13 +1839,7 @@
 - type: tile
   id: FloorWoodTile
   name: tiles-wood2
-  sprite: /Textures/_QB/Tiles/Wood/wood_tile.png # QB Edit
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood_tile.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1865,7 +1853,7 @@
 - type: tile
   id: FloorBrokenWood
   name: tiles-wood3
-  sprite: /Textures/_QB/Tiles/Wood/wood_broken.png # QB Edit
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood_broken.png # QB Edit
   variants: 7
   placementVariants:
   - 1.0
@@ -2076,13 +2064,7 @@
 - type: tile
   id: FloorWoodLarge
   name: tiles-wood-large
-  sprite: /Textures/_QB/Tiles/Wood/wood_large.png # QB Edit
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood_large.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]

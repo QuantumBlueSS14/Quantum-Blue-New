@@ -13,3 +13,87 @@
     - FloorTechMaintGreen
   - type: Stack
     stackType: FloorTileTechmaintGreen
+
+- type: entity
+  name: tiled black wood floor
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileBlack
+  - type: Stack
+    stackType: FloorTileItemWoodTileBlack
+  - type: Construction
+    graph: TileWoodTileBlack
+    node: woodtile
+
+- type: entity
+  name: tiled dark wood floor
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileDark
+  - type: Stack
+    stackType: FloorTileItemWoodTileDark
+  - type: Construction
+    graph: TileWoodTileDark
+    node: woodtile
+
+- type: entity
+  name: tiled light wood floor
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileLight
+  - type: Stack
+    stackType: FloorTileItemWoodTileLight
+  - type: Construction
+    graph: TileWoodTileLight
+    node: woodtile
+
+- type: entity
+  name: tiled red wood floor
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileRed
+  - type: Stack
+    stackType: FloorTileItemWoodTileRed
+  - type: Construction
+    graph: TileWoodTileRed
+    node: woodtile

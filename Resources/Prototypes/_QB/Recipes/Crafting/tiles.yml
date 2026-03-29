@@ -1,0 +1,31 @@
+- type: construction
+  id: TileWoodTileBlack
+  graph: TileWoodTileBlack
+  startNode: start
+  targetNode: woodtile
+  category: construction-category-tiles
+  objectType: Item
+
+- type: construction
+  id: TileWoodTileDark
+  graph: TileWoodTileDark
+  startNode: start
+  targetNode: woodtile
+  category: construction-category-tiles
+  objectType: Item
+
+- type: construction
+  id: TileWoodTileLight
+  graph: TileWoodTileLight
+  startNode: start
+  targetNode: woodtile
+  category: construction-category-tiles
+  objectType: Item
+
+- type: construction
+  id: TileWoodTileRed
+  graph: TileWoodTileRed
+  startNode: start
+  targetNode: woodtile
+  category: construction-category-tiles
+  objectType: Item
