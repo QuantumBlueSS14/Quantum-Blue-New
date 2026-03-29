@@ -1,0 +1,237 @@
+- type: decal
+  id: LightWoodTrimThinBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_box
+
+- type: decal
+  id: LightWoodTrimThinCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_corner_ne
+
+- type: decal
+  id: LightWoodTrimThinCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_corner_se
+
+- type: decal
+  id: LightWoodTrimThinCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_corner_nw
+
+- type: decal
+  id: LightWoodTrimThinCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_corner_sw
+
+- type: decal
+  id: LightWoodTrimThinInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_inner_ne
+
+- type: decal
+  id: LightWoodTrimThinInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_inner_se
+
+- type: decal
+  id: LightWoodTrimThinInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_inner_nw
+
+- type: decal
+  id: LightWoodTrimThinInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_inner_sw
+
+- type: decal
+  id: LightWoodTrimThinEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_end_n
+
+- type: decal
+  id: LightWoodTrimThinEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_end_e
+
+- type: decal
+  id: LightWoodTrimThinEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_end_s
+
+- type: decal
+  id: LightWoodTrimThinEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_end_w
+
+- type: decal
+  id: LightWoodTrimThinLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_line_n
+
+- type: decal
+  id: LightWoodTrimThinLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_line_e
+
+- type: decal
+  id: LightWoodTrimThinLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_line_s
+
+- type: decal
+  id: LightWoodTrimThinLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwood_trim.rsi
+    state: lightwoodthin_line_w
+
+- type: decal
+  id: LightWoodTrimThickBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_box
+
+- type: decal
+  id: LightWoodTrimThickCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_corner_ne
+
+- type: decal
+  id: LightWoodTrimThickCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_corner_se
+
+- type: decal
+  id: LightWoodTrimThickCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_corner_nw
+
+- type: decal
+  id: LightWoodTrimThickCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_corner_sw
+
+- type: decal
+  id: LightWoodTrimThickInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_inner_ne
+
+- type: decal
+  id: LightWoodTrimThickInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_inner_se
+
+- type: decal
+  id: LightWoodTrimThickInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_inner_nw
+
+- type: decal
+  id: LightWoodTrimThickInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_inner_sw
+
+- type: decal
+  id: LightWoodTrimThickEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_end_n
+
+- type: decal
+  id: LightWoodTrimThickEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_end_e
+
+- type: decal
+  id: LightWoodTrimThickEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_end_s
+
+- type: decal
+  id: LightWoodTrimThickEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_end_w
+
+- type: decal
+  id: LightWoodTrimThickLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_line_n
+
+- type: decal
+  id: LightWoodTrimThickLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_line_e
+
+- type: decal
+  id: LightWoodTrimThickLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_line_s
+
+- type: decal
+  id: LightWoodTrimThickLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/lightwoodthick_trim.rsi
+    state: lightwoodthick_line_w

@@ -5,9 +5,9 @@
   description: A square piece of uranium glass, standing on four metal legs. Pretty!
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Tables/glass_uranium.rsi
+    sprite: _QB/Structures/Furniture/Tables/glass_uranium.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Furniture/Tables/glass_uranium.rsi
+    sprite: _QB/Structures/Furniture/Tables/glass_uranium.rsi # QB
   - type: GlassTable
     climberDamage:
       types:

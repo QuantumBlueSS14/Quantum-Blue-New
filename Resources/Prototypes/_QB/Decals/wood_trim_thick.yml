@@ -1,0 +1,118 @@
+- type: decal
+  id: WoodTrimThickBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_box
+
+- type: decal
+  id: WoodTrimThickCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_corner_ne
+
+- type: decal
+  id: WoodTrimThickCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_corner_se
+
+- type: decal
+  id: WoodTrimThickCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_corner_nw
+
+- type: decal
+  id: WoodTrimThickCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_corner_sw
+
+- type: decal
+  id: WoodTrimThickInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_inner_ne
+
+- type: decal
+  id: WoodTrimThickInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_inner_se
+
+- type: decal
+  id: WoodTrimThickInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_inner_nw
+
+- type: decal
+  id: WoodTrimThickInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_inner_sw
+
+- type: decal
+  id: WoodTrimThickEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_end_n
+
+- type: decal
+  id: WoodTrimThickEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_end_e
+
+- type: decal
+  id: WoodTrimThickEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_end_s
+
+- type: decal
+  id: WoodTrimThickEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_end_w
+
+- type: decal
+  id: WoodTrimThickLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_line_n
+
+- type: decal
+  id: WoodTrimThickLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_line_e
+
+- type: decal
+  id: WoodTrimThickLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_line_s
+
+- type: decal
+  id: WoodTrimThickLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/woodthick_trim.rsi
+    state: woodthick_line_w
