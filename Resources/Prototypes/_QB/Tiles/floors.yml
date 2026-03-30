@@ -208,7 +208,7 @@
 
 - type: tile
   id: FloorWoodTileBlackOld
-  name: tiles-wood-large-black-old
+  name: tiles-wood-tile-black-old
   sprite: /Textures/_QB/Tiles/Wood/Black/blackwood_tile_old.png
   variants: 4
   placementVariants:
@@ -251,9 +251,9 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileDarkOld
+  id: FloorWoodDarkOld
   name: tiles-wood-dark-old
-  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_tile_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_old.png
   variants: 4
   placementVariants:
   - 1.0
@@ -271,8 +271,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileDarkLargeOld
-  name: tiles-wood-dark-large-old
+  id: FloorWoodLargeDarkOld
+  name: tiles-wood-large-dark-old
   sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_large_old.png
   variants: 4
   placementVariants:
@@ -291,8 +291,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileDarkTileOld
-  name: tiles-wood-dark-tile-old
+  id: FloorWoodTileDarkOld
+  name: tiles-wood-tile-dark-old
   sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_tile_old.png
   variants: 4
   placementVariants:
@@ -335,9 +335,9 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileLightOld
+  id: FloorWoodLightOld
   name: tiles-wood-light-old
-  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_tile_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_old.png
   variants: 4
   placementVariants:
   - 1.0
@@ -355,8 +355,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileLightLargeOld
-  name: tiles-wood-light-large-old
+  id: FloorWoodLargeLightOld
+  name: tiles-wood-large-light-old
   sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_large_old.png
   variants: 4
   placementVariants:
@@ -375,8 +375,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileLightTileOld
-  name: tiles-wood-light-tile-old
+  id: FloorWoodTileLightOld
+  name: tiles-wood-tile-light-old
   sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_tile_old.png
   variants: 4
   placementVariants:
@@ -419,7 +419,7 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileRedOld
+  id: FloorWoodRedOld
   name: tiles-wood-red-old
   sprite: /Textures/_QB/Tiles/Wood/Red/redwood_tile_old.png
   variants: 4
@@ -439,8 +439,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileRedLargeOld
-  name: tiles-wood-red-large-old
+  id: FloorWoodLargeRedOld
+  name: tiles-wood-large-red-old
   sprite: /Textures/_QB/Tiles/Wood/Red/redwood_large_old.png
   variants: 4
   placementVariants:
@@ -459,8 +459,8 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodTileRedTileOld
-  name: tiles-wood-red-tile-old
+  id: FloorWoodTileRedOld
+  name: tiles-wood-tile-red-old
   sprite: /Textures/_QB/Tiles/Wood/Red/redwood_tile_old.png
   variants: 4
   placementVariants:

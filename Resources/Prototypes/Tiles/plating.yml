@@ -42,7 +42,7 @@
 - type: tile
   id: PlatingBrass
   name: tiles-brass-plating
-  sprite: /Textures/Tiles/Misc/clockwork/clockwork_floor.png
+  sprite: /Textures/_QB/Tiles/Brass/clockwork_floor.png # QB Edit
   baseTurf: Lattice
   isSubfloor: true
   footstepSounds:
