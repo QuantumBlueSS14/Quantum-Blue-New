@@ -117,6 +117,7 @@
     - type: PointLight
       radius: 8
       energy: 10
+      softness: 4 # QB
       color: "#daa3fd"
     - type: FlashOnTrigger
       range: 8

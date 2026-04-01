@@ -137,6 +137,7 @@
   - type: PointLight
     radius: 5
     energy: 3
+    softness: 4 # QB
     color: "#FF5601"
   - type: AlwaysHot
   # end imp edits

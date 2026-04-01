@@ -53,6 +53,7 @@
     color: "#0033ff"
     enabled: true
     radius: 4
+    softness: 4 # QB
     netsync: false
   - type: Anchorable
     flags:

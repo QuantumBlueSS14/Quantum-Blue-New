@@ -37,6 +37,7 @@
     color: OrangeRed
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
 
 - type: entity
@@ -50,8 +51,9 @@
     color: SkyBlue
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
-    
+
 - type: entity
   id: PortalArtifact
   parent: BasePortal
@@ -63,6 +65,7 @@
     color: "#ed85c2"
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
   - type: TimedDespawn
     lifetime: 1
@@ -83,6 +86,7 @@
     color: SkyBlue
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
 
 - type: entity
@@ -99,6 +103,7 @@
     color: OrangeRed
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
 
 - type: entity
@@ -117,6 +122,7 @@
     color: "#793a80dd"
     radius: 3
     energy: 1
+    softness: 4 # QB
     netsync: false
   - type: AmbientSound
     range: 6

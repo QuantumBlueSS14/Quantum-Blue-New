@@ -2237,6 +2237,7 @@
     color: LightGreen
     radius: 5
     energy: 5
+    softness: 4 # QB
     netsync: false
   - type: RadiationSource
     intensity: 0.3

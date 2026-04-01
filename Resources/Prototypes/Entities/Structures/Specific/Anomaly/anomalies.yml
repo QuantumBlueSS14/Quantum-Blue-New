@@ -96,8 +96,9 @@
   - type: PointLight
     radius: 6.0
     energy: 7.5
+    softness: 4 # QB
     color: "#E25822"
-    castShadows: false
+    castShadows: true # QB
   - type: PyroclasticAnomaly
   - type: TempAffectingAnomaly
     tempChangePerSecond: 25
@@ -150,8 +151,9 @@
   - type: PointLight
     radius: 5.0
     energy: 20
+    softness: 4 # QB
     color: "#1e070e"
-    castShadows: false
+    castShadows: true # QB
   - type: GravityAnomaly
   - type: GravityWell
   - type: RadiationSource
@@ -184,8 +186,9 @@
   - type: PointLight
     radius: 2.0
     energy: 5.0
+    softness: 4 # QB
     color: "#ffffaa"
-    castShadows: false
+    castShadows: true # QB
   - type: ElectricityAnomaly
   - type: Electrified
 
@@ -211,8 +214,9 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#cb5b7e"
-    castShadows: false
+    castShadows: true # QB
   - type: TileSpawnAnomaly
     entries:
     - settings:
@@ -315,8 +319,9 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#00ccff"
-    castShadows: false
+    castShadows: true # QB
   - type: BluespaceAnomaly
   - type: Portal
   - type: Fixtures
@@ -365,8 +370,9 @@
   - type: PointLight
     radius: 2.0
     energy: 2.5
+    softness: 4 # QB
     color: "#befaff"
-    castShadows: false
+    castShadows: true # QB
   - type: Anomaly
     corePrototype: AnomalyCoreIce
     coreInertPrototype: AnomalyCoreIceInert
@@ -444,8 +450,9 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#5ca8cb"
-    castShadows: false
+    castShadows: true # QB
   - type: TileSpawnAnomaly
     entries:
     - settings:
@@ -487,6 +494,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#52ff39"
   - type: EntitySpawnAnomaly
     entries:
@@ -537,6 +545,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#ddde40"
   - type: EntitySpawnAnomaly
     entries:
@@ -587,6 +596,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#fb4747"
   - type: EntitySpawnAnomaly
     entries:
@@ -637,6 +647,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#47f8ff"
   - type: EntitySpawnAnomaly
     entries:
@@ -687,6 +698,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#e3ba70"
   - type: EntitySpawnAnomaly
     entries:
@@ -737,6 +749,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#ff8227"
   - type: EntitySpawnAnomaly
     entries:
@@ -787,6 +800,7 @@
   - type: PointLight
     radius: 2.0
     energy: 7.5
+    softness: 4 # QB
     color: "#484848"
   - type: EntitySpawnAnomaly
     entries:
@@ -844,6 +858,7 @@
   - type: PointLight
     radius: 8.0
     energy: 8.5
+    softness: 4 # QB
     color: "#6270bb"
   - type: Anomaly
     animationTime: 6
@@ -922,6 +937,7 @@
   - type: PointLight
     radius: 2.0
     energy: 4.5
+    softness: 4 # QB
     color: "#6270bb"
   - type: Sprite
     noRot: true
@@ -950,6 +966,7 @@
   - type: PointLight
     radius: 4.0
     energy: 3.5
+    softness: 4 # QB
     color: "#bbbbbb"
   - type: BadFood
   - type: Anomaly
@@ -1072,6 +1089,7 @@
   - type: PointLight
     radius: 1.5
     energy: 12.5
+    softness: 4 # QB
     color: "#793a80"
   - type: AmbientSound
     range: 5
@@ -1171,6 +1189,7 @@
   - type: PointLight
     radius: 6.5
     energy: 3.5
+    softness: 4 # QB
     color: "#56c1e8"
   - type: Anomaly
     corePrototype: AnomalyCoreTech
@@ -1202,7 +1221,7 @@
     enabled: true
     color: "#4080FF"
     radius: 3.5
-    softness: 1
+    softness: 4 # QB
     autoRot: true
     castShadows: false
   - type: Beam
@@ -1228,7 +1247,8 @@
       visible: false
   - type: PointLight
     radius: 8.0
-    energy: 8.5
+    energy: 5 # QB
+    softness: 4 # QB
     color: "#db8127"
   - type: Anomaly
     animationTime: 6

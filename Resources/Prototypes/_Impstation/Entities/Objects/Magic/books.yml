@@ -21,7 +21,7 @@
     - type: Spellbook
       spellActions:
         ActionSpawnSpaceGreaseSpell: null
-    
+
 - type: entity
   id: BaseSpellbookSafeLibrarian
   name: spellbook

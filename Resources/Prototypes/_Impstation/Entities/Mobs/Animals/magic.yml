@@ -258,6 +258,7 @@
   - type: PointLight
     radius: 5
     energy: 3
+    softness: 4 # QB
     color: "#FFFFFF"
     castShadows: true
   - type: Destructible

@@ -203,6 +203,7 @@
     color: "#FF8080"
     radius: 15.0
     energy: 9.0
+    softness: 4 # QB
   - type: Projectile
     deleteOnCollide: false
     damage:

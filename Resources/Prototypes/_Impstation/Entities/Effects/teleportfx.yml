@@ -17,6 +17,7 @@
     color: "#FF9719"
     radius: 1.2
     energy: 3.5
+    softness: 4 # QB
     castShadows: false
   - type: LightBehaviour
     behaviours:
@@ -50,6 +51,7 @@
     color: "#33c7ff"
     radius: 1.2
     energy: 3.5
+    softness: 4 # QB
     castShadows: false
   - type: LightBehaviour
     behaviours:

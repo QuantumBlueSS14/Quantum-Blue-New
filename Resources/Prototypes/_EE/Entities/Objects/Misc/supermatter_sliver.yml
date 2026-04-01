@@ -8,6 +8,7 @@
     enabled: true
     radius: 3
     energy: 2
+    softness: 4 # QB
     color: "#fff633"
   - type: RadiationSource
     intensity: .75
