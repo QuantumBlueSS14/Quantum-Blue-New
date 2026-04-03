@@ -20,10 +20,11 @@ ComputerFundingAllocationBroken: ComputerFundingAllocation
 JailCard: null
 
 # 3/29/2026 Named some stuff inconsistently woops. If you even need on of these ID's uh good luck sorry
-FloorWoodTileDarkLargeOld: FloorWoodLargeDarkOld
-FloorWoodTileDarkTileOld: FloorWoodTileDarkOld
-FloorWoodTileLightOld: FloorWoodLightOld
-FloorWoodTileLightLargeOld: FloorWoodLargeLightOld
-FloorWoodTileLightTileOld: FloorWoodTileLightOld
-FloorWoodTileRedLargeOld: FloorWoodLargeRedOld
-FloorWoodTileRedTileOld: FloorWoodTileRedOld
+#FloorWoodTileDarkLargeOld: FloorWoodLargeDarkOld
+#FloorWoodTileDarkTileOld: FloorWoodTileDarkOld
+#FloorWoodTileLightOld: FloorWoodLightOld
+#FloorWoodTileLightLargeOld: FloorWoodLargeLightOld
+#FloorWoodTileLightTileOld: FloorWoodTileLightOld
+#FloorWoodTileRedLargeOld: FloorWoodLargeRedOld
+#FloorWoodTileRedTileOld: FloorWoodTileRedOld
+# Nvm they broke everything cause they were tiles, not entities. Leaving this list incase it's useful later.
