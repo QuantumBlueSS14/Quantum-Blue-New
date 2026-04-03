@@ -288,6 +288,7 @@
     color: "#e39c40"
     radius: 2.5
     power: 10
+    softness: 4 # QB
 
 - type: entity
   name: magic red candle

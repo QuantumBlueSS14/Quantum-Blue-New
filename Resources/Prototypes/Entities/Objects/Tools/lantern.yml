@@ -41,6 +41,7 @@
       enabled: false
       radius: 3
       energy: 2.5
+      softness: 4 # QB
       color: "#FFC458"
       netsync: false
     - type: Appearance
@@ -89,6 +90,7 @@
     - type: PointLight
       radius: 5
       energy: 10
+      softness: 4 # QB
     - type: Flash
       flashOnMelee: false
       flashOnUse: false

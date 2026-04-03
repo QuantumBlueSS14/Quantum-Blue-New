@@ -381,6 +381,7 @@
   - type: PointLight
     radius: 2.0
     energy: 4.5
+    softness: 4 # QB
     color: "#6270bb"
   - type: Sprite
     sprite: Objects/Decoration/Flora/flora_treeslight.rsi

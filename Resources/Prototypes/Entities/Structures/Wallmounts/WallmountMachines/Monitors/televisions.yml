@@ -43,6 +43,7 @@
   - type: PointLight
     radius: 6 # imp, was 1.5
     energy: 1.6 # imp, was 3.0
+    softness: 4 # QB
     color: "#809fff" #imp, was #b89f25
     # imp adds start
     castShadows: true

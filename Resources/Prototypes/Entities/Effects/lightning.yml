@@ -18,7 +18,7 @@
     enabled: true
     color: "#4080FF"
     radius: 3.5
-    softness: 1
+    softness: 4 # QB
     autoRot: true
     castShadows: false
   - type: Beam
@@ -56,7 +56,7 @@
       enabled: true
       color: plum
       radius: 3.5
-      softness: 1
+      softness: 4 # QB
       autoRot: true
       castShadows: false
     - type: Lightning
@@ -131,7 +131,7 @@
       enabled: true
       color: "#FFFF00"
       radius: 3.5
-      softness: 1
+      softness: 4 # QB
       autoRot: true
       castShadows: false
 
@@ -157,6 +157,6 @@
       enabled: true
       color: "#ff0000"
       radius: 3.5
-      softness: 1
+      softness: 4 # QB
       autoRot: true
       castShadows: false

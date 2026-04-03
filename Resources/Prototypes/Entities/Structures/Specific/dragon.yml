@@ -25,6 +25,7 @@
     color: "#366db5"
     radius: 10.0
     energy: 5.0
+    softness: 4 # QB
     netsync: false
   - type: NavMapBeacon
     color: "#ff0000"

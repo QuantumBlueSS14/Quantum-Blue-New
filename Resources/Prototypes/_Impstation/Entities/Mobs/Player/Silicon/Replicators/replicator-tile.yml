@@ -46,6 +46,7 @@
     color: "#8800a3"
     radius: 4
     energy: 3.5
+    softness: 4 # QB
     castShadows: false
   - type: LightBehaviour
     behaviours:

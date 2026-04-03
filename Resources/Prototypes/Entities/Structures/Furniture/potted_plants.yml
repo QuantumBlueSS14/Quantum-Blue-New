@@ -182,6 +182,7 @@
     state: plant-09
   - type: PointLight
     radius: 2
+    softness: 4 # QB
     color: "#2cb2e8"
   - type: Item # imp
     inhandVisuals:

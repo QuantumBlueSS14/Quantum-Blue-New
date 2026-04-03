@@ -43,7 +43,6 @@
 - type: decal
   id: Damaged
   tags: ["station", "dirty"]
-  defaultCleanable: true
   sprite:
     sprite: _QB/Decals/Overlays/dirty.rsi # QB
     state: damaged

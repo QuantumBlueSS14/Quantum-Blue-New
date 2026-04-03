@@ -64,6 +64,7 @@
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     radius: 6
+    softness: 4 # QB
     netsync: false
   - type: Appearance
   - type: StaticPrice
@@ -125,6 +126,7 @@
   - type: PointLight
     enabled: false
     radius: 8
+    softness: 4 # QB
   - type: Clothing
     sprite: _Impstation/Objects/Tools/seclite.rsi # imp
     quickEquip: false

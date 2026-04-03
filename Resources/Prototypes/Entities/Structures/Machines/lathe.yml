@@ -637,7 +637,8 @@
     - type: PlaceableSurface # Imp This is required for the magnet pickup to work, this component allows a dumpable surface
     - type: PointLight # Imp This adds a red light glow around the basic ore processor to thematically show the temperature of the flame.
       radius: 2.5
-      energy: 5
+      energy: 4 # QB
+      softness: 4 # QB
       color: "#ff5a00"
 
 - type: entity
@@ -663,6 +664,7 @@
   - type: PointLight # Imp This adds a blue light glow around the industrial ore processor to thematically show the temperature of an even hotter flame.
     radius: 2.5
     energy: 5
+    softness: 4 # QB
     color: "#5ad6ff"
 
 - type: entity

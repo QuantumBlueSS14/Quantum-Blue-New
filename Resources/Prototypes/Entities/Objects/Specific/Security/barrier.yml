@@ -71,6 +71,7 @@
   - type: PointLight
     enabled: false
     radius: 3
+    softness: 4 # QB
     color: red
   - type: StaticPrice
     price: 200

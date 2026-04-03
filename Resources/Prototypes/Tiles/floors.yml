@@ -605,7 +605,7 @@
   name: tiles-reinforced-floor
   sprite: /Textures/_QB/Tiles/Plating/reinforced.png # QB Edit
   baseTurf: Plating
-  isSubfloor: false
+  isSubfloor: true # QB
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepHull

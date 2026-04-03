@@ -66,6 +66,7 @@
   - type: PointLight
     netsync: false
     radius: 6
+    softness: 4 # QB
     castShadows: false
     enabled: false
 

@@ -31,7 +31,7 @@
       color: "#ffaa44"
       energy: 8
       radius: 6
-      softness: 1
+      softness: 4 # QB
       offset: "0, 0"
     - type: EmitSoundOnTrigger
       sound:
