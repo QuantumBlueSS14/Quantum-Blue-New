@@ -206,7 +206,6 @@
     radius: 15
     energy: 1
     softness: 4 # QB
-    softness: 0.9
     color: "#EEEEFF"
   - type: Construction
     graph: FloorLightFixture
