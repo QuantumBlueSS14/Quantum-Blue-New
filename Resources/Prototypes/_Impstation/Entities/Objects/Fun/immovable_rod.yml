@@ -28,26 +28,26 @@
   - type: Physics
     bodyType: KinematicController
 
-- type: entity
-  parent: ImmovableRodKeepTilesStill
-  id: ImmovableRodFinFin
-  name: immovable Fin Fin
-  description: Your best friend! Don't touch him though.
-  components:
-  - type: ImmovableRod
-    eviscerationPopup: immovable-rod-penetrated-mob-finfin
-  - type: Sprite
-    sprite: _Impstation/Mobs/Pets/finfin.rsi
-    state: finfin
-    rotation: 0
-    noRot: false
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/_Impstation/Effects/comeandseehim.ogg
-  - type: PointLight
-    radius: 3
-    color: blue
-    energy: 2.0
+# - type: entity
+#   parent: ImmovableRodKeepTilesStill
+#   id: ImmovableRodFinFin
+#   name: immovable Fin Fin
+#   description: Your best friend! Don't touch him though.
+#   components:
+#   - type: ImmovableRod
+#     eviscerationPopup: immovable-rod-penetrated-mob-finfin
+#   - type: Sprite
+#     sprite: _Impstation/Mobs/Pets/finfin.rsi
+#     state: finfin
+#     rotation: 0
+#     noRot: false
+#   - type: EmitSoundOnSpawn
+#     sound:
+#       path: /Audio/_Impstation/Effects/comeandseehim.ogg
+#   - type: PointLight
+#     radius: 3
+#     color: blue
+#     energy: 2.0
 
 - type: entity
   parent: ImmovableRodKeepTiles

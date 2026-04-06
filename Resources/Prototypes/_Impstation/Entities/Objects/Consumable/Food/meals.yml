@@ -1,35 +1,35 @@
 # Mên-mên...
 
-- type: entity
-  name: finfin sashimi
-  parent: FoodMealBase
-  id: FoodMealFinfinSashimi
-  description: An unscrupulous delicacy. Japanese-Teoean fusion cuisine!
-  components:
-  - type: FlavorProfile
-    flavors:
-    - fishy
-    - finfin
-  - type: Sprite
-    state: sashimi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 45
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 18
-        - ReagentId: Protein
-          Quantity: 18
-        - ReagentId: TableSalt
-          Quantity: 1
-  - type: Tag
-    tags:
-    - Meat
-  - type: FoodSequenceElement
-    entries:
-      Burger: FinfinSashimiBurger
-      Hotdog: FinfinSashimiBurger
+# - type: entity
+#   name: finfin sashimi
+#   parent: FoodMealBase
+#   id: FoodMealFinfinSashimi
+#   description: An unscrupulous delicacy. Japanese-Teoean fusion cuisine!
+#   components:
+#   - type: FlavorProfile
+#     flavors:
+#     - fishy
+#     - finfin
+#   - type: Sprite
+#     state: sashimi
+#   - type: SolutionContainerManager
+#     solutions:
+#       food:
+#         maxVol: 45
+#         reagents:
+#         - ReagentId: Nutriment
+#           Quantity: 18
+#         - ReagentId: Protein
+#           Quantity: 18
+#         - ReagentId: TableSalt
+#           Quantity: 1
+#   - type: Tag
+#     tags:
+#     - Meat
+#   - type: FoodSequenceElement
+#     entries:
+#       Burger: FinfinSashimiBurger
+#       Hotdog: FinfinSashimiBurger
 
 - type: entity
   parent: FoodMealBase
@@ -92,7 +92,7 @@
     tags:
     - ClothMade
     - ClothFood
-    
+
 
 # pompom foods
 
@@ -134,12 +134,12 @@
     tags:
     - ClothFood
     - ClothMade
-    
+
 - type: entity
   name: puff-puff
   parent: FoodMealBase
   id: FoodMealPuffPuff
-  description: A popular street food for moths, known by many names across the galaxy. 
+  description: A popular street food for moths, known by many names across the galaxy.
   components:
   - type: FlavorProfile
     flavors:
@@ -155,7 +155,7 @@
     requiresSpecialDigestion: true
     trash:
     - FoodPacketFoodBoatTrash
-  - type: SolutionContainerManager 
+  - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 35
@@ -172,7 +172,7 @@
     tags:
     - ClothFood
     - ClothMade
-    
+
 - type: entity
   name: pomgo
   parent: FoodMealBase
@@ -194,7 +194,7 @@
     requiresSpecialDigestion: true
     trash:
     - FoodKebabSkewer
-  - type: SolutionContainerManager 
+  - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 35
@@ -209,7 +209,7 @@
     tags:
     - ClothFood
     - ClothMade
-    
+
 - type: entity
   name: pompette
   parent: FoodMealBase
@@ -231,7 +231,7 @@
     heldPrefix: pompette
   - type: Edible
     requiresSpecialDigestion: true
-  - type: SolutionContainerManager 
+  - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 50
@@ -248,7 +248,7 @@
     tags:
     - ClothFood
     - ClothMade
-    
+
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash

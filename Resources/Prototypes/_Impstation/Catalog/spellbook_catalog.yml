@@ -196,18 +196,18 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
-- type: listing
-  id: SpellbookSpawnFinFin
-  name: spellbook-finfin-name
-  description: spellbook-finfin-desc
-  productAction: ActionSpawnFinFinSpell
-  cost:
-    WizCoin: 1
-  categories:
-  - SpellbookUtility
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+# - type: listing
+#   id: SpellbookSpawnFinFin
+#   name: spellbook-finfin-name
+#   description: spellbook-finfin-desc
+#   productAction: ActionSpawnFinFinSpell
+#   cost:
+#     WizCoin: 1
+#   categories:
+#   - SpellbookUtility
+#   conditions:
+#   - !type:ListingLimitedStockCondition
+#     stock: 1
 
 # Equipment + wands + books
 - type: listing
