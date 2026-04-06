@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 04/06/2026 03:21:32
-  entityCount: 20669
+  time: 04/06/2026 18:22:42
+  entityCount: 20670
 maps:
 - 1
 grids:
@@ -4236,6 +4236,9 @@ entities:
     - type: Transform
       pos: -54.5,25.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 20670
     - type: Fixtures
       fixtures: {}
   - uid: 5632
@@ -4359,6 +4362,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -7.5,15.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 9103
+      - 9104
+      - 8509
+      - 8510
+      - 8508
+      - 8507
     - type: AccessReader
       accessListsOriginal:
       - - Atmospherics
@@ -5253,6 +5264,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 27.5,-12.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 10599
+      - 10591
+      - 8620
+      - 8621
+      - 8622
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
     - type: Fixtures
       fixtures: {}
   - uid: 8200
@@ -8003,6 +8024,14 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 20582
+  - uid: 20670
+    components:
+    - type: Transform
+      pos: -55.5,24.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 5005
 - proto: AltarHeaven
   entities:
   - uid: 5918
@@ -55350,6 +55379,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -15.5,15.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8052
   - uid: 8521
     components:
     - type: Transform
@@ -55660,6 +55692,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 9149
+      - 8199
   - uid: 8621
     components:
     - type: Transform
@@ -55668,6 +55701,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 8196
+      - 8199
   - uid: 8622
     components:
     - type: Transform
@@ -55676,6 +55710,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 10768
+      - 8199
   - uid: 8623
     components:
     - type: Transform
@@ -56952,18 +56987,25 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 9147
+      - 8052
   - uid: 8509
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -11.5,18.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8052
   - uid: 8510
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -10.5,18.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8052
   - uid: 8511
     components:
     - type: Transform
@@ -85712,6 +85754,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -13.5,13.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8052
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 9127
@@ -86352,6 +86397,9 @@ entities:
     - type: Transform
       pos: 29.5,-11.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8199
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 10592
@@ -86952,6 +87000,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -8.5,13.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8052
     - type: AtmosPipeColor
       color: '#FF1212FF'
   - uid: 9128
@@ -87621,6 +87672,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 26.5,-8.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 8199
     - type: AtmosPipeColor
       color: '#FF1212FF'
   - uid: 10600
