@@ -191,6 +191,9 @@ namespace Content.IntegrationTests.Tests
             //"reHash",
             //"RelicImp",
             //"Skimmer",
+
+            // from deltav:
+            "Asterisk"
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

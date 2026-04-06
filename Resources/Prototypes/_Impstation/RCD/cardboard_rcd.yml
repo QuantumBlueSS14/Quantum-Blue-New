@@ -83,7 +83,7 @@
   id: ChairCardboard
   category: WallsAndFlooring
   name: cardboard chair
-  sprite: { sprite: _Impstation/Structures/Furniture/cardboard_chair.rsi, state: chair }
+  sprite: { sprite: _QB/Structures/Furniture/Chairs/cardboard_chair.rsi, state: chair } # QB
   mode: ConstructObjecT
   prototype: ChairCardboard
   cost: 1

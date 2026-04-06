@@ -4,7 +4,7 @@
   parent: StoolBase
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/Chairs/chair_apid.rsi
+    sprite: _QB/Structures/Furniture/Chairs/chair_apid.rsi # QB
     state: apid
   - type: Construction
     graph: ImpSeat
@@ -18,7 +18,7 @@
   description: You can try to sit on it. You're not sure it'll go well.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Furniture/cardboard_chair.rsi
+    sprite: _QB/Structures/Furniture/Chairs/cardboard_chair.rsi # QB
     state: chair
   - type: Damageable
     damageModifierSet: Card
