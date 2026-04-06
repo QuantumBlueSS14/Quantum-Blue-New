@@ -238,9 +238,9 @@
     - id: ImmovableRodWeh
       prob: 0.0075
       orGroup: rodProto
-    - id: ImmovableRodFinFin # imp
-      prob: 0.0075
-      orGroup: rodProto
+    # - id: ImmovableRodFinFin # imp
+    #   prob: 0.0075
+    #   orGroup: rodProto
     - id: ImmovableRodGondal # imp
       prob: 0.0075
       orGroup: rodProto

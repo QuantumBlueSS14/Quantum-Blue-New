@@ -22,17 +22,17 @@
         children:
         - id: MobCargorilla
 
-- type: entity
-  id: CrateNPCFinfin
-  parent: CrateLivestock
-  name: fin fin crate
-  description: A crate containing your new best friend, imported straight from Teo. Adorable, but otherwise useless. Are you SURE you want to buy this one?
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:AllSelector
-        children:
-        - id: MobFinfin
+# - type: entity
+#   id: CrateNPCFinfin
+#   parent: CrateLivestock
+#   name: fin fin crate
+#   description: A crate containing your new best friend, imported straight from Teo. Adorable, but otherwise useless. Are you SURE you want to buy this one?
+#   components:
+#   - type: EntityTableContainerFill
+#     containers:
+#       entity_storage: !type:AllSelector
+#         children:
+#         - id: MobFinfin
 
 - type: entity
   id: CrateNPCBananaDeer
