@@ -8,58 +8,58 @@
 	},
 	"states": [
 	{
-		"name": "cardboard",
+		"name": "cardboard"
 	},
 	{
-		"name": "cardboard_2",
+		"name": "cardboard_2"
 	},
 	{
-		"name": "cardboard_3",
+		"name": "cardboard_3"
 	},
 	{
-		"name": "altcardboard",
+		"name": "altcardboard"
 	},
 	{
-		"name": "altcardboard_2",
+		"name": "altcardboard_2"
 	},
 	{
-		"name": "altcardboard_3",
+		"name": "altcardboard_3"
 	},
 	{
-		"name": "oldcardboard",
+		"name": "oldcardboard"
 	},
 	{
-		"name": "oldcardboard_2",
+		"name": "oldcardboard_2"
 	},
 	{
-		"name": "oldcardboard_3",
+		"name": "oldcardboard_3"
 	},
 	{
-		"name": "altoldcardboard",
+		"name": "altoldcardboard"
 	},
 	{
-		"name": "altoldcardboard_2",
+		"name": "altoldcardboard_2"
 	},
 	{
-		"name": "altoldcardboard_3",
+		"name": "altoldcardboard_3"
 	},
 	{
-		"name": "brightcardboard",
+		"name": "brightcardboard"
 	},
 	{
-		"name": "brightcardboard_2",
+		"name": "brightcardboard_2"
 	},
 	{
-		"name": "brightcardboard_3",
+		"name": "brightcardboard_3"
 	},
 	{
-		"name": "altbrightcardboard",
+		"name": "altbrightcardboard"
 	},
 	{
-		"name": "altbrightcardboard_2",
+		"name": "altbrightcardboard_2"
 	},
 	{
-		"name": "altbrightcardboard_3",
+		"name": "altbrightcardboard_3"
 	},
 	{
 		"name": "cardboard-inhand-left",

@@ -8,10 +8,10 @@
 	},
 	"states": [
 	{
-		"name": "generic_materials",
+		"name": "generic_materials"
 	},
 	{
-		"name": "steellog",
+		"name": "steellog"
 	},
 	{
 		"name": "steellog-inhand-left",
@@ -22,7 +22,7 @@
 		"directions": 4
 	},
 	{
-		"name": "woodlog",
+		"name": "woodlog"
 	},
 	{
 		"name": "woodlog-inhand-left",
