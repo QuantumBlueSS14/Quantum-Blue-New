@@ -1,5 +1,6 @@
 # Records editor
 humanoid-profile-editor-cd-records-tab = Records
+humanoid-profile-editor-cd-allergies-tab = Allergies
 
 #imp edit, disclaimer
 humanoid-profile-editor-cd-records-disclaimer = [color=yellow]Character records are optional, both writing and reading them. Their usage is a fun RP treat, and not a game mechanic.[/color]
