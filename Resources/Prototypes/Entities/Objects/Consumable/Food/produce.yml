@@ -196,6 +196,7 @@
   components:
   - type: Sprite
     sprite: _QB/Objects/Materials/misc.rsi # QB
+    state: woodlog
   - type: Item
     heldPrefix: woodlog # QB
   - type: SolutionContainerManager
@@ -222,6 +223,7 @@
   components:
   - type: Sprite
     sprite: _QB/Objects/Materials/misc.rsi # QB
+    state: steellog
   - type: Item
     heldPrefix: steellog # QB
   - type: SolutionContainerManager

@@ -95,7 +95,10 @@
   description: The humble glass shard. Sharp. Fragile. Tiny. Inelegant. And very, very accessible. #imp
   components:
   - type: Sprite
-    color: "#76b9e8" # QB
+    color: "#82cbff" # QB
+  - type: Item # QB
+    sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
+    heldPrefix: glassshard # QB
   - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
@@ -126,7 +129,10 @@
   description: ...'Reinforced', you say? Well, not anymore. At least its temper remains... #imp
   components:
   - type: Sprite
-    color: "#646464" # QB
+    color: "#cccccc" # QB
+  - type: Item # QB
+    sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
+    heldPrefix: rglassshard # QB
   - type: MeleeWeapon
     damage:
       types:
@@ -167,7 +173,10 @@
   description: If you attack someone with this, they might get really mad at you. #imp
   components:
   - type: Sprite
-    color: "#e676e0" # QB
+    color: "#ff82f9" # QB
+  - type: Item # QB
+    sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
+    heldPrefix: plasmaglassshard # QB
   - type: MeleeWeapon
     damage:
       types:
@@ -205,7 +214,10 @@
   description: A broken, likely-to-shorten-your-lifespan piece of uranium glass. #imp
   components:
   - type: Sprite
-    color: "#d1ca3b" # QB
+    color: "#fff647" # QB
+  - type: Item # QB
+    sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
+    heldPrefix: uraniumglassshard # QB
   - type: MeleeWeapon
     damage:
       types:
@@ -245,7 +257,10 @@
   description: Gubfr jub yvir va tynff ubhfrf fubhyqa'g guebj fgbarf. # imp; "those who live in glass houses shouldn't throw stones"
   components:
   - type: Sprite
-    color: "#ad9057" # QB
+    color: "#ffd480" # QB
+  - type: Item # QB
+    sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
+    heldPrefix: cglassshard # QB
   - type: ToolRefinable
     refineResult:
     - id: SheetGlass1

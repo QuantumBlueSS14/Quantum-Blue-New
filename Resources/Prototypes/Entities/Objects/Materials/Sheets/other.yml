@@ -58,6 +58,7 @@
     - state: paper_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/paper.rsi # QB
     heldPrefix: paper
   - type: Appearance
   - type: Extractable
@@ -106,6 +107,7 @@
     - state: plasma_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/plasma.rsi # QB
     heldPrefix: plasma
   - type: Appearance
   - type: Extractable
@@ -170,6 +172,7 @@
     - state: plastic_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/plastic.rsi # QB
     heldPrefix: plastic
   - type: Appearance
   - type: Extractable
@@ -235,6 +238,7 @@
       map: ["base"]
   - type: Appearance
   - type: Item
+    sprite: _QB/Objects/Materials/uranium.rsi # QB
     heldPrefix: uranium
   - type: Extractable
     grindableSolutionName: food

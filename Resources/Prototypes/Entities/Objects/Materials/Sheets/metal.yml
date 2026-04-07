@@ -65,6 +65,7 @@
     - state: steel_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/steel.rsi # QB
     heldPrefix: steel
   - type: Appearance
   - type: Extractable
@@ -144,6 +145,7 @@
     - state: brass_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/brass.rsi # QB
     heldPrefix: brass
   - type: Appearance
   - type: FloorTile
@@ -222,6 +224,7 @@
     - state: plasteel_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/plasteel.rsi # QB
     heldPrefix: plasteel
   - type: Appearance
   - type: Extractable

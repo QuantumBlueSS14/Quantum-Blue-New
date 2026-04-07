@@ -11,14 +11,14 @@
   parent: BaseMediumStack
   id: WoodPlank
   name: stack-wood-plank
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: wood }
+  icon: { sprite: _QB/Objects/Materials/wood.rsi, state: wood } # QB
   spawn: MaterialWoodPlank1
 
 - type: stack
   parent: BaseMediumStack
   id: Cardboard
   name: stack-cardboard
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cardboard }
+  icon: { sprite: _QB/Objects/Materials/cardboard.rsi, state: cardboard } # QB
   spawn: MaterialCardboard1
 
 # Stacks which come from or might come from a creature

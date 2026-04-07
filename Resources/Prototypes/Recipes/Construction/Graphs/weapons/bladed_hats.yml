@@ -9,7 +9,7 @@
       - tag: GlassShard
         name: construction-graph-tag-glass-shard
         icon:
-          sprite: Objects/Materials/Shards/shard.rsi
+          sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
           state: shard1
         doAfter: 1
       - tag: BrimFlatcapGrey
@@ -31,7 +31,7 @@
       - tag: GlassShard
         name: construction-graph-tag-glass-shard
         icon:
-          sprite: Objects/Materials/Shards/shard.rsi
+          sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
           state: shard1
         doAfter: 1
       - tag: BrimFlatcapBrown

@@ -2,42 +2,42 @@
   parent: BaseSheetStack
   id: Glass
   name: stack-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: glass }
+  icon: { sprite: _QB/Objects/Materials/Glass/glass.rsi, state: glass } # QB
   spawn: SheetGlass1
 
 - type: stack
   parent: BaseSheetStack
   id: ReinforcedGlass
   name: stack-reinforced-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: rglass }
+  icon: { sprite: _QB/Objects/Materials/Glass/rglass.rsi, state: rglass } # QB
   spawn: SheetRGlass1
 
 - type: stack
   parent: BaseSheetStack
   id: PlasmaGlass
   name: stack-plasma-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: pglass }
+  icon: { sprite: _QB/Objects/Materials/Glass/plasmaglass.rsi, state: plasmaglass } # QB
   spawn: SheetPGlass1
 
 - type: stack
   parent: BaseSheetStack
   id: ReinforcedPlasmaGlass
   name: stack-reinforced-plasma-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: rpglass }
+  icon: { sprite: _QB/Objects/Materials/Glass/rplasmaglass.rsi, state: rplasmaglass } # QB
   spawn: SheetRPGlass1
 
 - type: stack
   parent: BaseSheetStack
   id: UraniumGlass
   name: stack-uranium-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: uglass }
+  icon: { sprite: /Textures/_QB/Objects/Materials/Glass/uraniumglass.rsi, state: uraniumglass } # QB
   spawn: SheetUGlass1
 
 - type: stack
   parent: BaseSheetStack
   id: ReinforcedUraniumGlass
   name: stack-reinforced-uranium-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: ruglass }
+  icon: { sprite: _QB/Objects/Materials/Glass/ruraniumglass.rsi, state: ruraniumglass } # QB
   spawn: SheetRUGlass1
 
 - type: stack
