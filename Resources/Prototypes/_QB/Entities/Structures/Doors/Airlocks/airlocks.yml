@@ -1,0 +1,39 @@
+# Special
+
+- type: entity
+  parent: AirlockSecurity
+  id: AirlockBrigmedic
+  suffix: Brigmedic
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
+
+# Glass
+
+- type: entity
+  parent: AirlockSecurityGlass
+  id: AirlockBrigmedicGlass
+  suffix: Brigmedic
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
+
+# Medical
+
+- type: entity
+  parent: AirlockMedical
+  id: AirlockMedicalParamedic
+  suffix: Paramedic
+  components:
+    - type: Sprite
+      sprite: _QB/Structures/Doors/Airlocks/Standard/paramedic.rsi
+
+# Glass
+
+- type: entity
+  parent: AirlockMedicalGlass
+  id: AirlockMedicalParamedicGlass
+  suffix: Paramedic
+  components:
+    - type: Sprite
+      sprite: _QB/Structures/Doors/Airlocks/Glass/paramedic.rsi

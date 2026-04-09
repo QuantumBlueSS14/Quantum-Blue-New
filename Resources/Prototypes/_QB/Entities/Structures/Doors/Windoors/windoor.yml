@@ -1,0 +1,17 @@
+- type: entity
+  parent: WindoorSecureSecurityLocked
+  id: WindoorSecureBrigmedicLocked
+  suffix: Brigmedic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrigmedic ]
+
+- type: entity
+  parent: WindoorSecureMedicalLocked
+  id: WindoorSecureParamedicLocked
+  suffix: Paramedic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsParamedic ]

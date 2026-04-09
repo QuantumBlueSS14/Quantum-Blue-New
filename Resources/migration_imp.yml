@@ -137,8 +137,9 @@ CrayonRainbowInfinite: CrayonInfinite
 
 # 2025-12-27
 # standardize EVA rooms to command access, we should have done this a year ago when we initially hard forked maps but c'est la vie
-AirlockEVALocked: AirlockCommandLocked
-AirlockEVAGlassLocked: AirlockCommandGlassLocked
+# removed for QB
+# AirlockEVALocked: AirlockCommandLocked
+# AirlockEVAGlassLocked: AirlockCommandGlassLocked
 
 # 2026-01-13
 # unify our cardboard entities with upstream's

@@ -28,10 +28,13 @@
   - Maintenance
   - Chemistry
   - ChiefMedicalOfficer
-  - Brig
+#  - Brig - QB
   - Cryogenics
   - External
   - Vault #imp
+  - Brigmedic # QB
+  - Paramedic # QB
+  - Psychologist # QB
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

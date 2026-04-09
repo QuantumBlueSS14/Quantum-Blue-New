@@ -23,6 +23,7 @@
       - Atmospherics
       - Bar
       - Brig
+      - Brigmedic # QB
       - Detective
       - Captain
       - Cargo
@@ -48,6 +49,8 @@
       - Medical
       - Mime #Imp
       - Musician #Imp
+      - Paramedic # QB
+      - Psychologist # QB
       - Quartermaster
       - Reporter #Imp
       - Research
@@ -105,6 +108,7 @@
     - BasicSilicon
     - Borg
     - Brig
+    - Brigmedic # QB
     - Detective
     - Captain
     - Cargo
@@ -132,6 +136,8 @@
     - Medical
     - Mime #Imp
     - Musician #Imp
+    - Paramedic # QB
+    - Psychologist # QB
     - Quartermaster
     - Reporter #Imp
     - Research

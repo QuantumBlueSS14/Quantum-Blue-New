@@ -18,3 +18,7 @@ ComputerFundingAllocationBroken: ComputerFundingAllocation
 
 # 2/12/2026
 JailCard: null
+
+# 4/8/2026
+AirlockSecurityMedical: AirlockBrigmedic
+AirlockSecurityMedicalGlass: AirlockBrigmedicGlass

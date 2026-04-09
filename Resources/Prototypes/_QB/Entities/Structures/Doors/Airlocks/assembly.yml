@@ -1,0 +1,35 @@
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyBrigmedic
+  suffix: Brigmedic
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
+    state: "assembly"
+
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyBrigmedicGlass
+  suffix: Brigmedic, Glass
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Doors/Airlocks/Glass/secmed.rsi
+    state: "assembly"
+
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyParamedic
+  suffix: Paramedic
+  components:
+  - type: Sprite
+    sprite: _QB/Structures/Doors/Airlocks/Standard/paramedic.rsi
+    state: "assembly"
+
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyParamedicGlass
+  suffix: Paramedic, Glass
+  components:
+  - type: Sprite
+    sprite: _QB/Structures/Doors/Airlocks/Glass/paramedic.rsi
+    state: "assembly"
