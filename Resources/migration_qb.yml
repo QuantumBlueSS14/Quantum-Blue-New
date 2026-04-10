@@ -18,3 +18,156 @@ ComputerFundingAllocationBroken: ComputerFundingAllocation
 
 # 2/12/2026
 JailCard: null
+
+# 4/10/2026 - Making porting Delta V maps easier, specifically Glacier at the moment
+AirlockChiefJusticeGlassLocked: AirlockLawyerGlass
+AirlockChiefJusticeLocked: AirlockLawyer
+AirlockClerkGlassLocked: AirlockLawyerGlass
+AirlockClerkLocked: AirlockLawyer
+AirlockCorpsmanGlassLocked: null #AAAAAAAAAA
+AirlockCorpsmanLocked: null #AAAAAAA
+AirlockExternalGlassShuttleGlacierFilled: null # until we get lavaland workin
+AirlockExternalGlassShuttleMining: null # until we get lavaland workin
+AirlockJusticeGlass: AirlockLawyerGlass
+AirlockJustice: AirlockLawyer
+AirlockMailGlassLocked: AirlockCourierGlassLocked
+AirlockMailLocked: AirlockCourierLocked
+AirlockMaintSecurityLawyerLocked: AirlockMaintSecLocked # we probably want this one cause theres nothin for sec lawyer maints atm
+AirlockMantisGlassLocked: AirlockScienceGlassLocked
+AirlockMantisLocked: AirlockScienceLocked
+AirlockParamedicGlassLocked: null #AAAAAAAAA
+AirlockParamedicLocked: null #AAAAAAAAAAAA
+AirlockProsecutorGlassLocked: AirlockLawyerGlass
+AirlockProsecutorLocked: AirlockLawyer
+AirlockPsychologistGlassLocked: null #AAAAAAAAAA
+AirlockPsychologistLocked: null #AAAAAAAA
+AirlockSurgeryGlassLocked: AirlockMedicalGlassLocked
+AirlockSurgeryLocked: AirlockMedicalLocked
+AirlockRoboticsGlassLocked: AirlockScienceGlassLocked
+AirlockRoboticsLocked: AirlockScienceLocked
+AirSensorUnset: AirSensor
+AsteroidAltRock: AsteroidRock
+Autoclave: null
+BlastDoorUnlinkedArmory: BlastDoor #honestly dunno where these are but just gonna make em normal blast doors
+BlastDoorUnlinkedEngineering: BlastDoor
+BlastDoorUnlinkedRobotics: BlastDoor
+BookSalvageEpistemicsRandom: null
+ClothingHeadAreopagite: ClothingHeadHatWizard
+ClothingHeadHelmetInsulated: null
+ClothingHeadHoodBrown: null
+ClothingHeadPrisonGuard: ClothingHeadHatSecsoft
+ClothingHeadTechPriest: null
+ClothingOuterChiefJustice: ClothingOuterWinterColorBrown
+ClothingOuterRobeBrown: null
+ClothingOuterRobeTechPriest: null
+ClothingOuterSuitAreopagite: ClothingOuterWizardFake
+ClothingOuterWinterCoatMantis: ClothingOuterWinterSci
+ClothingOuterWinterMystagogue: ClothingOuterWinterRD
+ClothingUniformJumpsuitPrisonGuard: ClothingUniformJumpsuitSecGrey
+ComputerCargoOrdersJustice: null
+ComputerShuttleMiningGlacier: null #again once we get lava workin
+CryogenicSleepUnitSpawnerPrisoner: null
+DeepFryerMachineCircuitboard: null
+DefaultStationBeaconBoxing: null
+DefaultStationBeaconChiefJustice: null
+DefaultStationBeaconCorpsman: DefaultStationBeaconBrigMed
+DefaultStationBeaconExam: DefaultStationBeaconMedbay
+DefaultStationBeaconJustice: DefaultStationBeaconLawOffice
+DefaultStationBeaconMailroom: DefaultStationBeaconMailroomCourier
+DefaultStationBeaconMantis: null
+DefaultStationBeaconMetempsychosis: null
+DefaultStationBeaconProber: null
+DefaultStationBeaconProsecutor: null
+DefaultStationBeaconPsychologist: null
+DefaultStationBeaconVirology: null
+EngineeringTechFab: Autolathe
+EpistemicsTechFab: Autolathe
+FoodLollipop: FoodSnackSwirlLollipop
+GasPipeSensorControlNitrogen: GasPipeSensorDistributionAlt2
+GasPipeSensorControlOverpressure: GasPipeStraightAlt1
+GasPipeSensorControlOxygen: GasPipeSensorDistributionAlt2
+GavelBlock: null
+GlimmerProber: null
+HandgunSafeSpawner: GunSafePistolMk58
+HatSpawner: null
+HolopadCargoMail: HolopadCargoMailroom
+HolopadEpistemicsMantis: null
+HolopadEpistemicsOracle: null
+HolopadJusticeCJ: null
+HolopadJusticeClerk: null
+HolopadJusticeProsecutor: null
+HolopadSecurityCorpsman: HolopadSecurityBrigMed
+KitchenDeepFryer: null
+LockableButtonRobotics: LockableButtonResearch
+LockerChiefJusticeFilled: null
+LockerClerkFilled: null
+LockerForensicMantisFilled: null
+LockerParamedicFilledHardsuit: LockerParamedicFilled
+LockerPsychologistFilled: null #AAAAAAAAAAA
+LockerSurgeonFilled: LockerMedicalFilled
+LogisticsTechFab: Autolathe
+MedicalBiofabricator: MedicalAssembler
+OilJarCorn: ReagentContainerOliveoil
+Oracle: null
+PlushieMothBartender: PlushieSpawner50
+PlushieMothRandom: PlushieSpawner50
+PosterContrabandBreadLies: RandomPosterContraband
+PosterLegitBotanyFood: RandomPosterLegit
+PosterLegitMoreBread: RandomPosterLegit
+PosterLegitSafetyMothBoH: RandomPosterLegit
+PosterLegitSafetyMothGlimmer: RandomPosterLegit
+PosterLegitSafetyMothPills: RandomPosterLegit
+PosterLegitSafetyMothPoisoning: RandomPosterLegit
+PosterMapGlacier: null
+PoweredLightBlueInterior: PoweredlightBlue #i guess there was an inconsistency in ID stuff
+PoweredLightColoredRed: PoweredlightRed
+PoweredLightPostSmallRed: PoweredLightPostSmall
+PoweredSmallLightMaintenance: PoweredSmallLight
+RailingCornerSmallDeltaV: RailingCorner
+RailingDeltaV: Railing
+RandomAnimalSpawner: null
+RandomBoards: RandomBoard
+RandomBook: null
+RandomBox: null
+RandomItem: null
+RandomRockSpawner: null
+ReverseEngineeringMachine: null
+RifleSafeSpawner: GunSafeRifleLecter
+Roboisseur: null
+SalvageSeedSpawnerLow: null
+SecureCabinetCE: filingCabinetDrawerRandom
+SecureCabinetEpistemics: filingCabinetDrawerRandom
+SecureCabinetHoP: filingCabinetDrawerRandom
+SecureCabinetHoS: filingCabinetDrawerRandom
+SecureCabinetLogistics: filingCabinetDrawerRandom
+SecureCabinetPsychologist: filingCabinetDrawerRandom
+SentientSmileCore: SpawnMobSmile
+ShotgunSafeSpawner: GunSafeShotgunEnforcer
+SignConspiracyBoard: null
+SignDirectionaCourt: null
+SignLastIdiot: null
+SophicScribe: null
+SpareIdCabinetFilled: null
+SpawnMobArcticFoxSiobhan: SpawnMobPenguin # maybe fix these if you want idk what pets yall want i miss siobhan *sobs
+SpawnMobCMOPetSilvia: SpawnMobCatBingus
+SpawnMobJusticePet: null
+SpawnMobSecLaikaOrShiva: SpawnMobShiva
+SpawnPointCargoAssistant: null
+SpawnPointChiefJustice: null
+SpawnPointClerk: null
+SpawnPointForensicMantis: null
+SpawnPointMedicalBorg: null
+SpawnPointPrisoner: null
+SpawnPointProsecutor: null
+SpawnPointRoboticist: null
+SpawnPointSecurityBorg: null
+SpawnPointSurgeon: null
+SuitStorageCorpsman: SuitStorageSec
+SuitStorageSecDeltaV: SuitStorageSec
+SuperweaponSafeSpawner: GunSafeBaseSecure # lmk what you want me to do here
+TrialTimer: null
+VendingMachineBoxingDrobe: null
+WarpPointCourt: null
+WarpPointEngineering: null
+WeaponTurretAI: WeaponEnergyTurretAI
+WindoorSecureClerkLocked: WindoorSecure
