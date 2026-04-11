@@ -1,3 +1,5 @@
+# Special
+
 - type: entity
   parent: AirlockAssembly
   id: AirlockAssemblyBrigmedic
@@ -7,14 +9,18 @@
     sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
     state: "assembly"
 
+# Glass
+
 - type: entity
-  parent: AirlockAssembly
+  parent: AirlockAssemblyGlass
   id: AirlockAssemblyBrigmedicGlass
   suffix: Brigmedic, Glass
   components:
   - type: Sprite
     sprite: _Impstation/Structures/Doors/Airlocks/Glass/secmed.rsi
     state: "assembly"
+
+# Medical
 
 - type: entity
   parent: AirlockAssembly
@@ -27,9 +33,29 @@
 
 - type: entity
   parent: AirlockAssembly
+  id: AirlockAssemblyPsychologist
+  suffix: Psychologist
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/medical.rsi
+    state: "assembly"
+
+# Glass
+
+- type: entity
+  parent: AirlockAssemblyGlass
   id: AirlockAssemblyParamedicGlass
   suffix: Paramedic, Glass
   components:
   - type: Sprite
     sprite: _QB/Structures/Doors/Airlocks/Glass/paramedic.rsi
+    state: "assembly"
+
+- type: entity
+  parent: AirlockAssemblyGlass
+  id: AirlockAssemblyPsychologistGlass
+  suffix: Psychologist, Glass
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/medical.rsi
     state: "assembly"

@@ -1,3 +1,5 @@
+# Special
+
 - type: entity
   parent: AirlockBrigmedic
   id: AirlockBrigmedicLocked
@@ -7,6 +9,8 @@
     containers:
       board: [ DoorElectronicsBrigmedic ]
 
+# Glass
+
 - type: entity
   parent: AirlockBrigmedicGlass
   id: AirlockBrigmedicGlassLocked
@@ -15,6 +19,18 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsBrigmedic ]
+
+# Maint
+
+- type: entity
+  parent: AirlockBrigmedicLocked
+  id: AirlockMaintBrigmedicLocked
+  name: maintenance access
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+# Medbay
 
 - type: entity
   parent: AirlockParamedic
@@ -26,6 +42,17 @@
       board: [ DoorElectronicsParamedic ]
 
 - type: entity
+  parent: AirlockPsychologist
+  id: AirlockPsychologistLocked
+  suffix: Psychologist, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsychologist ]
+
+# Glass
+
+- type: entity
   parent: AirlockParamedicGlass
   id: AirlockParamedicGlassLocked
   suffix: Paramedic, Locked
@@ -33,3 +60,30 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsParamedic ]
+
+- type: entity
+  parent: AirlockPsychologistGlass
+  id: AirlockPsychologistGlassLocked
+  suffix: Psychologist, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsychologist ]
+
+# Maint
+
+- type: entity
+  parent: AirlockParamedicLocked
+  id: AirlockMaintParamedicLocked
+  name: maintenance access
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: AirlockPsychologistLocked
+  id: AirlockMaintPsychologistLocked
+  name: maintenance access
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi

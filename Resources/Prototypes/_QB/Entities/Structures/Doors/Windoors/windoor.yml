@@ -1,3 +1,5 @@
+# Special
+
 - type: entity
   parent: WindoorSecureSecurityLocked
   id: WindoorSecureBrigmedicLocked
@@ -7,6 +9,8 @@
     containers:
       board: [ DoorElectronicsBrigmedic ]
 
+# Medical
+
 - type: entity
   parent: WindoorSecureMedicalLocked
   id: WindoorSecureParamedicLocked
@@ -15,3 +19,12 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsParamedic ]
+
+- type: entity
+  parent: WindoorSecureMedicalLocked
+  id: WindoorSecurePsychologistLocked
+  suffix: Psychologist, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsychologist ]

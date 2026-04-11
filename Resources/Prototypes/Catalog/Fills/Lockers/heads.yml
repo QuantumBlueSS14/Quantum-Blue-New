@@ -30,7 +30,7 @@
   id: LockerFillCaptainNoLaser
   table: !type:AllSelector
     children:
-    - id: CaptainIDCard
+#    - id: CaptainIDCard # QB comment - this is too cheap/easy for antags, moved to id_cabinet.yml
     - id: CigarGoldCase
       prob: 0.25
     - id: ClothingBeltSheathFilled

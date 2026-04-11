@@ -22,18 +22,34 @@
 
 - type: entity
   parent: AirlockMedical
-  id: AirlockMedicalParamedic
+  id: AirlockParamedic
   suffix: Paramedic
   components:
     - type: Sprite
       sprite: _QB/Structures/Doors/Airlocks/Standard/paramedic.rsi
 
+- type: entity
+  parent: AirlockMedical
+  id: AirlockPsychologist
+  suffix: Psychologist
+  components:
+    - type: Sprite
+      sprite: Structures/Doors/Airlocks/Standard/medical.rsi
+
 # Glass
 
 - type: entity
   parent: AirlockMedicalGlass
-  id: AirlockMedicalParamedicGlass
+  id: AirlockParamedicGlass
   suffix: Paramedic
   components:
     - type: Sprite
       sprite: _QB/Structures/Doors/Airlocks/Glass/paramedic.rsi
+
+- type: entity
+  parent: AirlockMedicalGlass
+  id: AirlockPsychologistGlass
+  suffix: Psychologist
+  components:
+    - type: Sprite
+      sprite: Structures/Doors/Airlocks/Glass/medical.rsi
