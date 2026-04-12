@@ -4,6 +4,10 @@ on:
   pull_request_target:
     types: [review_requested, opened]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   add_label:
     runs-on: ubuntu-latest
