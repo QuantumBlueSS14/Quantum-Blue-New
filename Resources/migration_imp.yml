@@ -34,7 +34,7 @@ ClothingHeadHelmetTemplar: null
 
 # 2025-02-18
 # impstation: Replace Walter spawns with the Walter/Dolby spawner
-SpawnMobWalter: SpawnMobChemDog
+# SpawnMobWalter: SpawnMobChemDog
 
 # 2025-03-13
 # impstation: make the courier hardsuit non-roundstart
@@ -124,7 +124,7 @@ RandomXAEArtifactSpawner20: RandomArtifactSpawner20
 
 # 2025-11-18
 # death of departmental economy
-#CrateLockBoxEngineering: CrateEngineeringSecure QB: bandaid fix until we properly revert, I've got these migrations, but reversed, in migrations_qb.yml
+#CrateLockBoxEngineering: CrateEngineeringSecure QB: bandaid fix until we properly revert, I've got these migrations, but reversed, in migration_qb.yml
 #CrateLockBoxMedical: CrateMedicalSecure
 #CrateLockBoxScience: CrateScienceSecure
 #CrateLockBoxSecurity: CrateSecgear

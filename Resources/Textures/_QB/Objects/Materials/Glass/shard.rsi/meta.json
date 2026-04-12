@@ -1,0 +1,60 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Original artwork by MattFright",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+	{
+		"name": "shard1"
+	},
+	{
+		"name": "shard2"
+	},
+	{
+		"name": "shard3"
+	},
+	{
+		"name": "glassshard-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "glassshard-inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "rglassshard-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "rglassshard-inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "plasmaglassshard-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "plasmaglassshard-inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "uraniumglassshard-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "uraniumglassshard-inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "cglassshard-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "cglassshard-inhand-right",
+		"directions": 4
+	}
+	]
+}

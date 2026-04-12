@@ -49,11 +49,13 @@
     - gold_2
     - gold_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/gold.rsi # QB
     state: gold_3
     layers:
     - state: gold_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/gold.rsi # QB
     heldPrefix: gold
   - type: Appearance
   - type: Extractable
@@ -74,6 +76,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/gold.rsi # QB
     state: gold
   - type: Stack
     count: 1
@@ -97,11 +100,13 @@
     - silver_2
     - silver_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/silver.rsi # QB
     state: silver_3
     layers:
     - state: silver_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/silver.rsi # QB
     heldPrefix: silver
   - type: Appearance
   - type: Extractable
@@ -123,6 +128,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/silver.rsi # QB
     state: silver
   - type: Stack
     count: 1
