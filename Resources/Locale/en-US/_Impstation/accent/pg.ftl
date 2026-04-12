@@ -350,9 +350,6 @@ accent-pg-words-replace-117 = diddly squat
 accent-pg-words-118 = shit is
 accent-pg-words-replace-118 = stuff is
 
-accent-pg-words-119 = shitpig
-accent-pg-words-replace-119 = stinkpig
-
 accent-pg-words-120 = oh shit
 accent-pg-words-replace-120 = aw crud
 
@@ -684,7 +681,7 @@ accent-pg-words-229 = cunt
 accent-pg-words-replace-229 = schmuck
 
 accent-pg-words-230 = pussy is out
-accent-pg-words-replace-230 = naked 
+accent-pg-words-replace-230 = naked
 # ^ purposefully awkward - "HIS NAKED" is the intended phrase. because thats really funny to me
 accent-pg-words-231 = pussies
 accent-pg-words-replace-231 = scaredy-cats

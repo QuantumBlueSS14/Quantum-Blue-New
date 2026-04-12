@@ -9,8 +9,10 @@
   access:
   - Medical
   - Maintenance
+  - Psychologist # QB
   extendedAccess:
   - Chemistry
+  - Paramedic # QB
   special: # imp
   - !type:AddComponentSpecial
     components:

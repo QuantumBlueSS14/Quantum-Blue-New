@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Original artwork by MattFright",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+	{
+		"name": "ruraniumglass"
+	},
+	{
+		"name": "ruraniumglass_2"
+	},
+	{
+		"name": "ruraniumglass_3"
+	},
+	{
+		"name": "ruraniumglass-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "ruraniumglass-inhand-right",
+		"directions": 4
+	}
+	]
+}

@@ -7,10 +7,11 @@
   description: It seems to be pulsing with suspiciously enticing energies.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Syndicate/telecrystal.rsi
+    sprite: _QB/Objects/Materials/Gems/telecrystal.rsi # QB
     state: telecrystal
   - type: Item
-    sprite: Objects/Specific/Syndicate/telecrystal.rsi
+    sprite: _QB/Objects/Materials/Gems/telecrystal.rsi # QB
+    heldPrefix: telecrystal # QB
     size: Tiny
   - type: Stack
     count: 20

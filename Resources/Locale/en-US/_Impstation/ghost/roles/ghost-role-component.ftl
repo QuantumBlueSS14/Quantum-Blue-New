@@ -20,9 +20,6 @@ ghost-role-information-subjuzine-rules = You are a [color=#6495ed][bold]Familiar
 ghost-role-information-syndie-assaultborg-name = Syndicate Assault Borg
 ghost-role-information-syndie-assaultborg-description = Nuclear operatives needs reinforcements. You, a cold silicon killing machine, will help them. More dakka!
 
-ghost-role-information-finfin-name = Fin Fin
-ghost-role-information-finfin-description = Taken from your home planet of Teo by Salvage, you're so adorable that you were adopted by the station instead of sent to CentComm. It's in your best interest to stay that way.
-
 ghost-role-information-luggage-name = The Luggage
 ghost-role-information-luggage-description = You are The Luggage, a chest made of sapient pearwood, and loyal familiar to the first person you see upon exiting your crate.
 

@@ -13,7 +13,7 @@
   id: Pets
   values:
     - Pun Pun the Monkey
-    - VILE SHITPIG the SHITPIG
+    - Alexander the Pig # QB
     - Hamlet the Hamster
     - Shiva the Spider
     - Ian the Corgi
@@ -25,7 +25,7 @@
     - Willow the Kangaroo
     - Smile the Slime
     - Tropico the Crab
-    - Major the Spacebear
+#    - Major the Spacebear - QB comment
 
 - type: dataset
   id: Rooms

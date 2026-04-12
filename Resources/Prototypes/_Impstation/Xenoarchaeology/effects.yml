@@ -73,13 +73,13 @@
   components:
   - type: XAEScrambleDNA
 
-- type: entity
-  id: XenoArtifactPolyFinfin
-  parent: BaseXenoArtifactEffect
-  description: Temporarily reshape flesh
-  components:
-  - type: XAEPolymorph
-    polymorphPrototypeName: ArtifactFinfin
+# - type: entity
+#   id: XenoArtifactPolyFinfin
+#   parent: BaseXenoArtifactEffect
+#   description: Temporarily reshape flesh
+#   components:
+#   - type: XAEPolymorph
+#     polymorphPrototypeName: ArtifactFinfin
 
 - type: entity
   id: XenoArtifactPolyClownSpider

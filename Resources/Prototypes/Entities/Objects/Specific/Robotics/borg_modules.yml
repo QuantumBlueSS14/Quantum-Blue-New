@@ -681,7 +681,7 @@
   parent: BaseItem
   components:
   - type: Sprite
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _QB/Objects/Materials/misc.rsi # QB
     state: generic_materials
 
 - type: entity
