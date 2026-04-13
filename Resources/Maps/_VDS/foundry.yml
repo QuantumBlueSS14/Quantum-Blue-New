@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 04/06/2026 18:22:42
-  entityCount: 20670
+  time: 04/13/2026 01:31:04
+  entityCount: 20674
 maps:
 - 1
 grids:
@@ -33878,6 +33878,26 @@ entities:
       rot: 3.141592653589793 rad
       pos: -10.5,-42.5
       parent: 2
+  - uid: 20671
+    components:
+    - type: Transform
+      pos: 6.5,-31.5
+      parent: 2
+  - uid: 20672
+    components:
+    - type: Transform
+      pos: 7.5,-31.5
+      parent: 2
+  - uid: 20673
+    components:
+    - type: Transform
+      pos: 5.5,-31.5
+      parent: 2
+  - uid: 20674
+    components:
+    - type: Transform
+      pos: 8.5,-31.5
+      parent: 2
 - proto: CarpetPurple
   entities:
   - uid: 14342
@@ -47965,7 +47985,7 @@ entities:
     - type: Transform
       pos: 17.5,-39.5
       parent: 2
-- proto: DeskIntercomAll
+- proto: DeskIntercomCommand
   entities:
   - uid: 14747
     components:
@@ -105722,13 +105742,6 @@ entities:
     - type: Transform
       pos: 34.5,-22.5
       parent: 2
-- proto: SpawnMobChemDog
-  entities:
-  - uid: 17827
-    components:
-    - type: Transform
-      pos: 9.5,-17.5
-      parent: 2
 - proto: SpawnMobCorgi
   entities:
   - uid: 15456
@@ -105791,6 +105804,13 @@ entities:
     components:
     - type: Transform
       pos: 31.5,31.5
+      parent: 2
+- proto: SpawnMobWalter
+  entities:
+  - uid: 17827
+    components:
+    - type: Transform
+      pos: 9.5,-17.5
       parent: 2
 - proto: SpawnPointAtmos
   entities:
