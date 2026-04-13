@@ -39,15 +39,17 @@
   friction: 1.5
   heatCapacity: 10000
 
+# QB - No longer plating but instead now just a regular floor, but i'm not gonna bother moving this
 - type: tile
   id: PlatingBrass
   name: tiles-brass-plating
   sprite: /Textures/_QB/Tiles/Brass/clockwork_floor.png # QB Edit
-  baseTurf: Lattice
-  isSubfloor: true
+  baseTurf: Plating # QB
+  isSubfloor: false # QB
+  deconstructTools: [ Prying ] # QB
   footstepSounds:
-    collection: FootstepPlating
-  friction: 1.5
+    collection: FootstepHull # QB
+  itemDrop: SheetBrass1 # QB
   heatCapacity: 10000
 
 - type: tile

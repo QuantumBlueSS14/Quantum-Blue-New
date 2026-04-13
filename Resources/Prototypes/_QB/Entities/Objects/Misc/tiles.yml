@@ -15,7 +15,7 @@
     stackType: FloorTileTechmaintGreen
 
 - type: entity
-  name: tiled black wood floor
+  name: black wood floor tile
   parent: FloorTileItemBase
   id: FloorTileItemWoodTileBlack
   components:
@@ -36,7 +36,7 @@
     node: woodtile
 
 - type: entity
-  name: tiled dark wood floor
+  name: dark wood floor tile
   parent: FloorTileItemBase
   id: FloorTileItemWoodTileDark
   components:
@@ -57,7 +57,7 @@
     node: woodtile
 
 - type: entity
-  name: tiled light wood floor
+  name: light wood floor tile
   parent: FloorTileItemBase
   id: FloorTileItemWoodTileLight
   components:
@@ -78,7 +78,7 @@
     node: woodtile
 
 - type: entity
-  name: tiled red wood floor
+  name: red wood floor tile
   parent: FloorTileItemBase
   id: FloorTileItemWoodTileRed
   components:
