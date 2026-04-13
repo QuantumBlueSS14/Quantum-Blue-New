@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "cabinet",
+            "directions": 4
+        },
+        {
+            "name": "cabinet-empty-closed",
+            "directions": 4
+        },
+        {
+            "name": "cabinet-empty-open",
+            "directions": 4
+        },
+        {
+            "name": "cabinet-filled-closed",
+            "directions": 4
+        },
+        {
+            "name": "cabinet-filled-open",
+            "directions": 4
+        },
+        {
+            "name": "glass",
+            "directions": 4
+        },
+        {
+            "name": "glass-up",
+            "directions": 4
+        },
+        {
+            "name": "id",
+            "directions": 4
+        },
+        {
+            "name": "spareid",
+            "directions": 4
+        },
+        {
+            "name": "locked",
+            "directions": 4
+        },
+        {
+            "name": "unlocked",
+            "directions": 4
+        }
+    ]
+}

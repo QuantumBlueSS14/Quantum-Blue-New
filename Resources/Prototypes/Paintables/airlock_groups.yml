@@ -43,10 +43,13 @@
     qm: AirlockQuartermaster
     rd: AirlockResearchDirector
     reporter: AirlockReporter
-    secmed: AirlockSecurityMedical
+    # secmed: AirlockSecurityMedical # QB comment
     service: AirlockService
     theatre: AirlockTheatre
     # imp edit end
+    # QB edit start
+    paramedic: AirlockParamedic
+    # QB edit end
 
 - type: paintableGroup
   id: AirlockGlass
@@ -92,7 +95,10 @@
     qm: AirlockQuartermasterGlass
     rd: AirlockResearchDirectorGlass
     reporter: AirlockReporterGlass
-    secmed: AirlockSecurityMedicalGlass
+    # secmed: AirlockSecurityMedicalGlass # QB comment
     service: AirlockServiceGlass
     theatre: AirlockTheatreGlass
     # imp edit end
+    # QB edit start
+    paramedic: AirlockParamedicGlass
+    # QB edit end

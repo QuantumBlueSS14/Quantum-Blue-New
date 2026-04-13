@@ -1,0 +1,16 @@
+The files below are licensed under CC-BY-SA 3.0 by MattFright
+Uses NASA Hubble Space Telescope image found at "https://www.flickr.com/photos/nasahubble/52689698469/"
+
+icon.ico
+icon.svg
+logo.svg
+logo.png
+slashlogo.png
+Mir_variant.svg
+icon/icon-16x16.png
+icon/icon-24x24.png
+icon/icon-32x32.png
+icon/icon-48x48.png
+icon/icon-64x64.png
+icon/icon-128x128.png
+icon/icon-256x256.png

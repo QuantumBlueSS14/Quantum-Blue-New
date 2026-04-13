@@ -191,8 +191,8 @@
   id: LotteryPlushiesEntityTable
   table: !type:GroupSelector
     children:
-    - id: MobFinfin # imp
-      weight: 0.1
+    # - id: MobFinfin # imp
+    #   weight: 0.1
     - id: PlushieRGBee
     - id: PlushieGhost
     - id: PlushieHampter
@@ -200,7 +200,7 @@
     - id: PlushiePenguin
     - id: PlushieHuman
     - id: PlushieLizard
-    - id: PlushieFinfin # imp
+    # - id: PlushieFinfin # imp
     - id: PlushieRouny
     - id: PlushieLamp
     - id: PlushieSharkBlue

@@ -1,0 +1,55 @@
+- type: entity
+  parent: BaseWallmountCabinetGlass
+  id: IdCardCabinet
+  name: id cabinet
+  description: You have a feeling this thing is tougher than it looks.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50000 # lol
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: Lock
+  - type: LockVisuals
+  - type: Sprite
+    sprite: _QB/Structures/Wallmounts/id_cabinet.rsi
+    layers:
+    - state: cabinet
+    - state: spareid
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: glass
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        ejectOnInteract: true
+        whitelist:
+          components:
+          - IdCard
+
+- type: entity
+  parent: IdCardCabinet
+  id: SpareIdCardCabinet
+  name: spare id cabinet
+  description: A small label reads "Contact Central Command to have this unlocked". You have a feeling this thing is tougher than it looks.
+  suffix: Filled, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - CaptainIDCard
+  - type: AccessReader
+    access: [["CentralCommand"]]

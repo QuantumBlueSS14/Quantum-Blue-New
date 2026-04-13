@@ -228,7 +228,7 @@
   name: Bandito
   parent: MobFerret
   id: MobBandito
-  description: Just a silly little guy!
+  description: He's in here for life. Treat him well. # QB
   components:
   - type: Grammar
     attributes:
@@ -570,18 +570,18 @@
     - VimPilot
 
 - type: entity
-  name: VILE SHITPIG # imp
+  name: Alexander
   parent: MobPig
   id: MobAlexander
   description: Chef's finest colleague.
   components:
   - type: InteractionPopup
     successChance: 1
-    interactSuccessString: petting-success-disgustingpig #imp
-    interactFailureString: petting-failure-disgustingpig #imp
+    interactSuccessString: petting-success-pig
+    interactFailureString: petting-failure-pig
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
-      collection: DisgustingPig #imp
+      path: /Audio/Animals/pig_oink.ogg
       params:
        variation: .5 #imp
   - type: Grammar

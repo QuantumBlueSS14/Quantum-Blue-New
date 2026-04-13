@@ -5,7 +5,7 @@ on:
 
 jobs:
   labeler:
-    if: ${{ ! contains(fromJSON('["ImpstationBot", "github-actions"]'), github.actor) }} # imp edit
+    if: github.actor != 'Quantum-Blue-Bot' # QB Edit hope this works
     permissions:
       contents: read
       pull-requests: write

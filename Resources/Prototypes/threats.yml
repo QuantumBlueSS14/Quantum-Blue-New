@@ -29,10 +29,10 @@
   announcement: terror-uristswarm
   rule: GameRuleUristSwarm
 
-- type: ninjaHackingThreat
-  id: ImmovableFriend
-  announcement: terror-finfin
-  rule: ImmovableFriendSpawn
+# - type: ninjaHackingThreat
+#   id: ImmovableFriend
+#   announcement: terror-finfin
+#   rule: ImmovableFriendSpawn
 
 - type: ninjaHackingThreat
   id: Replicators
