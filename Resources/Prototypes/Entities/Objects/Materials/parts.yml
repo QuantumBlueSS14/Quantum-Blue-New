@@ -4,10 +4,10 @@
   id: PartBase
   components:
   - type: Sprite
-    sprite: Objects/Materials/parts.rsi
+    sprite: _QB/Objects/Materials/rods.rsi # QB
     state: rods
   - type: Item
-    sprite: Objects/Materials/parts.rsi
+    sprite: _QB/Objects/Materials/rods.rsi # QB
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: FlimsyMetallic
@@ -39,9 +39,9 @@
     baseLayer: base
     layerStates:
     - rods
-    - rods_2
+#    - rods_2
     - rods_3
-    - rods_4
+#    - rods_4
     - rods_5
   - type: Sprite
     state: rods_5

@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Original artwork by MattFright",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+	{
+		"name": "durathread"
+	},
+	{
+		"name": "durathread_2"
+	},
+	{
+		"name": "durathread_3"
+	},
+	{
+		"name": "durathread-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "durathread-inhand-right",
+		"directions": 4
+	}
+	]
+}

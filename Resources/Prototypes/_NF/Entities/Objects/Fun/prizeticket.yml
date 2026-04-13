@@ -203,9 +203,9 @@
     - id: PlushieEvilBug
       prob: 0.03
       orGroup: Prize
-    - id: PlushieFinfin
-      prob: 0.03
-      orGroup: Prize
+    # - id: PlushieFinfin
+    #   prob: 0.03
+    #   orGroup: Prize
     - id: PlushieGiantBear # don't worry about how it fits in there
       prob: 0.03
       orGroup: Prize

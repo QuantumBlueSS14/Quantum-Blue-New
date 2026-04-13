@@ -1,0 +1,303 @@
+# This is temporary
+# Time requirements are all set to 0 so that people can actually play the game
+# The server is new so we can have all jobs available for free, for now
+
+- type: jobRequirementOverride
+  id: QBTemporaryPlaytimeReq
+  jobs:
+    # Civilian
+    Lawyer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Assistant:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Visitor:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Service
+    Bartender:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Chef:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Librarian:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Musician:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Mime:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Clown:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Boxer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Zookeeper:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Reporter:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Chaplain:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Janitor:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Botanist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Engineering
+    StationEngineer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    AtmosphericTechnician:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    TechnicalAssistant:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Science
+    ResearchAssistant:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Scientist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Supply
+    SalvageSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    CargoTechnician:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Courier:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Medical
+    MedicalIntern:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    MedicalDoctor:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Chemist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Psychologist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Paramedic:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Security
+    SecurityCadet:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    SecurityOfficer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Detective:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Brigmedic:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Warden:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Command
+    Captain:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    HeadOfPersonnel:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ChiefEngineer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ChiefMedicalOfficer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    HeadOfSecurity:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ResearchDirector:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    HospitalityDirector:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Quartermaster:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Silicon
+    StationAi:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Borg:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Drone:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Central Command
+    CentralCommandOfficial:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    CentcommInternLeader:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    CentcommIntern:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    DeathSquad:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    CBURN:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTLeader:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTSecurity:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTMedical:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTEngineer:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTJanitor:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ERTChaplain:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+  antags:
+    # Syndicate
+    Traitor:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    TraitorSleeper:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Nukeops:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    NukeopsMedic:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    NukeopsCommander:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    NukeopsLone:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Main roundstart antags
+    HeadRev:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Thief:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    MothershipCore:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Xenoborg:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    InitialInfected:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Conspirator:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Changeling:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Main ghost role antags
+    Dragon:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    SpaceNinja:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Wizard:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # Minor ghost role antags
+    Fugitive:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    ListeningPost:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    Recruiter:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    SynthesisSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+    # The morally gray
+    ParadoxClone:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+    BountyHunter:
+    - !type:OverallPlaytimeRequirement
+      time: 0 # free
+
+  # Commented below because for some fucking reason this doesn't work
+  # ghostroles:
+  #   # Syndicate
+  #   SyndicateKobold:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateKoboldNukeops:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateMonkey:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateMonkeyNukeops:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateAgentMedic:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateAgentSpy:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+  #   SyndicateAgentThief:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+
+  #   # The morally gray
+  #   MobSkeletonCloset:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free
+
+  #   # Vent
+  #   Vrex:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 0 # free

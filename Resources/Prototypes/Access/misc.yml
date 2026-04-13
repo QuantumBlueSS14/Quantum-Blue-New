@@ -45,6 +45,11 @@
   - Reporter
   - Vault
   #imp edit end
+  # QB edit start
+  - Brigmedic
+  - Paramedic
+  - Psychologist
+  # QB edit end
 
 - type: accessGroup
   id: General

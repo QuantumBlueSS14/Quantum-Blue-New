@@ -16,8 +16,10 @@
   - Medical
   - Maintenance
   - External
+  - Paramedic # QB
   extendedAccess:
   - Chemistry
+  - Psychologist # QB
 
 - type: startingGear
   id: ParamedicGear

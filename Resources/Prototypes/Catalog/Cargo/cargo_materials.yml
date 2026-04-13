@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: MaterialGlass
   icon:
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _QB/Objects/Materials/Glass/glass.rsi # QB
     state: glass_3
   product: CrateMaterialGlass
   cost: 1500
@@ -11,7 +11,7 @@
 - type: cargoProduct
   id: MaterialSteel
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _QB/Objects/Materials/Metals/steel.rsi # QB
     state: steel_3
   product: CrateMaterialSteel
   cost: 1500
@@ -21,7 +21,7 @@
 - type: cargoProduct
   id: MaterialPlastic
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _QB/Objects/Materials/plastic.rsi # QB
     state: plastic_3
   product: CrateMaterialPlastic
   cost: 2000
@@ -31,7 +31,7 @@
 - type: cargoProduct
   id: MaterialBrass
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _QB/Objects/Materials/Metals/brass.rsi # QB
     state: brass_3
   product: CrateMaterialBrass
   cost: 3000
@@ -41,7 +41,7 @@
 - type: cargoProduct
   id: MaterialPlasteel
   icon:
-    sprite: Objects/Materials/Sheets/metal.rsi
+    sprite: _QB/Objects/Materials/Metals/plasteel.rsi # QB
     state: plasteel_3
   product: CrateMaterialPlasteel
   cost: 1600
@@ -51,7 +51,7 @@
 - type: cargoProduct
   id: MaterialGold
   icon:
-    sprite: Objects/Materials/ingots.rsi
+    sprite: _QB/Objects/Materials/Metals/gold.rsi # QB
     state: gold_3
   product: CrateMaterialGold
   cost: 3225
@@ -61,7 +61,7 @@
 - type: cargoProduct
   id: MaterialSilver
   icon:
-    sprite: Objects/Materials/ingots.rsi
+    sprite: _QB/Objects/Materials/Metals/silver.rsi # QB
     state: silver_3
   product: CrateMaterialSilver
   cost: 2580
@@ -71,7 +71,7 @@
 - type: cargoProduct
   id: MaterialTextiles
   icon:
-    sprite: Objects/Materials/materials.rsi
+    sprite: _QB/Objects/Materials/cloth.rsi # QB
     state: cloth_3
   product: CrateMaterialTextiles
   cost: 1500
@@ -81,7 +81,7 @@
 - type: cargoProduct
   id: MaterialPlasma
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _QB/Objects/Materials/plasma.rsi # QB
     state: plasma_3
   product: CrateMaterialPlasma
   cost: 2200 #imp edit to prevent abritrage - was 2k.
@@ -91,7 +91,7 @@
 - type: cargoProduct
   id: CardboardMaterial
   icon:
-    sprite: Objects/Materials/materials.rsi
+    sprite: _QB/Objects/Materials/cardboard.rsi # QB
     state: cardboard_3
   product: CrateMaterialCardboard
   cost: 330
@@ -101,7 +101,7 @@
 - type: cargoProduct
   id: PaperMaterial
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _QB/Objects/Materials/paper.rsi # QB
     state: paper_3
   product: CrateMaterialPaper
   cost: 185
@@ -111,7 +111,7 @@
 - type: cargoProduct
   id: MaterialBasic
   icon:
-    sprite: Objects/Materials/Sheets/other.rsi
+    sprite: _QB/Objects/Materials/misc.rsi # QB
     state: generic_materials
   product: CrateMaterialBasicResource
   cost: 1660

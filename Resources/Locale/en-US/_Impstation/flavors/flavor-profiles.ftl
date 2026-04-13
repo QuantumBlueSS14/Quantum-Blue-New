@@ -23,7 +23,6 @@ flavor-complex-horsepussy = tastes like death and a subsequent memorial
 flavor-complex-grease = tastes thick, slimy, and a bit bitter
 
 flavor-complex-cigarettes = like cigarettes
-flavor-complex-finfin = like your best friend
 flavor-complex-radiation = like radiation
 flavour-stardust = like stardust
 flavor-complex-brotherly = brotherly

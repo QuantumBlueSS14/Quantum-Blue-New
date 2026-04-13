@@ -1,0 +1,36 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Original artwork by MattFright",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+	{
+		"name": "generic_materials"
+	},
+	{
+		"name": "steellog"
+	},
+	{
+		"name": "steellog-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "steellog-inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "woodlog"
+	},
+	{
+		"name": "woodlog-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "woodlog-inhand-right",
+		"directions": 4
+	}
+	]
+}

@@ -1,15 +1,15 @@
-- type: entity
-  name: Finfin Spawner
-  id: SpawnMobFinfin
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobFinfin
+# - type: entity
+#   name: Finfin Spawner
+#   id: SpawnMobFinfin
+#   parent: MarkerBase
+#   components:
+#   - type: Sprite
+#     layers:
+#       - state: green
+#       - state: ai
+#   - type: ConditionalSpawner
+#     prototypes:
+#       - MobFinfin
 
 - type: entity
   name: Poppy Spawner

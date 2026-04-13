@@ -40,8 +40,8 @@
           weight: 0.25
         - id: MobBingus
           weight: 0.005
-        - id: MobPipi #imp
-          weight: 0.005
+        # - id: MobPipi #imp
+        #   weight: 0.005
 
 - type: entity
   parent: CrateLivestock
@@ -104,8 +104,8 @@
       entity_storage: !type:GroupSelector #imp groupselector
         children:
         - id: MobCorgiPuppy
-        - id: MobDolby #imp
-          weight: 0.005
+        # - id: MobDolby #imp
+        #   weight: 0.005
 
 - type: entity
   parent: CrateLivestock

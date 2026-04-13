@@ -59,11 +59,13 @@
     - steel_2
     - steel_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/steel.rsi # QB
     state: steel_3
     layers:
     - state: steel_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/steel.rsi # QB
     heldPrefix: steel
   - type: Appearance
   - type: Extractable
@@ -137,11 +139,13 @@
     - brass_2
     - brass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/brass.rsi # QB
     state: brass_3
     layers:
     - state: brass_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/brass.rsi # QB
     heldPrefix: brass
   - type: Appearance
   - type: FloorTile
@@ -214,11 +218,13 @@
     - plasteel_2
     - plasteel_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Metals/plasteel.rsi # QB
     state: plasteel_3
     layers:
     - state: plasteel_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Metals/plasteel.rsi # QB
     heldPrefix: plasteel
   - type: Appearance
   - type: Extractable

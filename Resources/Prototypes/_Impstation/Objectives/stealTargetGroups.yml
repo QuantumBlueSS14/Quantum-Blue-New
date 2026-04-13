@@ -1,11 +1,11 @@
 # pets
 
-- type: stealTargetGroup
-  id: AnimalFinFin
-  name: steal-target-groups-finfin
-  sprite:
-    sprite: _Impstation/Mobs/Pets/finfin.rsi
-    state: finfin
+# - type: stealTargetGroup
+#   id: AnimalFinFin
+#   name: steal-target-groups-finfin
+#   sprite:
+#     sprite: _Impstation/Mobs/Pets/finfin.rsi
+#     state: finfin
 
 - type: stealTargetGroup
   id: AnimalPoly

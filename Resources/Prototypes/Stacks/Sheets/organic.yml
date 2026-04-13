@@ -2,7 +2,7 @@
   parent: BaseSheetStack
   id: Paper
   name: stack-paper
-  icon: { sprite: /Textures/Objects/Materials/Sheets/other.rsi, state: paper }
+  icon: { sprite: _QB/Objects/Materials/paper.rsi, state: paper } # QB
   spawn: SheetPaper1
 
 - type: stack

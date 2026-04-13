@@ -14,6 +14,9 @@
   - Medical
   - Chemistry
   - Maintenance
+  extendedAccess:
+  - Paramedic # QB
+  - Psychologist # QB
 
 - type: startingGear
   id: ChemistGear
