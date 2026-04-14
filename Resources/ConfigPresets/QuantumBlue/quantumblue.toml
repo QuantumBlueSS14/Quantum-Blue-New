@@ -1,0 +1,65 @@
+[game]
+desc = "A medium roleplay fork based around the paranormal with unique content and almost all unique art, all with a focus on lore and immersion."
+lobbyenabled = true
+lobbyduration = 240
+round_end_pacifist = true
+round_restart_time = 300
+contraband_examine = false
+role_timer_override = "QBTemporaryPlaytimeReq"
+#map_pool = "QuantumBlueMapPool" #TODO: Actually make this
+
+[movement]
+mob_pushing = false
+
+[infolinks]
+github = "https://github.com/QuantumBlueSS14/Quantum-Blue-New"
+
+[net]
+max_connections = 1024
+tickrate = 30
+
+[netres]
+limit    = 10.0
+
+[admin]
+see_own_notes   = true
+deadmin_on_join = true
+allow_multi_server_play = true
+[admin.alert]
+min_players_sharing_connection = 2
+
+[server]
+id = "quantumblue"
+#rules_file = "QuantumBlueRuleset" TODO: Port this in from the old repo and touch it up
+uptime_restart_minutes = 720 # 12h
+
+# general mrp stuff
+[ic]
+flavor_text = true
+punctuation = true
+
+
+
+[atmos]
+space_wind = true
+
+[shuttle]
+arrivals = false
+cooldown = 60 # 50 longer than the default
+startup_time = 10 # 4.5 seconds longer than the default
+travel_time = 5 # 15 seconds less than the default
+emergency_dock_time = 360 # an extra 2 minutes over the default
+emergency_transit_time_min = 90
+auto_call_time = 120 # rounds are longer
+auto_call_extension_time = 30 # next auto call at 2h30
+emergency_early_launch_allowed = true
+recall_turning_point = 0.33
+
+[biomass]
+easy_mode = false
+
+[surgery]
+can_operate_on_self = false
+
+[control]
+storage_limit = 2
