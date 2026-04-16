@@ -1,0 +1,13 @@
+- type: entity
+  id: OomyciteSpawn
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 5
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: OomyciteVentSpawner
+      prob: 0.05
