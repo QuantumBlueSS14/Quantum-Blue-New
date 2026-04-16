@@ -1158,8 +1158,8 @@
         children:
         - id: AnomaliteTippyTrumpcard
           weight: 0.51
-        - id: PipiTippyTrumpcard
-          weight: 0.82
+        # - id: PipiTippyTrumpcard
+        #   weight: 0.82
         - id: TarantulaTippyTrumpcard
           weight: 0.51
         - id: SlurvaTippyTrumpcard
@@ -1190,8 +1190,8 @@
           weight: 0.82
         - id: GriffyTippyTrumpcard
           weight: 0.15
-        - id: FinfinTippyTrumpcard
-          weight: 0.51
+        # - id: FinfinTippyTrumpcard
+        #   weight: 0.51
         - id: HamletTippyTrumpcard
           weight: 0.51
         - id: LuggageTippyTrumpcard
@@ -1220,8 +1220,8 @@
           weight: 0.51
         - id: TcktckTippyTrumpcard
           weight: 0.51
-        - id: DolbyTippyTrumpcard
-          weight: 0.15
+        # - id: DolbyTippyTrumpcard
+        #   weight: 0.15
         - id: SpaceTickTippyTrumpcard
           weight: 0.51
         - id: BabyKodeTippyTrumpcard
@@ -1818,16 +1818,16 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_tick
 
-- type: entity
-  parent: CardBaseTippyTrump
-  id: DolbyTippyTrumpcard
-  suffix: Dolby
-  components:
-  - type: Card
-    name: Dolby card. Robustness - 9, Validity - 1, Whimsy 7
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_dolby
+# - type: entity
+#   parent: CardBaseTippyTrump
+#   id: DolbyTippyTrumpcard
+#   suffix: Dolby
+#   components:
+#   - type: Card
+#     name: Dolby card. Robustness - 9, Validity - 1, Whimsy 7
+#   - type: Sprite
+#     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#     state: tt_dolby
 
 - type: entity
   parent: CardBaseTippyTrump
@@ -2002,16 +2002,16 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_hamlet
 
-- type: entity
-  parent: CardBaseTippyTrump
-  id: FinfinTippyTrumpcard
-  suffix: Finfin
-  components:
-  - type: Card
-    name: Finfin card. Robustness - 4, Validity - 2, Whimsy 8
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_finfin
+# - type: entity
+#   parent: CardBaseTippyTrump
+#   id: FinfinTippyTrumpcard
+#   suffix: Finfin
+#   components:
+#   - type: Card
+#     name: Finfin card. Robustness - 4, Validity - 2, Whimsy 8
+#   - type: Sprite
+#     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#     state: tt_finfin
 
 - type: entity
   parent: CardBaseTippyTrump
@@ -2178,16 +2178,16 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_rancho
 
-- type: entity
-  parent: CardBaseTippyTrump
-  id: PipiTippyTrumpcard
-  suffix: Pipi
-  components:
-  - type: Card
-    name: Pipi card. Robustness - 1, Validity - 1, Whimsy 6
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_pipi
+# - type: entity
+#   parent: CardBaseTippyTrump
+#   id: PipiTippyTrumpcard
+#   suffix: Pipi
+#   components:
+#   - type: Card
+#     name: Pipi card. Robustness - 1, Validity - 1, Whimsy 6
+#   - type: Sprite
+#     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#     state: tt_pipi
 
 - type: entity
   parent: CardBaseTippyTrump

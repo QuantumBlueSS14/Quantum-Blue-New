@@ -15,8 +15,8 @@ RELEASE_DIR = "release"
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://cdn.impstation.gay/"
-FORK_ID = "impstation"
+ROBUST_CDN_URL = "https://ss14-cdn.whoverse.nexus/"
+FORK_ID = "quantum-blue"
 
 def main():
     parser = argparse.ArgumentParser()

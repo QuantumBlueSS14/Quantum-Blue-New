@@ -264,7 +264,7 @@
     stateDoorOpen: generic_open_3 #imp edit
     stateDoorClosed: paramed_door
   - type: AccessReader
-    access: [ [ "Medical" ] ]
+    access: [ [ "Paramedic" ] ] # QB
 
 
 # Chemical
@@ -362,7 +362,7 @@
     stateDoorOpen: generic_open_4 #imp edit
     stateDoorClosed: brigmedic_door
   - type: AccessReader
-    access: [["Medical"], ["Armory"]]
+    access: [["Brigmedic"]] # QB
 
 # Security Officer
 - type: entity

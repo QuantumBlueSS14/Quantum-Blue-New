@@ -96,19 +96,19 @@
   - sprite: Objects/Consumable/Food/meals.rsi
     state: queso
 
-- type: foodSequenceElement
-  id: FinfinSashimiBurger
-  name: food-sequence-burger-content-finfin
-  sprites:
-  - sprite: Objects/Consumable/Food/meals.rsi
-    state: sashimi
+# - type: foodSequenceElement
+#   id: FinfinSashimiBurger
+#   name: food-sequence-burger-content-finfin
+#   sprites:
+#   - sprite: Objects/Consumable/Food/meals.rsi
+#     state: sashimi
 
-- type: foodSequenceElement
-  id: FinfinCutlet
-  name: food-sequence-burger-content-finfin
-  sprites:
-  - sprite: Objects/Consumable/Food/meat.rsi
-    state: cutlet-cooked
+# - type: foodSequenceElement
+#   id: FinfinCutlet
+#   name: food-sequence-burger-content-finfin
+#   sprites:
+#   - sprite: Objects/Consumable/Food/meat.rsi
+#     state: cutlet-cooked
 
 - type: foodSequenceElement
   id: RawCarpFilletBurger
@@ -145,12 +145,12 @@
   - sprite: Objects/Consumable/Food/meat.rsi
     state: slime
 
-- type: foodSequenceElement
-  id: FriedFinfinBurger
-  name: food-sequence-burger-content-finfin
-  sprites:
-  - sprite: Objects/Consumable/Food/meat.rsi
-    state: finfin
+# - type: foodSequenceElement
+#   id: FriedFinfinBurger
+#   name: food-sequence-burger-content-finfin
+#   sprites:
+#   - sprite: Objects/Consumable/Food/meat.rsi
+#     state: finfin
 
 - type: foodSequenceElement
   id: MeatTomatoCutletBurger
@@ -349,7 +349,7 @@
 
 - type: foodSequenceElement
   id: Sausage
-  name: 
+  name:
   sprites:
   - sprite: _Impstation/Objects/Consumable/Food/hotdog_sequence.rsi
     state: hotdog

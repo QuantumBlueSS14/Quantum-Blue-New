@@ -311,11 +311,11 @@
       - !type:XenoArchDepthCondition # imp addition
         depths: [1, 2, 3]
     # imp edit start
-    - id: XenoArtifactPolyFinfin
-      weight: 10.0 # imp edit
-      conditions:
-      - !type:XenoArchDepthCondition # imp addition
-        depths: [ 2, 3, 4 ]
+    # - id: XenoArtifactPolyFinfin
+    #   weight: 10.0 # imp edit
+    #   conditions:
+    #   - !type:XenoArchDepthCondition # imp addition
+    #     depths: [ 2, 3, 4 ]
     - id: XenoArtifactPolyBee
       weight: 10.0 # imp edit
       conditions:

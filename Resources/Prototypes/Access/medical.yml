@@ -9,10 +9,11 @@
 - type: accessLevel
   id: Chemistry
   name: id-card-access-level-chemistry
-  
-- type: accessLevel
-  id: Paramedic
-  name: id-card-access-level-paramedic
+
+# QB - seems unused...? I don't know if it's a good idea but i'm keeping the one in our namespace for easier tracking
+# - type: accessLevel
+#   id: Paramedic
+#   name: id-card-access-level-paramedic
 
 - type: accessGroup
   id: Medical
@@ -20,3 +21,5 @@
   - ChiefMedicalOfficer
   - Medical
   - Chemistry
+  - Paramedic # QB
+  - Psychologist # QB
