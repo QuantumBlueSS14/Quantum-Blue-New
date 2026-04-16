@@ -384,7 +384,7 @@
   - type: PointLight
     enabled: true
     radius: 5
-    energy: 0.75 # QB
+    energy: 0.5 # QB
     softness: 4 # QB
     color: "#ba473f"
   - type: PoweredLight

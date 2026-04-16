@@ -1387,7 +1387,7 @@
   placementVariants:
   - 1.0
   baseTurf: Plating
-  isSubfloor: false
+  isSubfloor: true # QB
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepHull
