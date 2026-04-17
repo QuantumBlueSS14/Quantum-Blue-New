@@ -16,7 +16,7 @@
         sprite: _QB/Mobs/Animals/oomycite.rsi
     - type: Butcherable
       spawned:
-        - id: FoodLingzhi
+        - id: FoodXenopthora
           amount: 1
     - type: NpcFactionMember
       factions:
@@ -86,7 +86,9 @@
         food:
           reagents:
           - ReagentId: VentCrud
-            Quantity: 5
+            Quantity: 8
+          - ReagentId: Mold
+            Quantity: 6
     - type: NPCRetaliation
     - type: Tag
       tags:
@@ -113,7 +115,7 @@
         sprite: _QB/Mobs/Animals/polyoomycite.rsi
     - type: Butcherable
       spawned:
-        - id: FoodLingzhi
+        - id: FoodXenopthora
           amount: 1
     - type: NpcFactionMember
       factions:
@@ -139,7 +141,7 @@
         Alive:
           Base: super-spore
         Dead:
-          Base: super-spore-dead
+          Base: algae
     - type: MobThresholds
       thresholds:
         0: Alive
@@ -161,6 +163,19 @@
     - type: TriggerOnMobstateChange
       mobState:
       - Dead
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            MobOomycite:
+              min: 2
+              max: 5
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
     - type: EmitSoundOnTrigger
       sound:
         path: /Audio/Voice/Slime/slime_squish.ogg
@@ -183,7 +198,9 @@
         food:
           reagents:
           - ReagentId: VentCrud
-            Quantity: 30
+            Quantity: 18
+          - ReagentId: Mold
+            Quantity: 12
     - type: NPCRetaliation
     - type: Tag
       tags:
