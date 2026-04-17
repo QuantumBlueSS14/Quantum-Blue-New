@@ -166,11 +166,11 @@
     prefix: gnome-child-
     count: 23
 
-- type: localizedDataset
-  id: FigurinesFinfin
-  values:
-    prefix: accent-words-finfin- # hey it let me do this so
-    count: 4
+# - type: localizedDataset
+#   id: FigurinesFinfin
+#   values:
+#     prefix: accent-words-finfin- # hey it let me do this so
+#     count: 4
 
 - type: localizedDataset
   id: FigurinesEeep

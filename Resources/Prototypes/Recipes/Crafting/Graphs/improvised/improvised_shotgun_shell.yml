@@ -15,25 +15,25 @@
             - tag: GlassShard
               name: construction-graph-tag-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 0.5
             - tag: GlassShard
               name: construction-graph-tag-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard2
               doAfter: 0.5
             - tag: GlassShard
               name: construction-graph-tag-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 0.5
             - tag: GlassShard
               name: construction-graph-tag-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard3
               doAfter: 0.5
             - tag: Matchstick

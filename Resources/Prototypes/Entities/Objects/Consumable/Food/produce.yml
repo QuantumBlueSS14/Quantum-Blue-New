@@ -195,9 +195,10 @@
   parent: ProduceBase
   components:
   - type: Sprite
-    sprite: Objects/Specific/Hydroponics/towercap.rsi
+    sprite: _QB/Objects/Materials/misc.rsi # QB
+    state: woodlog
   - type: Item
-    heldPrefix: produce
+    heldPrefix: woodlog # QB
   - type: SolutionContainerManager
   - type: Extractable #imp added sap juicing
     juiceSolution:
@@ -221,9 +222,10 @@
   parent: ProduceBase
   components:
   - type: Sprite
-    sprite: Objects/Specific/Hydroponics/steelcap.rsi
+    sprite: _QB/Objects/Materials/misc.rsi # QB
+    state: steellog
   - type: Item
-    heldPrefix: produce
+    heldPrefix: steellog # QB
   - type: SolutionContainerManager
   - type: MeleeWeapon
     damage:

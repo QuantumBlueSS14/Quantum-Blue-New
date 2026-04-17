@@ -3,10 +3,10 @@
   flavorType: Complex
   description: flavor-complex-cigarettes
 
-- type: flavor
-  id: finfin
-  flavorType: Complex
-  description: flavor-complex-finfin
+# - type: flavor
+#   id: finfin
+#   flavorType: Complex
+#   description: flavor-complex-finfin
 
 - type: flavor
   id: radiation

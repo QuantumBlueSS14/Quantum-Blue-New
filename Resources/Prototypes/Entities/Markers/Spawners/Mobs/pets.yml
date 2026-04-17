@@ -16,7 +16,7 @@
   parent: MarkerBase
   id: SpawnMobBandito
   name: Bandito Spawner
-  suffix: RD Pet
+  suffix: Brig pet # QB
   components:
   - type: Sprite
     layers:
@@ -42,11 +42,11 @@
     - MobCatException
     - MobCatFloppa
     - MobBingus
-    # imp start
-    - MobPipi
-    rarePrototypes:
-    - MobFinfin
-    rareChance: 0.05
+    # imp start - QB commented
+    #- MobPipi
+    #rarePrototypes:
+    #- MobFinfin
+    #rareChance: 0.05
     # imp end
 
 - type: entity
@@ -177,8 +177,8 @@
   - type: RandomSpawner # imp edit
     prototypes:
       - MobMcGriff
-    rarePrototypes: # imp
-      - MobMascotGriffy # imp
+#    rarePrototypes: # imp
+#      - MobMascotGriffy # imp
 
 - type: entity
   parent: MarkerBase

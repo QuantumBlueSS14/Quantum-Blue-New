@@ -25,6 +25,7 @@
   - Cryogenics
   - GenpopEnter
   - GenpopLeave
+  - Brigmedic # QB
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

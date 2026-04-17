@@ -28,3 +28,17 @@ JailCard: null
 #FloorWoodTileRedLargeOld: FloorWoodLargeRedOld
 #FloorWoodTileRedTileOld: FloorWoodTileRedOld
 # Nvm they broke everything cause they were tiles, not entities. Leaving this list incase it's useful later.
+
+# 4/6/2026
+SpawnMobCatKittenPipi: SpawnMobCat
+SpawnMobDogPuppyDolby: SpawnMobWalter
+SpawnMobChemDog: SpawnMobWalter
+SpawnMobBearMajor: null
+PlushieFinfin: null
+ToyFigurineGoldenFinfin: null
+SpawnMobFinfin: null
+
+# 4/8/2026
+AirlockSecurityMedical: AirlockBrigmedic
+AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
+AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked

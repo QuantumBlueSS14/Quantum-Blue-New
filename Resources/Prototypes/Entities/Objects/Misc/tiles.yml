@@ -589,7 +589,7 @@
     heldPrefix: brass
   - type: FloorTile
     outputs:
-      - PlatingBrass
+      # - PlatingBrass # QB comment
       - FloorBrassFilled
   - type: Stack
     stackType: FloorTileBrassFilled
@@ -608,7 +608,7 @@
     heldPrefix: brass
   - type: FloorTile
     outputs:
-      - PlatingBrass
+      # - PlatingBrass # QB comment
       - FloorBrassReebe
   - type: Stack
     stackType: FloorTileBrassReebe
@@ -1380,7 +1380,7 @@
     stackType: FloorTileSnow
 
 - type: entity
-  name: wood pattern floor
+  name: wood floor tile # QB
   parent: FloorTileItemBase
   id: FloorTileItemWoodPattern
   components:

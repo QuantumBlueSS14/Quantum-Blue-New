@@ -95,7 +95,7 @@
   id: FloorCardboard
   name: cardboard floor tile
   category: WallsAndFlooring
-  sprite: /Textures/_Impstation/Tiles/Cardboard/tile.png
+  sprite: /Textures/_QB/Tiles/Misc/Cardboard/tile.png # QB
   mode: ConstructTile
   prototype: FloorCardboard
   cost: 1

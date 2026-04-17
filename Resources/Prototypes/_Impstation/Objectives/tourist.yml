@@ -273,7 +273,7 @@
       - MobCorgiLisa
       - MobAlexander
       - MobBandito
-      - MobDolby
+      # - MobDolby
       - MobBingus
       - MobCatException
       - MobWalter
@@ -283,7 +283,7 @@
       - MobMcGriff
       - MobPenguinOswald
       - MobPollyParrot
-      - MobPipi
+      # - MobPipi
       - MobMonkeyPunpun
       - MobPossumMortyOld
       - MobRaccoonMorticia

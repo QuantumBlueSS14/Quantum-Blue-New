@@ -229,7 +229,7 @@
 # Dark wood old/broken versions
 - type: tile
   id: FloorWoodBrokenDark
-  name: tiles-wood-broken-Dark
+  name: tiles-wood-broken-dark
   sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_broken.png
   variants: 7
   placementVariants:
@@ -313,7 +313,7 @@
 # Light wood old/broken versions
 - type: tile
   id: FloorWoodBrokenLight
-  name: tiles-wood-broken-Light
+  name: tiles-wood-broken-light
   sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_broken.png
   variants: 7
   placementVariants:
@@ -397,7 +397,7 @@
 # Red wood old/broken versions
 - type: tile
   id: FloorWoodBrokenRed
-  name: tiles-wood-broken-Red
+  name: tiles-wood-broken-red
   sprite: /Textures/_QB/Tiles/Wood/Red/redwood_broken.png
   variants: 7
   placementVariants:
@@ -421,7 +421,7 @@
 - type: tile
   id: FloorWoodRedOld
   name: tiles-wood-red-old
-  sprite: /Textures/_QB/Tiles/Wood/Red/redwood_tile_old.png
+  sprite: /Textures/_QB/Tiles/Wood/Red/redwood_old.png
   variants: 4
   placementVariants:
   - 1.0

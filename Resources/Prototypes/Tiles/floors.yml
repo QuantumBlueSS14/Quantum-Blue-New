@@ -194,7 +194,7 @@
   id: FloorBrassFilled
   name: tiles-brass-floor-filled
   sprite: /Textures/_QB/Tiles/Brass/clockwork_floor_filled.png # QB Edit
-  baseTurf: PlatingBrass
+  baseTurf: Plating # QB
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
@@ -206,7 +206,7 @@
   id: FloorBrassReebe
   name: tiles-brass-floor-reebe
   sprite: /Textures/_QB/Tiles/Brass/reebe.png # QB Edit
-  baseTurf: PlatingBrass
+  baseTurf: Plating # QB
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
@@ -1387,7 +1387,7 @@
   placementVariants:
   - 1.0
   baseTurf: Plating
-  isSubfloor: false
+  isSubfloor: true # QB
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepHull
