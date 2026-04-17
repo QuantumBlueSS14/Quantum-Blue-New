@@ -33,8 +33,8 @@
     state: base
   - type: PointLight
     color: "#FFE4CE" # 5000K color temp
-    energy: 1.5 # QB
-    radius: 11 # QB
+    energy: 0.8
+    radius: 10
     softness: 4 # QB
     offset: "0, -0.5"
   - type: Damageable
@@ -170,7 +170,7 @@
     hasLampOnSpawn: LedLightTube
   - type: PointLight
     radius: 15
-    energy: 2 # QB
+    energy: 1
     softness: 4 # QB
     color: "#EEEEFF"
   - type: DamageOnInteract
@@ -186,7 +186,7 @@
   components:
   - type: PointLight
     radius: 15 # QB
-    energy: 2 # QB
+    energy: 1 # QB
     softness: 4 # QB
     color: "#EEEEFF"
 
