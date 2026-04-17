@@ -40,5 +40,7 @@ SpawnMobFinfin: null
 
 # 4/8/2026
 AirlockSecurityMedical: AirlockBrigmedic
+AirlockSecurityMedicalLocked: AirlockBrigmedicLocked
 AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
+AirlockSecurityMedicalGlassLocked: AirlockBrigmedicGlassLocked
 AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked
