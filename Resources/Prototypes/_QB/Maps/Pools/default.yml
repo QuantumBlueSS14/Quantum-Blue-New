@@ -1,5 +1,5 @@
 - type: gameMapPool
-  id: DefaultMapPoolImp
+  id: DefaultMapPoolQB
   maps:
   # WIZDEN MAPS
   - AmberImp
