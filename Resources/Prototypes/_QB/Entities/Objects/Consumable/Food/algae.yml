@@ -1,0 +1,34 @@
+- type: entity
+  name: Xenophthora
+  parent: FoodProduceBase
+  id: FoodXenopthora
+  description: A nasty sort of alien water mold. It smells as bad as it looks.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+      - medicine
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: VentCrud
+          Quantity: 3
+        - ReagentId: Lithium
+          Quantity: 7
+        - ReagentId: Iodine
+          Quantity: 8
+        - ReagentId: Mercury
+          Quantity: 2
+        - ReagentId: Mold
+          Quantity: 10
+  - type: Sprite
+    sprite: _QB/Mobs/Animals/polyoomycite.rsi
+    state: algae
+  - type: Item
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Trash

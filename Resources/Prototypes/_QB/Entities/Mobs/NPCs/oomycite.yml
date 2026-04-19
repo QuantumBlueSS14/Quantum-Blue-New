@@ -1,0 +1,210 @@
+- type: entity
+  name: Oomycite
+  parent: [ MobCombat, SimpleMobBase ]
+  id: MobOomycite
+  description: A slimy, simple-minded motile fungus on a relentless hunt for food, or maybe violence.
+  components:
+    - type: VentCrawler
+      enterDelay: 1
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        state: spore
+        sprite: _QB/Mobs/Animals/oomycite.rsi
+    - type: Butcherable
+      spawned:
+        - id: FoodXenopthora
+          amount: 1
+    - type: NpcFactionMember
+      factions:
+        - Xeno
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 130
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: spore
+        Dead:
+          Base: spore-dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        15: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcPunch
+      soundHit:
+        path: /Audio/Weapons/boxingpunch1.ogg
+      damage:
+        types:
+          Blunt: 1
+    - type: ReplacementAccent
+      accent: slimes
+    - type: Speech
+      speechSounds: Slime
+      speechVerb: Slime
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Dead
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/Voice/Slime/slime_squish.ogg
+        params:
+          variation: 0.125
+    - type: Bloodstream
+      bloodReferenceSolution:
+        reagents:
+        - ReagentId: VentCrud
+          Quantity: 15
+    - type: NoSlip
+    - type: ZombieImmune
+    - type: Edible
+    - type: GoobAbsorbable #bite sized
+      biomassRestored: 0.05
+    - type: Extractable
+      grindableSolutionName: food
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+          - ReagentId: VentCrud
+            Quantity: 8
+          - ReagentId: Mold
+            Quantity: 6
+    - type: NPCRetaliation
+    - type: Tag
+      tags:
+      - Trash
+      - MultitoolDefibrillatorTarget
+    - type: CanEscapeInventory
+      baseResistTime: 2
+
+- type: entity
+  name: Polyoomycite
+  parent: [ MobCombat, SimpleMobBase ]
+  id: MobPolyoomycite
+  description: It's very unclear if this is a collection of Oomycites combined, or one that's grown too big.
+  components:
+    - type: VentCrawler
+      enterDelay: 2
+    - type: Item
+      size: Normal
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        state: super-spore
+        sprite: _QB/Mobs/Animals/polyoomycite.rsi
+    - type: Butcherable
+      spawned:
+        - id: FoodXenopthora
+          amount: 1
+    - type: NpcFactionMember
+      factions:
+        - Xeno
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.7
+          density: 400
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: super-spore
+        Dead:
+          Base: algae
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        50: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcPunch
+      soundHit:
+        path: /Audio/Weapons/boxingpunch3.ogg
+      damage:
+        types:
+          Blunt: 3
+    - type: ReplacementAccent
+      accent: slimes
+    - type: Speech
+      speechSounds: Slime
+      speechVerb: Slime
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Dead
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            MobOomycite:
+              min: 2
+              max: 5
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/Voice/Slime/slime_squish.ogg
+        params:
+          variation: 0.125
+    - type: Bloodstream
+      bloodReferenceSolution:
+        reagents:
+        - ReagentId: VentCrud
+          Quantity: 30
+    - type: NoSlip
+    - type: ZombieImmune
+    - type: Edible
+    - type: GoobAbsorbable #bite sized
+      biomassRestored: 0.05
+    - type: Extractable
+      grindableSolutionName: food
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+          - ReagentId: VentCrud
+            Quantity: 18
+          - ReagentId: Mold
+            Quantity: 12
+    - type: NPCRetaliation
+    - type: Tag
+      tags:
+      - Trash
+      - MultitoolDefibrillatorTarget
+    - type: CanEscapeInventory
+      baseResistTime: 2

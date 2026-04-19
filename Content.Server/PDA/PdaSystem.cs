@@ -157,12 +157,9 @@ namespace Content.Server.PDA
         {
             _ringer.RingerPlayRingtone(ent.Owner);
 
-            // Begin Impstation - PDAs can be self-viewed
-            if (!(TryComp<ActorComponent>(ent, out var actor) ||
-                _containerSystem.TryGetContainingContainer((ent, null, null), out var container)
-                && TryComp<ActorComponent>(container.Owner, out actor)))
+            if (!_containerSystem.TryGetContainingContainer((ent, null, null), out var container)
+                || !TryComp<ActorComponent>(container.Owner, out var actor))
                 return;
-            // End Impstation - PDAs can be self-viewed
 
             var message = FormattedMessage.EscapeText(args.Message);
             var wrappedMessage = Loc.GetString("pda-notification-message",
@@ -204,24 +201,6 @@ namespace Content.Server.PDA
 
             var programs = _cartridgeLoader.GetAvailablePrograms(uid, loader);
             var id = CompOrNull<IdCardComponent>(pda.ContainedId);
-            // Begin Impstation - PDAs can be silicons
-            var owner = id?.FullName;
-            var job = id?.LocalizedJobTitle;
-            if (HasComp<BorgChassisComponent>(uid))
-            {
-                if (TryComp<BorgSwitchableTypeComponent>(uid, out var switchable) && switchable.SelectedBorgType is { } borgType)
-                    job = Loc.GetString($"borg-type-{borgType}-transponder");
-                else
-                    job = Loc.GetString("borg-type-any-transponder");
-
-                owner = MetaData(uid).EntityName;
-            }
-            if (HasComp<StationAiHeldComponent>(uid))
-            {
-                job = Loc.GetString($"station-ai-transponder");
-                owner = MetaData(uid).EntityName;
-            }
-            // End Impstation - PDAs can be silicons
             var state = new PdaUpdateState(
                 programs,
                 GetNetEntity(loader.ActiveProgram),
@@ -231,8 +210,8 @@ namespace Content.Server.PDA
                 new PdaIdInfoText
                 {
                     ActualOwnerName = pda.OwnerName,
-                    IdOwner = owner, // Impstation id.fullname -> owner
-                    JobTitle = job, // Impstation id.localizedjobtitle -> job
+                    IdOwner = id?.FullName,
+                    JobTitle = id?.LocalizedJobTitle,
                     StationAlertLevel = pda.StationAlertLevel,
                     StationAlertColor = pda.StationAlertColor
                 },

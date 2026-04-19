@@ -184,6 +184,9 @@ namespace Content.IntegrationTests.Tests
             "Whisper",
             "Monarch",
 
+            // from VDS:
+            "Foundry",
+
             // DEROTATED:
             //"Eclipse",
             //"Luna",
