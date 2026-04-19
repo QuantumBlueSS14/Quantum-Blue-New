@@ -73,12 +73,6 @@
       # Only used for NT borgs that can switch type, defined here to avoid copy-pasting the rest of this component.
       enum.BorgSwitchableTypeUiKey.SelectBorgType:
         type: BorgSelectTypeUserInterface
-      # Begin Impstation - Borg PDAs
-      enum.PdaUiKey.Key:
-        type: PdaBoundUserInterface
-      enum.RingerUiKey.Key:
-        type: RingerBoundUserInterface
-      # End Impstation - Borg PDAs
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -130,8 +124,6 @@
       cell_slot: !type:ContainerSlot { }
       borg_module: !type:Container { }
       part-container: !type:Container
-      program-container: !type:Container # Impstation - Borg PDAs
-      Cartridge-Slot: !type:ContainerSlot # Impstation - Borg PDAs
   - type: PowerCellSlot
     cellSlotId: cell_slot
     fitsInCharger: true
@@ -334,7 +326,7 @@
     - NanoTrasen
   - type: Access
     groups:
-    - AllAccess
+    - MostAccess # QB
     tags:
     - Borg
   - type: AccessReader
@@ -396,7 +388,7 @@
     - NanoTrasen #The seemingly best fit. It was a regular NT cyborg once, after all.
   - type: Access
     groups:
-    - AllAccess #Randomized access would be fun. AllAccess is the best i can think of right now that does make it too hard for it to enter the station or navigate it..
+    - MostAccess # QB
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: StartIonStormed

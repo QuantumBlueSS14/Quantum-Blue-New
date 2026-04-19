@@ -1,0 +1,9 @@
+- files: ["bar.png", "blue.png", "cafeteria.png", "checker_dark.png", "clown.png", "kitchen.png", "laundry.png", "lime.png", "mime.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"
+
+- files: ["apid_floor.png", "elevator_shaft.png", "freezer.png", "gold.png", "silver.png", "green_plastic.png", "hull.png", "hull_reinforced.png", "hull_sideways.png", "lino.png", "metaldiamond.png", "plastic.png", "showroom.png", "silver.png", "white_plastic.png", "super_reinforced.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by MattFright"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

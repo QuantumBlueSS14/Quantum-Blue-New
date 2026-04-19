@@ -53,14 +53,14 @@
     possibleSpawns:
     - MobBearSpace
 
-- type: entity
-  parent: RehydratableAnimalCube
-  id: FinfinCube
-  name: finfin cube
-  components:
-  - type: Rehydratable
-    possibleSpawns:
-    - MobFinfin
+# - type: entity
+#   parent: RehydratableAnimalCube
+#   id: FinfinCube
+#   name: finfin cube
+#   components:
+#   - type: Rehydratable
+#     possibleSpawns:
+#     - MobFinfin
 
 - type: entity
   parent: RehydratableAnimalCube

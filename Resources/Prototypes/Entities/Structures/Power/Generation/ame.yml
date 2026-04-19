@@ -200,7 +200,8 @@
   - type: PointLight
     enabled: false
     radius: 5
-    energy: 0.5
+    energy: 1 # QB
+    softness: 4 # QB
     color: "#00AAFF"
   - type: Appearance
   - type: GenericVisualizer

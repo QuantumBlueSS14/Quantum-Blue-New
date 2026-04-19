@@ -22,30 +22,30 @@
   - type: SpeakOnAction
     sentence: action-speech-spell-spacegrease
 
-- type: entity
-  parent: BaseAction
-  id: ActionSpawnFinFinSpell
-  name: Your Best Friend
-  description: This spell summons FinFin!
-  components:
-  - type: Action
-    useDelay: 10
-    itemIconStyle: BigAction
-    sound: !type:SoundPathSpecifier
-      path: /Audio/_Impstation/Magic/finfinspawn.ogg
-    icon:
-      sprite: _Impstation/Objects/Fun/toys.rsi
-      state: plushie_finfin
-  - type: TargetAction
-    range: 4
-  - type: WorldTargetAction
-    event: !type:WorldSpawnSpellEvent
-      prototypes:
-      - id: MobFinfin
-        amount: 1
-      offset: 0, 1
-  - type: SpeakOnAction
-    sentence: action-speech-spell-summon-bff
+# - type: entity
+#   parent: BaseAction
+#   id: ActionSpawnFinFinSpell
+#   name: Your Best Friend
+#   description: This spell summons FinFin!
+#   components:
+#   - type: Action
+#     useDelay: 10
+#     itemIconStyle: BigAction
+#     sound: !type:SoundPathSpecifier
+#       path: /Audio/_Impstation/Magic/finfinspawn.ogg
+#     icon:
+#       sprite: _Impstation/Objects/Fun/toys.rsi
+#       state: plushie_finfin
+#   - type: TargetAction
+#     range: 4
+#   - type: WorldTargetAction
+#     event: !type:WorldSpawnSpellEvent
+#       prototypes:
+#       - id: MobFinfin
+#         amount: 1
+#       offset: 0, 1
+#   - type: SpeakOnAction
+#     sentence: action-speech-spell-summon-bff
 
 #- type: entity
 #  parent: BaseAction

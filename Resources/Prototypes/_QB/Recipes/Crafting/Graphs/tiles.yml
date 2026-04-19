@@ -1,0 +1,67 @@
+- type: constructionGraph
+  id: TileWoodTileBlack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: woodtile
+      completed:
+      - !type:SetStackCount
+        amount: 4
+      steps:
+      # Needs StackType ID
+      - material: WoodPlank
+        amount: 1
+  - node: woodtile
+    entity: FloorTileItemWoodTileBlack
+
+- type: constructionGraph
+  id: TileWoodTileDark
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: woodtile
+      completed:
+      - !type:SetStackCount
+        amount: 4
+      steps:
+      # Needs StackType ID
+      - material: WoodPlank
+        amount: 1
+  - node: woodtile
+    entity: FloorTileItemWoodTileDark
+
+- type: constructionGraph
+  id: TileWoodTileLight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: woodtile
+      completed:
+      - !type:SetStackCount
+        amount: 4
+      steps:
+      # Needs StackType ID
+      - material: WoodPlank
+        amount: 1
+  - node: woodtile
+    entity: FloorTileItemWoodTileLight
+
+- type: constructionGraph
+  id: TileWoodTileRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: woodtile
+      completed:
+      - !type:SetStackCount
+        amount: 4
+      steps:
+      # Needs StackType ID
+      - material: WoodPlank
+        amount: 1
+  - node: woodtile
+    entity: FloorTileItemWoodTileRed

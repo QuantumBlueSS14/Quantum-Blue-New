@@ -75,7 +75,7 @@
     radius: 2.5
     energy: 0.5
     # Gravity generator is a large machine, not casting shadows is fine within the radius set above.
-    castShadows: false
+    castShadows: true # QB - having this set to off might mess some things up in the future
     color: "#a8ffd9"
   - type: StaticPrice
     price: 5000

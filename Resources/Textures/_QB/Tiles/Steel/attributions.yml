@@ -1,0 +1,4 @@
+- files: ["mono.png", "steel_squiggly.png", "steel_dirty.png", "steel_damaged.png", "steel.png", "steel_diagonal.png", "steel_mini.png", "steel_offset.png", "steel_pavement.png", "plastic.png", "steel_diagonal_mini.png", "steel_herringbone.png", "steel_mono.png", "steel_pavement_vertical.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

@@ -286,8 +286,9 @@
         shader: unshaded
   - type: PointLight
     color: "#e39c40"
-    radius: 2.5
-    power: 10
+    radius: 5 # QB
+    power: 7.5 # QB
+    softness: 4 # QB
 
 - type: entity
   name: magic red candle

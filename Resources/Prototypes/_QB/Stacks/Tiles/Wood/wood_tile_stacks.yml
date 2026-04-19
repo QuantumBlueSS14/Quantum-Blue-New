@@ -1,0 +1,23 @@
+- type: stack
+  id: FloorTileItemWoodTileBlack
+  name: tile-black-wood-tile-floor
+  spawn: FloorTileItemWoodTileBlack
+  maxCount: 30
+
+- type: stack
+  id: FloorTileItemWoodTileDark
+  name: tile-dark-wood-tile-floor
+  spawn: FloorTileItemWoodTileDark
+  maxCount: 30
+
+- type: stack
+  id: FloorTileItemWoodTileLight
+  name: tile-light-wood-tile-floor
+  spawn: FloorTileItemWoodTileLight
+  maxCount: 30
+
+- type: stack
+  id: FloorTileItemWoodTileRed
+  name: tile-red-wood-tile-floor
+  spawn: FloorTileItemWoodTileRed
+  maxCount: 30

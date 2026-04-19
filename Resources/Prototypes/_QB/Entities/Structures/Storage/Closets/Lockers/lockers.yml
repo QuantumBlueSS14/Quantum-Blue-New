@@ -1,0 +1,13 @@
+# Psychologist
+- type: entity
+  id: LockerPsychologist
+  parent: LockerBase
+  name: psychologist's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: med_secure
+    stateDoorOpen: generic_open_4 #imp edit
+    stateDoorClosed: med_secure_door
+  - type: AccessReader
+    access: [ [ "Psychologist" ] ]

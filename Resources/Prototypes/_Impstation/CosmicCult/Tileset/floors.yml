@@ -141,6 +141,7 @@
   - type: PointLight
     radius: 4.25
     energy: 1.75
+    softness: 4 # QB
     castShadows: false
     color: "#42a4ae"
 

@@ -64,6 +64,11 @@
   - Reporter
   - Vault
   #imp edit end
+  # QB edit start
+  - Brigmedic
+  - Paramedic
+  - Psychologist
+  # QB edit end
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

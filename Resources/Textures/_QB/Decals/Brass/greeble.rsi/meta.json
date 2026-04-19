@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Original artwork by Ecramox, edited by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "greeblebrass_box"
+        },
+        {
+            "name": "greeblebrass_corner_ne"
+        },
+        {
+            "name": "greeblebrass_corner_se"
+        },
+        {
+            "name": "greeblebrass_corner_nw"
+        },
+        {
+            "name": "greeblebrass_corner_sw"
+        },
+        {
+            "name": "greeblebrass_end_n"
+        },
+        {
+            "name": "greeblebrass_end_e"
+        },
+        {
+            "name": "greeblebrass_end_s"
+        },
+        {
+            "name": "greeblebrass_end_w"
+        },
+        {
+            "name": "greeblebrass_line_n"
+        },
+        {
+            "name": "greeblebrass_line_e"
+        },
+        {
+            "name": "greeblebrass_line_s"
+        },
+        {
+            "name": "greeblebrass_line_w"
+        },
+        {
+            "name": "greeblebrass_inner_ne"
+        },
+        {
+            "name": "greeblebrass_inner_se"
+        },
+        {
+            "name": "greeblebrass_inner_nw"
+        },
+        {
+            "name": "greeblebrass_inner_sw"
+        }
+    ]
+}

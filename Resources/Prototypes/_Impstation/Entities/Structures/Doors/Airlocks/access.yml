@@ -11,14 +11,14 @@
       board: [ DoorElectronicsHospitalityDirector ]
 
 # Security
-- type: entity
-  parent: AirlockSecurityMedical
-  id: AirlockSecurityMedicalLocked
-  suffix: Security/Medical, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSecurityMedical ]
+# - type: entity # QB comment
+#   parent: AirlockSecurityMedical
+#   id: AirlockSecurityMedicalLocked
+#   suffix: Security/Medical, Locked
+#   components:
+#   - type: ContainerFill
+#     containers:
+#       board: [ DoorElectronicsSecurityMedical ]
 
 # Service
 - type: entity
@@ -98,14 +98,14 @@
       board: [ DoorElectronicsHospitalityDirector ]
 
 # Security
-- type: entity
-  parent: AirlockSecurityMedicalGlass
-  id: AirlockSecurityMedicalGlassLocked
-  suffix: Security/Medical, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSecurityMedical ]
+# - type: entity # QB comment
+#   parent: AirlockSecurityMedicalGlass
+#   id: AirlockSecurityMedicalGlassLocked
+#   suffix: Security/Medical, Locked
+#   components:
+#   - type: ContainerFill
+#     containers:
+#       board: [ DoorElectronicsSecurityMedical ]
 
 # Service
 - type: entity
@@ -216,13 +216,13 @@
   - type: Wires
     layoutId: AirlockSecurity
 
-- type: entity
-  parent: AirlockSecurityMedicalLocked
-  id: AirlockMaintSecMedLocked
-  name: maintenance access
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+# - type: entity # QB comment
+#   parent: AirlockSecurityMedicalLocked
+#   id: AirlockMaintSecMedLocked
+#   name: maintenance access
+#   components:
+#   - type: Sprite
+#     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
 
 # Security
 - type: entity

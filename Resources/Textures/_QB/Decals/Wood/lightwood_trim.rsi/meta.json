@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lightwoodthin_box"
+        },
+        {
+            "name": "lightwoodthin_corner_ne"
+        },
+        {
+            "name": "lightwoodthin_corner_se"
+        },
+        {
+            "name": "lightwoodthin_corner_nw"
+        },
+        {
+            "name": "lightwoodthin_corner_sw"
+        },
+        {
+            "name": "lightwoodthin_end_n"
+        },
+        {
+            "name": "lightwoodthin_end_e"
+        },
+        {
+            "name": "lightwoodthin_end_s"
+        },
+        {
+            "name": "lightwoodthin_end_w"
+        },
+        {
+            "name": "lightwoodthin_line_n"
+        },
+        {
+            "name": "lightwoodthin_line_e"
+        },
+        {
+            "name": "lightwoodthin_line_s"
+        },
+        {
+            "name": "lightwoodthin_line_w"
+        },
+        {
+            "name": "lightwoodthin_inner_ne"
+        },
+        {
+            "name": "lightwoodthin_inner_se"
+        },
+        {
+            "name": "lightwoodthin_inner_nw"
+        },
+        {
+            "name": "lightwoodthin_inner_sw"
+        }
+    ]
+}

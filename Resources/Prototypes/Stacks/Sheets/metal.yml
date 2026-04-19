@@ -2,19 +2,19 @@
   parent: BaseSheetStack
   id: Steel
   name: stack-steel
-  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: steel }
+  icon: { sprite: _QB/Objects/Materials/Metals/steel.rsi, state: steel } # QB
   spawn: SheetSteel1
 
 - type: stack
   parent: BaseSheetStack
   id: Plasteel
   name: stack-plasteel
-  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: plasteel }
+  icon: { sprite: _QB/Objects/Materials/Metals/plasteel.rsi, state: plasteel } # QB
   spawn: SheetPlasteel1
 
 - type: stack
   parent: BaseSheetStack
   id: Brass
   name: stack-brass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: brass }
+  icon: { sprite: _QB/Objects/Materials/Metals/brass.rsi, state: brass } # QB
   spawn: SheetBrass1

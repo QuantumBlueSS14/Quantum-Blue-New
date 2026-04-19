@@ -1,7 +1,7 @@
 - type: tile
   id: FloorApid
   name: tiles-apid-floor
-  sprite: /Textures/_Impstation/Tiles/Misc/apid_floor.png
+  sprite: /Textures/_QB/Tiles/Misc/apid_floor.png # QB edit
   variants: 2
   placementVariants:
   - 1.0
@@ -17,7 +17,7 @@
 - type: tile
   id: FloorCardboard
   name: cardboard floor tile
-  sprite: /Textures/_Impstation/Tiles/Cardboard/cardboardtile.png
+  sprite: /Textures/_QB/Tiles/Misc/Cardboard/cardboardtile.png # QB
   variants: 4
   placementVariants:
   - 1.0
@@ -35,7 +35,7 @@
 - type: tile
   id: FloorChapelNE
   name: tiles-chapel-floor-ne
-  sprite: /Textures/_Impstation/Tiles/Chapel/chapelNE.png
+  sprite: /Textures/_QB/Tiles/Chapel/chapelNE.png # QB edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -47,7 +47,7 @@
 - type: tile
   id: FloorChapelNW
   name: tiles-chapel-floor-nw
-  sprite: /Textures/_Impstation/Tiles/Chapel/chapelNW.png
+  sprite: /Textures/_QB/Tiles/Chapel/chapelNW.png # QB edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -59,7 +59,7 @@
 - type: tile
   id: FloorChapelSE
   name: tiles-chapel-floor-se
-  sprite: /Textures/_Impstation/Tiles/Chapel/chapelSE.png
+  sprite: /Textures/_QB/Tiles/Chapel/chapelSE.png # QB edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -71,7 +71,7 @@
 - type: tile
   id: FloorChapelSW
   name: tiles-chapel-floor-sw
-  sprite: /Textures/_Impstation/Tiles/Chapel/chapelSW.png
+  sprite: /Textures/_QB/Tiles/Chapel/chapelSW.png # QB edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -131,7 +131,7 @@
 - type: tile
   id: FloorSquiggly
   name: tiles-steel-squiggly
-  sprite: /Textures/_Impstation/Tiles/Steel/steel_squiggly.png
+  sprite: /Textures/_QB/Tiles/Steel/steel_squiggly.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -150,7 +150,7 @@
 - type: tile
   id: FloorWhiteSquiggly
   name: tiles-white-squiggly
-  sprite: /Textures/_Impstation/Tiles/White/white_squiggly.png
+  sprite: /Textures/_QB/Tiles/White/white_squiggly.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -171,7 +171,7 @@
 - type: tile
   id: FloorDarkDirty
   name: tiles-dirty-dark-floor
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_dirty.png
+  sprite: /Textures/_QB/Tiles/Dark/dark_dirty.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -189,7 +189,7 @@
 - type: tile
   id: FloorWhiteDirty
   name: tiles-dirty-white-floor
-  sprite: /Textures/_Impstation/Tiles/White/white_dirty.png
+  sprite: /Textures/_QB/Tiles/White/white_dirty.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -209,7 +209,7 @@
 - type: tile
   id: FloorDarkDamaged
   name: tiles-damaged-dark-floor
-  sprite: /Textures/_Impstation/Tiles/Dark/dark_damaged.png
+  sprite: /Textures/_QB/Tiles/Dark/dark_damaged.png # QB Edit
   variants: 5
   placementVariants:
   - 1.0
@@ -228,7 +228,7 @@
 - type: tile
   id: FloorWhiteDamaged
   name: tiles-damaged-white-floor
-  sprite: /Textures/_Impstation/Tiles/White/white_damaged.png
+  sprite: /Textures/_QB/Tiles/White/white_damaged.png # QB Edit
   variants: 5
   placementVariants:
   - 1.0
@@ -249,7 +249,7 @@
 - type: tile
   id: FloorGreen
   name: tiles-green-floor
-  sprite: /Textures/_Impstation/Tiles/Green/green.png
+  sprite: /Textures/_QB/Tiles/Green/green.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -267,7 +267,7 @@
 - type: tile
   id: FloorGreenMini
   name: tiles-green-floor-mini
-  sprite: /Textures/_Impstation/Tiles/Green/green_mini.png
+  sprite: /Textures/_QB/Tiles/Green/green_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -285,7 +285,7 @@
 - type: tile
   id: FloorGreenPavement
   name: tiles-green-floor-pavement
-  sprite: /Textures/_Impstation/Tiles/Green/green_pavement.png
+  sprite: /Textures/_QB/Tiles/Green/green_pavement.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -303,7 +303,7 @@
 - type: tile
   id: FloorGreenDiagonal
   name: tiles-green-floor-diagonal
-  sprite: /Textures/_Impstation/Tiles/Green/green_diagonal.png
+  sprite: /Textures/_QB/Tiles/Green/green_diagonal.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -321,7 +321,13 @@
 - type: tile
   id: FloorGreenOffset
   name: tiles-green-floor-offset
-  sprite: /Textures/_Impstation/Tiles/Green/green_offset.png
+  sprite: /Textures/_QB/Tiles/Green/green_offset.png # QB Edit
+  variants: 4 # QB Edit
+  placementVariants: # QB Edit
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -333,7 +339,7 @@
 - type: tile
   id: FloorGreenMono
   name: tiles-green-floor-mono
-  sprite: /Textures/_Impstation/Tiles/Green/green_mono.png
+  sprite: /Textures/_QB/Tiles/Green/green_mono.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -351,7 +357,7 @@
 - type: tile
   id: FloorGreenPavementVertical
   name: tiles-green-floor-pavement-vertical
-  sprite: /Textures/_Impstation/Tiles/Green/green_pavement_vertical.png
+  sprite: /Textures/_QB/Tiles/Green/green_pavement_vertical.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -369,7 +375,7 @@
 - type: tile
   id: FloorGreenHerringbone
   name: tiles-green-floor-herringbone
-  sprite: /Textures/_Impstation/Tiles/Green/green_herringbone.png
+  sprite: /Textures/_QB/Tiles/Green/green_herringbone.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -387,7 +393,7 @@
 - type: tile
   id: FloorGreenDiagonalMini
   name: tiles-green-floor-diagonal-mini
-  sprite: /Textures/_Impstation/Tiles/Green/green_diagonal_mini.png
+  sprite: /Textures/_QB/Tiles/Green/green_diagonal_mini.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -405,7 +411,7 @@
 - type: tile
   id: FloorGreenPlastic
   name: tiles-plastic-green-floor
-  sprite: /Textures/_Impstation/Tiles/Green/green_plastic.png
+  sprite: /Textures/_QB/Tiles/Plastic/green_plastic.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -423,7 +429,7 @@
 - type: tile
   id: FloorGreenSquiggly
   name: tiles-green-squiggly
-  sprite: /Textures/_Impstation/Tiles/Green/green_squiggly.png
+  sprite: /Textures/_QB/Tiles/Green/green_squiggly.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -442,7 +448,7 @@
 - type: tile
   id: FloorGreenDirty
   name: tiles-dirty-green-floor
-  sprite: /Textures/_Impstation/Tiles/Green/green_dirty.png
+  sprite: /Textures/_QB/Tiles/Green/green_dirty.png # QB Edit
   variants: 4
   placementVariants:
   - 1.0
@@ -460,7 +466,7 @@
 - type: tile
   id: FloorGreenDamaged
   name: tiles-damaged-green-floor
-  sprite: /Textures/_Impstation/Tiles/Green/green_damaged.png
+  sprite: /Textures/_QB/Tiles/Green/green_damaged.png # QB Edit
   variants: 5
   placementVariants:
   - 1.0
@@ -480,7 +486,7 @@
 - type: tile
   id: FloorHullSideways
   name: tiles-hull
-  sprite: /Textures/_Impstation/Tiles/Misc/hull_sideways.png
+  sprite: /Textures/_QB/Tiles/Misc/hull_sideways.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   footstepSounds:

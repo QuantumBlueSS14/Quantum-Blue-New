@@ -51,11 +51,11 @@
           children:
           - id: ImpstationMemorialBlunt
           - id: ImpstationMemorialJoint
-        - !type:GroupSelector
-          children:
-          - id: PlushieFinfin
-            weight: 0.8
-          - id: MobFinfin # this might asphyxiate him but its funny so
-            weight: 0.15
-          - id: ToyFigurineGoldenFinfin
-            weight: 0.05
+        # - !type:GroupSelector
+        #   children:
+        #   - id: PlushieFinfin
+        #     weight: 0.8
+        #   - id: MobFinfin # this might asphyxiate him but its funny so
+        #     weight: 0.15
+        #   - id: ToyFigurineGoldenFinfin
+        #     weight: 0.05

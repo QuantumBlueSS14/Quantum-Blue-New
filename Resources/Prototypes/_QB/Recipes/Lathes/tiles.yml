@@ -1,0 +1,19 @@
+- type: latheRecipe
+  parent: BaseWoodTileRecipe
+  id: FloorTileItemWoodTileBlack
+  result: FloorTileItemWoodTileBlack
+
+- type: latheRecipe
+  parent: BaseWoodTileRecipe
+  id: FloorTileItemWoodTileDark
+  result: FloorTileItemWoodTileDark
+
+- type: latheRecipe
+  parent: BaseWoodTileRecipe
+  id: FloorTileItemWoodTileLight
+  result: FloorTileItemWoodTileLight
+
+- type: latheRecipe
+  parent: BaseWoodTileRecipe
+  id: FloorTileItemWoodTileRed
+  result: FloorTileItemWoodTileRed

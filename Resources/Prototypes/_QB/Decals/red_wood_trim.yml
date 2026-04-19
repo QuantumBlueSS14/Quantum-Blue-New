@@ -1,0 +1,237 @@
+- type: decal
+  id: RedWoodTrimThinBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_box
+
+- type: decal
+  id: RedWoodTrimThinCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_corner_ne
+
+- type: decal
+  id: RedWoodTrimThinCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_corner_se
+
+- type: decal
+  id: RedWoodTrimThinCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_corner_nw
+
+- type: decal
+  id: RedWoodTrimThinCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_corner_sw
+
+- type: decal
+  id: RedWoodTrimThinInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_inner_ne
+
+- type: decal
+  id: RedWoodTrimThinInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_inner_se
+
+- type: decal
+  id: RedWoodTrimThinInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_inner_nw
+
+- type: decal
+  id: RedWoodTrimThinInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_inner_sw
+
+- type: decal
+  id: RedWoodTrimThinEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_end_n
+
+- type: decal
+  id: RedWoodTrimThinEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_end_e
+
+- type: decal
+  id: RedWoodTrimThinEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_end_s
+
+- type: decal
+  id: RedWoodTrimThinEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_end_w
+
+- type: decal
+  id: RedWoodTrimThinLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_line_n
+
+- type: decal
+  id: RedWoodTrimThinLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_line_e
+
+- type: decal
+  id: RedWoodTrimThinLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_line_s
+
+- type: decal
+  id: RedWoodTrimThinLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwood_trim.rsi
+    state: redwoodthin_line_w
+
+- type: decal
+  id: RedWoodTrimThickBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_box
+
+- type: decal
+  id: RedWoodTrimThickCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_corner_ne
+
+- type: decal
+  id: RedWoodTrimThickCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_corner_se
+
+- type: decal
+  id: RedWoodTrimThickCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_corner_nw
+
+- type: decal
+  id: RedWoodTrimThickCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_corner_sw
+
+- type: decal
+  id: RedWoodTrimThickInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_inner_ne
+
+- type: decal
+  id: RedWoodTrimThickInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_inner_se
+
+- type: decal
+  id: RedWoodTrimThickInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_inner_nw
+
+- type: decal
+  id: RedWoodTrimThickInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_inner_sw
+
+- type: decal
+  id: RedWoodTrimThickEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_end_n
+
+- type: decal
+  id: RedWoodTrimThickEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_end_e
+
+- type: decal
+  id: RedWoodTrimThickEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_end_s
+
+- type: decal
+  id: RedWoodTrimThickEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_end_w
+
+- type: decal
+  id: RedWoodTrimThickLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_line_n
+
+- type: decal
+  id: RedWoodTrimThickLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_line_e
+
+- type: decal
+  id: RedWoodTrimThickLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_line_s
+
+- type: decal
+  id: RedWoodTrimThickLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/redwoodthick_trim.rsi
+    state: redwoodthick_line_w

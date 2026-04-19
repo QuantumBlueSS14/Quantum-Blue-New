@@ -111,6 +111,7 @@
     - type: PointLight
       enabled: true
       radius: 3
+      softness: 4 # QB
       color: red
     - type: Climbable
     - type: Clickable
@@ -142,6 +143,7 @@
   - type: PointLight
     enabled: true
     radius: 3
+    softness: 4 # QB
     color: blue
   - type: Clickable
   - type: ContainmentField

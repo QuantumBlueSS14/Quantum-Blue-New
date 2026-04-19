@@ -46,6 +46,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Atmospherics",
         "Bar",
         "Brig",
+        "Brigmedic", // QB
         "Captain",
         "Cargo",
         "Chapel",
@@ -74,6 +75,8 @@ public sealed partial class IdCardConsoleComponent : Component
         "Medical",
         "Mime", // Imp
         "Musician", // Imp
+        "Paramedic", // QB
+        "Psychologist", // QB
         "Quartermaster",
         "Reporter", // Imp
         "Research",

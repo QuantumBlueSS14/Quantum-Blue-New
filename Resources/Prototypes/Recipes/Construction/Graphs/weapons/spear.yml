@@ -19,7 +19,7 @@
             - tag: GlassShard
               name: construction-graph-tag-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 1
     - node: spear
@@ -46,7 +46,7 @@
             - tag: ReinforcedGlassShard
               name: construction-graph-tag-reinforced-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 1
     - node: spear
@@ -73,7 +73,7 @@
             - tag: PlasmaGlassShard
               name: construction-graph-tag-plasma-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 1
     - node: spear
@@ -100,7 +100,7 @@
             - tag: UraniumGlassShard
               name: construction-graph-tag-uranium-glass-shard
               icon:
-                sprite: Objects/Materials/Shards/shard.rsi
+                sprite: _QB/Objects/Materials/Glass/shard.rsi # QB
                 state: shard1
               doAfter: 1
     - node: spear

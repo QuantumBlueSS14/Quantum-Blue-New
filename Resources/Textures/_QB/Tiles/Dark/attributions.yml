@@ -1,0 +1,4 @@
+- files: ["dark_squiggly.png", "dark_dirty.png", "dark_damaged.png", "dark.png", "dark_diagonal.png", "dark_mini.png", "dark_offset.png", "dark_pavement.png", "dark_diagonal_mini.png", "dark_herringbone.png", "dark_mono.png", "dark_pavement_vertical.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

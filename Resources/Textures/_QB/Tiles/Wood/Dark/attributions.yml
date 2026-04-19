@@ -1,0 +1,4 @@
+- files: ["darkwood.png", "darkwood_broken.png", "darkwood_chess.png", "darkwood_large.png", "darkwood_large_old.png", "darkwood_old.png", "darkwood_parquet.png", "darkwood_tile.png", "darkwood_tile_old.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by MattFright"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

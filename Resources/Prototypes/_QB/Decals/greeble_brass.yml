@@ -1,0 +1,118 @@
+- type: decal
+  id: GreebleBrassBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_box
+
+- type: decal
+  id: GreebleBrassCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_corner_ne
+
+- type: decal
+  id: GreebleBrassCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_corner_se
+
+- type: decal
+  id: GreebleBrassCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_corner_nw
+
+- type: decal
+  id: GreebleBrassCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_corner_sw
+
+- type: decal
+  id: GreebleBrassInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_inner_ne
+
+- type: decal
+  id: GreebleBrassInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_inner_se
+
+- type: decal
+  id: GreebleBrassInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_inner_nw
+
+- type: decal
+  id: GreebleBrassInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_inner_sw
+
+- type: decal
+  id: GreebleBrassEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_end_n
+
+- type: decal
+  id: GreebleBrassEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_end_e
+
+- type: decal
+  id: GreebleBrassEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_end_s
+
+- type: decal
+  id: GreebleBrassEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_end_w
+
+- type: decal
+  id: GreebleBrassLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_line_n
+
+- type: decal
+  id: GreebleBrassLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_line_e
+
+- type: decal
+  id: GreebleBrassLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_line_s
+
+- type: decal
+  id: GreebleBrassLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/greeble.rsi
+    state: greeblebrass_line_w

@@ -28,6 +28,7 @@
   - type: PointLight
     enabled: false
     radius: 5
+    softness: 4 # QB
   - type: SlimPoweredLight
     enabled: false
   - type: StationAiVision

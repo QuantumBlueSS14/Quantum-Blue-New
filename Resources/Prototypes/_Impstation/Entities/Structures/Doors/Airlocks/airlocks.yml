@@ -113,13 +113,14 @@
   - type: Sprite
     sprite: _Impstation/Structures/Doors/Airlocks/Standard/detective.rsi
 
-- type: entity
-  parent: AirlockSecurity
-  id: AirlockSecurityMedical
-  suffix: Security/Medical
-  components:
-  - type: Sprite
-    sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
+# QB comment - Brigmedic doesn't have an airlock and having both would be confusing
+# - type: entity
+#   parent: AirlockSecurity
+#   id: AirlockSecurityMedical
+#   suffix: Security/Medical
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
 
 # Service
 - type: entity
@@ -345,13 +346,14 @@
   - type: Sprite
     sprite: _Impstation/Structures/Doors/Airlocks/Glass/detective.rsi
 
-- type: entity
-  parent: AirlockSecurityGlass
-  id: AirlockSecurityMedicalGlass
-  suffix: Security/Medical
-  components:
-  - type: Sprite
-    sprite: _Impstation/Structures/Doors/Airlocks/Glass/secmed.rsi
+# QB comment - Brigmedic doesn't have an airlock and having both would be confusing
+# - type: entity
+#   parent: AirlockSecurityGlass
+#   id: AirlockSecurityMedicalGlass
+#   suffix: Security/Medical
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Structures/Doors/Airlocks/Glass/secmed.rsi
 
 # Service
 - type: entity

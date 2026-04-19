@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Original artwork by Ecramox, edited by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "brass_box"
+        },
+        {
+            "name": "brass_corner_ne"
+        },
+        {
+            "name": "brass_corner_se"
+        },
+        {
+            "name": "brass_corner_nw"
+        },
+        {
+            "name": "brass_corner_sw"
+        },
+        {
+            "name": "brass_end_n"
+        },
+        {
+            "name": "brass_end_e"
+        },
+        {
+            "name": "brass_end_s"
+        },
+        {
+            "name": "brass_end_w"
+        },
+        {
+            "name": "brass_line_n"
+        },
+        {
+            "name": "brass_line_e"
+        },
+        {
+            "name": "brass_line_s"
+        },
+        {
+            "name": "brass_line_w"
+        },
+        {
+            "name": "brass_inner_ne"
+        },
+        {
+            "name": "brass_inner_se"
+        },
+        {
+            "name": "brass_inner_nw"
+        },
+        {
+            "name": "brass_inner_sw"
+        }
+    ]
+}

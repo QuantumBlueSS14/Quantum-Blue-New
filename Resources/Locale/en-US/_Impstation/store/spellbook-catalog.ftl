@@ -28,9 +28,6 @@ spellbook-mm-desc = The classic.
 spellbook-spacegrease-name = Space Grease
 spellbook-spacegrease-desc = Everyone loves a slip n' slide!
 
-spellbook-finfin-name = Summon Finfin
-spellbook-finfin-desc = Summon a best friend!
-
 spellbook-magic-monkey-name = Summon Magic Monkey
 spellbook-magic-monkey-desc = An apprentice.
 

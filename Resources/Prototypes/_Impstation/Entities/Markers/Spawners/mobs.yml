@@ -71,19 +71,19 @@
         maxAmount: 2
       - id: MobGoose
 
-- type: entity
-  name: Space Bear Major Spawner
-  id: SpawnMobBearMajor
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: major
-      sprite: _Impstation/Mobs/Animals/major.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobBearSpaceMajor
+# - type: entity
+#   name: Space Bear Major Spawner
+#   id: SpawnMobBearMajor
+#   parent: MarkerBase
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: green
+#     - state: major
+#       sprite: _Impstation/Mobs/Animals/major.rsi
+#   - type: ConditionalSpawner
+#     prototypes:
+#     - MobBearSpaceMajor
 
 - type: entity
   name: ray spawner
@@ -126,48 +126,48 @@
       prototypes:
         - MobTckTck
 
-- type: entity
-  name: Pipi Spawner
-  id: SpawnMobCatKittenPipi
-  suffix: CMO's pet, steal target
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobPipi
+# - type: entity
+#   name: Pipi Spawner
+#   id: SpawnMobCatKittenPipi
+#   suffix: CMO's pet, steal target
+#   parent: MarkerBase
+#   components:
+#   - type: Sprite
+#     layers:
+#       - state: green
+#       - state: ai
+#   - type: ConditionalSpawner
+#     prototypes:
+#       - MobPipi
 
-- type: entity
-  name: Dolby Spawner
-  id: SpawnMobDogPuppyDolby
-  suffix: Chemistry pet, steal target
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobDolby
+# - type: entity
+#   name: Dolby Spawner
+#   id: SpawnMobDogPuppyDolby
+#   suffix: Chemistry pet, steal target
+#   parent: MarkerBase
+#   components:
+#   - type: Sprite
+#     layers:
+#       - state: green
+#       - state: ai
+#   - type: ConditionalSpawner
+#     prototypes:
+#       - MobDolby
 
-- type: entity
-  name: Dog Spawner
-  id: SpawnMobChemDog
-  suffix: Chemistry pet, steal target
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: RandomSpawner
-    prototypes:
-      - MobWalter
-      - MobDolby
+# - type: entity
+#   name: Dog Spawner
+#   id: SpawnMobChemDog
+#   suffix: Chemistry pet, steal target
+#   parent: MarkerBase
+#   components:
+#   - type: Sprite
+#     layers:
+#       - state: green
+#       - state: ai
+#   - type: RandomSpawner
+#     prototypes:
+#       - MobWalter
+#       - MobDolby
 
 #- type: entity
 #  name: Foes/Seof Spawner

@@ -33,9 +33,9 @@
   - type: PointLight
     mask: /Textures/Effects/LightMasks/double_cone.png
     color: "#FFE4CE"
-    energy: 5
+    energy: 1.5 # QB
     radius: 10
-    softness: 1
+    softness: 4 # QB
     offset: "0, 0.35"
   - type: RotatingLight
   - type: Physics

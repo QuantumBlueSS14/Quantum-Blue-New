@@ -26,6 +26,7 @@
     - id: SpiderClownSpawn #imp
     - id: SpiderSpawn #imp
     - id: KodepiiaMigration #imp
+    - id: OomyciteSpawn #QB
 
 # events
 

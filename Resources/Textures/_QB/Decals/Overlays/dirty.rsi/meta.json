@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original artwork by MattFright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dirt"
+    },
+    {
+      "name": "dirtlight"
+    },
+    {
+      "name": "dirtmedium"
+    },
+    {
+      "name": "dirtheavy"
+    },
+    {
+      "name": "dirtheavy-mono"
+    },
+    {
+      "name": "damaged"
+    },
+    {
+      "name": "rust"
+    }
+  ]
+}

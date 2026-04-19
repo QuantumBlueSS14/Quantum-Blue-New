@@ -6,9 +6,9 @@
   description: You'd know it if you couldn't see it. # imp
   components:
   - type: Sprite
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _QB/Objects/Materials/Glass/glass.rsi # QB
   - type: Item
-    sprite: Objects/Materials/Sheets/glass.rsi
+    sprite: _QB/Objects/Materials/Glass/glass.rsi # QB
     size: Normal
   - type: StaticPrice
     price: 0
@@ -144,11 +144,13 @@
     - rglass_2
     - rglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/rglass.rsi # QB
     state: rglass_3
     layers:
     - state: rglass_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Glass/rglass.rsi # QB
     heldPrefix: rglass
   - type: FloorTile
     outputs:
@@ -232,16 +234,18 @@
     stackType: PlasmaGlass
     baseLayer: base
     layerStates:
-    - pglass
-    - pglass_2
-    - pglass_3
+    - plasmaglass
+    - plasmaglass_2
+    - plasmaglass_3
   - type: Sprite
-    state: pglass_3
+    sprite: _QB/Objects/Materials/Glass/plasmaglass.rsi # QB
+    state: plasmaglass_3 # QB
     layers:
-    - state: pglass_3
+    - state: plasmaglass_3 # QB
       map: ["base"]
   - type: Item
-    heldPrefix: pglass
+    sprite: _QB/Objects/Materials/Glass/plasmaglass.rsi # QB
+    heldPrefix: plasmaglass
   - type: Construction
     graph: Glass
     node: SheetPGlass
@@ -289,7 +293,7 @@
   suffix: Single
   components:
   - type: Sprite
-    state: pglass
+    state: plasmaglass # QB
   - type: Stack
     stackType: PlasmaGlass
     count: 1
@@ -319,16 +323,18 @@
     stackType: ReinforcedPlasmaGlass
     baseLayer: base
     layerStates:
-    - rpglass
-    - rpglass_2
-    - rpglass_3
+    - rplasmaglass
+    - rplasmaglass_2
+    - rplasmaglass_3
   - type: Sprite
-    state: rpglass_3
+    sprite: _QB/Objects/Materials/Glass/rplasmaglass.rsi # QB
+    state: rplasmaglass_3
     layers:
-    - state: rpglass_3
+    - state: rplasmaglass_3
       map: ["base"]
   - type: Item
-    heldPrefix: rpglass
+    sprite: _QB/Objects/Materials/Glass/rplasmaglass.rsi # QB
+    heldPrefix: rplasmaglass
   - type: Construction
     graph: Glass
     node: SheetRPGlass
@@ -367,7 +373,8 @@
   suffix: Single
   components:
   - type: Sprite
-    state: rpglass
+    sprite: _QB/Objects/Materials/Glass/rplasmaglass.rsi # QB
+    state: rplasmaglass # QB
   - type: Stack
     stackType: ReinforcedPlasmaGlass
     count: 1
@@ -386,16 +393,18 @@
     stackType: UraniumGlass
     baseLayer: base
     layerStates:
-    - uglass
-    - uglass_2
-    - uglass_3
+    - uraniumglass
+    - uraniumglass_2
+    - uraniumglass_3
   - type: Sprite
-    state: uglass_3
+    sprite: _QB/Objects/Materials/Glass/uraniumglass.rsi # QB
+    state: uraniumglass_3 # QB
     layers:
-    - state: uglass_3
+    - state: uraniumglass_3 # QB
       map: ["base"]
   - type: Item
-    heldPrefix: uglass
+    sprite: _QB/Objects/Materials/Glass/uraniumglass.rsi # QB
+    heldPrefix: uraniumglass
   - type: Construction
     graph: Glass
     node: SheetUGlass
@@ -454,7 +463,7 @@
   suffix: Single
   components:
   - type: Sprite
-    state: uglass
+    state: uraniumglass # QB
   - type: Stack
     stackType: UraniumGlass
     count: 1
@@ -472,16 +481,18 @@
     stackType: ReinforcedUraniumGlass
     baseLayer: base
     layerStates:
-    - ruglass
-    - ruglass_2
-    - ruglass_3
+    - ruraniumglass
+    - ruraniumglass_2
+    - ruraniumglass_3
   - type: Sprite
-    state: ruglass_3
+    sprite: _QB/Objects/Materials/Glass/ruraniumglass.rsi # QB
+    state: ruraniumglass_3
     layers:
-    - state: ruglass_3
+    - state: ruraniumglass_3
       map: ["base"]
   - type: Item
-    heldPrefix: ruglass
+    sprite: _QB/Objects/Materials/Glass/ruraniumglass.rsi # QB
+    heldPrefix: ruraniumglass
   - type: Construction
     graph: Glass
     node: SheetRUGlass
@@ -520,7 +531,7 @@
   suffix: Single
   components:
   - type: Sprite
-    state: ruglass
+    state: ruraniumglass # QB
   - type: Stack
     stackType: ReinforcedUraniumGlass
     count: 1
@@ -543,11 +554,13 @@
     - cglass_2
     - cglass_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Glass/cglass.rsi # QB
     state: cglass_3
     layers:
     - state: cglass_3
       map: ["base"]
   - type: Item
+    sprite: _QB/Objects/Materials/Glass/cglass.rsi # QB
     heldPrefix: cglass
   - type: Construction
     graph: Glass

@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "darkwoodthin_box"
+        },
+        {
+            "name": "darkwoodthin_corner_ne"
+        },
+        {
+            "name": "darkwoodthin_corner_se"
+        },
+        {
+            "name": "darkwoodthin_corner_nw"
+        },
+        {
+            "name": "darkwoodthin_corner_sw"
+        },
+        {
+            "name": "darkwoodthin_end_n"
+        },
+        {
+            "name": "darkwoodthin_end_e"
+        },
+        {
+            "name": "darkwoodthin_end_s"
+        },
+        {
+            "name": "darkwoodthin_end_w"
+        },
+        {
+            "name": "darkwoodthin_line_n"
+        },
+        {
+            "name": "darkwoodthin_line_e"
+        },
+        {
+            "name": "darkwoodthin_line_s"
+        },
+        {
+            "name": "darkwoodthin_line_w"
+        },
+        {
+            "name": "darkwoodthin_inner_ne"
+        },
+        {
+            "name": "darkwoodthin_inner_se"
+        },
+        {
+            "name": "darkwoodthin_inner_nw"
+        },
+        {
+            "name": "darkwoodthin_inner_sw"
+        }
+    ]
+}

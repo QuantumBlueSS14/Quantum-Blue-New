@@ -65,6 +65,7 @@
     enabled: false
     radius: 4
     energy: 2.0
+    softness: 4 # QB
     color: "#FF4020"
     mask: /Textures/Effects/LightMasks/double_cone.png
   - type: RotatingLight

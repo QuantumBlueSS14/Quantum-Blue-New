@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Original artwork by MattFright",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+	{
+		"name": "telecrystal"
+	},
+	{
+		"name": "telecrystal_2"
+	},
+	{
+		"name": "telecrystal_3"
+	},
+	{
+		"name": "telecrystal-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "telecrystal-inhand-right",
+		"directions": 4
+	}
+	]
+}

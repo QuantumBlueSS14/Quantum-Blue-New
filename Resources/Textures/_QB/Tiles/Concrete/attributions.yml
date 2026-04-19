@@ -1,0 +1,4 @@
+- files: ["oldconcrete.png", "oldconcrete_mono.png", "oldconcrete_smooth.png","concrete.png", "concrete_mono.png", "concrete_smooth.png", "grayconcrete.png", "grayconcrete_mono.png", "grayconcrete_smooth.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github) for Impstation, modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

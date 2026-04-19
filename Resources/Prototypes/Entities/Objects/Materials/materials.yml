@@ -45,7 +45,7 @@
     - cardboard_2
     - cardboard_3
   - type: Sprite
-    sprite: _Impstation/Objects/Materials/materials.rsi #imp edit
+    sprite: _QB/Objects/Materials/cardboard.rsi # QB
     state: cardboard_3
     layers:
     - state: cardboard_3
@@ -65,7 +65,7 @@
         - ReagentId: Pulp #imp
           Quantity: 6
   - type: Item
-    sprite: _Impstation/Objects/Materials/materials.rsi #imp edit
+    sprite: _QB/Objects/Materials/cardboard.rsi # QB
     heldPrefix: cardboard
   - type: FloorTile
     outputs:
@@ -108,6 +108,7 @@
   suffix: 10
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/cardboard.rsi # QB
     state: cardboard
   - type: Stack
     count: 10
@@ -118,6 +119,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/cardboard.rsi # QB
     state: cardboard
   - type: Stack
     count: 1
@@ -164,6 +166,7 @@
       - ReagentId: Fiber
         Quantity: 3
   - type: Sprite
+    sprite: _QB/Objects/Materials/cloth.rsi # QB
     state: cloth_3
     layers:
     - state: cloth_3
@@ -192,6 +195,7 @@
     graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
     node: cloth
   - type: Item
+    sprite: _QB/Objects/Materials/cloth.rsi # QB
     heldPrefix: cloth
   - type: PluralName # imp
     oneOf: plural-name-bolt-1 # the more you know https://english.stackexchange.com/questions/430790/what-do-you-call-a-of-cloth
@@ -202,6 +206,7 @@
   suffix: 10
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/cloth.rsi # QB
     state: cloth
   - type: Stack
     count: 10
@@ -212,6 +217,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/cloth.rsi # QB
     state: cloth
   - type: Stack
     count: 1
@@ -235,6 +241,7 @@
     materialComposition:
       Durathread: 100
   - type: Sprite
+    sprite: _QB/Objects/Materials/durathread.rsi # QB
     state: durathread_3
     layers:
     - state: durathread_3
@@ -259,6 +266,7 @@
       - ConstructionMaterial
       - DroneUsable #imp edit
   - type: Item
+    sprite: _QB/Objects/Materials/durathread.rsi # QB
     heldPrefix: durathread
   - type: PluralName # imp
     oneOf: plural-name-bolt-1
@@ -269,6 +277,7 @@
   suffix: Single
   components:
   - type: Sprite
+    sprite: _QB/Objects/Materials/durathread.rsi # QB
     state: durathread
   - type: Stack
     count: 1
@@ -292,12 +301,14 @@
     - wood_2
     - wood_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/wood.rsi # QB
     state: wood
     layers:
     - state: wood
       map: ["base"]
   - type: Appearance
   - type: Item
+    sprite: _QB/Objects/Materials/wood.rsi # QB
     heldPrefix: wood
   - type: Tag
     tags:
@@ -462,12 +473,14 @@
     - diamond_2
     - diamond_3
   - type: Sprite
+    sprite: _QB/Objects/Materials/Gems/diamond.rsi # QB
     state: diamond
     layers:
     - state: diamond
       map: ["base"]
   - type: Appearance
   - type: Item
+    sprite: _QB/Objects/Materials/Gems/diamond.rsi # QB
     heldPrefix: diamond
   - type: Extractable
     grindableSolutionName: diamond

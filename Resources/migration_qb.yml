@@ -18,3 +18,29 @@ ComputerFundingAllocationBroken: ComputerFundingAllocation
 
 # 2/12/2026
 JailCard: null
+
+# 3/29/2026 Named some stuff inconsistently woops. If you even need on of these ID's uh good luck sorry
+#FloorWoodTileDarkLargeOld: FloorWoodLargeDarkOld
+#FloorWoodTileDarkTileOld: FloorWoodTileDarkOld
+#FloorWoodTileLightOld: FloorWoodLightOld
+#FloorWoodTileLightLargeOld: FloorWoodLargeLightOld
+#FloorWoodTileLightTileOld: FloorWoodTileLightOld
+#FloorWoodTileRedLargeOld: FloorWoodLargeRedOld
+#FloorWoodTileRedTileOld: FloorWoodTileRedOld
+# Nvm they broke everything cause they were tiles, not entities. Leaving this list incase it's useful later.
+
+# 4/6/2026
+SpawnMobCatKittenPipi: SpawnMobCat
+SpawnMobDogPuppyDolby: SpawnMobWalter
+SpawnMobChemDog: SpawnMobWalter
+SpawnMobBearMajor: null
+PlushieFinfin: null
+ToyFigurineGoldenFinfin: null
+SpawnMobFinfin: null
+
+# 4/8/2026
+AirlockSecurityMedical: AirlockBrigmedic
+AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
+AirlockSecurityMedicalLocked: AirlockBrigmedicLocked
+AirlockSecurityMedicalGlassLocked: AirlockBrigmedicGlassLocked
+AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked

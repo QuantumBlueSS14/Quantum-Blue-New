@@ -36,6 +36,7 @@
   - GenpopEnter
   - GenpopLeave
   - Vault #imp
+  - Brigmedic # QB
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
