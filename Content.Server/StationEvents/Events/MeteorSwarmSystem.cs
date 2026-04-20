@@ -81,7 +81,7 @@ public sealed class MeteorSwarmSystem : GameRuleSystem<MeteorSwarmComponent>
         var maximumDistance = minimumDistance + 100f;
 
         var center = playableArea.Center;
-        var offsetFromCenter = new Vector2(center.X + (RobustRandom.NextFloat() * 2f - 1f) * 100f, center.Y + (RobustRandom.NextFloat() * 2f - 1f) * 100f);
+        var offsetFromCenter = new Vector2(center.X + (RobustRandom.NextFloat() * 2f - 1f) * 250f, center.Y + (RobustRandom.NextFloat() * 2f - 1f) * 250f);
 
         var meteorsToSpawn = component.MeteorsPerWave.Next(RobustRandom);
         for (var i = 0; i < meteorsToSpawn; i++)
