@@ -121,9 +121,6 @@
           32:
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
-  - type: MovementSpeedModifier # DeltaV
-    baseWalkSpeed: 1
-    baseSprintSpeed: 3
   - type: FTLKnockdownImmune # Frontier
   - type: Rootable
   # imp edit start
