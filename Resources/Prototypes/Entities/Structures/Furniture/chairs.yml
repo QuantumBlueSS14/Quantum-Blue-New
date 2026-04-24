@@ -435,7 +435,8 @@
   description: Make sure you sit *really* gently.
   components:
   - type: Sprite
-    state: card-stool
+    sprite: _QB/Structures/Furniture/Chairs/cardboard_stool.rsi # QB
+    state: cardboard-stool # QB
   - type: Construction
     graph: Seat
     node: stoolCard

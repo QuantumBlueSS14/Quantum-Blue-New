@@ -109,7 +109,7 @@
   id: CardDoor
   name: cardboard door
   category: Airlocks
-  sprite: { sprite: Structures/Doors/MineralDoors/card_door.rsi, state: closed }
+  sprite: { sprite: _QB/Structures/Doors/Misc/cardboard_door.rsi, state: closed } # QB
   mode: ConstructObject
   prototype: CardDoor
   cost: 4
