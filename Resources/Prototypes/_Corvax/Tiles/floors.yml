@@ -1,13 +1,7 @@
 - type: tile
   id: FloorWoodParquet
   name: tiles-wood-parquet
-  sprite: /Textures/_Corvax/Tiles/wood_parquet.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood_parquet.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -21,13 +15,7 @@
 - type: tile
   id: FloorWoodChess
   name: tiles-wood-chess
-  sprite: /Textures/_Corvax/Tiles/wood_chess.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Regular/wood_chess.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -41,13 +29,7 @@
 - type: tile
   id: FloorWoodBlack
   name: tiles-wood-black
-  sprite: /Textures/_Corvax/Tiles/wood_black.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Black/blackwood.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -61,13 +43,7 @@
 - type: tile
   id: FloorWoodLargeBlack
   name: tiles-wood-large-black
-  sprite: /Textures/_Corvax/Tiles/wood_large_black.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Black/blackwood_large.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -81,13 +57,7 @@
 - type: tile
   id: FloorWoodParquetBlack
   name: tiles-wood-parquet-black
-  sprite: /Textures/_Corvax/Tiles/wood_parquet_black.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Black/blackwood_parquet.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -101,13 +71,7 @@
 - type: tile
   id: FloorWoodChessBlack
   name: tiles-wood-chess-black
-  sprite: /Textures/_Corvax/Tiles/wood_chess_black.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Black/blackwood_chess.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -121,13 +85,7 @@
 - type: tile
   id: FloorWoodDark
   name: tiles-wood-dark
-  sprite: /Textures/_Corvax/Tiles/wood_dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -141,13 +99,7 @@
 - type: tile
   id: FloorWoodLargeDark
   name: tiles-wood-large-dark
-  sprite: /Textures/_Corvax/Tiles/wood_large_dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_large.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -161,13 +113,7 @@
 - type: tile
   id: FloorWoodParquetDark
   name: tiles-wood-parquet-dark
-  sprite: /Textures/_Corvax/Tiles/wood_parquet_dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_parquet.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -181,13 +127,7 @@
 - type: tile
   id: FloorWoodChessDark
   name: tiles-wood-chess-dark
-  sprite: /Textures/_Corvax/Tiles/wood_chess_dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Dark/darkwood_chess.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -201,13 +141,7 @@
 - type: tile
   id: FloorWoodLight
   name: tiles-wood-light
-  sprite: /Textures/_Corvax/Tiles/wood_light.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -221,13 +155,7 @@
 - type: tile
   id: FloorWoodLargeLight
   name: tiles-wood-large-light
-  sprite: /Textures/_Corvax/Tiles/wood_large_light.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_large.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -241,13 +169,7 @@
 - type: tile
   id: FloorWoodParquetLight
   name: tiles-wood-parquet-light
-  sprite: /Textures/_Corvax/Tiles/wood_parquet_light.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_parquet.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -261,13 +183,7 @@
 - type: tile
   id: FloorWoodChessLight
   name: tiles-wood-chess-light
-  sprite: /Textures/_Corvax/Tiles/wood_chess_light.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Light/lightwood_chess.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -281,13 +197,7 @@
 - type: tile
   id: FloorWoodRed
   name: tiles-wood-red
-  sprite: /Textures/_Corvax/Tiles/wood_red.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Red/redwood.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -301,13 +211,7 @@
 - type: tile
   id: FloorWoodLargeRed
   name: tiles-wood-large-red
-  sprite: /Textures/_Corvax/Tiles/wood_large_red.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Red/redwood_large.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -321,13 +225,7 @@
 - type: tile
   id: FloorWoodParquetRed
   name: tiles-wood-parquet-red
-  sprite: /Textures/_Corvax/Tiles/wood_parquet_red.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Red/redwood_parquet.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -341,13 +239,7 @@
 - type: tile
   id: FloorWoodChessRed
   name: tiles-wood-chess-red
-  sprite: /Textures/_Corvax/Tiles/wood_chess_red.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_QB/Tiles/Wood/Red/redwood_chess.png # QB Edit
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]

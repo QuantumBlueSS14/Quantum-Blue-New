@@ -1,0 +1,237 @@
+- type: decal
+  id: BlackWoodTrimThinBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_box
+
+- type: decal
+  id: BlackWoodTrimThinCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_corner_ne
+
+- type: decal
+  id: BlackWoodTrimThinCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_corner_se
+
+- type: decal
+  id: BlackWoodTrimThinCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_corner_nw
+
+- type: decal
+  id: BlackWoodTrimThinCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_corner_sw
+
+- type: decal
+  id: BlackWoodTrimThinInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_inner_ne
+
+- type: decal
+  id: BlackWoodTrimThinInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_inner_se
+
+- type: decal
+  id: BlackWoodTrimThinInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_inner_nw
+
+- type: decal
+  id: BlackWoodTrimThinInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_inner_sw
+
+- type: decal
+  id: BlackWoodTrimThinEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_end_n
+
+- type: decal
+  id: BlackWoodTrimThinEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_end_e
+
+- type: decal
+  id: BlackWoodTrimThinEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_end_s
+
+- type: decal
+  id: BlackWoodTrimThinEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_end_w
+
+- type: decal
+  id: BlackWoodTrimThinLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_line_n
+
+- type: decal
+  id: BlackWoodTrimThinLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_line_e
+
+- type: decal
+  id: BlackWoodTrimThinLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_line_s
+
+- type: decal
+  id: BlackWoodTrimThinLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwood_trim.rsi
+    state: blackwoodthin_line_w
+
+- type: decal
+  id: BlackWoodTrimThickBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_box
+
+- type: decal
+  id: BlackWoodTrimThickCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_corner_ne
+
+- type: decal
+  id: BlackWoodTrimThickCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_corner_se
+
+- type: decal
+  id: BlackWoodTrimThickCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_corner_nw
+
+- type: decal
+  id: BlackWoodTrimThickCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_corner_sw
+
+- type: decal
+  id: BlackWoodTrimThickInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_inner_ne
+
+- type: decal
+  id: BlackWoodTrimThickInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_inner_se
+
+- type: decal
+  id: BlackWoodTrimThickInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_inner_nw
+
+- type: decal
+  id: BlackWoodTrimThickInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_inner_sw
+
+- type: decal
+  id: BlackWoodTrimThickEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_end_n
+
+- type: decal
+  id: BlackWoodTrimThickEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_end_e
+
+- type: decal
+  id: BlackWoodTrimThickEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_end_s
+
+- type: decal
+  id: BlackWoodTrimThickEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_end_w
+
+- type: decal
+  id: BlackWoodTrimThickLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_line_n
+
+- type: decal
+  id: BlackWoodTrimThickLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_line_e
+
+- type: decal
+  id: BlackWoodTrimThickLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_line_s
+
+- type: decal
+  id: BlackWoodTrimThickLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/blackwoodthick_trim.rsi
+    state: blackwoodthick_line_w

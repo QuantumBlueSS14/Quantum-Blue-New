@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "blackwoodthick_box"
+        },
+        {
+            "name": "blackwoodthick_corner_ne"
+        },
+        {
+            "name": "blackwoodthick_corner_se"
+        },
+        {
+            "name": "blackwoodthick_corner_nw"
+        },
+        {
+            "name": "blackwoodthick_corner_sw"
+        },
+        {
+            "name": "blackwoodthick_end_n"
+        },
+        {
+            "name": "blackwoodthick_end_e"
+        },
+        {
+            "name": "blackwoodthick_end_s"
+        },
+        {
+            "name": "blackwoodthick_end_w"
+        },
+        {
+            "name": "blackwoodthick_line_n"
+        },
+        {
+            "name": "blackwoodthick_line_e"
+        },
+        {
+            "name": "blackwoodthick_line_s"
+        },
+        {
+            "name": "blackwoodthick_line_w"
+        },
+        {
+            "name": "blackwoodthick_inner_ne"
+        },
+        {
+            "name": "blackwoodthick_inner_se"
+        },
+        {
+            "name": "blackwoodthick_inner_nw"
+        },
+        {
+            "name": "blackwoodthick_inner_sw"
+        }
+    ]
+}

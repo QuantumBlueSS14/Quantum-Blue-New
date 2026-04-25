@@ -17,7 +17,7 @@
     enabled: true
     color: "#FFFFEC"
     radius: 3.5
-    softness: 1
+    softness: 4 # QB
     autoRot: true
     castShadows: false
   - type: Lightning
@@ -48,7 +48,7 @@
     enabled: true
     color: "#ECF2FF"
     radius: 3.5
-    softness: 1
+    softness: 4 # QB
     autoRot: true
     castShadows: false
   - type: Lightning
@@ -74,7 +74,7 @@
     enabled: true
     color: "#FFECED"
     radius: 3.5
-    softness: 1
+    softness: 4 # QB
     autoRot: true
     castShadows: false
   - type: Lightning

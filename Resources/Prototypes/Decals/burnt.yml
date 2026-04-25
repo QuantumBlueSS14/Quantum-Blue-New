@@ -3,7 +3,7 @@
   tags: ["burnt"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/burnt.rsi
+    sprite: _QB/Decals/Overlays/burnt.rsi # QB
     state: burnt1
 
 - type: decal
@@ -11,7 +11,7 @@
   tags: ["burnt"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/burnt.rsi
+    sprite: _QB/Decals/Overlays/burnt.rsi # QB
     state: burnt2
 
 - type: decal
@@ -19,7 +19,7 @@
   tags: ["burnt"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/burnt.rsi
+    sprite: _QB/Decals/Overlays/burnt.rsi # QB
     state: burnt3
 
 - type: decal
@@ -27,5 +27,5 @@
   tags: ["burnt"]
   defaultCleanable: true
   sprite:
-    sprite: Decals/burnt.rsi
+    sprite: _QB/Decals/Overlays/burnt.rsi # QB
     state: burnt4

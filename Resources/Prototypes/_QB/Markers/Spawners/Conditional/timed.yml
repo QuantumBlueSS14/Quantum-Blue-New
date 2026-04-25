@@ -1,0 +1,37 @@
+- type: entity
+  name: Oomycite Vent Spawner
+  id: OomyciteVentSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _QB/Mobs/Animals/oomycite.rsi
+          state: spore
+        - state: timed
+    - type: Timer
+    - type: ClusterSpawner
+      prototypes:
+        - MobOomycite
+      chance: 0.9
+      minimumEntitiesSpawned: 10
+      maximumEntitiesSpawned: 15
+
+- type: entity
+  name: Polyoomycite Vent Spawner
+  id: PolyoomyciteVentSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _QB/Mobs/Animals/polyoomycite.rsi
+          state: super-spore
+        - state: timed
+    - type: Timer
+    - type: ClusterSpawner
+      prototypes:
+        - MobPolyoomycite
+      chance: 0.9
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 4

@@ -60,6 +60,7 @@
   - type: PointLight
     enabled: true
     radius: 10
+    softness: 4 # QB
   - type: Appearance
   - type: GuideHelp # Always strive to be helpful in trying times.
     guides:

@@ -1,0 +1,237 @@
+- type: decal
+  id: BrassTrimBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_box
+
+- type: decal
+  id: BrassTrimCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_corner_ne
+
+- type: decal
+  id: BrassTrimCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_corner_se
+
+- type: decal
+  id: BrassTrimCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_corner_nw
+
+- type: decal
+  id: BrassTrimCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_corner_sw
+
+- type: decal
+  id: BrassTrimInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_inner_ne
+
+- type: decal
+  id: BrassTrimInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_inner_se
+
+- type: decal
+  id: BrassTrimInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_inner_nw
+
+- type: decal
+  id: BrassTrimInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_inner_sw
+
+- type: decal
+  id: BrassTrimEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_end_n
+
+- type: decal
+  id: BrassTrimEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_end_e
+
+- type: decal
+  id: BrassTrimEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_end_s
+
+- type: decal
+  id: BrassTrimEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_end_w
+
+- type: decal
+  id: BrassTrimLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_line_n
+
+- type: decal
+  id: BrassTrimLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_line_e
+
+- type: decal
+  id: BrassTrimLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_line_s
+
+- type: decal
+  id: BrassTrimLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic.rsi
+    state: brass_line_w
+
+- type: decal
+  id: BrassTrimFilledBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_box
+
+- type: decal
+  id: BrassTrimFilledCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_corner_ne
+
+- type: decal
+  id: BrassTrimFilledCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_corner_se
+
+- type: decal
+  id: BrassTrimFilledCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_corner_nw
+
+- type: decal
+  id: BrassTrimFilledCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_corner_sw
+
+- type: decal
+  id: BrassTrimFilledInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_inner_ne
+
+- type: decal
+  id: BrassTrimFilledInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_inner_se
+
+- type: decal
+  id: BrassTrimFilledInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_inner_nw
+
+- type: decal
+  id: BrassTrimFilledInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_inner_sw
+
+- type: decal
+  id: BrassTrimFilledEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_end_n
+
+- type: decal
+  id: BrassTrimFilledEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_end_e
+
+- type: decal
+  id: BrassTrimFilledEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_end_s
+
+- type: decal
+  id: BrassTrimFilledEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_end_w
+
+- type: decal
+  id: BrassTrimFilledLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_line_n
+
+- type: decal
+  id: BrassTrimFilledLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_line_e
+
+- type: decal
+  id: BrassTrimFilledLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_line_s
+
+- type: decal
+  id: BrassTrimFilledLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Brass/generic_filled.rsi
+    state: filledbrass_line_w

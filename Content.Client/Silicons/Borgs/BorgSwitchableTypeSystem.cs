@@ -59,14 +59,24 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
             }
         }
 
-        // Begin Impstation
-        if (TryComp<PdaBorderColorComponent>(entity, out var pdaBorders))
+        if (prototype.SpriteBodyMovementState is { } movementState)
         {
-            pdaBorders.BorderColor = prototype.PdaBorderColor ?? pdaBorders.BorderColor;
-            pdaBorders.AccentHColor = prototype.PdaAccentHorizontalColor ?? pdaBorders.AccentHColor;
-            pdaBorders.AccentVColor = prototype.PdaAccentVerticalColor ?? pdaBorders.AccentVColor;
+            var spriteMovement = EnsureComp<SpriteMovementComponent>(entity);
+            spriteMovement.NoMovementLayers.Clear();
+            spriteMovement.NoMovementLayers["movement"] = new PrototypeLayerData
+            {
+                State = prototype.SpriteBodyState,
+            };
+            spriteMovement.MovementLayers.Clear();
+            spriteMovement.MovementLayers["movement"] = new PrototypeLayerData
+            {
+                State = movementState,
+            };
         }
-        // End Impstation
+        else
+        {
+            RemComp<SpriteMovementComponent>(entity);
+        }
 
         base.UpdateEntityAppearance(entity, prototype);
     }

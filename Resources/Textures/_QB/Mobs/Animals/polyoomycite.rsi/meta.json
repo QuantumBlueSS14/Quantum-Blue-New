@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "by DVDPlayerOfDiscordFame (Github) for Quantum Blue.",
+  "states": [
+    {
+      "name": "algae"
+    },
+    {
+      "name": "super-spore",
+      "directions": 4
+    }
+  ]
+}

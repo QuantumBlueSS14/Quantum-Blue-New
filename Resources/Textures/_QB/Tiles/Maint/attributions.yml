@@ -1,0 +1,4 @@
+- files: ["grating_maint.png", "steel_maint.png", "tech_maint.png", "tech_maint_dark.png", "tech_maint_green.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

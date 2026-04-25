@@ -33,6 +33,7 @@
   - type: PointLight
     radius: 3
     energy: 3
+    softness: 4 # QB
     color: "#FF6F00"
   - type: Damageable
     damageContainer: StructuralInorganic

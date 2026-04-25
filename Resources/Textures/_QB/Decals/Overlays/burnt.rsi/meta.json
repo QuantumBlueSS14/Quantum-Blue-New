@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original artwork by MattFright",
+    "states": [
+        {
+            "name": "burnt1"
+
+        },
+        {
+            "name": "burnt2"
+
+        },
+        {
+            "name": "burnt3"
+
+        },
+        {
+            "name": "burnt4"
+
+        }
+    ]
+}

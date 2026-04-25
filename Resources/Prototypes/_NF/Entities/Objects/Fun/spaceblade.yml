@@ -183,6 +183,7 @@
   - type: PointLight
     enabled: true
     radius: 5
+    softness: 4 # QB
     color: "#3db83b"
 #  - type: Contraband #QB: No more valid vision/contra info
   - type: StaticPrice

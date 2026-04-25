@@ -69,6 +69,7 @@
       color: "#ffd591" #imp
       radius: 5
       energy: 8
+      softness: 4 # QB
       netsync: false
     - type: LightFade
       duration: 0.5
@@ -189,7 +190,7 @@
         color: "#ffaa44"
         energy: 8
         radius: 6
-        softness: 1
+        softness: 4 # QB
         offset: "0, 0"
       - type: EmitSoundOnTrigger
         sound:
@@ -249,7 +250,7 @@
         color: "#ffffff"
         energy: 8
         radius: 6
-        softness: 1
+        softness: 4 # QB
         offset: "0, 0"
       - type: EmitSoundOnTrigger
         keysIn:
@@ -402,6 +403,7 @@
   - type: PointLight
     radius: 7
     energy: 3
+    softness: 4 # QB
     netsync: false
   - type: TimerTriggerVisuals
     primingSound:

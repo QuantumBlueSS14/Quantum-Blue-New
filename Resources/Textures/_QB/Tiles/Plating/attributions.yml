@@ -1,0 +1,4 @@
+- files: ["foam_metal.png", "plating.png", "plating_damaged.png", "reinforced.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by Ecramox (Github), modified by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

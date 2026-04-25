@@ -131,6 +131,7 @@
     enabled: false
     netsync: false
     radius: 5
+    softness: 4 # QB
     color: orange
   - type: ItemTogglePointLight
   - type: StaticPrice

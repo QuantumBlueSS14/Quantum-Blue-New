@@ -44,6 +44,7 @@
     enabled: false
     radius: 3
     energy: 2
+    softness: 4 # QB
     netsync: false
   - type: ToggleableVisuals
     spriteLayer: light
@@ -157,6 +158,7 @@
     enabled: false
     radius: 2
     energy: 0.5
+    softness: 4 # QB
     color: "#FFFFEE"
   - type: Flash
     flashOnMelee: false
@@ -219,6 +221,7 @@
     enabled: false
     radius: 8
     energy: 5
+    softness: 2 # QB
   - type: ItemSlots
     slots:
       cell_slot:

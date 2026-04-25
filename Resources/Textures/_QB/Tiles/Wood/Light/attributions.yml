@@ -1,0 +1,4 @@
+- files: ["lightwood.png", "lightwood_broken.png", "lightwood_chess.png", "lightwood_large.png", "lightwood_large_old.png", "lightwood_old.png", "lightwood_parquet.png", "lightwood_tile.png", "lightood_tile_old.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by MattFright"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

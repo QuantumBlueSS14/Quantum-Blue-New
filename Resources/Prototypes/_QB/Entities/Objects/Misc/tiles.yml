@@ -1,0 +1,99 @@
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorTileItemTechmaintGreen
+  name: green techmaint floor
+  components:
+  - type: Sprite
+    state: techfloor
+  - type: Item
+    heldPrefix: steel
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorTechMaintGreen
+  - type: Stack
+    stackType: FloorTileTechmaintGreen
+
+- type: entity
+  name: black wood floor tile
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileBlack
+  - type: Stack
+    stackType: FloorTileItemWoodTileBlack
+  - type: Construction
+    graph: TileWoodTileBlack
+    node: woodtile
+
+- type: entity
+  name: dark wood floor tile
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileDark
+  - type: Stack
+    stackType: FloorTileItemWoodTileDark
+  - type: Construction
+    graph: TileWoodTileDark
+    node: woodtile
+
+- type: entity
+  name: light wood floor tile
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileLight
+  - type: Stack
+    stackType: FloorTileItemWoodTileLight
+  - type: Construction
+    graph: TileWoodTileLight
+    node: woodtile
+
+- type: entity
+  name: red wood floor tile
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodTileRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi #check
+    state: wood_large_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWoodTileRed
+  - type: Stack
+    stackType: FloorTileItemWoodTileRed
+  - type: Construction
+    graph: TileWoodTileRed
+    node: woodtile

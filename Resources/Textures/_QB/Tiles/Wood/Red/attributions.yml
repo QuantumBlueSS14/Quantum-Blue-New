@@ -1,0 +1,4 @@
+- files: ["redwood.png", "redwood_broken.png", "redwood_chess.png", "redwood_large.png", "redwood_large_old.png", "redwood_old.png", "redwood_parquet.png", "redwood_tile.png", "redwood_tile_old.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Original artwork by MattFright"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-new"

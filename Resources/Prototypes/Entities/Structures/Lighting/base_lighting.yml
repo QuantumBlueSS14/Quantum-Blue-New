@@ -35,7 +35,7 @@
     color: "#FFE4CE" # 5000K color temp
     energy: 0.8
     radius: 10
-    softness: 1
+    softness: 4 # QB
     offset: "0, -0.5"
   - type: Damageable
     damageContainer: Inorganic
@@ -171,7 +171,7 @@
   - type: PointLight
     radius: 15
     energy: 1
-    softness: 0.9
+    softness: 4 # QB
     color: "#EEEEFF"
   - type: DamageOnInteract
     damage:
@@ -185,9 +185,9 @@
   suffix: Always Powered, LED
   components:
   - type: PointLight
-    radius: 10
-    energy: 2.5
-    softness: 0.9
+    radius: 15 # QB
+    energy: 1 # QB
+    softness: 4 # QB
     color: "#EEEEFF"
 
 #Exterior lights
@@ -213,7 +213,7 @@
   - type: PointLight
     radius: 12
     energy: 4.5
-    softness: 0.5
+    softness: 4 # QB
     color: "#B4FCF0"
 
 #Sodium lights
@@ -228,7 +228,7 @@
   - type: PointLight
     radius: 10
     energy: 2.5
-    softness: 0.9
+    softness: 4 # QB
     color: "#FFAF38"
   - type: DamageOnInteract
     damage:
@@ -244,7 +244,7 @@
   - type: PointLight
     radius: 10
     energy: 4
-    softness: 0.5
+    softness: 4 # QB
     color: "#FFAF38"
 
 #Small lights
@@ -266,7 +266,7 @@
     - type: PointLight
       energy: 1.0
       radius: 6
-      softness: 1.1
+      softness: 4 # QB
       enabled: true
     - type: Physics
       bodyType: Static
@@ -364,7 +364,7 @@
     enabled: true
     radius: 8
     energy: 1
-    softness: 1
+    softness: 4 # QB
     color: "#EEEEFF"
   - type: PoweredLight
     hasLampOnSpawn: LedLightBulb
@@ -384,8 +384,8 @@
   - type: PointLight
     enabled: true
     radius: 5
-    energy: 0.5
-    softness: 3
+    energy: 0.5 # QB
+    softness: 4 # QB
     color: "#ba473f"
   - type: PoweredLight
     hasLampOnSpawn: DimLightBulb
@@ -406,7 +406,7 @@
     enabled: true
     radius: 6
     energy: 1
-    softness: 3
+    softness: 4 # QB
     color: "#FF8A0C"
   - type: PoweredLight
     hasLampOnSpawn: WarmLightBulb
@@ -445,6 +445,7 @@
     enabled: false
     radius: 5
     energy: 0.6
+    softness: 4 # QB
     offset: "0, 0.4"
     color: "#7CFC00"
     mask: /Textures/Effects/LightMasks/double_cone.png
@@ -523,7 +524,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#47f8ff"
   - type: DamageOnInteract
     damage:
@@ -539,7 +540,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#47f8ff"
 
 - type: entity
@@ -552,7 +553,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#39a1ff"
   - type: DamageOnInteract
     damage:
@@ -568,7 +569,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#39a1ff"
 
 - type: entity
@@ -581,7 +582,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ffde46"
   - type: DamageOnInteract
     damage:
@@ -597,7 +598,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ffde46"
 
 - type: entity
@@ -610,7 +611,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ff66cc"
   - type: DamageOnInteract
     damage:
@@ -626,7 +627,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ff66cc"
 
 - type: entity
@@ -639,7 +640,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ff8227"
   - type: DamageOnInteract
     damage:
@@ -655,7 +656,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#ff8227"
 
 - type: entity
@@ -668,8 +669,8 @@
     hasLampOnSpawn: LightTubeCrystalBlack
   - type: PointLight
     radius: 8
-    energy: 1
-    softness: 0.5
+    energy: 3 # QB
+    softness: 4 # QB
     color: "#363636"
   - type: DamageOnInteract
     damage:
@@ -684,8 +685,8 @@
   components:
   - type: PointLight
     radius: 8
-    energy: 1
-    softness: 0.5
+    energy: 3 # QB
+    softness: 4 # QB
     color: "#363636"
 
 - type: entity
@@ -698,7 +699,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#fb4747"
   - type: DamageOnInteract
     damage:
@@ -714,7 +715,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#fb4747"
 
 - type: entity
@@ -727,7 +728,7 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#52ff39"
   - type: DamageOnInteract
     damage:
@@ -743,5 +744,5 @@
   - type: PointLight
     radius: 8
     energy: 3
-    softness: 0.5
+    softness: 4 # QB
     color: "#52ff39"

@@ -1,0 +1,237 @@
+- type: decal
+  id: DarkWoodTrimThinBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_box
+
+- type: decal
+  id: DarkWoodTrimThinCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_corner_ne
+
+- type: decal
+  id: DarkWoodTrimThinCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_corner_se
+
+- type: decal
+  id: DarkWoodTrimThinCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_corner_nw
+
+- type: decal
+  id: DarkWoodTrimThinCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_corner_sw
+
+- type: decal
+  id: DarkWoodTrimThinInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_inner_ne
+
+- type: decal
+  id: DarkWoodTrimThinInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_inner_se
+
+- type: decal
+  id: DarkWoodTrimThinInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_inner_nw
+
+- type: decal
+  id: DarkWoodTrimThinInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_inner_sw
+
+- type: decal
+  id: DarkWoodTrimThinEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_end_n
+
+- type: decal
+  id: DarkWoodTrimThinEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_end_e
+
+- type: decal
+  id: DarkWoodTrimThinEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_end_s
+
+- type: decal
+  id: DarkWoodTrimThinEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_end_w
+
+- type: decal
+  id: DarkWoodTrimThinLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_line_n
+
+- type: decal
+  id: DarkWoodTrimThinLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_line_e
+
+- type: decal
+  id: DarkWoodTrimThinLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_line_s
+
+- type: decal
+  id: DarkWoodTrimThinLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwood_trim.rsi
+    state: darkwoodthin_line_w
+
+- type: decal
+  id: DarkWoodTrimThickBox
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_box
+
+- type: decal
+  id: DarkWoodTrimThickCornerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_corner_ne
+
+- type: decal
+  id: DarkWoodTrimThickCornerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_corner_se
+
+- type: decal
+  id: DarkWoodTrimThickCornerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_corner_nw
+
+- type: decal
+  id: DarkWoodTrimThickCornerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_corner_sw
+
+- type: decal
+  id: DarkWoodTrimThickInnerNe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_inner_ne
+
+- type: decal
+  id: DarkWoodTrimThickInnerSe
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_inner_se
+
+- type: decal
+  id: DarkWoodTrimThickInnerNw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_inner_nw
+
+- type: decal
+  id: DarkWoodTrimThickInnerSw
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_inner_sw
+
+- type: decal
+  id: DarkWoodTrimThickEndN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_end_n
+
+- type: decal
+  id: DarkWoodTrimThickEndE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_end_e
+
+- type: decal
+  id: DarkWoodTrimThickEndS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_end_s
+
+- type: decal
+  id: DarkWoodTrimThickEndW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_end_w
+
+- type: decal
+  id: DarkWoodTrimThickLineN
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_line_n
+
+- type: decal
+  id: DarkWoodTrimThickLineE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_line_e
+
+- type: decal
+  id: DarkWoodTrimThickLineS
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_line_s
+
+- type: decal
+  id: DarkWoodTrimThickLineW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Wood/darkwoodthick_trim.rsi
+    state: darkwoodthick_line_w
