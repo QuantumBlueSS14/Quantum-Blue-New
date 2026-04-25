@@ -44,6 +44,3 @@ AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
 AirlockSecurityMedicalLocked: AirlockBrigmedicLocked
 AirlockSecurityMedicalGlassLocked: AirlockBrigmedicGlassLocked
 AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked
-
-# 4/21/2026
-PlushieFinfin: null
