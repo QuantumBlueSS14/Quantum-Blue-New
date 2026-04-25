@@ -154,35 +154,35 @@ namespace Content.IntegrationTests.Tests
             //"Exo",
             //"Snowball",
 
-            // IMP PROTOTYPES:
-            "AmberImp",
-            "BagelImp",
-            "Banana",
-            "Barratry",
-            "Bedlam",
-            "Boat",
-            "BoxImp",
-            "CentCommImp",
-            "Cluster",
-            "CogImp",
-            "CoreImp",
-            "E1M1",
-            "ElkridgeImp",
-            "GateImp",
-            "Hummingbird",
-            "Lilboat",
-            "MarathonImp",
-            "OasisImp",
-            "PackedImp",
-            "PlasmaImp",
-            "ReachImp",
-            "SalternImp",
-            "Submarine",
-            "TrainImp",
-            "Xeno",
-            "Pathway",
-            "Whisper",
-            "Monarch",
+            // IMP PROTOTYPES: #QB: Nope get outa here
+            // "AmberImp",
+            // "BagelImp",
+            // "Banana",
+            // "Barratry",
+            // "Bedlam",
+            // "Boat",
+            // "BoxImp",
+            // "CentCommImp",
+            // "Cluster",
+            // "CogImp",
+            // "CoreImp",
+            // "E1M1",
+            // "ElkridgeImp",
+            // "GateImp",
+            // "Hummingbird",
+            // "Lilboat",
+            // "MarathonImp",
+            // "OasisImp",
+            // "PackedImp",
+            // "PlasmaImp",
+            // "ReachImp",
+            // "SalternImp",
+            // "Submarine",
+            // "TrainImp",
+            // "Xeno",
+            // "Pathway",
+            // "Whisper",
+            // "Monarch",
 
             // DEROTATED:
             //"Eclipse",
@@ -193,7 +193,11 @@ namespace Content.IntegrationTests.Tests
             //"Skimmer",
 
             // from deltav:
-            "Asterisk"
+            "Asterisk",
+            "Chibi",
+
+            // from Vermist Dust Sector
+            "Foundry",
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

@@ -32,3 +32,6 @@ SpawnMobFinfin: null
 AirlockSecurityMedical: AirlockBrigmedic
 AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
 AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked
+
+# 4/21/2026
+PlushieFinfin: null

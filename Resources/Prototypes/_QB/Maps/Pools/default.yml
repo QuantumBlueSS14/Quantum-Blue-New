@@ -1,0 +1,6 @@
+- type: gameMapPool
+  id: DefaultMapPoolQB
+  maps:
+  - Asterisk
+  - Chibi
+  - Foundry
