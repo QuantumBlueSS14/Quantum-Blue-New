@@ -199,9 +199,6 @@ namespace Content.IntegrationTests.Tests
             // from deltav:
             "Asterisk",
             "Chibi",
-
-            // from Vermist Dust Sector
-            "Foundry",
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
