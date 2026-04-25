@@ -11,4 +11,4 @@
 
 
 # Getting rid of imp's map pool for our own. They already cleared wizdens so no worries there.
-/Prototypes/_Impstation/Maps/Pools
+- /Prototypes/_Impstation/Maps/Pools
