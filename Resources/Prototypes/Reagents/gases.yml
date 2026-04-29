@@ -229,6 +229,10 @@
       # We need a metabolism effect on reagent removal
       #- !type:AdjustAlert
       #  alertType: CarbonDioxide
+      - !type:SatiateHunger # Quantum Blue - plant eat CO2 + sunlight for food
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Plant]
 
 - type: reagent
   id: Nitrogen
