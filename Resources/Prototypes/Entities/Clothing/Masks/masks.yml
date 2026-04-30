@@ -711,23 +711,23 @@
   - type: Clothing
     sprite: _Impstation/Clothing/Mask/mime_scared.rsi #imp
 
-- type: entity
-  parent: [ClothingMaskMime, BaseSecurityContraband]
-  id: ClothingMaskMimeSecurity
-  name: security mime mask
-  description: You have the right to remain silent.
-  components:
-  - type: Sprite
-    sprite: _Impstation/Clothing/Mask/mime_security.rsi #imp
-  - type: Clothing
-    sprite: _Impstation/Clothing/Mask/mime_security.rsi #imp
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
+#- type: entity
+#  parent: [ClothingMaskMime, BaseSecurityContraband]
+#  id: ClothingMaskMimeSecurity
+#  name: security mime mask
+#  description: You have the right to remain silent.
+#  components:
+#  - type: Sprite
+#    sprite: _Impstation/Clothing/Mask/mime_security.rsi #imp
+#  - type: Clothing
+#    sprite: _Impstation/Clothing/Mask/mime_security.rsi #imp
+#  - type: Armor
+#    modifiers:
+#      coefficients:
+#        Blunt: 0.95
+#        Slash: 0.95
+#        Piercing: 0.95
+#        Heat: 0.95
 
 - type: entity
   parent: ClothingMaskBase

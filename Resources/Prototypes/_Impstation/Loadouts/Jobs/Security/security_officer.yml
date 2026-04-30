@@ -1,8 +1,8 @@
 # Mask
-- type: loadout
-  id: SecurityMime
-  equipment:
-    mask: ClothingMaskMimeSecurity
+#- type: loadout
+#  id: SecurityMime
+#  equipment:
+#    mask: ClothingMaskMimeSecurity
 
 # Jumpsuit
 - type: loadout
