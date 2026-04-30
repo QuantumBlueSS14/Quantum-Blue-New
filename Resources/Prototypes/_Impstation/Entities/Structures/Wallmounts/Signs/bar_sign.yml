@@ -1,11 +1,13 @@
-- type: entity
-  parent: BaseBarSign
-  id: BarSignImp
-  name: Imp
-  description: Looking at this sign gives you the peculiar feeling of being an ant in a bug farm.
-  components:
-  - type: BarSign
-    current: Imp
+# QB edit start - nomira
+# - type: entity
+#   parent: BaseBarSign
+#   id: BarSignImp
+#   name: Imp
+#   description: Looking at this sign gives you the peculiar feeling of being an ant in a bug farm.
+#   components:
+#   - type: BarSign
+#     current: Imp
+# QB edit end
 
 - type: entity
   parent: BaseBarSign

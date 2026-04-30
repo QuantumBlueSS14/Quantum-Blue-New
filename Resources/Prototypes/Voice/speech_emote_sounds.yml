@@ -40,12 +40,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    # imp edit start
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
-    # imp edit end
 
 - type: emoteSounds
   id: FemaleHuman
@@ -88,12 +82,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    # imp edit start
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
-    # imp edit end
 
 - type: emoteSounds
   id: MaleReptilian
@@ -114,10 +102,6 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey: # imp
-      collection: Wuhey
-    Ungh: # imp
-      collection: Ungh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -156,10 +140,6 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey: # imp
-      collection: Wuhey
-    Ungh: # imp
-      collection: Ungh
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
@@ -224,12 +204,6 @@
       collection: MaleSlimeGasp # imp
     DefaultDeathgasp:
       collection: MaleSlimeDeathGasp # imp
-    # imp edit start
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
-    # imp edit end
   params:
     variation: 0.125
 
@@ -277,10 +251,6 @@
       collection: Bubbles
     Pop:
       collection: Pops
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     # imp edit end
   params:
     variation: 0.125
@@ -333,10 +303,6 @@
       collection: UnisexSneezes #placeholder
     Yawn:
       collection: UnisexYawn #placeholder
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     # imp edit end
   params:
     variation: 0.125
@@ -374,10 +340,6 @@
       collection: UnisexCry #placeholder
     Whistle:
       collection: Whistles
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     # imp edit end
   params:
     variation: 0.125
@@ -420,10 +382,6 @@
       path: /Audio/_Impstation/Voice/Arachnid/arachnid_cry.ogg
     Whistle:
       collection: Whistles
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     # imp edit end
 
 - type: emoteSounds
@@ -465,12 +423,6 @@
       collection: UnisexGasp # imp
     DefaultDeathgasp:
       collection: UnisexDeathGasp # imp
-    # imp edit start
-    Wuhey: # imp
-      collection: Wuhey
-    Ungh: # imp
-      collection: Ungh
-    # imp edit end
   params:
     variation: 0.125
     pitch: 0.75
@@ -514,12 +466,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    # imp edit start
-    Wuhey: # imp
-      collection: Wuhey
-    Ungh: # imp
-      collection: Ungh
-    # imp edit end
   params:
     variation: 0.125
     pitch: 0.75
@@ -562,10 +508,6 @@
       path: /Audio/_Impstation/Voice/Moth/mothcry.ogg
     Whistle:
       collection: Whistles
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
     # imp edit end
 
 - type: emoteSounds

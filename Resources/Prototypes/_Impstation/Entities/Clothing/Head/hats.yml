@@ -370,20 +370,22 @@
     - WhitelistChameleon
     - ClothMade
 
-- type: entity
-  parent: [ClothingHeadBase, BaseCentcommContraband]
-  id: ClothingHeadImpishHorns
-  name: impish horns
-  description:
-  components:
-  - type: Sprite
-    sprite: _Impstation/Clothing/Head/Hats/impishhorns.rsi
-  - type: Clothing
-    sprite: _Impstation/Clothing/Head/Hats/impishhorns.rsi
-  - type: Tag
-    tags:
-    - ClothMade
-    - WhitelistChameleon
+# QB edit start - nomira
+# - type: entity
+#   parent: [ClothingHeadBase, BaseCentcommContraband]
+#   id: ClothingHeadImpishHorns
+#   name: impish horns
+#   description:
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Clothing/Head/Hats/impishhorns.rsi
+#   - type: Clothing
+#     sprite: _Impstation/Clothing/Head/Hats/impishhorns.rsi
+#   - type: Tag
+#     tags:
+#     - ClothMade
+#     - WhitelistChameleon
+# QB edit end
 
 - type: entity
   parent: ClothingHeadBase

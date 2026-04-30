@@ -129,10 +129,12 @@
     - /Audio/_Impstation/Voice/Vox/voxcoo2.ogg
     - /Audio/_Impstation/Voice/Vox/voxcoo3.ogg
 
-- type: soundCollection
-  id: Wuhey
-  files:
-    - /Audio/_Impstation/Voice/Misc/wuhey.ogg
+# QB edit start - nowuhey
+# - type: soundCollection
+#   id: Wuhey
+#   files:
+#     - /Audio/_Impstation/Voice/Misc/wuhey.ogg
+# QB edit end
 
 - type: soundCollection
   id: Blinks

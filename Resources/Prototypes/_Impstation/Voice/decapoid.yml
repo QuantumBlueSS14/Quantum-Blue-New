@@ -44,10 +44,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Chitter:
       path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
     Click:
