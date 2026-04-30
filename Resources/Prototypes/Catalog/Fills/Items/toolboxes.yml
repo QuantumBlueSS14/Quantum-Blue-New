@@ -248,7 +248,7 @@
     - id: ClothingHeadHatBeretCommand # Command
     - id: ClothingOuterVestHazard # Engineering
     - id: ClothingOuterCoatLab # Science
-    - id: ClothingMaskClownSecurity # Security
+#    - id: ClothingMaskClownSecurity # Security
     - id: ClothingHeadHatCargosoft # Cargo
     - id: ClothingNeckStethoscope # Medical
       weight: 0.5

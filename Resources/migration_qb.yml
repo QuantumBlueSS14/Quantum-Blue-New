@@ -44,3 +44,6 @@ AirlockSecurityMedicalGlass: AirlockBrigmedicGlass
 AirlockSecurityMedicalLocked: AirlockBrigmedicLocked
 AirlockSecurityMedicalGlassLocked: AirlockBrigmedicGlassLocked
 AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked
+
+# 4/30/2026
+ClothingMaskClownSecurity: null
