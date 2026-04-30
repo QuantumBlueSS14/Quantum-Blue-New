@@ -61,7 +61,7 @@
   id: JobHospitalityDirector
   groups:
   - HospitalityDirectorHead
-  - ServiceMask
+  # - ServiceMask # QB - noclown
   - HospitalityDirectorNeck
   - HospitalityDirectorJumpsuit
   - HospitalityDirectorOuterClothing
