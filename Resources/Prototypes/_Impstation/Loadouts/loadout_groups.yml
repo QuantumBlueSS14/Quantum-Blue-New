@@ -600,7 +600,7 @@
   name: loadout-group-botanist-shoes
   loadouts:
   - BrownShoes
-  - ClownShoesExpert
+#  - ClownShoesExpert
 
 - type: loadoutGroup
   id: BotanistPDA
