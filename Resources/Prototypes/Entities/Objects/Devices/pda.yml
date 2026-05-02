@@ -12,8 +12,6 @@
        pda
   - type: Sprite
     sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
-    scale: 0.75, 0.75 # DeltaV aPDA Resprite PDA Size change, makes it smaller for the full detail.
-    Scale: 0.75, 0.75 # DeltaV aPDA Resprite PDA Size change, makes it smaller for the full detail.
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: "pda"
@@ -27,8 +25,6 @@
       visible: false
   - type: Icon
     sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
-    scale: 0.75, 0.75 # DeltaV aPDA Resprite PDA Size change, makes it smaller for the full detail.
-    Scale: 0.75, 0.75 # DeltaV aPDA Resprite PDA Size change, makes it smaller for the full detail.
     state: pda
   - type: Pda
     paiSlot:
@@ -451,9 +447,9 @@
     sprite: _Impstation/Objects/Devices/mime_pda.rsi #imp
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ] #imp for the whole layers section here
-      sprite: _Impstation/Objects/Devices/mime_pda.rsi  
+      sprite: _Impstation/Objects/Devices/mime_pda.rsi
       state: pda-mime
-    - sprite: Objects/Devices/pda.rsi 
+    - sprite: Objects/Devices/pda.rsi
       state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
@@ -1672,6 +1668,7 @@
   - type: PdaBorderColor
     borderColor: "#7F3300"
   - type: Icon
+    sprite: Objects/Devices/pda.rsi
     state: pda-wizard
 
 - type: entity
