@@ -93,6 +93,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Impstation/xeno.yml", // Contains PTK-800 "Matter Dematerializer"
             "/Maps/_Impstation/eclipse.yml", // Contains PTK-800 "Matter Dematerializer", LSE-400c "Svalinn machine gun"
             "/Maps/_Impstation/monarch.yml", // Contains ship cannons
+            "/Maps/_DV/chibi.yml", // Contains command toys like the Handheld Crew Monitor
 
 
             // Shuttles
@@ -154,35 +155,35 @@ namespace Content.IntegrationTests.Tests
             //"Exo",
             //"Snowball",
 
-            // IMP PROTOTYPES:
-            "AmberImp",
-            "BagelImp",
-            "Banana",
-            "Barratry",
-            "Bedlam",
-            "Boat",
-            "BoxImp",
-            "CentCommImp",
-            "Cluster",
-            "CogImp",
-            "CoreImp",
-            "E1M1",
-            "ElkridgeImp",
-            "GateImp",
-            "Hummingbird",
-            "Lilboat",
-            "MarathonImp",
-            "OasisImp",
-            "PackedImp",
-            "PlasmaImp",
-            "ReachImp",
-            "SalternImp",
-            "Submarine",
-            "TrainImp",
-            "Xeno",
-            "Pathway",
-            "Whisper",
-            "Monarch",
+            // IMP PROTOTYPES: #QB: Nope get outa here
+            // "AmberImp",
+            // "BagelImp",
+            // "Banana",
+            // "Barratry",
+            // "Bedlam",
+            // "Boat",
+            // "BoxImp",
+            // "CentCommImp",
+            // "Cluster",
+            // "CogImp",
+            // "CoreImp",
+            // "E1M1",
+            // "ElkridgeImp",
+            // "GateImp",
+            // "Hummingbird",
+            // "Lilboat",
+            // "MarathonImp",
+            // "OasisImp",
+            // "PackedImp",
+            // "PlasmaImp",
+            // "ReachImp",
+            // "SalternImp",
+            // "Submarine",
+            // "TrainImp",
+            // "Xeno",
+            // "Pathway",
+            // "Whisper",
+            // "Monarch",
 
             // from VDS:
             "Foundry",
@@ -197,6 +198,7 @@ namespace Content.IntegrationTests.Tests
 
             // from deltav:
             "Asterisk",
+            "Chibi",
 
             // QB prototypes:
             "Dash"

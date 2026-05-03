@@ -106,16 +106,18 @@
     tags:
     - WhitelistChameleon
 
-- type: entity
-  parent: [ClothingNeckBase, BaseCentcommContraband]
-  id: ClothingNeckImpishAccessories
-  name: impish accessories
-  description: 
-  components:
-  - type: Sprite
-    sprite: _Impstation/Clothing/Neck/Misc/impishaccessories.rsi
-  - type: Clothing
-    sprite: _Impstation/Clothing/Neck/Misc/impishaccessories.rsi
+# QB edit start - nomira
+# - type: entity
+#   parent: [ClothingNeckBase, BaseCentcommContraband]
+#   id: ClothingNeckImpishAccessories
+#   name: impish accessories
+#   description: 
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Clothing/Neck/Misc/impishaccessories.rsi
+#   - type: Clothing
+#     sprite: _Impstation/Clothing/Neck/Misc/impishaccessories.rsi
+# QB edit end
 
 - type: entity
   parent: ClothingNeckBase

@@ -6,7 +6,7 @@
   components:
   - type: Airtight
   - type: IconSmooth
-    key: windows
+    key: cards # QB
     base: window
   - type: MeleeSound
     soundGroups:

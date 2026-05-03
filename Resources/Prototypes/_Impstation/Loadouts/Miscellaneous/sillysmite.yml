@@ -53,18 +53,20 @@
     shoes: ClothingShoesBootsLaceup
 
 # mira mimi imp
-- type: startingGear
-  id: MimiImpishSimple
-  equipment:
-    neck: ClothingNeckImpishAccessories
-    head: ClothingHeadImpishHorns
+# QB edit start - nomira
+# - type: startingGear
+#   id: MimiImpishSimple
+#   equipment:
+#     neck: ClothingNeckImpishAccessories
+#     head: ClothingHeadImpishHorns
 
-- type: startingGear
-  id: MimiImpishFull
-  equipment:
-    jumpsuit: ClothingUniformImpishOutfit
-    head: ClothingHeadImpishHorns
-    neck: ClothingNeckImpishAccessories
-    gloves: ClothingHandsImpishWristbands
-    shoes: ClothingShoesImpishShoes
-    back: ClothingBackpackImpishBackpack
+# - type: startingGear
+#   id: MimiImpishFull
+#   equipment:
+#     jumpsuit: ClothingUniformImpishOutfit
+#     head: ClothingHeadImpishHorns
+#     neck: ClothingNeckImpishAccessories
+#     gloves: ClothingHandsImpishWristbands
+#     shoes: ClothingShoesImpishShoes
+#     back: ClothingBackpackImpishBackpack
+# QB edit end

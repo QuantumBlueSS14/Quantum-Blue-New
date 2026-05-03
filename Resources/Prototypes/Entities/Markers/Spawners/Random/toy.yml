@@ -108,7 +108,7 @@
       - id: PlushieGnomeChild
       - id: PlushieGollylad
       - id: PlushieHeadofPersonnel
-      - id: PlushieImp
+      # - id: PlushieImp # QB - nomira
       - id: PlushieJumboGray
       - id: PlushieThavenWeird
       - id: PlushieUnguTiny

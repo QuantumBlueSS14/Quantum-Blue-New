@@ -33,10 +33,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: UnisexGasp
     DefaultDeathgasp:
@@ -71,10 +71,10 @@
       collection: UnisexCry
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: UnisexGasp
     DefaultDeathgasp:
@@ -119,10 +119,10 @@
       collection: SlimeWhistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: UnisexSlimeGasp
     DefaultDeathgasp:
@@ -155,10 +155,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: VoxGasp
       params:
@@ -207,10 +207,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: VoxGasp
       params:
@@ -263,10 +263,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -301,10 +301,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
@@ -343,10 +343,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       path: /Audio/_Impstation/Voice/Arachnid/arachnid_gasp.ogg
     DefaultDeathgasp:
@@ -383,10 +383,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       path: /Audio/_Impstation/Voice/Arachnid/arachnid_gasp.ogg
     DefaultDeathgasp:
@@ -427,10 +427,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -470,10 +470,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       path: /Audio/_Impstation/Voice/Moth/mothgasp.ogg
     DefaultDeathgasp:
@@ -510,10 +510,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       path: /Audio/_Impstation/Voice/Moth/mothgasp.ogg
     DefaultDeathgasp:
@@ -606,10 +606,10 @@
       collection: Ungh
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -637,10 +637,10 @@
       collection: BikeHorn
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     DefaultDeathgasp:
       collection: MaleSlimeDeathGasp
   params:
@@ -742,10 +742,10 @@
       collection: VoxCoo
       params:
         volume: -7
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
 
 - type: emoteSounds
   id: YoungKodepiia
@@ -826,10 +826,10 @@
       collection: VoxCoo
       params:
         volume: -7
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
 
 - type: emoteSounds
   id: TckTck
@@ -890,10 +890,10 @@
       path: /Audio/_EE/Supermatter/marauder.ogg
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Blink:
       collection: Blinks
       params:
@@ -950,10 +950,10 @@
       path: /Audio/_Impstation/Allulalo/allulalo_cry.ogg
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       path: /Audio/_Impstation/Allulalo/allulalo_say.ogg
     DefaultDeathgasp:

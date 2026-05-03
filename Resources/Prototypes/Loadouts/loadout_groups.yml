@@ -361,7 +361,6 @@
   - BartenderVest
   - BartenderApron
   - BartenderCuteApron # imp
-  - ServiceClownApron # imp
   - BartenderWintercoat
 
 - type: loadoutGroup
@@ -389,7 +388,6 @@
   minLimit: 0
   loadouts:
   - ChefMask
-  - ServiceClown # imp
 
 - type: loadoutGroup
   id: ChefJumpsuit
@@ -418,7 +416,6 @@
   loadouts:
   - ChefApron
   - ChefCuteApron # imp
-  - ServiceClownApron # imp
   - ChefJacket
   - ChefWintercoat
 
@@ -635,7 +632,6 @@
   loadouts:
   - BotanistApron
   - BotanistWintercoat
-  - ServiceClownApron # imp
 
 - type: loadoutGroup
   id: ClownHead
@@ -904,7 +900,6 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
-  - CargoClownShoes # imp
 
 - type: loadoutGroup
   id: CargoTechnicianID
@@ -1032,7 +1027,6 @@
   loadouts:
   - WorkBoots
   - EngineeringWinterBoots
-  - EngineerClownShoes # imp
 
 - type: loadoutGroup
   id: StationEngineerID
@@ -1198,7 +1192,6 @@
   - BlackShoes
   - ScienceWinterBoots
   - RoboticistWinterBoots # imp
-  - ScientistClownShoes # imp
 
 - type: loadoutGroup
   id: ScientistGloves
@@ -1358,7 +1351,6 @@
   loadouts:
   - JackBoots
   - SecurityWinterBoots
-  - SecurityClownShoes # imp
 
 - type: loadoutGroup
   id: SecurityPDA
@@ -1548,7 +1540,6 @@
   loadouts:
   - WhiteShoes
   - MedicalWinterBoots
-  - DoctorClownShoes # imp
 
 - type: loadoutGroup
   id: MedicalDoctorPDA
@@ -1571,7 +1562,6 @@
   minLimit: 0
   loadouts:
   - SterileMask
-  - DoctorClown # imp
 
 - type: loadoutGroup
   id: MedicalInternJumpsuit

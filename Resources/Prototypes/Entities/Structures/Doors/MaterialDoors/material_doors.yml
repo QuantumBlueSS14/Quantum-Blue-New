@@ -347,7 +347,7 @@
   name: cardboard door
   components:
   - type: Sprite
-    sprite: Structures/Doors/MineralDoors/card_door.rsi
+    sprite: _QB/Structures/Doors/Misc/cardboard_door.rsi # QB
   - type: Door
     openSound:
       path: /Audio/Effects/card_drag.ogg

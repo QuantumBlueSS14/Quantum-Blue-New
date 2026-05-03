@@ -1,10 +1,12 @@
-- type: barSign
-  id: Imp
-  name: barsign-prototype-name-imp
-  icon:
-    sprite: _Impstation/Structures/Wallmounts/barsign.rsi
-    state: imp
-  description: barsign-prototype-description-imp
+# QB edit start - nomira
+# - type: barSign
+#   id: Imp
+#   name: barsign-prototype-name-imp
+#   icon:
+#     sprite: _Impstation/Structures/Wallmounts/barsign.rsi
+#     state: imp
+#   description: barsign-prototype-description-imp
+# QB edit end
 
 - type: barSign
   id: TheGreytide

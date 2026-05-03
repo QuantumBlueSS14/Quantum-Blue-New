@@ -8,3 +8,7 @@
 # - /Prototypes/Catalog/uplink_catalog.yml
 
 # Nevermind i'm not using this for anything yet but i'm making it anyway to remind myself to use it in the future
+
+
+# Getting rid of imp's map pool for our own. They already cleared wizdens so no worries there.
+- /Prototypes/_Impstation/Maps/Pools

@@ -88,7 +88,6 @@
   id: JobBartender
   groups:
   - BartenderHead
-  - ServiceMask # imp
   - BartenderNeck # imp
   - BartenderJumpsuit
   - BartenderOuterClothing
@@ -106,7 +105,6 @@
 - type: roleLoadout
   id: JobServiceWorker
   groups:
-  - ServiceMask # imp
   - GroupTankHarness
   - BartenderJumpsuit
   - BartenderShoes # imp
@@ -190,7 +188,6 @@
   id: JobJanitor
   groups:
   - JanitorHead
-  - JanitorMask # imp
   - JanitorNeck # imp
   - JanitorJumpsuit
   - JanitorOuterClothing # imp reorder
@@ -209,7 +206,6 @@
   id: JobBotanist
   groups:
   - BotanistHead
-  - ServiceMask # imp
   - BotanistNeck # imp
   - BotanistJumpsuit
   - BotanistOuterClothing
@@ -299,7 +295,6 @@
   id: JobCargoTechnician
   groups:
   - CargoTechnicianHead
-  - CargoTechnicianMask # imp
   - CargoTechnicianNeck # imp
   - CargoTechnicianJumpsuit
   - CargoTechnicianOuterClothing
@@ -317,7 +312,6 @@
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
-  - CargoTechnicianMask # imp
   - SalvageSpecialistNeck # imp
   - SalvageSpecialistJumpsuit # imp unspecial
   - SalvageSpecialistOuterClothing
@@ -363,7 +357,6 @@
   id: JobStationEngineer
   groups:
   - StationEngineerHead
-  - StationEngineerMask # imp
   - StationEngineerNeck # imp
   - StationEngineerJumpsuit
   - StationEngineerOuterClothing
@@ -380,7 +373,6 @@
   id: JobAtmosphericTechnician
   groups:
   - AtmosphericTechnicianHead # imp
-  - StationEngineerMask # imp
   - AtmosphericTechnicianNeck # imp
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianOuterClothing
@@ -416,7 +408,6 @@
   id: JobScientist
   groups:
   - ScientistHead
-  - ScientistMask # imp
   - ScientistNeck
   - ScientistJumpsuit
   - ScientistOuterClothing
@@ -448,7 +439,6 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
-  - SecurityMask # imp
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - HeadofSecurityOuterClothing
@@ -470,7 +460,6 @@
   id: JobWarden
   groups:
   - WardenHead
-  - SecurityMask # imp
   - WardenNeck # imp
   - WardenJumpsuit
   - WardenOuterClothing
@@ -492,7 +481,6 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
-  - SecurityMask # imp
   - SecurityNeck # imp
   - SecurityJumpsuit
   - SecurityOuterClothing
@@ -634,7 +622,6 @@
 - type: roleLoadout
   id: JobReporter
   groups:
-  - ServiceMask # imp
   - ReporterNeck # imp
   - ReporterJumpsuit
   - ReporterShoes # imp
@@ -650,7 +637,6 @@
   id: JobPsychologist
   groups:
   - PsychologistHead # imp
-  - PsychologistMask # imp
   - PsychologistNeck # imp
   - PsychologistJumpsuit
   - PsychologistOuterClothing # DeltaV

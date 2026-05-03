@@ -286,10 +286,12 @@
   id: PlushieIba
   result: PlushieIba
 
-- type: latheRecipe
-  parent: PrizeCounterPlushieExpensive
-  id: PlushieImp
-  result: PlushieImp
+# QB edit start - nomira
+# - type: latheRecipe
+#   parent: PrizeCounterPlushieExpensive
+#   id: PlushieImp
+#   result: PlushieImp
+# QB edit end
 
 - type: latheRecipe
   parent: PrizeCounterPlushieExpensive

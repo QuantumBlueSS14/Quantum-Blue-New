@@ -33,10 +33,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -80,10 +80,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
@@ -127,10 +127,10 @@
       collection: Hew
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: UnisexGasp
     DefaultDeathgasp:

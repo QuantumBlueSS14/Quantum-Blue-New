@@ -7,11 +7,13 @@
   - type: Sprite
     sprite: _Impstation/Clothing/Back/Backpacks/commandveteran.rsi
 
-- type: entity
-  parent: [ClothingBackpack, BaseCentcommContraband]
-  id: ClothingBackpackImpishBackpack
-  name: impish backpack
-  description: 
-  components:
-  - type: Sprite
-    sprite: _Impstation/Clothing/Back/Backpacks/impishbackpack.rsi
+# QB edit start - nomira
+# - type: entity
+#   parent: [ClothingBackpack, BaseCentcommContraband]
+#   id: ClothingBackpackImpishBackpack
+#   name: impish backpack
+#   description: 
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Clothing/Back/Backpacks/impishbackpack.rsi
+# QB edit end
