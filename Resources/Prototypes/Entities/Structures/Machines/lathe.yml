@@ -392,6 +392,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
+    snapCardinals: true #DeltaV - Follow Camera Rotation
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
