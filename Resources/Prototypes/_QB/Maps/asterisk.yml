@@ -1,7 +1,7 @@
 - type: gameMap
-  id: Asterisk
+  id: AsteriskQB
   mapName: 'Asterisk'
-  mapPath: /Maps/_DV/asterisk.yml
+  mapPath: /Maps/_QB/asterisk.yml
   minPlayers: 5
   maxPlayers: 50
   stations:

@@ -1,7 +1,7 @@
 - type: gameMap
-  id: Chibi
+  id: ChibiQB
   mapName: 'Chibi'
-  mapPath: /Maps/_DV/chibi.yml
+  mapPath: /Maps/_QB/chibi.yml
   minPlayers: 0
   maxPlayers: 10
   stations:
