@@ -23,10 +23,10 @@
   equipment:
     outerClothing: ClothingOuterSilent
 
-- type: loadout
-  id: SecurityMimeMask
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MimeExpertTimer
-  equipment:
-    mask: ClothingMaskMimeSecurity
+#- type: loadout
+#  id: SecurityMimeMask
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: MimeExpertTimer
+#  equipment:
+#    mask: ClothingMaskMimeSecurity

@@ -81,32 +81,34 @@
 - type: Tag
   id: ClownMaskBasic
 
-- type: Tag
-  id: ClownMaskCargo
+# QB EDIT START - noclown, chaplain is fine
+# - type: Tag
+#   id: ClownMaskCargo
 
-- type: Tag
-  id: ClownMaskCaptain
+# - type: Tag
+#   id: ClownMaskCaptain
 
 - type: Tag
   id: ClownMaskChaplain
 
-- type: Tag
-  id: ClownMaskEngineer
+# - type: Tag
+#   id: ClownMaskEngineer
 
-- type: Tag
-  id: ClownMaskMedical
+# - type: Tag
+#   id: ClownMaskMedical
 
-- type: Tag
-  id: ClownMaskRobotics
+# - type: Tag
+#   id: ClownMaskRobotics
 
-- type: Tag
-  id: ClownMaskScience
+# - type: Tag
+#   id: ClownMaskScience
 
-- type: Tag
-  id: ClownMaskSecurity
+# - type: Tag
+#   id: ClownMaskSecurity
 
-- type: Tag
-  id: ClownMaskService
+# - type: Tag
+#   id: ClownMaskService
+# QB EDIT END
 
 - type: Tag
   id: ConversionKitFA

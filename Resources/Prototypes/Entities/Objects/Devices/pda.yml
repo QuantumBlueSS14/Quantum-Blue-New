@@ -11,7 +11,7 @@
        !type:String
        pda
   - type: Sprite
-    sprite: Objects/Devices/pda.rsi
+    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: "pda"
@@ -24,7 +24,7 @@
       shader: "unshaded"
       visible: false
   - type: Icon
-    sprite: Objects/Devices/pda.rsi
+    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
     state: pda
   - type: Pda
     paiSlot:
@@ -447,9 +447,9 @@
     sprite: _Impstation/Objects/Devices/mime_pda.rsi #imp
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ] #imp for the whole layers section here
-      sprite: _Impstation/Objects/Devices/mime_pda.rsi  
+      sprite: _Impstation/Objects/Devices/mime_pda.rsi
       state: pda-mime
-    - sprite: Objects/Devices/pda.rsi 
+    - sprite: Objects/Devices/pda.rsi
       state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
@@ -467,6 +467,18 @@
   id: ChaplainPDA
   description: God's chosen PDA.
   components:
+  - type: Sprite # DeltaV - Give Chaplain PDA Epistemics colors
+    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ChaplainIDCard
   - type: Appearance
@@ -477,6 +489,7 @@
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
+    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
     state: pda-chaplain
 
 - type: entity
@@ -593,7 +606,7 @@
     state: pda-bartender
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA # QB - use DV PDA resprite; there's no resprited wide PDA. Was BaseWidePDA
   id: LibrarianPDA
   name: librarian PDA
   description: Smells like books.
@@ -1049,9 +1062,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-deathsquadron
+        pda-centcom # QB
   - type: Icon
-    state: pda-deathsquadron
+    state: pda-centcom # QB
   - type: PdaBorderColor
     borderColor: "#640202"
     accentHColor: "#06064B"
@@ -1175,9 +1188,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-operative
+       pda-syndi # QB
   - type: Icon
-    state: pda-syndi-operative
+    state: pda-syndi # QB
 
 - type: entity
   parent: [ SyndiOperativePDA, BaseSyndicateContraband ]
@@ -1191,9 +1204,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-corpsman
+       pda-syndi-agent # QB
   - type: Icon
-    state: pda-syndi-corpsman
+    state: pda-syndi-agent # QB
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -1214,9 +1227,9 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-syndi-commander
+       pda-syndi # QB
   - type: Icon
-    state: pda-syndi-commander
+    state: pda-syndi # QB
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1319,9 +1332,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-cburn
+        pda-centcom #QB
   - type: Icon
-    state: pda-cburn
+    state: pda-centcom #QB
   # imp edit end
 
 - type: entity
@@ -1579,12 +1592,12 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-seniorcourier
+       pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
   - type: PdaBorderColor
     borderColor: "#e39751"
     accentVColor: "#DFDFDF"
   - type: Icon
-    state: pda-seniorcourier
+    state: pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
 
 - type: entity
   parent: [ BaseMajorContraband, SyndiPDA ]
@@ -1655,6 +1668,7 @@
   - type: PdaBorderColor
     borderColor: "#7F3300"
   - type: Icon
+    sprite: Objects/Devices/pda.rsi
     state: pda-wizard
 
 - type: entity

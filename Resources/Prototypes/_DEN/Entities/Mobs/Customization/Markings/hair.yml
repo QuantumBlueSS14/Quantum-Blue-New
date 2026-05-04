@@ -213,13 +213,13 @@
     - sprite: _DEN/Mobs/Customization/Hair/hairdoppler.rsi
       state: hair_hyenamane
 
-- type: marking
-  id: impish
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: _DEN/Mobs/Customization/Hair/hairdoppler.rsi
-      state: hair_impish
+#- type: marking
+#  id: impish
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  sprites:
+#    - sprite: _DEN/Mobs/Customization/Hair/hairdoppler.rsi
+#      state: hair_impish
 
 - type: marking
   id: jay

@@ -1,0 +1,10 @@
+- type: gameMapPool
+  id: DefaultMapPoolQB
+  maps:
+  # DV MAPS:
+  - Asterisk
+  - Chibi
+  # VDS MAPS:
+  - Foundry
+  # QB MAPS:
+  - Dash

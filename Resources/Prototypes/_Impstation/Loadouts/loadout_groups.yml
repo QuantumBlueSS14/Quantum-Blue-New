@@ -341,12 +341,12 @@
 
 # service
 
-- type: loadoutGroup
-  id: ServiceMask
-  name: loadout-group-service-mask
-  minLimit: 0
-  loadouts:
-  - ServiceClown
+# - type: loadoutGroup # QB - noclown
+#   id: ServiceMask
+#   name: loadout-group-service-mask
+#   minLimit: 0
+#   loadouts:
+#   - ServiceClown
 
 - type: loadoutGroup
   id: HospitalityDirectorHead
@@ -412,7 +412,7 @@
   - LeatherShoes
   - BlackHeels
   - GreenWinterBoots
-  - ClownShoesExpert
+  # - ClownShoesExpert # QB - noclown
 
 - type: loadoutGroup
   id: HospitalityDirectorBackpack
@@ -450,7 +450,7 @@
   - LacedShoes
   - LeatherShoes
   - BlackHeels
-  - ClownShoesExpert
+  # - ClownShoesExpert # QB - noclown
 
 - type: loadoutGroup
   id: BartenderPDA
@@ -474,7 +474,7 @@
   - BlackShoes
   - ChefShoes
   #- BlackHeels QB: chefs don't wear high heels... Ignore the clown shoes.......
-  - ClownShoesExpert
+  #- ClownShoesExpert # QB - noclown
   - HeadChefShoes
 
 - type: loadoutGroup
@@ -555,14 +555,14 @@
   - LacedShoes
   - LeatherShoes
   - BlackHeels
-  - ClownShoesExpert
+  # - ClownShoesExpert # QB - noclown
 
-- type: loadoutGroup
-  id: JanitorMask
-  name: loadout-group-janitor-mask
-  minLimit: 0
-  loadouts:
-  - JanitorClown
+# - type: loadoutGroup # QB - noclown
+#   id: JanitorMask
+#   name: loadout-group-janitor-mask
+#   minLimit: 0
+#   loadouts:
+#   - JanitorClown
 
 - type: loadoutGroup
   id: JanitorNeck
@@ -576,7 +576,7 @@
   name: loadout-group-janitor-shoes
   loadouts:
   - JanitorGaloshes
-  - JanitorClownShoes
+  # - JanitorClownShoes # QB - noclown
 
 - type: loadoutGroup
   id: BotanistNeck
@@ -600,7 +600,7 @@
   name: loadout-group-botanist-shoes
   loadouts:
   - BrownShoes
-  - ClownShoesExpert
+#  - ClownShoesExpert
 
 - type: loadoutGroup
   id: BotanistPDA
@@ -685,7 +685,7 @@
   - LacedShoes
   - LeatherShoes
   - BlackHeels
-  - ClownShoesExpert
+  # - ClownShoesExpert # QB - noclown
 
 # supply
 
@@ -708,12 +708,12 @@
   - CommandVeteranSatchel
   - CommandVeteranDuffel
 
-- type: loadoutGroup
-  id: CargoTechnicianMask
-  name: loadout-group-cargo-technician-mask
-  minLimit: 0
-  loadouts:
-  - CargoClown
+# - type: loadoutGroup # QB - noclown
+#   id: CargoTechnicianMask
+#   name: loadout-group-cargo-technician-mask
+#   minLimit: 0
+#   loadouts:
+#   - CargoClown
 
 - type: loadoutGroup
   id: CargoTechnicianNeck
@@ -850,12 +850,12 @@
   - CommandVeteranSatchel
   - CommandVeteranDuffel
 
-- type: loadoutGroup
-  id: StationEngineerMask
-  name: loadout-group-station-engineer-mask
-  minLimit: 0
-  loadouts:
-  - EngineerClown
+# - type: loadoutGroup # QB - noclown
+#   id: StationEngineerMask
+#   name: loadout-group-station-engineer-mask
+#   minLimit: 0
+#   loadouts:
+#   - EngineerClown
 
 - type: loadoutGroup
   id: StationEngineerNeck
@@ -906,13 +906,13 @@
   - CommandVeteranSatchel
   - CommandVeteranDuffel
 
-- type: loadoutGroup
-  id: ScientistMask
-  name: loadout-group-scientist-mask
-  minLimit: 0
-  loadouts:
-  - ScientistClown
-  - RoboticsClown
+# - type: loadoutGroup # QB - noclown
+#   id: ScientistMask
+#   name: loadout-group-scientist-mask
+#   minLimit: 0
+#   loadouts:
+#   - ScientistClown
+#   - RoboticsClown
 
 # security
 - type: loadoutGroup
@@ -975,13 +975,13 @@
   - WardenPDA
   - SeniorWardenPDA
 
-- type: loadoutGroup
-  id: SecurityMask
-  name: loadout-group-security-mask
-  minLimit: 0
-  loadouts:
-  - SecurityClown
-  - SecurityMime
+# - type: loadoutGroup # QB - noclown
+#   id: SecurityMask
+#   name: loadout-group-security-mask
+#   minLimit: 0
+#   loadouts:
+#   - SecurityClown
+#   - SecurityMime
 
 - type: loadoutGroup
   id: SecurityNeck
@@ -1005,7 +1005,7 @@
   - JackBoots
   - LeatherShoes
   - SecurityWinterBoots
-  - SecurityClownShoes
+  # - SecurityClownShoes # QB - noclown
 
 - type: loadoutGroup
   id: DetectivePDA
@@ -1229,12 +1229,12 @@
   - PsychologistCapGrey
   - PsychologistCapBrown
 
-- type: loadoutGroup
-  id: PsychologistMask
-  name: loadout-group-psychologist-mask
-  minLimit: 0
-  loadouts:
-  - DoctorClown
+# - type: loadoutGroup # QB - noclown
+#   id: PsychologistMask
+#   name: loadout-group-psychologist-mask
+#   minLimit: 0
+#   loadouts:
+#   - DoctorClown
 
 - type: loadoutGroup
   id: PsychologistNeck
@@ -1253,7 +1253,7 @@
   - LeatherShoes
   - BlackHeels
   - BlackWinterBoots
-  - ClownShoesExpert
+  # - ClownShoesExpert # QB - noclown
 
 - type: loadoutGroup
   id: PsychologistBackpack

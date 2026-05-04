@@ -78,10 +78,12 @@
   copyright: "The Role of Cardassian Trials (DS9: Tribunal)"
   source: "https://www.youtube.com/watch?v=JEtl2X6mBmQ"
 
-- files: ["wuhey.ogg"]
-  license: "Custom"
-  copyright: "middle aged men ordering a greggs by theboski"
-  source: "https://www.tiktok.com/@theboski/video/7074212516699606278"
+# QB edit start - nowuhey
+# - files: ["wuhey.ogg"]
+#   license: "Custom"
+#   copyright: "middle aged men ordering a greggs by theboski"
+#   source: "https://www.tiktok.com/@theboski/video/7074212516699606278"
+# QB edit end
 
 - files:
   - "specialstew.ogg"

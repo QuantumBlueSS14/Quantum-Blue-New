@@ -1,6 +1,3 @@
-barsign-prototype-name-imp = Imp
-barsign-prototype-description-imp = Looking at this sign gives you the peculiar feeling of being an ant in a bug farm.
-
 barsign-prototype-name-greytide = The Grey Tide
 barsign-prototype-description-greytide = Abandon your toolboxing ways and enjoy a lazy beer!
 

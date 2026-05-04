@@ -87,11 +87,11 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.06
-      - !type:Emote
-        emote: Wuhey
-        showInChat: true
-        force: true
-        probability: 0.02
+      # - !type:Emote # QB - nowuhey
+      #   emote: Wuhey
+      #   showInChat: true
+      #   force: true
+      #   probability: 0.02
 
 - type: reagent
   id: BlueCuracao

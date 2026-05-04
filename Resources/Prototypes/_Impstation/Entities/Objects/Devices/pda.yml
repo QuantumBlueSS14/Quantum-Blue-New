@@ -10,11 +10,11 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorcook
+        pda-cook # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
   - type: Icon
-    state: pda-seniorcook
+    state: pda-cook # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: ReplacementAccent # for random sentience event
     accent: italian
 
@@ -30,12 +30,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorhydro
+        pda-hydro # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#44843c"
     accentVColor: "#00cc35"
   - type: Icon
-    state: pda-seniorhydro
+    state: pda-hydro # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: BasePDA
@@ -49,12 +49,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorcargo
+        pda-cargo # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#E39751"
     accentVColor: "#FF9500"
   - type: Icon
-    state: pda-seniorcargo
+    state: pda-cargo # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -76,12 +76,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorminer
+        pda-miner # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#af9366"
     accentVColor: "#8900c9"
   - type: Icon
-    state: pda-seniorminer
+    state: pda-miner # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -104,12 +104,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorbartender
+        pda-bartender # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#c7c7c7"
   - type: Icon
-    state: pda-seniorbartender
+    state: pda-bartender # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: BaseMedicalPDA
@@ -123,12 +123,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorparamedic
+        pda-paramedic # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#2a4b5b"
     accentVColor: "#d7d7d0"
   - type: Icon
-    state: pda-seniorparamedic
+    state: pda-paramedic # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: BaseMedicalPDA
@@ -142,13 +142,13 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorchemistry
+        pda-chemistry # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#5d99be"
     accentHColor: "#B34200"
   - type: Icon
-    state: pda-seniorchemistry
+    state: pda-chemistry # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: BaseSecurityPDA
@@ -162,12 +162,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniorwarden
+        pda-warden # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentVColor: "#949137"
   - type: Icon
-    state: pda-seniorwarden
+    state: pda-warden # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: BasePDA
@@ -181,12 +181,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-senioratmos
+        pda-atmos # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#447987"
   - type: Icon
-    state: pda-senioratmos
+    state: pda-atmos # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: DetectivePDA
@@ -200,12 +200,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-seniordetective
+        pda-detective # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#774705"
     accentVColor: "#990202"
   - type: Icon
-    state: pda-seniordetective
+    state: pda-detective # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 - type: entity
   parent: LawyerPDA
@@ -225,12 +225,12 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-seniorlawyer
+       pda-lawyer # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
   - type: PdaBorderColor
     borderColor: "#6f6192"
     accentVColor: "#c7c7c7"
   - type: Icon
-    state: pda-seniorlawyer
+    state: pda-lawyer # QB - Use non senior sprite until implemented. Was "pda-senior<role>"
 
 # Syndicate
 - type: entity
@@ -274,11 +274,11 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-cargo
+        pda-mailcarrier # QB
   - type: PdaBorderColor
     borderColor: "#e39751"
   - type: Icon
-    state: pda-cargo
+    state: pda-mailcarrier # QB
   - type: CartridgeLoader # DeltaV - MailMetrics courier tracker
     preinstalled:
     - CrewManifestCartridge
@@ -306,6 +306,7 @@
     borderColor: "#77b861"
     accentHColor: "#447987"
   - type: Icon
+    sprite: Objects/Devices/pda.rsi
     state: pda-hd
 
 # Griffy
