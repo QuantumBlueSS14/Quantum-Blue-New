@@ -185,7 +185,11 @@ namespace Content.IntegrationTests.Tests
             // "Whisper",
             // "Monarch",
 
-            // from VDS:
+            // QB PROTOTYPES:
+            "Asterisk",
+            "Chibi",
+            "Dash",
+            "ElkridgeQB",
             "Foundry",
 
             // DEROTATED:
@@ -195,13 +199,6 @@ namespace Content.IntegrationTests.Tests
             //"reHash",
             //"RelicImp",
             //"Skimmer",
-
-            // from deltav:
-            "Asterisk",
-            "Chibi",
-
-            // QB prototypes:
-            "Dash"
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

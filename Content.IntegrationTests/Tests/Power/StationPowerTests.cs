@@ -75,8 +75,11 @@ public sealed class StationPowerTests
         //"RelicImp",
         //"Skimmer",
 
+        // QB PROTOTYPES:
         "Asterisk",
         "Chibi",
+        "Dash",
+        "ElkridgeQB",
         "Foundry",
     };
 
