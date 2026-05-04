@@ -77,6 +77,7 @@ public sealed class StationPowerTests
 
         // QB PROTOTYPES:
         "Asterisk",
+        "Byoin",
         "Chibi",
         "Dash",
         "ElkridgeQB",
