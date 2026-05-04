@@ -1,6 +1,8 @@
 - type: gameMapPool
   id: DefaultMapPoolQB
   maps:
+  # WIZDEN MAPS:
+  - ElkridgeQB
   # DV MAPS:
   - Asterisk
   - Chibi
