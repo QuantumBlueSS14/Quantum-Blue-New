@@ -6,7 +6,7 @@
   - !type:OverallPlaytimeRequirement # Imp
     time: 3600 # 1h
   playTimeTracker: AntagHeretic
-  setPreference: true
+  setPreference: false # qb
   objective: roles-antag-heretic-description
   guides: [ Heretics ]
 
