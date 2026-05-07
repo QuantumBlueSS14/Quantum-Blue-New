@@ -57,6 +57,9 @@
         },
         {
             "name": "dark_inner_sw"
+        },
+        {
+            "name": "dark_rglass_overlay"
         }
     ]
 }

@@ -1,0 +1,263 @@
+- type: decal
+  id: ArrowsRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: arrows_red
+
+- type: decal
+  id: BotRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: bot_red
+
+- type: decal
+  id: BotLeftRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: bot_left_red
+
+- type: decal
+  id: BotRightRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: bot_right_red
+
+- type: decal
+  id: BoxRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: box_red
+
+- type: decal
+  id: CautionRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: caution_red
+
+- type: decal
+  id: DeliveryRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: delivery_red
+
+- type: decal
+  id: LoadingAreaRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: loading_area_red
+
+- type: decal
+  id: StandClearRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: standclear_red
+
+- type: decal
+  id: WarnBoxRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_box_red
+
+- type: decal
+  id: WarnEndRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_end_red
+
+- type: decal
+  id: WarnFullRed
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_full_red
+
+- type: decal
+  id: WarningLineRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warningline_red
+
+- type: decal
+  id: WarningLineCornerRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warninglinecorner_red
+
+- type: decal
+  id: WarningLineCornerFlippedRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warninglinecorner_flipped_red
+
+- type: decal
+  id: WarnCornerRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_red
+
+- type: decal
+  id: WarnCornerFlippedRed
+  showMenu: false
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_flipped_red
+
+- type: decal
+  id: WarnCornerRedNE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_red_ne
+
+- type: decal
+  id: WarnCornerRedNW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_red_nw
+
+- type: decal
+  id: WarnCornerRedSE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_red_se
+
+- type: decal
+  id: WarnCornerRedSW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_red_sw
+
+- type: decal
+  id: WarnCornerSmallRedNE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_small_red_ne
+
+- type: decal
+  id: WarnCornerSmallRedNW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_small_red_nw
+
+- type: decal
+  id: WarnCornerSmallRedSE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_small_red_se
+
+- type: decal
+  id: WarnCornerSmallRedSW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_corner_small_red_sw
+
+- type: decal
+  id: WarnEndRedE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_end_red_e
+
+- type: decal
+  id: WarnEndRedN
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_end_red_n
+
+- type: decal
+  id: WarnEndRedS
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_end_red_s
+
+- type: decal
+  id: WarnEndRedW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_end_red_w
+
+- type: decal
+  id: WarnLineRedE
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_line_red_e
+
+- type: decal
+  id: WarnLineRedN
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_line_red_n
+
+- type: decal
+  id: WarnLineRedS
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_line_red_s
+
+- type: decal
+  id: WarnLineRedW
+  tags: ["station", "markings"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _QB/Decals/Misc/markings.rsi # QB
+    state: warn_line_red_w

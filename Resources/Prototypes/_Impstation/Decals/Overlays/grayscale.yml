@@ -1,7 +1,0 @@
-- type: decal
-  id: ReinforcedGlassOverlay
-  tags: ["station", "overlay"]
-  defaultCustomColor: true
-  sprite:
-    sprite: _QB/Decals/Overlays/greyscale.rsi # QB
-    state: rglass_overlay

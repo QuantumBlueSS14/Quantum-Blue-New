@@ -57,6 +57,9 @@
         },
         {
             "name": "white_inner_sw"
+        },
+        {
+            "name": "white_rglass_overlay"
         }
     ]
 }

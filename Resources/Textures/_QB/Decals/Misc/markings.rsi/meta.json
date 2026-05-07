@@ -14,10 +14,16 @@
       "name": "arrows_greyscale"
     },
     {
+      "name": "arrows_red"
+    },
+    {
       "name": "bot"
     },
     {
       "name": "bot_greyscale"
+    },
+    {
+      "name": "bot_red"
     },
     {
       "name": "bot_left"
@@ -26,10 +32,16 @@
       "name": "bot_left_greyscale"
     },
     {
+      "name": "bot_left_red"
+    },
+    {
       "name": "bot_right"
     },
     {
       "name": "bot_right_greyscale"
+    },
+    {
+      "name": "bot_right_red"
     },
     {
       "name": "box"
@@ -38,10 +50,16 @@
       "name": "box_greyscale"
     },
     {
+      "name": "box_red"
+    },
+    {
       "name": "caution"
     },
     {
       "name": "caution_greyscale"
+    },
+    {
+      "name": "caution_red"
     },
     {
       "name": "delivery"
@@ -50,10 +68,16 @@
       "name": "delivery_greyscale"
     },
     {
+      "name": "delivery_red"
+    },
+    {
       "name": "loading_area"
     },
     {
       "name": "loading_area_greyscale"
+    },
+    {
+      "name": "loading_area_red"
     },
     {
       "name": "standclear"
@@ -62,10 +86,16 @@
       "name": "standclear_greyscale"
     },
     {
+      "name": "standclear_red"
+    },
+    {
       "name": "warn_box"
     },
     {
       "name": "warn_box_greyscale"
+    },
+    {
+      "name": "warn_box_red"
     },
     {
       "name": "warn_end"
@@ -74,10 +104,16 @@
       "name": "warn_end_greyscale"
     },
     {
+      "name": "warn_end_red"
+    },
+    {
       "name": "warn_full"
     },
     {
       "name": "warn_full_greyscale"
+    },
+    {
+      "name": "warn_full_red"
     },
     {
       "name": "warningline"
@@ -86,10 +122,16 @@
       "name": "warningline_greyscale"
     },
     {
+      "name": "warningline_red"
+    },
+    {
       "name": "warninglinecorner"
     },
     {
       "name": "warninglinecorner_greyscale"
+    },
+    {
+      "name": "warninglinecorner_red"
     },
     {
       "name": "warninglinecorner_flipped"
@@ -98,16 +140,25 @@
       "name": "warninglinecorner_flipped_greyscale"
     },
     {
+      "name": "warninglinecorner_flipped_red"
+    },
+    {
       "name": "warn_corner"
     },
     {
       "name": "warn_corner_greyscale"
     },
     {
+      "name": "warn_corner_red"
+    },
+    {
       "name": "warn_corner_flipped"
     },
     {
       "name": "warn_corner_flipped_greyscale"
+    },
+    {
+      "name": "warn_corner_flipped_red"
     },
     {
       "name": "warn_corner_greyscale_ne"
@@ -120,6 +171,18 @@
     },
     {
       "name": "warn_corner_greyscale_sw"
+    },
+    {
+      "name": "warn_corner_red_ne"
+    },
+    {
+      "name": "warn_corner_red_nw"
+    },
+    {
+      "name": "warn_corner_red_se"
+    },
+    {
+      "name": "warn_corner_red_sw"
     },
     {
       "name": "warn_corner_ne"
@@ -144,6 +207,18 @@
     },
     {
       "name": "warn_corner_small_greyscale_sw"
+    },
+    {
+      "name": "warn_corner_small_red_ne"
+    },
+    {
+      "name": "warn_corner_small_red_nw"
+    },
+    {
+      "name": "warn_corner_small_red_se"
+    },
+    {
+      "name": "warn_corner_small_red_sw"
     },
     {
       "name": "warn_corner_small_ne"
@@ -182,6 +257,18 @@
       "name": "warn_end_greyscale_w"
     },
     {
+      "name": "warn_end_red_e"
+    },
+    {
+      "name": "warn_end_red_n"
+    },
+    {
+      "name": "warn_end_red_s"
+    },
+    {
+      "name": "warn_end_red_w"
+    },
+    {
       "name": "warn_line_e"
     },
     {
@@ -204,6 +291,18 @@
     },
     {
       "name": "warn_line_greyscale_w"
+    },
+    {
+      "name": "warn_line_red_e"
+    },
+    {
+      "name": "warn_line_red_n"
+    },
+    {
+      "name": "warn_line_red_s"
+    },
+    {
+      "name": "warn_line_red_w"
     }
   ]
 }
