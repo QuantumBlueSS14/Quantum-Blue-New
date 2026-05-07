@@ -3,33 +3,33 @@
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Overlays/greyscale.rsi # QB
+    sprite: _QB/Decals/Overlays/greyscale.rsi
     state: rglass_overlay
 
 - type: decal
   id: SteelReinforcedGlassOverlay
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Generic/steel.rsi # QB
+    sprite: _QB/Decals/Generic/steel.rsi
     state: steel_rglass_overlay
 
 - type: decal
   id: DarkReinforcedGlassOverlay
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Generic/dark.rsi # QB
+    sprite: _QB/Decals/Generic/dark.rsi
     state: dark_rglass_overlay
 
 - type: decal
   id: WhiteReinforcedGlassOverlay
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Generic/white.rsi # QB
+    sprite: _QB/Decals/Generic/white.rsi
     state: white_rglass_overlay
 
 - type: decal
   id: GreenReinforcedGlassOverlay
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Generic/green.rsi # QB
+    sprite: _QB/Decals/Generic/green.rsi
     state: green_rglass_overlay

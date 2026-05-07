@@ -3,7 +3,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: arrows_red
 
 - type: decal
@@ -11,7 +11,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: bot_red
 
 - type: decal
@@ -19,7 +19,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: bot_left_red
 
 - type: decal
@@ -27,7 +27,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: bot_right_red
 
 - type: decal
@@ -35,7 +35,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: box_red
 
 - type: decal
@@ -43,7 +43,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: caution_red
 
 - type: decal
@@ -51,7 +51,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: delivery_red
 
 - type: decal
@@ -59,7 +59,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: loading_area_red
 
 - type: decal
@@ -67,7 +67,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: standclear_red
 
 - type: decal
@@ -75,7 +75,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_box_red
 
 - type: decal
@@ -83,7 +83,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_end_red
 
 - type: decal
@@ -91,7 +91,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_full_red
 
 - type: decal
@@ -99,7 +99,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warningline_red
 
 - type: decal
@@ -107,7 +107,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warninglinecorner_red
 
 - type: decal
@@ -115,7 +115,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warninglinecorner_flipped_red
 
 - type: decal
@@ -123,7 +123,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_red
 
 - type: decal
@@ -131,7 +131,7 @@
   showMenu: false
   tags: ["station", "markings"]
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_flipped_red
 
 - type: decal
@@ -139,7 +139,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_red_ne
 
 - type: decal
@@ -147,7 +147,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_red_nw
 
 - type: decal
@@ -155,7 +155,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_red_se
 
 - type: decal
@@ -163,7 +163,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_red_sw
 
 - type: decal
@@ -171,7 +171,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_small_red_ne
 
 - type: decal
@@ -179,7 +179,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_small_red_nw
 
 - type: decal
@@ -187,7 +187,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_small_red_se
 
 - type: decal
@@ -195,7 +195,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_corner_small_red_sw
 
 - type: decal
@@ -203,7 +203,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_end_red_e
 
 - type: decal
@@ -211,7 +211,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_end_red_n
 
 - type: decal
@@ -219,7 +219,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_end_red_s
 
 - type: decal
@@ -227,7 +227,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_end_red_w
 
 - type: decal
@@ -235,7 +235,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_line_red_e
 
 - type: decal
@@ -243,7 +243,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_line_red_n
 
 - type: decal
@@ -251,7 +251,7 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_line_red_s
 
 - type: decal
@@ -259,5 +259,5 @@
   tags: ["station", "markings"]
   defaultCustomColor: true
   sprite:
-    sprite: _QB/Decals/Misc/markings.rsi # QB
+    sprite: _QB/Decals/Misc/markings.rsi
     state: warn_line_red_w
