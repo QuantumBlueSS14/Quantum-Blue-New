@@ -8,7 +8,7 @@
   playTimeTracker: AntagHeretic
   setPreference: false # qb
   objective: roles-antag-heretic-description
-  guides: [ Heretics ]
+#  guides: [ Heretics ]
 
 - type: startingGear
   id: HereticGear
