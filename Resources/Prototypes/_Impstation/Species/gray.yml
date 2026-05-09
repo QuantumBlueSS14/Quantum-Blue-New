@@ -1,8 +1,8 @@
 - type: species
   id: Gray
   name: Gray
-  roundStart: true
-  randomViable: true
+  roundStart: false #qb
+  randomViable: false #qb
   prototype: MobGray
   sprites: MobGraySprites
   defaultSkinTone: "#b8b8b8"

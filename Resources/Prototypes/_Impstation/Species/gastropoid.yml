@@ -1,7 +1,8 @@
 - type: species
   id: Gastropoid
   name: species-name-gastropoid
-  roundStart: true
+  roundStart: false #qb
+  midRoundRandomViable: true #qb
   randomViable: true
   prototype: MobGastropoid
   sprites: MobGastropoidSprites
