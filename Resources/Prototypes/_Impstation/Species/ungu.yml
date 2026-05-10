@@ -2,7 +2,6 @@
   id: Ungu
   name: species-name-ungu
   roundStart: false #qb
-  midRoundRandomViable: true #qb
   randomViable: true
   prototype: MobUngu
   sprites: MobUnguSprites
