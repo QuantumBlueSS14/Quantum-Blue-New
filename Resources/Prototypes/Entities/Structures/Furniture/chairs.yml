@@ -131,6 +131,7 @@
   description: Apply butt.
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/stool.rsi # QB
     state: stool
   - type: Construction
     graph: Seat

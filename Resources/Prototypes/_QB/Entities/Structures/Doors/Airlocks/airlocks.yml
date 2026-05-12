@@ -16,7 +16,7 @@
   suffix: Brigmedic
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Doors/Airlocks/Standard/secmed.rsi
+    sprite: _Impstation/Structures/Doors/Airlocks/Glass/secmed.rsi
 
 # Medical
 

@@ -34,12 +34,14 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.5,-1.5,1.5,1.5"
+          bounds: "-1.5,-1.5,1.5,0.5" # QB
         density: 50
         mask:
         - LargeMobMask
         layer:
         - WallLayer
+  - type: Rotatable # QB
+    rotateWhileAnchored: true # QB
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 5
@@ -99,6 +101,8 @@
         map: ["enum.GravityGeneratorVisualLayers.Core"]
         scale: "0.4,0.4"
         offset: "0,0.2"
+  - type: Transform # QB
+    noRot: false # QB
   - type: Fixtures
     fixtures:
       fix1:
