@@ -1,4 +1,4 @@
-using System.Linq;
+/*using System.Linq;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Prototypes;
@@ -372,4 +372,4 @@ public sealed class SuicideCommandTests
 
         await pair.CleanReturnAsync();
     }
-}
+}*/ // QB

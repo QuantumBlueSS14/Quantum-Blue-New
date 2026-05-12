@@ -1,7 +1,7 @@
 - type: species
   id: Anomalocarid
   name: species-name-anomalocarid
-  roundStart: true
+  roundStart: false #qb
   randomViable: true
   prototype: MobAnomalocarid
   sprites: MobAnomalocaridSprites

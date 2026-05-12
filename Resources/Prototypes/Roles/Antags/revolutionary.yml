@@ -3,7 +3,7 @@
   name: roles-antag-rev-head-name
   antagonist: true
   playTimeTracker: AntagHeadRevolutionary # imp
-  setPreference: true
+  setPreference: false # qb
   objective: roles-antag-rev-head-objective
   guides: [ Revolutionaries ]
   requirements:

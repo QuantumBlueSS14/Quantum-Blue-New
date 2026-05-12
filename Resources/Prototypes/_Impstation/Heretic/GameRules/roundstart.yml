@@ -4,7 +4,7 @@
   components:
   - type: HereticRule
   - type: GameRule
-    minPlayers: 5
+    minPlayers: 999 # qb
     delay:
       min: 30
       max: 60
@@ -31,6 +31,8 @@
   id: HereticSingular # spawns One heretic
   components:
   - type: HereticRule
+  - type: GameRule
+    minPlayers: 999 #qb
   - type: AntagObjectives
     objectives:
     - HereticKnowledgeObjective

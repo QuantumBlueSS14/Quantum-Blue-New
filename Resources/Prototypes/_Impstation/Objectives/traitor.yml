@@ -482,8 +482,8 @@
     unique: true
     difficulty: 1.25
     icon:
-      sprite: _Impstation/Tippy/nerd_emoji.rsi
-      state: icon
+      sprite: Clothing/Eyes/Glasses/glasses.rsi
+      state: compiled-icon
   - type: AutoCompleteCondition
   - type: ObjectiveBlacklistRequirement
     blacklist:

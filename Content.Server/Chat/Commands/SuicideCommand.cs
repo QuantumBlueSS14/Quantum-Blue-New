@@ -1,4 +1,4 @@
-using Content.Server.GameTicking;
+/*using Content.Server.GameTicking;
 using Content.Server.Popups;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
@@ -57,4 +57,5 @@ namespace Content.Server.Chat.Commands
             shell.WriteLine(Loc.GetString("ghost-command-denied"));
         }
     }
-}
+}*/
+// QB

@@ -27,7 +27,7 @@
     - !type:NestedSelector # DV
       tableId: UnknownShuttlesFreelanceTableDV
     - id: UnknownShuttleSyndieEvacPod
-    - id: UnknownShuttlePartyUFO #imp
+  #  - id: UnknownShuttlePartyUFO #imp # qb removed
     - id: UnknownShuttleLambordeere #imp moved because no longer crew aligned
 
 - type: entityTable
