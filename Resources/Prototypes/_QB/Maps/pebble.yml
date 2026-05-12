@@ -17,7 +17,7 @@
             prefixCreator: 'NY'
         - type: StationJobs
           availableJobs:
-          #command # Total of 54
+          #command # Total of 57
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
@@ -29,7 +29,7 @@
             StationAi: [ 1, 1 ]
           #service
             Bartender: [ 1, 1 ]
-            Botanist: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Boxer: [ 2, 2 ]
             Chef: [ 1 , 1 ]
@@ -41,29 +41,29 @@
             Librarian: [ 1, 1 ]
           #engineering
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 2, 3 ]
-            TechnicalAssistant: [ 1, 1 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ]
           #medical
             Chemist: [ 1, 1 ]
-            MedicalDoctor: [ 2, 3 ]
+            MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
             Psychologist: [ 1, 1 ]
           #science
             Scientist: [ 2, 2 ]
             ResearchAssistant: [ 2, 2 ]
-            Borg: [ 1, 1 ]
+            Borg: [ 2, 2 ]
           #security
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
-            SecurityOfficer: [ 2, 3 ]
-            SecurityCadet: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
           #supply
             Courier: [ 1, 1 ]
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 2 ]
-            CargoAssistant: [ 1, 1 ]
+            # CargoAssistant: [ 1, 1 ]
           #civilian
             Lawyer: [ 1, 1 ]
             Passenger: [ -1, -1 ]
