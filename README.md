@@ -1,11 +1,11 @@
-<p align="center"> <img alt="Impstation" src="https://github.com/impstation/imp-station-14/blob/master/Resources/Textures/Logo/logo.png" /></p>
+<p align="center"> <img alt="Impstation" src="https://github.com/QuantumBlueSS14/Quantum-Blue-New/blob/master/Resources/Textures/Logo/logo.png" /></p>
 
 Impstation is a fork of Space Station 14, a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
 While we are not a server that allows sexual content, <b>we do not allow people under the age of 20 to play on Impstation.</b>
 
 ## Links
-[Website](https://impstation.gay/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
+[Website](https://quantumblue.gay/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
 
 ## Documentation/Wiki
 
@@ -16,7 +16,7 @@ Additionally, see these resources for license and attribution information:
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/impstation/imp-station-14/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/QuantumBlueSS14/Quantum-Blue-New/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 
 As a baseline make sure your changes and pull requests are in accordance with the upstream [contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html). We're generally not as strict, but it's good practice to follow these examples.
 
