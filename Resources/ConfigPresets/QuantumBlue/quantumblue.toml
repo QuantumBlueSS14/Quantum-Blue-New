@@ -37,7 +37,9 @@ uptime_restart_minutes = 720 # 12h
 flavor_text = true
 punctuation = true
 
-
+[announcer] 
+# Announcer is set to Michael only - QB Edit
+announcer = "Michael"
 
 [atmos]
 space_wind = true
