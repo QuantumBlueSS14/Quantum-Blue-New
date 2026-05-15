@@ -24,7 +24,7 @@ DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 DISCORD_ROLE_ID = os.environ.get("DISCORD_ROLE_ID")
 
-CHANGELOG_FILE = "Resources/Changelog/Impstation.yml"
+CHANGELOG_FILE = "Resources/Changelog/QuantumBlue.yml"
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 

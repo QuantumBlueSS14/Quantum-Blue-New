@@ -46,6 +46,7 @@ jobs:
         cd "Tools/changelogs"
         node changelog.js
       shell: bash
+      continue-on-error: true
 
     - name: Commit Changelog
       run: |
