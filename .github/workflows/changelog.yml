@@ -37,13 +37,13 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd "Tools/changelog_from_prs"
+        cd "Tools/changelogs"
         npm install
       shell: bash
 
     - name: Generate Changelog
       run: |
-        cd "Tools/changelog_from_prs"
+        cd "Tools/changelogs"
         node changelog.js
       shell: bash
       continue-on-error: true
