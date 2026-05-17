@@ -62,10 +62,10 @@
   description: An ornate belt designed to hold a pair of samurai's blades, or daisho.
   components:
   - type: Sprite
-    sprite: Nyanotrasen/Clothing/Belt/katanasheath.rsi
+    sprite: _DV/Clothing/Belt/katanasheath.rsi
     state: sheath
   - type: Clothing
-    sprite: Nyanotrasen/Clothing/Belt/katanasheath.rsi
+    sprite: _DV/Clothing/Belt/katanasheath.rsi
   - type: ItemSlots # DeltaV - adjust how objects are stored
     slots:
       katanaslot:
@@ -98,7 +98,7 @@
         whitelist:
           tags:
           - Wakizashi
-    sprite: DeltaV/Clothing/Belt/belt_overlay.rsi
+    sprite: _DV/Clothing/Belt/belt_overlay.rsi
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

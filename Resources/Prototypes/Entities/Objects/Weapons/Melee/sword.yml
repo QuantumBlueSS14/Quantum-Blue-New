@@ -139,7 +139,7 @@
   description: Ancient craftwork made with not so ancient plasteel.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Melee/katana.rsi
+    sprite: _DV/Objects/Weapons/Melee/katana.rsi #QB - portin delta v katana sheath
   - type: MeleeWeapon
     damage:
       types:
@@ -153,7 +153,7 @@
     shape:
     - 0,0,0,3
   - type: Clothing
-    sprite: Objects/Weapons/Melee/katana.rsi
+    sprite: _DV/Objects/Weapons/Melee/katana.rsi #QB - portin delta v katana sheath
     slots:
     - Back
     - Belt

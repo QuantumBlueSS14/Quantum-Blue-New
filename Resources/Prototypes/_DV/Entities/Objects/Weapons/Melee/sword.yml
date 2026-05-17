@@ -11,9 +11,8 @@
   - type: Utensil
     types:
       - Knife
-  - type: ItemCooldown
   - type: Sprite
-    sprite: Nyanotrasen/Objects/Weapons/Melee/wakizashi.rsi
+    sprite: _DV/Objects/Weapons/Melee/wakizashi.rsi
     state: icon
   - type: MeleeWeapon
     attackRate: 2
@@ -24,10 +23,17 @@
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
     size: 10
-    sprite: Nyanotrasen/Objects/Weapons/Melee/wakizashi.rsi
+    sprite: _DV/Objects/Weapons/Melee/wakizashi.rsi
   - type: Tool
     qualities:
       - Slicing
     useSound:
       path: /Audio/Items/Culinary/chop.ogg
   - type: DisarmMalus
+  # QB - imp does throwin stuff for things
+  - type: DamageOtherOnHit
+    staminaCost: 5
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: EmbedPassiveDamage
+  # end QB
