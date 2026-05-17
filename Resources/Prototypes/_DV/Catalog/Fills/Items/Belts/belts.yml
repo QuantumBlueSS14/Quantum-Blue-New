@@ -31,3 +31,13 @@
         - id: BoxFolderBlack
         - id: BoxFolderClipboard
         - id: DrinkVacuumFlask
+
+- type: entity
+  id: ClothingBeltKatanaSheathFilled
+  parent: ClothingBeltKatanaSheath
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Wakizashi
+    - id: Katana
