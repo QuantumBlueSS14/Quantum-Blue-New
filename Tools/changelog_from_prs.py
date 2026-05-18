@@ -7,7 +7,7 @@ from subprocess import run
 # Get pull requests from github and make a changelog based on that.
 # You need github cli (gh) installed.
 
-file_path = "Resources/Changelog/Impstation-new.yml"
+file_path = "Resources/Changelog/QuantumBlue.yml"
 time_format = "%Y-%m-%dT%H:%M:%S.0000000%:z"
 template = """
 - author: {author}
