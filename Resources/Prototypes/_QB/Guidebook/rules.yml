@@ -140,7 +140,7 @@
   id: QuantumBlueSOPandSpaceLaw
   name: guide-entry-quantumblue-sopandsplaw
   text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/introduction.xml"
-  ruleEntry: true
+  # ruleEntry: true
   children:
     - QuantumBlueAlertProcedure
     - QuantumBlueSpaceLaw
@@ -150,16 +150,16 @@
   id: QuantumBlueAlertProcedure
   name: guide-entry-quantumblue-alertprocedure
   text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/alertprocedure.xml"
-  ruleEntry: true
+  # ruleEntry: true
 
 - type: guideEntry
   id: QuantumBlueSpaceLaw
   name: guide-entry-quantumblue-spacelaw
   text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/spacelaw.xml"
-  ruleEntry: true
+  # ruleEntry: true
 
 - type: guideEntry
   id: QuantumBlueStandardOperatingProcedure
   name: guide-entry-quantumblue-standardoperatingprocedure
   text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/sop.xml"
-  ruleEntry: true
+  # ruleEntry: true
