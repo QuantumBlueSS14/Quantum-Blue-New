@@ -98,7 +98,7 @@
         whitelist:
           tags:
           - Wakizashi
-    sprite: _DV/Clothing/Belt/belt_overlay.rsi
+    sprite: _DV/Clothing/Belt/katananasheath.rsi
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
