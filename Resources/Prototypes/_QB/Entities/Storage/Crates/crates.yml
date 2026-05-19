@@ -1,0 +1,60 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: _QB.CrateMiningMagnetic
+  name: mining magnetic crate
+  description: A salvage crate with magnetic clamps for easy handling in zero gravity.
+  components:
+  - type: Icon
+    sprite: _QB/Structures/Storage/Crates/miningmagcrate.rsi
+  - type: Sprite
+    sprite: _QB/Structures/Storage/Crates/miningmagcrate.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: open
+      map: [ open_crate ]
+      offset: 0, 0 # No offset, overlays perfectly
+  - type: MagneticCrate
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.29"
+        density: 35
+        mask:
+        - CrateMask
+        layer:
+        - MachineLayer

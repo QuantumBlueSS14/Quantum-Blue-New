@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: _QB.CargoMiningMagneticCrate
+  icon:
+    sprite: _QB/Structures/Storage/Crates/miningmagcrate.rsi
+    state: base
+  product: _QB.CrateMiningMagnetic
+  cost: 750
+  category: cargoproduct-category-name-cargo
+  group: market
