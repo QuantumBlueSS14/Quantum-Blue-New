@@ -1,7 +1,7 @@
 - type: guideEntry
   id: QuantumBlueRuleset
   name: guide-entry-quantumblue-rules
-  text: "/ServerInfo/Guidebook/_QB/Rules/QuantumBlueRuleset.xml"
+  text: "/ServerInfo/Guidebook/_QB/Rules/quantumblueruleset.xml"
   priority: -2
   ruleEntry: true
   children:
