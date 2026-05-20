@@ -208,3 +208,5 @@
       - MultitoolDefibrillatorTarget
     - type: CanEscapeInventory
       baseResistTime: 2
+    - type: StaticPrice
+      price: 1000 #if you change how many oomycites the polyoomycite spawns on death, you should probably change this too. there's a buffer

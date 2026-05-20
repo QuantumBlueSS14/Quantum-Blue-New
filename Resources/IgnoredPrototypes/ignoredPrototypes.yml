@@ -31,9 +31,41 @@
 
 # IMP DEROTATED MAPS
 # we dont want admins running these maps because they dont have the nuke disk case mapped.
-- /Prototypes/_Impstation/Maps/eclipse.yml
+- /Prototypes/_Impstation/Maps/Eclipse.yml
 - /Prototypes/_Impstation/Maps/luna.yml
 - /Prototypes/_Impstation/Maps/refsdal.yml
 - /Prototypes/_Impstation/Maps/rehash.yml
 - /Prototypes/_Impstation/Maps/relic.yml
 - /Prototypes/_Impstation/Maps/skimmer.yml
+
+# IGNORE ALL IMP MAPS NOT IN QB SET
+- /Prototypes/_Impstation/Maps/amber.yml
+- /Prototypes/_Impstation/Maps/anthill.yml
+- /Prototypes/_Impstation/Maps/bagel.yml
+- /Prototypes/_Impstation/Maps/banana.yml
+- /Prototypes/_Impstation/Maps/barratry.yml
+- /Prototypes/_Impstation/Maps/bedlam.yml
+- /Prototypes/_Impstation/Maps/boat.yml
+- /Prototypes/_Impstation/Maps/box.yml
+- /Prototypes/_Impstation/Maps/centcomm.yml
+- /Prototypes/_Impstation/Maps/cluster.yml
+- /Prototypes/_Impstation/Maps/cog.yml
+- /Prototypes/_Impstation/Maps/core.yml
+- /Prototypes/_Impstation/Maps/E1M1.yml
+- /Prototypes/_Impstation/Maps/gate.yml
+- /Prototypes/_Impstation/Maps/hummingbird.yml
+- /Prototypes/_Impstation/Maps/lilboat.yml
+- /Prototypes/_Impstation/Maps/marathon.yml
+- /Prototypes/_Impstation/Maps/monarch.yml
+- /Prototypes/_Impstation/Maps/oasis.yml
+- /Prototypes/_Impstation/Maps/packed.yml
+- /Prototypes/_Impstation/Maps/plasma.yml
+- /Prototypes/_Impstation/Maps/reach.yml
+- /Prototypes/_Impstation/Maps/saltern.yml
+- /Prototypes/_Impstation/Maps/salvage.yml
+- /Prototypes/_Impstation/Maps/submarine.yml
+- /Prototypes/_Impstation/Maps/train.yml
+- /Prototypes/_Impstation/Maps/union.yml
+- /Prototypes/_Impstation/Maps/whisper.yml
+- /Prototypes/_Impstation/Maps/xeno.yml
+- /Prototypes/_Impstation/Maps/pebble.yml

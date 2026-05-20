@@ -1,0 +1,8 @@
+- type: guideEntry
+  id: VisitorSpecies
+  name: guide-entry-visitorspecies
+  text: "/ServerInfo/_Impstation/Guidebook/Mobs/VisitorSpecies/VisitorSpecies.xml"
+  children:
+  - Anomalocarid
+  - Ungu
+  - Gastropoid

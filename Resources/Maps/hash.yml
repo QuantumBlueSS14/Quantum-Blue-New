@@ -40575,42 +40575,42 @@ entities:
     - type: Transform
       pos: 15.313238,-29.444048
       parent: 2
-- proto: ClothingMaskClownBanana
+- proto: ClothingMaskClown
   entities:
   - uid: 5761
     components:
     - type: Transform
       pos: 15.336676,-28.459673
       parent: 2
-- proto: ClothingMaskClownCaptain
+- proto: ClothingMaskClown
   entities:
   - uid: 5760
     components:
     - type: Transform
       pos: 15.360113,-27.475298
       parent: 2
-- proto: ClothingMaskClownCargo
+- proto: ClothingMaskClown
   entities:
   - uid: 5770
     components:
     - type: Transform
       pos: 11.311823,-29.537798
       parent: 2
-- proto: ClothingMaskClownChaplain
+- proto: ClothingMaskClown
   entities:
   - uid: 5767
     components:
     - type: Transform
       pos: 13.297613,-30.475298
       parent: 2
-- proto: ClothingMaskClownEngineer
+- proto: ClothingMaskClown
   entities:
   - uid: 5768
     components:
     - type: Transform
       pos: 11.358698,-27.498735
       parent: 2
-- proto: ClothingMaskClownMedical
+- proto: ClothingMaskClown
   entities:
   - uid: 5766
     components:
@@ -40629,28 +40629,28 @@ entities:
     - type: Transform
       pos: 8.665878,-35.395973
       parent: 2
-- proto: ClothingMaskClownRobotics
+- proto: ClothingMaskClown
   entities:
   - uid: 5763
     components:
     - type: Transform
       pos: 15.336676,-30.498735
       parent: 2
-- proto: ClothingMaskClownScience
+- proto: ClothingMaskClown
   entities:
   - uid: 5764
     components:
     - type: Transform
       pos: 13.297613,-27.475298
       parent: 2
-- proto: ClothingMaskClownSecurity
+- proto: ClothingMaskClown
   entities:
   - uid: 5769
     components:
     - type: Transform
       pos: 11.382135,-28.459673
       parent: 2
-- proto: ClothingMaskClownService
+- proto: ClothingMaskClown
   entities:
   - uid: 5765
     components:

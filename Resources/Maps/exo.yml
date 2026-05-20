@@ -94356,7 +94356,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 52.5,-50.5
       parent: 2
-  - uid: 3215
+  - uid: 23215
     components:
     - type: Transform
       pos: -31.5,-55.5
@@ -126176,7 +126176,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -31.5,-54.5
       parent: 2
-  - uid: 14093
+  - uid: 24093
     components:
     - type: Transform
       pos: 77.5,-32.5

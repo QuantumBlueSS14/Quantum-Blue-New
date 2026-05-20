@@ -15,6 +15,7 @@
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
   canBeAntag: false
+  whitelisted: true # QB add
   access:
   - Security
   - Brig

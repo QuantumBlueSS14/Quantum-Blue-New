@@ -1,10 +1,11 @@
 [game]
 desc = "A medium roleplay fork based around the paranormal with unique content and almost all unique art, all with a focus on lore and immersion."
 lobbyenabled = true
-lobbyduration = 240
+lobbyduration = 600
 round_restart_time = 300
 contraband_examine = false
 role_timer_override = "QBTemporaryPlaytimeReq"
+soft_max_players = 60
 #map_pool = "QuantumBlueMapPool" #TODO: Actually make this
 
 [movement]
@@ -37,10 +38,6 @@ uptime_restart_minutes = 720 # 12h
 flavor_text = true
 punctuation = true
 
-[announcer] 
-# Announcer is set to Michael only - QB Edit
-announcer = "Michael"
-
 [atmos]
 space_wind = true
 
@@ -61,3 +58,6 @@ easy_mode = false
 
 [control]
 storage_limit = 2
+
+[whitelist]
+enabled = true

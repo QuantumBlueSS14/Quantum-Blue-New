@@ -122,7 +122,11 @@ namespace Content.IntegrationTests.Tests
             ("Loop", "Psychologist"),
             ("Lilboat", "Paramedic"),
             ("RelicImp", "SalvageSpecialist"),
-            ("RelicImp", "Clown")
+            ("RelicImp", "Clown"),
+            ("ChibiQB", "Bartender"),
+            ("ChibiQB", "Botanist"),
+            ("ChibiQB", "Chef"),
+            ("ChibiQB", "Musician")
         };
 
         /// <summary>
@@ -192,6 +196,7 @@ namespace Content.IntegrationTests.Tests
             "Dash",
             "ElkridgeQB",
             "Foundry",
+            "Pebble",
 
             // DEROTATED:
             //"Eclipse",
@@ -635,6 +640,27 @@ namespace Content.IntegrationTests.Tests
 
             var gameMaps = protoManager.EnumeratePrototypes<GameMapPrototype>().Select(o => o.MapPath).ToHashSet();
 
+            // QB: Wizden station maps have their prototypes abstracted in ignoredPrototypes.yml.
+            // EnumeratePrototypes skips abstract prototypes, so their map data files would
+            // otherwise be loaded by this test. Skip them explicitly to match the ignored set.1
+            var abstractedGameMapPaths = new HashSet<ResPath>
+            {
+                new("/Maps/amber.yml"),
+                new("/Maps/bagel.yml"),
+                new("/Maps/box.yml"),
+                new("/Maps/centcomm.yml"),
+                new("/Maps/exo.yml"),
+                new("/Maps/fland.yml"),
+                new("/Maps/marathon.yml"),
+                new("/Maps/oasis.yml"),
+                new("/Maps/packed.yml"),
+                new("/Maps/plasma.yml"),
+                new("/Maps/reach.yml"),
+                new("/Maps/relic.yml"),
+                new("/Maps/saltern.yml"),
+                new("/Maps/hash.yml"),
+            };
+
             var mapFolder = new ResPath("/Maps");
             var maps = resourceManager
                 .ContentFindFiles(mapFolder)
@@ -645,6 +671,9 @@ namespace Content.IntegrationTests.Tests
             foreach (var map in maps)
             {
                 if (gameMaps.Contains(map))
+                    continue;
+
+                if (abstractedGameMapPaths.Contains(map))
                     continue;
 
                 var rootedPath = map.ToRootedPath();

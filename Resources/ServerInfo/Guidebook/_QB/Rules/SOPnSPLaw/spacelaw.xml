@@ -1,0 +1,151 @@
+<Document>
+# Space Law
+
+  Being a MRP server with a higher focus on roleplay and immersion, our version of Space Law is a lot more vague and open to interpretation, similar to real life. It is done this way to allow for more roleplay opportunities and nudge arrests and criminal matters away from being only a nuisance.
+
+  Space Law is not required to learn unless you're playing Security/Command roles, or Station AI.
+
+# Crimes
+
+  Members of station security are authorized to raise charges against suspects, given that valid probable cause is found. When a suspect is detained, they must be informed of their suspected charge and informed of what evidence the charge is based upon. Members of station security are then authorized to sentence suspects.
+
+  A detainee cannot be held awaiting sentencing for more than 5 minutes. A non-capital sentence must also not exceed 25 minutes. Further details can be found later in the document regarding details on possession charges.
+
+  If a capital offense is suspected and sentenced by security, the detainee or prisoner has the legal right to a court appeal.
+
+  Security personnel are expected to offer shorter sentences should the detainee cooperate, show signs of regret or no malice, and especially for first offenses. For the lowest severity crimes, a sentence may be skipped altogether in favor of a warning. Max sentences can often be reduced to the maximum sentence of 25 minutes, within reason.
+
+  Permanent confinement may not be offered if no personnel are able to consistently perform check-ins with the relevant prisoner, in which case the max sentence of 25 minutes should be granted instead.
+
+  Conspiring to, or knowingly facilitating a crime, earns the same sentence time as the relevant crime.
+
+  With the exception of possession charges stacking with others within the same category, stacking charges is not permitted. In case of multiple charges, only the highest severity item determines the duration of the sentence.
+
+## Capital - Trial/Permanent Confinement
+
+  - Decorporealization - To deprive a sophont of physical form without consent.
+  - Prevention of revival - To willfully render the body of a sophont into an unrecoverable state, or to prevent medical treatment of the deceased without lawful reason.
+  - Grand Sabotage - To render a department or a large portion of the station unlivable or irreparably damaged.
+  - Sedition - To attempt to overthrow the chain of command using violence without just cause.
+  - Terrorism - To threaten violence or death while displaying probable ability and intent to enact it as a means to manipulate others into action or inaction.
+  - Kidnapping - To unlawfully restrain or deprive the free movement of a sophont.
+
+## Grand Felony - 15 minutes
+
+  - Black marketeering - To purchase or sell controlled items, or mass produce them with the intent to trade.
+  - Sabotage - To render station critical infrastructure or systems inoperable.
+  - Abuse of power - To intentionally misuse or wrongfully exercise one's own authority, influence, or control resulting in harm, unjust treatment, or demonstrable loss to another entity.
+  - Breach of custody - To escape the custody of station law enforcement while serving a legal sentence.
+  - Murder - To willfully and maliciously cause the death of a sophont.
+
+## Felony - 8 minutes
+
+  - Rioting - To engage in disruptive protest and refuse to disperse.
+  - Manslaughter - To directly or indirectly cause the unintentional death of a sophont.
+  - Endangerment - To risk harm or death to another sophont through malpractice, action, or inaction where preventing it would not bring harm to oneself.
+  - Grand theft - To deprive a sophont of any controlled item or a large part of their possessions.
+  - Obstruction of justice - To wilfully disobey, interfere with, or refuse a lawful decree of law enforcement.
+  - False report - To wilfully and maliciously tell an untruth either in court or in the process of making a report to law enforcement.
+  - Identity theft - To maliciously assume the identity of a sophont, such as through writing, attire, or identification card, with the intention to mislead another sophont.
+
+## Misdemeanor - 4 minutes
+
+  - Theft - To take an item belonging to another sophont.
+  - Assault - To inflict direct physical harm upon another sophont.
+  - Vandalism - To steal or damage public station property, or property belonging to another sophont.
+  - Harassment - Repeated verbally or physically disruptive behavior directed towards an individual or group.
+  - Animal cruelty - To inflict unnecessary suffering on a sapient being with malicious intent.
+  - Trespass - To enter into an area where one is not authorized or invited.
+  - Hooliganism - To intentionally and maliciously engage in disruptive conduct in which one refuses to cease.
+
+## Article of Rights
+
+  Any sophont is entitled to the following rights:
+    1. Right to sustenance: Any sophont may not be deprived of essential sustenance, including food, water, or other needs for basic survival.
+    2. Right to medical aid: Any sophont may not be deprived of medical aid necessary to survive, provided it is available.
+    3. Freedom of movement: If there is not a risk of harm to self or others, or of escape from legal detention, a sophont should not be restrained.
+    4. Right to legal counsel: Any sophont may not be denied the right to legal counsel, provided one is available, even in custody.
+
+# Controlled items
+
+  Unlike most other servers, in Quantum Blue you will not see contraband indicators when examining items. Instead, we have a list of definitions for contraband and controlled items for players to interpret. This is done for immersion and roleplay, as well as to give attorneys a real purpose.
+
+  Controlled items are dangerous or restricted items whose use on stations should be monitored carefully and may be authorized for use by select groups or individuals. Possession of these items without a license is a crime, with varying prison times depending on the severity and risk of the item.
+
+  Only relevant, mindshielded department heads may approve or hand out licenses to controlled items.
+
+  Note that any items found within a given job's workplace at the start of their shift, granted that an individual's authorized identification card has clearance to access that item, are by default assumed licensed to carry and use such items to do their job. Additionally, tools and equipment located within emergency lockers are not considered controlled items.
+
+## Contraband technology
+
+  Below is a list of types of controlled technologies and the department heads responsible for their licensing:
+
+  - Nuclear materials, weapons, and technology (Head of Security).
+  - Cloaking, chameleon, and IFF-inhibiting technology (Head of Security).
+  - Telecommunication or signal jamming technology (Chief Engineer).
+  - Powered or cryptographic equipment designed for the electronic or mechanical bypass of secure-access systems (Chief Engineer).
+  - Hypodermic spray tools and injectors (Chief Medical Officer).
+  - Bluespace materials, alloy, or technology (Research Director).
+  - Teleportation and portal technology (Research Director).
+
+  Additionally, any equipment technology providing insight into the development, production, or procurement of a controlled item is also controlled in and of itself.
+
+## Chemicals
+
+  The Chief Medical Officer is authorized to write prescriptions as medically necessary, as well as licenses for the use of controlled substances as necessary.
+
+  [color=#ffDD00]Class I[/color] - Class I Chemicals may not be authorized, and are to be securely stored or destroyed where possible, and incur a criminal possession charge of 20 minutes.
+    - Romerol, or any other viral contaminants.
+    - Lexorin, or other rapid-acting poisons or venoms.
+
+ [color=#ffDD00]Class II[/color] - Class II Chemicals may be licensed for specific application, incurring a criminal possession charge of 10 minutes.
+    - Phlogiston, and other pyrotechnic and/or explosive compounds.
+    - Amatoxin, and other toxic and/or poisonous compounds.
+    - Mindbreaker toxin and Cryptobiolin.
+    - Nocturine, and similar sedatives.
+
+  [color=#ffDD00]Class III[/color] - Class III Chemicals may be prescribed for therapeutic use as found appropriate, incurring a criminal possession charge of 5 minutes.
+    - Desoxyephedrine and similar stimulants.
+    - Any psychoactives used to aid in mental well-being.
+
+## Armaments
+
+  Possession may be charged for each separate and distinct weapon, with varying times depending on severity, with a time maximum of stacking possessions per category.
+
+  [color=#ffDD00]Category A[/color] - 2 minutes, max. 8 minutes.
+    - Any object or instrument specifically designed, adapted, or used to cause physical harm in close combat.
+    - Any object or equipment specifically designed or adapted to protect against physical harm caused by weapons, projectiles, and other forms of direct assault.
+    - Any object or instrument specifically designed or adapted to incapacitate or disorient by using light, sound, or shock without causing permanent injury.
+    - Any object or equipment specifically designed or adapted for explicitly training purposes that would otherwise fall under another category.
+
+  [color=#ffDD00]Category B[/color] - 5 minutes, max. 10 minutes.
+    - Any object or instrument specifically designed or adapted to cause physical harm in close combat, which employs a powered system to enhance performance, or which may slash or pierce the victim.
+    - Any manual action or manually loaded firearms, with either an internal magazine or no magazine at all.
+
+  [color=#ffDD00]Category C[/color] - 10 minutes, max. 15 minutes.
+    - Any manually-operated ballistic arms that use an external magazine or feeding mechanism.
+    - Any semi-automatic ballistic arms that are easily concealed within a pocket or coat.
+    - Any object or instrument specifically designed or adapted for explicitly less-lethal or non-lethal purposes that would otherwise not fall under another category.
+
+  [color=#ffDD00]Category D[/color] - 15 minutes, max. 20 minutes.
+    - Any semi-automatic ballistic arms that are not easily concealable.
+    - Any fully-automatic ballistic arms.
+    - Any laser, plasma, or energy-based arms, including those designed or intended for use in melee combat.
+    - Any object or device specifically designed or adapted to cause physical harm through detonation of an explosive charge.
+    - Any object or equipment specifically designed or adapted to protect against both a space environment and physical harm caused by weapons, projectiles or other forms of direct assault.
+
+  [color=#ffDD00]Category E[/color] - 20 minutes. No stacking.
+    - Any emplaced weapon, such as an automated or manual turret.
+    - Any object or instrument specifically designed or adapted to launch large-caliber explosives or projectiles for offensive or defensive purposes.
+    - Any object or instrument specifically designed or adapted to employ chemical, biological, esoteric, radiological or nuclear hazards for offensive or defensive purposes.
+
+## Licenses
+
+  Any individual requiring a controlled item in the course of their job or for regular function may request a document of authorization or license from the relevant departmental head. The HoS or Warden may license weapons and armor, the CMO may license chemicals, and the CE, RD, or other relevant department head may license most other items.
+
+  A license must have an itemized list of the approved controlled items, the name and position of the holder, and a signed and stamped statement by the authorizing party.
+
+  Should the holder commit crimes through the use of such authorized items, the authorizing party may be found guilty of accessory to said crimes, in addition to endangerment and abuse of power, where applicable. The Commanding Officer is also authorized to supervise the approval and revocation of documentation as they see fit.
+
+  [color=#ff0000]If you have any questions or concerns, please ask an admin via the AHelp (F1) chat.[/color]
+</Document>

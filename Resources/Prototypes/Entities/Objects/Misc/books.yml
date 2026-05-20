@@ -402,7 +402,7 @@
       color: "#f7d61a"
   - type: GuideHelp
     guides:
-    - SpaceLaw
+    - QuantumBlueSpaceLaw # QB
 
 - type: entity
   parent: BookBase

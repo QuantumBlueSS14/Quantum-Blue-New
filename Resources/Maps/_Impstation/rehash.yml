@@ -47042,77 +47042,77 @@ entities:
     - type: Transform
       pos: 26.42476,-34.325237
       parent: 2
-- proto: ClothingMaskClownBanana
+- proto: ClothingMaskClown
   entities:
   - uid: 6589
     components:
     - type: Transform
       pos: 3.5,-35.5
       parent: 2
-- proto: ClothingMaskClownCaptain
+- proto: ClothingMaskClown
   entities:
   - uid: 6590
     components:
     - type: Transform
       pos: 4.5,-35.5
       parent: 2
-- proto: ClothingMaskClownCargo
+- proto: ClothingMaskClown
   entities:
   - uid: 6591
     components:
     - type: Transform
       pos: 10.5,-37.5
       parent: 2
-- proto: ClothingMaskClownChaplain
+- proto: ClothingMaskClown
   entities:
   - uid: 6592
     components:
     - type: Transform
       pos: 10.5,-35.5
       parent: 2
-- proto: ClothingMaskClownEngineer
+- proto: ClothingMaskClown
   entities:
   - uid: 6593
     components:
     - type: Transform
       pos: 11.5,-35.5
       parent: 2
-- proto: ClothingMaskClownMedical
+- proto: ClothingMaskClown
   entities:
   - uid: 6594
     components:
     - type: Transform
       pos: 9.5,-35.5
       parent: 2
-- proto: ClothingMaskClownNose
+- proto: ClothingMaskClown
   entities:
   - uid: 6595
     components:
     - type: Transform
       pos: 19.486355,-34.351833
       parent: 2
-- proto: ClothingMaskClownRobotics
+- proto: ClothingMaskClown
   entities:
   - uid: 6596
     components:
     - type: Transform
       pos: 2.518107,-37.536633
       parent: 2
-- proto: ClothingMaskClownScience
+- proto: ClothingMaskClown
   entities:
   - uid: 6597
     components:
     - type: Transform
       pos: 3.549357,-37.536633
       parent: 2
-- proto: ClothingMaskClownSecurity
+- proto: ClothingMaskClown
   entities:
   - uid: 6598
     components:
     - type: Transform
       pos: 9.5,-37.5
       parent: 2
-- proto: ClothingMaskClownService
+- proto: ClothingMaskClown
   entities:
   - uid: 6599
     components:
@@ -66360,7 +66360,7 @@ entities:
     - type: Transform
       pos: 12.014372,-42.407055
       parent: 2
-- proto: FoodPizzaLemoSlice
+- proto: FoodPizzaMeatSlice
   entities:
   - uid: 7729
     components:

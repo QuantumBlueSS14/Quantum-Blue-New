@@ -1,0 +1,88 @@
+<Document>
+# Nanotrasen’s Expanded Guide to Station Security
+Congratulations! You are one of the lucky few who has successfully passed through Security Academy and has entered their probationary Cadet Role! In addition to excellent benefits and executive support, you will enjoy a rich career that will take you to see the stars! We trust that you have familiarised yourself with Nanotrasen Space Law during your time at Security Academy. While much of that information is most used by your Warden and Head of Security, it is still important to be able to refer to the common crimes on the list to know what to respond to, to be familiar with what is or is not contraband, and to ALWAYS remember the rights of your prisoners!
+
+But, you must be aware that there is more to being a Security Officer than your Space Law examinations have prepared you for! Allow us to take you through your new job, step by step!
+
+# Getting Started
+As a Security Officer, it’s important to familiarise yourself with your gear and equipment. Most cadets and officers are only permitted to take so much of their equipment off-station, so before you begin your patrols it’s important to ensure that you have the proper gear and know how to use it!
+
+First and Foremost, remember that your Standard Issue Combat Boots come with a built-in holster that will always hold a Combat Knife! This knife will be a very useful tool during your time as an officer, but do not forget that your boots may holster Small Arms such as a pistol or disabler as well, if you so choose to do so.
+
+## Non-Lethal Apprehension Weapons
+  <Box>
+    <GuideEntityEmbed Entity="Stunbaton" Caption="Stun Baton"/>
+    <GuideEntityEmbed Entity="WeaponDisabler" Caption="Disabler"/>
+    <GuideEntityEmbed Entity="Flash" Caption="Flash"/>
+    <GuideEntityEmbed Entity="TearGasGrenade" Caption="Tear Gas Grenade"/>
+  </Box>
+
+Each officer comes equipped with their own Stun Baton (patent pending), and may sometimes carry a Disabler on their person. They may also carry a Flash, Flash Bangs, and Tear Gas Grenades!
+
+Before using a Stun Baton, you must ensure that it is turned on! Our Stun Batons, while active, will theoretically cause no harm to the recipient, but if they are without charge or turned off, are no better than hitting your suspects with a metal rod! Please ensure your equipment is properly turned on.
+
+Disablers are also useful in a pinch, and can allow you to disable perpetrators without causing any injuries!
+
+With all electronic equipment, you will want to ensure they are at a full charge so you may be ready in the event of any situation! After using any of your non-lethal tools, ensure you give them a full charge at any Charging Station installed at your Security Department.
+
+Your Flash will allow you to de-escalate almost any violent situation you find yourself encountering, allowing all present persons a chance to calm down and collect their bearings! Flash Bangs and Tear Gas Grenades will as well allow you to do so, but are more risky to use. Ensure you follow appropriate safety precautions, and check your angles when throwing any Non-Lethal Explosive Devices. Your standard equipment will not protect you from the effects of Tear Gas, so if you feel like your eyes are falling out of your sockets after deploying one do not worry!
+
+## Other Tools and Equipment
+
+  <Box>
+    <GuideEntityEmbed Entity="Handcuffs" Caption="Handcuffs"/>
+    <GuideEntityEmbed Entity="FlashlightSeclite" Caption="Seclite"/>
+    <GuideEntityEmbed Entity="SecurityWhistle" Caption="Whistle"/>
+  </Box>
+
+	In addition to your non-lethal implements, all officers are permitted to carry Handcuffs for arresting, a Seclite (Security Flashlight), and a Whistle! These latter two pieces of equipment are not issued at Central Command and must be picked up at your assigned Security Department.
+
+	Your Specialized Security Whistle is guaranteed to garner the attention of any and all persons in your immediate vicinity! Officers are encouraged to use these to gain the attention of perpetrators to Stop, Look, and Listen™. If a perpetrator runs before listening to you, or does not cease their current activity, begin a pursuit in the event of the former and grant them one last chance to pay attention to you in the latter before you proceed to apprehend the suspect.
+
+## Lethal Implements
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponPistolMk58" Caption="MK 58 Service Pistol"/>
+    <GuideEntityEmbed Entity="MagazinePistol" Caption=".35 auto Pistol Magazine"/>
+    <GuideEntityEmbed Entity="CombatKnife" Caption="Combat Knife"/>
+  </Box>
+
+	Each Officer and Cadet comes equipped with one (1) Mk 58 Service Pistol, a spare magazine, and a Combat Knife in their boots. Cadets are encouraged to remember that their Mk. 58 Service Pistol is only to be used in the events of emergencies. Your Combat Knife will serve excellently for dealing with any Pests or Creatures that may stow away on our Arrivals Shuttles and crawl through our vents. Your non-lethal equipment should be used first and foremost to apprehend any suspect, including violent ones! If all goes well, you should never have to use your pistol at all!
+
+	In the event of an emergency, a Code Red Alert will be issued and all Security Officers will be permitted to use any lethal implements at their disposal to deal with the situation at hand. If you have any questions, do not hesitate to ask your superior officers!
+
+
+# Alerts and their Meanings
+	As an officer, it’s important to know the various levels of alert a station may be under, and be prepared to act accordingly under their special circumstances.
+
+    Check the page for [textlink="Alert Procedure" link="QuantumBlueAlertProcedure"] for more information!
+
+# Searching a Crew Member
+In order to conduct a proper search, you must investigate all of their belongings, and put them down next to you once you have done so instead of returning them to the prisoner. Be absolutely sure you have:
+- Searched their backpack
+- Searched any belt
+- Searched their pockets
+- Searched the pockets in their jacket or coat, if any
+- Searched their boots, if any
+- Searched a large hat, if any
+
+    <Box>
+    <GuideEntityEmbed Entity="ClothingBackpack" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingBeltUtility" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingOuterCoatTrench" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingShoesBootsCombat" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingHeadHatMagician" Caption=""/>
+  </Box>
+
+Once a search is complete, return their items to them if done so in a public area. If done in the Security Department, ensure their belongings are organised and kept in one place so that any items that are not contraband and confiscated will not be lost and may be retrieved by the prisoner upon their release.
+
+If a PDA is found to contain malicious software not approved by Nanotrasen, eject their Identification and confiscate the PDA. Your local Head of Personnel, or commanding officer, will then issue them a new PDA.
+
+
+# Arresting and Processing Perpetrators
+
+    You will want to thoroughly read through [textlink="Space Law" link="QuantumBlueAlertSpaceLaw"], as well as the Security clauses in [textlink="Standard Operating Procedure" link="QuantumBlueStandardOperatingProcedure"] for more information on arrest and processing procedures.
+
+# Final Notes
+Nanotrasen is proud to hire employees from all sorts of amazing and diverse backgrounds and places! Many of these employees may exhibit medical conditions or special qualities different from your own, and you must be conscious of these differences and treat them equitably! Seeing a crew member convulsing and vomiting on the ground can very well be due to their own unique medical condition and does not make them some sort of Shape-Shifting Crew-Devouring Monster! Offer those crew members medical assistance, and do not treat people as monsters unless you absolutely know for sure they are one!
+</Document>

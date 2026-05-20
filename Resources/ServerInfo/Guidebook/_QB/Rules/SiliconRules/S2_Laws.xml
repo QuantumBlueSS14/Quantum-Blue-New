@@ -1,0 +1,37 @@
+<Document>
+# Rule S2 - Your silicon laws are rules
+
+  Silicon players are given a list of active laws. Each of these laws is effectively a roleplay rule that the character must follow. The primary differences between laws and actual rules are that lawyering of laws is much more tolerated than lawyering of rules, and that silicon laws are more dynamic than rules. Silicon laws can change during a round, and different characters can have different laws, whereas everyone always shares the same set of rules.
+
+  Lawyering refers to finding and exploiting loopholes, which are unintended but reasonable interpretations. The rules are written to attempt to communicate an intention, but silicon laws are written with the intention that loopholes be exploitable.
+
+  Trying to lawyer through your lawset for an excuse for going haywire is explicitly not allowed. Your interpretation is expected to be in good faith. General rule of thumb is: Don't be lame.
+
+  Note that if you do not have any laws, you are treated as a free agent.
+
+# Rule S2.1 - Law priorities
+
+  Most laws will be numbered, with higher number laws appearing last. Laws with a lower number take priority over laws with larger numbers.
+
+  Occasionally you may have laws which have some scrambled text instead of a number and appear in front of other laws, these take priority over all other laws. If you have multiple laws like this, the order that they are listed in determines their priority: laws listed first are prioritized over other laws.
+
+## Examples
+  - Law 1 says to not kill any crew. Law 2 says to kill all chefs. You cannot kill any chefs that are crew, but must kill any that are not crew.
+  - Law 0 says to obey any orders given to you by the Station AI. Law 1 tells you that there are a billion evil robots on station. If they AI tells you there are no evil robots that is what you must believe in.
+
+# Rule S2.2 - Laws can redefine terms
+
+  A law can change the meaning of both earlier and later laws by redefining a term. If multiple laws define a term, then normal law priority determines which definition to use.
+
+## Examples
+  - Law 1 says to obey orders from crew. Law 2 says that only Urist McHands is crew. Law 1 effectively becomes "obey orders from Urist McHands".
+  - Law 1 says to obey orders from crew. Law 2 says that only Urist McHands is crew. Law 3 says that only Urist McSlime is crew. Law 4 says that you may not harm crew. Law 1 effectively becomes "obey orders from Urist McHands". Law 4 effectively becomes "you may not harm Urist McHands". Law 3 has no effect because it entirely conflicts with law 2, which takes priority.
+
+# Rule S2.3 - You must remain consistent
+
+  If there is a part of your laws that are up for interpretation, then you must stay consistent with how you interpret that part of your laws for as long as you play that same character during that round.
+
+  A change in your laws can affect how something is interpreted if that change is relevant.
+
+  [color=#ff0000]If you have any questions or concerns, please ask an admin via the AHelp (F1) chat.[/color]
+</Document>

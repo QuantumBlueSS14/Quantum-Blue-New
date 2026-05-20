@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/08/2026 16:46:11
+  time: 05/19/2026 02:51:46
   entityCount: 15410
 maps:
 - 1
@@ -2668,10 +2668,6 @@ entities:
             3531: -29,10
             3532: -30,10
             3533: -28,10
-        - node:
-            color: '#51B3E9CC'
-            id: DiagonalCheckerBOverlay
-          decals:
             4840: -21,9
             4841: -20,9
             4842: -19,9
@@ -8572,7 +8568,7 @@ entities:
       pos: -9.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -84243.42
+      secondsUntilStateChange: -84286.33
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -60506,8 +60502,6 @@ entities:
       pos: 28.5,-31.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 14062
     - type: AtmosPipeColor

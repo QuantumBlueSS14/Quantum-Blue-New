@@ -76355,13 +76355,6 @@ entities:
     - type: Transform
       pos: -41.421516,28.723614
       parent: 1
-- proto: FoodPizzaLemo
-  entities:
-  - uid: 6262
-    components:
-    - type: Transform
-      pos: -49.49632,12.747842
-      parent: 1
 - proto: FoodPlate
   entities:
   - uid: 19721

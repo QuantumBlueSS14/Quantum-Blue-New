@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Map
+  category: Grid
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/12/2026 18:43:27
-  entityCount: 662
-maps:
-- 82
+  time: 05/19/2026 03:19:32
+  entityCount: 661
+maps: []
 grids:
 - 617
-orphans: []
+orphans:
+- 617
 nullspace: []
 tilemap:
   0: Space
@@ -33,22 +33,12 @@ tilemap:
 entities:
 - proto: ""
   entities:
-  - uid: 82
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
   - uid: 617
     components:
     - type: MetaData
     - type: Transform
       pos: 0.5416667,0.4426683
-      parent: 82
+      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:

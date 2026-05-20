@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/07/2026 09:47:37
+  time: 05/19/2026 02:47:52
   entityCount: 4496
 maps:
 - 1
@@ -504,10 +504,6 @@ entities:
           decals:
             733: 5,16
             734: 5,14
-        - node:
-            color: '#9FED58CD'
-            id: BrickTileWhiteInnerNw
-          decals:
             896: 3,5
             908: 0,1
         - node:
@@ -658,10 +654,6 @@ entities:
           decals:
             735: 5,16
             736: 5,14
-        - node:
-            color: '#9FED58CD'
-            id: BrickTileWhiteInnerSw
-          decals:
             884: 9,3
             906: -3,3
             907: 0,3
@@ -1028,10 +1020,6 @@ entities:
             730: 5,12
             731: 5,11
             732: 5,10
-        - node:
-            color: '#9FED58CD'
-            id: BrickTileWhiteLineW
-          decals:
             910: -1,0
             911: -1,-1
             912: -1,-2
@@ -1872,14 +1860,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -0.5,-12.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2629
-      - 2626
-      - 2627
-      - 2628
-      - 480
-      - 511
     - type: Fixtures
       fixtures: {}
   - uid: 1435
@@ -1888,16 +1868,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -7.5,-1.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2531
-      - 1982
-      - 2331
-      - 2461
-      - 4491
-      - 2640
-      - 1973
-      - 1983
     - type: Fixtures
       fixtures: {}
   - uid: 1454
@@ -1906,18 +1876,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 27.5,12.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2098
-      - 2330
-      - 4496
-      - 2100
-      - 655
-      - 2332
-      - 2080
-      - 2667
-      - 2668
-      - 1246
     - type: Fixtures
       fixtures: {}
   - uid: 1465
@@ -1926,12 +1884,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 18.5,-6.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 4232
-      - 3904
-      - 797
-      - 1492
     - type: Fixtures
       fixtures: {}
   - uid: 2579
@@ -1940,18 +1892,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-4.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 274
-      - 275
-      - 2624
-      - 2625
-      - 2629
-      - 2628
-      - 2627
-      - 2626
-      - 4198
-      - 4204
     - type: Fixtures
       fixtures: {}
   - uid: 2581
@@ -1960,12 +1900,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-0.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 570
-      - 2606
-      - 2643
-      - 2267
     - type: Fixtures
       fixtures: {}
   - uid: 2582
@@ -1973,11 +1907,6 @@ entities:
     - type: Transform
       pos: -7.5,9.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2017
-      - 2299
-      - 2639
     - type: Fixtures
       fixtures: {}
   - uid: 2583
@@ -1985,25 +1914,6 @@ entities:
     - type: Transform
       pos: -3.5,6.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2622
-      - 2621
-      - 2292
-      - 2532
-      - 2018
-      - 2623
-      - 2610
-      - 2609
-      - 2608
-      - 2641
-      - 2642
-      - 2637
-      - 2638
-      - 1460
-      - 2646
-      - 1461
-      - 1541
     - type: Fixtures
       fixtures: {}
   - uid: 2584
@@ -2011,12 +1921,6 @@ entities:
     - type: Transform
       pos: -9.5,6.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2622
-      - 2621
-      - 2016
-      - 4490
     - type: Fixtures
       fixtures: {}
   - uid: 2590
@@ -2024,12 +1928,6 @@ entities:
     - type: Transform
       pos: 9.5,10.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2649
-      - 2439
-      - 2227
-      - 2648
     - type: Fixtures
       fixtures: {}
   - uid: 2591
@@ -2037,29 +1935,6 @@ entities:
     - type: Transform
       pos: 14.5,5.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 1541
-      - 1461
-      - 2646
-      - 1460
-      - 2615
-      - 2618
-      - 2617
-      - 2616
-      - 2648
-      - 2672
-      - 2671
-      - 2612
-      - 2614
-      - 2613
-      - 2611
-      - 2673
-      - 2675
-      - 2676
-      - 2674
-      - 2443
-      - 2089
     - type: Fixtures
       fixtures: {}
   - uid: 2592
@@ -2068,27 +1943,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 24.5,4.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2613
-      - 2611
-      - 2612
-      - 2614
-      - 2445
-      - 2103
-      - 1246
-      - 2660
-      - 617
-      - 2662
-      - 2661
-      - 4487
-      - 2242
-      - 2686
-      - 2689
-      - 2688
-      - 2687
-      - 2690
-      - 2691
     - type: Fixtures
       fixtures: {}
   - uid: 2593
@@ -2096,16 +1950,6 @@ entities:
     - type: Transform
       pos: 27.5,8.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 655
-      - 2660
-      - 2661
-      - 617
-      - 2662
-      - 3909
-      - 2329
-      - 1253
     - type: Fixtures
       fixtures: {}
   - uid: 2647
@@ -2114,14 +1958,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,7.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2226
-      - 2290
-      - 2623
-      - 2610
-      - 2609
-      - 2608
     - type: Fixtures
       fixtures: {}
   - uid: 2656
@@ -2130,12 +1966,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.5,18.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2619
-      - 2620
-      - 2050
-      - 2487
     - type: Fixtures
       fixtures: {}
   - uid: 2658
@@ -2143,14 +1973,6 @@ entities:
     - type: Transform
       pos: 13.5,16.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2652
-      - 1308
-      - 2407
-      - 2073
-      - 2074
-      - 2657
     - type: Fixtures
       fixtures: {}
   - uid: 2659
@@ -2159,14 +1981,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,16.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2059
-      - 2404
-      - 1308
-      - 2652
-      - 2650
-      - 2651
     - type: Fixtures
       fixtures: {}
   - uid: 2670
@@ -2174,15 +1988,6 @@ entities:
     - type: Transform
       pos: 18.5,10.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2668
-      - 2667
-      - 2657
-      - 2083
-      - 4488
-      - 2671
-      - 2672
     - type: Fixtures
       fixtures: {}
   - uid: 2677
@@ -2191,18 +1996,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 10.5,-0.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2676
-      - 2134
-      - 2452
-      - 2673
-      - 2675
-      - 2636
-      - 2635
-      - 2679
-      - 2680
-      - 2674
     - type: Fixtures
       fixtures: {}
   - uid: 2681
@@ -2210,12 +2003,6 @@ entities:
     - type: Transform
       pos: 16.5,-1.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 4483
-      - 4480
-      - 2353
-      - 4393
     - type: Fixtures
       fixtures: {}
   - uid: 2692
@@ -2223,18 +2010,6 @@ entities:
     - type: Transform
       pos: 14.5,-12.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2720
-      - 2721
-      - 2195
-      - 2493
-      - 2700
-      - 2699
-      - 2698
-      - 2701
-      - 2203
-      - 2504
     - type: Fixtures
       fixtures: {}
   - uid: 2702
@@ -2246,18 +2021,6 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Atmospherics
-    - type: DeviceList
-      devices:
-      - 2237
-      - 2725
-      - 2266
-      - 1571
-      - 2693
-      - 2177
-      - 2703
-      - 2704
-      - 3986
-      - 3984
     - type: Fixtures
       fixtures: {}
   - uid: 2706
@@ -2265,13 +2028,6 @@ entities:
     - type: Transform
       pos: 21.5,-16.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2524
-      - 2705
-      - 2696
-      - 2697
-      - 2191
     - type: Fixtures
       fixtures: {}
   - uid: 2707
@@ -2282,17 +2038,6 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Atmospherics
-    - type: DeviceList
-      devices:
-      - 2511
-      - 2512
-      - 1615
-      - 3997
-      - 2698
-      - 2701
-      - 2700
-      - 2699
-      - 2705
     - type: Fixtures
       fixtures: {}
   - uid: 2708
@@ -2301,9 +2046,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,-21.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2709
     - type: Fixtures
       fixtures: {}
   - uid: 2710
@@ -2311,16 +2053,6 @@ entities:
     - type: Transform
       pos: 28.5,1.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2360
-      - 2233
-      - 2691
-      - 2690
-      - 2704
-      - 2703
-      - 3985
-      - 3987
     - type: Fixtures
       fixtures: {}
   - uid: 2723
@@ -2329,12 +2061,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,13.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2390
-      - 2049
-      - 2653
-      - 2654
     - type: Fixtures
       fixtures: {}
   - uid: 2895
@@ -2343,21 +2069,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.5,12.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2615
-      - 2616
-      - 2617
-      - 2618
-      - 2649
-      - 2434
-      - 2219
-      - 2653
-      - 2654
-      - 2650
-      - 2651
-      - 2619
-      - 2620
     - type: Fixtures
       fixtures: {}
   - uid: 3988
@@ -2365,14 +2076,6 @@ entities:
     - type: Transform
       pos: 31.5,-3.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 3984
-      - 3986
-      - 3987
-      - 3985
-      - 2178
-      - 2453
     - type: Fixtures
       fixtures: {}
   - uid: 4207
@@ -2381,14 +2084,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-13.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2246
-      - 4388
-      - 1945
-      - 2860
-      - 2247
-      - 2717
     - type: Fixtures
       fixtures: {}
   - uid: 4222
@@ -2397,19 +2092,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-7.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2724
-      - 2693
-      - 1571
-      - 4389
-      - 2720
-      - 2721
-      - 2696
-      - 2689
-      - 2688
-      - 4492
-      - 2192
     - type: Fixtures
       fixtures: {}
   - uid: 4254
@@ -2418,9 +2100,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,-25.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2709
     - type: Fixtures
       fixtures: {}
   - uid: 4264
@@ -2429,26 +2108,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,-2.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2531
-      - 1982
-      - 2640
-      - 2272
-      - 1996
-      - 2637
-      - 2641
-      - 2642
-      - 2638
-      - 2625
-      - 2624
-      - 275
-      - 274
-      - 570
-      - 2606
-      - 2331
-      - 2461
-      - 4491
     - type: Fixtures
       fixtures: {}
   - uid: 4431
@@ -2457,14 +2116,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 14.5,-9.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2145
-      - 2352
-      - 4482
-      - 2635
-      - 2636
-      - 3904
     - type: Fixtures
       fixtures: {}
   - uid: 4484
@@ -2472,12 +2123,6 @@ entities:
     - type: Transform
       pos: 19.5,2.5
       parent: 2
-    - type: DeviceList
-      devices:
-      - 2032
-      - 2129
-      - 4481
-      - 4483
     - type: Fixtures
       fixtures: {}
 - proto: AirCanister
@@ -2779,46 +2424,7 @@ entities:
       invokeCounter: 1
     - type: DeviceLinkSource
       linkedPorts:
-        2744:
-        - - DoorStatus
-          - DoorBolt
         2775:
-        - - DoorStatus
-          - DoorBolt
-  - uid: 2743
-    components:
-    - type: Transform
-      pos: 31.5,-16.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-    - type: DeviceLinkSink
-      invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        2744:
-        - - DoorStatus
-          - DoorBolt
-        2775:
-        - - DoorStatus
-          - DoorBolt
-  - uid: 2744
-    components:
-    - type: Transform
-      pos: 29.5,-15.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-    - type: DeviceLinkSink
-      invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        2742:
-        - - DoorStatus
-          - DoorBolt
-        2743:
         - - DoorStatus
           - DoorBolt
   - uid: 2775
@@ -2831,9 +2437,6 @@ entities:
     - type: DeviceLinkSource
       linkedPorts:
         2742:
-        - - DoorStatus
-          - DoorBolt
-        2743:
         - - DoorStatus
           - DoorBolt
   - uid: 2842
@@ -3197,10 +2800,6 @@ entities:
     - type: Transform
       pos: 5.5,-23.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2708
-      - 4254
 - proto: AmeController
   entities:
   - uid: 807
@@ -3984,6 +3583,34 @@ entities:
     components:
     - type: Transform
       pos: 0.66429377,9.789996
+      parent: 2
+- proto: SpawnPointBartender
+  entities:
+  - uid: 900001
+    components:
+    - type: Transform
+      pos: 1.5,9.5
+      parent: 2
+- proto: SpawnPointBotanist
+  entities:
+  - uid: 900002
+    components:
+    - type: Transform
+      pos: -4.5,8.5
+      parent: 2
+- proto: SpawnPointChef
+  entities:
+  - uid: 900003
+    components:
+    - type: Transform
+      pos: -1.5,-0.5
+      parent: 2
+- proto: SpawnPointMusician
+  entities:
+  - uid: 900004
+    components:
+    - type: Transform
+      pos: 2.5,5.5
       parent: 2
 - proto: BookEngineersHandbook
   entities:
@@ -10616,7 +10243,6 @@ entities:
       parent: 757
     - type: Physics
       canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingNeckCloakCe
   entities:
   - uid: 3773
@@ -10625,7 +10251,6 @@ entities:
       parent: 1542
     - type: Physics
       canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingNeckCloakHos
   entities:
   - uid: 4012
@@ -11182,28 +10807,6 @@ entities:
     - type: Transform
       pos: -10.5,0.5
       parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 234.99739
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 231
-          - 218
-          - 215
-          - 189
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: CrateHydroponics
   entities:
   - uid: 586
@@ -12521,16 +12124,6 @@ entities:
     - type: Transform
       pos: 26.5,-9.5
       parent: 2
-  - uid: 1760
-    components:
-    - type: Transform
-      pos: 6.5,-15.5
-      parent: 2
-    - type: UserInterface
-      actors:
-        enum.DisposalUnitUiKey.Key:
-        - invalid
-    - type: ActiveUserInterface
   - uid: 2243
     components:
     - type: Transform
@@ -12835,27 +12428,18 @@ entities:
       pos: 8.5,15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
-      - 2895
   - uid: 2651
     components:
     - type: Transform
       pos: 8.5,14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
-      - 2895
   - uid: 2657
     components:
     - type: Transform
       pos: 17.5,10.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2658
-      - 2670
   - uid: 2690
     components:
     - type: Transform
@@ -12863,52 +12447,36 @@ entities:
       pos: 24.5,-3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
-      - 2710
   - uid: 2693
     components:
     - type: Transform
       pos: 25.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
-      - 4222
   - uid: 2705
     components:
     - type: Transform
       pos: 19.5,-18.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2706
-      - 2707
   - uid: 3904
     components:
     - type: Transform
       pos: 18.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1465
-      - 4431
   - uid: 3997
     components:
     - type: Transform
       pos: 16.5,-21.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
   - uid: 4232
     components:
     - type: Transform
       pos: 19.5,-9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1465
 - proto: FirelockEdge
   entities:
   - uid: 274
@@ -12918,9 +12486,6 @@ entities:
       pos: 0.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
-      - 4264
   - uid: 275
     components:
     - type: Transform
@@ -12928,9 +12493,6 @@ entities:
       pos: 1.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
-      - 4264
   - uid: 617
     components:
     - type: Transform
@@ -12938,18 +12500,12 @@ entities:
       pos: 25.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
-      - 2592
   - uid: 1246
     components:
     - type: Transform
       pos: 21.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
-      - 2592
   - uid: 1460
     components:
     - type: Transform
@@ -12957,9 +12513,6 @@ entities:
       pos: 3.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 2591
   - uid: 1461
     components:
     - type: Transform
@@ -12967,9 +12520,6 @@ entities:
       pos: 5.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 2591
   - uid: 1541
     components:
     - type: Transform
@@ -12977,21 +12527,6 @@ entities:
       pos: 5.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 2591
-  - uid: 1571
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 25.5,-10.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 2702
-      - 4222
   - uid: 2266
     components:
     - type: Transform
@@ -12999,8 +12534,6 @@ entities:
       pos: 26.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
   - uid: 2331
     components:
     - type: Transform
@@ -13008,9 +12541,6 @@ entities:
       pos: -1.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
   - uid: 2461
     components:
     - type: Transform
@@ -13018,9 +12548,6 @@ entities:
       pos: -1.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
   - uid: 2606
     components:
     - type: Transform
@@ -13028,9 +12555,6 @@ entities:
       pos: 2.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2581
-      - 4264
   - uid: 2608
     components:
     - type: Transform
@@ -13038,9 +12562,6 @@ entities:
       pos: 1.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
-      - 2583
   - uid: 2609
     components:
     - type: Transform
@@ -13048,9 +12569,6 @@ entities:
       pos: 0.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
-      - 2583
   - uid: 2610
     components:
     - type: Transform
@@ -13058,9 +12576,6 @@ entities:
       pos: -0.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
-      - 2583
   - uid: 2611
     components:
     - type: Transform
@@ -13068,9 +12583,6 @@ entities:
       pos: 18.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2592
   - uid: 2612
     components:
     - type: Transform
@@ -13078,9 +12590,6 @@ entities:
       pos: 18.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2592
   - uid: 2613
     components:
     - type: Transform
@@ -13088,9 +12597,6 @@ entities:
       pos: 20.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2592
   - uid: 2614
     components:
     - type: Transform
@@ -13098,9 +12604,6 @@ entities:
       pos: 20.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2592
   - uid: 2615
     components:
     - type: Transform
@@ -13108,9 +12611,6 @@ entities:
       pos: 6.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2895
   - uid: 2616
     components:
     - type: Transform
@@ -13118,27 +12618,18 @@ entities:
       pos: 7.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2895
   - uid: 2617
     components:
     - type: Transform
       pos: 7.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2895
   - uid: 2618
     components:
     - type: Transform
       pos: 6.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2895
   - uid: 2619
     components:
     - type: Transform
@@ -13146,18 +12637,12 @@ entities:
       pos: 6.5,16.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2656
-      - 2895
   - uid: 2620
     components:
     - type: Transform
       pos: 6.5,18.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2656
-      - 2895
   - uid: 2621
     components:
     - type: Transform
@@ -13165,9 +12650,6 @@ entities:
       pos: -7.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2584
-      - 2583
   - uid: 2622
     components:
     - type: Transform
@@ -13175,9 +12657,6 @@ entities:
       pos: -9.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2584
-      - 2583
   - uid: 2623
     components:
     - type: Transform
@@ -13185,27 +12664,18 @@ entities:
       pos: -1.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
-      - 2583
   - uid: 2624
     components:
     - type: Transform
       pos: 1.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
-      - 4264
   - uid: 2625
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
-      - 4264
   - uid: 2626
     components:
     - type: Transform
@@ -13213,9 +12683,6 @@ entities:
       pos: 0.5,-9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
-      - 2579
   - uid: 2627
     components:
     - type: Transform
@@ -13223,9 +12690,6 @@ entities:
       pos: -1.5,-9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
-      - 2579
   - uid: 2628
     components:
     - type: Transform
@@ -13233,9 +12697,6 @@ entities:
       pos: -1.5,-11.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
-      - 2579
   - uid: 2629
     components:
     - type: Transform
@@ -13243,9 +12704,6 @@ entities:
       pos: 0.5,-11.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
-      - 2579
   - uid: 2635
     components:
     - type: Transform
@@ -13253,9 +12711,6 @@ entities:
       pos: 14.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4431
-      - 2677
   - uid: 2636
     components:
     - type: Transform
@@ -13263,9 +12718,6 @@ entities:
       pos: 13.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4431
-      - 2677
   - uid: 2637
     components:
     - type: Transform
@@ -13273,9 +12725,6 @@ entities:
       pos: 0.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 4264
   - uid: 2638
     components:
     - type: Transform
@@ -13283,27 +12732,18 @@ entities:
       pos: 1.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 4264
   - uid: 2641
     components:
     - type: Transform
       pos: 0.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 4264
   - uid: 2642
     components:
     - type: Transform
       pos: 1.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 4264
   - uid: 2646
     components:
     - type: Transform
@@ -13311,9 +12751,6 @@ entities:
       pos: 3.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
-      - 2591
   - uid: 2660
     components:
     - type: Transform
@@ -13321,9 +12758,6 @@ entities:
       pos: 23.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
-      - 2592
   - uid: 2661
     components:
     - type: Transform
@@ -13331,9 +12765,6 @@ entities:
       pos: 23.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
-      - 2592
   - uid: 2662
     components:
     - type: Transform
@@ -13341,9 +12772,6 @@ entities:
       pos: 25.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
-      - 2592
   - uid: 2667
     components:
     - type: Transform
@@ -13351,9 +12779,6 @@ entities:
       pos: 20.5,9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
-      - 2670
   - uid: 2668
     components:
     - type: Transform
@@ -13361,27 +12786,18 @@ entities:
       pos: 18.5,9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
-      - 2670
   - uid: 2673
     components:
     - type: Transform
       pos: 14.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2677
   - uid: 2674
     components:
     - type: Transform
       pos: 13.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2677
   - uid: 2675
     components:
     - type: Transform
@@ -13389,9 +12805,6 @@ entities:
       pos: 14.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2677
   - uid: 2676
     components:
     - type: Transform
@@ -13399,41 +12812,30 @@ entities:
       pos: 13.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
-      - 2677
   - uid: 2679
     components:
     - type: Transform
       pos: 14.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2677
   - uid: 2680
     components:
     - type: Transform
       pos: 13.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2677
   - uid: 2686
     components:
     - type: Transform
       pos: 22.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
   - uid: 2687
     components:
     - type: Transform
       pos: 23.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
   - uid: 2688
     components:
     - type: Transform
@@ -13441,9 +12843,6 @@ entities:
       pos: 23.5,-6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
-      - 4222
   - uid: 2689
     components:
     - type: Transform
@@ -13451,9 +12850,6 @@ entities:
       pos: 22.5,-6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
-      - 4222
   - uid: 2691
     components:
     - type: Transform
@@ -13461,18 +12857,12 @@ entities:
       pos: 24.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
-      - 2710
   - uid: 2696
     components:
     - type: Transform
       pos: 23.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2706
-      - 4222
   - uid: 2697
     components:
     - type: Transform
@@ -13480,8 +12870,6 @@ entities:
       pos: 23.5,-17.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2706
   - uid: 2698
     components:
     - type: Transform
@@ -13489,9 +12877,6 @@ entities:
       pos: 13.5,-17.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
-      - 2692
   - uid: 2699
     components:
     - type: Transform
@@ -13499,38 +12884,18 @@ entities:
       pos: 16.5,-17.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
-      - 2692
   - uid: 2700
     components:
     - type: Transform
       pos: 16.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
-      - 2692
   - uid: 2701
     components:
     - type: Transform
       pos: 13.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
-      - 2692
-  - uid: 2717
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,-14.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 4207
   - uid: 2726
     components:
     - type: Transform
@@ -13550,9 +12915,6 @@ entities:
       pos: 31.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
-      - 2702
   - uid: 3985
     components:
     - type: Transform
@@ -13560,9 +12922,6 @@ entities:
       pos: 31.5,-5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
-      - 2710
   - uid: 3986
     components:
     - type: Transform
@@ -13570,9 +12929,6 @@ entities:
       pos: 29.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
-      - 2702
   - uid: 3987
     components:
     - type: Transform
@@ -13580,9 +12936,6 @@ entities:
       pos: 29.5,-5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
-      - 2710
   - uid: 4389
     components:
     - type: Transform
@@ -13590,16 +12943,12 @@ entities:
       pos: 24.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4222
   - uid: 4480
     components:
     - type: Transform
       pos: 18.5,-1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2681
   - uid: 4481
     components:
     - type: Transform
@@ -13607,8 +12956,6 @@ entities:
       pos: 18.5,-1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4484
   - uid: 4491
     components:
     - type: Transform
@@ -13616,9 +12963,6 @@ entities:
       pos: -1.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
 - proto: FirelockGlass
   entities:
   - uid: 570
@@ -13627,129 +12971,72 @@ entities:
       pos: 2.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2581
-      - 4264
   - uid: 655
     components:
     - type: Transform
       pos: 26.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
-      - 2593
   - uid: 1308
     components:
     - type: Transform
       pos: 11.5,15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
-      - 2658
   - uid: 2639
     components:
     - type: Transform
       pos: -6.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2582
   - uid: 2640
     components:
     - type: Transform
       pos: -2.5,2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
   - uid: 2648
     components:
     - type: Transform
       pos: 10.5,6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2590
-      - 2591
   - uid: 2649
     components:
     - type: Transform
       pos: 8.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2590
-      - 2895
   - uid: 2652
     components:
     - type: Transform
       pos: 11.5,14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
-      - 2658
-  - uid: 2653
-    components:
-    - type: Transform
-      pos: 4.5,14.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 2723
-      - 2895
-  - uid: 2654
-    components:
-    - type: Transform
-      pos: 4.5,16.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 2723
-      - 2895
   - uid: 2671
     components:
     - type: Transform
       pos: 17.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2670
-      - 2591
   - uid: 2672
     components:
     - type: Transform
       pos: 16.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2670
-      - 2591
   - uid: 2703
     components:
     - type: Transform
       pos: 28.5,-6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
-      - 2710
   - uid: 2704
     components:
     - type: Transform
       pos: 27.5,-6.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
-      - 2710
   - uid: 2720
     components:
     - type: Transform
@@ -13757,9 +13044,6 @@ entities:
       pos: 21.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
-      - 4222
   - uid: 2721
     components:
     - type: Transform
@@ -13767,19 +13051,6 @@ entities:
       pos: 21.5,-14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
-      - 4222
-  - uid: 2860
-    components:
-    - type: Transform
-      pos: 3.5,-10.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 4207
   - uid: 4482
     components:
     - type: Transform
@@ -13787,8 +13058,6 @@ entities:
       pos: 15.5,-3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4431
   - uid: 4483
     components:
     - type: Transform
@@ -13796,9 +13065,6 @@ entities:
       pos: 17.5,-1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2681
-      - 4484
 - proto: Fireplace
   entities:
   - uid: 1196
@@ -13902,14 +13168,12 @@ entities:
       parent: 618
     - type: Physics
       canCollide: False
-    - type: InsideEntityStorage
   - uid: 231
     components:
     - type: Transform
       parent: 618
     - type: Physics
       canCollide: False
-    - type: InsideEntityStorage
 - proto: FoodMeatChicken
   entities:
   - uid: 189
@@ -19054,8 +18318,6 @@ entities:
       pos: -1.5,-12.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 576
@@ -19072,8 +18334,6 @@ entities:
       pos: 19.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1465
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 980
@@ -19091,8 +18351,6 @@ entities:
       pos: 25.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 1615
@@ -19102,20 +18360,6 @@ entities:
       pos: 16.5,-20.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 1945
-    components:
-    - type: Transform
-      pos: 6.5,-8.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 4207
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 1982
@@ -19125,9 +18369,6 @@ entities:
       pos: -2.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 1983
@@ -19136,8 +18377,6 @@ entities:
       pos: -9.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1435
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 1984
@@ -19155,8 +18394,6 @@ entities:
       pos: -0.5,-1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2016
@@ -19166,8 +18403,6 @@ entities:
       pos: -9.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2584
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2017
@@ -19176,8 +18411,6 @@ entities:
       pos: -6.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2582
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2018
@@ -19187,8 +18420,6 @@ entities:
       pos: -0.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2049
@@ -19198,8 +18429,6 @@ entities:
       pos: 3.5,14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2723
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2050
@@ -19209,8 +18438,6 @@ entities:
       pos: 5.5,18.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2656
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2059
@@ -19219,8 +18446,6 @@ entities:
       pos: 10.5,18.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2073
@@ -19229,8 +18454,6 @@ entities:
       pos: 17.5,15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2658
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2074
@@ -19239,8 +18462,6 @@ entities:
       pos: 20.5,15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2658
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2080
@@ -19250,8 +18471,6 @@ entities:
       pos: 20.5,9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2083
@@ -19261,8 +18480,6 @@ entities:
       pos: 15.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2670
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2089
@@ -19271,8 +18488,6 @@ entities:
       pos: 8.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2098
@@ -19282,8 +18497,6 @@ entities:
       pos: 28.5,11.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2100
@@ -19292,8 +18505,6 @@ entities:
       pos: 26.5,12.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2103
@@ -19302,8 +18513,6 @@ entities:
       pos: 22.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2129
@@ -19313,8 +18522,6 @@ entities:
       pos: 18.5,-0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4484
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2134
@@ -19324,8 +18531,6 @@ entities:
       pos: 13.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2677
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2136
@@ -19343,8 +18548,6 @@ entities:
       pos: 13.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4431
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2177
@@ -19354,8 +18557,6 @@ entities:
       pos: 27.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2178
@@ -19365,8 +18566,6 @@ entities:
       pos: 31.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2191
@@ -19376,8 +18575,6 @@ entities:
       pos: 23.5,-17.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2706
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2192
@@ -19387,8 +18584,6 @@ entities:
       pos: 24.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4222
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2195
@@ -19397,8 +18592,6 @@ entities:
       pos: 20.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2203
@@ -19408,8 +18601,6 @@ entities:
       pos: 12.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2217
@@ -19427,8 +18618,6 @@ entities:
       pos: 5.5,12.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2895
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2226
@@ -19437,8 +18626,6 @@ entities:
       pos: -1.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2227
@@ -19448,8 +18635,6 @@ entities:
       pos: 9.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2590
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2232
@@ -19466,8 +18651,6 @@ entities:
       pos: 26.5,-1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2710
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2237
@@ -19477,8 +18660,6 @@ entities:
       pos: 28.5,-15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2242
@@ -19488,8 +18669,6 @@ entities:
       pos: 21.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2430
@@ -19507,8 +18686,6 @@ entities:
       pos: 3.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2581
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 2825
@@ -19526,8 +18703,6 @@ entities:
       pos: 2.5,-5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 4388
@@ -19537,8 +18712,6 @@ entities:
       pos: 6.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4207
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 4393
@@ -19548,8 +18721,6 @@ entities:
       pos: 16.5,-3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2681
     - type: AtmosPipeColor
       color: '#0335FCFF'
 - proto: GasVentScrubber
@@ -19561,8 +18732,6 @@ entities:
       pos: -3.5,-10.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1121
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 1492
@@ -19572,8 +18741,6 @@ entities:
       pos: 19.5,-7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1465
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 1973
@@ -19582,8 +18749,6 @@ entities:
       pos: -8.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1435
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 1976
@@ -19601,33 +18766,6 @@ entities:
       pos: 18.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4484
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
-  - uid: 2246
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,-13.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 4207
-    - type: AtmosPipeColor
-      color: '#FFAA00FF'
-  - uid: 2247
-    components:
-    - type: Transform
-      pos: 5.5,-7.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 4207
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2267
@@ -19636,8 +18774,6 @@ entities:
       pos: 5.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2581
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2272
@@ -19647,8 +18783,6 @@ entities:
       pos: 0.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2279
@@ -19664,8 +18798,6 @@ entities:
       pos: 0.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2647
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2292
@@ -19675,8 +18807,6 @@ entities:
       pos: -5.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2299
@@ -19685,8 +18815,6 @@ entities:
       pos: -5.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2582
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2329
@@ -19696,8 +18824,6 @@ entities:
       pos: 27.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2330
@@ -19707,8 +18833,6 @@ entities:
       pos: 28.5,10.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2332
@@ -19718,8 +18842,6 @@ entities:
       pos: 22.5,10.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2352
@@ -19729,8 +18851,6 @@ entities:
       pos: 13.5,-5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4431
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2353
@@ -19740,8 +18860,6 @@ entities:
       pos: 18.5,-3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2681
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2360
@@ -19750,8 +18868,6 @@ entities:
       pos: 27.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2710
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2390
@@ -19761,8 +18877,6 @@ entities:
       pos: 2.5,14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2723
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2404
@@ -19772,8 +18886,6 @@ entities:
       pos: 10.5,17.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2659
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2407
@@ -19783,8 +18895,6 @@ entities:
       pos: 16.5,15.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2658
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2433
@@ -19802,8 +18912,6 @@ entities:
       pos: 6.5,10.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2895
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2439
@@ -19812,8 +18920,6 @@ entities:
       pos: 10.5,8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2590
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2443
@@ -19823,8 +18929,6 @@ entities:
       pos: 9.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2591
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2445
@@ -19833,8 +18937,6 @@ entities:
       pos: 21.5,5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2452
@@ -19843,8 +18945,6 @@ entities:
       pos: 12.5,1.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2677
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2453
@@ -19854,8 +18954,6 @@ entities:
       pos: 31.5,-5.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 3988
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2487
@@ -19865,8 +18963,6 @@ entities:
       pos: 5.5,21.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2656
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2493
@@ -19876,8 +18972,6 @@ entities:
       pos: 19.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2498
@@ -19895,8 +18989,6 @@ entities:
       pos: 13.5,-14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2692
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2511
@@ -19906,8 +18998,6 @@ entities:
       pos: 14.5,-18.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2512
@@ -19917,8 +19007,6 @@ entities:
       pos: 14.5,-21.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2707
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2524
@@ -19928,8 +19016,6 @@ entities:
       pos: 22.5,-19.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2706
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2525
@@ -19946,9 +19032,6 @@ entities:
       pos: -4.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4264
-      - 1435
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2532
@@ -19958,8 +19041,6 @@ entities:
       pos: 0.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2583
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 2724
@@ -19969,8 +19050,6 @@ entities:
       pos: 23.5,-9.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4222
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 2725
@@ -19980,8 +19059,6 @@ entities:
       pos: 28.5,-11.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2702
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 3909
@@ -19991,8 +19068,6 @@ entities:
       pos: 27.5,4.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2593
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 4198
@@ -20002,8 +19077,6 @@ entities:
       pos: 0.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2579
     - type: AtmosPipeColor
       color: '#FFAA00FF'
   - uid: 4485
@@ -20019,8 +19092,6 @@ entities:
       pos: 21.5,0.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2592
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 4488
@@ -20030,8 +19101,6 @@ entities:
       pos: 18.5,7.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2670
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 4490
@@ -20041,8 +19110,6 @@ entities:
       pos: -9.5,3.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 2584
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 4492
@@ -20052,8 +19119,6 @@ entities:
       pos: 24.5,-14.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 4222
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 4496
@@ -20063,8 +19128,6 @@ entities:
       pos: 25.5,13.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1454
     - type: AtmosPipeColor
       color: '#990000FF'
 - proto: GasVolumePump
@@ -21648,13 +20711,6 @@ entities:
     - type: Transform
       pos: 29.5,12.5
       parent: 2
-- proto: HandheldCrewMonitor
-  entities:
-  - uid: 4091
-    components:
-    - type: Transform
-      pos: 21.359238,14.815064
-      parent: 2
 - proto: HandheldGPSBasic
   entities:
   - uid: 4265
@@ -22261,26 +21317,6 @@ entities:
     - type: Transform
       pos: 19.418198,1.2312825
       parent: 2
-    - type: Storage
-      storedItems:
-        2716:
-          position: 0,0
-          _rotation: South
-        3375:
-          position: 1,0
-          _rotation: South
-        3836:
-          position: 2,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2716
-          - 3375
-          - 3836
 - proto: LockableButtonCommand
   entities:
   - uid: 1931
@@ -22399,25 +21435,6 @@ entities:
     - type: Transform
       pos: 11.5,18.5
       parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1507
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerChemistryFilled
   entities:
   - uid: 1566
@@ -22435,25 +21452,6 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - ChiefEngineer
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.8856695
-          Nitrogen: 7.0937095
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 3773
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerCourierFilled
   entities:
   - uid: 1102
@@ -30302,8 +29300,6 @@ entities:
       pos: 30.5,11.5
       parent: 2
     - type: DeviceNetwork
-      deviceLists:
-      - 1736
 - proto: WeaponEnergyTurretSecurityControlPanel
   entities:
   - uid: 1736

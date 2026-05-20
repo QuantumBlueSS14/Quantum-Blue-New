@@ -4,21 +4,18 @@
   text: "/ServerInfo/_Impstation/Guidebook/Mobs/Species.xml" # imp
   children:
   - Arachnid
-  - Anomalocarid #imp
+
   - Allulalo # imp
   - Decapoid # imp
   - Diona
-  - Dwarf
-  - Gastropoid # imp
-  - Gray # imp
   - Human
   - Kodepiia # imp
   - Moth
   - Reptilian
   - SlimePerson # imp
   - Thaven # imp
-  - Ungu # imp
   - Vox
+  - VisitorSpecies
   - Vulpkanin # imp, disabled roundstart
 
 - type: guideEntry

@@ -2590,9 +2590,6 @@ entities:
       parent: 1
     - type: Storage
       storedItems:
-        235:
-          position: 6,2
-          _rotation: South
         234:
           position: 5,0
           _rotation: South
@@ -2626,7 +2623,6 @@ entities:
           - 78
           - 234
           - 79
-          - 235
           - 87
   - uid: 223
     components:
@@ -4370,14 +4366,14 @@ entities:
       parent: 223
     - type: Physics
       canCollide: False
-- proto: PlushieFinfin
-  entities:
-  - uid: 235
-    components:
-    - type: Transform
-      parent: 174
-    - type: Physics
-      canCollide: False
+# - proto: PlushieFinfin
+#   entities:
+#   - uid: 235
+#     components:
+#     - type: Transform
+#       parent: 174
+#     - type: Physics
+#       canCollide: False
 - proto: PlushieGray
   entities:
   - uid: 240
@@ -4394,13 +4390,13 @@ entities:
       parent: 223
     - type: Physics
       canCollide: False
-- proto: PlushieImp
-  entities:
-  - uid: 947
-    components:
-    - type: Transform
-      pos: 9.382807,1.6915674
-      parent: 1
+# - proto: PlushieImp
+#   entities:
+#   - uid: 947
+#     components:
+#     - type: Transform
+#       pos: 9.382807,1.6915674
+#       parent: 1
 - proto: PlushieLizard
   entities:
   - uid: 239

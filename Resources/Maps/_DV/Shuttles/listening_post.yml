@@ -3722,14 +3722,14 @@ entities:
       parent: 223
     - type: Physics
       canCollide: False
-- proto: PlushieFinfin
-  entities:
-  - uid: 235
-    components:
-    - type: Transform
-      parent: 174
-    - type: Physics
-      canCollide: False
+# - proto: PlushieFinfin
+#   entities:
+#   - uid: 235
+#     components:
+#     - type: Transform
+#       parent: 174
+#     - type: Physics
+#       canCollide: False
 - proto: PlushieGray
   entities:
   - uid: 240
@@ -3746,13 +3746,13 @@ entities:
       parent: 223
     - type: Physics
       canCollide: False
-- proto: PlushieImp
-  entities:
-  - uid: 947
-    components:
-    - type: Transform
-      pos: 12.48921,-0.31369972
-      parent: 1
+# - proto: PlushieImp
+#   entities:
+#   - uid: 947
+#     components:
+#     - type: Transform
+#       pos: 12.48921,-0.31369972
+#       parent: 1
 - proto: PlushieLizard
   entities:
   - uid: 239

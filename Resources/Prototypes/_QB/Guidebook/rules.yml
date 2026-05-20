@@ -1,0 +1,165 @@
+- type: guideEntry
+  id: QuantumBlueRuleset
+  name: guide-entry-quantumblue-rules
+  text: "/ServerInfo/Guidebook/_QB/Rules/quantumblueruleset.xml"
+  priority: -2
+  ruleEntry: true
+  children:
+    - QuantumBlueRuleA1
+    - QuantumBlueRuleA2
+    - QuantumBlueRuleA3
+    - QuantumBlueRuleA4
+    - QuantumBlueRuleA5
+    - QuantumBlueRuleB1
+    - QuantumBlueRuleB2
+    - QuantumBlueRuleB3
+    - QuantumBlueRuleB4
+    - QuantumBlueRuleB5
+    - QuantumBlueRuleC1
+    - QuantumBlueRuleC2
+    - QuantumBlueRuleC3
+    - QuantumBlueRuleS1
+    - QuantumBlueRuleS2
+    - QuantumBlueRuleS3
+    - QuantumBlueRuleS4
+    - QuantumBlueSOPandSpaceLaw
+
+# Community rules
+
+- type: guideEntry
+  id: QuantumBlueRuleA1
+  name: guide-entry-quantumblue-rule-a1
+  text: "/ServerInfo/Guidebook/_QB/Rules/CommunityRules/A1_ERP.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleA2
+  name: guide-entry-quantumblue-rule-a2
+  text: "/ServerInfo/Guidebook/_QB/Rules/CommunityRules/A2_Community.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleA3
+  name: guide-entry-quantumblue-rule-a3
+  text: "/ServerInfo/Guidebook/_QB/Rules/CommunityRules/A3_CurrentRounding.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleA4
+  name: guide-entry-quantumblue-rule-a4
+  text: "/ServerInfo/Guidebook/_QB/Rules/CommunityRules/A4_AHelp.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleA5
+  name: guide-entry-quantumblue-rule-a5
+  text: "/ServerInfo/Guidebook/_QB/Rules/CommunityRules/A5_Exploits.xml"
+  ruleEntry: true
+
+# In-game rules
+
+- type: guideEntry
+  id: QuantumBlueRuleB1
+  name: guide-entry-quantumblue-rule-b1
+  text: "/ServerInfo/Guidebook/_QB/Rules/IngameRules/B1_Roleplay.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleB2
+  name: guide-entry-quantumblue-rule-b2
+  text: "/ServerInfo/Guidebook/_QB/Rules/IngameRules/B2_Metashield.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleB3
+  name: guide-entry-quantumblue-rule-b3
+  text: "/ServerInfo/Guidebook/_QB/Rules/IngameRules/B3_Powergaming.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleB4
+  name: guide-entry-quantumblue-rule-b4
+  text: "/ServerInfo/Guidebook/_QB/Rules/IngameRules/B4_Escalation.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleB5
+  name: guide-entry-quantumblue-rule-b5
+  text: "/ServerInfo/Guidebook/_QB/Rules/IngameRules/B5_Self-antag.xml"
+  ruleEntry: true
+
+# Role rules
+
+- type: guideEntry
+  id: QuantumBlueRuleC1
+  name: guide-entry-quantumblue-rule-c1
+  text: "/ServerInfo/Guidebook/_QB/Rules/RoleRules/C1_MindshieldRoles.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleC2
+  name: guide-entry-quantumblue-rule-c2
+  text: "/ServerInfo/Guidebook/_QB/Rules/RoleRules/C2_StationAI.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleC3
+  name: guide-entry-quantumblue-rule-c3
+  text: "/ServerInfo/Guidebook/_QB/Rules/RoleRules/C3_Antagonists.xml"
+  ruleEntry: true
+
+# Silicon rules
+
+- type: guideEntry
+  id: QuantumBlueRuleS1
+  name: guide-entry-quantumblue-rule-s1
+  text: "/ServerInfo/Guidebook/_QB/Rules/SiliconRules/S1_Definitions.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleS2
+  name: guide-entry-quantumblue-rule-s2
+  text: "/ServerInfo/Guidebook/_QB/Rules/SiliconRules/S2_Laws.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleS3
+  name: guide-entry-quantumblue-rule-s3
+  text: "/ServerInfo/Guidebook/_QB/Rules/SiliconRules/S3_SelfPreservation.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueRuleS4
+  name: guide-entry-quantumblue-rule-s4
+  text: "/ServerInfo/Guidebook/_QB/Rules/SiliconRules/S4_UnreasonableOrders.xml"
+  ruleEntry: true
+
+# SOP and Space Law
+
+- type: guideEntry
+  id: QuantumBlueSOPandSpaceLaw
+  name: guide-entry-quantumblue-sopandsplaw
+  text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/introduction.xml"
+  # ruleEntry: true
+  children:
+    - QuantumBlueAlertProcedure
+    - QuantumBlueSpaceLaw
+    - QuantumBlueStandardOperatingProcedure
+
+- type: guideEntry
+  id: QuantumBlueAlertProcedure
+  name: guide-entry-quantumblue-alertprocedure
+  text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/alertprocedure.xml"
+  # ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueSpaceLaw
+  name: guide-entry-quantumblue-spacelaw
+  text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/spacelaw.xml"
+  # ruleEntry: true
+
+- type: guideEntry
+  id: QuantumBlueStandardOperatingProcedure
+  name: guide-entry-quantumblue-standardoperatingprocedure
+  text: "/ServerInfo/Guidebook/_QB/Rules/SOPnSPLaw/sop.xml"
+  # ruleEntry: true
