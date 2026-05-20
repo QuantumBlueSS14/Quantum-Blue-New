@@ -160,14 +160,14 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         component.Lawset?.Laws.Insert(0, new SiliconLaw
         {
             LawString = Loc.GetString("law-emag-custom", ("name", Name(args.user)), ("title", Loc.GetString(component.Lawset.ObeysTo))),
-            Order = 0
+            Order = -2 // Goobstation - AI/borg law changes - borgs obeying AI. DeltaV - Changed from Order = -1  to Order = -2, should be above secrecy emag law
         });
 
         //Add the secrecy law after the others
         component.Lawset?.Laws.Add(new SiliconLaw
         {
             LawString = Loc.GetString("law-emag-secrecy", ("faction", Loc.GetString(component.Lawset.ObeysTo))),
-            Order = component.Lawset.Laws.Max(law => law.Order) + 1
+            Order = -1 //DeltaV: Changed from being after every other law to being after emag obey law
         });
     }
 
