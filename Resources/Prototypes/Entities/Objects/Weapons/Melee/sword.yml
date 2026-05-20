@@ -141,9 +141,12 @@
   - type: Sprite
     sprite: _DV/Objects/Weapons/Melee/katana.rsi #QB - portin delta v katana sheath
   - type: MeleeWeapon
+  # QB - katana sheath - rasing dps
+    attackRate: 1.5
     damage:
       types:
-        Slash: 15
+        Slash: 16 # was 15
+  # end QB
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
@@ -166,6 +169,11 @@
   - type: ThrowingAngle
     angle: 225
   # end imp edits #
+  #QB - porting DV sheath
+  - type: Tag
+    tags:
+    - Katana
+  #end QB
 
 - type: entity
   name: energy katana

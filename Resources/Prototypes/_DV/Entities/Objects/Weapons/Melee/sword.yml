@@ -15,14 +15,15 @@
     sprite: _DV/Objects/Weapons/Melee/wakizashi.rsi
     state: icon
   - type: MeleeWeapon
-    attackRate: 2
+    attackRate: 1.5 # QB - was 2
     damage:
       types:
-        Slash: 12
+        Slash: 10 # QB - was 12
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
+    wideAnimationRotation: -135
   - type: Item
-    size: 10
+    size: Small
     sprite: _DV/Objects/Weapons/Melee/wakizashi.rsi
   - type: Tool
     qualities:

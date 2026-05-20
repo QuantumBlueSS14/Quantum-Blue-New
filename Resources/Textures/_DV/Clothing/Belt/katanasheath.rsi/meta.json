@@ -20,6 +20,12 @@
     },
     {
         "name": "sheath"
+    },
+    {
+      "name": "katana"
+    },
+    {
+      "name": "wakizashi"
     }
   ]
 }
