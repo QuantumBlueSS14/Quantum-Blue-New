@@ -22,7 +22,7 @@
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
-    size: Small
+    size: 10
     sprite: _DV/Objects/Weapons/Melee/wakizashi.rsi
   - type: Tool
     qualities:

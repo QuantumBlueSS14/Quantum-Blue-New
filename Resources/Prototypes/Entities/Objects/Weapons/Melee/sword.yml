@@ -241,11 +241,6 @@
   - type: ThrowingAngle
     angle: 225
   # end imp edits #
-  # QB - katana sheath
-  - type: Tag
-    tags:
-    - Katana
-  # end QB
 
 #Other/Weird
 - type: entity
