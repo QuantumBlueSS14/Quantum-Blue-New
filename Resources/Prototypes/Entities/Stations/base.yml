@@ -152,7 +152,7 @@
           maximumDistance: 350
           nameDataset: NamesBorer
           stationGrid: false
-          addComponents:
+          # addComponents:
           # - type: Gravity # QB comment
           #   enabled: true
           #   inherent: true
