@@ -11,7 +11,7 @@
        !type:String
        pda
   - type: Sprite
-    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
+    sprite: _QB/Objects/Devices/pda.rsi # QB PDA Resprite File Path
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: "pda"
@@ -24,7 +24,7 @@
       shader: "unshaded"
       visible: false
   - type: Icon
-    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
+    sprite: _QB/Objects/Devices/pda.rsi # QB PDA Resprite File Path
     state: pda
   - type: Pda
     paiSlot:
@@ -144,7 +144,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Devices/pda.rsi
+    sprite: _QB/Objects/Devices/pda.rsi #QB
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: "pda"
@@ -443,18 +443,18 @@
   - type: Icon
     state: pda-mime
   - type: Sprite
-    state: "mime-pda"
-    sprite: _Impstation/Objects/Devices/mime_pda.rsi #imp
+    state: "pda-mime"
+    sprite: _QB/Objects/Devices/pda.rsi #QB
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ] #imp for the whole layers section here
-      sprite: _Impstation/Objects/Devices/mime_pda.rsi
+      sprite: _QB/Objects/Devices/pda.rsi #QB
       state: pda-mime
-    - sprite: Objects/Devices/pda.rsi
+    - sprite: _QB/Objects/Devices/pda.rsi #QB
       state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
       visible: false
-    - sprite: Objects/Devices/pda.rsi
+    - sprite: _QB/Objects/Devices/pda.rsi #QB
       state: "id_overlay"
       map: [ "enum.PdaVisualLayers.IdLight" ]
       shader: "unshaded"
@@ -467,8 +467,8 @@
   id: ChaplainPDA
   description: God's chosen PDA.
   components:
-  - type: Sprite # DeltaV - Give Chaplain PDA Epistemics colors
-    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
+  - type: Sprite
+    sprite: _QB/Objects/Devices/pda.rsi # QB PDA Resprite File Path
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: pda-chaplain
@@ -490,7 +490,7 @@
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
-    sprite: _DV/Objects/Devices/pda.rsi # DeltaV aPDA Resprite File Path
+    sprite: _QB/Objects/Devices/pda.rsi # QB PDA Resprite File Path
     state: pda-chaplain
 
 - type: entity
@@ -1648,7 +1648,7 @@
         type: ChameleonBoundUserInterface
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: WizardPDA
   name: wizard PDA
   description: You hear faint whispers coming from it.
@@ -1669,7 +1669,7 @@
   - type: PdaBorderColor
     borderColor: "#7F3300"
   - type: Icon
-    sprite: Objects/Devices/pda.rsi
+    sprite: _QB/Objects/Devices/pda.rsi #QB
     state: pda-wizard
 
 - type: entity

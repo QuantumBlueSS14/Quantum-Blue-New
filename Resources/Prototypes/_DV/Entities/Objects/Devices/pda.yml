@@ -42,9 +42,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-admin-assistant
+        pda-interncommand # QB
   - type: PdaBorderColor
     borderColor: "#4992b4"
   - type: Icon
-    sprite: Objects/Devices/pda.rsi
-    state: pda-admin-assistant
+    sprite: _QB/Objects/Devices/pda.rsi # QB
+    state: pda-interncommand # QB
