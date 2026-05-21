@@ -94,6 +94,8 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Impstation/eclipse.yml", // Contains PTK-800 "Matter Dematerializer", LSE-400c "Svalinn machine gun"
             "/Maps/_Impstation/monarch.yml", // Contains ship cannons
             "/Maps/_DV/chibi.yml", // Contains command toys like the Handheld Crew Monitor
+            "/Maps/_QB/chibi.yml", // Same as above, but for QB
+            "/Maps/_QB/dash.yml", // Contains command toys
 
 
             // Shuttles
@@ -103,7 +105,8 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
             "/Maps/Shuttles/ShuttleEvent/recruiter.yml", // Contains syndicate rubber stamp
             "/Maps/_DV/Shuttles/listening_post.yml", // Contains captain's rubber stamp, chief engineer's rubber stamp, chaplain's rubber stamp, clown's rubber stamp, blablabla you get the picture
-            "/Maps/_Impstation/Shuttles/listening_post.yml" // No, I'm not gonna list out all these stamps again lol
+            "/Maps/_Impstation/Shuttles/listening_post.yml", // No, I'm not gonna list out all these stamps again lol
+            "/Maps/_QB/Shuttles/listening_post.yml" // Same as above but for QB
 
         };
 
@@ -207,6 +210,16 @@ namespace Content.IntegrationTests.Tests
             //"Skimmer",
         };
 
+        private static readonly HashSet<string> EnabledGameMapIds = GameMaps.ToHashSet();
+
+        private static HashSet<ResPath> GetEnabledGameMapPaths(IPrototypeManager protoManager)
+        {
+            return protoManager.EnumeratePrototypes<GameMapPrototype>()
+                .Where(proto => EnabledGameMapIds.Contains(proto.ID))
+                .Select(proto => proto.MapPath)
+                .ToHashSet();
+        }
+
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
 
         /// <summary>
@@ -302,6 +315,7 @@ namespace Content.IntegrationTests.Tests
             var resourceManager = server.ResolveDependency<IResourceManager>();
             var protoManager = server.ResolveDependency<IPrototypeManager>();
             var loader = server.System<MapLoaderSystem>();
+            var enabledGameMapPaths = GetEnabledGameMapPaths(protoManager); // QB add: we only want to test the maps we actually use.
 
             var mapFolder = new ResPath("/Maps");
             var maps = resourceManager
@@ -312,6 +326,9 @@ namespace Content.IntegrationTests.Tests
             var v7Maps = new List<ResPath>();
             foreach (var map in maps)
             {
+                if (!enabledGameMapPaths.Contains(map)) // QB add: skip maps that aren't in the test cases.
+                    continue;
+
                 var rootedPath = map.ToRootedPath();
 
                 // ReSharper disable once RedundantLogicalConditionalExpressionOperand
@@ -607,7 +624,7 @@ namespace Content.IntegrationTests.Tests
             return resultCount;
         }
 
-        [Test, NonParallelizable] // imp nonparallelize for OOM
+        [Test, NonParallelizable, Explicit] // imp nonparallelize for OOM
         public async Task AllMapsTested()
         {
             await using var pair = await PoolManager.GetServerClient();
@@ -626,7 +643,7 @@ namespace Content.IntegrationTests.Tests
             await pair.CleanReturnAsync();
         }
 
-        [Test, NonParallelizable] // imp nonparallelize for OOM
+        [Test, NonParallelizable, Explicit] // imp nonparallelize for OOM, QB add explicit
         public async Task NonGameMapsLoadableTest()
         {
             await using var pair = await PoolManager.GetServerClient();
@@ -648,6 +665,7 @@ namespace Content.IntegrationTests.Tests
                 new("/Maps/amber.yml"),
                 new("/Maps/bagel.yml"),
                 new("/Maps/box.yml"),
+                new("/Maps/_Impstation/box.yml"),
                 new("/Maps/centcomm.yml"),
                 new("/Maps/exo.yml"),
                 new("/Maps/fland.yml"),
@@ -668,7 +686,7 @@ namespace Content.IntegrationTests.Tests
                 .ToArray();
 
             var mapPaths = new List<ResPath>();
-            foreach (var map in maps)
+            foreach (var map in maps) //why in the sam hell did you think this was a good idea
             {
                 if (gameMaps.Contains(map))
                     continue;

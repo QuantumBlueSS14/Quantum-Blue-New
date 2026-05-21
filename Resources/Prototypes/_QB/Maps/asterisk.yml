@@ -10,8 +10,6 @@
       components:
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_DV/Shuttles/NTES_Kaeri.yml
-        - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Asterisk Station {1}'
           nameGenerator:

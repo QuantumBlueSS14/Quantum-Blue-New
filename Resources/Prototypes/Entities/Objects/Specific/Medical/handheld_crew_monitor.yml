@@ -1,6 +1,6 @@
 - type: entity
   name: handheld crew monitor
-  categories: [ DoNotMap ]
+  # categories: [ DoNotMap ] QB edit: this is mapped on 2 maps intentional, be gone test fail
   parent: [ BaseHandheldComputer, BaseGrandTheftContraband ]
   # CMO-only bud, don't add more.
   id: HandheldCrewMonitor

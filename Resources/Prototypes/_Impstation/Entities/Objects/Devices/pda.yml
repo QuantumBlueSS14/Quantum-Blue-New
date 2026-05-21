@@ -306,7 +306,6 @@
     borderColor: "#77b861"
     accentHColor: "#447987"
   - type: Icon
-    sprite: Objects/Devices/pda.rsi
     state: pda-hd
 
 # Griffy
@@ -339,14 +338,14 @@
   - type: Sprite
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
-      sprite: _Impstation/Objects/Devices/griffy_pda.rsi
+      sprite: _QB/Objects/Devices/pda.rsi # QB # QB
       state: pda-mascotgriffy
-    - sprite: Objects/Devices/pda.rsi
+    - sprite: _QB/Objects/Devices/pda.rsi # QB
       state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
       visible: false
-    - sprite: Objects/Devices/pda.rsi
+    - sprite: _QB/Objects/Devices/pda.rsi # QB
       state: "id_overlay"
       map: [ "enum.PdaVisualLayers.IdLight" ]
       shader: "unshaded"
@@ -369,7 +368,7 @@
   - type: PdaBorderColor
     borderColor: "#A32D26"
   - type: Icon
-    sprite: _Impstation/Objects/Devices/griffy_pda.rsi
+    sprite: _QB/Objects/Devices/pda.rsi # QB
     state: pda-mascotgriffy
 
 - type: entity
