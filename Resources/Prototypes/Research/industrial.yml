@@ -17,6 +17,7 @@
   - ClothingShoesBootsJump
   - BorgModuleMining # imp
   - ClothingEyesHudSalvage #imp
+  - NFWeaponHoloflareGun # DeltaV
 
 - type: technology
   id: SpaceScanning
