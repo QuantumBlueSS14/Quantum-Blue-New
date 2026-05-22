@@ -35,13 +35,13 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "CentCommImp", // imp edit
+            "CentCommQB", // QB
             "Dart"
         };
 
         private static readonly string[] Grids =
         {
-            "/Maps/_Impstation/centcomm.yml", // imp edit
+            "/Maps/_QB/centcomm.yml", // QB
             AdminTestArenaSystem.ArenaMapPath
         };
 
@@ -74,7 +74,7 @@ namespace Content.IntegrationTests.Tests
         {
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**", // admin gaming
-            "/Maps/_Impstation/centcomm.yml", // imp edit
+            "/Maps/_QB/centcomm.yml", // QB
 
             // Stations
             "/Maps/bagel.yml", // Contains mime's rubber stamp
