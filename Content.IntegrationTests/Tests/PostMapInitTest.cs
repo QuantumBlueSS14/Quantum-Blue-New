@@ -199,7 +199,7 @@ namespace Content.IntegrationTests.Tests
             "Dash",
             "ElkridgeQB",
             "Foundry",
-            "Pebble",
+            "PebbleQB",
 
             // DEROTATED:
             //"Eclipse",

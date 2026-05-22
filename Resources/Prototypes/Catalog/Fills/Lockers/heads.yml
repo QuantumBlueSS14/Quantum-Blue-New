@@ -85,7 +85,7 @@
       entity_storage: !type:NestedSelector
         tableId: LockerFillCaptainNoLaser
 
-# No Laser + Laser locker
+# + Laser locker
 - type: entity
   id: LockerCaptainFilled
   suffix: Filled, AntiqueLaser
@@ -96,7 +96,7 @@
       entity_storage: !type:NestedSelector
         tableId: LockerFillCaptainLaser
 
-# No Laser + Laser + Hardsuit locker
+# No Laser + Hardsuit locker
 - type: entity
   id: LockerCaptainFilledHardsuit
   suffix: Filled, Hardsuit
@@ -107,7 +107,7 @@
       entity_storage: !type:AllSelector
         children:
         - !type:NestedSelector
-          tableId: LockerFillCaptainLaser
+          tableId: LockerFillCaptainNoLaser
         - !type:NestedSelector
           tableId: FillCaptainHardsuit
 

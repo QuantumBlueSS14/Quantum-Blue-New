@@ -82,7 +82,7 @@ public sealed class StationPowerTests
         "Dash",
         "ElkridgeQB",
         "Foundry",
-        "Pebble",
+        "PebbleQB",
     };
 
     [Test, TestCaseSource(nameof(GameMaps))]
