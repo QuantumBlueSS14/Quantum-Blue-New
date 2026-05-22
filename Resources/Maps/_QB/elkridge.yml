@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2026 12:57:30
-  entityCount: 17648
+  time: 05/22/2026 07:17:48
+  entityCount: 17649
 maps:
 - 1
 grids:
@@ -14161,7 +14161,7 @@ entities:
       pos: 9.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -25549.502
+      secondsUntilStateChange: -25611.92
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14562,7 +14562,7 @@ entities:
       pos: 47.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -487553.44
+      secondsUntilStateChange: -487615.84
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -50391,6 +50391,13 @@ entities:
     components:
     - type: Transform
       pos: 38.5,5.5
+      parent: 2
+- proto: CrateMiningMagnetic
+  entities:
+  - uid: 7637
+    components:
+    - type: Transform
+      pos: 24.5,48.5
       parent: 2
 - proto: CratePermaEscapeSpawner
   entities:
@@ -86685,10 +86692,10 @@ entities:
       parent: 2
 - proto: OreBox
   entities:
-  - uid: 7637
+  - uid: 16228
     components:
     - type: Transform
-      pos: 16.5,39.5
+      pos: 24.5,49.5
       parent: 2
 - proto: OreProcessor
   entities:

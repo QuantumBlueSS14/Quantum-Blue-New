@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2026 10:12:27
+  time: 05/22/2026 07:15:51
   entityCount: 18945
 maps:
 - 1
@@ -46746,11 +46746,6 @@ entities:
       parent: 2
 - proto: CrateArtifactContainer
   entities:
-  - uid: 2464
-    components:
-    - type: Transform
-      pos: -39.5,0.5
-      parent: 2
   - uid: 15269
     components:
     - type: Transform
@@ -47039,6 +47034,13 @@ entities:
     components:
     - type: Transform
       pos: 20.5,36.5
+      parent: 2
+- proto: CrateMiningMagnetic
+  entities:
+  - uid: 2464
+    components:
+    - type: Transform
+      pos: -47.5,-2.5
       parent: 2
 - proto: CrateSecurityRiot
   entities:

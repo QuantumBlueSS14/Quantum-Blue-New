@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/21/2026 19:59:37
-  entityCount: 4488
+  time: 05/22/2026 07:11:49
+  entityCount: 4491
 maps:
 - 1
 grids:
@@ -2420,6 +2420,18 @@ entities:
       parent: 2
 - proto: AirlockExternalLocked
   entities:
+  - uid: 1945
+    components:
+    - type: Transform
+      pos: 29.5,-15.5
+      parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        2742:
+        - - DoorStatus
+          - DoorBolt
   - uid: 2742
     components:
     - type: Transform
@@ -2429,19 +2441,7 @@ entities:
       invokeCounter: 1
     - type: DeviceLinkSource
       linkedPorts:
-        2775:
-        - - DoorStatus
-          - DoorBolt
-  - uid: 2775
-    components:
-    - type: Transform
-      pos: 29.5,-14.5
-      parent: 2
-    - type: DeviceLinkSink
-      invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        2742:
+        1945:
         - - DoorStatus
           - DoorBolt
   - uid: 2842
@@ -10804,6 +10804,13 @@ entities:
     components:
     - type: Transform
       pos: 0.5,-21.5
+      parent: 2
+- proto: CrateMiningMagnetic
+  entities:
+  - uid: 2247
+    components:
+    - type: Transform
+      pos: 31.5,-15.5
       parent: 2
 - proto: CrateNPCHamlet
   entities:
@@ -28074,6 +28081,11 @@ entities:
     - type: Transform
       pos: 15.5,-23.5
       parent: 2
+  - uid: 1760
+    components:
+    - type: Transform
+      pos: 29.5,-14.5
+      parent: 2
   - uid: 2152
     components:
     - type: Transform
@@ -28103,6 +28115,11 @@ entities:
     components:
     - type: Transform
       pos: 20.5,-25.5
+      parent: 2
+  - uid: 2246
+    components:
+    - type: Transform
+      pos: 31.5,-16.5
       parent: 2
   - uid: 2577
     components:

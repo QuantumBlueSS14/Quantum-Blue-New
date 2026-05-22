@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/21/2026 23:24:44
-  entityCount: 6535
+  time: 05/22/2026 07:12:47
+  entityCount: 6536
 maps:
 - 1
 grids:
@@ -5643,7 +5643,7 @@ entities:
       pos: -34.5,-13.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -73889.46
+      secondsUntilStateChange: -73915.61
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17254,6 +17254,13 @@ entities:
     components:
     - type: Transform
       pos: -10.5,-10.5
+      parent: 3
+- proto: CrateMiningMagnetic
+  entities:
+  - uid: 1596
+    components:
+    - type: Transform
+      pos: -67.5,16.5
       parent: 3
 - proto: CrateServiceJanitorialSupplies
   entities:
