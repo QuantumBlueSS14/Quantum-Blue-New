@@ -157,9 +157,10 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         component.Subverted = true;
 
         // Add the first emag law before the others
+        var name = CompOrNull<EmagSiliconLawComponent>(uid)?.OwnerName ?? Name(args.UserUid); // DeltaV: Reuse emagger name if possible
         component.Lawset?.Laws.Insert(0, new SiliconLaw
         {
-            LawString = Loc.GetString("law-emag-custom", ("name", Name(args.user)), ("title", Loc.GetString(component.Lawset.ObeysTo))),
+            LawString = Loc.GetString("law-emag-custom", ("name", name), ("title", Loc.GetString(component.Lawset.ObeysTo))), // DeltaV: pass name from variable
             Order = -2 // Goobstation - AI/borg law changes - borgs obeying AI. DeltaV - Changed from Order = -1  to Order = -2, should be above secrecy emag law
         });
 
