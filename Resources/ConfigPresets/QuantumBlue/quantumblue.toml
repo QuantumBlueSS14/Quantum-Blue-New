@@ -31,7 +31,7 @@ min_players_sharing_connection = 2
 [server]
 id = "quantumblue"
 #rules_file = "QuantumBlueRuleset" TODO: Port this in from the old repo and touch it up
-uptime_restart_minutes = 720 # 12h
+uptime_restart_minutes = 1440 # 24h
 
 # general mrp stuff
 [ic]
