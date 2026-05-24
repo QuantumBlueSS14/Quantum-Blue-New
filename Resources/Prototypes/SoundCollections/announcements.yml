@@ -1,34 +1,32 @@
 - type: soundCollection
   id: RoundEnd
   files:
+  - /Audio/Announcements/RoundEnd/admin.ogg
+  - /Audio/Announcements/RoundEnd/anyone_around.ogg
   - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
+  - /Audio/Announcements/RoundEnd/bravery_firepower.ogg
+  - /Audio/Announcements/RoundEnd/comingofjesus.ogg
+  - /Audio/Announcements/RoundEnd/data_mining_algorithms.ogg
+  - /Audio/Announcements/RoundEnd/dead.ogg
   - /Audio/Announcements/RoundEnd/disappointed.ogg
+  - /Audio/Announcements/RoundEnd/easy_route.ogg
+  - /Audio/Announcements/RoundEnd/good_business.ogg
+  - /Audio/Announcements/RoundEnd/hidden_discipline.ogg
+  - /Audio/Announcements/RoundEnd/i_need_a_computer.ogg
+  - /Audio/Announcements/RoundEnd/never_trust_a_traitor.ogg
   - /Audio/Announcements/RoundEnd/notevenpaidforthis.ogg
-
-  # IMP BELOW THIS POINT
-  - /Audio/_DV/RoundEnd/i_need_a_computer.ogg
-  - /Audio/_Impstation/RoundEnd/admin.ogg
-  - /Audio/_Impstation/RoundEnd/bangindonk.ogg
-  - /Audio/_Impstation/RoundEnd/chadwarden.ogg
-  - /Audio/_Impstation/RoundEnd/chickensandwich.ogg
-  - /Audio/_Impstation/RoundEnd/comingofjesus.ogg
-  - /Audio/_Impstation/RoundEnd/danish.ogg
-  - /Audio/_Impstation/RoundEnd/dead.ogg
-  - /Audio/_Impstation/RoundEnd/getoffme.ogg
-  - /Audio/_Impstation/RoundEnd/jerkalittlegrayoff.ogg
-  - /Audio/_Impstation/RoundEnd/leatherbelt.ogg
-  - /Audio/_Impstation/RoundEnd/nanaostorment.ogg
-  - /Audio/_Impstation/RoundEnd/newroundsexy.ogg
-  - /Audio/_Impstation/RoundEnd/odo.ogg
-  - /Audio/_Impstation/RoundEnd/propermeal.ogg
-  - /Audio/_Impstation/RoundEnd/realworld.ogg
-  - /Audio/_Impstation/RoundEnd/slog.ogg
-  - /Audio/_Impstation/RoundEnd/slog2.ogg
-  - /Audio/_Impstation/RoundEnd/specialstew.ogg
-  - /Audio/_Impstation/RoundEnd/vegetables.ogg
-  - /Audio/_Impstation/RoundEnd/weed.ogg
-  - /Audio/_Impstation/RoundEnd/whymad.ogg
-  - /Audio/_Impstation/RoundEnd/winning.ogg
+  - /Audio/Announcements/RoundEnd/oney.ogg
+  - /Audio/Announcements/RoundEnd/order_to_chaos.ogg
+  - /Audio/Announcements/RoundEnd/out_an_airlock.ogg
+  - /Audio/Announcements/RoundEnd/safescience.ogg
+  - /Audio/Announcements/RoundEnd/see_you_in_space.ogg
+  - /Audio/Announcements/RoundEnd/ship_wanted.ogg
+  - /Audio/Announcements/RoundEnd/smart_universe.ogg
+  - /Audio/Announcements/RoundEnd/stoned.ogg
+  - /Audio/Announcements/RoundEnd/susguyeatscrew.ogg
+  - /Audio/Announcements/RoundEnd/this_drink.ogg
+  - /Audio/Announcements/RoundEnd/truth_imagination.ogg
+  - /Audio/Announcements/RoundEnd/whymad.ogg
 
 - type: soundCollection
   id: PowerOn

@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/19/2026 02:51:46
-  entityCount: 15410
+  time: 05/22/2026 07:13:56
+  entityCount: 15413
 maps:
 - 1
 grids:
@@ -8568,7 +8568,7 @@ entities:
       pos: -9.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -84286.33
+      secondsUntilStateChange: -87248.375
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -38445,6 +38445,13 @@ entities:
     components:
     - type: Transform
       pos: -31.5,15.5
+      parent: 2
+- proto: CrateMiningMagnetic
+  entities:
+  - uid: 15413
+    components:
+    - type: Transform
+      pos: 78.5,-15.5
       parent: 2
 - proto: CrateNPCCow
   entities:
@@ -95977,21 +95984,41 @@ entities:
     - type: Transform
       pos: -1.5,-39.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 12670
   - uid: 214
     components:
     - type: Transform
       pos: -5.5,-39.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 12670
   - uid: 249
     components:
     - type: Transform
       pos: -5.5,-44.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 12670
   - uid: 424
     components:
     - type: Transform
       pos: -1.5,-44.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 12670
+  - uid: 15411
+    components:
+    - type: Transform
+      pos: -7.5,-41.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 12670
 - proto: WeaponEnergyTurretAIControlPanel
   entities:
   - uid: 12670
@@ -96000,6 +96027,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.5,-43.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 249
+      - 424
+      - 206
+      - 214
+      - 15411
 - proto: WeaponEnergyTurretCommand
   entities:
   - uid: 7894
@@ -96028,6 +96062,19 @@ entities:
     - type: Transform
       pos: 26.5,-16.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 15412
+- proto: WeaponEnergyTurretSecurityControlPanel
+  entities:
+  - uid: 15412
+    components:
+    - type: Transform
+      pos: 27.5,-18.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 15206
 - proto: WeaponFlareGun
   entities:
   - uid: 10678

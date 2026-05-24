@@ -1,3 +1,8 @@
+- files: ["500_Years.ogg"]
+  license: "Custom"
+  copyright: "500 Years by The Glitch Mob"
+  source: "https://www.youtube.com/watch?v=-Sl9nddy2rY"
+
 - files: ["Aggravated.it.ogg"]
   license: "CC-BY-NC-SA-4.0"
   copyright: "Aggravated Assault by melcom"
@@ -82,6 +87,11 @@
   license: "Custom"
   copyright: "Floral (Explore) by PDTM"
   source: "https://www.youtube.com/watch?v=2qbcARnPtJ8"
+
+- files: ["Foregone_Destruction.ogg"]
+  license: "Custom"
+  copyright: "Foregone Destruction by Michiel van den Bos"
+  source: "https://www.youtube.com/watch?v=mCRibm4kOaE"
 
 - files: ["Get_It_Done.ogg"]
   license: "CC0-1.0"

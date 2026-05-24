@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Pebble
+  id: PebbleQB
   mapName: 'Pebble'
   mapPath: /Maps/_QB/pebble.yml
   minPlayers: 0

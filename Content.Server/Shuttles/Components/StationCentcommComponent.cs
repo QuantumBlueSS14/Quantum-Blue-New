@@ -16,7 +16,7 @@ public sealed partial class StationCentcommComponent : Component
     public float ShuttleIndex;
 
     [DataField]
-    public ResPath Map = new("/Maps/_Impstation/centcomm.yml"); // imp edit, use our version of centcomm
+    public ResPath Map = new("/Maps/_QB/centcomm.yml"); // QB
 
     /// <summary>
     /// Centcomm entity that was loaded.

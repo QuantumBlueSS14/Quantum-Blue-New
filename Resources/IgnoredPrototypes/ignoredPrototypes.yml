@@ -8,7 +8,7 @@
 # - /Prototypes/Catalog/uplink_catalog.yml
 
 # MAP PROTOTYPES
-# All station map prototypes should be consolidated in Prototypes/_Impstation/Maps
+# All station map prototypes should be consolidated in Prototypes/_QB/Maps
 # We're ignoring Wizden map prototypes in the base directory so any changes made by upstream merges can be safely ignored and maintain parity
 # Map prototypes are ignored per-file instead of ignoring the entire directory, otherwise we would have to rename every prototype in salvage.yml, which would suck
 # Any new map prototypes added by upstream should be added here, but since Pools/default.yml is being ignored, missing a prototype shouldn't break anything
@@ -68,4 +68,4 @@
 - /Prototypes/_Impstation/Maps/union.yml
 - /Prototypes/_Impstation/Maps/whisper.yml
 - /Prototypes/_Impstation/Maps/xeno.yml
-- /Prototypes/_Impstation/Maps/pebble.yml
+
