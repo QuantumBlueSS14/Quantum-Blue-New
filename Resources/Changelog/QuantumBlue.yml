@@ -1,764 +1,800 @@
 Entries:
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Character names can now contain more types of characters!
-      - type: Fix
-        message: Arrivals is re-enabled!
-    id: 105
-    time: '2026-05-24T07:57:57.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/119
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: two more lobby songs
-    time: '2026-05-23T07:22:27.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/112
-    id: 104
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Extend server restart timer
-    time: '2026-05-23T07:22:08.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/113
-    id: 103
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: misc. map fixes
-    time: '2026-05-23T03:26:54.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/109
-    id: 102
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: scuffed temporary centcomm
-    time: '2026-05-23T03:20:29.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/111
-    id: 101
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: round end sounds
-    time: '2026-05-23T03:14:14.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/110
-    id: 100
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: removes vroid artificial gravity
-    time: '2026-05-22T05:40:34.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/107
-    id: 99
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: imp mention kill
-    time: '2026-05-22T05:33:33.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/108
-    id: 98
-  - author: keekee38
-    changes:
-      - type: Add
-        message: ported the katana sheath from Delta V!
-    time: '2026-05-22T05:29:57.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/100
-    id: 97
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Silicon law changes
-    time: '2026-05-22T05:02:32.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/99
-    id: 96
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Revert "LawSync (#4019)"
-    time: '2026-05-21T05:24:31.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/106
-    id: 95
-  - author: soup4food
-    changes:
-      - type: Add
-        message: Some really stupid test changes
-    time: '2026-05-21T03:46:00.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/105
-    id: 94
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: PDAs fix and lazy art pass
-    time: '2026-05-21T03:44:04.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/104
-    id: 93
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: Guidebook fixes
-    time: '2026-05-21T03:43:44.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/103
-    id: 92
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: hidden walls use our sprites now
-    time: '2026-05-21T03:43:25.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/98
-    id: 91
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: 'Mining magnetic crate Pt. 1: sprites'
-    time: '2026-05-21T03:42:49.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/94
-    id: 90
-  - author: soup4food
-    changes:
-      - type: Add
-        message: Add the magnetic mining crate with sprites by MattFright
-    time: '2026-05-21T03:41:23.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/96
-    id: 89
-  - author: soup4food
-    changes:
-      - type: Fix
-        message: Fixed chaplain PDAs not having a sprite state set
-    time: '2026-05-20T18:43:48.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/102
-    id: 88
-  - author: soup4food
-    changes:
-      - type: Remove
-        message: >-
-          Removed an annoying log error every time a local host runs. Who knows what would've happened if asterisk
-          actually tried to call evac
-    time: '2026-05-20T18:43:21.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/101
-    id: 87
-  - author: soup4food
-    changes:
-      - type: Fix
-        message: Test
-    time: '2026-05-20T18:42:39.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/97
-    id: 86
-  - author: soup4food
-    changes:
-      - type: Fix
-        message: Fixed every test fail except the chibi ones
-    time: '2026-05-19T05:54:34.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/92
-    id: 85
-  - author: Sage-Jones
-    changes:
-      - type: Fix
-        message: Fixed guidebook species entries.
-    time: '2026-05-19T05:35:39.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/93
-    id: 84
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: our rules finally
-    time: '2026-05-19T02:33:18.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/87
-    id: 83
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Lobby timer extended, and player cap lowered for now
-    time: '2026-05-19T00:31:47.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/90
-    id: 82
-  - author: soup4food
-    changes:
-      - type: Add
-        message: Hiring standards for Captains, Heads of Security, and Wardens.
-    time: '2026-05-19T00:27:36.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/89
-    id: 81
-  - author: soup4food
-    changes:
-      - type: Remove
-        message: Removed every announcer except michael
-    time: '2026-05-18T23:26:11.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/85
-    id: 80
-  - author: soup4food
-    changes:
-      - type: Fix
-        message: License Compliance...
-    time: '2026-05-18T23:12:04.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/78
-    id: 79
-  - author: Sage-Jones
-    changes:
-      - type: Remove
-        message: Removed some game modes.
-      - type: Tweak
-        message: Changed game mode weights.
-    time: '2026-05-18T07:46:29.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/86
-    id: 78
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: changelog updates broke everything
-    time: '2026-05-18T04:21:02.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/88
-    id: 77
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Test for the changelog updater
-    time: '2026-05-15T05:32:50.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/84
-    id: 76
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Testing, testing, one two three! If you can read this, the changelog updates are working!
-    time: '2026-05-15T05:19:18.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/83
-    id: 75
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Testing, testing, one two three! If you can read this, the changelog updates are working!
-    time: '2026-05-15T05:10:06.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/82
-    id: 74
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Testing, testing, one two three! If you can read this, the changelog updates are working!
-    time: '2026-05-15T04:36:31.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/81
-    id: 73
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: testing testing, one two three! If you can read this, the changelog updates are working!
-    time: '2026-05-15T04:23:28.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/80
-    id: 72
-  - author: Sage-Jones
-    changes:
-      - type: Add
-        message: Added changelog updating automation
-    time: '2026-05-15T04:01:19.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/79
-    id: 71
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: Readme update
-    time: '2026-05-13T01:02:30.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/77
-    id: 70
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: ai eye is now faster
-    time: '2026-05-13T00:47:20.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/76
-    id: 69
-  - author: soup4food
-    changes:
-      - type: Tweak
-        message: We only allow Michael. Because Michael is the best. Shout outs Michael.
-    time: '2026-05-12T22:12:38.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/73
-    id: 68
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: fixing sage's mistakes
-    time: '2026-05-12T20:09:30.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/75
-    id: 67
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: map & map asset updates
-    time: '2026-05-12T19:16:37.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/74
-    id: 66
-  - author: Luksuu
-    changes:
-      - type: Add
-        message: Hair for moths.
-      - type: Add
-        message: Mad anty moth hair haters in the comments.
-    time: '2026-05-12T10:02:43.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/72
-    id: 65
-  - author: smoothfella
-    changes:
-      - type: Tweak
-        message: Removing species and adding certain species to visitor
-    time: '2026-05-12T10:00:23.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/71
-    id: 64
-  - author: smoothfella
-    changes:
-      - type: Tweak
-        message: Removed impstation tippy images
-    time: '2026-05-07T07:23:26.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/70
-    id: 63
-  - author: smoothfella
-    changes:
-      - type: Tweak
-        message: Disabling Heretic and Revolutionary
-    time: '2026-05-07T07:22:34.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/68
-    id: 62
-  - author: smoothfella
-    changes:
-      - type: Tweak
-        message: changed auto recall to 120 instead of 90
-    time: '2026-05-07T05:36:26.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/69
-    id: 61
-  - author: smoothfella
-    changes:
-      - type: Tweak
-        message: Removing /suicide command and uplink items
-    time: '2026-05-07T05:11:30.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/67
-    id: 60
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: port Byoin from delta-v
-    time: '2026-05-07T04:50:55.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/66
-    id: 59
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: elkridge QB
-    time: '2026-05-07T04:01:41.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/65
-    id: 58
-  - author: astral_amy
-    changes:
-      - type: Fix
-        message: the bartender and botanist spawns are Back
-    time: '2026-05-07T03:57:22.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/64
-    id: 57
-  - author: MattFright
-    changes:
-      - type: Add
-        message: 'Added a new micropop station: Dash!'
-    time: '2026-05-03T05:48:24.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/54
-    id: 56
-  - author: Moodotsuki
-    changes:
-      - type: Add
-        message: Added Pebble. You know Pebble. You love Pebble. Pebble.
-    time: '2026-05-03T05:09:22.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/56
-    id: 55
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Meteor aim tweak
-    time: '2026-05-03T05:00:05.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/55
-    id: 54
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: cardboard (+ water) art polish
-    time: '2026-05-03T04:58:34.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/58
-    id: 53
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Remove wuhey and mira references
-    time: '2026-05-03T04:25:40.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/62
-    id: 52
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Map pool is ours! (and fixing build tests)
-    time: '2026-05-03T04:21:51.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/59
-    id: 51
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Remove departmental clown items
-    time: '2026-05-02T05:51:20.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/61
-    id: 50
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Port dv pda resprites
-    time: '2026-05-02T05:49:46.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/63
-    id: 49
-  - author: rebe83
-    changes:
-      - type: Tweak
-        message: Reworked Diona to function as they do in deltav. They are old and slow now. It's hard not having knees.
-    time: '2026-05-02T05:48:29.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/57
-    id: 48
-  - author: rebe83
-    changes:
-      - type: Add
-        message: Diona get full bellies (do they have bellies?) from breathing CO2
-    time: '2026-05-02T05:45:08.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/60
-    id: 47
-  - author: Ecramox
-    changes:
-      - type: Add
-        message: Ported Chibi, a micropop map from DV
-    time: '2026-04-19T22:25:46.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/23
-    id: 46
-  - author: astral_amy
-    changes:
-      - type: Add
-        message: Ported Foundry from Vermist.
-      - type: Tweak
-        message: Compatibility adjustments to Foundry.
-    time: '2026-04-18T03:59:42.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/38
-    id: 45
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Revert borg PDA
-    time: '2026-04-18T03:54:53.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/51
-    id: 44
-  - author: DVD Player
-    changes:
-      - type: Add
-        message: Oomycites! A small but numerous and dangerous vent pest!
-    time: '2026-04-18T03:50:07.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/52
-    id: 43
-  - author: MattFright
-    changes:
-      - type: Add
-        message: There are a lot of new decals now! Check your spray painter tool!
-      - type: Tweak
-        message: Floors should look way prettier now!
-      - type: Tweak
-        message: Light brightness values have been tweaked to look good with the new floors
-      - type: Tweak
-        message: Shadows cast from lights should look a lot smoother and better looking now
-    time: '2026-04-18T03:32:05.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/48
-    id: 42
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: migrations fix
-    time: '2026-04-18T02:47:08.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/53
-    id: 41
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Added our config
-    time: '2026-04-14T03:19:02.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/50
-    id: 40
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Fix RSI Diff workflow
-    time: '2026-04-14T02:30:09.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/49
-    id: 39
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Workflow setup
-    time: '2026-04-13T04:50:49.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/47
-    id: 38
-  - author: MattFright
-    changes:
-      - type: Add
-        message: Added Brigmedic, Paramedic and Psychologist accesses
-      - type: Add
-        message: Added a new spare Captain ID wall cabinet for stations' vaults! No more free all access, sorry!
-      - type: Add
-        message: HoS, Warden and CMO have Brigmedic access by default
-      - type: Remove
-        message: Dept. heads no longer have brig access
-      - type: Remove
-        message: Borgs no longer have access to dept. heads' offices or the armory
-      - type: Remove
-        message: The captain's locker no longer has a spare ID card
-    time: '2026-04-12T15:42:43.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/46
-    id: 37
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: Time requirements have been temporarily removed. Be responsible, please.
-    time: '2026-04-12T14:24:08.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/42
-    id: 36
-  - author: MattFright
-    changes:
-      - type: Add
-        message: New logos! Quantum Blue is real.
-    time: '2026-04-12T14:23:42.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/41
-    id: 35
-  - author: MattFright
-    changes:
-      - type: Add
-        message: Materials look way prettier now.
-    time: '2026-04-12T14:06:37.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/45
-    id: 34
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: Updated the placeholder lobby art.
-    time: '2026-04-12T14:00:57.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/40
-    id: 33
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: Pets are saved. Goodbye Finfin, welcome back Alexander.
-    time: '2026-04-12T13:59:56.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/39
-    id: 32
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: labeler workflow fixes (hopefully)
-    time: '2026-04-06T22:30:47.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/43
-    id: 31
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: New sprites for most tables, chairs, bookshelves, and also railings!
-    time: '2026-03-28T06:29:03.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/37
-    id: 30
-  - author: keekee38
-    changes:
-      - type: Tweak
-        message: fixin the normal 30 rifle mags
-    time: '2026-03-27T04:51:54.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/35
-    id: 29
-  - author: astral_amy
-    changes:
-      - type: Add
-        message: Reinforced catwalks are available for use with environmental hazards.
-    time: '2026-03-27T03:30:37.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/25
-    id: 28
-  - author: keke38
-    changes:
-      - type: Add
-        message: asterisk real...
-    time: '2026-03-27T03:23:15.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/32
-    id: 27
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Fix matt's bats
-    time: '2026-03-21T04:49:22.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/34
-    id: 26
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: updated ahelp message
-    time: '2026-03-20T05:35:15.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/33
-    id: 25
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: You should now see completely new tips when logging on!
-    time: '2026-03-20T05:35:01.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/31
-    id: 24
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: i fucked up the walls
-    time: '2026-03-18T05:49:50.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/30
-    id: 23
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: New walls, windows, grilles and wallmounts
-    time: '2026-03-17T22:53:34.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/29
-    id: 22
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Imp catch up 03-12-2026
-    time: '2026-03-14T04:23:18.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/28
-    id: 21
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Imp reverts 2 12 2026
-    time: '2026-03-09T23:18:38.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/27
-    id: 20
-  - author: CombustibleToast
-    changes:
-      - type: Tweak
-        message: remove lobby art
-    time: '2026-03-08T08:42:29.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/24
-    id: 19
-  - author: CombustibleToast
-    changes:
-      - type: Tweak
-        message: Port kvass from dv
-    time: '2026-02-14T03:02:03.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/18
-    id: 18
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Imp catch up 2 12 2026
-    time: '2026-02-13T08:26:39.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/21
-    id: 17
-  - author: CombustibleToast
-    changes:
-      - type: Tweak
-        message: Landmines on debris
-    time: '2026-02-12T04:51:43.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/20
-    id: 16
-  - author: MattFright
-    changes:
-      - type: Tweak
-        message: The big music clean-up, changes and additions
-    time: '2026-02-09T05:28:03.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/17
-    id: 15
-  - author: Sage-Jones
-    changes:
-      - type: Remove
-        message: Removed unused alert levels
-    time: '2026-01-22T08:03:15.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/16
-    id: 14
-  - author: Sage-Jones
-    changes:
-      - type: Remove
-        message: Contraband tool tips (Valid Vision) have been removed. Learn and lie to your heart's content!
-    time: '2026-01-18T06:27:29.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/15
-    id: 13
-  - author: keekee38
-    changes:
-      - type: Add
-        message: ported the vulcan from deltav
-    time: '2026-01-18T06:25:42.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/13
-    id: 12
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: Imp catch up october 20th to december 3rd
-    time: '2025-12-08T05:52:49.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/14
-    id: 11
-  - author: keekee38
-    changes:
-      - type: Add
-        message: paper walls and tatami mats and funny wood sticks
-    time: '2025-12-03T02:33:30.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/10
-    id: 10
-  - author: rebe83
-    changes:
-      - type: Tweak
-        message: added throwable and stamina damage to breaching hammer
-    time: '2025-12-03T01:43:07.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/9
-    id: 9
-  - author: keekee38
-    changes:
-      - type: Add
-        message: ported the mark 1 rifle, and now guns can go on your back yayy
-    time: '2025-12-03T01:16:04.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/7
-    id: 8
-  - author: Sage-Jones
-    changes:
-      - type: Tweak
-        message: >-
-          Slime people's punches do 1 less blunt damage, and 1 more caustic. Send people on medical visits for minuscule
-          burns!
-    time: '2025-11-11T06:40:27.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/8
-    id: 7
-  - author: Sage-Jones
-    changes:
-      - type: Remove
-        message: BROS! Including all related mobs, weapons, and reagents.
-    time: '2025-11-10T04:52:27.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/1
-    id: 6
-  - author: keekee38
-    changes:
-      - type: Add
-        message: nyano armor
-    time: '2025-11-10T04:51:19.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/6
-    id: 5
-  - author: keekee38
-    changes:
-      - type: Add
-        message: alot more clothes from nyano
-    time: '2025-11-10T04:15:13.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/5
-    id: 4
-  - author: keekee38
-    changes:
-      - type: Add
-        message: ported MNK clothes and a few other clothing items from nyano
-    time: '2025-11-10T04:02:14.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/2
-    id: 3
-  - author: keekee38
-    changes:
-      - type: Add
-        message: ported breachin hammer from nyano
-    time: '2025-11-09T07:32:56.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/4
-    id: 2
-  - author: keekee38
-    changes:
-      - type: Add
-        message: vulps are roundstart again yippee
-    time: '2025-11-09T07:29:56.0000000+00:00'
-    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/3
-    id: 1
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Character names can now contain more types of characters!
+  - type: Fix
+    message: Arrivals is re-enabled!
+  id: 1
+  time: '2026-05-24T07:57:57.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/119
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Survival should be way less oppressive now!
+  time: '2026-05-24T07:33:21.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/118
+  id: 2
+- author: MattFright
+  changes:
+  - type: Remove
+    message: All of imp's songs are GONE!!!!!!!!!! (from the jukebox)
+  time: '2026-05-24T07:32:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/117
+  id: 3
+- author: soup4food
+  changes:
+  - type: Tweak
+    message: Meteors no longer should spawn inside of the station, so this has bee tweaked... but there's still a small chance
+      for it!
+  time: '2026-05-24T06:18:00.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/116
+  id: 4
+- author: Ecramox
+  changes:
+  - type: Tweak
+    message: Centcomm now has holopads!
+  time: '2026-05-24T06:14:46.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/115
+  id: 5
+- author: soup4food
+  changes:
+  - type: Add
+    message: Added the Changelog
+  - type: Fix
+    message: Fixed a test fail I'd saw happen before!
+  time: '2026-05-24T06:13:48.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/114
+  id: 6
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: two more lobby songs
+  time: '2026-05-23T07:22:27.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/112
+  id: 7
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Extend server restart timer
+  time: '2026-05-23T07:22:08.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/113
+  id: 8
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: misc. map fixes
+  time: '2026-05-23T03:26:54.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/109
+  id: 9
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: scuffed temporary centcomm
+  time: '2026-05-23T03:20:29.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/111
+  id: 10
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: round end sounds
+  time: '2026-05-23T03:14:14.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/110
+  id: 11
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: removes vroid artificial gravity
+  time: '2026-05-22T05:40:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/107
+  id: 12
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: imp mention kill
+  time: '2026-05-22T05:33:33.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/108
+  id: 13
+- author: keekee38
+  changes:
+  - type: Add
+    message: ported the katana sheath from Delta V!
+  time: '2026-05-22T05:29:57.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/100
+  id: 14
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Silicon law changes
+  time: '2026-05-22T05:02:32.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/99
+  id: 15
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Revert "LawSync (#4019)"
+  time: '2026-05-21T05:24:31.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/106
+  id: 16
+- author: soup4food
+  changes:
+  - type: Add
+    message: Some really stupid test changes
+  time: '2026-05-21T03:46:00.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/105
+  id: 17
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: PDAs fix and lazy art pass
+  time: '2026-05-21T03:44:04.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/104
+  id: 18
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Guidebook fixes
+  time: '2026-05-21T03:43:44.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/103
+  id: 19
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: hidden walls use our sprites now
+  time: '2026-05-21T03:43:25.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/98
+  id: 20
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: 'Mining magnetic crate Pt. 1: sprites'
+  time: '2026-05-21T03:42:49.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/94
+  id: 21
+- author: soup4food
+  changes:
+  - type: Add
+    message: Add the magnetic mining crate with sprites by MattFright
+  time: '2026-05-21T03:41:23.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/96
+  id: 22
+- author: soup4food
+  changes:
+  - type: Fix
+    message: Fixed chaplain PDAs not having a sprite state set
+  time: '2026-05-20T18:43:48.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/102
+  id: 23
+- author: soup4food
+  changes:
+  - type: Remove
+    message: Removed an annoying log error every time a local host runs. Who knows what would've happened if asterisk actually
+      tried to call evac
+  time: '2026-05-20T18:43:21.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/101
+  id: 24
+- author: soup4food
+  changes:
+  - type: Fix
+    message: Test
+  time: '2026-05-20T18:42:39.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/97
+  id: 25
+- author: soup4food
+  changes:
+  - type: Fix
+    message: Fixed every test fail except the chibi ones
+  time: '2026-05-19T05:54:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/92
+  id: 26
+- author: Sage-Jones
+  changes:
+  - type: Fix
+    message: Fixed guidebook species entries.
+  time: '2026-05-19T05:35:39.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/93
+  id: 27
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: our rules finally
+  time: '2026-05-19T02:33:18.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/87
+  id: 28
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Lobby timer extended, and player cap lowered for now
+  time: '2026-05-19T00:31:47.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/90
+  id: 29
+- author: soup4food
+  changes:
+  - type: Add
+    message: Hiring standards for Captains, Heads of Security, and Wardens.
+  time: '2026-05-19T00:27:36.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/89
+  id: 30
+- author: soup4food
+  changes:
+  - type: Remove
+    message: Removed every announcer except michael
+  time: '2026-05-18T23:26:11.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/85
+  id: 31
+- author: soup4food
+  changes:
+  - type: Fix
+    message: License Compliance...
+  time: '2026-05-18T23:12:04.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/78
+  id: 32
+- author: Sage-Jones
+  changes:
+  - type: Remove
+    message: Removed some game modes.
+  - type: Tweak
+    message: Changed game mode weights.
+  time: '2026-05-18T07:46:29.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/86
+  id: 33
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: changelog updates broke everything
+  time: '2026-05-18T04:21:02.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/88
+  id: 34
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Test for the changelog updater
+  time: '2026-05-15T05:32:50.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/84
+  id: 35
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Testing, testing, one two three! If you can read this, the changelog updates are working!
+  time: '2026-05-15T05:19:18.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/83
+  id: 36
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Testing, testing, one two three! If you can read this, the changelog updates are working!
+  time: '2026-05-15T05:10:06.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/82
+  id: 37
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Testing, testing, one two three! If you can read this, the changelog updates are working!
+  time: '2026-05-15T04:36:31.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/81
+  id: 38
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: testing testing, one two three! If you can read this, the changelog updates are working!
+  time: '2026-05-15T04:23:28.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/80
+  id: 39
+- author: Sage-Jones
+  changes:
+  - type: Add
+    message: Added changelog updating automation
+  time: '2026-05-15T04:01:19.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/79
+  id: 40
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Readme update
+  time: '2026-05-13T01:02:30.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/77
+  id: 41
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: ai eye is now faster
+  time: '2026-05-13T00:47:20.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/76
+  id: 42
+- author: soup4food
+  changes:
+  - type: Tweak
+    message: We only allow Michael. Because Michael is the best. Shout outs Michael.
+  time: '2026-05-12T22:12:38.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/73
+  id: 43
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: fixing sage's mistakes
+  time: '2026-05-12T20:09:30.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/75
+  id: 44
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: map & map asset updates
+  time: '2026-05-12T19:16:37.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/74
+  id: 45
+- author: Luksuu
+  changes:
+  - type: Add
+    message: Hair for moths.
+  - type: Add
+    message: Mad anty moth hair haters in the comments.
+  time: '2026-05-12T10:02:43.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/72
+  id: 46
+- author: smoothfella
+  changes:
+  - type: Tweak
+    message: Removing species and adding certain species to visitor
+  time: '2026-05-12T10:00:23.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/71
+  id: 47
+- author: smoothfella
+  changes:
+  - type: Tweak
+    message: Removed impstation tippy images
+  time: '2026-05-07T07:23:26.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/70
+  id: 48
+- author: smoothfella
+  changes:
+  - type: Tweak
+    message: Disabling Heretic and Revolutionary
+  time: '2026-05-07T07:22:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/68
+  id: 49
+- author: smoothfella
+  changes:
+  - type: Tweak
+    message: changed auto recall to 120 instead of 90
+  time: '2026-05-07T05:36:26.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/69
+  id: 50
+- author: smoothfella
+  changes:
+  - type: Tweak
+    message: Removing /suicide command and uplink items
+  time: '2026-05-07T05:11:30.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/67
+  id: 51
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: port Byoin from delta-v
+  time: '2026-05-07T04:50:55.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/66
+  id: 52
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: elkridge QB
+  time: '2026-05-07T04:01:41.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/65
+  id: 53
+- author: astral_amy
+  changes:
+  - type: Fix
+    message: the bartender and botanist spawns are Back
+  time: '2026-05-07T03:57:22.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/64
+  id: 54
+- author: MattFright
+  changes:
+  - type: Add
+    message: 'Added a new micropop station: Dash!'
+  time: '2026-05-03T05:48:24.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/54
+  id: 55
+- author: Moodotsuki
+  changes:
+  - type: Add
+    message: Added Pebble. You know Pebble. You love Pebble. Pebble.
+  time: '2026-05-03T05:09:22.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/56
+  id: 56
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Meteor aim tweak
+  time: '2026-05-03T05:00:05.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/55
+  id: 57
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: cardboard (+ water) art polish
+  time: '2026-05-03T04:58:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/58
+  id: 58
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Remove wuhey and mira references
+  time: '2026-05-03T04:25:40.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/62
+  id: 59
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Map pool is ours! (and fixing build tests)
+  time: '2026-05-03T04:21:51.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/59
+  id: 60
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Remove departmental clown items
+  time: '2026-05-02T05:51:20.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/61
+  id: 61
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Port dv pda resprites
+  time: '2026-05-02T05:49:46.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/63
+  id: 62
+- author: rebe83
+  changes:
+  - type: Tweak
+    message: Reworked Diona to function as they do in deltav. They are old and slow now. It's hard not having knees.
+  time: '2026-05-02T05:48:29.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/57
+  id: 63
+- author: rebe83
+  changes:
+  - type: Add
+    message: Diona get full bellies (do they have bellies?) from breathing CO2
+  time: '2026-05-02T05:45:08.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/60
+  id: 64
+- author: Ecramox
+  changes:
+  - type: Add
+    message: Ported Chibi, a micropop map from DV
+  time: '2026-04-19T22:25:46.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/23
+  id: 65
+- author: astral_amy
+  changes:
+  - type: Add
+    message: Ported Foundry from Vermist.
+  - type: Tweak
+    message: Compatibility adjustments to Foundry.
+  time: '2026-04-18T03:59:42.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/38
+  id: 66
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Revert borg PDA
+  time: '2026-04-18T03:54:53.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/51
+  id: 67
+- author: DVD Player
+  changes:
+  - type: Add
+    message: Oomycites! A small but numerous and dangerous vent pest!
+  time: '2026-04-18T03:50:07.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/52
+  id: 68
+- author: MattFright
+  changes:
+  - type: Add
+    message: There are a lot of new decals now! Check your spray painter tool!
+  - type: Tweak
+    message: Floors should look way prettier now!
+  - type: Tweak
+    message: Light brightness values have been tweaked to look good with the new floors
+  - type: Tweak
+    message: Shadows cast from lights should look a lot smoother and better looking now
+  time: '2026-04-18T03:32:05.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/48
+  id: 69
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: migrations fix
+  time: '2026-04-18T02:47:08.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/53
+  id: 70
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Added our config
+  time: '2026-04-14T03:19:02.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/50
+  id: 71
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Fix RSI Diff workflow
+  time: '2026-04-14T02:30:09.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/49
+  id: 72
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Workflow setup
+  time: '2026-04-13T04:50:49.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/47
+  id: 73
+- author: MattFright
+  changes:
+  - type: Add
+    message: Added Brigmedic, Paramedic and Psychologist accesses
+  - type: Add
+    message: Added a new spare Captain ID wall cabinet for stations' vaults! No more free all access, sorry!
+  - type: Add
+    message: HoS, Warden and CMO have Brigmedic access by default
+  - type: Remove
+    message: Dept. heads no longer have brig access
+  - type: Remove
+    message: Borgs no longer have access to dept. heads' offices or the armory
+  - type: Remove
+    message: The captain's locker no longer has a spare ID card
+  time: '2026-04-12T15:42:43.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/46
+  id: 74
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Time requirements have been temporarily removed. Be responsible, please.
+  time: '2026-04-12T14:24:08.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/42
+  id: 75
+- author: MattFright
+  changes:
+  - type: Add
+    message: New logos! Quantum Blue is real.
+  time: '2026-04-12T14:23:42.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/41
+  id: 76
+- author: MattFright
+  changes:
+  - type: Add
+    message: Materials look way prettier now.
+  time: '2026-04-12T14:06:37.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/45
+  id: 77
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Updated the placeholder lobby art.
+  time: '2026-04-12T14:00:57.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/40
+  id: 78
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: Pets are saved. Goodbye Finfin, welcome back Alexander.
+  time: '2026-04-12T13:59:56.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/39
+  id: 79
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: labeler workflow fixes (hopefully)
+  time: '2026-04-06T22:30:47.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/43
+  id: 80
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: New sprites for most tables, chairs, bookshelves, and also railings!
+  time: '2026-03-28T06:29:03.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/37
+  id: 81
+- author: keekee38
+  changes:
+  - type: Tweak
+    message: fixin the normal 30 rifle mags
+  time: '2026-03-27T04:51:54.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/35
+  id: 82
+- author: astral_amy
+  changes:
+  - type: Add
+    message: Reinforced catwalks are available for use with environmental hazards.
+  time: '2026-03-27T03:30:37.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/25
+  id: 83
+- author: keke38
+  changes:
+  - type: Add
+    message: asterisk real...
+  time: '2026-03-27T03:23:15.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/32
+  id: 84
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Fix matt's bats
+  time: '2026-03-21T04:49:22.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/34
+  id: 85
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: updated ahelp message
+  time: '2026-03-20T05:35:15.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/33
+  id: 86
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: You should now see completely new tips when logging on!
+  time: '2026-03-20T05:35:01.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/31
+  id: 87
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: i fucked up the walls
+  time: '2026-03-18T05:49:50.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/30
+  id: 88
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: New walls, windows, grilles and wallmounts
+  time: '2026-03-17T22:53:34.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/29
+  id: 89
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Imp catch up 03-12-2026
+  time: '2026-03-14T04:23:18.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/28
+  id: 90
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Imp reverts 2 12 2026
+  time: '2026-03-09T23:18:38.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/27
+  id: 91
+- author: CombustibleToast
+  changes:
+  - type: Tweak
+    message: remove lobby art
+  time: '2026-03-08T08:42:29.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/24
+  id: 92
+- author: CombustibleToast
+  changes:
+  - type: Tweak
+    message: Port kvass from dv
+  time: '2026-02-14T03:02:03.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/18
+  id: 93
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Imp catch up 2 12 2026
+  time: '2026-02-13T08:26:39.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/21
+  id: 94
+- author: CombustibleToast
+  changes:
+  - type: Tweak
+    message: Landmines on debris
+  time: '2026-02-12T04:51:43.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/20
+  id: 95
+- author: MattFright
+  changes:
+  - type: Tweak
+    message: The big music clean-up, changes and additions
+  time: '2026-02-09T05:28:03.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/17
+  id: 96
+- author: Sage-Jones
+  changes:
+  - type: Remove
+    message: Removed unused alert levels
+  time: '2026-01-22T08:03:15.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/16
+  id: 97
+- author: Sage-Jones
+  changes:
+  - type: Remove
+    message: Contraband tool tips (Valid Vision) have been removed. Learn and lie to your heart's content!
+  time: '2026-01-18T06:27:29.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/15
+  id: 98
+- author: keekee38
+  changes:
+  - type: Add
+    message: ported the vulcan from deltav
+  time: '2026-01-18T06:25:42.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/13
+  id: 99
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Imp catch up october 20th to december 3rd
+  time: '2025-12-08T05:52:49.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/14
+  id: 100
+- author: keekee38
+  changes:
+  - type: Add
+    message: paper walls and tatami mats and funny wood sticks
+  time: '2025-12-03T02:33:30.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/10
+  id: 101
+- author: rebe83
+  changes:
+  - type: Tweak
+    message: added throwable and stamina damage to breaching hammer
+  time: '2025-12-03T01:43:07.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/9
+  id: 102
+- author: keekee38
+  changes:
+  - type: Add
+    message: ported the mark 1 rifle, and now guns can go on your back yayy
+  time: '2025-12-03T01:16:04.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/7
+  id: 103
+- author: Sage-Jones
+  changes:
+  - type: Tweak
+    message: Slime people's punches do 1 less blunt damage, and 1 more caustic. Send people on medical visits for minuscule
+      burns!
+  time: '2025-11-11T06:40:27.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/8
+  id: 104
+- author: Sage-Jones
+  changes:
+  - type: Remove
+    message: BROS! Including all related mobs, weapons, and reagents.
+  time: '2025-11-10T04:52:27.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/1
+  id: 105
+- author: keekee38
+  changes:
+  - type: Add
+    message: nyano armor
+  time: '2025-11-10T04:51:19.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/6
+  id: 106
+- author: keekee38
+  changes:
+  - type: Add
+    message: alot more clothes from nyano
+  time: '2025-11-10T04:15:13.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/5
+  id: 107
+- author: keekee38
+  changes:
+  - type: Add
+    message: ported MNK clothes and a few other clothing items from nyano
+  time: '2025-11-10T04:02:14.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/2
+  id: 108
+- author: keekee38
+  changes:
+  - type: Add
+    message: ported breachin hammer from nyano
+  time: '2025-11-09T07:32:56.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/4
+  id: 109
+- author: keekee38
+  changes:
+  - type: Add
+    message: vulps are roundstart again yippee
+  time: '2025-11-09T07:29:56.0000000+00:00'
+  url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/3
+  id: 110
