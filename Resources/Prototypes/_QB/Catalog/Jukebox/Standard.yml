@@ -1,11 +1,12 @@
 # Files have to be in mono or you'll screw up the positional audio system and sounds won't attenuate at a distance
 # Jukebox songs can also be much lower quality than lobby songs
+# Make sure any song you add is between -24db and -12db
 
 - type: jukebox
-  id: ANewDawn
-  name: "A New Dawn // Nahu Pyrope"
+  id: 500Years
+  name: "500 Years // The Glitch Mob"
   path:
-    path: /Audio/_QB/Jukebox/A_New_Dawn_MONO.ogg
+    path: /Audio/_QB/Jukebox/500_Years_MONO.ogg
 
 - type: jukebox
   id: FunkyBeat
@@ -26,10 +27,22 @@
     path: /Audio/_QB/Jukebox/Basin_Keep_MONO.ogg
 
 - type: jukebox
+  id: BIOSsong
+  name: "BIOS // MASTER BOOT RECORD"
+  path:
+    path: /Audio/_QB/Jukebox/BIOS_MONO.ogg
+
+- type: jukebox
   id: Bodybuilder
   name: "Bodybuilder // Pilotredsun"
   path:
     path: /Audio/_QB/Jukebox/Bodybuilder_MONO.ogg
+
+- type: jukebox
+  id: CelciusTroubles
+  name: "Celcius Troubles // ClascyJitto"
+  path:
+    path: /Audio/_QB/Jukebox/Celcius_Troubles_MONO.ogg
 
 - type: jukebox
   id: ConfederateBattle
@@ -104,8 +117,14 @@
     path: /Audio/_QB/Jukebox/Friendly_Conversation_MONO.ogg
 
 - type: jukebox
+  id: GazeUpAtTheStars
+  name: "Gaze Up at the Stars // Daniele Zandara"
+  path:
+    path: /Audio/_QB/Jukebox/Gaze_Up_At_The_Stars_MONO.ogg
+
+- type: jukebox
   id: GETENUF
-  name: "GET ENUF // Hideky Naganuma"
+  name: "GET ENUF // Hideki Naganuma"
   path:
     path: /Audio/_QB/Jukebox/GET_ENUF_MONO.ogg
 
@@ -120,6 +139,12 @@
   name: "Hornet Pillows // crisp"
   path:
     path: /Audio/_QB/Jukebox/Hornet_Pillows_MONO.ogg
+
+- type: jukebox
+  id: ImEveryReaper
+  name: "I'm Every Reaper (Turbo) // Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  path:
+    path: /Audio/_QB/Jukebox/Im_Every_Reaper_MONO.ogg
 
 - type: jukebox
   id: IntoTheSky
@@ -158,6 +183,12 @@
     path: /Audio/_QB/Jukebox/Ordinary_Days_V2_MONO.ogg
 
 - type: jukebox
+  id: OzmicTheatre
+  name: "Ozmic Theatre // Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  path:
+    path: /Audio/_QB/Jukebox/Ozmic_Theatre_MONO.ogg
+
+- type: jukebox
   id: QuantumBlue
   name: "Quantum Blue // Storyteller"
   path:
@@ -168,6 +199,12 @@
   name: "Rhombus Square // Shirakumo Nagi"
   path:
     path: /Audio/_QB/Jukebox/Rhombus_Square_MONO.ogg
+
+- type: jukebox
+  id: RoaringThunder
+  name: "Roaring Thunder (Turbo) // Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  path:
+    path: /Audio/_QB/Jukebox/Roaring_Thunder_MONO.ogg
 
 - type: jukebox
   id: RUINOUSINTNT
@@ -182,6 +219,12 @@
     path: /Audio/_QB/Jukebox/Satanic_Panic_MONO.ogg
 
 - type: jukebox
+  id: ShinigamiTensei
+  name: "Shinigami Tensei // Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  path:
+    path: /Audio/_QB/Jukebox/Shinigami_Tensei_MONO.ogg
+
+- type: jukebox
   id: SneakyDriver
   name: "Sneaky Driver // Bill Kiley"
   path:
@@ -192,6 +235,12 @@
   name: "The City Of Lost Hope // Rocketcat Games"
   path:
     path: /Audio/_QB/Jukebox/The_City_of_Lost_Hope_MONO.ogg
+
+- type: jukebox
+  id: TheFrozenLight
+  name: "The Frozen Light // Rainbowdragoneyes"
+  path:
+    path: /Audio/_QB/Jukebox/The_Frozen_Light_MONO.ogg
 
 - type: jukebox
   id: ThirdDistrict
@@ -241,11 +290,45 @@
   path:
     path: /Audio/_QB/Jukebox/WIZARD_DISCO_MONO.ogg
 
+- type: jukebox
+  id: WorldWideNoise
+  name: "World Wide Noise // ClascyJitto"
+  path:
+    path: /Audio/_QB/Jukebox/World_Wide_Noise_MONO.ogg
+
 # EMAG ONLY SONGS
 
 - type: jukebox
-  id: ClearlyNuclear
+  id: ANewDawn
+  emagOnly: true
+  name: "A New Dawn // Nahu Pyrope"
+  path:
+    path: /Audio/_QB/Jukebox/A_New_Dawn_MONO.ogg
+
+- type: jukebox
+  id: ClearlyNuclearMono
   emagOnly: true
   name: "Clearly Nuclear // mrjajkes"
   path:
-    path: /Audio/StationEvents/clearly_nuclear.ogg
+    path: /Audio/_QB/Jukebox/clearly_nuclear_MONO.ogg
+
+- type: jukebox
+  id: CountdownMono
+  emagOnly: true
+  name: "Countdown // qwertyquerty"
+  path:
+    path: /Audio/_QB/Jukebox/countdown_MONO.ogg
+
+- type: jukebox
+  id: RunningOutMono
+  emagOnly: true
+  name: "Running Out // Bolgarich"
+  path:
+    path: /Audio/_QB/Jukebox/running_out_MONO.ogg
+
+- type: jukebox
+  id: SoundStationMono
+  emagOnly: true
+  name: "Sound Station 14 // Donchan"
+  path:
+    path: /Audio/_QB/Jukebox/sound_station_14_MONO.ogg

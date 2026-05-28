@@ -1,3 +1,8 @@
+- files: ["500_Years_MONO.ogg"]
+  license: "Custom"
+  copyright: "500 Years by The Glitch Mob"
+  source: "https://www.youtube.com/watch?v=-Sl9nddy2rY"
+
 - files: ["A_New_Dawn_MONO.ogg"]
   license: "Custom"
   copyright: "A New Dawn by Nahu Pyrope"
@@ -18,10 +23,25 @@
   copyright: "Basin Keep by Shirakumo Nagi"
   source: "https://www.youtube.com/watch?v=EO7ZlTvAsBQ"
 
+- files: ["BIOS_MONO.ogg"]
+  license: "Custom"
+  copyright: "BIOS by MASTER BOOT RECORD"
+  source: "https://www.youtube.com/watch?v=oV_pQcOrY2Q"
+
 - files: ["Bodybuilder.ogg"]
   license: "Custom"
   copyright: "Bodybuilder by Pilotredsun"
   source: "https://www.youtube.com/watch?v=g0d9B9oL2h0"
+
+- files: ["Celcius_Troubles_MONO.ogg"]
+  license: "Custom"
+  copyright: "Celcius Troubles by ClascyJitto"
+  source: "https://www.youtube.com/watch?v=kQZx3HZoLXc"
+
+- files: ["clearly_nuclear_MONO.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Created by mrjajkes"
+  source: "https://www.youtube.com/watch?v=chix8uz-oUQ"
 
 - files: ["Confederate_Battle_MONO.ogg"]
   license: "Custom"
@@ -32,6 +52,11 @@
   license: "CC-BY-NC-SA-4.0"
   copyright: "Conundrum by Midori Mizuno"
   source: "https://modarchive.org/index.php?request=view_by_moduleid&query=181705"
+
+- files: ["countdown_MONO.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Created by qwertyquerty"
+  source: "https://github.com/BeeStation/BeeStation-Hornet/commit/7f48971438492805af286023a72e7609a729234a"
 
 - files: ["Cubic_Void_MONO.ogg"]
   license: "Custom"
@@ -83,6 +108,11 @@
   copyright: "Friendly Conversation by Garoad"
   source: "https://www.youtube.com/watch?v=OOlWaWTlfuI"
 
+- files: ["Gaze_Up_At_The_Stars_MONO.ogg"]
+  license: "Custom"
+  copyright: "Gaze Up at the Stars by Daniele Zandara"
+  source: "https://www.youtube.com/watch?v=nAEFiIhdJV8"
+
 - files: ["GET_ENUF_MONO.ogg"]
   license: "Custom"
   copyright: "GET ENUF by Hideki Naganuma"
@@ -97,6 +127,11 @@
   license: "Custom"
   copyright: "Hornet Pillows by crisp"
   source: "https://www.youtube.com/watch?v=g0obF-EF-WM"
+
+- files: ["Im_Every_Reaper_MONO.ogg"]
+  license: "Custom"
+  copyright: "I'm Every Reaper by Flippo Vicarelli'"
+  source: "https://music.youtube.com/watch?v=K9MJuiEtw2Y"
 
 - files: ["Into_The_Sky_MONO.ogg"]
   license: "Custom"
@@ -128,6 +163,11 @@
   copyright: "Ordinary Days V2 by Klaus Veen"
   source: "https://www.youtube.com/watch?v=rpGIXmaQ2Ak"
 
+- files: ["Ozmic_Theatre_MONO.ogg"]
+  license: "Custom"
+  copyright: "Ozmic Theatre by Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  source: "https://www.youtube.com/watch?v=yIaAEAIdFYQ"
+
 - files: ["Quantum_Blue_MONO.ogg"]
   license: "Custom"
   copyright: "Quantum Blue by Storyteller"
@@ -138,20 +178,40 @@
   copyright: "Rhombus Square by Shirakumo Nagi"
   source: "https://www.youtube.com/watch?v=yE8VbZEn5eE"
 
+- files: ["Roaring_Thunder_MONO.ogg"]
+  license: "Custom"
+  copyright: "Roaring Thunder (Turbo) by Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  source: "https://www.youtube.com/watch?v=-IRMLtXk4vo"
+
 - files: ["RUINOUS_INTNT_MONO.ogg"]
   license: "Custom"
   copyright: "RUINOUS INTNT by NoisyRejects"
   source: "https://www.youtube.com/watch?v=22fCgKfzhWo"
+
+- files: ["running_out_MONO.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Created by Bolgarich"
+  source: "https://www.youtube.com/watch?v=SzEp2nv6oZ4"
 
 - files: ["Satanic_Panic_MONO.ogg"]
   license: "Custom"
   copyright: "Satanic Panic by Crypt Voice"
   source: "https://www.youtube.com/watch?v=RSmB53pz7bQ"
 
+- files: ["Shinigami_Tensei_MONO.ogg"]
+  license: "Custom"
+  copyright: "Shinigami Tensei by Yoko Shimomura, Daniele Zandara, Filippo Vicarelli, Michael Coviello"
+  source: "https://www.youtube.com/watch?v=w8xtd2BdVrU"
+
 - files: ["Sneaky_Driver_MONO.ogg"]
   license: "Custom"
   copyright: "Sneaky Driver by Bill Kiley"
   source: "https://www.youtube.com/watch?v=CnJsQQWrmiM"
+
+- files: ["sound_station_14_MONO.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Created by Donchan"
+  source: "https://www.youtube.com/watch?v=4nUpeYLKUns"
 
 - files: ["The_City_Of_Lost_Hope_MONO.ogg"]
   license: "Custom"
@@ -197,4 +257,8 @@
   license: "Custom"
   copyright: "WIZARD DISCO by Louie Zong"
   source: "https://www.youtube.com/watch?v=tThOlpk0NlI"
-  
+
+- files: ["World_Wide_Noise_MONO.ogg"]
+  license: "Custom"
+  copyright: "World Wide Noise by ClascyJitto"
+  source: "https://www.youtube.com/watch?v=bdwCjKBeWUk"
