@@ -41,6 +41,7 @@
   - type: Tool
     qualities:
       - Prying
+      - Axing # QB - add fireaxe tile prying
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay
