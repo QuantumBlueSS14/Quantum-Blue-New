@@ -294,33 +294,35 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
-- type: listing
-  id: SpellbookEventSummonGuns
-  name: spellbook-event-summon-guns-name
-  description: spellbook-event-summon-guns-description
-  productAction: ActionSummonGuns
-  cost:
-    WizCoin: 20 # imp edit
-  categories:
-  - SpellbookEvents
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  disableRefund: true
+# QB changes begin- remove mass summon weapons
+#- type: listing 
+#  id: SpellbookEventSummonGuns
+#  name: spellbook-event-summon-guns-name
+#  description: spellbook-event-summon-guns-description
+#  productAction: ActionSummonGuns
+#  cost:
+#    WizCoin: 20 # imp edit
+#  categories:
+# - SpellbookEvents
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  disableRefund: true
 
-- type: listing
-  id: SpellbookEventSummonMagic
-  name: spellbook-event-summon-magic-name
-  description: spellbook-event-summon-magic-description
-  productAction: ActionSummonMagic
-  cost:
-    WizCoin: 20 # imp edit
-  categories:
-  - SpellbookEvents
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  disableRefund: true
+#- type: listing 
+#  id: SpellbookEventSummonMagic
+#  name: spellbook-event-summon-magic-name
+#  description: spellbook-event-summon-magic-description
+#  productAction: ActionSummonMagic
+#  cost:
+#    WizCoin: 20 # imp edit
+#  categories:
+#  - SpellbookEvents
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  disableRefund: true
+# QB end - remove mass summon weapons
 
 # Upgrades
 - type: listing
