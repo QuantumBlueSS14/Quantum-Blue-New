@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/28/2026 22:47:40
-  entityCount: 4492
+  time: 05/30/2026 01:43:06
+  entityCount: 4494
 maps:
 - 1
 grids:
@@ -1857,6 +1857,17 @@ entities:
       id: Chibi
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+- proto: ActionToggleLight
+  entities:
+  - uid: 4493
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 3145
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 3145
 - proto: AirAlarm
   entities:
   - uid: 3
@@ -2164,6 +2175,18 @@ entities:
     - type: Transform
       pos: -0.5,-11.5
       parent: 2
+- proto: AirlockBrigLocked
+  entities:
+  - uid: 132
+    components:
+    - type: Transform
+      pos: 24.5,6.5
+      parent: 2
+  - uid: 134
+    components:
+    - type: Transform
+      pos: 29.5,7.5
+      parent: 2
 - proto: AirlockCaptainLocked
   entities:
   - uid: 41
@@ -2466,11 +2489,6 @@ entities:
       parent: 2
     - type: DeviceLinkSink
       invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        132:
-        - - DoorStatus
-          - DoorBolt
 - proto: AirlockFreezerLocked
   entities:
   - uid: 79
@@ -2660,13 +2678,13 @@ entities:
     - type: Transform
       pos: 12.5,8.5
       parent: 2
-- proto: AirlockMaintMedLocked
-  entities:
   - uid: 113
     components:
     - type: Transform
       pos: 10.5,0.5
       parent: 2
+- proto: AirlockMaintMedLocked
+  entities:
   - uid: 114
     components:
     - type: Transform
@@ -2775,29 +2793,12 @@ entities:
     - type: Transform
       pos: 23.5,10.5
       parent: 2
-  - uid: 132
-    components:
-    - type: Transform
-      pos: 29.5,7.5
-      parent: 2
-    - type: DeviceLinkSink
-      invokeCounter: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        78:
-        - - DoorStatus
-          - DoorBolt
 - proto: AirlockSecurityLocked
   entities:
   - uid: 133
     components:
     - type: Transform
       pos: 19.5,9.5
-      parent: 2
-  - uid: 134
-    components:
-    - type: Transform
-      pos: 24.5,6.5
       parent: 2
 - proto: AirlockServiceGlassLocked
   entities:
@@ -3654,7 +3655,7 @@ entities:
   - uid: 256
     components:
     - type: Transform
-      pos: 22.632471,9.586591
+      pos: 22.717546,12.712606
       parent: 2
 - proto: BookshelfFilled
   entities:
@@ -21154,8 +21155,24 @@ entities:
   - uid: 3145
     components:
     - type: Transform
-      pos: 22.321285,10.053763
+      pos: 22.248796,10.143784
       parent: 2
+    - type: HandheldLight
+      toggleActionEntity: 4493
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 4493
+    - type: Physics
+      canCollide: True
+    - type: ActionsContainer
 - proto: Lantern
   entities:
   - uid: 3146
@@ -29189,6 +29206,11 @@ entities:
     components:
     - type: Transform
       pos: 15.5,13.5
+      parent: 2
+  - uid: 4494
+    components:
+    - type: Transform
+      pos: 22.5,9.5
       parent: 2
 - proto: WeaponEnergyTurretCommand
   entities:
