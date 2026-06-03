@@ -121,6 +121,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingHeadHatParamedicSirenCap #imp
+    - id: ClothingHeadHatParamedicSirenBeret #qb
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingOuterCoatParamedicWB
     - id: ClothingHeadHatParamedicsoft
