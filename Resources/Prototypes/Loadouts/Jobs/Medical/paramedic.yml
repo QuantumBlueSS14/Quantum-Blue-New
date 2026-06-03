@@ -1,8 +1,13 @@
 # Head
 - type: loadout
-  id: ParamedicHead
+  id: ParamedicCap
   equipment:
     head: ClothingHeadHatParamedicsoft
+
+- type: loadout
+  id: ParamedicBeret
+  equipment:
+    head: ClothingHeadHatParamedicBeret
 
 # Jumpsuit
 - type: loadout
@@ -27,7 +32,17 @@
     outerClothing: ClothingOuterWinterPara
 
 # Shoes
-- type: loadout
-  id: BlueShoes
+#- type: loadout - qb: redoing paramed loadouts
+#  id: BlueShoes
+#  equipment:
+#    shoes: ClothingShoesColorBlue
+
+- type: loadout # qb
+  id: EMTBoots
   equipment:
-    shoes: ClothingShoesColorBlue
+    shoes: ClothingShoesEMTBoots
+
+- type: loadout # qb
+  id: LaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup

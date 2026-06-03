@@ -1604,7 +1604,8 @@
   name: loadout-group-paramedic-head
   minLimit: 0
   loadouts:
-  - ParamedicHead
+  - ParamedicCap #qb
+  - ParamedicBeret #qb
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
@@ -1626,8 +1627,8 @@
   id: ParamedicShoes
   name: loadout-group-paramedic-shoes
   loadouts:
-  - BlueShoes
-  - WhiteShoes
+  - EMTBoots #qb
+  - LaceupShoes #qb
   - MedicalWinterBoots
 
 - type: loadoutGroup
