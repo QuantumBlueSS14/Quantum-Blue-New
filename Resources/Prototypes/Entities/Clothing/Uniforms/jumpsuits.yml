@@ -450,9 +450,9 @@
   description: It's got a plus on it, that's a good thing right?
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/paramedic.rsi
+    sprite: _QB/Clothing/Uniforms/Jumpsuit/paramedic.rsi #qb
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/paramedic.rsi
+    sprite: _QB/Clothing/Uniforms/Jumpsuit/paramedic.rsi #qb
 
 - type: entity
   parent: [ ClothingUniformBase, ClothingUniformFoldableBase ] #imp, foldable

@@ -313,9 +313,9 @@
   description: A blue baseball cap with a cross on the front.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Soft/paramedicsoft.rsi
+    sprite: _QB/Clothing/Head/Soft/paramedic_cap.rsi #qb
   - type: Clothing
-    sprite: Clothing/Head/Soft/paramedicsoft.rsi
+    sprite: _QB/Clothing/Head/Soft/paramedic_cap.rsi #qb
   - type: Tag
     tags:
     - ClothMade

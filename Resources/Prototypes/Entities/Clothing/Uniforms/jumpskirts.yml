@@ -288,9 +288,9 @@
   description: It's got a plus on it, that's a good thing right?
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/paramedic.rsi
+    sprite: _QB/Clothing/Uniforms/Jumpskirt/paramedic.rsi #qb
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/paramedic.rsi
+    sprite: _QB/Clothing/Uniforms/Jumpskirt/paramedic.rsi #qb
 
 - type: entity
   parent: ClothingUniformSkirtBase

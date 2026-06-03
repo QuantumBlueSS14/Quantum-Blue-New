@@ -102,7 +102,7 @@
   description: "A futuristic cap for first responders with an integrated siren system. Requires batteries."
   components:
   - type: Sprite
-    sprite: _Impstation/Clothing/Head/Hats/paramedicsirencap.rsi
+    sprite: _QB/Clothing/Head/Soft/caduceus_cap.rsi #qb
     layers:
       - state: icon
       - state: icon-light
@@ -111,7 +111,7 @@
         map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Appearance
   - type: Clothing
-    sprite: _Impstation/Clothing/Head/Hats/paramedicsirencap.rsi
+    sprite: _QB/Clothing/Head/Soft/caduceus_cap.rsi #qb
     equippedPrefix: off
   - type: ItemToggle
     predictable: false # issues between ToggleCellDraw and ItemToggleActiveSound
