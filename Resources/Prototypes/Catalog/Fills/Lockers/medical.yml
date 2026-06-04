@@ -122,6 +122,7 @@
     children:
     - id: ClothingHeadHatParamedicSirenCap #imp
     - id: ClothingOuterHardsuitVoidParamed
+    - id: ClothingShoesBootsMag # QB
     - id: ClothingOuterCoatParamedicWB
     - id: ClothingHeadHatParamedicsoft
     - id: ClothingOuterWinterPara
