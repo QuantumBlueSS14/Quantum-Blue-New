@@ -43,6 +43,7 @@
       - Prying
       - Axing # QB - add fireaxe tile prying
   - type: ToolTileCompatible
+    delay: 3 # QB - increase doafter
   - type: Prying
   - type: UseDelay
     delay: 1
