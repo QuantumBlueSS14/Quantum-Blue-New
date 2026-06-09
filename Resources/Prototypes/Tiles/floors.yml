@@ -1917,6 +1917,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemSteel #probably should not be normally obtainable, but the game shits itself and dies when you try to put null here
   heatCapacity: 10000
+  indestructible: true # QB
 
 - type: tile
   id: FloorHullReinforced
@@ -1939,6 +1940,7 @@
   footstepSounds:
     collection: FootstepHull
   itemDrop: PartRodMetal1 #same case as FloorHull
+  indestructible: true # QB
 
 # Faux sci tiles
 

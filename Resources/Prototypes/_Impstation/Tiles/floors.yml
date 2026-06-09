@@ -493,3 +493,4 @@
     collection: FootstepHull
   itemDrop: FloorTileItemSteel # Have to put something here according to upstream comments and I can't be bothered to test myself. Shouldn't be obtainable though
   heatCapacity: 10000
+  indestructible: true # QB
