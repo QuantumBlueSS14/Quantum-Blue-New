@@ -53,3 +53,9 @@ storage_limit = 2
 
 [whitelist]
 enabled = true
+
+[hub]
+hub_urls="https://hub.playss14.com/"
+
+[auth]
+server="https://auth.playss14.com/"
