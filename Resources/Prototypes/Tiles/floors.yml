@@ -1458,7 +1458,13 @@
 - type: tile
   id: FloorGrass
   name: tiles-planet-grass-floor
-  sprite: /Textures/Tiles/grass.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB start
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 # QB end
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1470,7 +1476,13 @@
 - type: tile
   id: FloorGrassJungle
   name: tiles-jungle-grass-floor
-  sprite: /Textures/Tiles/grassjungle.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB start
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 # QB
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1948,7 +1960,7 @@
 - type: tile
   id: FloorAstroGrass
   name: tiles-astro-grass
-  sprite: /Textures/Tiles/Planet/Grass/grass.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB
   variants: 4
   placementVariants:
   - 1.0
