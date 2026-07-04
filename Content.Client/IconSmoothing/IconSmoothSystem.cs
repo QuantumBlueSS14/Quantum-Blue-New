@@ -398,31 +398,20 @@ namespace Content.Client.IconSmoothing
 
             // There are neighbors to the west and east that are not looking in the opposite direction
             var eastOk = directionsOnEast != CardinalConnectDirs.None && (directionsOnEast & sameDir) != 0;
-            if (!eastOk)
-            {
-                eastOk = ((directionsOnEast & clockwiseDir) != 0) &&
+            eastOk |= (directionsOnEast & clockwiseDir) != 0 &&
                          directionsOnSouthEast != CardinalConnectDirs.None &&
                          (directionsOnSouthEast & clockwiseDir) != 0;
-            }
-            if (!eastOk)
-            {
-                eastOk = ((directionsOnEast & counterClockwiseDir) != 0) &&
-                         directionsOnNorthEast != CardinalConnectDirs.None &&
-                         (directionsOnNorthEast & counterClockwiseDir) != 0;
-            }
+            eastOk |= (directionsOnEast & counterClockwiseDir) != 0 &&
+                     directionsOnNorthEast != CardinalConnectDirs.None &&
+                     (directionsOnNorthEast & counterClockwiseDir) != 0;
+
             var westOk = directionsOnWest != CardinalConnectDirs.None && (directionsOnWest & sameDir) != 0;
-            if (!westOk)
-            {
-                westOk = ((directionsOnWest & clockwiseDir) != 0) &&
+            westOk |= (directionsOnWest & clockwiseDir) != 0 &&
                          directionsOnNorthWest != CardinalConnectDirs.None &&
                          (directionsOnNorthWest & clockwiseDir) != 0;
-            }
-            if (!westOk)
-            {
-                westOk = ((directionsOnWest & counterClockwiseDir) != 0) &&
+            westOk |= ((directionsOnWest & counterClockwiseDir) != 0) &&
                          directionsOnSouthWest != CardinalConnectDirs.None &&
                          (directionsOnSouthWest & counterClockwiseDir) != 0;
-            }
 
             if (westOk && eastOk)
             {
