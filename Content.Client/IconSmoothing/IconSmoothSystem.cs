@@ -336,7 +336,7 @@ namespace Content.Client.IconSmoothing
             }
         }
 
-        private void CalculateNewSnakeDirectional(Entity<MapGridComponent>? gridEntity, IconSmoothComponent smooth, Entity<SpriteComponent> sprite, TransformComponent xform, EntityQuery<IconSmoothComponent> smoothQuery)
+        private void CalculateNewSnakeDirectional(Entity<MapGridComponent>? gridEntity, IconSmoothComponent smooth, Entity<SpriteComponent> sprite, TransformComponent xform)
         {
             if (gridEntity == null)
             {
@@ -355,14 +355,14 @@ namespace Content.Client.IconSmoothing
             var sameDir = CardinalFlagFromDir(rotation.RotateVec(-Vector2.UnitY).ToWorldAngle().GetCardinalDir());
 
             // Directions where entities are directed on the adjacent tile
-            var directionsOnWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(-Vector2.UnitX), smooth, smoothQuery);
-            var directionsOnEast = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(Vector2.UnitX), smooth, smoothQuery);
-            var directionsOnSouth = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(-Vector2.UnitY), smooth, smoothQuery);
-            var directionsOnNorth = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(Vector2.UnitY), smooth, smoothQuery);
-            var directionsOnSouthWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(-1f,-1f)), smooth, smoothQuery);
-            var directionsOnSouthEast = CollectNeighborDirections(gridUid, grid, pos +(Vector2i) rotation.RotateVec(new Vector2(1f,-1f)), smooth, smoothQuery);
-            var directionsOnNorthWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(-1f,1f)), smooth, smoothQuery);
-            var directionsOnNorthEast = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(1f,1f)), smooth, smoothQuery);
+            var directionsOnWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(-Vector2.UnitX), smooth);
+            var directionsOnEast = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(Vector2.UnitX), smooth);
+            var directionsOnSouth = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(-Vector2.UnitY), smooth);
+            var directionsOnNorth = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(Vector2.UnitY), smooth);
+            var directionsOnSouthWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(-1f,-1f)), smooth);
+            var directionsOnSouthEast = CollectNeighborDirections(gridUid, grid, pos +(Vector2i) rotation.RotateVec(new Vector2(1f,-1f)), smooth);
+            var directionsOnNorthWest = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(-1f,1f)), smooth);
+            var directionsOnNorthEast = CollectNeighborDirections(gridUid, grid, pos + (Vector2i) rotation.RotateVec(new Vector2(1f,1f)), smooth);
 
             // There is a neighbor to the north looking counterclockwise from us, to the west looking not in the opposite direction
             if  ((directionsOnNorth & counterClockwiseDir) != 0 &&
@@ -491,14 +491,14 @@ namespace Content.Client.IconSmoothing
             return false;
         }
 
-        private CardinalConnectDirs CollectNeighborDirections(EntityUid gridUid, MapGridComponent grid, Vector2i targetPos, IconSmoothComponent smooth, EntityQuery<IconSmoothComponent> smoothQuery)
+        private CardinalConnectDirs CollectNeighborDirections(EntityUid gridUid, MapGridComponent grid, Vector2i targetPos, IconSmoothComponent smooth)
         {
             var dirs = CardinalConnectDirs.None;
             var entities = _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, targetPos);
 
             while (entities.MoveNext(out var entity))
             {
-                if (!smoothQuery.TryGetComponent(entity, out var other) ||
+                if (!_iconSmoothQuery.TryGetComponent(entity, out var other) ||
                     other.SmoothKey == null ||
                     !(other.SmoothKey == smooth.SmoothKey || smooth.AdditionalKeys.Contains(other.SmoothKey)) ||
                     !other.Enabled)
