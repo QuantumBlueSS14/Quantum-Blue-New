@@ -9,5 +9,5 @@
   overrideConsoleVisibility: true
   access:
   - Maintenance
-  extendedAccess:
+  # extendedAccess: # QB
   # - External # QB
