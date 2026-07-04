@@ -24,6 +24,10 @@ using Content.Shared.Radio.Components;
 using Content.Shared.Store.Components;
 using Robust.Shared.Audio.Systems;
 using Content.Shared.Popups;
+using Content.Shared.StatusEffect;
+using Content.Shared.Store.Components;
+using Robust.Shared.Audio.Systems;
+using Content.Shared.Popups;
 using Robust.Shared.Random;
 using Robust.Server.GameObjects;
 using Content.Shared.Stunnable;
@@ -31,6 +35,7 @@ using Content.Shared.StatusEffect;
 using Content.Shared.Throwing;
 using Robust.Shared.Prototypes;
 using Content.Shared.Eye.Blinding.Systems;
+using Content.Shared._Starlight.CollectiveMind;
 
 namespace Content.Server.Heretic.Abilities;
 

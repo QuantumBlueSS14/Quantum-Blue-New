@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Server.Ghost;
 using Content.Server.Humanoid;
 using Content.Shared.Body.Components;
@@ -6,18 +5,20 @@ using Content.Shared.Body.Events;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage.Components;
+using Content.Shared.Gibbing;
+using Content.Shared.Gibbing.Events;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
-using Robust.Shared.Audio;
 using Robust.Shared.Timing;
 
 namespace Content.Server.Body.Systems;
 
 public sealed class BodySystem : SharedBodySystem
 {
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly GhostSystem _ghostSystem = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidSystem = default!;
@@ -91,5 +92,31 @@ public sealed class BodySystem : SharedBodySystem
 
         var layers = HumanoidVisualLayersExtension.Sublayers(layer.Value);
         _humanoidSystem.SetLayersVisibility((bodyEnt, humanoid), layers, visible: false);
+    }
+
+    public HashSet<EntityUid> GibBody(
+        EntityUid bodyId,
+        bool gibOrgans = false,
+        BodyComponent? body = null,
+        bool launchGibs = true
+    )
+    {
+        if (!Resolve(bodyId, ref body, logMissing: false)
+            || TerminatingOrDeleted(bodyId)
+            || EntityManager.IsQueuedForDeletion(bodyId))
+        {
+            return new HashSet<EntityUid>();
+        }
+
+        if (HasComp<GodmodeComponent>(bodyId))
+            return new HashSet<EntityUid>();
+
+        var attemptEv = new AttemptEntityGibCancelEvent(bodyId);
+        RaiseLocalEvent(bodyId, ref attemptEv);
+        if (attemptEv.Cancelled)
+            return new HashSet<EntityUid>();
+
+        // Shared gibbing now owns the gib lifecycle and emits BeingGibbedEvent.
+        return _gibbing.Gib(bodyId, dropGiblets: launchGibs);
     }
 }

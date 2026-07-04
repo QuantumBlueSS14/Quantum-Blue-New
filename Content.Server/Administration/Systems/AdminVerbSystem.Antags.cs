@@ -15,6 +15,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared.Roles.Components;
 using Content.Server._Goobstation.GameTicking.Rules.Components; //goob
+using Content.Server.QB.GameTicking.Rules.Components;
 
 namespace Content.Server.Administration.Systems;
 
@@ -35,6 +36,7 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultNinjaRule = "NinjaSpawn";
+    private static readonly EntProtoId DefaultSlasherRule = "Slasher"; //QB
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
     // All antag verbs have names so invokeverb works.
@@ -158,6 +160,23 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
         };
         args.Verbs.Add(thief);
+
+        //QB Start
+        var slasherName = Loc.GetString("roles-antag-slasher-name"); //QB
+        Verb slasher = new()
+        {
+            Text = slasherName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Objects/Weapons/Melee/chainsaw.rsi"), "icon"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<SlasherRuleComponent>(targetPlayer, DefaultSlasherRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", slasherName, Loc.GetString("admin-verb-make-slasher")),
+        };
+        args.Verbs.Add(slasher);
+        //QB end
 
         var changelingName = Loc.GetString("admin-verb-text-make-changeling");
         Verb changeling = new()

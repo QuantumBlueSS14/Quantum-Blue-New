@@ -227,11 +227,24 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
     public FormattedMessage GetScannerMessage(AnomalyScannerComponent component)
     {
         var msg = new FormattedMessage();
-        if (component.ScannedAnomaly is not { } anomaly || !TryComp<AnomalyComponent>(anomaly, out var anomalyComp))
+        if (component.ScannedAnomaly is not { } scanned)
         {
             msg.AddMarkupOrThrow(Loc.GetString("anomaly-scanner-no-anomaly"));
             return msg;
         }
+
+        var msgEv = new ScannerBuildMessageEvent();
+        RaiseLocalEvent(scanned, ref msgEv);
+        if (msgEv.Message != null)
+            return msgEv.Message;
+
+        if (!TryComp<AnomalyComponent>(scanned, out var anomalyComp))
+        {
+            msg.AddMarkupOrThrow(Loc.GetString("anomaly-scanner-no-anomaly"));
+            return msg;
+        }
+
+        var anomaly = scanned;
 
         TryComp<SecretDataAnomalyComponent>(anomaly, out var secret);
 
@@ -364,4 +377,11 @@ public sealed partial class AnomalySystem : SharedAnomalySystem
         return msg;
     }
     #endregion
+}
+
+[ByRefEvent]
+public sealed class ScannerBuildMessageEvent
+{
+    public FormattedMessage? Message;
+    public TimeSpan? NextPulseTime;
 }

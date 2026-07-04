@@ -157,6 +157,9 @@ uplink-hotsauces-desc = New from Discount Dan's! 4 levels of heat to put your sp
 uplink-taipan-name = Taipan bundle
 uplink-taipan-desc = One "Taipan" Echion crossbow, bundled with a canister of its proprietary liquid ammo.
 
+uplink-destabilizing-crystal-name = Destabilizing Crystal
+uplink-destabilizing-crystal-desc = A crystal that can be used to destabilize the supermatter to cause a resonance cascade. Carefully apply this on a stable supermatter crystal and start the delamination. Prevent anyone from stopping you.
+
 uplink-muldoon-sniper-kit-name = Muldoon Sniper Conversion Kit
 uplink-muldoon-sniper-kit-desc = An upgrade kit that modifies the muldoon to allow both darts and .60 anti-material rounds to fit and fire inside.
 
@@ -168,3 +171,6 @@ uplink-ananke-desc = Brutal and unapolagetic-- the Ananke plasma shotgun, bundle
 
 uplink-glykon-name = Glykon bundle
 uplink-glykon-desc = Beautiful, elegant, and deadly. The Glykon bundled with 4 canisters of its proprietary liquid ammo.
+
+uplink-phone-syndicate-name = Blood-Red Phone
+uplink-phone-syndicate-desc = Useful if you need to call Syndicate High Command. Only one may be purchased.

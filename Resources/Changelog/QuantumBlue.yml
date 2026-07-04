@@ -1,4 +1,11 @@
 Entries:
+  - author: soup4food
+    changes:
+      - type: Add
+        message: Playtestable Slasher
+    id: 130
+    time: '2026-07-04T06:05:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/156
   - author: Sage-Jones
     changes:
       - type: Add
