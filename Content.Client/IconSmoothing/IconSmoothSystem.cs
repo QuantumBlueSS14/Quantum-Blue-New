@@ -506,10 +506,7 @@ namespace Content.Client.IconSmoothing
                     continue;
                 }
 
-                if (!TryComp(entity, out TransformComponent? xform))
-                    continue;
-
-                dirs |= CardinalFlagFromDir(xform.LocalRotation.GetCardinalDir());
+                dirs |= CardinalFlagFromDir(Transform(entity.Value).LocalRotation.GetCardinalDir());
             }
 
             return dirs;
