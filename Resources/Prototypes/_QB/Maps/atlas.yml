@@ -3,13 +3,13 @@
   mapName: 'Atlas'
   mapPath: /Maps/_QB/atlas.yml
   minPlayers: 8
-  maxPlayers: 35
+  maxPlayers: 40
   stations:
     Atlas:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
+          emergencyShuttlePath: /Maps/_QB/Shuttles/Evac/NTQB_Capsule.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} "Atlas" Biosphere {1}'
           nameGenerator:
