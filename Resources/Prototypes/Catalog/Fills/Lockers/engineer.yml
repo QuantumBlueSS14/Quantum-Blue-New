@@ -157,9 +157,9 @@
     - id: ClothingHeadHelmetAtmosFire
     - id: GasAnalyzer
     - id: trayScanner # QB
-    - id: MedkitOxygenFilled
+    # - id: MedkitOxygenFilled # QB - unnecessary
     - id: HolofanProjector
-    - id: RCD
+    # - id: RCD # QB - RCDs for engis, RPDs for atmos techs
     - id: RCDAmmo
     - id: RPD # Funky RPD
     - id: AirGrenade
@@ -169,7 +169,7 @@
   id: FillAtmosphericsHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingOuterHardsuitAtmos
+    # - id: ClothingOuterHardsuitAtmos # QB - i hate this thing
     - id: ClothingShoesBootsMag # QB
     - id: OxygenTankFilled
     - id: ClothingMaskBreath
