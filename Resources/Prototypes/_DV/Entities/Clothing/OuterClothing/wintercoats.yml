@@ -8,6 +8,8 @@
     sprite: _DV/Clothing/OuterClothing/WinterCoats/stasecsweater.rsi
   - type: Clothing
     sprite: _DV/Clothing/OuterClothing/WinterCoats/stasecsweater.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:

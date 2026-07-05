@@ -51,6 +51,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor # Granting wizard robes resistance, blue robes are average
     modifiers:
       coefficients:
@@ -61,8 +63,8 @@
         Cold: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.9
-  - type: StaminaResistance # Still in the spirit of that the blue robes remain an allrounder granting them some stamina resistance to keep with that idea
-    damageCoefficient: 0.7
+  # - type: StaminaResistance # Still in the spirit of that the blue robes remain an allrounder granting them some stamina resistance to keep with that idea
+  #   damageCoefficient: 0.7 # QB comment
 
 - type: entity
   parent: ClothingOuterWizardRed
@@ -79,6 +81,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor #red wizard robes get resistance to enable intentionally fireballing yourself
     modifiers:
       coefficients:
@@ -95,7 +99,7 @@
 
 - type: entity
   parent: ClothingOuterWizardViolet
-  id: ClothingOuterWizardVioletarmored 
+  id: ClothingOuterWizardVioletarmored
   name: violet wizard robes
   description: A bizarre gem-encrusted violet robe that radiates magical energies.
   suffix: DO NOT MAP
@@ -108,6 +112,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.2 # QB
   - type: Armor # high bullet res at the cost of everything else
     modifiers:
       coefficients:
