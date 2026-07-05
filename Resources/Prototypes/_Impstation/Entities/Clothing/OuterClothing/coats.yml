@@ -284,6 +284,8 @@
     spawned:
     - id: ClothingOuterCoatBomberSecurityLoose # how long can IDs be lol
       amount: 1
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.9 # QB
   - type: Armor # identical stats to the station security sweater we ported from delta-v which is also selectable in the secoff loadout
     modifiers:
       coefficients:
@@ -308,6 +310,8 @@
     spawned:
     - id: ClothingOuterCoatBomberBrigmedLoose
       amount: 1
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.9 # QB
   - type: Armor # identical to the base-game armored medical gown
     modifiers:
       coefficients:
