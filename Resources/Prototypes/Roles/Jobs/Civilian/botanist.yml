@@ -13,6 +13,8 @@
   extendedAccess:
   - Kitchen
   - Bar
+  - Janitor # QB
+  - Zoo # QB
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: FourTwenty

@@ -21,6 +21,8 @@ namespace Content.Client.Stylesheets
         public Stylesheet SheetNanotrasen { get; private set; } = default!;
         public Stylesheet SheetSystem { get; private set; } = default!;
 
+        public Stylesheet SheetSyndicate { get; private set; } = default!; // imp
+
         [Obsolete("Update to use SheetNanotrasen instead")]
         public Stylesheet SheetNano { get; private set; } = default!;
 

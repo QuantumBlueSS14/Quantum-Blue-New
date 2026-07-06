@@ -7,6 +7,18 @@
   objective: roles-antag-slasher-objective
   guides: [ ]
 
+- type: playTimeTracker
+  id: AntagSlasher
+
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleSlasher
+  name: Slasher Role
+  components:
+  - type: MindRole
+    antagPrototype: Slasher
+    roleType: SoloAntagonist
+
 - type: startingGear
   id: SlasherGear
   equipment:

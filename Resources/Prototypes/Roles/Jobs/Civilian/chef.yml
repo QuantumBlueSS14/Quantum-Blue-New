@@ -16,6 +16,8 @@
   extendedAccess:
   - Hydroponics
   - Bar
+  - Janitor # QB
+  - Zoo # QB
 
 - type: startingGear
   id: ChefGear
