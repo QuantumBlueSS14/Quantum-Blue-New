@@ -7,8 +7,6 @@
   objective: roles-antag-slasher-objective
   guides: [ ]
 
-- type: playTimeTracker
-  id: AntagSlasher
 
 - type: entity
   parent: BaseMindRoleAntag

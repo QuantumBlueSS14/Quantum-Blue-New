@@ -22,8 +22,8 @@
     rules:
     - id: Thief
       prob: 0.5
-    - id: SlasherSubgamemode
-      prob: 0.1
+    # - id: SlasherSubgamemode
+    #   prob: 0.1
     - id: SubWizard
       prob: 0.05
     - id: Xenoborgs
@@ -39,8 +39,8 @@
     rules:
     - id: Thief
       prob: 0.5
-    - id: SlasherSubgamemode
-      prob: 0.1
+    # - id: SlasherSubgamemode
+    #   prob: 0.1
     - id: Xenoborgs
       prob: 0.05
     - id: Conspirators # imp edit
@@ -54,8 +54,8 @@
     rules:
     - id: Thief
       prob: 0.5
-    - id: SlasherSubgamemode
-      prob: 0.1
+    # - id: SlasherSubgamemode
+    #   prob: 0.1
     - id: SubWizard
       prob: 0.05
     - id: Conspirators # imp edit
@@ -69,8 +69,8 @@
     rules:
     - id: Thief
       prob: 0.5
-    - id: SlasherSubgamemode
-      prob: 0.1
+    # - id: SlasherSubgamemode
+    #   prob: 0.1
     - id: Conspirators # imp edit
       prob: 0.05
 
@@ -507,6 +507,18 @@
         entityPrototype: ShadowKudzu
         radius: 1
       - type: NoSacrifice
+      - type: StaminaResistance
+        damageCoefficient: 0.1
+      - type: ClothingSlowOnDamageModifier
+        modifier: 1
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.25
+            Slash: 0.25
+            Piercing: 0.25
+            Heat: 0.25
+            Caustic: 0.25
       - type: SlasherRole
         actions:
         - ActionSlasherGainShroud
