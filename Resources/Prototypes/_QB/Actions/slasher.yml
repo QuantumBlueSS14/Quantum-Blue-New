@@ -179,7 +179,7 @@
   - type: Action
     itemIconStyle: BigAction
     raiseOnAction: true
-    useDelay: 30
+    useDelay: 10
     icon:
       sprite: Objects/Magic/magicactions.rsi
       state: item_recall

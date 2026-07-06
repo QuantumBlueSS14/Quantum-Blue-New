@@ -507,6 +507,18 @@
         entityPrototype: ShadowKudzu
         radius: 1
       - type: NoSacrifice
+      - type: StaminaResistance
+        damageCoefficient: 0.1
+      - type: ClothingSlowOnDamageModifier
+        modifier: 1
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.25
+            Slash: 0.25
+            Piercing: 0.25
+            Heat: 0.25
+            Caustic: 0.25
       - type: SlasherRole
         actions:
         - ActionSlasherGainShroud
