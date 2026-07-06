@@ -10,6 +10,11 @@
   - Service
   - Janitor
   - Maintenance
+  extendedAccess: # QB start - previously had no extended access
+  - Hydroponics
+  - Bar
+  - Kitchen
+  - Zoo # QB end
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay

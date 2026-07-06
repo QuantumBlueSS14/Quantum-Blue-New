@@ -1,4 +1,56 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Removed atmos hardsuits
+      - type: Remove
+        message: Removed oxy medkits and RCDs from the atmos tech locker
+    id: 135
+    time: '2026-07-05T05:18:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/160
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Research unlocks won't spam multiple channels anymore!
+    id: 134
+    time: '2026-07-05T05:16:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/159
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Janitor, Chef, Botanist, Bartender and Zookeeper now all have each other's accesses in very low pop lobbies!
+      - type: Tweak
+        message: All department heads that didn't previously have externals access, now do
+      - type: Tweak
+        message: Cargo techs have externals access now!
+      - type: Fix
+        message: Cyborgs have zoo access now
+    id: 133
+    time: '2026-07-05T05:15:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/158
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Added Atlas, a new 8-40 pop station! Featuring lots of zoos and a supermatter!
+    id: 132
+    time: '2026-07-05T02:49:48.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/157
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Fireaxes can now pry floor tiles!
+      - type: Tweak
+        message: All floor tiles have had their skeletons replaced with more axable bones.
+    id: 131
+    time: '2026-07-05T02:47:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/134
+  - author: soup4food
+    changes:
+      - type: Add
+        message: Playtestable Slasher
+    id: 130
+    time: '2026-07-04T06:05:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/156
   - author: Sage-Jones
     changes:
       - type: Add

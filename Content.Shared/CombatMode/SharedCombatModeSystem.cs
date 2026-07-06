@@ -73,6 +73,9 @@ public abstract class SharedCombatModeSystem : EntitySystem
         component.IsInCombatMode = value;
         Dirty(entity, component);
 
+        var ev = new CombatModeChangedEvent(value);
+        RaiseLocalEvent(entity, ev);
+
         if (component.CombatToggleActionEntity != null)
             _actionsSystem.SetToggled(component.CombatToggleActionEntity, component.IsInCombatMode);
 
@@ -105,3 +108,5 @@ public sealed partial class ToggleCombatActionEvent : InstantActionEvent
 {
 
 }
+
+public readonly record struct CombatModeChangedEvent(bool Enabled);

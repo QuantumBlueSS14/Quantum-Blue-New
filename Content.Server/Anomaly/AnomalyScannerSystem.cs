@@ -28,15 +28,26 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
     }
 
     /// <summary> Updates device with passed anomaly data. </summary>
-    public void UpdateScannerWithNewAnomaly(EntityUid scanner, EntityUid anomaly, AnomalyScannerComponent? scannerComp = null, AnomalyComponent? anomalyComp = null)
+    public void UpdateScannerWithNewAnomaly(EntityUid scanner, EntityUid target, AnomalyScannerComponent? scannerComp = null, AnomalyComponent? anomalyComp = null)
     {
-        if (!Resolve(scanner, ref scannerComp) || !Resolve(anomaly, ref anomalyComp))
+        if (!Resolve(scanner, ref scannerComp))
             return;
 
-        scannerComp.ScannedAnomaly = anomaly;
+        scannerComp.ScannedAnomaly = target;
         UpdateScannerUi(scanner, scannerComp);
 
         TryComp<AppearanceComponent>(scanner, out var appearanceComp);
+
+        if (!Resolve(target, ref anomalyComp, false))
+        {
+            Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, false, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyStability, AnomalyStabilityVisuals.Stable, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalySeverity, 0, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyNextPulse, 0, appearanceComp);
+            return;
+        }
+
+        var anomaly = target;
         TryComp<SecretDataAnomalyComponent>(anomaly, out var secretDataComp);
 
         Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, true, appearanceComp);
@@ -62,8 +73,31 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
         if (TryComp<AnomalyComponent>(component.ScannedAnomaly, out var anomalyComponent))
             nextPulse = anomalyComponent.NextPulseTime;
 
-        var state = new AnomalyScannerUserInterfaceState(_anomaly.GetScannerMessage(component), nextPulse);
+        var msg = _anomaly.GetScannerMessage(component);
+        if (nextPulse == null && component.ScannedAnomaly.HasValue)
+        {
+            var msgEv = new ScannerBuildMessageEvent();
+            RaiseLocalEvent(component.ScannedAnomaly.Value, ref msgEv);
+            nextPulse = msgEv.NextPulseTime;
+        }
+
+        var state = new AnomalyScannerUserInterfaceState(msg, nextPulse);
         UI.SetUiState(uid, AnomalyScannerUiKey.Key, state);
+    }
+
+    public void ClearScanTarget(EntityUid scanner, AnomalyScannerComponent? scannerComp = null)
+    {
+        if (!Resolve(scanner, ref scannerComp))
+            return;
+
+        scannerComp.ScannedAnomaly = null;
+        UpdateScannerUi(scanner, scannerComp);
+
+        TryComp<AppearanceComponent>(scanner, out var appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, false, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyStability, AnomalyStabilityVisuals.Stable, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalySeverity, 0, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyNextPulse, 0, appearanceComp);
     }
 
     /// <inheritdoc />
@@ -87,7 +121,14 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
 
         base.OnDoAfter(uid, component, args);
 
-        UpdateScannerWithNewAnomaly(uid, args.Args.Target.Value, component);
+        var scanTarget = args.Args.Target.Value;
+        var scanEv = new TryScanEntityEvent();
+        RaiseLocalEvent(scanTarget, ref scanEv);
+
+        if (!TryComp<AnomalyComponent>(scanTarget, out _) && !scanEv.Accepted)
+            return;
+
+        UpdateScannerWithNewAnomaly(uid, scanTarget, component);
     }
 
     private void OnScannerAnomalyHealthChanged(ref AnomalyHealthChangedEvent args)

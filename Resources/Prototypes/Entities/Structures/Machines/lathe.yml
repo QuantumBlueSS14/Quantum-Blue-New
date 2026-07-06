@@ -425,8 +425,8 @@
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
   - type: OreSiloClient
-  - type: LatheAnnouncing
-    channels: [Security]
+  # - type: LatheAnnouncing # QB
+  #   channels: [Security]
 
 - type: entity
   id: AmmoTechFab
@@ -503,8 +503,8 @@
   - type: StealTarget
     stealGroup: MedicalTechFabCircuitboard
   - type: OreSiloClient
-  - type: LatheAnnouncing
-    channels: [Medical]
+  # - type: LatheAnnouncing # QB
+  #   channels: [Medical]
 
 - type: entity
   parent: BaseLathe

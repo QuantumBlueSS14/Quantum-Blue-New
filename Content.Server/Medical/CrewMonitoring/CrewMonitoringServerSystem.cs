@@ -109,4 +109,21 @@ public sealed class CrewMonitoringServerSystem : EntitySystem
     {
         component.SensorStatus.Clear();
     }
+
+    public void RemoveSensorStatusByAddress(EntityUid uid, string address, CrewMonitoringServerComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        component.SensorStatus.Remove(address);
+    }
+
+    public void SetSensorStatusByAddress(EntityUid uid, string address, SuitSensorStatus status, CrewMonitoringServerComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        status.Timestamp = _gameTiming.CurTime;
+        component.SensorStatus[address] = status;
+    }
 }

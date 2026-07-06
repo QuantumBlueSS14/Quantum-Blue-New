@@ -49,7 +49,16 @@ public abstract class SharedAnomalyScannerSystem : EntitySystem
         if (args.Target is not { } target)
             return;
 
-        if (!HasComp<AnomalyComponent>(target))
+        var scanEv = new TryScanEntityEvent();
+        RaiseLocalEvent(target, ref scanEv);
+
+        if (scanEv.RejectionLocale != null)
+        {
+            Popup.PopupClient(Loc.GetString(scanEv.RejectionLocale), args.User, args.User);
+            return;
+        }
+
+        if (!HasComp<AnomalyComponent>(target) && !scanEv.Accepted)
             return;
 
         if (!args.CanReach)
@@ -83,4 +92,11 @@ public abstract class SharedAnomalyScannerSystem : EntitySystem
         args.Handled = true;
     }
 
+}
+
+[ByRefEvent]
+public sealed class TryScanEntityEvent
+{
+    public bool Accepted;
+    public string? RejectionLocale;
 }

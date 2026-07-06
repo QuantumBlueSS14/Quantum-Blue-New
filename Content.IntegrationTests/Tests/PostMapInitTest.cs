@@ -193,6 +193,7 @@ namespace Content.IntegrationTests.Tests
 
             // QB PROTOTYPES:
             "AsteriskQB",
+            "Atlas",
             "ByoinQB",
             "ChibiQB",
             "Dash",
