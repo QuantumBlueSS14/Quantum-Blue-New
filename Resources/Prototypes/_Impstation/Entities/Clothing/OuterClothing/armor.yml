@@ -8,6 +8,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Armor/captain_repeller.rsi
   - type: Clothing
     sprite: _Impstation/Clothing/OuterClothing/Armor/captain_repeller.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:

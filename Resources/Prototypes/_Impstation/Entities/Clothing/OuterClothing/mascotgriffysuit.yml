@@ -13,6 +13,8 @@
     equippedPrefix: alive
     slots:
     - outerClothing
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:

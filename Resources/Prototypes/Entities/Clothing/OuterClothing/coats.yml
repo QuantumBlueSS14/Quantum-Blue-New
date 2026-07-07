@@ -67,6 +67,8 @@
   parent: AllowSuitStorageClothing
   id: ClothingOuterArmorHoS
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -83,6 +85,8 @@
   parent: AllowSuitStorageClothing
   id: ClothingOuterArmorWarden
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -362,6 +366,8 @@
     sprite: Clothing/OuterClothing/Coats/dogi.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/dogi.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -418,6 +424,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Coats/brigmedic.rsi #imp
   - type: Clothing
     sprite: _Impstation/Clothing/OuterClothing/Coats/brigmedic.rsi #imp
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:

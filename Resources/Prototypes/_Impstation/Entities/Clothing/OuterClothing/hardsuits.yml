@@ -11,6 +11,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Hardsuits/janitor.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:

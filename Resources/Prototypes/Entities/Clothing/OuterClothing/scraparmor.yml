@@ -66,14 +66,16 @@
     unequipSound: /Audio/Effects/metal_scrape1.ogg
     equipDelay: 5
     unequipDelay: 5 #Its insane more armor/hardsuits don't have equip times tbh?
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5 #Some nukie tier physical protection...
-        Heat: 0.8
-        Radiation: 0.8 #Hey, it's a bunch of solid steel.
+        Blunt: 0.65 # QB
+        Slash: 0.65 # QB
+        Piercing: 0.65 # QB
+        # Heat: 0.8 # QB
+        # Radiation: 0.8 # QB
   - type: ExplosionResistance
     damageCoefficient: 0.80
   - type: ClothingSpeedModifier #But that protection comes at a price.

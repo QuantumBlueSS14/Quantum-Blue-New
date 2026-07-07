@@ -11,6 +11,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Misc/goblinknightarmor.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:

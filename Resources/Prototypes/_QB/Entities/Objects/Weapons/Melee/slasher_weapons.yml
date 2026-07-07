@@ -23,7 +23,7 @@
     popupActivate: slasher-chainsaw-popup-started
     popupDeactivate: slasher-chainsaw-popup-stopped
   - type: Imp_DoAfterItemToggle
-    doAfterTime: 1.25
+    doAfterTime: 3
     needHand: true
     breakOnMove: true
     breakOnDamage: true
@@ -43,8 +43,8 @@
         volume: -6
     activatedDamage:
       types:
-        Slash: 10
-        Blunt: 4
+        Slash: 6
+        Blunt: 2
         Structural: 16
   - type: Sprite
     sprite: Objects/Weapons/Melee/chainsaw.rsi
@@ -98,7 +98,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Piercing: 12
+        Piercing: 15
     angle: 0
     animation: WeaponArcThrust
     wideAnimationRotation: -135
@@ -126,7 +126,7 @@
     swingLeft: true
     damage:
       types:
-        Slash: 12
+        Slash: 18
     soundHit: !type:SoundCollectionSpecifier
       collection: MetalThud
   - type: Item
