@@ -114,7 +114,6 @@
       - BorgChassis
       - RoboticsConsole
   - type: WiresPanel
-    openingTool: Prying
   - type: ActivatableUIRequiresPanel
   - type: NameIdentifier
     group: Silicon
@@ -250,6 +249,11 @@
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
         Cold: 10 # imp edit. For cold lightbulb
+  - type: BypassLock
+  - type: BypassLockRequiresMobState
+    requiredMobState:
+    - Critical
+    - Dead
 
 - type: entity
   abstract: true
@@ -305,6 +309,7 @@
     networkSet: true
     nameSet: True
     id: Xenoborg
+    useEntityNameAsCameraId: true
   - type: Explosive
     explosionType: Minibomb
     deleteAfterExplosion: false # let damage threshold gib the borg
@@ -374,6 +379,8 @@
       Unsexed: UnisexSiliconSyndicate
   - type: PointLight
     color: "#dd200b"
+  - type: BypassLock
+    bypassDelay: 15 # We don't want people to easily be able to remove syndieborg brains.
   # imp edit start
   - type: TypingIndicator
     proto: syndibot
@@ -442,6 +449,8 @@
       Unsexed: UnisexSiliconSyndicate
   - type: PointLight
     color: "#dd200b"
+  - type: BypassLock
+    bypassDelay: 15 # We don't want people to easily be able to remove syndieborg brains.
   # imp edit start
   - type: TypingIndicator
     proto: syndibot
@@ -460,9 +469,16 @@
   save: false
   abstract: true
   components:
-  - type: RandomMetadata
+# imp edit start
+  #- type: RandomMetadata
+  #  nameSegments:
+  #  - NamesXenoborg
+  - type: RandomMetadata #see the commented out version for the upstream version.
     nameSegments:
-    - NamesXenoborg
+    - NamesXenoborgFirst
+    - NamesXenoborgLast
+    nameFormat: name-format-xenoborg
+# imp edit end
   - type: NameIdentifier
     group: Xenoborg
   - type: Sprite
@@ -540,7 +556,7 @@
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          PinpointerMothership: # drop a pinpointer to the mothership upon being destructed
+          PinpointerMothershipPiece: # drop a piece of core pinpointer upon being destructed (4 pieces to make a core pinpointer)
             min: 1
             max: 1
       - !type:EmptyContainersBehaviour
@@ -568,3 +584,5 @@
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: Xenoborg
+  - type: BypassLock
+    bypassDelay: 15 # We don't want people to easily be able to remove xenoborg brains.

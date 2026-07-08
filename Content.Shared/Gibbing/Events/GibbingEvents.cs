@@ -27,6 +27,19 @@ namespace Content.Shared.Gibbing.Events;
 /// <param name="GibType">What type of gibbing is occuring</param>
 [ByRefEvent] public record struct AttemptEntityGibEvent(EntityUid Target, int GibletCount, GibType GibType);
 
+[ByRefEvent]
+public struct AttemptEntityGibCancelEvent
+{
+    public EntityUid Target;
+    public bool Cancelled;
+
+    public AttemptEntityGibCancelEvent(EntityUid target)
+    {
+        Target = target;
+        Cancelled = false;
+    }
+}
+
 /// <summary>
 /// Called immediately after we gib the target entity
 /// </summary>

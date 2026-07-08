@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.2.0
+  engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/02/2025 20:46:01
-  entityCount: 15292
+  time: 01/11/2026 07:02:29
+  entityCount: 15295
 maps:
 - 126
 grids:
@@ -7962,7 +7962,7 @@ entities:
       pos: 101.5,-19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -32640.625
+      secondsUntilStateChange: -32882.727
       state: Opening
     - type: DeviceLinkSource
       lastSignals:

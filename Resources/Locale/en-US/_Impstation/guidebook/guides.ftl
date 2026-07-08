@@ -27,3 +27,4 @@ guide-entry-cooking-mixtures = Cooking Mixtures
 
 guide-entry-xenoarchaeologyreticulated = Reticulated artifacts
 guide-entry-xenoarchaeologynatural = Natural artifacts
+guide-entry-advancednodescanner = Advanced Node Scanner

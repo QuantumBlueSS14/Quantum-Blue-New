@@ -96,6 +96,7 @@
   cost: 5000
   recipeUnlocks:
   - ArtifactCrusherMachineCircuitboard
+  - AdvancedNodeScannerMachineCircuitboard #imp
 
 - type: technology
   id: AdvancedAnomalyResearch

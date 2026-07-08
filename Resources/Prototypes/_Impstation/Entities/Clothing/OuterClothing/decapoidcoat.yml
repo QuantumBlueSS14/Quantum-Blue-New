@@ -10,6 +10,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Misc/decapoidcoat.rsi
   - type: Clothing
     sprite: _Impstation/Clothing/OuterClothing/Misc/decapoidcoat.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor # this is the ballistic vest a bartender gets but with a slowdown like a hardsuit
     modifiers:
       coefficients:
@@ -36,6 +38,8 @@
     sprite: _Impstation/Clothing/OuterClothing/Misc/decapoidcoat-sanctioned.rsi
   - type: Clothing
     sprite: _Impstation/Clothing/OuterClothing/Misc/decapoidcoat-sanctioned.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor # this is the ballistic vest a bartender gets but with a slowdown like a hardsuit
     modifiers:
       coefficients:

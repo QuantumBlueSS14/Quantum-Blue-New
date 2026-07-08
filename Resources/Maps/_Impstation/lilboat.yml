@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/31/2025 09:36:18
-  entityCount: 8922
+  time: 01/21/2026 01:34:55
+  entityCount: 8973
 maps:
 - 1
 grids:
@@ -14604,6 +14604,16 @@ entities:
     - type: Transform
       pos: 33.5,18.5
       parent: 2
+  - uid: 5085
+    components:
+    - type: Transform
+      pos: 24.5,43.5
+      parent: 2
+  - uid: 5098
+    components:
+    - type: Transform
+      pos: 13.5,-25.5
+      parent: 2
   - uid: 5109
     components:
     - type: Transform
@@ -15048,6 +15058,126 @@ entities:
     components:
     - type: Transform
       pos: 25.5,35.5
+      parent: 2
+  - uid: 7072
+    components:
+    - type: Transform
+      pos: 10.5,-29.5
+      parent: 2
+  - uid: 7235
+    components:
+    - type: Transform
+      pos: 11.5,-16.5
+      parent: 2
+  - uid: 7236
+    components:
+    - type: Transform
+      pos: 13.5,-16.5
+      parent: 2
+  - uid: 7238
+    components:
+    - type: Transform
+      pos: 12.5,-16.5
+      parent: 2
+  - uid: 7239
+    components:
+    - type: Transform
+      pos: 13.5,-15.5
+      parent: 2
+  - uid: 7240
+    components:
+    - type: Transform
+      pos: 13.5,-14.5
+      parent: 2
+  - uid: 7241
+    components:
+    - type: Transform
+      pos: 13.5,-13.5
+      parent: 2
+  - uid: 7242
+    components:
+    - type: Transform
+      pos: 14.5,-13.5
+      parent: 2
+  - uid: 7243
+    components:
+    - type: Transform
+      pos: 15.5,-13.5
+      parent: 2
+  - uid: 7244
+    components:
+    - type: Transform
+      pos: 16.5,-12.5
+      parent: 2
+  - uid: 7245
+    components:
+    - type: Transform
+      pos: 16.5,-11.5
+      parent: 2
+  - uid: 7246
+    components:
+    - type: Transform
+      pos: 16.5,-13.5
+      parent: 2
+  - uid: 7254
+    components:
+    - type: Transform
+      pos: 16.5,-10.5
+      parent: 2
+  - uid: 7255
+    components:
+    - type: Transform
+      pos: 16.5,-8.5
+      parent: 2
+  - uid: 7256
+    components:
+    - type: Transform
+      pos: 16.5,-7.5
+      parent: 2
+  - uid: 7257
+    components:
+    - type: Transform
+      pos: 16.5,-9.5
+      parent: 2
+  - uid: 7313
+    components:
+    - type: Transform
+      pos: 16.5,-5.5
+      parent: 2
+  - uid: 7314
+    components:
+    - type: Transform
+      pos: 16.5,-6.5
+      parent: 2
+  - uid: 7323
+    components:
+    - type: Transform
+      pos: 16.5,-4.5
+      parent: 2
+  - uid: 7324
+    components:
+    - type: Transform
+      pos: 16.5,-3.5
+      parent: 2
+  - uid: 7454
+    components:
+    - type: Transform
+      pos: 24.5,42.5
+      parent: 2
+  - uid: 7455
+    components:
+    - type: Transform
+      pos: 24.5,41.5
+      parent: 2
+  - uid: 7456
+    components:
+    - type: Transform
+      pos: 23.5,41.5
+      parent: 2
+  - uid: 7457
+    components:
+    - type: Transform
+      pos: 23.5,40.5
       parent: 2
   - uid: 8256
     components:

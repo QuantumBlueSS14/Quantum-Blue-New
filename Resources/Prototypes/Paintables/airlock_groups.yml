@@ -46,6 +46,7 @@
     # secmed: AirlockSecurityMedical # QB comment
     service: AirlockService
     theatre: AirlockTheatre
+    zoo: AirlockZoo
     # imp edit end
     # QB edit start
     paramedic: AirlockParamedic
@@ -98,6 +99,7 @@
     # secmed: AirlockSecurityMedicalGlass # QB comment
     service: AirlockServiceGlass
     theatre: AirlockTheatreGlass
+    zoo: AirlockZooGlass
     # imp edit end
     # QB edit start
     paramedic: AirlockParamedicGlass

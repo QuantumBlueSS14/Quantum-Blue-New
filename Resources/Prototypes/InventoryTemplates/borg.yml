@@ -16,6 +16,9 @@
     strippingWindowPos: 0,1
     displayName: neck
     offset: 0.05, -0.22
+    whitelist:
+      tags:
+      - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # Engineering borg
@@ -41,6 +44,7 @@
       tags:
         - Medal
         - TeddyRibbon #imp
+        - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # imp start
@@ -67,6 +71,7 @@
       tags:
       - Medal
       - TeddyRibbon #imp
+      - BorgNeck #imp
   # 🌟Starlight🌟 end
 # imp end
 
@@ -93,6 +98,7 @@
       tags:
         - Medal
         - TeddyRibbon #imp
+        - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 #medical borg
@@ -119,6 +125,7 @@
       tags:
         - Medal
         - TeddyRibbon #imp
+        - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # imp start

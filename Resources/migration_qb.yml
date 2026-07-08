@@ -50,3 +50,15 @@ AirlockMaintSecMedLocked: AirlockMaintBrigmedicLocked
 
 # 4/30/2026
 ClothingMaskClownSecurity: null
+
+# 07/04/2026
+ClothingOuterHardsuitAtmos: ClothingOuterHardsuitEngineering
+LockerAtmosphericsFilledHardsuit: LockerAtmosphericsFilled
+SuitStorageAtmos: SuitStorageEngi
+
+# 07/05/2026
+ClothingOuterHardsuitGray: null
+MascotCindySuit: null
+MascotCindyHead: null
+PaperSyndicateMascotCindyManual: null
+ClothingBackpackDuffelSyndicateFilledMascotCindy: null

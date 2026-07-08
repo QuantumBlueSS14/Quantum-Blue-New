@@ -1,4 +1,130 @@
 Entries:
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: Added a plethora of hair styles!
+    id: 138
+    time: '2026-07-08T00:24:54.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/164
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Added fun!
+      - type: Remove
+        message: Removed fun!
+      - type: Tweak
+        message: Changed fun!
+      - type: Fix
+        message: 'Atlas: Salvage external airlocks properly cycle now'
+      - type: Fix
+        message: 'Atlas: Burn chamber external airlocks properly cycle now'
+      - type: Fix
+        message: 'Atlas: Burn chamber now has a passive vent instead of regular vent'
+      - type: Fix
+        message: 'Atlas: Chemlab now actually has a sink'
+      - type: Fix
+        message: 'Atlas: Added mid-round antag spawners, so slashers and fugitives can actually spawn on-station'
+      - type: Tweak
+        message: >-
+          Atlas: Supermatter waste filters swapped sides, so you filter back into cooling rather than filtering into
+          waste
+      - type: Tweak
+        message: 'Atlas: Supermatter freezer volumetric pump swapped places with the valve'
+      - type: Tweak
+        message: >-
+          Atlas: Supermatter waste now reroutes to the main waste network, but can still be easily rerouted a shortcut
+          directly into atmos
+      - type: Tweak
+        message: >-
+          Atlas: Atmos now has an extra plasma canister next to the burn chamber, to avoid confusion where players
+          thought the station had no plasma canisters
+    id: 137
+    time: '2026-07-06T18:25:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/165
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Most hardsuits and armors have some stun resistance now! Examine them to check by how much.
+      - type: Tweak
+        message: Hardsuits that previously had stun resistance had their resistance increased.
+      - type: Tweak
+        message: The Cybersun stealth hardsuit's stats have been completely redone.
+      - type: Tweak
+        message: >-
+          The Cybersun stealth hardsuit can also now appear in syndicate uplinks for 40 TC! The regular uplink version
+          still only costs 15.
+      - type: Tweak
+        message: The scrap armor's stats have been nerfed.
+      - type: Tweak
+        message: Atmos fire suits now protect against a tiiiiny bit of blunt.
+      - type: Tweak
+        message: Elite web vests now protect a tiny bit better against heat damage.
+      - type: Remove
+        message: The gray hardsuit has been removed.
+      - type: Fix
+        message: The cindy soft suit has been fully removed now, sorry!
+    id: 136
+    time: '2026-07-06T18:24:31.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/161
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Removed atmos hardsuits
+      - type: Remove
+        message: Removed oxy medkits and RCDs from the atmos tech locker
+    id: 135
+    time: '2026-07-05T05:18:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/160
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Research unlocks won't spam multiple channels anymore!
+    id: 134
+    time: '2026-07-05T05:16:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/159
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Janitor, Chef, Botanist, Bartender and Zookeeper now all have each other's accesses in very low pop lobbies!
+      - type: Tweak
+        message: All department heads that didn't previously have externals access, now do
+      - type: Tweak
+        message: Cargo techs have externals access now!
+      - type: Fix
+        message: Cyborgs have zoo access now
+    id: 133
+    time: '2026-07-05T05:15:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/158
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Added Atlas, a new 8-40 pop station! Featuring lots of zoos and a supermatter!
+    id: 132
+    time: '2026-07-05T02:49:48.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/157
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Fireaxes can now pry floor tiles!
+      - type: Tweak
+        message: All floor tiles have had their skeletons replaced with more axable bones.
+    id: 131
+    time: '2026-07-05T02:47:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/134
+  - author: soup4food
+    changes:
+      - type: Add
+        message: Playtestable Slasher
+    id: 130
+    time: '2026-07-04T06:05:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/156
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: The Upmerge has arrived! This brings us up to date with Impstation as of May 30th, 2026
+    id: 129
+    time: '2026-06-13T08:27:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/151
   - author: MattFright
     changes:
       - type: Tweak

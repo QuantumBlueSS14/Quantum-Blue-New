@@ -349,7 +349,7 @@
 
 - type: foodSequenceElement
   id: Sausage
-  name:
+  name: 
   sprites:
   - sprite: _Impstation/Objects/Consumable/Food/hotdog_sequence.rsi
     state: hotdog

@@ -295,7 +295,7 @@
   id: ChefPilot # Tagged entity can control someone wearing a Chef's hat if inside their hat.
 
 - type: Tag
-  id: ChemDispensable # Storage whitelist: ChemDispenserEmpty, SmartFridge, BorgModuleAdvancedChemical
+  id: ChemDispensable # Storage whitelist: ChemDispenserEmpty, SmartFridge, BorgModuleChemical
 
 - type: Tag
   id: Chicken # Reproductive partner key. MetamorphRecipe: FoodBurgerChicken
@@ -978,6 +978,9 @@
   id: MothershipModule # Cyborg module category for evil xenoborg core
 
 - type: Tag
+  id: MothershipPinpointerPiece # ConstructionGraph: RepairMothershipPinpointer
+
+- type: Tag
   id: Mouse # CargoBounty: BountyMouse
 
 - type: Tag
@@ -1288,6 +1291,9 @@
 
 - type: Tag
   id: Skewer # Food sequence key
+
+- type: Tag
+  id: SlasherEffigyLocator # Restricts the Slasher temporary effigy-locator hand to the locator pinpointer.
 
 - type: Tag # sliced fruit, vegetables, pizza etc.
   id: Slice # CargoBounty blacklist: BountyFruit, BountyVegetable, BountyBread, BountyPie

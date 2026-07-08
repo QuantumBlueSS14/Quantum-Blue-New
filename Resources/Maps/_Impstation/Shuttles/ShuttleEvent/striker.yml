@@ -1201,6 +1201,13 @@ entities:
       parent: 87
     - type: Physics
       canCollide: False
+- proto: HandheldStationMapNukeops
+  entities:
+  - uid: 299
+    components:
+    - type: Transform
+      pos: 1.57673,-2.2207246
+      parent: 1
 - proto: MedkitCombatFilled
   entities:
   - uid: 204

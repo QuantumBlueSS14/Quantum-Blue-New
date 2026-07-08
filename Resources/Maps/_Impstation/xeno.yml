@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 266.0.0
+  engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/19/2025 01:03:34
-  entityCount: 19945
+  time: 01/30/2026 19:23:07
+  entityCount: 20008
 maps:
 - 1
 grids:
@@ -5946,8 +5946,8 @@ entities:
             0: 65535
           9,-16:
             0: 207
-            4: 4352
-            5: 49152
+            3: 4352
+            4: 49152
           10,-19:
             0: 65535
           10,-18:
@@ -5956,7 +5956,7 @@ entities:
             0: 65535
           10,-16:
             0: 255
-            6: 24576
+            5: 24576
           11,-20:
             0: 65280
           11,-19:
@@ -5968,7 +5968,7 @@ entities:
           11,-16:
             0: 63
             2: 34816
-            7: 12288
+            6: 12288
           12,-20:
             0: 65416
           12,-19:
@@ -6217,7 +6217,7 @@ entities:
             0: 59392
           11,-15:
             1: 65408
-            7: 3
+            6: 3
           12,-14:
             0: 62926
           11,-14:
@@ -6229,7 +6229,7 @@ entities:
             0: 61262
           12,-12:
             0: 43215
-            3: 4352
+            7: 4352
           13,-15:
             0: 65280
             2: 14
@@ -6327,12 +6327,12 @@ entities:
             1: 63624
           11,-12:
             0: 4508
-            3: 52224
+            7: 52224
           12,-11:
-            3: 4369
+            7: 4369
             0: 52424
           11,-11:
-            3: 52428
+            7: 52428
             0: 4371
           12,-10:
             0: 17748
@@ -6546,12 +6546,12 @@ entities:
             1: 12288
           9,-15:
             1: 65296
-            5: 12
+            4: 12
           9,-14:
             0: 36848
           10,-15:
             1: 65280
-            6: 6
+            5: 6
           10,-14:
             0: 65520
           -8,-24:
@@ -6631,109 +6631,27 @@ entities:
           - 0
         - volume: 2500
           immutable: True
-          moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
+            WaterVapor: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Plasma: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Nitrogen: 6666.982
         - volume: 2500
           temperature: 235
           moles:
-          - 27.225372
-          - 102.419266
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
+            Oxygen: 27.225372
+            Nitrogen: 102.419266
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -10379,7 +10297,7 @@ entities:
       pos: 11.5,-30.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -149929.2
+      secondsUntilStateChange: -153022.9
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10990,7 +10908,7 @@ entities:
       pos: -34.5,-17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19215.527
+      secondsUntilStateChange: -22309.223
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12503,6 +12421,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -33.5,-17.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 19750
+    components:
+    - type: Transform
+      pos: 55.5,-69.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -27649,6 +27574,61 @@ entities:
     - type: Transform
       pos: 53.5,-69.5
       parent: 2
+  - uid: 19916
+    components:
+    - type: Transform
+      pos: 41.5,-81.5
+      parent: 2
+  - uid: 19935
+    components:
+    - type: Transform
+      pos: 41.5,-82.5
+      parent: 2
+  - uid: 19946
+    components:
+    - type: Transform
+      pos: 41.5,-83.5
+      parent: 2
+  - uid: 19947
+    components:
+    - type: Transform
+      pos: 42.5,-83.5
+      parent: 2
+  - uid: 19948
+    components:
+    - type: Transform
+      pos: 43.5,-83.5
+      parent: 2
+  - uid: 19949
+    components:
+    - type: Transform
+      pos: 44.5,-83.5
+      parent: 2
+  - uid: 19950
+    components:
+    - type: Transform
+      pos: 45.5,-83.5
+      parent: 2
+  - uid: 19951
+    components:
+    - type: Transform
+      pos: 46.5,-83.5
+      parent: 2
+  - uid: 19952
+    components:
+    - type: Transform
+      pos: 47.5,-83.5
+      parent: 2
+  - uid: 19953
+    components:
+    - type: Transform
+      pos: 48.5,-83.5
+      parent: 2
+  - uid: 19954
+    components:
+    - type: Transform
+      pos: 49.5,-83.5
+      parent: 2
 - proto: CableApcStack
   entities:
   - uid: 9765
@@ -38305,7 +38285,12 @@ entities:
   - uid: 19741
     components:
     - type: Transform
-      pos: 51.5,-70.5
+      pos: 54.5,-69.5
+      parent: 2
+  - uid: 19815
+    components:
+    - type: Transform
+      pos: 55.5,-69.5
       parent: 2
 - proto: CableTerminal
   entities:
@@ -42484,13 +42469,6 @@ entities:
     components:
     - type: Transform
       pos: 11.679569,-25.462831
-      parent: 2
-- proto: ChemistryBottleParacetamol
-  entities:
-  - uid: 13519
-    components:
-    - type: Transform
-      pos: 35.248295,-18.484295
       parent: 2
 - proto: ChemistryHotplate
   entities:
@@ -79618,6 +79596,13 @@ entities:
     - type: Transform
       pos: -38.5,-52.5
       parent: 2
+- proto: GlassBoxNukeDiskFilled
+  entities:
+  - uid: 726
+    components:
+    - type: Transform
+      pos: -47.5,-45.5
+      parent: 2
 - proto: GlowstickBase
   entities:
   - uid: 9321
@@ -85917,6 +85902,14 @@ entities:
       fixtures: {}
 - proto: IntercomCommon
   entities:
+  - uid: 6178
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 11.5,-60.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 17760
     components:
     - type: Transform
@@ -86078,43 +86071,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: IVBagBlood
-  entities:
-  - uid: 16914
-    components:
-    - type: Transform
-      pos: 29.325285,-26.223288
-      parent: 2
-- proto: IVStand
-  entities:
-  - uid: 16990
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 32.238117,-12.164111
-      parent: 2
-  - uid: 17552
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 30.707327,-26.911348
-      parent: 2
-  - uid: 19512
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 36.193745,-12.223196
-      parent: 2
-  - uid: 19914
-    components:
-    - type: Transform
-      pos: 9.7657995,-22.364613
-      parent: 2
-  - uid: 19915
-    components:
-    - type: Transform
-      pos: 11.776216,-22.385445
-      parent: 2
 - proto: JanitorialTrolley
   entities:
   - uid: 5623

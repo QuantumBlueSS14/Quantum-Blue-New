@@ -22,9 +22,10 @@
   - Command
   - Maintenance
   - ResearchDirector
-#  - Brig - QB
+#  - Brig # QB
   - Cryogenics
   - Vault #imp
+  - External # QB
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

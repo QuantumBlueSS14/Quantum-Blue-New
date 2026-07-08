@@ -45,7 +45,7 @@ git clone https://github.com/QuantumBlueSS14/Quantum-Blue-New.git
 ```
 2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
 ```shell
-cd space-station-14
+cd imp-station-14
 python RUN_THIS.py
 ```
 3. Compile the solution:

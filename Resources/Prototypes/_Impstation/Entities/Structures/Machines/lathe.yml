@@ -52,8 +52,8 @@
         - RawMaterial
         - Ingot
   - type: OreSiloClient
-  - type: LatheAnnouncing
-    channels: [ Service ]
+  # - type: LatheAnnouncing # QB
+  #   channels: [ Service ]
 
 - type: entity
   id: PortableCutterMachine

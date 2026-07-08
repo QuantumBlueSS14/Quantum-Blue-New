@@ -28,25 +28,36 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
     }
 
     /// <summary> Updates device with passed anomaly data. </summary>
-    public void UpdateScannerWithNewAnomaly(EntityUid scanner, EntityUid anomaly, AnomalyScannerComponent? scannerComp = null, AnomalyComponent? anomalyComp = null)
+    public void UpdateScannerWithNewAnomaly(EntityUid scanner, EntityUid target, AnomalyScannerComponent? scannerComp = null, AnomalyComponent? anomalyComp = null)
     {
-        if (!Resolve(scanner, ref scannerComp) || !Resolve(anomaly, ref anomalyComp))
+        if (!Resolve(scanner, ref scannerComp))
             return;
 
-        scannerComp.ScannedAnomaly = anomaly;
+        scannerComp.ScannedAnomaly = target;
         UpdateScannerUi(scanner, scannerComp);
 
         TryComp<AppearanceComponent>(scanner, out var appearanceComp);
+
+        if (!Resolve(target, ref anomalyComp, false))
+        {
+            Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, false, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyStability, AnomalyStabilityVisuals.Stable, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalySeverity, 0, appearanceComp);
+            Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyNextPulse, 0, appearanceComp);
+            return;
+        }
+
+        var anomaly = target;
         TryComp<SecretDataAnomalyComponent>(anomaly, out var secretDataComp);
 
         Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, true, appearanceComp);
 
-        var stability = _secretData.IsSecret(anomaly, AnomalySecretData.Stability, secretDataComp)
+        var stability = _secretData.IsSecret(anomaly, AnomalySecretData.Stability, secretDataComp) && !scannerComp.IgnoreSecret
             ? AnomalyStabilityVisuals.Stable
             : _anomaly.GetStabilityVisualOrStable((anomaly, anomalyComp));
         Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyStability, stability, appearanceComp);
 
-        var severity = _secretData.IsSecret(anomaly, AnomalySecretData.Severity, secretDataComp)
+        var severity = _secretData.IsSecret(anomaly, AnomalySecretData.Severity, secretDataComp) && !scannerComp.IgnoreSecret
             ? 0
             : anomalyComp.Severity;
         Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalySeverity, severity, appearanceComp);
@@ -62,8 +73,31 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
         if (TryComp<AnomalyComponent>(component.ScannedAnomaly, out var anomalyComponent))
             nextPulse = anomalyComponent.NextPulseTime;
 
-        var state = new AnomalyScannerUserInterfaceState(_anomaly.GetScannerMessage(component), nextPulse);
+        var msg = _anomaly.GetScannerMessage(component);
+        if (nextPulse == null && component.ScannedAnomaly.HasValue)
+        {
+            var msgEv = new ScannerBuildMessageEvent();
+            RaiseLocalEvent(component.ScannedAnomaly.Value, ref msgEv);
+            nextPulse = msgEv.NextPulseTime;
+        }
+
+        var state = new AnomalyScannerUserInterfaceState(msg, nextPulse);
         UI.SetUiState(uid, AnomalyScannerUiKey.Key, state);
+    }
+
+    public void ClearScanTarget(EntityUid scanner, AnomalyScannerComponent? scannerComp = null)
+    {
+        if (!Resolve(scanner, ref scannerComp))
+            return;
+
+        scannerComp.ScannedAnomaly = null;
+        UpdateScannerUi(scanner, scannerComp);
+
+        TryComp<AppearanceComponent>(scanner, out var appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.HasAnomaly, false, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyStability, AnomalyStabilityVisuals.Stable, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalySeverity, 0, appearanceComp);
+        Appearance.SetData(scanner, AnomalyScannerVisuals.AnomalyNextPulse, 0, appearanceComp);
     }
 
     /// <inheritdoc />
@@ -87,7 +121,14 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
 
         base.OnDoAfter(uid, component, args);
 
-        UpdateScannerWithNewAnomaly(uid, args.Args.Target.Value, component);
+        var scanTarget = args.Args.Target.Value;
+        var scanEv = new TryScanEntityEvent();
+        RaiseLocalEvent(scanTarget, ref scanEv);
+
+        if (!TryComp<AnomalyComponent>(scanTarget, out _) && !scanEv.Accepted)
+            return;
+
+        UpdateScannerWithNewAnomaly(uid, scanTarget, component);
     }
 
     private void OnScannerAnomalyHealthChanged(ref AnomalyHealthChangedEvent args)
@@ -109,12 +150,13 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
 
     private void OnScannerAnomalySeverityChanged(ref AnomalySeverityChangedEvent args)
     {
-        var severity = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Severity) ? 0 : args.Severity;
         var query = EntityQueryEnumerator<AnomalyScannerComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
             if (component.ScannedAnomaly != args.Anomaly)
                 continue;
+
+            var severity = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Severity) && !component.IgnoreSecret ? 0 : args.Severity;
 
             UpdateScannerUi(uid, component);
             Appearance.SetData(uid, AnomalyScannerVisuals.AnomalySeverity, severity);
@@ -123,14 +165,15 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
 
     private void OnScannerAnomalyStabilityChanged(ref AnomalyStabilityChangedEvent args)
     {
-        var stability = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Stability)
-            ? AnomalyStabilityVisuals.Stable
-            : _anomaly.GetStabilityVisualOrStable(args.Anomaly);
         var query = EntityQueryEnumerator<AnomalyScannerComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
             if (component.ScannedAnomaly != args.Anomaly)
                 continue;
+
+            var stability = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Stability) && !component.IgnoreSecret
+                ? AnomalyStabilityVisuals.Stable
+                : _anomaly.GetStabilityVisualOrStable(args.Anomaly);
 
             UpdateScannerUi(uid, component);
             Appearance.SetData(uid, AnomalyScannerVisuals.AnomalyStability, stability);
@@ -154,12 +197,12 @@ public sealed class AnomalyScannerSystem : SharedAnomalyScannerSystem
             TryComp<AppearanceComponent>(uid, out var appearanceComp);
             TryComp<SecretDataAnomalyComponent>(args.Anomaly, out var secretDataComp);
 
-            var severity = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Severity, secretDataComp)
+            var severity = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Severity, secretDataComp) && !component.IgnoreSecret
                 ? 0
                 : anomalyComp.Severity;
             Appearance.SetData(uid, AnomalyScannerVisuals.AnomalySeverity, severity, appearanceComp);
 
-            var stability = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Stability, secretDataComp)
+            var stability = _secretData.IsSecret(args.Anomaly, AnomalySecretData.Stability, secretDataComp) && !component.IgnoreSecret
                 ? AnomalyStabilityVisuals.Stable
                 : _anomaly.GetStabilityVisualOrStable((args.Anomaly, anomalyComp));
             Appearance.SetData(uid, AnomalyScannerVisuals.AnomalyStability, stability, appearanceComp);

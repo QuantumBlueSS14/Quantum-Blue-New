@@ -9,11 +9,14 @@ using Content.Shared.Throwing;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Xenoarchaeology.Artifact.Components;
 using Content.Shared.Xenoarchaeology.Artifact.XAT.Components;
+using Content.Shared.Xenoarchaeology.Equipment; //IMP
 
 namespace Content.Shared.Xenoarchaeology.Artifact;
 
 public abstract partial class SharedXenoArtifactSystem
 {
+    [Dependency] private readonly SharedAdvancedNodeScannerSystem _advancedNodeScanner = default!;  //IMP
+
     private void InitializeXAT()
     {
         XATRelayLocalEvent<DamageChangedEvent>();
@@ -99,6 +102,7 @@ public abstract partial class SharedXenoArtifactSystem
                     {
                         // This is an unlockable node, check if is failed
                         var predecessorNodeIndices = GetPredecessorNodes((ent, ent), GetIndex(ent, nodeEnt.Owner));
+                        predecessorNodeIndices.Add(GetIndex(ent, nodeEnt.Owner)); // Remember that triggering the 'unlock target' node shouldn't count as failing the unlock!
                         if (unlockingComp.TriggeredNodeIndexes.All(x => predecessorNodeIndices.Contains(x)))
                         {
                             unlockingComp.EndTime += ent.Comp.UnlockStateIncrementPerNode; // We have found an unlockable node that is still possible to unlock - it contains all triggers in its predecessors
@@ -109,6 +113,10 @@ public abstract partial class SharedXenoArtifactSystem
             }// IMP: End Imp Edit
             Dirty(ent, unlockingComp);
         }
+
+        //IMP: Advanced node scanner
+        if (ent.Comp.AdvancedNodeScanner != null)
+            _advancedNodeScanner.RegisterTriggeredNode(ent, node);
     }
 
     public void SetArtifexiumApplied(Entity<XenoArtifactUnlockingComponent> ent, bool val)

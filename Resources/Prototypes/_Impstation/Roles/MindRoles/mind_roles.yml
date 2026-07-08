@@ -49,3 +49,13 @@
     antagPrototype: VRex
     roleType: TeamAntagonist
     exclusiveAntag: true
+    
+# Syndicate Instigator
+- type: entity
+  parent: MindRoleNukeops
+  id: MindRoleSyndicateInstigator
+  name: Syndicate Instigator Role
+  components:
+  - type: MindRole
+    roleType: SoloAntagonist
+    antagPrototype: SyndicateInstigator #imp

@@ -11,6 +11,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -38,6 +40,8 @@
   description: Heavy body armor designed to withstand explosions formed from reactions between chemicals.
   categories: [ DoNotMap ]
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/janitor_bombsuit.rsi
   - type: Clothing
@@ -60,6 +64,8 @@
     coolingCoefficient: 0.05
   - type: FireProtection
     reduction: 0.65 # doesnt have a full seal so not as good
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -84,9 +90,9 @@
   description: An expensive firesuit that protects against even the most deadly of station fires. Designed to protect even if the wearer is set aflame.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Suits/atmos_firesuit.rsi
+    sprite: _Impstation/Clothing/OuterClothing/Suits/atmos_firesuit.rsi #imp
   - type: Clothing
-    sprite: Clothing/OuterClothing/Suits/atmos_firesuit.rsi
+    sprite: _Impstation/Clothing/OuterClothing/Suits/atmos_firesuit.rsi #imp
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
@@ -95,9 +101,12 @@
     coolingCoefficient: 0.05
   - type: FireProtection
     reduction: 0.8 # atmos firesuit offers best protection, hardsuits are a little vulnerable
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
+        Blunt: 0.8 # QB
         Slash: 0.9
         Heat: 0.8
         Cold: 0.8
@@ -126,6 +135,8 @@
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/rad.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -164,6 +175,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.01
     coolingCoefficient: 0.01
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -193,6 +206,8 @@
     noPowerPopup: ninja-no-power
   # core ninja suit stuff
   - type: NinjaSuit
+  - type: EmpResistance
+    strengthMultiplier: 0
   - type: UseDelay
     delay: 5 # disable time
   - type: PowerCellSlot

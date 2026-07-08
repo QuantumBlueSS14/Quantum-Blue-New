@@ -29,6 +29,8 @@
   parent: [ BaseSecurityBartenderContraband, ClothingOuterArmorBase]
   id: ClothingOuterArmorBasic
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Tag
     tags:
     - CorgiWearable
@@ -42,6 +44,8 @@
   suffix: slim
   description: A slim Type I armored vest that provides decent protection against most types of damage.
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
   - type: Clothing
@@ -57,6 +61,8 @@
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.9 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -77,6 +83,8 @@
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.5 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -97,6 +105,8 @@
   name: detective's vest
   description: A hard-boiled private investigator's armored vest.
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Vests/detvest.rsi
   - type: Clothing
@@ -129,6 +139,8 @@
   name: captain's carapace
   description: An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest.
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Sprite
     sprite: _Impstation/Clothing/OuterClothing/Armor/captain_carapace.rsi # imp
   - type: Clothing
@@ -144,6 +156,8 @@
   name: CentComm carapace # imp caps fix
   description: An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to CentComm officials and agents. # imp caps fix
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/centcomm_carapace.rsi
   - type: Clothing
@@ -167,6 +181,8 @@
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -193,13 +209,15 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.7
-        Heat: 0.3
+        Heat: 0.2 # QB
         Radiation: 0.5
         Caustic: 0.5
   - type: ExplosionResistance
@@ -220,6 +238,8 @@
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -247,6 +267,8 @@
       shader: unshaded
   - type: Clothing
     sprite: _Impstation/Clothing/OuterClothing/Armor/syndie-raid.rsi #imp edit
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -257,8 +279,8 @@
         Caustic: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.35
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.45
+  # - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  #   damageCoefficient: 0.45 # QB comment
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -328,6 +350,8 @@
     sprite: Clothing/OuterClothing/Armor/riot.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/riot.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -350,6 +374,8 @@
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -464,6 +490,8 @@
     sprite: Clothing/OuterClothing/Armor/bone_armor.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bone_armor.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -493,6 +521,8 @@
     sprite: Clothing/OuterClothing/Armor/podwars_armor.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/podwars_armor.rsi
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Armor
     modifiers:
       coefficients:

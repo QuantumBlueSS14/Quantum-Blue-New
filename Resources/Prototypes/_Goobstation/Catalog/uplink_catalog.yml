@@ -1,0 +1,35 @@
+- type: listing
+  id: UplinkHardsuitCybersunStealth
+  name: uplink-hardsuit-cybersun-stealth-name
+  description: uplink-hardsuit-cybersun-stealth-desc
+  icon: { sprite: /Textures/_Goobstation/Clothing/OuterClothing/Hardsuits/cybersunstealth.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateStealthHardsuitBundle
+  cost:
+    Telecrystal: 15 # Harmony - modified since goob has different TC ratio.
+  categories:
+  - UplinkWearables
+  conditions:
+  - !type:StoreWhitelistCondition
+    makeHidden: true
+    blacklist:
+      tags:
+      - NukeOpsUplink
+
+# QB start - nukie uplink version - MUCH more expensive version so whole squads don't run this
+- type: listing
+  id: UplinkHardsuitCybersunStealthNukie
+  name: uplink-hardsuit-cybersun-stealth-name
+  description: uplink-hardsuit-cybersun-stealth-desc
+  icon: { sprite: /Textures/_Goobstation/Clothing/OuterClothing/Hardsuits/cybersunstealth.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateStealthHardsuitBundle
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWearables
+  conditions:
+  - !type:StoreWhitelistCondition
+    makeHidden: true
+    whitelist:
+      tags:
+      - NukeOpsUplink
+# QB end
