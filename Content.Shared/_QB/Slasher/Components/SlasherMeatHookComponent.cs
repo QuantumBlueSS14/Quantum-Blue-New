@@ -46,7 +46,7 @@ public sealed partial class SlasherMeatHookComponent : Component
     /// How long a harvested victim is protected from being harvested again.
     /// </summary>
     [DataField]
-    public TimeSpan ReharvestDelay { get; set; } = TimeSpan.FromMinutes(10);
+    public TimeSpan ReharvestDelay { get; set; } = TimeSpan.FromMinutes(8);
 
     /// <summary>
     /// How often healing checks should run for currently hooked victims.

@@ -291,6 +291,9 @@ public sealed class SlasherMeatHookSystem : EntitySystem
         base.Update(frameTime);
 
         var now = _timing.CurTime;
+
+        PruneExpiredHarvestMarkers();
+
         var healers = EntityQueryEnumerator<SlasherMeatHookHealingComponent>();
 
         while (healers.MoveNext(out var uid, out var healing))
@@ -683,4 +686,21 @@ public sealed class SlasherMeatHookSystem : EntitySystem
         _popup.PopupEntity(Loc.GetString(msg), performer, performer, PopupType.MediumCaution);
     }
 
+    /// <summary>
+    /// Removes expired soul-harvest lockout markers so they don't linger on entities
+    /// indefinitely after their ExpiresAt time has passed.
+    /// </summary>
+    private void PruneExpiredHarvestMarkers()
+    {
+        var now = _timing.CurTime;
+        var harvested = EntityQueryEnumerator<SharedSlasherSoulHarvestedComponent>();
+
+        while (harvested.MoveNext(out var uid, out var marker))
+        {
+            if (marker.ExpiresAt > now)
+                continue;
+
+            RemCompDeferred<SharedSlasherSoulHarvestedComponent>(uid);
+        }
+    }
 }

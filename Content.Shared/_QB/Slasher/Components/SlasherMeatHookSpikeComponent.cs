@@ -59,7 +59,7 @@ public sealed partial class SlasherMeatHookSpikeComponent : Component
     /// Base time required to unhook a victim.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan UnhookDelay = TimeSpan.FromSeconds(10);
+    public TimeSpan UnhookDelay = TimeSpan.FromSeconds(30);
 }
 
 /// <summary>
