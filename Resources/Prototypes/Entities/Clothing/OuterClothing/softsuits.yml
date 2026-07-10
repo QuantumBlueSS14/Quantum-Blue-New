@@ -5,6 +5,8 @@
   name: EVA suit
   description: A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.8 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/eva.rsi
   - type: Clothing
@@ -42,6 +44,8 @@
   name: emergency EVA suit
   description: An emergency EVA suit with a built-in helmet. It's horribly slow and lacking in temperature protection, but enough to buy you time from the harsh vacuum of space.
   components:
+  - type: StaminaResistance # QB
+    damageCoefficient: 1 # QB
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/eva_emergency.rsi
   - type: Clothing
@@ -132,6 +136,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:

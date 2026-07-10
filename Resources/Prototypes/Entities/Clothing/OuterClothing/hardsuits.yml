@@ -63,6 +63,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.5 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -103,6 +105,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.7
     lowPressureMultiplier: 1000
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -145,6 +149,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -187,6 +193,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -228,6 +236,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -260,6 +270,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.4
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -299,6 +311,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -336,6 +350,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.35 #IMP balance changes; same stats as the raid suit but as slow as the jugg suit.
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.3 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -367,6 +383,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -406,6 +424,8 @@
     reduction: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.2
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.5 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -452,6 +472,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -489,6 +511,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.5 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -537,6 +561,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.4 #imp
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.3 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -570,6 +596,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.6 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -605,8 +633,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.75
+  - type: StaminaResistance
+    damageCoefficient: 0.3 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -671,8 +699,8 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+  - type: StaminaResistance
+    damageCoefficient: 0.2 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -712,8 +740,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+  - type: StaminaResistance
+    damageCoefficient: 0.3 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -756,7 +784,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  # - type: StaminaResistance # Should not have stamina resistance, this is purely so people know it was not forgotten.
+  - type: StaminaResistance
+    damageCoefficient: 0.5 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -795,6 +824,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.1 # imp edit, stop exploding!!!!
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.3 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -1027,8 +1058,8 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.15 # Needs 21 hits with a disabler to stun :godo:
+  - type: StaminaResistance
+    damageCoefficient: 0.1 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -1064,6 +1095,8 @@
     coolingCoefficient: 0.001
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.4 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -1101,6 +1134,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:
@@ -1159,6 +1194,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.85
+  - type: StaminaResistance # QB
+    damageCoefficient: 0.7 # QB
   - type: Armor
     modifiers:
       coefficients:
