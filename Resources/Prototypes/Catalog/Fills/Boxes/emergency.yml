@@ -15,6 +15,7 @@
         - id: Flare
         - id: FoodSnackNutribrick
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals

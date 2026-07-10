@@ -8,7 +8,6 @@
   - type: Sprite
     sprite: _DV/Objects/Consumable/Food/ration.rsi
     state: psb-trash
-  - type: Item
 
 
 - type: entity
@@ -21,11 +20,8 @@
     sprite: _DV/Objects/Consumable/Food/ration.rsi
     state: psb
   - type: Item
-    size: 3
-  - type: Recyclable
+    size: Tiny
   - type: SpaceGarbage
-  - type: DynamicPrice
-    price: 0
   - type: SpawnItemsOnUse
     items:
       - id: FoodPSBTrash
