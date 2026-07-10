@@ -477,6 +477,8 @@
   - type: GameRule
     minPlayers: 0
     maxPlayers: 40
+  - type: Damageable
+    damageModifierSet: Slasher
   - type: AntagObjectives
     objectives:
     - SlasherPlaceEffigyObjective
@@ -497,8 +499,12 @@
       startingGear: SlasherGear
       components:
       - type: FlashWeakness
+      - type: Hunger
+        baseDecayRate: 0
+      - type: Thirst
+        baseDecayRate: 0
       - type: CombatModeSprint
-        sprintCoefficient: 0.8
+        sprintCoefficient: 0.85
       - type: Clumsy
         clumsyHypo: false
         clumsyVaulting: false
@@ -510,15 +516,7 @@
       - type: StaminaResistance
         damageCoefficient: 0.1
       - type: ClothingSlowOnDamageModifier
-        modifier: 1
-      - type: Armor
-        modifiers:
-          coefficients:
-            Blunt: 0.25
-            Slash: 0.25
-            Piercing: 0.25
-            Heat: 0.25
-            Caustic: 0.25
+        modifier: 0
       - type: SlasherRole
         actions:
         - ActionSlasherGainShroud
@@ -527,7 +525,7 @@
         - ActionSlasherDarkStep
         - ActionSlasherDarkHeal
         - ActionSlasherWeaponRecall
-      - type: SlasherEffigyLocator
+      # - type: SlasherEffigyLocator
       - type: ZombieImmune
       - type: AntagImmune
       - type: SlasherShroud
@@ -550,7 +548,7 @@
         sound:
           path: /Audio/Items/Anomaly/shadow_crit.ogg
           params:
-            volume: 0
+            volume: -3
 
 # This rule makes the chosen players unable to get other antag rules, as a way to prevent metagaming job rolls.
 # Put this before antags assigned to station jobs, but after non-job antags (NukeOps/Wiz).

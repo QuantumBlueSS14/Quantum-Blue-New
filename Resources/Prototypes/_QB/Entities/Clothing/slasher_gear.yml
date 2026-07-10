@@ -110,7 +110,7 @@
   description: White gloves stained with old blood.
   components:
   - type: Fiber
-    fiberColor: fibers-red
+    fiberColor: fibers-bloody
 
 - type: entity
   parent: [ClothingUniformJumpsuitClown, BaseMajorContraband]
@@ -173,4 +173,10 @@
   name: slasher's griffy suit
   description: A slasher-altered griffy suit.
 
-
+- type: entity
+  parent: [ClothingBackpackChameleon, BaseMajorContraband]
+  id: ClothingBackpackChameleonSlasher
+  name: slasher's backpack
+  description: A backpack used by a slasher.
+  components:
+    - type: Unremoveable
