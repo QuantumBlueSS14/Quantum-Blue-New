@@ -1,6 +1,5 @@
 # PSB, Prepacked Sustenance Bar. With variety.
 - type: entity
-  noSpawn: true
   parent: FoodPacketMRETrash # QB - was FoodPacketTrash
   id: FoodPSBTrash
   name: psb wrapper
