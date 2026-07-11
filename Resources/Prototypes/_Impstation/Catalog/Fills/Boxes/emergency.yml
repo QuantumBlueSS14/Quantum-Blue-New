@@ -13,8 +13,9 @@
         - id: EmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
@@ -36,8 +37,9 @@
         - id: EmergencyNitrogenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   # Ok, NT actually only bothered to change the picture on the box for command. Assholes.
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
@@ -62,8 +64,9 @@
         - id: ExtendedEmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
@@ -85,8 +88,9 @@
         - id: ExtendedEmergencyNitrogenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   # Ok, NT actually only bothered to change the picture on the box for command. Assholes.
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
@@ -111,8 +115,9 @@
         - id: EmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
@@ -134,8 +139,9 @@
         - id: EmergencyNitrogenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkCommandFlaskFull
+        - id: SpaceMedipen
   # Ok, NT actually only bothered to change the picture on the box for command. Assholes.
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
@@ -162,8 +168,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
   - type: Sprite
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
@@ -185,8 +192,9 @@
         - id: EmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -209,8 +217,9 @@
         - id: EmergencyFunnyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
   - type: Tag
     tags:
     - BoxHug
@@ -230,6 +239,7 @@
         - id: Flare
         - id: MobSnail
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -246,7 +256,8 @@
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -263,8 +274,9 @@
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -280,8 +292,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -297,8 +310,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -313,8 +327,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -331,8 +346,9 @@
         - id: ExtendedEmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalKodepiia
@@ -349,8 +365,9 @@
         - id: EmergencyOxygenTankCommandFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodMeatBacon
+        - id: FoodMeatMeatball
         - id: Bloodpack
+        - id: SpaceMedipen
 
 # Ungu
 
@@ -574,7 +591,7 @@
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
     - state: internals
-    - state: vaportank 
+    - state: vaportank
   - type: Label
     currentLabel: H2O
 
@@ -645,7 +662,7 @@
   parent: BoxSurvivalAquatic
   id: BoxSurvivalCommandAquatic
   name: command survival box
-  description: It's a box with ornate but otherwise basic internals inside. 
+  description: It's a box with ornate but otherwise basic internals inside.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -742,7 +759,7 @@
     sprite: _Impstation/Objects/Storage/boxes.rsi
     layers:
     - state: internals
-    - state: emergencytankcommandvapor 
+    - state: emergencytankcommandvapor
 
 - type: entity
   parent: BoxSurvivalCommandAquatic
