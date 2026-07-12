@@ -1187,7 +1187,7 @@
     tags:
     - ClothMade
   - type: Item
-    size: Small
+    size: Tiny
     storedOffset: -1,0
     heldPrefix: batard-cotton
   - type: SolutionContainerManager
