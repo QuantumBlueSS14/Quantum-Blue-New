@@ -8,7 +8,7 @@
 - type: flavor
   id: vanilla
   flavorType: Complex
-  description: flavor-delta-complex-vanilla
+  description: flavor-complex-vanilla
 
 - type: flavor
   id: silverjack
