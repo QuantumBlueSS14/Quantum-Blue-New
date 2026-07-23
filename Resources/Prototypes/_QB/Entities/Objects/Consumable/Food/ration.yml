@@ -11,8 +11,8 @@
   description: The PSB is a densely packed, nutrient rich, artificially flavored and colored food bar specifically made to accomodate all morphotypes during food shortages.
   components:
   - type: Sprite
-    sprite: _QB/Objects/Consumable/Food/ration.rsi
-    state: psb
+    sprite: Objects/Consumable/Food/snacks.rsi
+    state: mre-brownie
   - type: Item
     size: Tiny
   - type: SpaceGarbage
