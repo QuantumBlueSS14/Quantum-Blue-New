@@ -50,7 +50,7 @@
     Oxygen:
       amount: 1
   products:
-    Acetone: 2
+    Acetone: 3 # Funkychem - was 2
 
 - type: reaction
   id: FoamingAgent
