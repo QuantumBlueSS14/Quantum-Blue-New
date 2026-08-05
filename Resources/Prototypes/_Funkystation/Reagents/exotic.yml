@@ -33,15 +33,34 @@
             Toxin: -4
             Brute: -4.5
             Burn: -6
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect # QB changes - change from generic status effect to modify effect (IDK how to make it work otherwise)
         conditions:
         - !type:ReagentCondition
           reagent: Stasicillin
           min: 11
-        key: ForcedSleep
-        component: ForcedSleeping
-        refresh: false
+        effectProto: StatusEffectForcedSleeping
+        time: 20 # QB - It takes 27 seconds for 11u to metabolize completely (.4u/s), but it isn't healing while under 11u
+        delay: 2 # QB - For comedic effect
+      - !type:ModifyStatusEffect # QB addition - make you sleepy and slow under 11u
+        conditions:
+        - !type:ReagentCondition
+          reagent: Stasicillin
+          min: 0.1
+        effectProto: StatusEffectDrowsiness
+        time: 2 # Accumulates
         type: Add
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.65
+        sprintSpeedModifier: 0.65
+      - !type:Emote
+        emote: Yawn
+        showInChat: true
+        probability: 0.1
+        conditions:
+        - !type:ReagentCondition
+          reagent: Stasicillin
+          min: 0.1
+        # QB addition end
 
 - type: reagent
   id: Negacordrazine
