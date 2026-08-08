@@ -135,6 +135,8 @@
       prob: 0
     - id: MobButterfly
       prob: 0
+    - id: MobMosquito # QB
+      prob: 0
 
 - type: entity
   id: SlimesSpawn

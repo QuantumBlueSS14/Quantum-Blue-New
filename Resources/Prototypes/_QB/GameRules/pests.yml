@@ -13,3 +13,18 @@
       prob: 0.04
     - id: PolyoomyciteVentSpawner
       prob: 0.02
+
+- type: entity
+  id: MosquitoSpawn
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    minimumPlayers: 1 #Nobody is safe
+    weight: 5
+    duration: 60
+  - type: VentCrittersRule
+    announce: false # CC can't detect this
+    entries:
+    - id: MosquitoVentSpawner
+      prob: 0.05
