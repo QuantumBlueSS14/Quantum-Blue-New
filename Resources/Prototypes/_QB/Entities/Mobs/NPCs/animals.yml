@@ -36,7 +36,7 @@
       path: /Audio/Weapons/star_hit.ogg
     damage:
       types:
-        Piercing: 1
+        Bloodloss: 2
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 7
@@ -117,9 +117,6 @@
     range: 8
     sound:
       path: /Audio/_QB/Animals/mosquito.ogg
-  - type: InnateTool # probably needs hands to work
-    tools:
-    - id: Syringe
   - type: Tag
     tags:
     - Trash
