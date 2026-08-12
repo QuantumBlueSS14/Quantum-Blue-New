@@ -1528,13 +1528,16 @@
 - type: tile
   id: FloorDirt
   name: tiles-dirt-floor
-  sprite: /Textures/Tiles/dirt.png
-  variants: 4
+  sprite: /Textures/_QB/Tiles/Planet/Soil/dirt.rsi/dirt.png # QB
+  variants: 7 # QB
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 1.0 # QB
+  - 1.0 # QB
+  - 1.0 # QB
   baseTurf: Plating
   isSubfloor: true
   footstepSounds:

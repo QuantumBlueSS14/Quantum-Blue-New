@@ -2,7 +2,7 @@
   id: FloorPlanetDirt
   name: tiles-dirt-planet-floor
   sprite: /Textures/_QB/Tiles/Planet/Soil/dirt.rsi/dirt.png # QB
-  variants: 7
+  variants: 7 # QB
   placementVariants:
   - 1.0
   - 1.0
