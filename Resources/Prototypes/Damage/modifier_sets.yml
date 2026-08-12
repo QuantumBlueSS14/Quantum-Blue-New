@@ -340,3 +340,13 @@
   coefficients:
     Heat: 1.15
     Cold: 0.85
+
+#Slasher are resistant to all the main crew damage types, but are still vulnerable to radiation and bloodloss, so they don't do too many evil things in space etc.
+- type: damageModifierSet
+  id: Slasher
+  coefficients:
+    Blunt: 0.25
+    Slash: 0.25
+    Piercing: 0.25
+    Heat: 0.25
+    Caustic: 0.25

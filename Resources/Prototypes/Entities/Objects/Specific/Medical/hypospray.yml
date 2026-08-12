@@ -487,8 +487,7 @@
 - type: entity
   parent: ChemicalMedipen
   id: AirlossAutoInjector
-  name: airloss auto-injector
-  description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
+  description: A rapid dose of saline and salbutamol, intended to get someone up quickly. # Funkychem - dex+ -> salbutamol
   components:
   - type: Item
     inhandVisuals:
@@ -514,12 +513,14 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 40
+        maxVol: 30 # Funkychem - was 40
         reagents:
         - ReagentId: Saline
-          Quantity: 20
-        - ReagentId: DexalinPlus
-          Quantity: 20
+          Quantity: 15 # Funkychem - was 20
+        - ReagentId: Salbutamol # Funkychem - was dex+
+          Quantity: 15 # Funkychem - was 20
+  - type: Tag
+    tags: []
 
 - type: entity
   parent: ChemicalMedipen

@@ -29,7 +29,7 @@
     itemIconStyle: NoItem
     raiseOnAction: true
     icon: Interface/Actions/harm.png # Placeholder icon — replace with a dedicated Slasher rend icon
-    useDelay: 90
+    useDelay: 300
     startDelay: true
   - type: TargetAction
     range: 1.5
@@ -44,7 +44,7 @@
       - Window
     event: !type:SlasherRendEvent
   - type: SlasherRendAction
-    rendDelay: 5
+    rendDelay: 10
     distanceThreshold: 1.5
     rendStartSound:
       path: /Audio/Machines/airlock_creaking.ogg
@@ -155,22 +155,22 @@
     healAmount: 50
     ambientDarkThreshold: 0.5
 
-- type: entity
-  parent: BaseAction
-  id: ActionSlasherLocateEffigy
-  components:
-  - type: Action
-    itemIconStyle: BigAction
-    raiseOnAction: true
-    icon:
-      sprite: Structures/Specific/Anomalies/shadow_anom.rsi
-      state: anom
-    iconOn:
-      sprite: Structures/Specific/Anomalies/shadow_anom.rsi
-      state: pulse
-  - type: InstantAction
-    event: !type:SlasherLocateEffigyEvent
-  - type: SlasherLocateEffigyAction
+# - type: entity
+#   parent: BaseAction
+#   id: ActionSlasherLocateEffigy
+#   components:
+#   - type: Action
+#     itemIconStyle: BigAction
+#     raiseOnAction: true
+#     icon:
+#       sprite: Structures/Specific/Anomalies/shadow_anom.rsi
+#       state: anom
+#     iconOn:
+#       sprite: Structures/Specific/Anomalies/shadow_anom.rsi
+#       state: pulse
+#   - type: InstantAction
+#     event: !type:SlasherLocateEffigyEvent
+#   - type: SlasherLocateEffigyAction
 
 - type: entity
   parent: BaseAction

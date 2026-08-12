@@ -1023,7 +1023,9 @@
     - Cryoxadone
     - Dermaline
     - Dexalin
-    - DexalinPlus
+    - Oxandrolone # Funkychem - oxandrolone
+    - Convermol # Funkychem - dex+ -> convermol
+    - Salbutamol # Funkychem - dex+ -> salbutamol
     - Epinephrine
     - Leporazine
     - Ambuzol
@@ -1055,6 +1057,7 @@
     - Genderfluid
 #    - JuiceThatMakesYouUngh
     #imp edit end
+    - ExoticReagent # QB - Funkychem addition
   - type: Edible
     edible: Drink
     solution: anomaly

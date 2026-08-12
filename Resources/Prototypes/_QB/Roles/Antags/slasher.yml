@@ -23,7 +23,7 @@
     jumpsuit: ClothingUniformJumpsuitSlasher
     head: ClothingHeadHatSlasherCorpsoft
     mask: ClothingMaskSlasher
-    back: ClothingBackpackDuffel
+    back: ClothingBackpackChameleonSlasher
     pocket1: SlasherGearContainer
     ears: ClothingHeadsetSlasher
     gloves: ClothingHandsGlovesSlasher
@@ -35,7 +35,9 @@
     - SlasherKnife
     - SlasherHatchet
     - SlasherChainsaw
-
+    - PinpointerSlasherEffigy
+    - FreedomImplanter
+    
 - type: startingGear
   id: SlasherGearClown
   parent: SlasherGear
@@ -52,7 +54,6 @@
   equipment:
     head: ClothingHeadSlasherGriffy
     outerClothing: ClothingOuterSlasherGriffy
-    id: SlasherGriffyPDA
 
 - type: startingGear
   id: SlasherGearCaptain

@@ -12,6 +12,7 @@
     - BuzzochloricBees
 #    - BrosochloricBros #imp edit
     - Stimulants
+    - ExoticReagent # QB - Funkychem
   - quantity: 5
     weight: 1
     reagents:
@@ -33,6 +34,8 @@
     - ChangelingSting
     - CogChamp
     - JuiceThatMakesYouWeh
+    - Convermol # QB - Funkychem - decent medicine
+    - Pestiline # QB - Funkychem - decent toxin
     - TearGas
     - Lipolicide
     - Benzene
@@ -69,6 +72,7 @@
     reagents:
     - Bicaridine
     - Dermaline
+    - SalicylicAcid # QB - Funkychem
     - Ephedrine
     - NorepinephricAcid
     - Tricordrazine
@@ -106,6 +110,7 @@
     reagents:
     - Vitamin
     - Kelotane
+    - Dexalin # QB
     - Inaprovaline
     - Oil
     - Slime

@@ -1,0 +1,66 @@
+- type: entity
+  name: random station engine spawner
+  id: LootSpawnerRandomCrateEngineeringEnginePA
+  suffix: PA Engines
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Impstation/Structures/Storage/Crates/engineering.rsi # imp
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - CrateEngineeringSingularityParts
+      - CrateEngineeringTeslaParts
+
+- type: entity
+  name: random station engine spawner
+  id: LootSpawnerRandomCrateEngineeringEnginePAandSM
+  suffix: PA Engines, Supermatter Shard
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Impstation/Structures/Storage/Crates/engineering.rsi # imp
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - CrateEngineeringSingularityParts
+      - CrateEngineeringTeslaParts
+      - CrateEngineeringSupermatterShard
+
+- type: entity
+  name: random station engine spawner
+  id: LootSpawnerRandomCrateEngineeringEngineTEGandSM
+  suffix: TEG, Supermatter Shard
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Impstation/Structures/Storage/Crates/engineering.rsi # imp
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - CrateEngineeringTEGParts
+      - CrateEngineeringSupermatterShard
+
+- type: entity
+  name: random station engine spawner
+  id: LootSpawnerRandomCrateEngineeringEngineAny
+  suffix: All Major Engines
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Impstation/Structures/Storage/Crates/engineering.rsi # imp
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - CrateEngineeringSingularityParts
+      - CrateEngineeringTeslaParts
+      - CrateEngineeringTEGParts
+      - CrateEngineeringSupermatterShard

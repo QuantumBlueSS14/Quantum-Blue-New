@@ -26,3 +26,5 @@ guide-entry-quantumblue-sopandsplaw = SOP and Space Law
 guide-entry-quantumblue-alertprocedure = Alert Procedure
 guide-entry-quantumblue-spacelaw = Space Law
 guide-entry-quantumblue-standardoperatingprocedure = Standard Operating Procedure
+
+guide-entry-frequently-used-chemicals = Frequently Used Chemicals

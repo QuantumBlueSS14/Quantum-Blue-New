@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: SyndiCrewMonitor
   name: syndicate crew monitor
   description: The syndicated version of crew monitor, intercepts information from the server.
@@ -12,7 +12,7 @@
   - type: PowerCellDraw
     useCharge: 0 # DeltaV - Changed to zero with the removal of the microreactor in observations kit
   - type: CrewMonitoringConsole # DeltaV - disable crew crit / dead beeping alerts
-#    alertsEnabled: false  # imp - our crewmons dont do that lmao
+    alertsEnabled: false  # QB- remove imp comment out (our crewmons do that)
   # imp edits below - unparenting from crew monitor
   - type: ActivatableUI
     key: enum.CrewMonitoringUIKey.Key

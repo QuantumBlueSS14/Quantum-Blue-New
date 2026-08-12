@@ -16,3 +16,108 @@
   - type: HTN
     rootTask:
       task: MeleeDogCompound
+
+- type: entity
+  name: mosquito
+  parent: [ SimpleMobBase, FlyingMobBase]
+  id: MobMosquito
+  description: EEEEeeeeEEEEEEEEeeEEE
+  components:
+  - type: VentCrawler
+    enterDelay: 1
+  - type: Item
+    size: Tiny
+  - type: CombatMode
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/star_hit.ogg
+    damage:
+      types:
+        Bloodloss: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 7
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: false
+    allowMovement: true
+    name: ghost-role-information-mosquito-name
+    description: ghost-role-information-mosquito-description
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgentHarmless
+  - type: GhostTakeoverAvailable
+  - type: Emoting
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      sprite: _QB/Mobs/Animals/mosquito.rsi
+      state: mosquito
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.1 # making them smaller makes them die of heat...?
+        density: 30 # making them less dense makes them die of heat...?
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      10: Dead # two punches
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Slime/slime_squish.ogg
+      params:
+        variation: 0.125
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mosquito
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: InsectBlood
+        Quantity: 1
+  - type: MobPrice
+    price: 50
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 20
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+  - type: AmbientSound
+    enabled: true
+    volume: -3
+    range: 8
+    sound:
+      path: /Audio/_QB/Animals/mosquito.ogg
+  - type: Tag
+    tags:
+    - Trash
+    - MultitoolDefibrillatorTarget

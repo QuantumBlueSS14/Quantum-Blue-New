@@ -35,3 +35,22 @@
       chance: 0.9
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 4
+
+- type: entity
+  name: Mosquito Vent Spawner
+  id: MosquitoVentSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _QB/Mobs/Animals/mosquito.rsi
+          state: icon
+        - state: timed
+    - type: Timer
+    - type: ClusterSpawner
+      prototypes:
+        - MobMosquito
+      chance: 0.9
+      minimumEntitiesSpawned: 3
+      maximumEntitiesSpawned: 10

@@ -30,3 +30,6 @@ fibers-silver = silver
 fibers-gold = gold
 fibers-maroon = maroon
 fibers-pink = pink
+
+#QB Add, Slasher
+fibers-bloody = bloody

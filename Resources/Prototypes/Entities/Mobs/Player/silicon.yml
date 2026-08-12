@@ -1,4 +1,4 @@
-﻿# Be careful with these as they get removed on shutdown too!
+# Be careful with these as they get removed on shutdown too!
 - type: entity
   id: AiHeld
   description: Components added / removed from an entity that gets inserted into an AI core.
@@ -59,6 +59,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
   - type: CrewMonitoringConsole
+    alertsEnabled: false #QB - disable ai core crew monitor beeps
   - type: GeneralStationRecordConsole
   - type: DeviceNetwork
     deviceNetId: Wireless

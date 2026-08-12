@@ -1,0 +1,163 @@
+- type: entity
+  parent: BaseFlatpack
+  id: TEGCirculatorFlatpack
+  name: circulator flatpack
+  description: A flatpack used for constructing a TEG circulator.
+  components:
+  - type: Flatpack
+    entity: TegCirculator
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - TEG
+    - Power
+
+- type: entity
+  parent: BaseFlatpack
+  id: TEGCenterFlatpack
+  name: thermo-electric generator flatpack
+  description: A flatpack used for constructing a Thermo-Electric Generator.
+  components:
+  - type: Flatpack
+    entity: TegCenter
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - TEG
+    - Power
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorControlBoxFlatpack
+  name: PA control box flatpack
+  description: A flatpack used for constructing a particle accelerator control box.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorControlBox
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorEndCapFlatpack
+  name: PA end-cap flatpack
+  description: A flatpack used for constructing a particle accelerator end-cap.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorEndCap
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorFuelChamberFlatpack
+  name: PA fuel chamber flatpack
+  description: A flatpack used for constructing a particle accelerator fuel chamber.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorFuelChamber
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorPowerBoxFlatpack
+  name: PA power box flatpack
+  description: A flatpack used for constructing a particle accelerator power box.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorPowerBox
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorEmitterForeFlatpack
+  name: PA fore emitter flatpack
+  description: A flatpack used for constructing a particle accelerator fore emitter.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorEmitterFore
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorEmitterStarboardFlatpack
+  name: PA starboard containment emitter flatpack
+  description: A flatpack used for constructing a particle accelerator starboard containment emitter.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorEmitterStarboard
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine
+
+- type: entity
+  parent: BaseFlatpack
+  id: ParticleAcceleratorEmitterPortFlatpack
+  name: PA port containment emitter flatpack
+  description: A flatpack used for constructing a particle accelerator port containment emitter.
+  components:
+  - type: Flatpack
+    entity: ParticleAcceleratorEmitterPort
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#EFB341"
+    - state: icon-default
+  - type: GuideHelp
+    guides:
+    - SingularityTeslaEngine

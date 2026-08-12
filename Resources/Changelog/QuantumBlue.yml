@@ -1,4 +1,67 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Mosquitoes. Who forgot to return the slab?
+    id: 145
+    time: '2026-08-11T22:36:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/181
+  - author: Moodotsuki
+    changes:
+      - type: Tweak
+        message: Pebble has had a few tiny adjustments made; see the PR for the notes if you're curious!
+      - type: Tweak
+        message: Pebble's minimum population has changed from 0 to 8.
+    id: 144
+    time: '2026-08-10T04:18:57.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/177
+  - author: keekee38
+    changes:
+      - type: Add
+        message: space pens exist in survival kits, and MREs have been replaced by smaller PSBs
+    id: 143
+    time: '2026-08-09T21:18:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/176
+  - author: keekee38
+    changes:
+      - type: Add
+        message: >-
+          space pens are now being ~~tested to determine if they increase workplace efficiency~~ sent out in survival
+          boxes. NT cares!
+    id: 142
+    time: '2026-07-23T01:21:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/170
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Cargo can now purchase a TEG parts crate for 10k spesos!
+      - type: Add
+        message: Mappers can now add randomized station engines to their maps! Who knows what you'll be setting up...
+      - type: Tweak
+        message: Supermatter shard crates purchaseable from cargo now come with radiation collectors and plasma tanks
+      - type: Tweak
+        message: The supermatter shard cargo order now costs "only" 15k spesos (down from 40k)
+    id: 141
+    time: '2026-07-23T00:39:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/166
+  - author: SoupTomat
+    changes:
+      - type: Tweak
+        message: Various slasher YML tweaks
+      - type: Fix
+        message: the Slasher anti-reharvest component now successfuly falls off.
+    id: 140
+    time: '2026-07-10T22:28:43.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/169
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Atlas: The servers room by engineering has a crew monitoring server now, oops'
+      - type: Fix
+        message: 'Atlas: Moved some weird/buggy firelocks by the supermatter'
+    id: 139
+    time: '2026-07-08T19:14:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/167
   - author: Sage-Jones
     changes:
       - type: Add

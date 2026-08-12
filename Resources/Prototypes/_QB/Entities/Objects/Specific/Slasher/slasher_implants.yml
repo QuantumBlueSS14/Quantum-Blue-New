@@ -29,7 +29,7 @@
   components:
   - type: Pinpointer
     targetName: slasher effigy
+  - type: Unremoveable
   - type: Tag
     tags:
     - SlasherEffigyLocator
-
