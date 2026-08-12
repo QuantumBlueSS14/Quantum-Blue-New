@@ -4,7 +4,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassa1
 
 - type: decal
@@ -13,7 +13,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassa2
 
 - type: decal
@@ -22,7 +22,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassa3
 
 - type: decal
@@ -31,7 +31,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassa4
 
 - type: decal
@@ -40,7 +40,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassa5
 
 - type: decal
@@ -49,7 +49,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassb1
 
 - type: decal
@@ -58,7 +58,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassb2
 
 - type: decal
@@ -67,7 +67,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassb3
 
 - type: decal
@@ -76,7 +76,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassb4
 
 - type: decal
@@ -85,7 +85,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassb5
 
 - type: decal
@@ -94,7 +94,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassc1
 
 - type: decal
@@ -103,7 +103,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassc2
 
 - type: decal
@@ -112,7 +112,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassc3
 
 - type: decal
@@ -121,7 +121,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassc4
 
 - type: decal
@@ -130,7 +130,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassd1
 
 - type: decal
@@ -139,7 +139,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassd2
 
 - type: decal
@@ -148,7 +148,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grassd3
 
 - type: decal
@@ -157,7 +157,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grasse1
 
 - type: decal
@@ -166,7 +166,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grasse2
 
 - type: decal
@@ -175,7 +175,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_grass.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
     state: grasse3
 
 - type: decal
@@ -391,7 +391,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: busha1
 
 - type: decal
@@ -400,7 +400,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: busha2
 
 - type: decal
@@ -409,7 +409,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: busha3
 
 - type: decal
@@ -418,7 +418,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushb1
 
 - type: decal
@@ -427,7 +427,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushb2
 
 - type: decal
@@ -436,7 +436,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushb3
 
 - type: decal
@@ -445,7 +445,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushc1
 
 - type: decal
@@ -454,7 +454,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushc2
 
 - type: decal
@@ -463,7 +463,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushc3
 
 - type: decal
@@ -472,7 +472,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushd1
 
 - type: decal
@@ -481,7 +481,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushd2
 
 - type: decal
@@ -490,7 +490,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushd3
 
 - type: decal
@@ -499,7 +499,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushd4
 
 - type: decal
@@ -508,7 +508,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushe1
 
 - type: decal
@@ -517,7 +517,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushe2
 
 - type: decal
@@ -526,7 +526,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushe3
 
 - type: decal
@@ -535,7 +535,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushe4
 
 - type: decal
@@ -544,7 +544,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushf1
 
 - type: decal
@@ -553,7 +553,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushf2
 
 - type: decal
@@ -562,7 +562,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushf3
 
 - type: decal
@@ -571,7 +571,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushg1
 
 - type: decal
@@ -580,7 +580,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushg2
 
 - type: decal
@@ -589,7 +589,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushg3
 
 - type: decal
@@ -598,7 +598,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushg4
 
 - type: decal
@@ -607,7 +607,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushh1
 
 - type: decal
@@ -616,7 +616,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushh2
 
 - type: decal
@@ -625,7 +625,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushh3
 
 - type: decal
@@ -634,7 +634,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushi1
 
 - type: decal
@@ -643,7 +643,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushi2
 
 - type: decal
@@ -652,7 +652,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushi3
 
 - type: decal
@@ -661,7 +661,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushi4
 
 - type: decal
@@ -670,7 +670,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushj1
 
 - type: decal
@@ -679,7 +679,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushj2
 
 - type: decal
@@ -688,7 +688,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushj3
 
 - type: decal
@@ -697,7 +697,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushk1
 
 - type: decal
@@ -706,7 +706,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushk2
 
 - type: decal
@@ -715,7 +715,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushk3
 
 - type: decal
@@ -724,7 +724,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushl1
 
 - type: decal
@@ -733,7 +733,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushl2
 
 - type: decal
@@ -742,7 +742,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushl3
 
 - type: decal
@@ -751,7 +751,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushl4
 
 - type: decal
@@ -760,7 +760,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushm1
 
 - type: decal
@@ -769,7 +769,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushm2
 
 - type: decal
@@ -778,7 +778,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushm3
 
 - type: decal
@@ -787,7 +787,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushm4
 
 - type: decal
@@ -796,7 +796,7 @@
   snapCardinals: true
   defaultSnap: false
   sprite:
-    sprite: Decals/Flora/flora_bushes.rsi
+    sprite: _QB/Decals/Nature/Flora/flora_bushes.rsi # QB
     state: bushn1
 
 - type: decal

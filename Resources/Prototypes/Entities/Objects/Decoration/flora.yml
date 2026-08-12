@@ -44,7 +44,7 @@
   - type: Clickable
   - type: Sprite
     noRot: true
-    sprite: Objects/Decoration/Flora/flora_trees.rsi
+    sprite: _QB/Structures/Nature/Flora/flora_trees.rsi # QB
     drawdepth: Overdoors
     offset: 0,0.9
   - type: Physics
@@ -122,7 +122,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Decoration/Flora/flora_treeslarge.rsi
+    sprite: _QB/Structures/Nature/Flora/flora_treeslarge.rsi # QB
     offset: 0,1.55
   - type: Fixtures
     fixtures:

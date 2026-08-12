@@ -6,7 +6,7 @@
   - type: Sprite
     layers:
       - state: red
-      - sprite: Objects/Decoration/Flora/flora_trees.rsi
+      - sprite: _QB/Structures/Nature/Flora/flora_trees.rsi # QB
         state: tree01
   - type: RandomSpawner
     prototypes:

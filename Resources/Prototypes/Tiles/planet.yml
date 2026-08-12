@@ -2,12 +2,15 @@
   id: FloorPlanetDirt
   name: tiles-dirt-planet-floor
   sprite: /Textures/_QB/Tiles/Planet/Soil/dirt.rsi/dirt.png # QB
-  variants: 4
+  variants: 7
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 1.0 # QB
+  - 1.0 # QB
+  - 1.0 # QB
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -67,14 +70,14 @@
   - 1.0
   edgeSpritePriority: 1
   edgeSprites:
-    SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    SouthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    South: /Textures/Tiles/Planet/Grass/double_edge.png
-    East: /Textures/Tiles/Planet/Grass/double_edge.png
-    North: /Textures/Tiles/Planet/Grass/double_edge.png
-    West: /Textures/Tiles/Planet/Grass/double_edge.png
+    SouthEast: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    NorthEast: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    NorthWest: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    SouthWest: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    South: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    East: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    North: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    West: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
   baseTurf: FloorPlanetDirt
   isSubfloor: true
   footstepSounds:

@@ -132,7 +132,7 @@
     layers:
     - state: green
     - state: decal
-    - sprite: Decals/Flora/flora_grass.rsi
+    - sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
       state: grassa1
   - type: RandomDecalSpawner
     decals:
@@ -156,7 +156,7 @@
     layers:
     - state: green
     - state: decal
-    - sprite: Decals/Flora/flora_grass.rsi
+    - sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
       state: grassc1
   - type: RandomDecalSpawner
     decals:
@@ -174,7 +174,7 @@
     layers:
     - state: green
     - state: decal
-    - sprite: Decals/Flora/flora_grass.rsi
+    - sprite: _QB/Decals/Nature/Flora/flora_grass.rsi # QB
       state: grassd1
   - type: RandomDecalSpawner
     decals:
