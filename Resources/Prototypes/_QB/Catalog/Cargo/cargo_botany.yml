@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: GardenGnomes
+  icon:
+    sprite: _QB/Objects/Decorations/garden_gnome.rsi
+    state: icon
+  product: CrateGnomes
+  cost: 6000
+  category: cargoproduct-category-name-hydroponics
+  group: market

@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from TGstation icons/mob/simple/garden_gnome.dmi and modified by rebe83. Inhand sprites taken from beret sprites by Belay#7441 and palette edited by rebe83",
+    "source": "https://github.com/tgstation/tgstation/pull/72672",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "equipped"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatGnome
+  name: fake gnome hat
+  description: You're gnot a gnome, but it's fun to pretend. Made from synthetic gnome hide.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Head/Hats/gnome_hat.rsi #imp
+  - type: Clothing
+    sprite: _QB/Clothing/Head/Hats/gnome_hat.rsi #imp
+    clothingVisuals:
+      head:
+      - state: equipped
+        offset: "0, 0.35"
+  - type: Storage
+    grid:
+    - 0,0,0,1
+    maxItemSize: Small
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon

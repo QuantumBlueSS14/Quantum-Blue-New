@@ -126,6 +126,7 @@
     ClothingOuterBlackPoncho: 2 #imp
     ClothingOuterRainCape: 3 #imp
     Gohei: 2
+    ClothingHeadHatGnome: 1 # QB - fight over it
   contrabandInventory: # imp
     ClothingMaskBlushingClown: 1 #imp
     ClothingMaskBlushingMime: 1 #imp  

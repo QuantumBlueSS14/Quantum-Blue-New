@@ -1,0 +1,12 @@
+- type: entity
+  parent: CrateHydroponics
+  id: CrateGnomes
+  name: garden gnome crate
+  description: A crate of three garden gnome decorations.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: StatueGnome
+          amount: 3
