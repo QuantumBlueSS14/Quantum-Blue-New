@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseStash
+  parent: [BaseItem, BaseStash]
   id: StatueGnome
   name: garden gnome
   description: A tiny fellow believed to ward off evil spirits. This one is just made from concrete.
@@ -7,6 +7,7 @@
   - type: Sprite
     sprite: _QB/Objects/Decorations/garden_gnome.rsi
     state: gnome
+  - type: Rotatable
   - type: Item
     size: Small
     shape:
@@ -15,27 +16,26 @@
     openToolQualityNeeded: Prying
     closeToolQualityNeeded: Prying
   - type: LandAtCursor
-  - type: Fixtures # same as skewer
+  - type: Fixtures # same as spear
     fixtures:
       fix1:
         shape: !type:PolygonShape
           vertices:
-            - -0.40,-0.20
-            - -0.30,-0.30
-            - 0.50,0.10
-            - 0.40,0.20
+            - -0.40,-0.30
+            - -0.30,-0.40
+            - 0.40,0.30
+            - 0.30,0.40
         density: 20
         mask:
         - ItemMask
         restitution: 0.3
-        friction: 0.4
+        friction: 0.2
   - type: DamageOtherOnHit
     damage:
       types:
         Piercing: 2
-  - type: ThrowingAngle
-    angle: 180
-  - type: EmbeddableProjectile
+  - type: EmbeddableProjectile # same as spear
+    sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0
   - type: MeleeWeapon
     wideAnimationRotation: -180
@@ -47,5 +47,13 @@
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
   - type: StaticPrice 
     price: 100

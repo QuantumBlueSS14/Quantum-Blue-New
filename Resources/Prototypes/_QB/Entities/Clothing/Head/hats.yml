@@ -12,6 +12,14 @@
       head:
       - state: equipped
         offset: "0, 0.35"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        shader: unshaded
+      right:
+      - state: inhand-right
+        shader: unshaded
   - type: Storage
     grid:
     - 0,0,0,1
@@ -28,6 +36,4 @@
     - PetWearable
     - CorgiWearable
     - ClothMade
-    - Recyclable
-    - HamsterWearable
     - WhitelistChameleon

@@ -10,3 +10,4 @@
         children:
         - id: StatueGnome
           amount: 3
+        - id: ClothingHeadHatGnome
