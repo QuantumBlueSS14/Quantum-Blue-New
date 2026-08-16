@@ -1,4 +1,13 @@
 Entries:
+  - author: SoupTomat
+    changes:
+      - type: Tweak
+        message: Various slasher YML tweaks
+      - type: Fix
+        message: the Slasher anti-reharvest component now successfuly falls off.
+    id: 140
+    time: '2026-07-10T22:28:43.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/169
   - author: MattFright
     changes:
       - type: Fix
