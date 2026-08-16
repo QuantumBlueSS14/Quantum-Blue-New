@@ -4,14 +4,13 @@
   suffix: Filled
   parent: Medkit
   components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: Brutepack
-        - id: Ointment
-        - id: Gauze
-        - id: PillCanisterTricordrazine
+  - type: StorageFill
+    contents:
+      - id: Brutepack
+      - id: Ointment
+      - id: Gauze
+      # - id: PillCanisterTricordrazine # QB - we don't need both tric and granib
+      - id: PillCanisterGranibitulari # QB - Funkychem - tricordrazine variant
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -72,8 +71,8 @@
         - id: EmergencyOxygenTankFilled #IMP; repositioned for inventory's sake
         - id: ClothingMaskBreathMedical
         - id: EmergencyMedipen
-        - id: SyringeInaprovaline
-        - id: PillCanisterDexalin
+        - id: SyringeConvermol # QB - add funkychem - was inaprovaline
+        - id: PillCanisterDexalin 
 
 - type: entity
   id: MedkitNitrogenFilled
@@ -88,7 +87,8 @@
         - id: EmergencyNitrogenTankFilled #IMP; repositioned for inventory's sake
         - id: ClothingMaskBreathMedical
         - id: EmergencyMedipen
-        - id: PillCanisterDylovene
+        #- id: PillCanisterDylovene # QB - removed since vox regenerate poison
+        - id: SyringeConvermol # QB - add funkychem
         - id: PillCanisterDexalin
 
 - type: entity
@@ -123,16 +123,14 @@
   suffix: Filled
   parent: MedkitCombat
   components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: MedicatedSuture
-        - id: RegenerativeMesh
-        - id: SyringeEphedrine
-        - id: SyringeSaline
-        - id: BruteAutoInjector
-        - id: BurnAutoInjector
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: SyringeEphedrine
+      - id: SyringeSaline
+      - id: BruteAutoInjector
+      - id: BurnAutoInjector
 
 - type: entity
   id: StimkitFilled

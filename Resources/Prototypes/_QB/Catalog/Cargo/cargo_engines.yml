@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: EngineTEG
+  icon:
+    sprite: _Impstation/Structures/Power/Generation/teg.rsi
+    state: static
+  product: CrateEngineeringTEGParts
+  cost: 10000
+  category: cargoproduct-category-name-engineering
+  group: market

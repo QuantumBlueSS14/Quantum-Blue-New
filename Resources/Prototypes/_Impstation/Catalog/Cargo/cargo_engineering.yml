@@ -23,6 +23,6 @@
     sprite: _Impstation/Structures/Power/Generation/Supermatter/supermatter_shard.rsi
     state: supermatter-shard
   product: CrateEngineeringSupermatterShard
-  cost: 40000
+  cost: 15000 # QB - 40k is way too much man
   category: cargoproduct-category-name-engineering
   group: market

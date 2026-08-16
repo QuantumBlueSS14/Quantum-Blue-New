@@ -13,8 +13,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -33,8 +34,9 @@
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -57,8 +59,9 @@
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -77,8 +80,9 @@
         - id: ExtendedEmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -101,8 +105,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -121,8 +126,9 @@
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -145,8 +151,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -165,8 +172,9 @@
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -188,8 +196,9 @@
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
       - state: internals
@@ -208,8 +217,9 @@
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   # Intentionally wrong picture on the box. NT did not care enough to change it.
   - type: Label
     currentLabel: reagent-name-nitrogen
@@ -235,8 +245,9 @@
         - id: EmergencyFunnyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Tag
     tags:
     - BoxCardboard
@@ -255,8 +266,9 @@
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Label
     currentLabel: reagent-name-nitrogen
 
@@ -275,6 +287,7 @@
         - id: Flare
         - id: FoodBreadNutriBatard
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxSurvivalNitrogen
@@ -291,6 +304,7 @@
         - id: Flare
         - id: FoodBreadNutriBatard
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -313,6 +327,7 @@
         - id: Flare
         - id: FoodBreadCottonNutriBatard
         - id: DrinkWaterBottleFull
+        - id: SpaceMedipen
 
 - type: entity
   parent: BoxCardboard
@@ -329,7 +344,8 @@
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals
@@ -348,7 +364,8 @@
         - id: ExtendedEmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare
-        - id: FoodSnackNutribrick
+        - id: FoodPSB
+        - id: SpaceMedipen
   - type: Sprite
     layers:
     - state: internals

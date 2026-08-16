@@ -1458,7 +1458,13 @@
 - type: tile
   id: FloorGrass
   name: tiles-planet-grass-floor
-  sprite: /Textures/Tiles/grass.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB start
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 # QB end
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1470,7 +1476,13 @@
 - type: tile
   id: FloorGrassJungle
   name: tiles-jungle-grass-floor
-  sprite: /Textures/Tiles/grassjungle.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB start
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 # QB
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1516,13 +1528,16 @@
 - type: tile
   id: FloorDirt
   name: tiles-dirt-floor
-  sprite: /Textures/Tiles/dirt.png
-  variants: 4
+  sprite: /Textures/_QB/Tiles/Planet/Soil/dirt.rsi/dirt.png # QB
+  variants: 7 # QB
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  - 1.0 # QB
+  - 1.0 # QB
+  - 1.0 # QB
   baseTurf: Plating
   isSubfloor: true
   footstepSounds:
@@ -1948,7 +1963,7 @@
 - type: tile
   id: FloorAstroGrass
   name: tiles-astro-grass
-  sprite: /Textures/Tiles/Planet/Grass/grass.png
+  sprite: /Textures/_QB/Tiles/Planet/Soil/Grass/grass.png # QB
   variants: 4
   placementVariants:
   - 1.0
@@ -1957,14 +1972,14 @@
   - 1.0
   edgeSpritePriority: 1
   edgeSprites:
-    SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    SouthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    South: /Textures/Tiles/Planet/Grass/double_edge.png
-    East: /Textures/Tiles/Planet/Grass/double_edge.png
-    North: /Textures/Tiles/Planet/Grass/double_edge.png
-    West: /Textures/Tiles/Planet/Grass/double_edge.png
+    SouthEast: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    NorthEast: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    NorthWest: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    SouthWest: /Textures/_QB/Tiles/Planet/Soil/Grass/single_edge.png # QB
+    South: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    East: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    North: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
+    West: /Textures/_QB/Tiles/Planet/Soil/Grass/double_edge.png # QB
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Cutting ]

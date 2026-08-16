@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original artwork by MattFright, grass patches cropped and pasted from CEV Eris commit https://github.com/discordia-space/CEV-Eris/commit/867ad687e9c9d773925c1a0cbc95e49485607702",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "rsic": false,
+  "states": [
+    {
+      "name": "dirt"
+    }
+  ]
+}

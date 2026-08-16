@@ -783,6 +783,11 @@ entities:
             4755: 29,-4
             4756: 28,-4
         - node:
+            color: '#334E6DC8'
+            id: BrickTileSteelLineS
+          decals:
+            4885: 11,-76
+        - node:
             color: '#DE3A3A96'
             id: BrickTileSteelLineS
           decals:
@@ -9613,6 +9618,7 @@ entities:
     - type: MetaData
       name: atmospherics
     - type: Transform
+      rot: 1.5707963267948966 rad
       pos: -29.5,-39.5
       parent: 2
     - type: AccessReader
@@ -91477,7 +91483,7 @@ entities:
       pos: -54.5,-57.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#990000FF'
+      color: '#FF1212FF'
   - uid: 15731
     components:
     - type: MetaData
@@ -102324,6 +102330,26 @@ entities:
       parent: 2
 - proto: MaintenanceToolSpawner
   entities:
+  - uid: 1944
+    components:
+    - type: Transform
+      pos: 14.5,-75.5
+      parent: 2
+  - uid: 2985
+    components:
+    - type: Transform
+      pos: 8.5,-75.5
+      parent: 2
+  - uid: 3113
+    components:
+    - type: Transform
+      pos: 10.5,-75.5
+      parent: 2
+  - uid: 3129
+    components:
+    - type: Transform
+      pos: 12.5,-75.5
+      parent: 2
   - uid: 3593
     components:
     - type: Transform
