@@ -185,6 +185,19 @@ public sealed partial class SlasherRuleComponent : Component
     public TimeSpan DeathMazePortalSpawnDelay { get; set; } = TimeSpan.FromSeconds(90);
 
     /// <summary>
+    /// Starter-kit prototype IDs that should bypass cosmetic-slot suppression during reclaim.
+    /// Right now this is just the PDA and is maybe the source of a bug where a slasher was getting duplicate PDAs so I might need to kill this but it's here now
+    /// </summary>
+    [DataField]
+    public HashSet<string> CriticalStarterKitPrototypes { get; set; } = ["SlasherPDA"];
+
+    /// <summary>
+    /// Maximum radius searched for a nearby valid tile when dropping the nuke disk.
+    /// </summary>
+    [DataField]
+    public int NukeDiskDropSearchRadius { get; set; } = 4;
+
+    /// <summary>
     /// Lobby music collection used for Slasher victory round end.
     /// </summary>
     [DataField]

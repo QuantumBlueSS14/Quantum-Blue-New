@@ -46,9 +46,10 @@ public sealed class SlasherGameRuleVentCorpseSystem : SlasherPulseGameRuleSystem
         var ventsQuery = EntityQueryEnumerator<GasVentPumpComponent, TransformComponent>();
         while (ventsQuery.MoveNext(out var ventUid, out _, out var xform))
         {
-            // Resolve station ownership from the vent entity itself; grid station-membership
-            // can be absent/transient and caused pulses to silently collect zero candidates.
             if (_station.GetOwningStation(ventUid) != chosenStation.Value)
+                continue;
+
+            if (xform.MapID == MapId.Nullspace)
                 continue;
 
             vents.Add(xform.Coordinates);

@@ -1,12 +1,14 @@
 using Content.Server.QB.Slasher.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Ghost;
+using Content.Shared.QB.EntityEffects.Components;
 using Content.Shared.Actions;
 using Content.Shared.Eye;
 using Content.Shared.Mobs;
 using Content.Shared.QB.Slasher.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Server.Player;
+using Robust.Shared.GameObjects;
 
 namespace Content.Server.QB.Slasher;
 
@@ -45,8 +47,33 @@ public sealed class SlasherRoleSystem : EntitySystem
         if (!_mobState.IsCritical(ent.Owner))
             return;
 
+        if (TryHandleCriticalTransition(ent.Owner))
+        {
+            args.Handled = true;
+            return;
+        }
+
         _mobState.ChangeMobState(ent.Owner, MobState.Dead);
         args.Handled = true;
+    }
+
+    /// <summary>
+    /// Teleports the slasher into the death maze when they enter crit,
+    /// </summary>
+    /// <param name="slasher">The slasher entity to transition.</param>
+    /// <returns>True if the transition was resolved through the death maze.</returns>
+    private bool TryHandleCriticalTransition(EntityUid slasher)
+    {
+        if (TryComp(slasher, out TransformComponent? xform) && xform.GridUid == _deathTeleport.DeathMazeGrid)
+            return true;
+
+        if (_deathTeleport.TryGetDeathMazeSpawn(out var target))
+        {
+            _deathTeleport.TeleportSlasherToDeathMaze(slasher, target);
+            return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -81,6 +108,8 @@ public sealed class SlasherRoleSystem : EntitySystem
         if (HasComp<EyeComponent>(ent.Owner)) //not having this causes a testfail btw
             _eye.RefreshVisibilityMask(ent.Owner);
 
+        EnsureComp<OnDeathEntitySpawnComponent>(ent.Owner); // not having this causes a build failure for some godforsaken reason??
+
         // Preload and validate the shared death maze while the role is granted, not at death time.
         _deathTeleport.TryGetDeathMazeSpawn(out _, DeathMazeSpawnSelection.Any);
 
@@ -102,7 +131,7 @@ public sealed class SlasherRoleSystem : EntitySystem
         // RefreshVisibilityMask would re-apply the Slasher visibility bit here,
         // so reset straight to the default eye mask instead.
         // not having this causes a test fail btw
-        if (TryComp<EyeComponent>(ent.Owner, out var eye)) 
+        if (TryComp<EyeComponent>(ent.Owner, out var eye))
             _eye.SetVisibilityMask(ent.Owner, EyeComponent.DefaultVisibilityMask, eye);
 
         foreach (var action in ent.Comp.ActionEntities)

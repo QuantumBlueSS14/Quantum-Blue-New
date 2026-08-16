@@ -5,6 +5,7 @@ using Content.Shared.DeviceNetwork.Events;
 using Content.Shared.Medical.SuitSensor;
 using Robust.Shared.Timing;
 using Content.Shared.DeviceNetwork.Components;
+using Robust.Shared.Audio.Systems; // QB add
 
 namespace Content.Server.Medical.CrewMonitoring;
 
@@ -14,6 +15,7 @@ public sealed class CrewMonitoringServerSystem : EntitySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly DeviceNetworkSystem _deviceNetworkSystem = default!;
     [Dependency] private readonly SingletonDeviceNetServerSystem _singletonServerSystem = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!; // QB add
 
     private const float UpdateRate = 3f;
     private float _updateDiff;
@@ -57,8 +59,12 @@ public sealed class CrewMonitoringServerSystem : EntitySystem
         if (sensorStatus == null)
             return;
 
-        sensorStatus.Timestamp = _gameTiming.CurTime;
-        component.SensorStatus[args.SenderAddress] = sensorStatus;
+        // QB Comment out start
+        // sensorStatus.Timestamp = _gameTiming.CurTime;
+        // component.SensorStatus[sensorStatus.Address] = sensorStatus;
+        // QB Comment out end
+        // QB- Keep all status updates going through one path so alert behavior remains consistent.
+        SetSensorStatusByAddress(uid, args.SenderAddress, sensorStatus, component);
     }
 
     /// <summary>
@@ -122,8 +128,61 @@ public sealed class CrewMonitoringServerSystem : EntitySystem
     {
         if (!Resolve(uid, ref component))
             return;
+        //QB Start
+        // Beep only on alert escalations (none->crit/dead or crit->dead) to avoid packet spam.
+        var hadPrevious = component.SensorStatus.TryGetValue(address, out var previousStatus);
+        var oldState = hadPrevious ? GetAlertState(previousStatus!) : MonitorAlertState.None;
+        var newState = GetAlertState(status);
+
+        if (newState > oldState)
+            PlayConfiguredAlertBeep(uid, component);
+        //QB End
 
         status.Timestamp = _gameTiming.CurTime;
         component.SensorStatus[address] = status;
+    }
+
+    /// <summary>
+    /// Plays crew monitor alert beeps using each console's configured alert settings.
+    /// </summary>
+    public void PlayConfiguredAlertBeep(EntityUid uid, CrewMonitoringServerComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        var consoles = EntityQueryEnumerator<CrewMonitoringConsoleComponent>();
+        while (consoles.MoveNext(out var consoleUid, out var console))
+        {
+            if (!console.AlertsEnabled)
+                continue;
+
+            if (_gameTiming.CurTime < console.NextAlertAt)
+                continue;
+
+            console.NextAlertAt = _gameTiming.CurTime + console.AlertCooldown;
+            _audio.PlayPvs(console.AlertSound, consoleUid);
+        }
+    }
+
+    /// <summary>
+    /// QB new - Maps sensor status to monitor alert state using crew-monitor icon semantics.
+    /// </summary>
+    private static MonitorAlertState GetAlertState(SuitSensorStatus status)
+    {
+        if (!status.IsAlive)
+            return MonitorAlertState.Dead;
+
+        if (status.DamagePercentage is { } damagePct && damagePct >= 1f)
+            return MonitorAlertState.Critical;
+
+        return MonitorAlertState.None;
+    }
+
+    //QB new - Monitor alert state for crew-monitor icon semantics.
+    private enum MonitorAlertState
+    {
+        None = 0,
+        Critical = 1,
+        Dead = 2,
     }
 }

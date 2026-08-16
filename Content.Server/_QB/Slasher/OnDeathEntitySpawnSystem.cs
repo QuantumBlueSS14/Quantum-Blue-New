@@ -28,13 +28,13 @@ public sealed class OnDeathEntitySpawnSystem : EntitySystem
     }
 
     /// <summary>
-    /// Spawns the configured entity pattern when the owner newly enters dead state.
+    /// Spawns the configured entity pattern when the owner newly enters critical state.
     /// </summary>
     /// <param name="ent">Entity and death-spawn configuration data.</param>
     /// <param name="args">Mob-state transition event data.</param>
     private void OnMobStateChanged(Entity<OnDeathEntitySpawnComponent> ent, ref MobStateChangedEvent args)
     {
-        if (args.NewMobState != MobState.Dead || args.OldMobState == MobState.Dead)
+        if (args.NewMobState != MobState.Critical || args.OldMobState == MobState.Critical)
             return;
 
         var xform = Transform(ent.Owner);

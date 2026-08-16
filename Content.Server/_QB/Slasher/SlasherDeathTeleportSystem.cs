@@ -1,5 +1,6 @@
 using Content.Shared.Administration.Systems;
 using Content.Shared.Mobs;
+using Content.Shared.Mobs.Systems;
 using Content.Server.QB.GameTicking.Rules.Components;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
@@ -8,6 +9,8 @@ using Content.Server.Body.Systems;
 using Content.Shared.QB.Slasher.Components;
 using Content.Shared.Roles;
 using Content.Shared.Gibbing.Events;
+using Content.Shared.Nuke;
+using Content.Shared.Physics;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -19,8 +22,11 @@ using Robust.Shared.Containers;
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Power.EntitySystems;
+using Content.Shared.Inventory;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Light.Components;
+using Content.Shared.Storage;
+using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Timing;
 
 
@@ -33,6 +39,12 @@ namespace Content.Server.QB.Slasher;
 public record struct SlasherFailedDeathProcessedEvent;
 
 /// <summary>
+/// Raised after a Slasher is moved into the death maze.
+/// </summary>
+[ByRefEvent]
+public record struct SlasherDeathMazeEnteredEvent(EntityUid MazeGrid, EntityCoordinates SpawnCoordinates);
+
+/// <summary>
 /// Handles Slasher death-maze teleportation, return-portal lifecycle, and owned-item reclaim.
 /// All Slashers share the same configured death-maze grid when they die.
 /// Procedural maze generation is delegated to <see cref="SlasherDeathMazeGeneratorSystem"/>.
@@ -40,11 +52,6 @@ public record struct SlasherFailedDeathProcessedEvent;
 public sealed class SlasherDeathTeleportSystem : EntitySystem
 {
     private readonly ISawmill _sawmill = Logger.GetSawmill("slasher.deathmaze");
-
-    private static readonly HashSet<string> CriticalStarterKitPrototypes =
-    [
-        "SlasherPDA",
-    ];
 
     private static readonly Vector2i[] CardinalDirections =
     [
@@ -62,7 +69,10 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _xform = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private readonly SharedStorageSystem _storage = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
     [Dependency] private readonly SlasherDeathMazeGeneratorSystem _mazeGen = default!;
@@ -193,15 +203,34 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
     /// </summary>
     private void OnMobStateChanged(Entity<SlasherRoleComponent> ent, ref MobStateChangedEvent args)
     {
+        if (TryComp(ent.Owner, out TransformComponent? xform) && xform.GridUid == _deathMazeGrid)
+            return;
+
+        if (args.NewMobState == MobState.Critical && args.OldMobState != MobState.Critical)
+        {
+            if (HasComp<SlasherEffigyFailureComponent>(ent)
+                || (TryComp(ent.Owner, out TransformComponent? xformCrit) && xformCrit.GridUid == _deathMazeGrid))
+                return;
+
+            if (TryGetDeathMazeSpawn(out var critTarget))
+            {
+                EntityUid? critOwnerMind = _mind.TryGetMind(ent.Owner, out var critMind, out _) ? critMind : null;
+                TeleportSlasherToDeathMaze(ent.Owner, critTarget, critOwnerMind);
+                return;
+            }
+
+            _mobState.ChangeMobState(ent.Owner, MobState.Dead);
+            return;
+        }
+
         if (args.NewMobState != MobState.Dead || args.OldMobState == MobState.Dead)
             return;
 
-        var hasMind = _mind.TryGetMind(ent.Owner, out var ownerMind, out _);
-
         if (HasComp<SlasherEffigyFailureComponent>(ent))
         {
+            var hasMind = _mind.TryGetMind(ent.Owner, out var existingMind, out _);
             if (hasMind && TryGetDeathMazeSpawn(out var failureTarget))
-                ReclaimOwnedItems(ent.Owner, ownerMind, failureTarget);
+                ReclaimOwnedItems(ent.Owner, existingMind, failureTarget);
 
             _body.GibBody(ent.Owner, true);
 
@@ -210,36 +239,16 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
             return;
         }
 
-        if (!TryGetDeathMazeSpawn(out var target))
+        if (!TryGetDeathMazeSpawn(out var deathTarget))
             return;
 
-        if (hasMind)
-            ReclaimOwnedItems(ent.Owner, ownerMind, target);
-
-        _xform.SetCoordinates(ent.Owner, target);
-        _rejuvenate.PerformRejuvenate(ent.Owner);
-
-        // Second pass: catches items dropped by death systems that run synchronously before this handler.
-        if (hasMind)
-            ReclaimOwnedItems(ent.Owner, ownerMind, target);
-
-        NotifySlasherEnteredDeathMaze();
-
-        // Deferred third pass: catches items dropped by other MobStateChangedEvent subscribers that
-        // run after this handler (e.g. hand-drop systems), which would otherwise leave gear on the station.
-        var deferredMind = ownerMind;
-        var deferredTarget = target;
-        var deferredSlasher = ent.Owner;
-        Timer.Spawn(0, () =>
-        {
-            if (TerminatingOrDeleted(deferredSlasher))
-                return;
-            ReclaimOwnedItems(deferredSlasher, deferredMind, deferredTarget);
-        });
+        EntityUid? deathOwnerMind = _mind.TryGetMind(ent.Owner, out var deathMind, out _) ? deathMind : null;
+        TeleportSlasherToDeathMaze(ent.Owner, deathTarget, deathOwnerMind);
     }
 
     /// <summary>
     /// Prevents gibbing of Slashers unless they are already in effigy-failure state.
+    /// This now catches direct destructible gib calls through the global gib cancellation hook.
     /// </summary>
     private void OnAttemptGib(Entity<SlasherRoleComponent> ent, ref AttemptEntityGibCancelEvent args)
     {
@@ -253,6 +262,8 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
 
         if (_mind.TryGetMind(ent.Owner, out var ownerMind, out _))
             ReclaimOwnedItems(ent.Owner, ownerMind, target);
+
+        RelocateNukeDiskToStation(ent.Owner, Transform(ent.Owner).Coordinates);
 
         _xform.SetCoordinates(ent.Owner, target);
         _rejuvenate.PerformRejuvenate(ent.Owner);
@@ -339,6 +350,125 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
 
         _xform.SetCoordinates(slasher, spawn);
         return true;
+    }
+
+    /// <summary>
+    /// Teleports the supplied slasher into the shared death maze and reclaims their owned gear.
+    /// This helper is used both for standard death handling and the crit-based disappearance flow.
+    /// </summary>
+    public bool TeleportSlasherToDeathMaze(EntityUid slasher, EntityCoordinates? target = null, EntityUid? ownerMind = null)
+    {
+        if (target is not { } resolvedTarget || !resolvedTarget.IsValid(EntityManager))
+        {
+            if (!TryGetDeathMazeSpawn(out resolvedTarget))
+                return false;
+        }
+
+        if (ownerMind == null)
+            ownerMind = _mind.TryGetMind(slasher, out var mind, out _) ? mind : null;
+
+        if (ownerMind != null)
+            ReclaimOwnedItems(slasher, ownerMind.Value, resolvedTarget);
+
+        RelocateNukeDiskToStation(slasher, Transform(slasher).Coordinates);
+
+        _xform.SetCoordinates(slasher, resolvedTarget);
+        _rejuvenate.PerformRejuvenate(slasher);
+
+        if (ownerMind != null)
+            ReclaimOwnedItems(slasher, ownerMind.Value, resolvedTarget);
+
+        NotifySlasherEnteredDeathMaze();
+        var enteredEvent = new SlasherDeathMazeEnteredEvent(_deathMazeGrid ?? EntityUid.Invalid, resolvedTarget);
+        RaiseLocalEvent(slasher, ref enteredEvent);
+
+        var deferredMind = ownerMind;
+        var deferredTarget = resolvedTarget;
+        var deferredSlasher = slasher;
+        Timer.Spawn(0, () =>
+        {
+            if (TerminatingOrDeleted(deferredSlasher))
+                return;
+            if (deferredMind != null)
+                ReclaimOwnedItems(deferredSlasher, deferredMind.Value, deferredTarget);
+        });
+
+        return true;
+    }
+
+    /// <summary>
+    /// Removes any carried nuke disk from the slasher and drops it onto a nearby valid station tile.
+    /// This prevents the disk from teleporting into the death maze when the slasher crits.
+    /// </summary>
+    /// <param name="slasher">The slasher whose carried items should be preserved on station.</param>
+    /// <param name="fallbackCoordinates">Fallback coordinates to use if no nearby tile can be found.</param>
+    private void RelocateNukeDiskToStation(EntityUid slasher, EntityCoordinates fallbackCoordinates)
+    {
+        var diskQuery = EntityQueryEnumerator<NukeDiskComponent>();
+        while (diskQuery.MoveNext(out var uid, out _))
+        {
+            if (uid == slasher || !IsContainedByEntity(uid, slasher))
+                continue;
+
+            if (!TryGetNearbyValidDropCoordinates(slasher, fallbackCoordinates, out var dropCoordinates))
+                dropCoordinates = fallbackCoordinates;
+
+            if (!dropCoordinates.IsValid(EntityManager))
+                return;
+
+            _container.TryRemoveFromContainer(uid);
+            _xform.SetCoordinates(uid, dropCoordinates);
+            return;
+        }
+    }
+
+    /// <summary>
+    /// Searches a nearby area around the slasher for a valid drop tile on the same grid.
+    /// </summary>
+    private bool TryGetNearbyValidDropCoordinates(EntityUid slasher, EntityCoordinates fallbackCoordinates, out EntityCoordinates dropCoordinates)
+    {
+        dropCoordinates = EntityCoordinates.Invalid;
+
+        var xform = Transform(slasher);
+        if (xform.GridUid is not { } gridUid || !TryComp<MapGridComponent>(gridUid, out var gridComp))
+            return false;
+
+        var origin = fallbackCoordinates.IsValid(EntityManager) ? fallbackCoordinates : xform.Coordinates;
+        if (!origin.IsValid(EntityManager))
+            return false;
+
+        var originMap = _xform.ToMapCoordinates(origin);
+        var baseTile = _map.WorldToTile(gridUid, gridComp, originMap.Position);
+
+        var maxDropRadius = 4;
+        if (TryGetActiveRule(out var activeRule))
+            maxDropRadius = Math.Max(1, activeRule.Comp.NukeDiskDropSearchRadius);
+
+        for (var radius = 1; radius <= maxDropRadius; radius++)
+        {
+            for (var dx = -radius; dx <= radius; dx++)
+            {
+                for (var dy = -radius; dy <= radius; dy++)
+                {
+                    if (Math.Abs(dx) + Math.Abs(dy) > radius)
+                        continue;
+
+                    var tile = new Vector2i(baseTile.X + dx, baseTile.Y + dy);
+                    if (!_map.TryGetTileRef(gridUid, gridComp, tile, out var tileRef)
+                        || tileRef.Tile.IsEmpty
+                        || _turf.IsSpace(tileRef)
+                        || _turf.IsTileBlocked(tileRef, CollisionGroup.Impassable))
+                    {
+                        continue;
+                    }
+
+                    dropCoordinates = _map.GridTileToLocal(gridUid, gridComp, tile);
+                    return dropCoordinates.IsValid(EntityManager);
+                }
+            }
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -786,7 +916,7 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
 
         foreach (var tile in sampledHallTiles)
         {
-            if (!PassesSelectionFilter(tile, centerTile, selection))
+            if (!IsSpawnCandidateUsable(tile, centerTile, selection, _mazeGen.IsValidTile(gridUid, gridComp, tile)))
                 continue;
 
             var local = _map.GridTileToLocal(gridUid, gridComp, tile);
@@ -801,7 +931,7 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
             if (sampledHallTiles.Contains(tile))
                 continue;
 
-            if (!PassesSelectionFilter(tile, centerTile, selection))
+            if (!IsSpawnCandidateUsable(tile, centerTile, selection, _mazeGen.IsValidTile(gridUid, gridComp, tile)))
                 continue;
 
             var local = _map.GridTileToLocal(gridUid, gridComp, tile);
@@ -821,8 +951,11 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
     /// <param name="centerTile">The maze center tile coordinate.</param>
     /// <param name="selection">The selection filter mode.</param>
     /// <returns>True if the tile matches the selection criteria.</returns>
-    private static bool PassesSelectionFilter(Vector2i tile, Vector2i centerTile, DeathMazeSpawnSelection selection)
+    internal static bool IsSpawnCandidateUsable(Vector2i tile, Vector2i centerTile, DeathMazeSpawnSelection selection, bool isValidTile)
     {
+        if (!isValidTile)
+            return false;
+
         return selection switch
         {
             DeathMazeSpawnSelection.CenterOnly => tile == centerTile,
@@ -871,7 +1004,7 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
             if (!TryGetDeathMazeCenter(gridUid, gridComp, out _, out var cTile))
                 return selection != DeathMazeSpawnSelection.CenterOnly;
 
-            return PassesSelectionFilter(tile, cTile, selection);
+            return IsSpawnCandidateUsable(tile, cTile, selection, true);
         });
     }
 
@@ -1010,6 +1143,10 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
         if (!destination.IsValid(EntityManager))
             return;
 
+        HashSet<string>? criticalStarterKitPrototypes = null;
+        if (TryGetActiveRule(out var activeRule))
+            criticalStarterKitPrototypes = activeRule.Comp.CriticalStarterKitPrototypes;
+
         var suppressedSlots = new HashSet<string>();
         if (TryComp<SlasherCosmeticVariantComponent>(slasher, out var variantComp)
             && variantComp.SelectedVariantGearId != null
@@ -1026,7 +1163,9 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
                 continue;
 
             var prototypeId = MetaData(uid).EntityPrototype?.ID;
-            var preserveThroughSuppression = prototypeId != null && CriticalStarterKitPrototypes.Contains(prototypeId);
+            var preserveThroughSuppression = prototypeId != null
+                && criticalStarterKitPrototypes != null
+                && criticalStarterKitPrototypes.Contains(prototypeId);
 
             if (ownership.Source == SlasherOwnedItemSource.StarterKit
                 && !preserveThroughSuppression
@@ -1038,8 +1177,28 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
                 continue;
 
             _container.TryRemoveFromContainer(uid);
+
+            if (TryInsertIntoSlasherBackStorage(slasher, uid))
+                continue;
+
             _xform.SetCoordinates(uid, destination);
         }
+    }
+
+    /// <summary>
+    /// Tries to insert reclaimed items into the Slasher's back storage before floor fallback.
+    /// </summary>
+    private bool TryInsertIntoSlasherBackStorage(EntityUid slasher, EntityUid item)
+    {
+        if (!_inventory.TryGetSlotEntity(slasher, "back", out var backItem)
+            || backItem == null
+            || backItem.Value == item
+            || !TryComp<StorageComponent>(backItem.Value, out _))
+        {
+            return false;
+        }
+
+        return _storage.Insert(backItem.Value, item, out _, playSound: false);
     }
 
     /// <summary>

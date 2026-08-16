@@ -111,10 +111,12 @@ public sealed class BodySystem : SharedBodySystem
         if (HasComp<GodmodeComponent>(bodyId))
             return new HashSet<EntityUid>();
 
-        var attemptEv = new AttemptEntityGibCancelEvent(bodyId);
-        RaiseLocalEvent(bodyId, ref attemptEv);
-        if (attemptEv.Cancelled)
-            return new HashSet<EntityUid>();
+
+        //QB comment out - we're moving this to the actual gibbing system so all gib entry points share one interception point.
+        // var attemptEv = new AttemptEntityGibCancelEvent(bodyId);
+        // RaiseLocalEvent(bodyId, ref attemptEv);
+        // if (attemptEv.Cancelled)
+        //    return new HashSet<EntityUid>();
 
         // Shared gibbing now owns the gib lifecycle and emits BeingGibbedEvent.
         return _gibbing.Gib(bodyId, dropGiblets: launchGibs);

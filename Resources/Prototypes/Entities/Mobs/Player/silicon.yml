@@ -59,6 +59,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
   - type: CrewMonitoringConsole
+    alertsEnabled: false # QB - disable AI core crew monitor beeps
   - type: GeneralStationRecordConsole
   - type: DeviceNetwork
     deviceNetId: Wireless

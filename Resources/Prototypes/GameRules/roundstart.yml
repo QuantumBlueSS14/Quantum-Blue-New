@@ -473,6 +473,9 @@
     deathMazeSampleLineLength: 66
     deathMazePortalPrototype: MidroundAntagTeleporter
     deathMazeAdditionalPortalCount: 4
+    criticalStarterKitPrototypes:
+    - SlasherPDA
+    nukeDiskDropSearchRadius: 4
     victoryLobbyMusicCollection: SlasherVictoryRoundEnd
   - type: GameRule
     minPlayers: 0

@@ -1,4 +1,9 @@
 using Content.Shared.Destructible;
+using Content.Shared.Gibbing.Components;
+using Content.Shared.Gibbing.Events;
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
+using Content.Shared._QB.Gibbing.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Audio;
 using Robust.Shared.Network;
@@ -34,6 +39,27 @@ public sealed class GibbingSystem : EntitySystem
         if (!_net.IsServer)
             return new();
 
+        // QB Add- if this body's mind has any GibImmune role, cancel immediately,
+        // but still raise the attempt event so existing redirect handlers (teleports, etc.) can run.
+        if (HasGibImmuneMindRole(ent))
+        {
+            var roleImmuneAttempt = new AttemptEntityGibCancelEvent(ent)
+            {
+                Cancelled = true,
+            };
+
+            RaiseLocalEvent(ent, ref roleImmuneAttempt);
+            return new();
+        }
+
+        //Global cancellation hook: keeps all gib entry points (including direct destructible gibs)
+        // consistent with systems that need to redirect death behavior.
+        var attemptEv = new AttemptEntityGibCancelEvent(ent);
+        RaiseLocalEvent(ent, ref attemptEv);
+        if (attemptEv.Cancelled)
+            return new();
+        // end QB Add
+
         if (!_destructible.DestroyEntity(ent))
             return new();
 
@@ -66,6 +92,29 @@ public sealed class GibbingSystem : EntitySystem
         var impulse = GibletLaunchImpulse + _random.NextFloat(GibletLaunchImpulseVariance);
         var scatterVec = _random.NextAngle().ToVec() * impulse;
         _physics.ApplyLinearImpulse(target, scatterVec);
+    }
+
+    // QB Add
+    /// <summary>
+    /// Returns true when the target's current mind owns at least one role with GibImmune.
+    /// This allows role-based gib immunity to short-circuit destructive gib processing.
+    /// </summary>
+    private bool HasGibImmuneMindRole(EntityUid ent)
+    {
+        if (!TryComp<MindContainerComponent>(ent, out var mindContainer)
+            || mindContainer.Mind is not { } mindId
+            || !TryComp<MindComponent>(mindId, out var mindComp))
+        {
+            return false;
+        }
+
+        foreach (var roleEnt in mindComp.MindRoleContainer.ContainedEntities)
+        {
+            if (HasComp<GibImmuneComponent>(roleEnt))
+                return true;
+        }
+
+        return false;
     }
 }
 

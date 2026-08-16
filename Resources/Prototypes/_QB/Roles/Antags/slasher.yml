@@ -16,6 +16,7 @@
   - type: MindRole
     antagPrototype: Slasher
     roleType: SoloAntagonist
+  - type: GibImmune
 
 - type: startingGear
   id: SlasherGear
@@ -36,7 +37,6 @@
     - SlasherHatchet
     - SlasherChainsaw
     - PinpointerSlasherEffigy
-    - FreedomImplanter
     
 - type: startingGear
   id: SlasherGearClown

@@ -25,6 +25,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Maps;
 using Content.Shared.Mind;
+using Content.Shared.Verbs;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
@@ -98,6 +99,7 @@ public sealed class SlasherMeatHookSystem : EntitySystem
         SubscribeLocalEvent<SlasherMeatHookComponent, EntRemovedFromContainerMessage>(OnVictimUnhooked);
         SubscribeLocalEvent<SlasherMeatHookComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<SlasherMeatHookComponent, InteractHandEvent>(OnInteractHand);
+        SubscribeLocalEvent<SlasherMeatHookComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerbs);
         SubscribeLocalEvent<SlasherMeatHookComponent, SlasherHarvestSoulDoAfterEvent>(OnHarvestDoAfter);
         SubscribeLocalEvent<SlasherSoulFragmentComponent, GotUnequippedHandEvent>(OnSoulFragmentLeftHands);
         SubscribeLocalEvent<SharedSlasherSoulHarvestedComponent, ExaminedEvent>(OnHarvestedExamined);
@@ -382,38 +384,71 @@ public sealed class SlasherMeatHookSystem : EntitySystem
 
         args.Handled = true;
 
-        var victim = spike.BodyContainer.ContainedEntity;
+        BeginHarvestSequence(ent, args.User, spike.BodyContainer.ContainedEntity);
+    }
+
+    private void OnGetVerbs(Entity<SlasherMeatHookComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
+    {
+        if (!args.CanInteract || !args.CanAccess || !HasComp<SlasherRoleComponent>(args.User))
+            return;
+
+        if (!TryComp<SlasherMeatHookSpikeComponent>(ent, out var spike) || spike.BodyContainer.ContainedEntity is not { } victim)
+            return;
+
+        if (!CanHarvestSoul(victim))
+            return;
+
+        if (!CanStartHarvest(args.User, out _))
+            return;
+
+        if (TryComp<SharedSlasherSoulHarvestedComponent>(victim, out var harvested) && harvested.ExpiresAt > _timing.CurTime)
+            return;
+
+        var hook = ent;
+        var user = args.User;
+        var harvestVictim = victim;
+
+        args.Verbs.Add(new AlternativeVerb
+        {
+            Text = Loc.GetString("slasher-meathook-verb-extract-soul"),
+            Act = () => BeginHarvestSequence(hook, user, harvestVictim),
+            Priority = 1,
+        });
+    }
+
+    private void BeginHarvestSequence(Entity<SlasherMeatHookComponent> ent, EntityUid user, EntityUid? victim)
+    {
         if (!victim.HasValue)
         {
-            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-no-victim"), args.User, args.User, PopupType.Medium);
+            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-no-victim"), user, user, PopupType.Medium);
             return;
         }
 
         if (!CanHarvestSoul(victim.Value))
         {
-            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-invalid-target"), args.User, args.User, PopupType.MediumCaution);
+            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-invalid-target"), user, user, PopupType.MediumCaution);
             return;
         }
 
-        if (!CanStartHarvest(args.User, out _))
+        if (!CanStartHarvest(user, out _))
         {
-            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-empty-hand"), args.User, args.User, PopupType.MediumCaution);
+            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-empty-hand"), user, user, PopupType.MediumCaution);
             return;
         }
 
         if (TryComp<SharedSlasherSoulHarvestedComponent>(victim.Value, out var harvested) && harvested.ExpiresAt > _timing.CurTime)
         {
-            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-blocked"), args.User, args.User, PopupType.MediumCaution);
+            _popup.PopupEntity(Loc.GetString("slasher-meathook-harvest-blocked"), user, user, PopupType.MediumCaution);
             return;
         }
 
         _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager,
-            args.User,
+            user,
             ent.Comp.HarvestDelay,
             new SlasherHarvestSoulDoAfterEvent(),
             ent,
             target: victim,
-            used: args.User)
+            used: user)
         {
             BreakOnDamage = true,
             BreakOnMove = true,
