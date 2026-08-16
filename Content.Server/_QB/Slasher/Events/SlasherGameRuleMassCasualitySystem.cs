@@ -14,6 +14,7 @@ public sealed class SlasherGameRuleMassCasualitySystem : GameRuleSystem<SlasherG
 {
     private readonly List<PhantomInjection> _activeInjections = new();
 
+    [Dependency] private readonly CrewMonitoringConsoleSystem _crewMonitorConsoles = default!;
     [Dependency] private readonly CrewMonitoringServerSystem _crewMonitor = default!;
     [Dependency] private readonly SingletonDeviceNetServerSystem _singletonServers = default!;
 
@@ -71,9 +72,8 @@ public sealed class SlasherGameRuleMassCasualitySystem : GameRuleSystem<SlasherG
         if (templates.Count == 0)
             return;
 
-        // Reuse the same monitor alert beep path as real crit/dead updates. Yes I refactored the crew-monitoring system to allow this, and yes it was worth it so i can do this in 2 lines here
-        foreach (var server in servers)
-            _crewMonitor.PlayConfiguredAlertBeep(server);
+        // Reuse the same crew-monitor console beep path as real crit/dead updates.
+        _crewMonitorConsoles.PlayConfiguredAlertBeep();
 
         var count = RobustRandom.Next(component.MinEntries, component.MaxEntries + 1);
         var duration = TimeSpan.FromSeconds(component.DurationSeconds);
