@@ -21,6 +21,7 @@ using Content.Shared.Verbs;
 using Content.Shared.QB.Slasher.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
 
 namespace Content.Shared.QB.Slasher;
@@ -407,7 +408,11 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
     private void UpdateHookCollision(Entity<SlasherMeatHookSpikeComponent> ent)
     {
         var occupied = ent.Comp.BodyContainer.ContainedEntity != null;
-        _physics.SetCanCollide(ent.Owner, occupied);
+
+        if (!TryComp<PhysicsComponent>(ent.Owner, out var physics) || physics == null)
+            return;
+
+        _physics.SetCanCollide(ent.Owner, occupied, body: physics);
     }
 
     /// <summary>

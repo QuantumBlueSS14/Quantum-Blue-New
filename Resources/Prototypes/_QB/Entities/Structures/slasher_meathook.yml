@@ -20,6 +20,8 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
+  - type: Physics
+    canCollide: false
   - type: Transform
     noRot: true
   - type: SlasherMeatHookSpike
