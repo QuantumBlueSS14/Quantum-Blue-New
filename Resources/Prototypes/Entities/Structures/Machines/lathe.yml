@@ -281,6 +281,7 @@
     - MechBoards
     - ShuttleBoards
     - ImpCircuitDynamic # imp
+    - QBCircuitDynamic # qb
     - UpgradeKits # Goobstation
   - type: EmagLatheRecipes
     emagStaticPacks: # imp
@@ -329,6 +330,7 @@
     - BorgLimbsStatic
     dynamicPacks:
     - Robotics
+    - Drone # qb
     - BorgModules
     - MechParts
     - MechEquipment

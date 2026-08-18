@@ -13,10 +13,10 @@
 - type: latheRecipePack
   id: ImpProtoDynamic
   recipes:
-  - Drone
+  # - Drone # QB - moved to exofab
   - ClothingEyesHudSalvage
 #  - FishingRod # disabled until there is something to fish
-  - ExosuitFabricatorMachineCircuitboard
+  # - ExosuitFabricatorMachineCircuitboard # QB - moved to circuit printer
   - PortableIncubator
   - ClothingEyesNightVisionGoggles # EE
   - ClothingEyesNightVisionDiagnosticGoggles # EE
