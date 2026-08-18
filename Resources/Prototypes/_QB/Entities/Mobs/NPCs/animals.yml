@@ -27,6 +27,8 @@
     enterDelay: 1
   - type: Item
     size: Tiny
+  - type: CanEscapeInventory
+    baseResistTime: 2
   - type: CombatMode
   - type: MeleeWeapon
     altDisarm: false
@@ -36,7 +38,35 @@
       path: /Audio/Weapons/star_hit.ogg
     damage:
       types:
-        Bloodloss: 2
+        Bloodloss: 0.1
+  # Syringing abilities
+  - type: Injector
+    activeModeProtoId: DropperDrawMode
+    allowedModes:
+    - DropperDrawMode
+    - DropperInjectMode
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 3
+        reagents:
+        - ReagentId: Histamine #Does almost nothing but make you itch
+          Quantity: 3
+      injector:
+        maxVol: 5
+        reagents:
+        - ReagentId: Blood
+          Quantity: 5
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 1
+  - type: SolutionRegeneration
+    solution: melee
+    duration: 15 #regen 1u every 15 seconds
+    generated:
+      reagents:
+      - ReagentId: Histamine
+        Quantity: 1
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 7
@@ -72,7 +102,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      10: Dead # two punches
+      3: Dead
   - type: TriggerOnMobstateChange
     mobState:
     - Dead
@@ -107,7 +137,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 20
+        damage: 5
       behaviors:
       - !type:GibBehavior
         recursive: false
