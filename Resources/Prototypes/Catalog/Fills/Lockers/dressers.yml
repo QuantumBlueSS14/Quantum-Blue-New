@@ -256,3 +256,4 @@
             - id: ClothingUniformJumpskirtWardenTurtle
             - id: ClothingUniformJumpskirtCJFormal
         - id: ClothingOuterWinterWardenUnarmored
+        - id: ClothingOuterWinterWarden # qb - add to dresser from locker

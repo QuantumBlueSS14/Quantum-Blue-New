@@ -37,23 +37,23 @@
   table: !type:AllSelector
     children:
     - id: FlashlightSeclite
-    - id: WeaponDisabler
+    #- id: WeaponDisabler # qb - warden has seclink
     - id: ClothingBeltSecurityFilled
     - id: Flash
     - id: ClothingEyesGlassesSecurity
     - id: ClothingHandsGlovesCombat
     - id: ClothingShoesBootsJack
-    - id: ClothingOuterCoatWarden
-    - id: ClothingOuterWinterWarden
+    - id: ClothingOuterCoatWarden # qb - add to dresser
+    #- id: ClothingOuterWinterWarden # qb - add to dresser
     - id: RubberStampWarden
     - id: DoorRemoteArmory
-    - id: HoloprojectorSecurity
+    #- id: HoloprojectorSecurity # qb - imp added to belt
     - id: BookSpaceLaw
     - id: ClothingBackpackElectropack
       amount: 2
     - id: RemoteSignaller
       amount: 2
-    - id: NetworkConfigurator
+    #- id: NetworkConfigurator # qb - imp added multitool
     - id: Binoculars
     # imp edit start
     - id: ClothingHeadsetWarden
