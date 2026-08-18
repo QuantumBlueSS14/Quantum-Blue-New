@@ -3,3 +3,9 @@
   background: /Textures/_QB/LobbyScreens/placeholder.webp
   title: lobby-state-background-qb-placeholder-title
   artist: lobby-state-background-qb-placeholder-artist
+
+- type: lobbyBackground
+  id: YouWouldntLobbyScreenID
+  background: /Textures/_QB/LobbyScreens/youwouldnt.webp
+  title: lobby-state-background-you-wouldnt-title
+  artist: lobby-state-background-you-wouldnt-artist
