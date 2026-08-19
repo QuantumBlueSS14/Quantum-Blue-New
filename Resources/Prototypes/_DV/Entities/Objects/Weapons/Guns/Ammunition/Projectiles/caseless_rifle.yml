@@ -37,13 +37,13 @@
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 2.5
+        maxVol: 1.5
   - type: RefillableSolution
     solution: ammo
   - type: DrainableSolution
     solution: ammo
   - type: SolutionInjectOnProjectileHit
-    transferAmount: 2.5
+    transferAmount: 1.5
     blockSlots: NONE
     solution: ammo
   - type: InjectableSolution
