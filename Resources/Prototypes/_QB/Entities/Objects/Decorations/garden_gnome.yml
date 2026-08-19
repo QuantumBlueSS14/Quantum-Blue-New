@@ -12,9 +12,19 @@
     size: Small
     shape:
     - 0,0,1,1
+  - type: SecretStash # need this to change the popup text, otherwise same as parent
+    secretStashName: secret-stash-gnome
+    blacklist:
+      components:
+      - SecretStash
+      - NukeDisk
+      tags:
+      - QuantumSpinInverter
+      - FakeNukeDisk
   - type: ToolOpenable
     openToolQualityNeeded: Prying
     closeToolQualityNeeded: Prying
+    name: secret-stash-gnome
   - type: LandAtCursor
   - type: Fixtures # same as spear
     fixtures:
@@ -30,20 +40,23 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Piercing: 2
   - type: EmbeddableProjectile # same as spear
     sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 2
+        Piercing: 7
+  - type: StaminaDamageOnEmbed
+    damage: 10
   - type: MeleeWeapon
-    wideAnimationRotation: -180
+    wideAnimationRotation: -180 # swinging it with its hat as handle
     damage:
       types:
         Blunt: 4
         Piercing: 2
-    angle: -180
+    angle: -180 # stabbing with hat
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
@@ -55,5 +68,13 @@
     - trigger:
         !type:DamageTrigger
         damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
   - type: StaticPrice 
     price: 100

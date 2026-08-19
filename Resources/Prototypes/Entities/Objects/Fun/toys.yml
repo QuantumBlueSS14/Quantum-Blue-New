@@ -13,8 +13,10 @@
     blacklist:
       components:
       - SecretStash # Prevents being able to insert plushies inside each other (infinite plush)!
+      - NukeDisk # qb - this was not done in the base for some reason
       tags:
       - QuantumSpinInverter # It will cause issues with the grinder...
+      - FakeNukeDisk # qb = this was not done in the base for some reason
   - type: ToolOpenable
     openToolQualityNeeded: Slicing
     closeToolQualityNeeded: Slicing # Should probably be stitching or something if that gets added
