@@ -75,7 +75,7 @@
         - ReagentId: VentCrud
           Quantity: 15
     - type: NoSlip
-    - type: ZombieImmune
+    - type: ZombieImmune # keeping because they are so small, like butterflies and bees
     - type: Edible
     - type: GoobAbsorbable #bite sized
       biomassRestored: 0.05
