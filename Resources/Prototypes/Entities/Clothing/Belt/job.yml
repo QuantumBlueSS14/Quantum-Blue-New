@@ -223,6 +223,21 @@
         whitelist:
           tags:
           - Wrench
+  # QB - Add medkit slot to medical belts
+  - type: ItemSlots
+    slots:
+      medkit:
+        name: clothing-belt-medkit
+        whitelist:
+          tags:
+          - Medkit
+        insertOnInteract: false
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      medkit: !type:ContainerSlot {}
+  # End of QB - Add medkit slot to medical belts.
   - type: Appearance
 
 - type: entity
@@ -425,4 +440,19 @@
         whitelist:
           components:
           - SmokeOnTrigger
+# QB edit begin - add pistol holster
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      holster: !type:ContainerSlot {}}
+  - type: ItemSlots
+    slots:
+      holster:
+        name: clothing-belt-sidearm
+        whitelist:
+          tags:
+          - Sidearm
+        insertOnInteract: false
+  # QB edit end
   - type: Appearance
