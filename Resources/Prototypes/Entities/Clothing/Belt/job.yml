@@ -445,7 +445,7 @@
     containers:
       storagebase: !type:Container
         ents: []
-      holster: !type:ContainerSlot {}}
+      holster: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       holster:
