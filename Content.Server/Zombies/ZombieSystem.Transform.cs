@@ -75,7 +75,7 @@ public sealed partial class ZombieSystem
     private static readonly ProtoId<NpcFactionPrototype> ZombieFaction = "Zombie";
     private static readonly string MindRoleZombie = "MindRoleZombie";
     private static readonly List<ProtoId<AntagPrototype>> BannableZombiePrototypes = ["Zombie"];
-    private static readonly string InitialInfectedFaction = "InitialInfectedIgnore"; //imp
+    //private static readonly string InitialInfectedFaction = "InitialInfectedIgnore"; //imp // QB zombies do not ignore II
 
     /// <summary>
     /// Handles an entity turning into a zombie when they die or go into crit
@@ -252,7 +252,7 @@ public sealed partial class ZombieSystem
 
         _faction.ClearFactions(target, dirty: false);
         _faction.AddFaction(target, ZombieFaction);
-        _faction.AddFaction(target, InitialInfectedFaction); //#IMP: zombies see intial infected as fellow zombies and don't attack
+        //_faction.AddFaction(target, InitialInfectedFaction); //#IMP: zombies see intial infected as fellow zombies and don't attack // QB zombies do not ignore
 
         //gives it the funny "Zombie ___" name.
         _nameMod.RefreshNameModifiers(target);
