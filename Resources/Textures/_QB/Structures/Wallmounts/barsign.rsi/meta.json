@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "The Walking Fish by SeeroftheNight, based on the 'Empty' barsign in base SS14",
+  "copyright": "'The Walking Fish' sign by SeeroftheNight, based on original barsign from vg station commit https://github.com/vgstation-coders/vgstation13/commit/ecc25f05801784297d779f2670cbdf0d4b72a64f#diff-ba3d7fe71e7b14a32eaf5e5f55014074e58b9dbd10fd609bfbb93491deaaef1f",
   "states": [
     {
      "name": "walkingfish",
