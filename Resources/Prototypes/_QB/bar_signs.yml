@@ -1,0 +1,7 @@
+- type: barSign
+  id: WalkingFish
+  name: barsign-prototype-name-walkingfish
+  icon:
+    sprite: _QB/Structures/Wallmounts/barsign.rsi
+    state: walkingfish
+  description: barsign-prototype-description-walkingfish
