@@ -40,7 +40,7 @@
     active: False
   - type: OwnInteractionVerbs # EE
     allowedVerbs: [] # TODO: define something here, or don't.
-  - type: CollectiveMind # Startlight - Collective Minds - Give everyone general access to collective mind channels for Dragons/Carp/Critters/Zombies
+  - type: CollectiveMind # Starlight - Collective Minds - Give everyone general access to collective mind channels for Dragons/Carp/Critters/Zombies
   - type: AnimatedEmotes # imp
 
 # The progenitor. This should only container the most basic components possible.
