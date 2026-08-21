@@ -102,7 +102,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      3: Dead
+      1: Dead
   - type: TriggerOnMobstateChange
     mobState:
     - Dead
