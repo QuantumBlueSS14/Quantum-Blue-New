@@ -39,9 +39,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their health status.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/med.rsi
+    sprite: _QB/Clothing/Eyes/Hud/medhud.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/med.rsi
+    sprite: _QB/Clothing/Eyes/Hud/medhud.rsi # QB
   - type: Tag
     tags:
     - HudMedical
@@ -55,9 +55,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/sec.rsi
+    sprite: _QB/Clothing/Eyes/Hud/sechud.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/sec.rsi
+    sprite: _QB/Clothing/Eyes/Hud/sechud.rsi # QB
   - type: Tag
     tags:
     - HudSecurity
@@ -169,18 +169,18 @@
   parent: [ClothingEyesBase, BaseLensSlot, ShowSecurityIcons, ShowMedicalIcons, BaseBrigmedicContraband] # BaseLensSlot from imp
   id: ClothingEyesHudMedSec
   name: medsec hud
-  description: A specialized pair of glasses that displays both medical and security information, complete with a compact antenna for data downlink and a flash-protective coating.
+  description: A specialized pair of glasses that displays both medical and security information, complete with a compact antenna for data downlink. # QB - removed the text about flash protection
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/medsec.rsi
+    sprite: _QB/Clothing/Eyes/Hud/medsec.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/medsec.rsi
+    sprite: _QB/Clothing/Eyes/Hud/medsec.rsi # QB
   - type: Construction
     graph: HudMedSec
     node: medsecHud
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
+  # - type: FlashImmunity # QB - what. it's a HUD dude
+  # - type: EyeProtection
+  #   protectionTime: 5
 
 - type: entity
   parent: [ClothingEyesBase, BaseLensSlot, ShowSecurityIcons, ShowMedicalIcons] # BaseLensSlot from imp
@@ -261,9 +261,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their health status. For true patriots.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/medpatch.rsi
+    sprite: _QB/Clothing/Eyes/Eyepatches/medpatch.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/medpatch.rsi
+    sprite: _QB/Clothing/Eyes/Eyepatches/medpatch.rsi # QB
   - type: Tag
     tags:
     - PetWearable
@@ -282,9 +282,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records. For true patriots.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/secpatch.rsi
+    sprite: _QB/Clothing/Eyes/Eyepatches/secpatch.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/secpatch.rsi
+    sprite: _QB/Clothing/Eyes/Eyepatches/secpatch.rsi # QB
   - type: Tag
     tags:
     - PetWearable

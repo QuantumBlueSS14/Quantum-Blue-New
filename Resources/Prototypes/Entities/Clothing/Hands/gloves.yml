@@ -140,9 +140,9 @@
   description: Thin sterile latex gloves. Basic PPE for any doctor.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/latex.rsi
+    sprite: _QB/Clothing/Hands/Gloves/Color/white.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/latex.rsi
+    sprite: _QB/Clothing/Hands/Gloves/Color/white.rsi # QB
   - type: Fiber
     fiberMaterial: fibers-latex
   - type: FingerprintMask
@@ -154,9 +154,9 @@
   description: High-quality nitrile gloves. Expensive medical PPE.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/nitrile.rsi
+    sprite: _QB/Clothing/Hands/Gloves/nitrile.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/nitrile.rsi
+    sprite: _QB/Clothing/Hands/Gloves/nitrile.rsi # QB
   - type: Fiber
     fiberMaterial: fibers-nitrile
   - type: FingerprintMask
@@ -282,9 +282,9 @@
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _QB/Clothing/Hands/Gloves/combat.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _QB/Clothing/Hands/Gloves/combat.rsi # QB
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
@@ -338,9 +338,9 @@
   description: Plain black gloves without fingertips for the hard working.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/fingerless.rsi
+    sprite: _QB/Clothing/Hands/Gloves/Color/blackfingerless.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/fingerless.rsi
+    sprite: _QB/Clothing/Hands/Gloves/Color/blackfingerless.rsi # QB
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
@@ -459,9 +459,9 @@
   description: Do not leave fibers or fingerprints. If you work without them, you're A TERRIBLE DETECTIVE.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/forensic.rsi
+    sprite: _QB/Clothing/Hands/Gloves/forensic.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/forensic.rsi
+    sprite: _QB/Clothing/Hands/Gloves/forensic.rsi # QB
   - type: FingerprintMask
   - type: GuideHelp
     guides:

@@ -78,13 +78,13 @@
       275: 0.8
       250: 0.7
 #imp start
-  - type: Fixtures 
+  - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 160 #they're light flying bugs! 
+        density: 160 #they're light flying bugs!
         restitution: 0.0
         mask:
           - MobMask
@@ -120,9 +120,10 @@
       - map: [ "shoes" ]
       - map: [ "ears" ]
       - map: [ "eyes" ]
+      - map: [ "outerClothing" ] # QB
       - map: [ "belt" ]
       - map: [ "id" ]
-      - map: [ "outerClothing" ]
+      # - map: [ "outerClothing" ] # QB - moved above belt
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "enum.HumanoidVisualLayers.Snout" ] #imp
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ] #imp

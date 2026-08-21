@@ -17,9 +17,9 @@
   description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/jackboots.rsi
+    sprite: _QB/Clothing/Feet/Boots/jackboots.rsi # QB
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/jackboots.rsi
+    sprite: _QB/Clothing/Feet/Boots/jackboots.rsi # QB
   - type: ClothingSlowOnDamageModifier
     modifier: 0.5
 
@@ -53,9 +53,9 @@
   description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/combatboots.rsi
+    sprite: _QB/Clothing/Feet/Boots/combatboots.rsi # QB
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/combatboots.rsi
+    sprite: _QB/Clothing/Feet/Boots/combatboots.rsi # QB
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -176,9 +176,9 @@
   name: security winter boots
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootssec.rsi # QB
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootssec.rsi # QB
 
 - type: entity
   parent: [ClothingShoesBaseWinterBoots, Tier1Contraband]

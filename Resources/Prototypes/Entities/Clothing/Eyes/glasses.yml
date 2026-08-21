@@ -191,9 +191,9 @@
   description: A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
   - type: Tag
     tags:
     - HamsterWearable
@@ -224,14 +224,14 @@
 
 - type: entity
   parent: [ClothingEyesBase, BaseLensSlot, ShowSecurityIcons, BaseSecurityContraband] # BaseLensSlot from imp
-  id: ClothingEyesGlassesSecurity
-  name: security glasses
+  id: ClothingEyesSunglassesSecurity
+  name: security sunglasses # QB - used to be glasses
   description: Upgraded sunglasses that provide flash immunity and a security HUD.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/secsunglasses.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/secsunglasses.rsi # QB
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -359,7 +359,7 @@
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/noir.rsi
   - type: Clothing
-    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
   - type: IdentityBlocker
     coverage: EYES
   - type: FlashImmunity

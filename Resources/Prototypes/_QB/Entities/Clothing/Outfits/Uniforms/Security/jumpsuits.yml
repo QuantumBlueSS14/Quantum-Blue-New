@@ -1,0 +1,43 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpsuitSecQB
+  name: security jumpsuit
+  description: Standard security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpsuitSecBlueQB
+  name: blue security jumpsuit
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_blue.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_blue.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpsuitGreyQB
+  name: grey security jumpsuit
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_grey.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_grey.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpsuitTurtleneckQB
+  name: security turtleneck
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_turt.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_turt.rsi

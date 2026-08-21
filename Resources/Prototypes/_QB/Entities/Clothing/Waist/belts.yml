@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingBeltMedical
+  id: ClothingBeltCorpsmanWebbing
+  name: corpsman webbing
+  description: Can hold various medical equipment.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Waist/Belts/corpsmanwebbing.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Waist/Belts/corpsmanwebbing.rsi # QB
+
+- type: entity
+  parent: ClothingBeltCorpsmanWebbing
+  id: ClothingBeltCorpsmanWebbingFilled
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        - id: Bloodpack
+        - id: BruteAutoInjector
+        - id: BurnAutoInjector
+        - id: EmergencyMedipen

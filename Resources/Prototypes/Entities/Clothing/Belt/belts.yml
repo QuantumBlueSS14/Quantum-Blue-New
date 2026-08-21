@@ -148,9 +148,9 @@
   description: Unique and versatile chest rig, can hold security gear.
   components:
   - type: Sprite
-    sprite: Clothing/Belt/securitywebbing.rsi
+    sprite: _QB/Clothing/Waist/Belts/securitywebbing.rsi # QB
   - type: Clothing
-    sprite: Clothing/Belt/securitywebbing.rsi
+    sprite: _QB/Clothing/Waist/Belts/securitywebbing.rsi # QB
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]

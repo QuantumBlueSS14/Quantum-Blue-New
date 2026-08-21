@@ -1,0 +1,28 @@
+- type: entity
+  parent: [ClothingEyesGlassesSunglasses, ShowMedicalIcons]
+  id: ClothingEyesSunglassesCorpsman
+  name: corpsman sunglasses
+  description: Upgraded sunglasses that provide flash immunity and a medical HUD.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Eyes/Glasses/corpssunglasses.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Eyes/Glasses/corpssunglasses.rsi # QB
+  - type: Construction
+    graph: GlassesCorpsSunglasses
+    node: sunglassesCorps
+  - type: GuideHelp
+    guides:
+    - Security
+    - Medical
+
+- type: entity
+  parent: ClothingEyesSunglassesCorpsman
+  id: ClothingEyesVisorCorpsman
+  name: corpsman visor
+  description: A high-tech, menacing visor that provides flash immunity and a medical hud HUD like normal corpsman sunglasses.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Eyes/Misc/corpsvisor.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Eyes/Misc/corpsvisor.rsi # QB

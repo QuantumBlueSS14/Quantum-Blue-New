@@ -141,9 +141,9 @@
   description: A high-tech, menacing visor that provides flash immunity and a security HUD like normal security glasses.
   components:
   - type: Sprite
-    sprite: _Impstation/Clothing/Eyes/Glasses/secvisor.rsi
+    sprite: _QB/Clothing/Eyes/Misc/secvisor.rsi # QB
   - type: Clothing
-    sprite: _Impstation/Clothing/Eyes/Glasses/secvisor.rsi
+    sprite: _QB/Clothing/Eyes/Misc/secvisor.rsi # QB
   - type: Tag
     tags:
     - WhitelistChameleon
