@@ -8,7 +8,7 @@
   name: prepacked sustenance bar
   parent: BaseItem
   id: FoodPSB
-  description: The PSB is a densely packed, nutrient rich, artificially flavored and colored food bar specifically made to accomodate all morphotypes during food shortages.
+  description: The PSB is a densely packed, nutrient rich, artificially flavored and colored food bar specifically made to accommodate almost all morphotypes during food shortages. Moth people can eat the wrapper.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
@@ -98,7 +98,7 @@
   name: brownie sustenance bar
   parent: FoodPSBBase
   id: FoodPSBBarBrownie
-  description: A densely packed, nutrient rich sustenance bar. This one is brownie flavored.
+  description: A densely packed, nutrient rich sustenance bar. This one is chocolate brownie flavored.
   components:
   - type: FlavorProfile
     flavors:
