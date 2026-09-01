@@ -1,0 +1,16 @@
+# Medical
+
+# Cloning
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseMedicalMachineRecipeCategory ]
+  id: CloningPodMachineCircuitboard
+  result: CloningPodMachineCircuitboard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseMedicalMachineRecipeCategory ]
+  id: MedicalScannerMachineCircuitboard
+  result: MedicalScannerMachineCircuitboard
+  materials:
+    Steel: 100
+    Glass: 500
+    Silver: 100
