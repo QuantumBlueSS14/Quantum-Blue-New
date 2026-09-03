@@ -147,6 +147,7 @@
     - SecurityAmmoStatic
     - SyndicateAmmoStatic
     - ImpAutoEmagged # imp
+    - SecurityAmmoStaticQB #qb
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -225,6 +226,7 @@
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
+    - SecurityAmmoQB #qb
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
@@ -412,6 +414,7 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     - SteelBriefcaseImp # Imp
+    - SecurityAmmoStaticQB #qb
     dynamicPacks:
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
@@ -421,6 +424,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SecurityAmmoQB #qb
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -458,6 +462,7 @@
       unlitRunningState: unlit-building #imp
       staticPacks:
       - SecurityAmmoStatic
+      - SecurityAmmoStaticQB # qb
     - type: EmagLatheRecipes
       emagStaticPacks:
       - SyndicateAmmoStatic
@@ -500,6 +505,9 @@
     dynamicPacks:
     - Chemistry
     - ImpMedDynamic # Imp
+  - type: EmagLatheRecipes # qb
+    emagStaticPacks:
+    - SyndicateAmmoStatic
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

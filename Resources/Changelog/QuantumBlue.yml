@@ -1,4 +1,57 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Fixed Elkridge''s solars'
+    id: 164
+    time: '2026-09-03T10:54:02.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/215
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Removed fun! Microreactors and speed boots are no longer printable.
+    id: 163
+    time: '2026-09-03T02:23:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/205
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Moths have new speech sounds now! Ported from Cosmatic Drift
+    id: 162
+    time: '2026-09-03T02:19:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/212
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Pebble: Solars are mostly restored now. This means that the roundstart situation for power should be a lot
+          less stressful now
+      - type: Tweak
+        message: 'Pebble: Various small visual tweaks'
+    id: 161
+    time: '2026-09-03T01:52:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/213
+  - author: MattFright
+    changes:
+      - type: Add
+        message: 'Dash: Added a gas analyzer to the cryogenics room'
+      - type: Add
+        message: 'Dash: Added a portable scrubber to atmos proper'
+      - type: Tweak
+        message: 'Dash: Moved the maints meatspike behind the kitchen'
+      - type: Tweak
+        message: 'Dash: Gave the librarian''s room access to maints'
+      - type: Fix
+        message: 'Dash: Fixed artifact analyzers not being connected to their pads'
+      - type: Fix
+        message: 'Dash: Fixed the salvage recycler conveyor'
+      - type: Fix
+        message: 'Dash: Fixed the issue that caused Engineering to be the first department to lose power in an outage'
+      - type: Fix
+        message: 'Dash: Hopefully fixed that one z-fighting firelock in medbay'
+    id: 160
+    time: '2026-09-03T01:52:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/210
   - author: rebe83
     changes:
       - type: Tweak

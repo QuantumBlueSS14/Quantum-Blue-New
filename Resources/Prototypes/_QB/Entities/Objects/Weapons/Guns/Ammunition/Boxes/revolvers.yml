@@ -1,0 +1,16 @@
+# .45
+
+- type: entity
+  parent: BaseMagazineBoxMagnum
+  id: MagazineBoxMagnumHoly
+  name: ammunition box (.45 holy)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumHoly
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: holy

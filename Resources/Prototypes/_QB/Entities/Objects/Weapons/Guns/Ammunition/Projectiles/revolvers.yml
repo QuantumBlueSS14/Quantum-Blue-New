@@ -1,0 +1,12 @@
+# Special .45 bullets
+- type: entity
+  id: BulletMagnumHoly
+  name: bullet (.45 holy)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Holy: 6
+        Piercing: 10 #same as normal imp bullet

@@ -1,0 +1,21 @@
+# .45 ammo
+- type: entity
+  id: SpeedLoaderMagnumHoly
+  name: "speed loader (.45 holy)"
+  parent: BaseSpeedLoaderMagnum
+  description: You can't expect Space God to do all the work.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumHoly
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Special/special_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: holy-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: holy
+    steps: 7
+    zeroVisible: false
+  - type: Appearance

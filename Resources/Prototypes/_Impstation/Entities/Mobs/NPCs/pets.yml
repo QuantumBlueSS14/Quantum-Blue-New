@@ -300,7 +300,7 @@
         Piercing: 15 # turn this down if her soloing carp turns into a problem
   - type: NpcFactionMember
     factions:
-    - Penguin # she loves fish!
+    - PetsNT # Used to be Penguins. Why.
   - type: Grammar
     attributes:
       proper: true

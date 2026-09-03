@@ -77,6 +77,8 @@
           prob: 0.001
         - id: WeaponRevolverInspector
           prob: 0.001
+        - id: WeaponRevolverLucky # qb - add lucky revolver to salvage loot
+          prob: 0.001
         - id: ClothingShoesBootsMagBlinding
           prob: 0.001
           #  - Skub

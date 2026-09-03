@@ -1,0 +1,14 @@
+# Tier 2
+
+- type: technology
+  id: ExoticAmmunition
+  name: research-technology-exotic-ammunition
+  icon:
+    sprite: Objects/Specific/Chapel/bible.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - SpeedLoaderMagnumHoly
+  - MagazineBoxMagnumHoly

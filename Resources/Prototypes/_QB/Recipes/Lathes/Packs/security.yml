@@ -1,0 +1,16 @@
+# Static
+- type: latheRecipePack
+  id: SecurityAmmoStaticQB
+  recipes:
+  - MagazineMagnumEmpty
+  - MagazineMagnum
+  - MagazineMagnumStun
+
+# Dynamic
+- type: latheRecipePack
+  id: SecurityAmmoQB
+  recipes:
+  - MagazineLightRifleUranium
+  - MagazineLightRifleIncendiary
+  - SpeedLoaderMagnumHoly
+  - MagazineBoxMagnumHoly

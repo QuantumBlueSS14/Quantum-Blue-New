@@ -100,7 +100,7 @@
         - MobRay
 
 - type: entity
-  name: frank spawner
+  name: Frank spawner # QB - names should be uppercase
   suffix: UraniumCrab
   id: UraniumCrabSpawnerFrank
   parent: MarkerBase

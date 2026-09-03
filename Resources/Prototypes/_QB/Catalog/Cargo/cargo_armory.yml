@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: RandomRevolver
+  icon:
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/deckard.rsi
+    state: base
+  product: CrateArmoryRevolverRandom
+  cost: 5000
+  category: cargoproduct-category-name-armory
+  group: market

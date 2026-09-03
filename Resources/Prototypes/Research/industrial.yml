@@ -221,12 +221,12 @@
   name: research-technology-optimized-microgalvanism
   icon:
     sprite: Objects/Power/power_cells.rsi
-    state: microreactor
+    state: hyper # qb change from micro to hyper
   discipline: Industrial
   tier: 3
   cost: 10000
   recipeUnlocks:
-  - PowerCellMicroreactor
+  #- PowerCellMicroreactor # qb
   - PowerCellHyper
   technologyPrerequisites:
   - AdvancedPowercells
