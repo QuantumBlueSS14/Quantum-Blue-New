@@ -7,7 +7,7 @@
     - id: SnailMigrationLowPop
     - id: CockroachMigration
     - id: MouseMigration
-    - id: LuggageMigration # imp special
+    #- id: LuggageMigration # imp special, QB disable
     - id: SingleCritter # imp special
     - id: CorpseEjectedFromVents # imp
     - id: DuctSpiderMigration # imp
