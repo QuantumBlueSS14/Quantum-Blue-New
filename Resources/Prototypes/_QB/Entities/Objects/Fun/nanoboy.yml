@@ -1,0 +1,197 @@
+
+- type: entity
+  parent: BaseItem
+  id: NanoBoyUnpowered
+  name: NanoBoy Color
+  suffix: Always Powered
+  description: Infinite power, but no games...
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: base
+  - type: Icon
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Appearance
+  - type: ItemToggle
+    predictable: false
+    onUse: false
+    soundActivate:
+      path: /Audio/Items/flashlight_on.ogg
+    soundDeactivate:
+      path: /Audio/Items/flashlight_off.ogg
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+  # Cartridge logic - TODO when someone smart wants to
+  #- type: ContainerContainer
+  #  containers:
+  #    Cartridge-Slot: !type:ContainerSlot {}
+  #    program-container: !type:Container
+  #- type: CartridgeLoader
+  #  uiKey: enum.PdaUiKey.Key
+  #  preinstalled: # needs a cartridge inside to play it
+  #  cartridgeSlot:
+  #    priority: -1
+  #    name: device-pda-slot-component-slot-name-cartridge
+  #    ejectSound: /Audio/Machines/id_swipe.ogg
+  #    insertSound: /Audio/Machines/id_insert.ogg
+  #    whitelist:
+  #      components:
+  #        - Cartridge
+  # Arcade Logic - will need modified when cartridges added
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Vending
+  - type: TypingIndicator
+    proto: robot
+  - type: SpookySpeaker
+    messageSet: SpookySpeakerMessagesGeneric
+    speakChance: 0.2
+  - type: SpamEmitSoundRequirePower
+  - type: SpamEmitSound
+    minInterval: 30
+    maxInterval: 90
+    sound:
+      collection: ArcadeNoise
+      params:
+        volume: -8
+        maxDistance: 10
+        variation: 0.05
+
+- type: entity
+  parent: [ NanoBoyUnpowered, PowerCellSlotSmallItem ]
+  id: NanoBoy
+  suffix: ""
+  components:
+  - type: PowerCellDraw
+    drawRate: 1
+    useCharge: 0
+  - type: ToggleCellDraw
+
+- type: entity
+  parent: NanoBoy
+  id: NanoBoyEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+#- type: entity
+#  parent: NanoBoy
+#  id: NanoBoySpaceVillain # TODO remove when cartridges added. Doesn't work because it needs wires
+#  description: Appears to be a modified graphing calculator. Seems very old. Comes with "Space Villain" pre-installed.
+#  suffix: ""
+#  components:
+#  - type: SpaceVillainArcade
+#    rewardMinAmount: 0
+#    rewardMaxAmount: 0
+#    possibleRewards:
+#    - PrizeTicket10
+#  - type: ActivatableUI
+#    key: enum.SpaceVillainArcadeUiKey.Key
+#  - type: ActivatableUIRequiresPowerCell
+#  - type: UserInterface
+#    interfaces:
+#      enum.SpaceVillainArcadeUiKey.Key:
+#        type: SpaceVillainArcadeBoundUserInterface
+#  - type: Vocalizer
+#    minVocalizeInterval: 1m # Arcades are noisy
+#    maxVocalizeInterval: 4m
+#    hideChat: true
+#  - type: DatasetVocalizer
+#    dataset: SpaceVillainAds
+#  - type: SpeakOnUIClosed
+#    pack: SpaceVillainGoodbyes
+
+- type: entity
+  parent: NanoBoy
+  id: NanoBoyBlockGame # TODO remove when cartridges added
+  description: Nanotrasen's legally distinct nostalgic handheld video game system, featuring the popular NT Block Game! It is so authentic that the screen is a swampy, poisonous green color.
+  suffix: ""
+  components:
+  - type: BlockGameArcade
+  - type: ActivatableUI
+    key: enum.BlockGameUiKey.Key
+  - type: ActivatableUIRequiresPowerCell
+  - type: UserInterface
+    interfaces:
+      enum.BlockGameUiKey.Key:
+        type: BlockGameBoundUserInterface
+  - type: Vocalizer
+    minVocalizeInterval: 1m # Arcades are noisy
+    maxVocalizeInterval: 4m
+    hideChat: true
+  - type: DatasetVocalizer
+    dataset: BlockGameAds
+  - type: SpeakOnUIClosed
+    pack: BlockGameGoodbyes
+
+# Block Game Colors
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGameRed
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: red
+
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGameBlue
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: blue
+
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGameGreen
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGamePurple
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: purple
+
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGameWhite
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: white
+
+- type: entity
+  parent: NanoBoyBlockGame
+  id: NanoBoyBlockGameYellow
+  suffix: ""
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    layers:
+    - state: yellow

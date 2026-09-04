@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Created by Seersage (github). Inhand sprites by ZweiHawke @ zweihawke.net modified by Seersage",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "blue"
+        },
+        {
+            "name": "green"
+        },
+        {
+            "name": "purple"
+        },
+        {
+            "name": "red"
+        },
+        {
+            "name": "white"
+        },
+        {
+            "name": "yellow"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}
