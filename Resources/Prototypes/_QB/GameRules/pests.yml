@@ -28,3 +28,5 @@
     entries:
     - id: MosquitoVentSpawner
       prob: 0.05
+    - id: MosquitoAngryVentSpawner
+      prob: 0.02
