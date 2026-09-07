@@ -71,7 +71,7 @@
   suffix: ""
   components:
   - type: PowerCellDraw
-    drawRate: 1
+    drawRate: 0.5
     useCharge: 0
   - type: ToggleCellDraw
 
@@ -126,14 +126,14 @@
     interfaces:
       enum.BlockGameUiKey.Key:
         type: BlockGameBoundUserInterface
-  - type: Vocalizer
-    minVocalizeInterval: 1m # Arcades are noisy
-    maxVocalizeInterval: 4m
-    hideChat: true
-  - type: DatasetVocalizer
-    dataset: BlockGameAds
-  - type: SpeakOnUIClosed
-    pack: BlockGameGoodbyes
+#  - type: Vocalizer
+#    minVocalizeInterval: 1m # Arcades are noisy
+#    maxVocalizeInterval: 4m
+#    hideChat: true
+#  - type: DatasetVocalizer
+#    dataset: BlockGameAds
+#  - type: SpeakOnUIClosed
+#    pack: BlockGameGoodbyes
 
 # Block Game Colors
 - type: entity
