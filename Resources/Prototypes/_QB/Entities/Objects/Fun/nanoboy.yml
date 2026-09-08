@@ -126,7 +126,7 @@
     interfaces:
       enum.BlockGameUiKey.Key:
         type: BlockGameBoundUserInterface
-#  - type: Vocalizer
+#  - type: Vocalizer # TODO: re enable when this component stops when power is out
 #    minVocalizeInterval: 1m # Arcades are noisy
 #    maxVocalizeInterval: 4m
 #    hideChat: true

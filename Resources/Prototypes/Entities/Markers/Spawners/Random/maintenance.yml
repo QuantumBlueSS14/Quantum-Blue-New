@@ -178,6 +178,15 @@
       - id: MysteryLighterBox
       - id: StraightHandyFlag # imp
       - id: ClothingBeltFoamSheathFilled # DeltaV - Add small chance of it spawning in maints locker.
+      # QB - add nanoboy to maint loot
+      - id: NanoBoyBlockGame
+      - id: NanoBoyBlockGameBlue
+      - id: NanoBoyBlockGameRed
+      - id: NanoBoyBlockGameGreen
+      - id: NanoBoyBlockGamePurple
+      - id: NanoBoyBlockGameYellow
+      - id: NanoBoyBlockGameWhite
+      # QB end
 
 - type: entity
   name: Maint Loot Spawner
