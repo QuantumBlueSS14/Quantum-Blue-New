@@ -40,8 +40,26 @@
   id: LockerFillMedicalDoctor
   table: !type:AllSelector
     children:
-    - id: HandheldHealthAnalyzer
-      prob: 0.6
+#    - id: HandheldHealthAnalyzer # QB new table so if a HHA doesn't spawn then a NanoBoy does
+#      prob: 0.6
+    - !type:GroupSelector
+      children:
+      - id: HandheldHealthAnalyzer
+        weight: 0.6
+      - id: NanoBoyBlockGame
+        weight: 0.2
+      - id: NanoBoyBlockGameBlue
+        weight: 0.03
+      - id: NanoBoyBlockGameWhite
+        weight: 0.03
+      - id: NanoBoyBlockGameRed
+        weight: 0.03
+      - id: NanoBoyBlockGameYellow
+        weight: 0.03
+      - id: NanoBoyBlockGamePurple
+        weight: 0.03
+      - id: NanoBoyBlockGameGreen
+        weight: 0.03
     - id: ClothingHeadMirror
       prob: 0.1
     - id: ClothingHandsGlovesLatex

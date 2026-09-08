@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: NanoBoysVariety
+  icon:
+    sprite: _QB/Objects/Fun/nanoboy.rsi
+    state: icon
+  product: CrateNanoBoysVariety
+  cost: 4000
+  category: cargoproduct-category-name-fun
+  group: market
