@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 09/02/2026 17:39:55
-  entityCount: 6697
+  time: 09/08/2026 13:36:18
+  entityCount: 6705
 maps:
 - 1
 grids:
@@ -5655,7 +5655,7 @@ entities:
       pos: -34.5,-13.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -81614.945
+      secondsUntilStateChange: -82043.914
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10944,11 +10944,6 @@ entities:
     - type: Transform
       pos: -54.5,1.5
       parent: 3
-  - uid: 4141
-    components:
-    - type: Transform
-      pos: -54.5,-2.5
-      parent: 3
   - uid: 4142
     components:
     - type: Transform
@@ -11943,6 +11938,21 @@ entities:
     components:
     - type: Transform
       pos: -40.5,-11.5
+      parent: 3
+  - uid: 6701
+    components:
+    - type: Transform
+      pos: -51.5,-1.5
+      parent: 3
+  - uid: 6702
+    components:
+    - type: Transform
+      pos: -52.5,-1.5
+      parent: 3
+  - uid: 6703
+    components:
+    - type: Transform
+      pos: -53.5,-1.5
       parent: 3
 - proto: CableMV
   entities:
@@ -14473,16 +14483,16 @@ entities:
       parent: 3
 - proto: CableTerminal
   entities:
-  - uid: 1580
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -53.5,-3.5
-      parent: 3
   - uid: 1671
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
+      pos: -52.5,-2.5
+      parent: 3
+  - uid: 2442
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
       pos: -52.5,-2.5
       parent: 3
   - uid: 3954
@@ -14490,6 +14500,18 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -15.5,-12.5
+      parent: 3
+  - uid: 6699
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -52.5,-3.5
+      parent: 3
+  - uid: 6700
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -52.5,-3.5
       parent: 3
 - proto: CandleSmall
   entities:
@@ -33659,6 +33681,11 @@ entities:
       parent: 3
 - proto: MaintenanceToolSpawner
   entities:
+  - uid: 1580
+    components:
+    - type: Transform
+      pos: -45.5,-19.5
+      parent: 3
   - uid: 1634
     components:
     - type: Transform
@@ -33733,6 +33760,21 @@ entities:
     components:
     - type: Transform
       pos: -37.5,-10.5
+      parent: 3
+  - uid: 6698
+    components:
+    - type: Transform
+      pos: -42.5,16.5
+      parent: 3
+  - uid: 6704
+    components:
+    - type: Transform
+      pos: -45.5,16.5
+      parent: 3
+  - uid: 6705
+    components:
+    - type: Transform
+      pos: -3.5,-11.5
       parent: 3
 - proto: MaintenanceWeaponSpawner
   entities:
@@ -36635,17 +36677,17 @@ entities:
       parent: 3
 - proto: Recycler
   entities:
-  - uid: 2442
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -64.5,14.5
-      parent: 3
   - uid: 2895
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -34.5,-8.5
+      parent: 3
+  - uid: 4141
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -64.5,14.5
       parent: 3
 - proto: ReinforcedGirder
   entities:
@@ -42136,7 +42178,7 @@ entities:
       parent: 3
     - type: DeviceLinkSource
       linkedPorts:
-        2442:
+        4141:
         - - Left
           - Reverse
         - - Right
@@ -42260,13 +42302,6 @@ entities:
     - type: DeviceLinkSource
       linkedPorts:
         2305:
-        - - Left
-          - Reverse
-        - - Right
-          - Forward
-        - - Middle
-          - Off
-        2442:
         - - Left
           - Reverse
         - - Right
