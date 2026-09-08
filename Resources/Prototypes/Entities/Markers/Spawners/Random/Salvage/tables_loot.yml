@@ -187,6 +187,8 @@
       tableId: RingTableRare
     - !type:NestedSelector #imp edit start
       tableId: RandomChemicalSampleTubeRare #imp edit end
+    - !type:NestedSelector # QB - add nanoboys
+      tableId: RandomNanoBoy
 
 - type: entityTable
   id: SalvageTreasureLegendary

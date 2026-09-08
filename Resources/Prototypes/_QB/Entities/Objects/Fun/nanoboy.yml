@@ -54,16 +54,16 @@
   - type: SpookySpeaker
     messageSet: SpookySpeakerMessagesGeneric
     speakChance: 0.2
-  - type: SpamEmitSoundRequirePower
-  - type: SpamEmitSound
-    minInterval: 30
-    maxInterval: 90
-    sound:
-      collection: ArcadeNoise
-      params:
-        volume: -8
-        maxDistance: 10
-        variation: 0.05
+  #- type: SpamEmitSoundRequirePower # TODO: this doesn't seem to work with battery cells, always makes noises
+  #- type: SpamEmitSound
+  #  minInterval: 30
+  #  maxInterval: 90
+  #  sound:
+  #    collection: ArcadeNoise
+  #    params:
+  #      volume: -8
+  #      maxDistance: 10
+  #      variation: 0.05
 
 - type: entity
   parent: [ NanoBoyUnpowered, PowerCellSlotSmallItem ]
@@ -195,3 +195,22 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: yellow
+
+- type: entityTable
+  id: RandomNanoBoy
+  table: !type:GroupSelector
+    children:
+    - id: NanoBoyBlockGame
+      weight: 40
+    - id: NanoBoyBlockGameRed
+      weight: 10
+    - id: NanoBoyBlockGameGreen
+      weight: 10
+    - id: NanoBoyBlockGameBlue
+      weight: 10
+    - id: NanoBoyBlockGamePurple
+      weight: 10
+    - id: NanoBoyBlockGameYellow
+      weight: 10
+    - id: NanoBoyBlockGameWhite
+      weight: 10
