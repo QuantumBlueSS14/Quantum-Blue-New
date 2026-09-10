@@ -1,0 +1,29 @@
+# cooked
+
+- type: entity
+  name: roast diona nymph
+  parent: FoodMeatBase
+  id: FoodMeatRoastDiona
+  description: A slow-cooked nymph, softened and embellished with an apple.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fibrous
+      - syrupy
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meat.rsi
+    state: roastdiona
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Radium
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Meat

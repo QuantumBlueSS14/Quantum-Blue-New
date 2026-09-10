@@ -1,0 +1,13 @@
+# Oven
+- type: microwaveMealRecipe
+  id: RecipeRoastDiona
+  name: roast diona nymph
+  result: FoodMeatRoastDiona
+  time: 15
+  group: Savory
+  solids:
+    MobDionaNymph: 1
+    FoodApple: 1
+  reagents:
+    FluorosulfuricAcid: 5
+  recipeType: Oven
