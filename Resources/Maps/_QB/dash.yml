@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 09/08/2026 13:36:18
-  entityCount: 6705
+  time: 09/11/2026 18:00:58
+  entityCount: 6697
 maps:
 - 1
 grids:
@@ -5655,7 +5655,7 @@ entities:
       pos: -34.5,-13.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -82043.914
+      secondsUntilStateChange: -82344.58
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11864,6 +11864,21 @@ entities:
     - type: Transform
       pos: -40.5,-1.5
       parent: 3
+  - uid: 4607
+    components:
+    - type: Transform
+      pos: -53.5,-1.5
+      parent: 3
+  - uid: 4608
+    components:
+    - type: Transform
+      pos: -52.5,-1.5
+      parent: 3
+  - uid: 4609
+    components:
+    - type: Transform
+      pos: -51.5,-1.5
+      parent: 3
   - uid: 4727
     components:
     - type: Transform
@@ -11938,21 +11953,6 @@ entities:
     components:
     - type: Transform
       pos: -40.5,-11.5
-      parent: 3
-  - uid: 6701
-    components:
-    - type: Transform
-      pos: -51.5,-1.5
-      parent: 3
-  - uid: 6702
-    components:
-    - type: Transform
-      pos: -52.5,-1.5
-      parent: 3
-  - uid: 6703
-    components:
-    - type: Transform
-      pos: -53.5,-1.5
       parent: 3
 - proto: CableMV
   entities:
@@ -13221,50 +13221,10 @@ entities:
     - type: Transform
       pos: -30.5,13.5
       parent: 3
-  - uid: 4607
-    components:
-    - type: Transform
-      pos: -51.5,-2.5
-      parent: 3
-  - uid: 4608
-    components:
-    - type: Transform
-      pos: -52.5,-2.5
-      parent: 3
-  - uid: 4609
-    components:
-    - type: Transform
-      pos: -52.5,-3.5
-      parent: 3
   - uid: 4610
     components:
     - type: Transform
-      pos: -52.5,-4.5
-      parent: 3
-  - uid: 4611
-    components:
-    - type: Transform
-      pos: -52.5,-5.5
-      parent: 3
-  - uid: 4612
-    components:
-    - type: Transform
-      pos: -53.5,-5.5
-      parent: 3
-  - uid: 4613
-    components:
-    - type: Transform
-      pos: -54.5,-5.5
-      parent: 3
-  - uid: 4614
-    components:
-    - type: Transform
-      pos: -54.5,-4.5
-      parent: 3
-  - uid: 4615
-    components:
-    - type: Transform
-      pos: -54.5,-3.5
+      pos: -53.5,-2.5
       parent: 3
   - uid: 4616
     components:
