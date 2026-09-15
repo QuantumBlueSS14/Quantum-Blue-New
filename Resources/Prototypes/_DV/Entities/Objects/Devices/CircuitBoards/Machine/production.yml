@@ -1,28 +1,4 @@
 - type: entity
-  parent: MicrowaveMachineCircuitboard
-  id: AdvancedMicrowaveMachineCircuitBoard
-  name: advanced microwave machine board
-  components:
-  - type: MachineBoard
-    prototype: AdvancedMicrowave
-    stackRequirements:
-      Capacitor: 2
-      Glass: 4
-      Cable: 5
-
-- type: entity
-  parent: ExosuitFabricatorMachineCircuitboard
-  id: SyndieExosuitFabricatorMachineCircuitboard
-  name: syndicate exosuit fabricator machine board
-  components:
-  - type: MachineBoard
-    prototype: SyndicateExosuitFabricator
-    stackRequirements:
-      Capacitor: 2
-      Glass: 4
-      Cable: 5
-
-- type: entity
   abstract: true
   parent: BaseMachineCircuitboard
   id: BaseTechFabCircuitboardDV
@@ -51,39 +27,40 @@
 
 - type: entity
   parent: BaseTechFabCircuitboardDV
-  id: LogisticsTechFabCircuitboard
-  name: logistics techfab machine board
-  description: A machine printed circuit board for a logistics techfab.
+  id: CargoTechFabCircuitboard # QB rename logistics to cargo
+  name: cargo techfab machine board # QB rename logistics to cargo
+  description: A machine printed circuit board for a cargo techfab. # QB rename logistics to cargo
   components:
   - type: Sprite
     state: supply
   - type: MachineBoard
-    prototype: LogisticsTechFab
+    prototype: CargoTechFab # QB rename logistics to cargo
   - type: StealTarget
-    stealGroup: LogisticsTechFabCircuitboard
+    stealGroup: CargoTechFabCircuitboard # QB rename logistics to cargo
+
+#- type: entity # QB - we already have service fab from imp
+#  parent: BaseTechFabCircuitboardDV
+#  id: ServiceTechFabCircuitboard
+#  name: service techfab machine board
+#  description: A machine printed circuit board for a service techfab.
+#  components:
+#  - type: Sprite
+#    state: service
+#  - type: MachineBoard
+#    prototype: ServiceTechFab
+#  - type: StealTarget
+#    stealGroup: ServiceTechFabCircuitboard
+# QB changes end
 
 - type: entity
   parent: BaseTechFabCircuitboardDV
-  id: ServiceTechFabCircuitboard
-  name: service techfab machine board
-  description: A machine printed circuit board for a service techfab.
-  components:
-  - type: Sprite
-    state: service
-  - type: MachineBoard
-    prototype: ServiceTechFab
-  - type: StealTarget
-    stealGroup: ServiceTechFabCircuitboard
-
-- type: entity
-  parent: BaseTechFabCircuitboardDV
-  id: EpistemicsTechFabCircuitboard
-  name: epistemics techfab machine board
-  description: A machine printed circuit board for a epistemics techfab.
+  id: ScienceTechFabCircuitboard # QB rename epistemics to science
+  name: science techfab machine board # QB rename epistemics to science
+  description: A machine printed circuit board for a science techfab. # QB rename epistemics to science
   components:
   - type: Sprite
     state: science
   - type: MachineBoard
-    prototype: EpistemicsTechFab
+    prototype: ScienceTechFab # QB rename epistemics to science
   - type: StealTarget
-    stealGroup: EpistemicsTechFabCircuitboard
+    stealGroup: ScienceTechFabCircuitboard # QB rename epistemics to science

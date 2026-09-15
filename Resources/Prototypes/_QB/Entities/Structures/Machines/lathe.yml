@@ -1,17 +1,4 @@
-- type: entity
-  parent: ExosuitFabricator
-  id: SyndicateExosuitFabricator
-  name: syndicate exosuit fabricator
-  description: Creates parts for evil robotics and other mechanical needs
-  components:
-  - type: Sprite
-    sprite: _DV/Structures/Machines/synd_exosuit_fabricator.rsi
-  - type: Lathe
-    staticPacks:
-    - BorgModulesSyndicateStatic
-  - type: Machine
-    board: SyndieExosuitFabricatorMachineCircuitboard
-
+# Departmental lathes - migrated from DV to QB due to renaming + extensive recipe changes. Service lathe still in imp namespace
 - type: entity
   parent: BaseLatheLube
   id: BaseTechFabDepartamental
@@ -19,10 +6,10 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
-    snapCardinals: true
   - type: Lathe
     idleState: icon
     runningState: icon
+  - type: OreSiloClient
 
 - type: entity
   parent: BaseTechFabDepartamental
@@ -59,6 +46,10 @@
     - EngineeringWeapons
     - FauxTiles
     - Equipment
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+
   - type: Machine
     board: EngineeringTechFabCircuitboard
   - type: StealTarget
@@ -66,9 +57,9 @@
 
 - type: entity
   parent: BaseTechFabDepartamental
-  id: LogisticsTechFab
-  name: logistics techfab
-  description: Prints equipment for the logistics department.
+  id: CargoTechFab
+  name: cargo techfab
+  description: Prints equipment for the cargo department.
   components:
   - type: Sprite
     layers:
@@ -86,54 +77,23 @@
     staticPacks:
     - ToolsStatic
     - PartsStatic
-    - LVCablesStatic
+    - CablesStatic
     - CargoStatic
     dynamicPacks:
     - Equipment
     - Mining
     - SalvageWeapons
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
   - type: Machine
-    board: LogisticsTechFabCircuitboard
+    board: CargoTechFabCircuitboard
   - type: StealTarget
-    stealGroup: LogisticsTechFabCircuitboard
+    stealGroup: CargoTechFabCircuitboard
 
 - type: entity
   parent: BaseTechFabDepartamental
-  id: ServiceTechFab
-  name: service techfab
-  description: Prints equipment for the service department.
-  components:
-  - type: Sprite
-    layers:
-    - state: icon
-      map: ["enum.LatheVisualLayers.IsRunning"]
-    - state: service
-    - state: unlit
-      shader: unshaded
-      map: ["enum.PowerDeviceVisualLayers.Powered"]
-    - state: inserting
-      map: ["enum.MaterialStorageVisualLayers.Inserting"]
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Lathe
-    staticPacks:
-    - RingsStatic
-    - ReportingStatic
-    - LVCablesStatic
-    - LightsStatic
-    - ServiceStatic
-    dynamicPacks:
-    - Janitor
-    - Instruments
-    - Botany
-  - type: Machine
-    board: ServiceTechFabCircuitboard
-  - type: StealTarget
-    stealGroup: ServiceTechFabCircuitboard
-
-- type: entity
-  parent: BaseTechFabDepartamental
-  id: EpistemicsTechFab
+  id: ScienceTechFab
   components:
   - type: Sprite
     layers:
@@ -151,7 +111,7 @@
     staticPacks:
     - ToolsStatic
     - PartsStatic
-    - LVCablesStatic
+    - CablesStatic
     - MaterialsStatic
     - BasicChemistryStatic
     - ChemistryStatic
@@ -160,7 +120,12 @@
     - ScienceClothing
     - ScienceWeapons
     - Chemistry
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+    emagDynamicPacks: # printing weapons deliberately left out
+    - ImpProtoEmagged
   - type: Machine
-    board: EpistemicsTechFabCircuitboard
+    board: ScienceTechFabCircuitboard
   - type: StealTarget
-    stealGroup: EpistemicsTechFabCircuitboard
+    stealGroup: ScienceTechFabCircuitboard
