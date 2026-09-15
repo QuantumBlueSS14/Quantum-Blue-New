@@ -49,7 +49,6 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
-
   - type: Machine
     board: EngineeringTechFabCircuitboard
   - type: StealTarget

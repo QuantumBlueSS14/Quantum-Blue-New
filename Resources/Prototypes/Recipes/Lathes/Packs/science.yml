@@ -3,8 +3,8 @@
 - type: latheRecipePack
   id: ScienceBoardsStatic
   recipes:
-  - ProtolatheMachineCircuitboard
-  - AutolatheMachineCircuitboard
+  #- ProtolatheMachineCircuitboard # QB - departmental lathe
+  #- AutolatheMachineCircuitboard # QB - departmental lathe
   - CircuitImprinterMachineCircuitboard
   - ExosuitFabricatorMachineCircuitboard
   - CutterMachineCircuitboard
