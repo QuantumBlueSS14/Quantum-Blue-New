@@ -13,13 +13,6 @@
     state: supply
 
 - type: stealTargetGroup
-  id: ServiceTechFabCircuitboard
-  name: steal-target-groups-service-techfab-circuitboard
-  sprite:
-    sprite: Objects/Misc/module.rsi
-    state: service
-
-- type: stealTargetGroup
   id: ScienceTechFabCircuitboard
   name: steal-target-groups-science-techfab-circuitboard
   sprite:
