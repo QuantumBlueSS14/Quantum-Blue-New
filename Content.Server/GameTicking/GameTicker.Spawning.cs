@@ -224,10 +224,8 @@ namespace Content.Server.GameTicking
                 // keep old traits when rolling because of the random character trait
                 if (!_randomizeCharacters)
                 {
-                    foreach (var trait in oldTraits)
-                    {
-                        character = character.WithTraitPreference(trait, _prototypeManager);
-                    }
+                    // qb edit: Preserve the full selection so drawbacks can fund traits regardless of order.
+                    character = character.WithTraitPreferences(oldTraits, _prototypeManager);
                 }
                 // imp edit end
                 // character = HumanoidCharacterProfile.RandomWithSpecies(speciesId); // imp edit, comment out
