@@ -10,6 +10,7 @@ using Content.Shared.Tag; // imp
 // qb edit
 using System.Linq;
 using Content.Shared._DV.CCVars;
+using Content.Shared._DV.Traits;
 using Content.Shared._DV.Traits.Conditions;
 using Content.Shared._DV.Traits.Effects;
 using Content.Shared._QB.Traits;
@@ -58,56 +59,63 @@ public sealed class TraitSystem : EntitySystem
             return;
         }
 
-        var context = new TraitConditionContext
-        {
-            Player = mob,
-            Session = session,
-            EntMan = EntityManager,
-            Proto = _prototypeManager,
-            CompFactory = _factory,
-            LogMan = _log,
-            JobId = jobId,
-            SpeciesId = TryComp<HumanoidAppearanceComponent>(mob, out var humanoid) ? humanoid.Species.Id : null,
-        };
-
         // Check conditions before counting points: an ineligible drawback must not
         // pay for traits that will actually be applied.
-        var eligible = profile.TraitPreferences.Where(id =>
-            _prototypeManager.TryIndex(id, out var trait) && CanApply(mob, trait, context));
-        var traits = TraitSelection.Validate(eligible, _prototypeManager,
-            _config.GetCVar(DCCVars.MaxTraitCount), _config.GetCVar(DCCVars.MaxTraitPoints));
-
-        foreach (var traitId in traits)
+        var traits = TraitSelection.Validate(profile.TraitPreferences, _prototypeManager,
+            _config.GetCVar(DCCVars.MaxTraitCount), _config.GetCVar(DCCVars.MaxTraitPoints),
+            (trait, selected) => CanApply(mob, trait, CreateConditionContext(mob, jobId, session, selected)));
+        var selectedTraits = traits.ToHashSet();
+        var disabled = new Dictionary<ProtoId<TraitPrototype>, List<string>>();
+        var context = CreateConditionContext(mob, jobId, session, selectedTraits);
+        foreach (var id in profile.TraitPreferences.Except(traits))
         {
-            if (!_prototypeManager.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
-            {
-                Log.Error($"No trait found with ID {traitId}!");
+            if (!_prototypeManager.TryIndex(id, out var trait))
                 continue;
-            }
 
-            ApplyTrait(mob, traitPrototype);
+            var reasons = trait.Conditions.Where(condition => !condition.Evaluate(context))
+                .Select(condition => condition.GetTooltip(_prototypeManager, Loc))
+                .Where(reason => !string.IsNullOrEmpty(reason)).ToList();
+            if (trait.ExcludedSpecies.Any(species => species.Id == context.SpeciesId))
+                reasons.Add(Loc.GetString("trait-species-excluded-tooltip"));
+            if (reasons.Count == 0)
+                reasons.Add(Loc.GetString("disabled-traits-reason-unavailable"));
+            disabled[id] = reasons;
         }
+
+        foreach (var trait in traits.Select(id => _prototypeManager.Index(id)).OrderByDescending(trait => trait.Priority))
+            ApplyTrait(mob, trait);
+
+        if (session != null && disabled.Count > 0)
+            RaiseNetworkEvent(new DisabledTraitsEvent(disabled), session);
     }
 
     // Randomized traits use the same effects, but intentionally ignore point limits.
-    public bool TryApplyTrait(EntityUid mob, TraitPrototype trait, string? jobId, ICommonSession? session)
+    public bool TryApplyTrait(EntityUid mob, TraitPrototype trait, string? jobId, ICommonSession? session,
+        IReadOnlySet<ProtoId<TraitPrototype>>? selectedTraits = null)
     {
-        var context = new TraitConditionContext
-        {
-            Player = mob,
-            Session = session,
-            EntMan = EntityManager,
-            Proto = _prototypeManager,
-            CompFactory = _factory,
-            LogMan = _log,
-            JobId = jobId,
-            SpeciesId = TryComp<HumanoidAppearanceComponent>(mob, out var humanoid) ? humanoid.Species.Id : null,
-        };
+        var context = CreateConditionContext(mob, jobId, session, selectedTraits);
         if (!CanApply(mob, trait, context))
             return false;
 
         ApplyTrait(mob, trait);
         return true;
+    }
+
+    private TraitConditionContext CreateConditionContext(EntityUid mob, string? jobId, ICommonSession? session,
+        IReadOnlySet<ProtoId<TraitPrototype>>? selectedTraits)
+    {
+        return new TraitConditionContext
+        {
+            Player = mob,
+            Session = session,
+            EntMan = EntityManager,
+            Proto = _prototypeManager,
+            CompFactory = _factory,
+            LogMan = _log,
+            JobId = jobId,
+            SpeciesId = TryComp<HumanoidAppearanceComponent>(mob, out var humanoid) ? humanoid.Species.Id : null,
+            SelectedTraits = selectedTraits,
+        };
     }
 
     private void ApplyTrait(EntityUid mob, TraitPrototype trait)

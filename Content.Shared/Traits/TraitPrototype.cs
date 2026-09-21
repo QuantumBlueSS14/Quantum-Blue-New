@@ -96,6 +96,9 @@ public sealed partial class TraitPrototype : IPrototype
 
     // qb edit
     [DataField]
+    public int Priority;
+
+    [DataField]
     public List<BaseTraitCondition> Conditions = new();
 
     [DataField]
