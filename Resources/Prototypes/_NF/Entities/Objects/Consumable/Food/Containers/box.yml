@@ -190,6 +190,7 @@
 - type: entity
   id: FoodBoxDonutEmpty
   parent: FoodBoxDonut
+  suffix: Empty # QB
   components:
   - type: EntityTableContainerFill
     containers:
