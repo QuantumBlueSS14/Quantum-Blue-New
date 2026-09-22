@@ -12,6 +12,7 @@
     - id: PersonalAILearnerService
     - id: ClothingNeckCloakBlanketShock
     - id: ComputerServiceJobBoardFlatpack
+    - id: ServiceTechFabCircuitboard # QB - add lathe boards to lockers
 
 - type: entity
   id: LockerHospitalityDirectorFilled

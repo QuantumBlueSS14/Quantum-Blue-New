@@ -11,8 +11,8 @@
           prob: 0.75
         - proto: AmmoTechFabCircuitboard
           cost: 2
-        - proto: AutolatheMachineCircuitboard
-          cost: 2
+        # - proto: AutolatheMachineCircuitboard # DeltaV - departamental lathes
+        #   cost: 2
         - proto: BiomassReclaimerMachineCircuitboard
           cost: 2
         - proto: BluespaceBeaker
@@ -56,7 +56,7 @@
         - proto: PowerCellAntiqueProto
           cost: 5
           prob: 0.5
-        - proto: ProtolatheMachineCircuitboard
+        # - proto: ProtolatheMachineCircuitboard # DeltaV - departamental lathes
         - proto: RandomArtifactSpawner
           cost: 2
         - proto: RandomCargoCorpseSpawner

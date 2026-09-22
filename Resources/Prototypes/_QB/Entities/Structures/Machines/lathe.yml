@@ -1,0 +1,139 @@
+# Departmental lathes - migrated from DV to QB due to renaming + extensive recipe changes. Service lathe still in imp namespace
+- type: entity
+  parent: BaseLatheLube
+  id: BaseTechFabDepartamental
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+  - type: OreSiloClient
+
+- type: entity
+  parent: BaseTechFabDepartamental
+  id: EngineeringTechFab
+  name: engineering techfab
+  description: Prints equipment for engineers.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: engi
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Lathe
+    staticPacks:
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - LightsStatic
+    - MaterialsStatic
+    dynamicPacks:
+    - AdvancedTools
+    - PowerCells
+    - AtmosTools
+    - EngineeringWeapons
+    - FauxTiles
+    - Equipment
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+  - type: Machine
+    board: EngineeringTechFabCircuitboard
+  - type: StealTarget
+    stealGroup: EngineeringTechFabCircuitboard
+
+- type: entity
+  parent: BaseTechFabDepartamental
+  id: CargoTechFab
+  name: cargo techfab
+  description: Prints equipment for the cargo department.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: cargo
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Lathe
+    staticPacks:
+    - ToolsStatic
+    - PartsStatic
+    - CablesStatic
+    - CargoStatic
+    dynamicPacks:
+    - Equipment
+    - Mining
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+  - type: Machine
+    board: CargoTechFabCircuitboard
+  - type: StealTarget
+    stealGroup: CargoTechFabCircuitboard
+
+- type: entity
+  parent: BaseTechFabDepartamental
+  id: ScienceTechFab
+  name: science techfab
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: sci
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Lathe
+    staticPacks:
+    - ToolsStatic
+    - PartsStatic
+    - PowerCellsStatic
+    - CablesStatic
+    - MaterialsStatic
+    - BasicChemistryStatic
+    - ChemistryStatic
+    - QBScienceStatic
+    - ReportingStatic
+    - SteelBriefcaseImp
+    dynamicPacks:
+    - AdvancedTools
+    - ScienceExplosives
+    - ScienceEquipment
+    - ScienceClothing
+    - ScienceWeapons
+    - Chemistry
+    - PowerCells
+    - ScienceWeapons
+    - ImpProtoDynamic
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+    emagDynamicPacks: # printing weapons deliberately left out
+    - ImpProtoEmagged
+  - type: Machine
+    board: ScienceTechFabCircuitboard
+  - type: StealTarget
+    stealGroup: ScienceTechFabCircuitboard

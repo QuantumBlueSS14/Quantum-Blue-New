@@ -26,7 +26,7 @@
     - CommsComputerCircuitboard
     - ShuttleConsoleCircuitboard
     - ComputerMassMediaCircuitboard
-    - AutolatheMachineCircuitboard
-    - ProtolatheMachineCircuitboard
+    # - AutolatheMachineCircuitboard # DeltaV - departamental lathes
+    # - ProtolatheMachineCircuitboard # DeltaV - departamental lathes
     - SalvageMagnetMachineCircuitboard
     rareChance: 0.05

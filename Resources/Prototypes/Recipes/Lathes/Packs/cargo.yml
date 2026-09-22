@@ -24,6 +24,7 @@
   - AdvancedMineralScannerEmpty
   - OreBagOfHolding
   - BorgModuleMining # Imp
+  - WeaponProtoKineticAccelerator # QB
 
 - type: latheRecipePack
   id: CargoBoards
