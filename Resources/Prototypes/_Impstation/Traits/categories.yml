@@ -1,9 +1,11 @@
 - type: traitCategory
   id: RandomizerTraits
   name: trait-category-randomizers
+  accentColor: "#C4B5FD" # qb edit
   maxTraitPoints: 1
 
 - type: traitCategory
   id: Traits
   name: trait-category-traits
+  accentColor: "#6EE7B7" # qb edit
   maxTraitPoints: 2
