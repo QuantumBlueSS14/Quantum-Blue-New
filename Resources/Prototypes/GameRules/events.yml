@@ -26,7 +26,7 @@
     #- id: SpiderClownSpawn
     #- id: SpiderSpawn
     - id: VentClog
-    - id: GoblinKnightEvent # imp
+    #- id: GoblinKnightEvent # imp, QB disabled
     #- id: HereticBooksSpawnSmall #imp, QB disabled
     #- id: BiomagneticPolarizationRule # imp, QB disabled
     - id: SynthStorm # CD: Unique event for synths
@@ -59,8 +59,8 @@
     - id: ParadoxCloneSpawn
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
-    - id: GoblinStowawaysEvent #imp
-    - id: GoblinCastawaysEvent #imp
+    #- id: GoblinStowawaysEvent #imp, QB disable
+    #- id: GoblinCastawaysEvent #imp, QB disable
     - id: OppaSpawnLight #imp
     - id: OppaSpawnNight #imp
     - id: SyndicateInfiltratorSpawn # imp
