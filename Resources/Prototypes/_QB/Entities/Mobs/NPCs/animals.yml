@@ -128,10 +128,10 @@
   - type: FactionException
   - type: NpcFactionMember
     factions:
-    - Passive
+    - SimpleHostile
   - type: HTN
     rootTask:
-      task: SimpleHostileCompound
+      task: IdleCompound
   - type: Destructible
     thresholds:
     - trigger:
@@ -151,3 +151,50 @@
     tags:
     - Trash
     - MultitoolDefibrillatorTarget
+
+- type: entity
+  parent: MobMosquito
+  id: MobMosquitoAngry
+  name: mosquito
+  description: EEEEeeeeEEEEEEEEeeEEE
+  suffix: Angry
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: false
+    allowMovement: true
+    name: ghost-role-information-mosquito-name
+    description: ghost-role-information-mosquito-description
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgentHarmless
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  parent: MobMosquito
+  id: MobMosquitoZombie
+  name: mosquito
+  description: EEEEeeeeEEEEEEEEeeEEE
+  suffix: Admeme/Zombie
+  components:
+  - type: Zombie
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: false
+    allowMovement: true
+    name: ghost-role-information-mosquito-name
+    description: zombie-role-desc
+    rules: zombie-role-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+  - type: NpcFactionMember
+    factions:
+    - Zombie
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
