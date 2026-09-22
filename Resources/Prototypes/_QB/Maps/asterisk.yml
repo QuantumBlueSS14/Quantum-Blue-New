@@ -2,7 +2,7 @@
   id: AsteriskQB
   mapName: 'Asterisk'
   mapPath: /Maps/_QB/asterisk.yml
-  minPlayers: 12
+  minPlayers: 8
   maxPlayers: 50
   stations:
     Asterisk:

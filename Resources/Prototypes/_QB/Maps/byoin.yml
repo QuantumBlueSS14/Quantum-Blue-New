@@ -2,7 +2,7 @@
   id: ByoinQB
   mapName: 'Byōin'
   mapPath: /Maps/_QB/byoin.yml
-  minPlayers: 12
+  minPlayers: 8
   maxPlayers: 50
   stations:
     Byoin:
