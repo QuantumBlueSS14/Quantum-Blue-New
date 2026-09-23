@@ -66,7 +66,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [ Allulalo ]
-  # qb edit: Follow the character's eye color, including previously saved markings.
+  # qb edit: Follow the color pickers colors instead of just set as blue
   forcedColoring: true
   coloring:
     default:
@@ -84,7 +84,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [ Allulalo ]
-  # qb edit: Keep glowing eyes linked to the same eye-color picker.
+  # qb edit
   forcedColoring: true
   coloring:
     default:
