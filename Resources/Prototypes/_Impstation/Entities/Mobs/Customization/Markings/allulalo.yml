@@ -66,11 +66,13 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [ Allulalo ]
+  # qb edit: Follow the character's eye color, including previously saved markings.
+  forcedColoring: true
   coloring:
     default:
       type:
-        !type:SimpleColoring
-        color: "#78bfc2"
+        !type:EyeColoring
+  # qb edit end
   sprites:
   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesDefaultLeft
@@ -82,11 +84,13 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [ Allulalo ]
+  # qb edit: Keep glowing eyes linked to the same eye-color picker.
+  forcedColoring: true
   coloring:
     default:
       type:
-        !type:SimpleColoring
-        color: "#78bfc2"
+        !type:EyeColoring
+  # qb edit end
   sprites:
   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesUnshadedLeft
