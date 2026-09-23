@@ -1,22 +1,24 @@
 # Free
 
-- type: trait
-  id: ProperCapitalization
-  name: trait-propercapitalization-name
-  description: trait-propercapitalization-desc
-  category: SpeechTraits
-  cost: 0
-  components:
-  - type: ProperCapitalization
-
-- type: trait
-  id: ProperPunctuation
-  name: trait-properpunctuation-name
-  description: trait-properpunctuation-desc
-  category: SpeechTraits
-  cost: 0
-  components:
-  - type: ProperPunctuation
+# qb edit
+# - type: trait
+#   id: ProperCapitalization
+#   name: trait-propercapitalization-name
+#   description: trait-propercapitalization-desc
+#   category: SpeechTraits
+#   cost: 0
+#   components:
+#   - type: ProperCapitalization
+#
+# - type: trait
+#   id: ProperPunctuation
+#   name: trait-properpunctuation-name
+#   description: trait-properpunctuation-desc
+#   category: SpeechTraits
+#   cost: 0
+#   components:
+#   - type: ProperPunctuation
+# qb edit end
 
 - type: trait
   id: SharpInflection
