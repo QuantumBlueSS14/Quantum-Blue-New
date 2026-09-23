@@ -56,21 +56,23 @@
   description: A 5-round magazine specially shaped to hold syringe bullets.
   components:
   - type: Sprite #TODO custom sprite
+    sprite: _QB/Objects/Weapons/Guns/Ammunition/Magazine/Magnum/psibreaker_magazine.rsi
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
     inhandVisuals:
       left:
       - state: inhand-left-mag
       - state: inhand-left-stripe
-        color: "#222222"
+        color: "#222288"
       right:
       - state: inhand-right-mag
       - state: inhand-right-stripe
-        color: "#222222"
+        color: "#222288"
   - type: BallisticAmmoProvider
     proto: CartridgeSyringe
     mayTransfer: true
