@@ -544,7 +544,8 @@
     - ClothingEngineering
     - ClothingMedical
     - ClothingScience
-    - ClothingSecurity
+    # - ClothingSecurity # QB - Replaced with our own
+    - ClothingSecurityQB # QB
     - ClothingService
     - WinterCoats
     - Ties

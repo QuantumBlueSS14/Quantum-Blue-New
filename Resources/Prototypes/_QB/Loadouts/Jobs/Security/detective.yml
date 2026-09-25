@@ -1,0 +1,64 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: DetectiveJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: DetectiveJumpsuitTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveTurtleneckQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: DetectiveJumpsuitProQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveProQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: DetectiveJumpsuitSuitQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveSuitQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: DetectiveJumpsuitMiamiQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveMiamiQB
+  groupBy: "jumpsuit"
+
+## Jumpskirt
+
+- type: loadout
+  id: DetectiveJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: DetectiveJumpskirtTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveTurtleneckQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: DetectiveJumpskirtProQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveProQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: DetectiveJumpskirtSuitQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveSuitQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: DetectiveJumpskirtMiamiQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveMiamiQB
+  groupBy: "jumpskirt"

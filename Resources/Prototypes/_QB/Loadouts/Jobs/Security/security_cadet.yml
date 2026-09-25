@@ -1,0 +1,14 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: CadetJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCadetQB
+
+## Jumpskirt
+
+- type: loadout
+  id: CadetJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCadetQB

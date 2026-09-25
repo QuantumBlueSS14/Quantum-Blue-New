@@ -435,99 +435,99 @@
   - GroupTankHarness # imp reorder
 
 # Security
-- type: roleLoadout
-  id: JobHeadOfSecurity
-  groups:
-  - HeadofSecurityHead
-  - HeadofSecurityNeck
-  - HeadofSecurityJumpsuit
-  - HeadofSecurityOuterClothing
-  - HeadofSecurityBelt # imp SecurityBelt > HeadofSecurityBelt
-  - SecurityShoes
-  - HeadofSecurityHeadset #imp
-  - SecurityEyewear # imp
-  - HeadofSecurityBackpack # imp SecurityBackpack > HeadofSecurityBackpack
-  - SurvivalSecurityCommand # imp SurvivalSecurity > SurvivalSecurityCommand
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
-  - GroupBreathToolDecapoid # imp special
-  - GroupTankHarnessCommandWithOuterwear # imp GroupTankHarness > GroupTankHarnessCommandWithOuterwear
-  - SecurityCommandFirearm # imp
-  - SecurityCommandAmmo # imp
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobHeadOfSecurity
+#   groups:
+#   - HeadofSecurityHead
+#   - HeadofSecurityNeck
+#   - HeadofSecurityJumpsuit
+#   - HeadofSecurityOuterClothing
+#   - HeadofSecurityBelt # imp SecurityBelt > HeadofSecurityBelt
+#   - SecurityShoes
+#   - HeadofSecurityHeadset #imp
+#   - SecurityEyewear # imp
+#   - HeadofSecurityBackpack # imp SecurityBackpack > HeadofSecurityBackpack
+#   - SurvivalSecurityCommand # imp SurvivalSecurity > SurvivalSecurityCommand
+#   - Trinkets
+#   - SecurityStar
+#   - GroupSpeciesBreathToolSecurity
+#   - GroupBreathToolDecapoid # imp special
+#   - GroupTankHarnessCommandWithOuterwear # imp GroupTankHarness > GroupTankHarnessCommandWithOuterwear
+#   - SecurityCommandFirearm # imp
+#   - SecurityCommandAmmo # imp
 
-- type: roleLoadout
-  id: JobWarden
-  groups:
-  - WardenHead
-  - WardenNeck # imp
-  - WardenJumpsuit
-  - WardenOuterClothing
-  - SecurityBelt # imp reorder
-  - SecurityShoes
-  - SecurityEyewear # imp
-  - SecurityBackpack # imp reorder
-  - WardenPDA # imp
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
-  - GroupBreathToolDecapoid # imp special
-  - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
-  - SecurityCommandFirearm # imp
-  - SecurityCommandAmmo # imp
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobWarden
+#   groups:
+#   - WardenHead
+#   - WardenNeck # imp
+#   - WardenJumpsuit
+#   - WardenOuterClothing
+#   - SecurityBelt # imp reorder
+#   - SecurityShoes
+#   - SecurityEyewear # imp
+#   - SecurityBackpack # imp reorder
+#   - WardenPDA # imp
+#   - SurvivalSecurity
+#   - Trinkets
+#   - SecurityStar
+#   - GroupSpeciesBreathToolSecurity
+#   - GroupBreathToolDecapoid # imp special
+#   - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
+#   - SecurityCommandFirearm # imp
+#   - SecurityCommandAmmo # imp
 
-- type: roleLoadout
-  id: JobSecurityOfficer
-  groups:
-  - SecurityHead
-  - SecurityNeck # imp
-  - SecurityJumpsuit
-  - SecurityOuterClothing
-  - SecurityBelt # imp reorder
-  - SecurityShoes
-  - SecurityEyewear # imp
-  - SecurityBackpack # imp reorder
-  - SecurityPDA # imp reorder
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
-  - GroupBreathToolDecapoid # imp special
-  - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
-  - SecurityOfficerFirearm # imp
-  - SecurityOfficerAmmo # imp
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobSecurityOfficer
+#   groups:
+#   - SecurityHead
+#   - SecurityNeck # imp
+#   - SecurityJumpsuit
+#   - SecurityOuterClothing
+#   - SecurityBelt # imp reorder
+#   - SecurityShoes
+#   - SecurityEyewear # imp
+#   - SecurityBackpack # imp reorder
+#   - SecurityPDA # imp reorder
+#   - SurvivalSecurity
+#   - Trinkets
+#   - SecurityStar
+#   - GroupSpeciesBreathToolSecurity
+#   - GroupBreathToolDecapoid # imp special
+#   - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
+#   - SecurityOfficerFirearm # imp
+#   - SecurityOfficerAmmo # imp
 
-- type: roleLoadout
-  id: JobDetective
-  groups:
-  - DetectiveHead
-  - DetectiveNeck
-  - DetectiveJumpsuit
-  - DetectiveOuterClothing
-  - DetectiveShoes # imp SecurityShoes > DetectiveShoes
-  - SecurityEyewear # imp
-  - SecurityBackpack # imp reorder
-  - DetectivePDA # imp
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityStar
-  - GroupSpeciesBreathToolSecurity
-  - GroupBreathToolDecapoid # imp special
-  - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
-  - DetectiveFirearm # imp
-  - DetectiveAmmo # imp
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobDetective
+#   groups:
+#   - DetectiveHead
+#   - DetectiveNeck
+#   - DetectiveJumpsuit
+#   - DetectiveOuterClothing
+#   - DetectiveShoes # imp SecurityShoes > DetectiveShoes
+#   - SecurityEyewear # imp
+#   - SecurityBackpack # imp reorder
+#   - DetectivePDA # imp
+#   - SurvivalSecurity
+#   - Trinkets
+#   - SecurityStar
+#   - GroupSpeciesBreathToolSecurity
+#   - GroupBreathToolDecapoid # imp special
+#   - GroupTankHarnessWithOuterwear # imp GroupTankHarness > GroupTankHarnessWithOuterwear
+#   - DetectiveFirearm # imp
+#   - DetectiveAmmo # imp
 
-- type: roleLoadout
-  id: JobSecurityCadet
-  groups:
-  - SecurityCadetJumpsuit
-  - SecurityBackpack
-  - SurvivalSecurity
-  - Trinkets
-  - GroupSpeciesBreathToolSecurity
-  - GroupBreathToolDecapoid # imp special
-  - GroupTankHarness # imp. wtf does upstream hate cadets
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobSecurityCadet
+#   groups:
+#   - SecurityCadetJumpsuit
+#   - SecurityBackpack
+#   - SurvivalSecurity
+#   - Trinkets
+#   - GroupSpeciesBreathToolSecurity
+#   - GroupBreathToolDecapoid # imp special
+#   - GroupTankHarness # imp. wtf does upstream hate cadets
 
 # Medical
 - type: roleLoadout

@@ -90,9 +90,9 @@
   description: These tactical gloves aren't fireproof and only might be shock resistant.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _QB/Clothing/Hands/Gloves/combat.rsi # QB
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _QB/Clothing/Hands/Gloves/combat.rsi # QB
   - type: RandomInsulation
     list:
     - 0

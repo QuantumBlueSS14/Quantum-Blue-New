@@ -32,9 +32,10 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
+    - map: [ "outerClothing" ] # QB
     - map: [ "belt" ]
     - map: [ "id" ]
-    - map: [ "outerClothing" ]
+    # - map: [ "outerClothing" ] # QB - moved above belt
     - map: [ "enum.HumanoidVisualLayers.TailBehindBackpack" ] # imp
     - map: [ "back" ]
     - map: [ "enum.HumanoidVisualLayers.TailOversuit" ] # Floof
@@ -337,9 +338,10 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
+    - map: [ "outerClothing" ] # QB
     - map: [ "belt" ]
     - map: [ "id" ]
-    - map: [ "outerClothing" ]
+    # - map: [ "outerClothing" ] # QB - moved above belt
     - map: [ "back" ]
     - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
     - map: [ "neck" ]

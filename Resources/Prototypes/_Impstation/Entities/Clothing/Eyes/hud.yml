@@ -42,9 +42,9 @@
   description: A stylish heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records, but does not provide flash immunity.
   components:
   - type: Sprite
-    sprite: _Impstation/Clothing/Eyes/Hud/secglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/secglasses.rsi # QB
   - type: Clothing
-    sprite: _Impstation/Clothing/Eyes/Hud/secglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/secglasses.rsi # QB
 
 - type: entity
   parent: [ClothingEyesHudMedical]
@@ -53,9 +53,9 @@
   description: A stylish heads-up display that scans the humanoids in view and provides accurate data about their health status.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/medglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/medglasses.rsi # QB
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/medglasses.rsi
+    sprite: _QB/Clothing/Eyes/Glasses/medglasses.rsi # QB
 
 - type: entity
   parent: [ClothingEyesBase, BaseLensSlot, ShowMedicalIcons, BaseMedicalContraband] # BaseLensSlot from imp

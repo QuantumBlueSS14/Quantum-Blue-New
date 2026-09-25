@@ -434,7 +434,7 @@
     unique: true
     difficulty: 1.25
     icon:
-      sprite: Clothing/Hands/Gloves/Color/black.rsi
+      sprite: _QB/Clothing/Hands/Gloves/Color/black.rsi # QB
       state: icon
   - type: AutoCompleteCondition
   - type: ObjectiveBlacklistRequirement

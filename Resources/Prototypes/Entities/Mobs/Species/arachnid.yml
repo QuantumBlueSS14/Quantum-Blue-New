@@ -96,9 +96,10 @@
       - map: ["enum.HumanoidVisualLayers.RHand"]
       - map: [ "gloves" ]
       - map: [ "shoes" ]
+      - map: [ "outerClothing" ] # QB
       - map: [ "belt" ]
       - map: [ "id" ]
-      - map: [ "outerClothing" ]
+      # - map: [ "outerClothing" ] # QB - moved above belt
       - map: [ "enum.HumanoidVisualLayers.Tail" ] # Mentioned in moth code: This needs renaming lol.
       - map: [ "back" ]
       - map: [ "enum.HumanoidVisualLayers.TailOversuit" ] # Floof

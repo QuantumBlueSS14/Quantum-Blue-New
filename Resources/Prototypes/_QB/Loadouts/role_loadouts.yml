@@ -1,0 +1,137 @@
+# REORDERING CONVENTION: DO IT IN THIS ORDER
+# Head
+# Mask
+# Neck
+# Jumpsuit
+# OuterClothing
+# Gloves
+# Belt
+# Shoes
+# Headset
+# Glasses
+# Backpack
+# PDA
+# Survival
+# Trinkets
+# Special
+# GroupSpeciesBreathTool
+# GroupTankHarness
+# Weapon
+# Ammo
+
+# Security
+
+- type: roleLoadout
+  id: JobSecurityCadet
+  groups:
+  - SecurityCadetJumpsuit
+  - SecurityBackpack
+  - SurvivalSecurity
+  - Trinkets
+  - GroupSpeciesBreathToolSecurity
+  - GroupBreathToolDecapoid
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: JobSecurityOfficer
+  groups:
+  - SecurityHead
+  - SecurityNeck
+  - SecurityOfficerUniformQB
+  - SecurityOuterClothing
+  - SecurityBelt
+  - SecurityShoes
+  - SecurityEyewear
+  - SecurityBackpack
+  - SecurityPDA
+  - SurvivalSecurity
+  - Trinkets
+  - SecurityStar
+  - GroupSpeciesBreathToolSecurity
+  - GroupBreathToolDecapoid
+  - GroupTankHarnessWithOuterwear
+  - SecurityOfficerFirearm
+  - SecurityOfficerAmmo
+
+- type: roleLoadout
+  id: JobBrigmedic
+  groups:
+  - BrigmedicHead
+  - MedicalMask
+  - BrigmedicNeck
+  - CorpsmanUniformQB
+  - BrigmedicOuterClothing
+  - CorpsmanGlovesQB
+  - CorpsmanBeltQB
+  - BrigmedicShoes
+  - BrigmedicBackpack
+  - CorpsmanEyewearQB
+  - SurvivalBrigmedic
+  - Trinkets
+  - GroupSpeciesBreathToolMedSec
+  - GroupBreathToolDecapoid
+  - GroupTankHarnessWithOuterwear
+  - SecurityOfficerFirearm
+  - SecurityOfficerAmmo
+
+- type: roleLoadout
+  id: JobDetective
+  groups:
+  - DetectiveHead
+  - DetectiveNeck
+  - DetectiveUniformQB
+  - DetectiveOuterClothing
+  - DetectiveShoes
+  - SecurityEyewear
+  - SecurityBackpack
+  - DetectivePDA
+  - SurvivalSecurity
+  - Trinkets
+  - SecurityStar
+  - GroupSpeciesBreathToolSecurity
+  - GroupBreathToolDecapoid
+  - GroupTankHarnessWithOuterwear
+  - DetectiveFirearm
+  - DetectiveAmmo
+
+- type: roleLoadout
+  id: JobWarden
+  groups:
+  - WardenHead
+  - WardenNeck
+  - WardenUniformQB
+  - WardenOuterClothing
+  - SecurityBelt
+  - SecurityShoes
+  - SecurityEyewear
+  - SecurityBackpack
+  - WardenPDA
+  - SurvivalSecurity
+  - Trinkets
+  - SecurityStar
+  - GroupSpeciesBreathToolSecurity
+  - GroupBreathToolDecapoid
+  - GroupTankHarnessWithOuterwear
+  - SecurityCommandFirearm
+  - SecurityCommandAmmo
+
+- type: roleLoadout
+  id: JobHeadOfSecurity
+  groups:
+  - HeadofSecurityHead
+  - HeadofSecurityNeck
+  - HosUniformQB
+  - HeadofSecurityOuterClothing
+  - HeadofSecurityBelt
+  - SecurityShoes
+  - HeadofSecurityHeadset
+  - SecurityEyewear
+  - HeadofSecurityBackpack
+  - SurvivalSecurityCommand
+  - Trinkets
+  - SecurityStar
+  - GroupSpeciesBreathToolSecurity
+  - GroupBreathToolDecapoid
+  - GroupTankHarnessCommandWithOuterwear
+  - SecurityCommandFirearm
+  - SecurityCommandAmmo

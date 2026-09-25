@@ -1,0 +1,76 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: HosJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: HosJumpsuitGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosGreyQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: HosJumpsuitBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosBlueQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: HosJumpsuitTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosTurtleneckQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: HosJumpsuitFormalQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosFormalSuitQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: HosJumpsuitParadeQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosParadeSuitQB
+  groupBy: "jumpsuit"
+
+## Jumpskirt
+
+- type: loadout
+  id: HosJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: HosJumpskirtGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosGreyQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: HosJumpskirtBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosBlueQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: HosJumpskirtTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosTurtleneckQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: HosJumpskirtFormalQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosFormalSuitQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: HosJumpskirtParadeQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosParadeSuitQB
+  groupBy: "jumpskirt"

@@ -1,49 +1,54 @@
 - type: vendingMachineInventory
   id: SecDrobeInventory
-  startingInventory:
+  startingInventory: # QB - Just a comment to explain that i reorganized this whole thing but didn't comment stuff in/out properly because it'd be a fucking nightmare to look at/sort through
+    ClothingHeadsetSecurity: 3
     ClothingBackpackSecurity: 3
     ClothingBackpackSatchelSecurity: 3
     ClothingBackpackDuffelSecurity: 3
-    ClothingUniformJumpsuitSec: 3
+    ClothingHandsGlovesColorBlack: 3
+    ClothingHandsGlovesFingerless: 3
     ClothingShoesBootsJack: 3
+    ClothingShoesBootsCombat: 1
+    ClothingShoesBootsWinterSec: 2
+    ClothingOuterStasecSweater: 2 # DeltaV
+    ClothingOuterCoatBomberSecurity: 2 # imp # QB - was 1, made it 2
+    ClothingOuterWinterSec: 2
+    ClothingHeadHelmetJustice: 1 # QB - was 1, imp made it 10, reverted back to 1
+    ClothingUniformJumpsuitCadetQB: 3 # QB jumpsuit additions start
+    ClothingUniformJumpskirtCadetQB: 3
+    ClothingUniformJumpsuitSecQB: 3
+    ClothingUniformJumpskirtSecQB: 3
+    ClothingUniformJumpsuitSecBlueQB: 3
+    ClothingUniformJumpskirtSecBlueQB: 3
+    ClothingUniformJumpsuitSecGreyQB: 3
+    ClothingUniformJumpskirtSecGreyQB: 3
+    ClothingUniformJumpsuitSecTurtleneckQB: 3
+    ClothingUniformJumpskirtSecTurtleneckQB: 3
+    ClothingUniformJumpsuitCorpsmanQB: 3
+    ClothingUniformJumpskirtCorpsmanQB: 3
+    ClothingUniformJumpsuitCorpsmanWhiteQB: 3
+    ClothingUniformJumpskirtCorpsmanWhiteQB: 3
+    ClothingUniformJumpsuitCorpsmanTurtleneckQB: 3
+    ClothingUniformJumpskirtCorpsmanTurtleneckQB: 3 # QB jumpsuit additions end
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3
     ClothingHeadHatSecurityTrooper: 3 # imp
-    ClothingHeadHelmetJustice: 10 # imp 1>10
     ClothingHeadBandRed: 3
     ClothingMaskNeckGaiterRed: 3
-    ClothingHandsGlovesColorBlack: 3
-    ClothingHandsGlovesFingerless: 3
-    ClothingUniformJumpskirtSec: 3
-    ClothingUniformJumpsuitSecGrey: 3
-    ClothingUniformJumpskirtSecGrey: 3
-    ClothingUniformJumpsuitSecBlue: 3
-    ClothingUniformSecurityTrooper: 3 # imp
-    ClothingUniformSpaceJumpsuitSecurity: 3 # imp
-    ClothingHeadsetSecurity: 3
-    ClothingOuterStasecSweater: 2 # DeltaV
-    ClothingNeckCWPSec: 2 # DeltaV - add cold weather ponchos
-    ClothingOuterWinterSec: 2
     ClothingNeckScarfStripedRed: 3
-    ClothingOuterCoatBomberSecurity: 1 # imp
-    ClothingEyesBlindfold: 1
-    ClothingShoesBootsCombat: 1
-    ClothingShoesBootsWinterSec: 2
-    # imp additions below
-    ClothingUniformJumpsuitBrigmedic: 1
-    ClothingUniformJumpskirtBrigmedic: 1
-    ClothingHeadHatBeretBrigmedic: 1
-    ClothingHeadHatBrigmedicsoft: 1
-    ClothingBackpackDuffelBrigmedic: 1
-    ClothingBackpackBrigmedic: 1
-    ClothingBackpackSatchelBrigmedic: 1
-    ClothingOuterCoatAMG: 1
-    ClothingOuterWinterBrigmedic: 1
-    ClothingShoesBootsWinterBrigmedic: 1
-    ClothingNeckCloakBlanketShock: 2
+    ClothingNeckScarfStripedBlack: 3 # QB
+    ClothingNeckCWPSec: 2 # DeltaV - add cold weather ponchos
     # end imp additions
   contrabandInventory:
-    #ClothingMaskMimeSecurity: 1
     ToyFigurineSecurity: 1
     ToyFigurineWarden: 1
     ToyFigurineHeadOfSecurity: 1
+    ClothingUniformJumpsuitPrisonGuardQB: 3 # QB jumpsuit additions start
+    ClothingUniformJumpskirtPrisonGuardQB: 3
+    ClothingUniformJumpsuitPrisonGuardDarkQB: 3
+    ClothingUniformJumpskirtPrisonGuardDarkQB: 3
+    ClothingUniformJumpsuitPrisonGuardTurtleneckQB: 3
+    ClothingUniformJumpskirtPrisonGuardTurtleneckQB: 3
+    ClothingUniformJumpsuitPrisonGuardAttireQB: 3
+    ClothingUniformJumpskirtPrisonGuardAttireQB: 3 # QB jumpsuit additions end
+    ClothingNeckScarfStripedOrange: 3 # QB
