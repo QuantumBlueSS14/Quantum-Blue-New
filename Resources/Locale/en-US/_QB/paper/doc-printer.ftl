@@ -7,7 +7,7 @@
 doc-text-printer-report-station =
    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]          [head=3]Situation Report[/head]
-   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -29,8 +29,8 @@ doc-text-printer-report-station =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-report-department =
    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Dep. Performance Report[/head]
-   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]  [head=3]Department Performance[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -52,7 +52,7 @@ doc-text-printer-report-department =
 doc-text-printer-report-employee-performance =
    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Performance Report[/head]
-   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -70,7 +70,7 @@ doc-text-printer-report-employee-performance =
 doc-text-printer-report-on-the-chapters-meeting =
    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Head Meeting Report[/head]
-   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -96,8 +96,8 @@ doc-text-printer-report-on-the-chapters-meeting =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-condition-report =
    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Technical Condition Report[/head]
-   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]         [head=3]Technical Report[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -118,8 +118,8 @@ doc-text-printer-condition-report =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-report-study-object =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Anom. Research Report[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]          [head=3]Anomaly Report[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -138,8 +138,8 @@ doc-text-printer-report-study-object =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-application-appointment-interim =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]  [head=3]Temp. Promotion Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Temporary Promotion[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -158,7 +158,7 @@ doc-text-printer-application-appointment-interim =
 doc-text-printer-application-employment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]           [head=3]Job Application[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -177,7 +177,7 @@ doc-text-printer-application-employment =
 doc-text-printer-letter-resignation =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Letter of Resignation[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -194,7 +194,7 @@ doc-text-printer-letter-resignation =
 doc-text-printer-application-access =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Access Request Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -213,7 +213,7 @@ doc-text-printer-application-access =
 doc-text-printer-application-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Equipment Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -232,7 +232,7 @@ doc-text-printer-application-equipment =
 doc-text-printer-evacuation-shuttle-request =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Evac. Shuttle Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -250,7 +250,7 @@ doc-text-printer-evacuation-shuttle-request =
 doc-text-printer-shuttle-registration-request =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Shuttle Registration[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -260,7 +260,7 @@ doc-text-printer-shuttle-registration-request =
     Document author:
     Author's position:
 
-    I, (full name), in the position of (full job title), request the registration of the shuttle in the NanoTrasen system for identification.
+    I, (full name), in the position of (full job title), request the registration of the shuttle in the Nanotrasen system for identification.
     Shuttle dimensions:
 
     Shuttle class:
@@ -273,8 +273,8 @@ doc-text-printer-shuttle-registration-request =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-request-for-non-listed-employment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Unusual Empl. Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Unusual Employment[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -300,7 +300,7 @@ doc-text-printer-request-for-non-listed-employment =
 doc-text-printer-request-for-promotion =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Promotion Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -316,8 +316,8 @@ doc-text-printer-request-for-promotion =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-request-documents =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]  [head=3]Documental Request Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Documental Request[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -333,8 +333,8 @@ doc-text-printer-request-documents =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-request-euthanasia =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Execution Order Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Order of Execution[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -352,8 +352,8 @@ doc-text-printer-request-euthanasia =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-request-construction-work =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Const. Request Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Construction Request[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -373,7 +373,7 @@ doc-text-printer-request-construction-work =
 doc-text-printer-request-modernization =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]         [head=3]Upgrade Request[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -391,7 +391,7 @@ doc-text-printer-request-modernization =
 doc-text-printer-complaint-offense =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]             [head=3]Snitch Report[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -408,8 +408,8 @@ doc-text-printer-complaint-offense =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-permission-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Restr. Equipment Permit[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]        [head=3]Equipment Permit[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -426,7 +426,7 @@ doc-text-printer-permission-equipment =
 doc-text-printer-search-permission =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]          [head=3]Search Warrant[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -446,7 +446,7 @@ doc-text-printer-search-permission =
 doc-text-printer-permission-to-carry-weapons =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]         [head=3]Weapons Permit[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -467,8 +467,8 @@ doc-text-printer-permission-to-carry-weapons =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-prescription-drug-authorization =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Medication Prescription[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]  [head=3]Medication Prescription[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -487,8 +487,8 @@ doc-text-printer-prescription-drug-authorization =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-permission-dispose-body =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Order of Body Disposal[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Order of Body Disposal[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -506,7 +506,7 @@ doc-text-printer-permission-dispose-body =
 doc-text-printer-construction-permit =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]          [head=3]Building Permit[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -524,7 +524,7 @@ doc-text-printer-construction-permit =
 doc-text-printer-order-dismissal =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Notice of Demotion[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -541,7 +541,7 @@ doc-text-printer-order-dismissal =
 doc-text-printer-order-deprivation-access =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Access Removal Notice[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -557,8 +557,8 @@ doc-text-printer-order-deprivation-access =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-order-encouragement =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Cert. of Achievement[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Achievement Certificate[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -574,8 +574,8 @@ doc-text-printer-order-encouragement =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-order-parole-prisoner =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Prisoner Parole Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Prisoner Parole Order[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -591,12 +591,12 @@ doc-text-printer-order-parole-prisoner =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-order-recognizing-sentience-creature =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Creature Sentience Cert.[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]     [head=3]Sentience Certificate[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
-        ORDER OF RECOGNITION OF SENTIENCE OF A CREATURE
+    ORDER OF RECOGNITION OF SENTIENCE OF A CREATURE
     =============================================
     Time from the start of the shift and date:
     Document author:
@@ -612,8 +612,8 @@ doc-text-printer-order-recognizing-sentience-creature =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-order-medical-intervention =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Medical Intervention Order[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]    [head=3]Medical Intervention[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -631,7 +631,7 @@ doc-text-printer-order-medical-intervention =
 doc-text-printer-product-manufacturing-order =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]        [head=3]Item Request Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -649,7 +649,7 @@ doc-text-printer-product-manufacturing-order =
 doc-text-printer-certificate-advanced-training =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Advanced Training Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -664,8 +664,8 @@ doc-text-printer-certificate-advanced-training =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-certificate-offense =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]   [head=3]Criminal Confession Form[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]     [head=3]Criminal Confession[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -690,7 +690,7 @@ doc-text-printer-certificate-offense =
 doc-text-printer-death-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]         [head=3]Death Certificate[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -712,7 +712,7 @@ doc-text-printer-death-certificate =
 doc-text-printer-marriage-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Marriage Certificate[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -733,7 +733,7 @@ doc-text-printer-marriage-certificate =
 doc-text-printer-divorce-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]        [head=3]Divorce Certificate[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -756,7 +756,7 @@ doc-text-printer-divorce-certificate =
 doc-text-printer-closing-indictment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]           [head=3]Arrest Warrant[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -778,7 +778,7 @@ doc-text-printer-closing-indictment =
 doc-text-printer-sentence =
         ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
         ⠀[color=#1b487e]░██░████░░░██░░░░[/color]             [head=3]Court Verdict[/head]
-        ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+        ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
         ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
         ⠀[color=#1b487e]░░░░██░░░████░███[/color]
         =============================================
@@ -801,7 +801,7 @@ doc-text-printer-sentence =
 doc-text-printer-judgment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Judicial Agreement[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -833,7 +833,7 @@ doc-text-printer-judgment =
 doc-text-printer-statement-health =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]        [head=3]Health Evaluation[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
@@ -858,8 +858,8 @@ doc-text-printer-statement-health =
                                 ⠀          [italic]Place for seals[/italic]
 doc-text-printer-decision-to-start-trial =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]                [head=3]Court Order[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]               [head=3]Court Order[/head]
+    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]Nanotrasen[/head]
     ⠀[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]Quantum Blue[/bold]
     ⠀[color=#1b487e]░░░░██░░░████░███[/color]
     =============================================
