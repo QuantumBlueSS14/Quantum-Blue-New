@@ -1,6 +1,6 @@
 # mushroom men testing
 - type: entity
-  parent: [SimpleMobBase, MobCombat] # QB- change base from "MobGnome, DVNodeCrawler" and give ventcrawler component
+  parent: MobBaseAncestor # we give them vent crawling # QB change from "mobbaseancestornoshitmed, nodecrawler"
   id: MobMythicalMushroom
   name: walking mushroom
   description: A cheery fellow. Definitely not a goblin. Or an elf. Or a gnome.
@@ -39,7 +39,15 @@
     butcheringType: knife
     spawned:
     - id: MaterialMushwoodPlank5 # spawn five of our planks
-  # QB - disable because we don't have these
+  # Speech
+  - type: Speech
+    speechSounds: Gnome
+  - type: Emoting
+  - type: Vocal
+    sounds:
+      Male: GnomeSounds
+      Female: GnomeSounds
+      Unsexed: GnomeSounds
   # shroom powers
   #- type: Psionic
   #- type: MassSleepPower
