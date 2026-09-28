@@ -164,7 +164,7 @@
     - id: RPD # Funky RPD
     - id: AirGrenade
     - id: ClothingHandsGlovesColorYellow # QB
-    - id: DoorRemoteFirefight # QB
+    - id: DoorRemoteFirefighting # QB
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
