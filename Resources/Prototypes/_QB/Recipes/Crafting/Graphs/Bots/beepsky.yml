@@ -29,7 +29,7 @@
           state: l_hand
         name: construction-graph-tag-borg-arm
         doAfter: 2
-      - tag: StunBaton
+      - tag: Stunbaton
         icon:
           sprite: _Impstation/Objects/Weapons/Melee/stunbaton.rsi
           state: stunbaton_off

@@ -28,6 +28,9 @@
   - type: HTN
     rootTask:
       task: BeepskyCompound
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen # FOR NANOTRASEN!!!!
   - type: InteractionPopup
     interactSuccessString: petting-success-cleanbot
     interactFailureString: petting-failure-cleanbot
