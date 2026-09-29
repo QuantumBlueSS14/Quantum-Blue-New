@@ -9,7 +9,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 7
+        Blunt: 3.5
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcThrust
