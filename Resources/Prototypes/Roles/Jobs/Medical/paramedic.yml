@@ -17,10 +17,10 @@
   - Maintenance
   - External
   - Paramedic # QB
+  - Firelocks # QB
   extendedAccess:
   - Chemistry
   - Psychologist # QB
-  - Firelocks # QB
 
 - type: startingGear
   id: ParamedicGear
