@@ -120,8 +120,8 @@
     - WindowCardboardDirectional
     - ChairCardboard
     - CardDoor
-    - TubeLightDrone
-    - BulbLightDrone
+    #- TubeLightDrone # QB disable RCD lights
+    #- BulbLightDrone # QB disable RCD lights
     - LVCable
     - MVCable
     - HVCable
