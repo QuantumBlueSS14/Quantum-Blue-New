@@ -1,6 +1,13 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Tweak
+        message: RCD can no longer build lightbulbs. Replace lightbulbs or build new ones with 2 steel!
+    id: 178
+    time: '2026-10-01T20:06:45.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/236
+  - author: rebe83
+    changes:
       - type: Add
         message: Some mosquitos are now hostile and will attack on their own.
     id: 177
