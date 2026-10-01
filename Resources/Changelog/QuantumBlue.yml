@@ -1,4 +1,65 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Add
+        message: >-
+          Departmental techfabs are here! Save for a few exceptions, you should be able to use all available research
+          right from your own department's techfab.
+      - type: Add
+        message: Butlertron is back! Complete his bounties for cash, available in front of every station's kitchen
+      - type: Tweak
+        message: 'Asterisk: Gave the HoP a funding allocation computer'
+      - type: Tweak
+        message: 'Asterisk: The minotaur is here.'
+      - type: Tweak
+        message: 'Asterisk: Fixed up some of the meteor shielding'
+      - type: Tweak
+        message: 'Asterisk: Added a mass scanner computer to EVA'
+      - type: Tweak
+        message: 'Asterisk: Added a pride-o-mat'
+      - type: Fix
+        message: 'Asterisk: Fixed some missing supply directional signs that were missing'
+      - type: Tweak
+        message: 'Atlas: Added two chem shelves to medbay'
+      - type: Tweak
+        message: 'Atlas: Gave the detective''s office shutters'
+      - type: Tweak
+        message: >-
+          Atlas: Added reinforced girders to maints. Chemists can partially deconstruct these for their plasteel if they
+          need the plasma
+      - type: Tweak
+        message: 'Byoin: Cleaned up the artifact chamber'
+      - type: Tweak
+        message: 'Byoin: Cleaned up atmos'
+      - type: Tweak
+        message: 'Byoin: Fixed up solars'
+      - type: Tweak
+        message: 'Byoin: Did some tidying up of the service bar/kitchen area'
+      - type: Tweak
+        message: >-
+          Chibi: Removed all hallway airlocks and replaced them with firelocks. This should hopefully help make the map
+          feel less claustrophobic
+      - type: Tweak
+        message: 'Chibi: Completely redone arrivals'
+      - type: Tweak
+        message: 'Chibi: Redone the look of cryosleep'
+      - type: Tweak
+        message: 'Dash: The station is a whole lot dirtier now. Janitors get to work!'
+      - type: Tweak
+        message: 'Dash: Due to many sussy baka incidents, detectives have also been enrolled into the Dash transport program'
+      - type: Tweak
+        message: 'Dash: Added SciDrobe and RoboDrobe to science'
+      - type: Tweak
+        message: 'Dash: Got rid of the wall genpop lockers and replaced them with 2 regular ones'
+      - type: Tweak
+        message: 'Elkridge: Did some tidying up of science''s lathes room'
+      - type: Tweak
+        message: 'Elkridge: Fixed some floor inconsistencies'
+      - type: Tweak
+        message: 'Pebble: Central area had some tidying up'
+    id: 175
+    time: '2026-10-01T17:39:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/241
   - author: rebe83
     changes:
       - type: Fix
