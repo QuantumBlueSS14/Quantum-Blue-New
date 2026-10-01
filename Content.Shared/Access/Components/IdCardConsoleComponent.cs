@@ -60,6 +60,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Detective",
         "Engineering",
         "External",
+        "Firelocks", // QB
         "GenpopEnter",
         "GenpopLeave",
         "HeadOfPersonnel",

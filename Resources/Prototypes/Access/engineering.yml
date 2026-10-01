@@ -10,9 +10,24 @@
   id: Atmospherics
   name: id-card-access-level-atmospherics
 
+# QB additions start
+- type: accessLevel
+  id: Firelocks
+  name: id-card-access-level-firelocks
+# QB additions end
+
 - type: accessGroup
   id: Engineering
   tags:
   - ChiefEngineer
   - Engineering
   - Atmospherics
+  - Firelocks
+
+# QB additions start - re add firefighting remote
+- type: accessGroup
+  id: Firefighting
+  tags:
+    - Maintenance
+    - Firelocks
+# QB additions end
