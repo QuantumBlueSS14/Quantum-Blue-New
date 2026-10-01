@@ -1,0 +1,356 @@
+## Base
+
+- type: latheRecipe
+  abstract: true
+  id: BaseUniformRecipeQB
+  categories:
+  - Jumpsuits
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseUniformRecipeQB
+  id: BaseUniformRecipeDifficultQB # This exists for making it a little more difficult to just print time-gated clothes
+  categories:
+  - Jumpsuits
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseUniformRecipeQB
+  id: BaseUniformRecipeCommandQB
+  categories:
+  - Jumpsuits
+  - Command
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+## Security
+# Cadet
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitCadetQB
+  result: ClothingUniformJumpsuitCadetQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtCadetQB
+  result: ClothingUniformJumpskirtCadetQB
+
+# Security Officer
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitSecQB
+  result: ClothingUniformJumpsuitSecQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtSecQB
+  result: ClothingUniformJumpskirtSecQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitSecBlueQB
+  result: ClothingUniformJumpsuitSecBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtSecBlueQB
+  result: ClothingUniformJumpskirtSecBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitSecGreyQB
+  result: ClothingUniformJumpsuitSecGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtSecGreyQB
+  result: ClothingUniformJumpskirtSecGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitSecTurtleneckQB
+  result: ClothingUniformJumpsuitSecTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtSecTurtleneckQB
+  result: ClothingUniformJumpskirtSecTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitSecSeniorQB
+  result: ClothingUniformJumpsuitSecSeniorQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtSecSeniorQB
+  result: ClothingUniformJumpskirtSecSeniorQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitSecFormalSuitQB
+  result: ClothingUniformJumpsuitSecFormalSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtSecFormalSuitQB
+  result: ClothingUniformJumpskirtSecFormalSuitQB
+
+# Prison Guard
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitPrisonGuardQB
+  result: ClothingUniformJumpsuitPrisonGuardQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtPrisonGuardQB
+  result: ClothingUniformJumpskirtPrisonGuardQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitPrisonGuardDarkQB
+  result: ClothingUniformJumpsuitPrisonGuardDarkQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtPrisonGuardDarkQB
+  result: ClothingUniformJumpskirtPrisonGuardDarkQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitPrisonGuardTurtleneckQB
+  result: ClothingUniformJumpsuitPrisonGuardTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtPrisonGuardTurtleneckQB
+  result: ClothingUniformJumpskirtPrisonGuardTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitPrisonGuardAttireQB
+  result: ClothingUniformJumpsuitPrisonGuardAttireQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtPrisonGuardAttireQB
+  result: ClothingUniformJumpskirtPrisonGuardAttireQB
+
+# Corpsman/Brigmedic
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitCorpsmanQB
+  result: ClothingUniformJumpsuitCorpsmanQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtCorpsmanQB
+  result: ClothingUniformJumpskirtCorpsmanQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitCorpsmanWhiteQB
+  result: ClothingUniformJumpsuitCorpsmanWhiteQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtCorpsmanWhiteQB
+  result: ClothingUniformJumpskirtCorpsmanWhiteQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitCorpsmanTurtleneckQB
+  result: ClothingUniformJumpsuitCorpsmanTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtCorpsmanTurtleneckQB
+  result: ClothingUniformJumpskirtCorpsmanTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitCorpsmanSeniorQB
+  result: ClothingUniformJumpsuitCorpsmanSeniorQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtCorpsmanSeniorQB
+  result: ClothingUniformJumpskirtCorpsmanSeniorQB
+
+# Detective
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitDetectiveQB
+  result: ClothingUniformJumpsuitDetectiveQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtDetectiveQB
+  result: ClothingUniformJumpskirtDetectiveQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitDetectiveTurtleneckQB
+  result: ClothingUniformJumpsuitDetectiveTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtDetectiveTurtleneckQB
+  result: ClothingUniformJumpskirtDetectiveTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitDetectiveProQB
+  result: ClothingUniformJumpsuitDetectiveProQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtDetectiveProQB
+  result: ClothingUniformJumpskirtDetectiveProQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitDetectiveSuitQB
+  result: ClothingUniformJumpsuitDetectiveSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtDetectiveSuitQB
+  result: ClothingUniformJumpskirtDetectiveSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitDetectiveMiamiQB
+  result: ClothingUniformJumpsuitDetectiveMiamiQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtDetectiveMiamiQB
+  result: ClothingUniformJumpskirtDetectiveMiamiQB
+
+# Warden
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitWardenQB
+  result: ClothingUniformJumpsuitWardenQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtWardenQB
+  result: ClothingUniformJumpskirtWardenQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitWardenBlueQB
+  result: ClothingUniformJumpsuitWardenBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtWardenBlueQB
+  result: ClothingUniformJumpskirtWardenBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitWardenGreyQB
+  result: ClothingUniformJumpsuitWardenGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtWardenGreyQB
+  result: ClothingUniformJumpskirtWardenGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpsuitWardenTurtleneckQB
+  result: ClothingUniformJumpsuitWardenTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeQB
+  id: ClothingUniformJumpskirtWardenTurtleneckQB
+  result: ClothingUniformJumpskirtWardenTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpsuitWardenAttireQB
+  result: ClothingUniformJumpsuitWardenAttireQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeDifficultQB
+  id: ClothingUniformJumpskirtWardenAttireQB
+  result: ClothingUniformJumpskirtWardenAttireQB
+
+# Hos
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosQB
+  result: ClothingUniformJumpsuitHosQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosQB
+  result: ClothingUniformJumpskirtHosQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosBlueQB
+  result: ClothingUniformJumpsuitHosBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosBlueQB
+  result: ClothingUniformJumpskirtHosBlueQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosGreyQB
+  result: ClothingUniformJumpsuitHosGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosGreyQB
+  result: ClothingUniformJumpskirtHosGreyQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosTurtleneckQB
+  result: ClothingUniformJumpsuitHosTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosTurtleneckQB
+  result: ClothingUniformJumpskirtHosTurtleneckQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosFormalSuitQB
+  result: ClothingUniformJumpsuitHosFormalSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosFormalSuitQB
+  result: ClothingUniformJumpskirtHosFormalSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpsuitHosParadeSuitQB
+  result: ClothingUniformJumpsuitHosParadeSuitQB
+
+- type: latheRecipe
+  parent: BaseUniformRecipeCommandQB
+  id: ClothingUniformJumpskirtHosParadeSuitQB
+  result: ClothingUniformJumpskirtHosParadeSuitQB

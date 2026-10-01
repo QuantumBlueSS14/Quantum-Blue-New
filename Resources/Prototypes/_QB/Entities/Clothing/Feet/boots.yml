@@ -1,0 +1,42 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesEMTBoots
+  name: EMT boots
+  description: A pair of zip-up leather boots designed to get you up and on your feet as fast as possible.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Feet/Boots/emt_boots.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Feet/Boots/emt_boots.rsi
+
+- type: entity
+  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase]
+  id: ClothingShoesBootsWinterHos
+  name: head of security winter boots
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootshos.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootshos.rsi # QB
+
+- type: entity
+  id: ClothingShoesBootsWinterHosFilled
+  parent:
+  - ClothingShoesBootsWinterHos
+  - ClothingShoesBootsSecFilled
+
+- type: entity
+  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase]
+  id: ClothingShoesBootsWinterWarden
+  name: warden winter boots
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootswarden.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Feet/Boots/Winter/winterbootswarden.rsi # QB
+
+- type: entity
+  id: ClothingShoesBootsWinterWardenFilled
+  parent:
+  - ClothingShoesBootsWinterWarden
+  - ClothingShoesBootsSecFilled

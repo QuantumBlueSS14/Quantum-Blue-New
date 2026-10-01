@@ -1,0 +1,73 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: CorpsmanJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCorpsmanQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: CorpsmanJumpsuitWhiteQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCorpsmanWhiteQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: CorpsmanJumpsuitTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCorpsmanTurtleneckQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: CorpsmanJumpsuitSeniorQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCorpsmanSeniorQB
+  groupBy: "jumpsuit"
+
+## Jumpskirt
+
+- type: loadout
+  id: CorpsmanJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCorpsmanQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: CorpsmanJumpskirtWhiteQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCorpsmanWhiteQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: CorpsmanJumpskirtTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCorpsmanTurtleneckQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: CorpsmanJumpskirtSeniorQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCorpsmanSeniorQB
+  groupBy: "jumpskirt"
+
+# Glasses
+
+- type: loadout
+  id: CorpsmanEyewearSunglasses
+  equipment:
+    eyes: ClothingEyesSunglassesCorpsman
+  groupBy: "job"
+
+- type: loadout
+  id: CorpsmanEyewearVisor
+  equipment:
+    eyes: ClothingEyesVisorCorpsman
+  groupBy: "job"
+
+# Belts
+
+- type: loadout
+  id: CorpsmanBeltWebbing
+  equipment:
+    belt: ClothingBeltCorpsmanWebbingFilled

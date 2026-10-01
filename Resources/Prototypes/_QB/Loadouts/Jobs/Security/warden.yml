@@ -1,0 +1,64 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: WardenJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: WardenJumpsuitGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenGreyQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: WardenJumpsuitBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenBlueQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: WardenJumpsuitTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenTurtleneckQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: WardenJumpsuitAttireQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenAttireQB
+  groupBy: "jumpsuit"
+
+## Jumpskirt
+
+- type: loadout
+  id: WardenJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: WardenJumpskirtGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenGreyQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: WardenJumpskirtBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenBlueQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: WardenJumpskirtTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenTurtleneckQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: WardenJumpskirtAttireQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenAttireQB
+  groupBy: "jumpskirt"

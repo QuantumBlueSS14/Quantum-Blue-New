@@ -1,0 +1,7 @@
+- type: construction
+  id: ClothingEyesSunglassesCorpsman
+  graph: GlassesCorpsSunglasses
+  startNode: start
+  targetNode: sunglassesCorps
+  category: construction-category-clothing
+  objectType: Item

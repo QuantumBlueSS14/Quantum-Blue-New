@@ -153,19 +153,17 @@
             - id: ClothingNeckMantleHOS
             - id: ClothingNeckCloakHosgreatcoat
         - !type:GroupSelector
-            children:
-            - id: ClothingUniformJumpsuitHoS
-            - id: ClothingUniformJumpsuitHoSAlt
-            - id: ClothingUniformJumpsuitHoSGrey
-            - id: ClothingUniformJumpsuitHosFormal
-            - id: ClothingUniformJumpsuitHoSPro
+            children: # QB - swapped out for our versions
+            - id: ClothingUniformJumpsuitHosQB
+            - id: ClothingUniformJumpsuitHosBlueQB
+            - id: ClothingUniformJumpsuitHosGreyQB
+            - id: ClothingUniformJumpsuitHosTurtleneckQB
         - !type:GroupSelector
-            children:
-            - id: ClothingUniformJumpskirtHoS
-            - id: ClothingUniformJumpskirtHoSAlt
-            - id: ClothingUniformJumpskirtHoSGrey
-            - id: ClothingUniformJumpskirtHosFormal
-            - id: ClothingUniformJumpskirtHoSPro
+            children: # QB - swapped out for our versions
+            - id: ClothingUniformJumpskirtHosQB
+            - id: ClothingUniformJumpskirtHosBlueQB
+            - id: ClothingUniformJumpskirtHosGreyQB
+            - id: ClothingUniformJumpskirtHosTurtleneckQB
         - id: ClothingOuterWinterHoS
         - id: ClothingOuterCoatHosBomber
 
@@ -244,16 +242,16 @@
             - id: ClothingHeadHatWarden
             - id: ClothingHeadHatBeretWarden
         - !type:GroupSelector
-            children:
-            - id: ClothingUniformJumpsuitWarden
-            - id: ClothingUniformJumpsuitWardenTurtle
-            - id: ClothingUniformJumpsuitSecBlue
-            - id: ClothingUniformJumpsuitChiefJusticeFormal
-            - id: ClothingUniformJumpsuitChiefJusticeWhite
+            children: # QB - swapped out for our versions
+            - id: ClothingUniformJumpsuitWardenQB
+            - id: ClothingUniformJumpsuitWardenBlueQB
+            - id: ClothingUniformJumpsuitWardenGreyQB
+            - id: ClothingUniformJumpsuitWardenTurtleneckQB
         - !type:GroupSelector
-            children:
-            - id: ClothingUniformJumpskirtWarden
-            - id: ClothingUniformJumpskirtWardenTurtle
-            - id: ClothingUniformJumpskirtCJFormal
-        - id: ClothingOuterWinterWardenUnarmored
+            children: # QB - swapped out for our versions
+            - id: ClothingUniformJumpskirtWardenQB
+            - id: ClothingUniformJumpskirtWardenBlueQB
+            - id: ClothingUniformJumpskirtWardenGreyQB
+            - id: ClothingUniformJumpskirtWardenTurtleneckQB
+        # - id: ClothingOuterWinterWardenUnarmored # QB - why.
         - id: ClothingOuterWinterWarden # qb - add to dresser from locker

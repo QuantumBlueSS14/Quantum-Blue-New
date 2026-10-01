@@ -9,9 +9,9 @@
       tags: # intentionally no WhitelistChameleon tag
       - PetWearable
     - type: Sprite
-      sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+      sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
     - type: Clothing
-      sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+      sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
     - type: ChameleonClothing
       slot: [eyes]
       default: ClothingEyesGlassesSunglasses

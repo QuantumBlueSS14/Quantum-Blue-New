@@ -1,0 +1,123 @@
+# Security
+## Cadet
+
+- type: loadoutGroup
+  id: CadetUniformQB
+  name: loadout-group-cadet-uniform-qb
+  loadouts:
+  - CadetJumpsuitDefaultQB
+  - CadetJumpskirtDefaultQB
+
+## Security Officer
+
+- type: loadoutGroup
+  id: SecurityOfficerUniformQB
+  name: loadout-group-security-officer-uniform-qb
+  loadouts:
+  - SecurityOfficerJumpsuitDefaultQB
+  - SecurityOfficerJumpskirtDefaultQB
+  - SecurityOfficerJumpsuitGreyQB
+  - SecurityOfficerJumpskirtGreyQB
+  - SecurityOfficerJumpsuitBlueQB
+  - SecurityOfficerJumpskirtBlueQB
+  - SecurityOfficerJumpsuitTurtleneckQB
+  - SecurityOfficerJumpskirtTurtleneckQB
+  - SecurityOfficerJumpsuitSeniorQB
+  - SecurityOfficerJumpskirtSeniorQB
+  - SecurityOfficerJumpsuitFormalQB
+  - SecurityOfficerJumpskirtFormalQB
+
+## Corpsman/Brigmedic
+
+- type: loadoutGroup
+  id: CorpsmanUniformQB
+  name: loadout-group-corpsman-uniform-qb
+  loadouts:
+  - CorpsmanJumpsuitDefaultQB
+  - CorpsmanJumpskirtDefaultQB
+  - CorpsmanJumpsuitWhiteQB
+  - CorpsmanJumpskirtWhiteQB
+  - CorpsmanJumpsuitTurtleneckQB
+  - CorpsmanJumpskirtTurtleneckQB
+  - CorpsmanJumpsuitSeniorQB
+  - CorpsmanJumpskirtSeniorQB
+
+- type: loadoutGroup
+  id: CorpsmanGlovesQB
+  name: loadout-group-corpsman-gloves-qb
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+  - ChemistryGloves
+
+- type: loadoutGroup
+  id: CorpsmanBeltQB
+  name: loadout-group-corpsman-belt-qb
+  loadouts:
+  - CorpsmanBeltWebbing
+  - BeltMedicalEMT
+  - BeltMedical
+
+- type: loadoutGroup
+  id: CorpsmanEyewearQB
+  name: loadout-group-corpsman-eyewear-qb
+  loadouts:
+  - CorpsmanEyewearSunglasses
+  - CorpsmanEyewearVisor
+  - MedicalHud
+  - MedicalEyePatchHud
+  - MedicalGlassesHud
+  - Sunglasses
+
+## Detective
+
+- type: loadoutGroup
+  id: DetectiveUniformQB
+  name: loadout-group-detective-uniform-qb
+  loadouts:
+  - DetectiveJumpsuitDefaultQB
+  - DetectiveJumpskirtDefaultQB
+  - DetectiveJumpsuitTurtleneckQB
+  - DetectiveJumpskirtTurtleneckQB
+  - DetectiveJumpsuitProQB
+  - DetectiveJumpskirtProQB
+  - DetectiveJumpsuitSuitQB
+  - DetectiveJumpskirtSuitQB
+  - DetectiveJumpsuitMiamiQB
+  - DetectiveJumpskirtMiamiQB
+
+## Warden
+
+- type: loadoutGroup
+  id: WardenUniformQB
+  name: loadout-group-warden-uniform-qb
+  loadouts:
+  - WardenJumpsuitDefaultQB
+  - WardenJumpskirtDefaultQB
+  - WardenJumpsuitGreyQB
+  - WardenJumpskirtGreyQB
+  - WardenJumpsuitBlueQB
+  - WardenJumpskirtBlueQB
+  - WardenJumpsuitTurtleneckQB
+  - WardenJumpskirtTurtleneckQB
+  - WardenJumpsuitAttireQB
+  - WardenJumpskirtAttireQB
+
+## Head of Security
+
+- type: loadoutGroup
+  id: HosUniformQB
+  name: loadout-group-hos-uniform-qb
+  loadouts:
+  - HosJumpsuitDefaultQB
+  - HosJumpskirtDefaultQB
+  - HosJumpsuitGreyQB
+  - HosJumpskirtGreyQB
+  - HosJumpsuitBlueQB
+  - HosJumpskirtBlueQB
+  - HosJumpsuitTurtleneckQB
+  - HosJumpskirtTurtleneckQB
+  - HosJumpsuitFormalQB
+  - HosJumpskirtFormalQB
+  - HosJumpsuitParadeQB
+  - HosJumpskirtParadeQB

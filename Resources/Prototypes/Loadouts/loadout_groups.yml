@@ -1282,18 +1282,18 @@
   - WardenHead
   - WardenBeret
 
-- type: loadoutGroup
-  id: WardenJumpsuit
-  name: loadout-group-warden-jumpsuit
-  loadouts:
-  - WardenJumpsuit
-  - WardenJumpskirt
-  - WardenTurtlesuit # DeltaV
-  - WardenTurtleskirt # DeltaV
-  - SecurityJumpsuitBlue # imp
-  - ChiefJusticeWhiteJumpsuit # DeltaV
-  - ChiefJusticeFormalJumpsuit # DeltaV
-  - ChiefJusticeFormalJumpskirt # DeltaV
+# - type: loadoutGroup # QB - commented out
+#   id: WardenJumpsuit
+#   name: loadout-group-warden-jumpsuit
+#   loadouts:
+#   - WardenJumpsuit
+#   - WardenJumpskirt
+#   - WardenTurtlesuit # DeltaV
+#   - WardenTurtleskirt # DeltaV
+#   - SecurityJumpsuitBlue # imp
+#   - ChiefJusticeWhiteJumpsuit # DeltaV
+#   - ChiefJusticeFormalJumpsuit # DeltaV
+#   - ChiefJusticeFormalJumpskirt # DeltaV
 
 - type: loadoutGroup
   id: WardenOuterClothing
