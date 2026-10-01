@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Some mosquitos are now hostile and will attack on their own.
+    id: 177
+    time: '2026-10-01T20:05:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/218
   - author: AlinaNova21
     changes:
       - type: Fix
