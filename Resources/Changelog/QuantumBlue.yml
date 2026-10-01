@@ -1,4 +1,11 @@
 Entries:
+  - author: AlinaNova21
+    changes:
+      - type: Fix
+        message: Fixed a bug that could allow a remote attacker to crash the server with a malformed network packet.
+    id: 176
+    time: '2026-10-01T18:50:44.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/240
   - author: MattFright
     changes:
       - type: Add
