@@ -14,3 +14,11 @@
   - MagazineLightRifleIncendiary
   - SpeedLoaderMagnumHoly
   - MagazineBoxMagnumHoly
+
+- type: latheRecipePack
+  id: SecurityBorgModules
+  recipes:
+  - BorgModuleSecurityNonlethal
+  - BorgModuleSecurityLethal
+  - BorgModuleSecurityInvestigation
+  - BorgModuleSecurityBreaching

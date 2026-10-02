@@ -1,6 +1,9 @@
 # add in alphabetical order
 
 - type: Tag
+  id: BorgModuleSecurity # for modules only for secborg
+
+- type: Tag
   id: CartridgeSyringe # for special fillable syringe bullets
 
 - type: Tag

@@ -6,7 +6,7 @@
   id: SecurityEquipmentStatic
   recipes:
   - ClothingEyesHudSecurity
-  - ForensicPad
+  #- ForensicPad # QB added to research
   - Handcuffs
   - TargetClown
   - TargetHuman
@@ -80,6 +80,7 @@
   - TelescopicShield
   #- ClothingBackpackHarmpack # QB - no harmpack for sec
   - ClothingShoesBootsSecurityMagboots # QB - port DeltaV security magboots
+  - ForensicPad # QB - add to research
 
 - type: latheRecipePack
   id: SecurityBoards

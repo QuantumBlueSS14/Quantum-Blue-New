@@ -1,0 +1,39 @@
+
+# Security borg
+- type: borgType
+  id: security
+
+  # Description
+  dummyPrototype: BorgChassisSecurity
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleSecurity
+
+  defaultModules:
+  - BorgModuleSecurityPatrol
+  - BorgModuleSecurityUtility
+
+  radioChannels:
+  - Science
+  - Security
+
+  lawset: SiliconPolice
+
+  addComponents:
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: peace
+  spriteHasMindState: peace_e
+  spriteNoMindState: peace_e_r
+  spriteToggleLightState: peace_l
+
+  # Pet
+  petSuccessString: petting-success-security-cyborg
+  petFailureString: petting-failure-security-cyborg
