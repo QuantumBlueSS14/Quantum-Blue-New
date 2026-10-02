@@ -5,4 +5,4 @@
   description: Creates a solid but fragile holographic barrier. Slowly recharges.
   components:
   - type: BatterySelfRecharger
-    autoRechargeRate: 0.25 # charges half as fast as it drains
+    autoRechargeRate: 0.50

@@ -28,27 +28,11 @@
   - type: ShowCriminalRecordIcons
 
   # Visual
-  clientComponents:
-  - type: Sprite
-    noRot: true
-    drawdepth: Mobs
-    sprite: /Textures/_QB/Mobs/Silicon/chassis.rsi
-    layers:
-    - state: security
-      map: ["enum.BorgVisualLayers.Body", "movement"]
-    - state: security_e_r
-      map: ["enum.BorgVisualLayers.Light"]
-      shader: unshaded
-      visible: false
-    - state: security_l
-      shader: unshaded
-      map: ["light","enum.BorgVisualLayers.LightStatus"]
-      visible: false
   inventoryTemplateId: borgShort
-  spriteBodyState: security
-  spriteHasMindState: security_e
-  spriteNoMindState: security_e_r
-  spriteToggleLightState: security_l
+  spriteBodyState: peace
+  spriteHasMindState: peace_e
+  spriteNoMindState: peace_e_r
+  spriteToggleLightState: peace_l
 
   # Pet
   petSuccessString: petting-success-security-cyborg

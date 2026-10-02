@@ -7,8 +7,34 @@
     sprite: Objects/Specific/Chapel/bible.rsi
     state: icon
   discipline: Arsenal
-  tier: 1
+  tier: 2
   cost: 5000
   recipeUnlocks:
   - SpeedLoaderMagnumHoly
   - MagazineBoxMagnumHoly
+
+- type: technology
+  id: Investigation
+  name: research-technology-investigation
+  icon:
+    sprite: Objects/Devices/forensic_scanner.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 8000
+  recipeUnlocks:
+  - BorgModuleSecurityInvestigation
+  - ForensicPad
+
+# Tier 3
+- type: technology
+  id: Breaching
+  name: research-technology-breaching
+  icon:
+    sprite: DeltaV/Objects/Weapons/Bombs/breaching.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 12000
+  recipeUnlocks:
+  - BorgModuleSecurityBreaching

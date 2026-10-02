@@ -10,7 +10,7 @@
     borgFitTypes:
     - borg-type-security
   - type: Sprite
-    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    sprite: _QB/Objects/Specific/Robotics/borgmodule.rsi
   - type: Item
     inhandVisuals:
       left:
@@ -63,7 +63,7 @@
     - item: LauncherCitationator
     - item: TicketPad
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: patrol-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: patrol-module }
 
 - type: entity
   id: BorgModuleSecurityUtility # roundstart
@@ -83,7 +83,7 @@
     - item: HandheldStationMapUnpowered
     - item: RadioHandheldSecurity
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: utility-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: utility-module }
 
 - type: entity
   id: BorgModuleSecurityNonlethal # T1 research
@@ -98,9 +98,9 @@
     hands:
     - item: WeaponBorgDisabler
     - item: Flash
-    - item: Flashbang
+    - item: GrenadeFlashBang
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: nonlethal-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: nonlethal-module }
 
 - type: entity
   id: BorgModuleSecurityLethal # T2 research
@@ -114,7 +114,7 @@
   - type: ItemBorgModule
     hands:
     - item: Truncheon
-    - item: Bola
+    - item: Bola # borg cant throw...
     - item: GrenadeStinger
       hand:
         emptyRepresentative: GrenadeStinger
@@ -123,7 +123,7 @@
           tags:
           - HandGrenade
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: lethal-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: lethal-module }
 
 - type: entity
   id: BorgModuleSecurityInvestigation # T2 research
@@ -153,27 +153,27 @@
           tags:
           - Smokable
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: investigation-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: investigation-module }
 
 - type: entity
-  id: BorgModuleSecurityBreacher # T3 research. Truly the superweapon of QB
+  id: BorgModuleSecurityBreaching # T3 research. Truly the superweapon of QB
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: breacher cyborg module
+  name: breaching cyborg module
   components:
   - type: Sprite
     layers:
     - state: security
-    - state: icon-breacher
+    - state: icon-breaching
   - type: ItemBorgModule
     hands:
     - item: BreachingHammerBorg
     - item: BreachingCharge
       hand:
         emptyRepresentative: BreachingCharge
-        emptyLabel: borg-slot-breacher-empty
+        emptyLabel: borg-slot-breaching-empty
         whitelist:
           components:
           - Explosive # whatever works
     - item: CableDetStack # needs more logic so it can't be a free hand when used up
   - type: BorgModuleIcon
-    icon: { sprite: _DV/Interface/Actions/actions_borg.rsi, state: breacher-module }
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: breaching-module }

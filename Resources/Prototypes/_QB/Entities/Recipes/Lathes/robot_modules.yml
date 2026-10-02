@@ -1,0 +1,36 @@
+# Security modules
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseBorgModuleRecipe
+  id: BaseBorgModuleRecipeSecurity
+  completetime: 5  # 2 seconds longer
+  materials:
+    Steel: 500 # double
+    Glass: 500 # double
+    Plastic: 250
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipeSecurity
+  id: BorgModuleSecurityNonlethal
+  result: BorgModuleSecurityNonlethal
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipeSecurity
+  id: BorgModuleSecurityLethal
+  result: BorgModuleSecurityLethal
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipeSecurity
+  id: BorgModuleSecurityInvestigation
+  result: BorgModuleSecurityInvestigation
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipeSecurity
+  id: BorgModuleSecurityBreaching
+  result: BorgModuleSecurityBreaching
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 1000
+    Gold: 100

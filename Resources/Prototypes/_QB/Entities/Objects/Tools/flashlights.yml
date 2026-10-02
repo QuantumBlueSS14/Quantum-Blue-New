@@ -5,4 +5,4 @@
   description: A robust flashlight used by security, capable of slowly recharging.
   components:
   - type: BatterySelfRecharger
-    autoRechargeRate: 0.25 # charges half as fast as it drains
+    autoRechargeRate: 0.5 # charges as fast as it drains while off
