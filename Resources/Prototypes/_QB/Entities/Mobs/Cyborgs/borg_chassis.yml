@@ -1,0 +1,24 @@
+- type: entity
+  id: BorgChassisSecurity
+  parent: BorgChassisSelectable
+  name: security cyborg
+  components:
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: /Textures/_QB/Mobs/Silicon/chassis.rsi
+    layers:
+    - state: security
+      map: ["enum.BorgVisualLayers.Body", "movement"]
+    - state: security_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: security_l
+      shader: unshaded
+      map: ["light","enum.BorgVisualLayers.LightStatus"]
+      visible: false
+  - type: BorgSwitchableType
+    selectedBorgType: security
+  - type: SiliconLawProvider
+    laws: SiliconPolice
