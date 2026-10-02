@@ -25,4 +25,23 @@ public sealed partial class TraitCategoryPrototype : IPrototype
     /// </summary>
     [DataField]
     public int? MaxTraitPoints;
+
+    // qb edit
+    [DataField]
+    public int? MaxPoints;
+
+    public int? PointLimit => MaxPoints ?? MaxTraitPoints;
+
+    [DataField]
+    public int? MaxTraits;
+
+    [DataField]
+    public int Priority;
+
+    [DataField]
+    public Color AccentColor = Color.FromHex("#4a9eff");
+
+    [DataField]
+    public bool DefaultExpanded = true;
+    // qb edit end
 }
