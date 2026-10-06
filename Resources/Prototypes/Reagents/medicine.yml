@@ -504,7 +504,7 @@
         - !type:ReagentCondition
           reagent: Ipecac
           min: 4
-        probability: 0.7 # QB from 0.3 to 0.9
+        probability: 0.7 # QB from 0.3 to 0.7
 
 - type: reagent
   id: Inaprovaline
