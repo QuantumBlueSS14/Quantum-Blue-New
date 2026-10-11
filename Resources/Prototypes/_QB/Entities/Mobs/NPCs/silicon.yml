@@ -42,7 +42,6 @@
     volume: -8
     range: 5
     sound:
-      # TODO: https://freesound.org/people/derjuli/sounds/448133/ CC-NC-
       path: /Audio/Ambience/Objects/circular_saw.ogg
   - type: ContainerContainer
     containers:
@@ -74,7 +73,7 @@
     softness: 1.6
     color: red
   # recycling
-  - type: CollideMaterialReclaimer
+  #- type: CollideMaterialReclaimer # doesn't work for whatever reason
   - type: MaterialReclaimer
     powered: true
     enabled: true

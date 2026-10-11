@@ -28,3 +28,13 @@
     entries:
     - id: MosquitoVentSpawner
       prob: 0.05
+
+- type: entity
+  id: JunkBotMigration
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    weight: 1.5
+    duration: 1
+  - type: RandomEntityStorageSpawnRule
+    prototype: MobJunkBot
