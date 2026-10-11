@@ -9,8 +9,8 @@
     state: junkbot
   - type: GhostRole
     makeSentient: true
-    name: ghost-role-information-supplybot-name
-    description: ghost-role-information-supplybot-description
+    name: ghost-role-information-junkbot-name
+    description: ghost-role-information-junkbot-description
     rules: ghost-role-information-familiar-rules
     raffle:
       settings: default
@@ -18,33 +18,35 @@
   - type: Access
     tags:
     - Maintenance
-  - type: Dumpable
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,7,3
-    whitelist:
-      components:
-      - PhysicalComposition
-      - MobState
-      - SpaceGarbage
-      - Material
-      tags:
-      - Trash
-      - Recyclable
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
+  # sounds and speech
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+  - type: UnblockableSpeech
+  - type: ReplacementAccent
+    accent: silicon
+  - type: InteractionPopup
+    successChance: 1.0
+    interactSuccessString: petting-success-recycler
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Items/drill_hit.ogg
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/_Impstation/Effects/Footsteps/tcktckstep.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: -8
+    range: 5
+    sound:
+      # TODO: https://freesound.org/people/derjuli/sounds/448133/ CC-NC-
+      path: /Audio/Ambience/Objects/circular_saw.ogg
   - type: ContainerContainer
     containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UnpoweredFlashlight
-  - type: PointLight
-    enabled: false
-    radius: 3.5
-    softness: 2
+      cell_slot: !type:ContainerSlot { }
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: ActiveRadio
@@ -52,8 +54,29 @@
     - Binary
   - type: Puller
     needsHands: false
+  # battery
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: PowerCellDraw
+    drawRate: 0.6
+    enabled: false # the borg is only activated when a player takes over, otherwise the battery is likely empty
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+        disableEject: true
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 4
+    softness: 1.6
+    color: red
+  # recycling
   - type: CollideMaterialReclaimer
   - type: MaterialReclaimer
+    powered: true
     enabled: true
     scaleProcessSpeed: false #instant!
     minimumProcessDuration: 0
@@ -77,15 +100,11 @@
       params:
         volume: -3
     cutOffSound: true
-  - type: InteractionPopup
-    successChance: 1.0
-    interactSuccessString: petting-success-recycler
-    interactFailureString: petting-failure-generic
-    interactSuccessSound:
-      path: /Audio/Items/drill_hit.ogg
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepBorg
+  - type: Body
+    thermalVisibility: false
+  - type: StatusEffects
+    allowed:
+    - Flashed
   - type: Tag
     tags:
     - DoorBumpOpener
