@@ -1,0 +1,113 @@
+- type: entity
+  parent: MobSiliconBase
+  id: MobJunkBot
+  name: junkbot
+  description: A wobbly machine for putting garbage into. Don't let it lick your hand.
+  components:
+  - type: Sprite
+    sprite: _QB/Mobs/Silicon/Bots/junkbot.rsi
+    state: junkbot
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-junkbot-name
+    description: ghost-role-information-junkbot-description
+    rules: ghost-role-information-familiar-rules
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Access
+    tags:
+    - Maintenance
+  # sounds and speech
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+  - type: UnblockableSpeech
+  - type: ReplacementAccent
+    accent: silicon
+  - type: InteractionPopup
+    successChance: 1.0
+    interactSuccessString: petting-success-recycler
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Items/drill_hit.ogg
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/_Impstation/Effects/Footsteps/tcktckstep.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: -8
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/circular_saw.ogg
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot { }
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: ActiveRadio
+    channels:
+    - Binary
+  - type: Puller
+    needsHands: false
+  # battery
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: PowerCellDraw
+    drawRate: 0.6
+    enabled: false # the borg is only activated when a player takes over, otherwise the battery is likely empty
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+        disableEject: true
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 4
+    softness: 1.6
+    color: red
+  # recycling
+  #- type: CollideMaterialReclaimer # doesn't work for whatever reason
+  - type: MaterialReclaimer
+    powered: true
+    enabled: true
+    scaleProcessSpeed: false #instant!
+    minimumProcessDuration: 0
+    whitelist:
+      components:
+      - PhysicalComposition
+      - MobState
+      - SpaceGarbage
+      tags:
+      - Trash
+      - Recyclable
+    blacklist:
+      components:
+      - Material
+      - Pda
+      - IdCard
+      tags:
+      - HighRiskItem
+    sound:
+      path: /Audio/Effects/saw.ogg
+      params:
+        volume: -3
+    cutOffSound: true
+  - type: Body
+    thermalVisibility: false
+  - type: StatusEffects
+    allowed:
+    - Flashed
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+    - SiliconEmotes
+    - Bot
+    - Unimplantable
