@@ -675,6 +675,11 @@
   - type: Appearance
   - type: Item
     heldPrefix: bananium
+  # QB changes
+  - type: RadiationSource
+    intensity: 0.2 # 20x more than uranium sheet
+    slope: 3
+  # QB changes end
 
 - type: entity
   parent: MaterialBananium
