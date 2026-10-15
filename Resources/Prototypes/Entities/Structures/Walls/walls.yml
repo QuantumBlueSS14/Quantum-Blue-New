@@ -202,6 +202,10 @@
         layer:
         - WallLayer
         density: 8000 # really good ramming wall, bananium is rare so it's probably fine
+  - type: RadiationSource # QB start
+    intensity: 1
+    slope: 0.8
+    # QB end
 
 - type: entity
   parent: BaseWall

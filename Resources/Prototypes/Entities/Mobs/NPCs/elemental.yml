@@ -257,7 +257,7 @@
         Blunt: 3
 # QB changes
   - type: RadiationSource
-    intensity: 3 # uranium crab is 2
+    intensity: 1.5 # uranium crab is 2
     slope: 0.3
 # QB changes end
 
