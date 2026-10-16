@@ -1,0 +1,65 @@
+- type: gameMap
+  id: Hare
+  mapName: 'Hare'
+  mapPath: /Maps/_QB/hare.yml
+  minPlayers: 1
+  maxPlayers: 30
+  stations:
+    Hare:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_QB/Shuttles/Evac/NTQB_Capsule.yml
+        - type: StationNameSetup
+          mapNameTemplate: '{0} "Hare" Supply Terminal {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'QB'
+        - type: StationJobs
+          availableJobs: # Total of 42 slots
+          # command - 8
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            HospitalityDirector: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+          # service - 8
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Chef: [ 1 , 1 ]
+            Clown: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+          # engineering - 4
+            AtmosphericTechnician: [ 1, 1 ]
+            StationEngineer: [ 2, 2 ]
+            TechnicalAssistant: [ 1, 1 ]
+          # medical - 4
+            Chemist: [ 1, 1 ]
+            MedicalDoctor: [ 1, 1 ]
+            MedicalIntern: [ 1, 1 ]
+            Paramedic: [ 1, 1 ]
+          # science - 4
+            Scientist: [ 2, 2 ]
+            ResearchAssistant: [ 2, 2 ]
+          # security - 5
+            Warden: [ 1, 1 ]
+            Detective: [ 1, 1 ]
+            SecurityOfficer: [ 2, 2 ]
+            SecurityCadet: [ 1, 1 ]
+          # supply - 5
+            Courier: [ 1, 1 ]
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 2, 2 ]
+          # silicon - 3
+            #StationAi: [ 1, 1 ] # No AI
+            Borg: [ 2, 2 ]
+            Drone: [ 1, 1 ] 
+          # civilian - 1
+            Lawyer: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
