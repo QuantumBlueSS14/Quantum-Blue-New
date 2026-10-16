@@ -1,0 +1,10 @@
+- type: entityTable
+  id: VarietyRevolverTable
+  table: !type:GroupSelector
+    children:
+    - id: WeaponRevolverDeckard
+    - id: WeaponRevolverInspector
+    - id: WeaponRevolverSnub
+    - id: WeaponRevolverK38Master
+    - id: WeaponRevolverFitz
+    - id: WeaponRevolverLucky

@@ -1,0 +1,7 @@
+# add in alphabetical order
+
+- type: Tag
+  id: CartridgeSyringe # for special fillable syringe bullets
+
+- type: Tag
+  id: MagazineSyringe # for special fillable syringe bullets

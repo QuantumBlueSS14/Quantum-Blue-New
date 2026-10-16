@@ -1114,8 +1114,9 @@
   components:
   - type: Pda
     id: AtmosIDCard
-  - type: Sprite #imp
-    sprite: _Impstation/Objects/Devices/atmos_pda.rsi #imp
+  - type: Sprite # QB
+    sprite: _QB/Objects/Devices/pda.rsi # QB
+    state: pda-atmos # QB
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

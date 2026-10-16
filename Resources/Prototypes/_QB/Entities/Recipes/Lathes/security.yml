@@ -1,0 +1,40 @@
+# .45 ammo box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazineBoxMagnumHoly
+  result: MagazineBoxMagnumHoly
+  materials:
+    Steel: 260
+    Silver: 60
+
+# .45 speedloader
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: SpeedLoaderMagnumHoly
+  result: SpeedLoaderMagnumHoly
+  materials:
+    Steel: 120
+    Silver: 30
+
+# .45 magazines
+- type: latheRecipe
+  parent: SpeedLoaderMagnumEmpty
+  id: MagazineMagnumEmpty
+  result: MagazineMagnumEmpty
+
+- type: latheRecipe
+  parent: SpeedLoaderMagnum
+  id: MagazineMagnum
+  result: MagazineMagnum
+
+- type: latheRecipe
+  parent: SpeedLoaderMagnumStun
+  id: MagazineMagnumStun
+  result: MagazineMagnumStun
+
+# special
+- type: latheRecipe
+  parent: MiniSyringe
+  id: CartridgeSyringe
+  result: CartridgeSyringe
+    

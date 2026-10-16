@@ -95,6 +95,7 @@
   parent: BaseLatheLube
   name: autolathe
   description: It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
+  suffix: DO NOT MAP # DeltaV - departamental lathes
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe.rsi
@@ -147,6 +148,7 @@
     - SecurityAmmoStatic
     - SyndicateAmmoStatic
     - ImpAutoEmagged # imp
+    - SecurityAmmoStaticQB #qb
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -176,6 +178,7 @@
   parent: [ BaseLatheLube, BaseScienceContraband ] # imp
   name: protolathe
   description: Converts raw materials into advanced items.
+  suffix: DO NOT MAP # DeltaV - departamental lathes
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe.rsi
@@ -225,6 +228,7 @@
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
+    - SecurityAmmoQB #qb
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
@@ -388,6 +392,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
+    snapCardinals: true #DeltaV - Follow Camera Rotation
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -412,15 +417,17 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     - SteelBriefcaseImp # Imp
+    - SecurityAmmoStaticQB #qb
     dynamicPacks:
     - SalvageSecurityBoards
-    - SalvageSecurityWeapons
+    #- SalvageSecurityWeapons # qb
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SecurityAmmoQB #qb
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -458,6 +465,7 @@
       unlitRunningState: unlit-building #imp
       staticPacks:
       - SecurityAmmoStatic
+      - SecurityAmmoStaticQB # qb
     - type: EmagLatheRecipes
       emagStaticPacks:
       - SyndicateAmmoStatic
@@ -500,6 +508,9 @@
     dynamicPacks:
     - Chemistry
     - ImpMedDynamic # Imp
+  - type: EmagLatheRecipes # qb
+    emagStaticPacks:
+    - SyndicateAmmoStatic
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

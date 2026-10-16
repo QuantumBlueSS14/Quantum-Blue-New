@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryRevolverRandom
+  name: random revolver crate
+  description: For when you need your game of Russian Roulette to be as random as possible. Requires Armory access to open.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          rolls: 2
+          tableId: VarietyRevolverTable
+        - id: MagazineBoxMagnum
+          amount: 2

@@ -3,8 +3,8 @@
 - type: latheRecipePack
   id: ScienceBoardsStatic
   recipes:
-  - ProtolatheMachineCircuitboard
-  - AutolatheMachineCircuitboard
+  #- ProtolatheMachineCircuitboard # QB - departmental lathe
+  #- AutolatheMachineCircuitboard # QB - departmental lathe
   - CircuitImprinterMachineCircuitboard
   - ExosuitFabricatorMachineCircuitboard
   - CutterMachineCircuitboard
@@ -31,7 +31,7 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  - ClothingShoesBootsSpeed
+  #- ClothingShoesBootsSpeed # qb
   - ClothingShoesBootsJump
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
@@ -40,7 +40,7 @@
 - type: latheRecipePack
   id: PowerCells
   recipes:
-  - PowerCellMicroreactor
+  #- PowerCellMicroreactor # qb
   - PowerCellHigh
   - PowerCellHyper
 

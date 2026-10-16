@@ -19,6 +19,7 @@
     MysterySpaceBladeBox: 5 # imp
     BooksBag: 3
     MysteryMechBox: 3 # imp
+    NanoBoyBlockGame: 2 # QB
   contrabandInventory:
     Basketball: 1
     FoodSnackBoritos: 3

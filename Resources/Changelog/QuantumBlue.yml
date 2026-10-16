@@ -2,6 +2,221 @@ Entries:
   - author: rebe83
     changes:
       - type: Tweak
+        message: RCD can no longer build lightbulbs. Replace lightbulbs or build new ones with 2 steel!
+    id: 178
+    time: '2026-10-01T20:06:45.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/236
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Some mosquitos are now hostile and will attack on their own.
+    id: 177
+    time: '2026-10-01T20:05:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/218
+  - author: AlinaNova21
+    changes:
+      - type: Fix
+        message: Fixed a bug that could allow a remote attacker to crash the server with a malformed network packet.
+    id: 176
+    time: '2026-10-01T18:50:44.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/240
+  - author: MattFright
+    changes:
+      - type: Add
+        message: >-
+          Departmental techfabs are here! Save for a few exceptions, you should be able to use all available research
+          right from your own department's techfab.
+      - type: Add
+        message: Butlertron is back! Complete his bounties for cash, available in front of every station's kitchen
+      - type: Tweak
+        message: 'Asterisk: Gave the HoP a funding allocation computer'
+      - type: Tweak
+        message: 'Asterisk: The minotaur is here.'
+      - type: Tweak
+        message: 'Asterisk: Fixed up some of the meteor shielding'
+      - type: Tweak
+        message: 'Asterisk: Added a mass scanner computer to EVA'
+      - type: Tweak
+        message: 'Asterisk: Added a pride-o-mat'
+      - type: Fix
+        message: 'Asterisk: Fixed some missing supply directional signs that were missing'
+      - type: Tweak
+        message: 'Atlas: Added two chem shelves to medbay'
+      - type: Tweak
+        message: 'Atlas: Gave the detective''s office shutters'
+      - type: Tweak
+        message: >-
+          Atlas: Added reinforced girders to maints. Chemists can partially deconstruct these for their plasteel if they
+          need the plasma
+      - type: Tweak
+        message: 'Byoin: Cleaned up the artifact chamber'
+      - type: Tweak
+        message: 'Byoin: Cleaned up atmos'
+      - type: Tweak
+        message: 'Byoin: Fixed up solars'
+      - type: Tweak
+        message: 'Byoin: Did some tidying up of the service bar/kitchen area'
+      - type: Tweak
+        message: >-
+          Chibi: Removed all hallway airlocks and replaced them with firelocks. This should hopefully help make the map
+          feel less claustrophobic
+      - type: Tweak
+        message: 'Chibi: Completely redone arrivals'
+      - type: Tweak
+        message: 'Chibi: Redone the look of cryosleep'
+      - type: Tweak
+        message: 'Dash: The station is a whole lot dirtier now. Janitors get to work!'
+      - type: Tweak
+        message: 'Dash: Due to many sussy baka incidents, detectives have also been enrolled into the Dash transport program'
+      - type: Tweak
+        message: 'Dash: Added SciDrobe and RoboDrobe to science'
+      - type: Tweak
+        message: 'Dash: Got rid of the wall genpop lockers and replaced them with 2 regular ones'
+      - type: Tweak
+        message: 'Elkridge: Did some tidying up of science''s lathes room'
+      - type: Tweak
+        message: 'Elkridge: Fixed some floor inconsistencies'
+      - type: Tweak
+        message: 'Pebble: Central area had some tidying up'
+    id: 175
+    time: '2026-10-01T17:39:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/241
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Axes now properly display the axe tool text properly.
+    id: 174
+    time: '2026-09-29T15:46:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/237
+  - author: smoothfella
+    changes:
+      - type: Fix
+        message: Allulalos can customize their eye color now!
+    id: 173
+    time: '2026-09-27T19:50:43.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/233
+  - author: SeeroftheNight
+    changes:
+      - type: Fix
+        message: Documents from the document printer now correctly reference "Quantum Blue" and "Point Blue".
+      - type: Fix
+        message: Spacing and broken formatting fixed on a lot of the document templates.
+      - type: Fix
+        message: '"Nanotrasen not NanoTrasen" applied to document templates.'
+    id: 172
+    time: '2026-09-27T19:41:52.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/230
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Asterisk, Byoin and Elkridge will now show up with 8 minimum players, as opposed to 12, matching Pebble and
+          Atlas.
+    id: 171
+    time: '2026-09-22T19:19:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/231
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Added a recipe for roast diona nymph
+    id: 170
+    time: '2026-09-11T18:37:00.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/224
+  - author: Ecramox
+    changes:
+      - type: Tweak
+        message: Fixed the sprites in the RCD menu!
+      - type: Tweak
+        message: Fixed the sprites in the lathe menu!
+      - type: Tweak
+        message: Fixed the sprite of the atmos PDA!
+    id: 169
+    time: '2026-09-11T18:20:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/223
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Dash: Engi substation actually works now i SWEAR'
+    id: 168
+    time: '2026-09-11T18:14:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/225
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Dash: Fixed the messed up engi substation/smes cables'
+    id: 167
+    time: '2026-09-08T15:23:05.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/221
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Atlas: Station screens should properly display the timer to evac now'
+    id: 166
+    time: '2026-09-08T15:22:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/222
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Cloning can now be researched in T3 civilian services.
+    id: 165
+    time: '2026-09-04T00:27:23.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/207
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Fixed Elkridge''s solars'
+    id: 164
+    time: '2026-09-03T10:54:02.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/215
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Removed fun! Microreactors and speed boots are no longer printable.
+    id: 163
+    time: '2026-09-03T02:23:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/205
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Moths have new speech sounds now! Ported from Cosmatic Drift
+    id: 162
+    time: '2026-09-03T02:19:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/212
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Pebble: Solars are mostly restored now. This means that the roundstart situation for power should be a lot
+          less stressful now
+      - type: Tweak
+        message: 'Pebble: Various small visual tweaks'
+    id: 161
+    time: '2026-09-03T01:52:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/213
+  - author: MattFright
+    changes:
+      - type: Add
+        message: 'Dash: Added a gas analyzer to the cryogenics room'
+      - type: Add
+        message: 'Dash: Added a portable scrubber to atmos proper'
+      - type: Tweak
+        message: 'Dash: Moved the maints meatspike behind the kitchen'
+      - type: Tweak
+        message: 'Dash: Gave the librarian''s room access to maints'
+      - type: Fix
+        message: 'Dash: Fixed artifact analyzers not being connected to their pads'
+      - type: Fix
+        message: 'Dash: Fixed the salvage recycler conveyor'
+      - type: Fix
+        message: 'Dash: Fixed the issue that caused Engineering to be the first department to lose power in an outage'
+      - type: Fix
+        message: 'Dash: Hopefully fixed that one z-fighting firelock in medbay'
+    id: 160
+    time: '2026-09-03T01:52:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/210
+  - author: rebe83
+    changes:
+      - type: Tweak
         message: Mosquitoes now die in one hit and make you itchy. They can also be used like tiny syringes.
     id: 159
     time: '2026-08-29T18:00:27.0000000+00:00'

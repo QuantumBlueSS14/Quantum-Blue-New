@@ -41,7 +41,7 @@
   id: Cardwall
   name: cardboard wall
   category: WallsAndFlooring
-  sprite: { sprite: Structures/Walls/card.rsi, state: full }
+  sprite: { sprite: _QB/Structures/Walls/card.rsi, state: full } # QB
   mode: ConstructObject
   prototype: Cardwall
   cost: 4
@@ -54,7 +54,7 @@
   id: CardboardWindow
   name: cardboard window
   category: WindowsAndGrilles
-  sprite: { sprite: _Impstation/Structures/Windows/cardboard_window.rsi, state: full }
+  sprite: { sprite: _QB/Structures/Windows/cardboard_window.rsi, state: full } # QB
   mode: ConstructObject
   prototype: WindowCardboard
   cost: 2
@@ -67,7 +67,7 @@
   id: WindowCardboardDirectional
   name: cardboard directional window
   category: WindowsAndGrilles
-  sprite: { sprite: _Impstation/Structures/Windows/cardboard_directional.rsi, state: window }
+  sprite: { sprite: _QB/Structures/Windows/directional.rsi, state: cardboard_window } # QB
   mode: ConstructObject
   prototype: WindowCardboardDirectional
   cost: 1

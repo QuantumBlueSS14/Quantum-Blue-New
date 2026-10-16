@@ -1,0 +1,10 @@
+- type: entityTable
+  id: VarietyNanoBoyTable
+  table: !type:GroupSelector
+    children:
+    - id: NanoBoyBlockGameRed
+    - id: NanoBoyBlockGameBlue
+    - id: NanoBoyBlockGameGreen
+    - id: NanoBoyBlockGamePurple
+    - id: NanoBoyBlockGameWhite
+    - id: NanoBoyBlockGameYellow

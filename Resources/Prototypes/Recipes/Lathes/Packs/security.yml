@@ -78,7 +78,7 @@
   - PowerCageMedium
   - PowerCageSmall
   - TelescopicShield
-  - ClothingBackpackHarmpack
+  #- ClothingBackpackHarmpack # QB - no harmpack for sec
   - ClothingShoesBootsSecurityMagboots # QB - port DeltaV security magboots
 
 - type: latheRecipePack

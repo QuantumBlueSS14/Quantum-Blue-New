@@ -1,0 +1,6 @@
+# Medical
+
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseMedicalComputerRecipeCategory ]
+  id: CloningConsoleComputerCircuitboard
+  result: CloningConsoleComputerCircuitboard

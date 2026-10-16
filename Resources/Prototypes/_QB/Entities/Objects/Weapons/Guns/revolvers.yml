@@ -1,0 +1,173 @@
+# deltaV revolvers
+- type: entity
+  name: snubbed .45
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverSnub
+  description: An old and reliable revolver, modified to be more easily concealed. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/webleysnubnose.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/webleysnubnose.rsi
+  - type: Item
+    size: Small # 1x2
+    shape:
+    - 0,0,1,0
+    storedOffset: 0,0
+  - type: Gun
+    selectedMode: SemiAuto
+    minAngle: 5
+    maxAngle: 30
+    angleIncrease: 25
+    angleDecay: 5
+    fireRate: 2.5 # high ROF for high variation
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 25 #35 pierce for .45 magnum
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: UseDelay
+    delay: 0.66
+
+- type: entity
+  name: k-38 masterpiece
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverK38Master
+  description: A classic, if not outdated, law enforcement firearm. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+
+- type: entity
+  name: fitz special
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverFitz
+  description: A compact and concealable self defence snub revolver. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
+  - type: Item
+    size: Small # 1x2
+    shape:
+    - 0,0,1,0
+    storedOffset: 0,0
+  - type: Gun # less extreme than snubbed
+    selectedMode: SemiAuto
+    minAngle: 5
+    maxAngle: 30
+    angleIncrease: 10
+    angleDecay: 5
+    fireRate: 1.75 # slightly higher speed than base
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 20 #slightly less damage
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: UseDelay
+    delay: 0.66
+
+- type: entity
+  name: lucky 37
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverLucky
+  description: Luck always beats skill, ya weasel. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/lucky.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/lucky.rsi
+  - type: Gun
+    minAngle: 5
+    maxAngle: 30
+    angleIncrease: 5
+    angleDecay: 5
+    selectedMode: SemiAuto
+    fireRate: 1.5
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 25 #35 pierce for .45 magnum
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: UseDelay
+    delay: 0.33 # faster draw
+  - type: StaticPrice
+    price: 750
+
+- type: entity
+  name: trinity
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverTrinity
+  description: Purge your sins done in honor of His name. Uses .45 magnum ammo. 
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
+  - type: Item
+    size: Small # 1x2
+    shape:
+    - 0,0,1,0
+  - type: Gun
+    minAngle: 5
+    maxAngle: 30
+    angleIncrease: 5
+    angleDecay: 5
+    selectedMode: Burst
+    burstFireRate: 3
+    shotsPerBurst: 3
+    burstCooldown: 1
+    fireRate: 3
+    availableModes:
+    - Burst
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 20 # should crit if all 3 land, unless its AP
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnumHoly
+    capacity: 3 # bible reference
+    chambers: [ True, True, True ]
+    ammoSlots: [ null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: UseDelay
+    delay: 0.66
+  - type: StaticPrice
+    price: 316 # bible reference

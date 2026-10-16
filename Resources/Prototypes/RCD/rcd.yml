@@ -35,7 +35,7 @@
   id: Plating
   name: rcd-component-plating
   category: WallsAndFlooring
-  sprite: /Textures/Interface/Radial/RCD/plating.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/plating.png # QB
   mode: ConstructTile
   prototype: Plating
   cost: 1
@@ -49,7 +49,7 @@
   id: FloorSteel
   name: rcd-component-floor-steel
   category: WallsAndFlooring
-  sprite: /Textures/Interface/Radial/RCD/metal_tile.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/metal_tile.png # QB
   mode: ConstructTile
   prototype: FloorSteel
   cost: 1
@@ -62,7 +62,7 @@
 - type: rcd
   id: Catwalk
   category: WallsAndFlooring
-  sprite: /Textures/Interface/Radial/RCD/catwalk.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/catwalk.png # QB
   mode: ConstructObject
   prototype: Catwalk
   cost: 1
@@ -78,7 +78,7 @@
 - type: rcd
   id: WallSolid
   category: WallsAndFlooring
-  sprite: /Textures/Interface/Radial/RCD/solid_wall.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/solid_wall.png # QB
   mode: ConstructObject
   prototype: WallSolid
   cost: 4
@@ -90,7 +90,7 @@
 - type: rcd
   id: Grille
   category: WindowsAndGrilles
-  sprite: /Textures/Interface/Radial/RCD/grille.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/grille.png # QB
   mode: ConstructObject
   prototype: Grille
   cost: 4
@@ -103,7 +103,7 @@
 - type: rcd
   id: Window
   category: WindowsAndGrilles
-  sprite: /Textures/Interface/Radial/RCD/window.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/window.png # QB
   mode: ConstructObject
   prototype: Window
   cost: 3
@@ -117,7 +117,7 @@
 - type: rcd
   id: WindowDirectional
   category: WindowsAndGrilles
-  sprite: /Textures/Interface/Radial/RCD/directional.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/directional.png # QB
   mode: ConstructObject
   prototype: WindowDirectional
   cost: 2
@@ -132,7 +132,7 @@
 - type: rcd
   id: ReinforcedWindow
   category: WindowsAndGrilles
-  sprite: /Textures/Interface/Radial/RCD/window_reinforced.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/window_reinforced.png # QB
   mode: ConstructObject
   prototype: ReinforcedWindow
   cost: 4
@@ -146,7 +146,7 @@
 - type: rcd
   id: WindowReinforcedDirectional
   category: WindowsAndGrilles
-  sprite: /Textures/Interface/Radial/RCD/directional_reinforced.png
+  sprite: /Textures/_QB/Interface/Radial/RCD/directional_reinforced.png # QB
   mode: ConstructObject
   prototype: WindowReinforcedDirectional
   cost: 3

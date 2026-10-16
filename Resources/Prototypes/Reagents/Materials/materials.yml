@@ -11,7 +11,7 @@
   id: Cardboard
   stackEntity: MaterialCardboard1
   name: materials-cardboard
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cardboard }
+  icon: { sprite: /Textures/_QB/Objects/Materials/cardboard.rsi, state: cardboard } # QB
   color: "#70736c"
   price: 0.025
 
@@ -20,7 +20,7 @@
   stackEntity: MaterialCloth1
   name: materials-cloth
   unit: materials-unit-roll
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: cloth }
+  icon: { sprite: /Textures/_QB/Objects/Materials/cloth.rsi, state: cloth } # QB
   color: "#e7e7de"
   price: 0.05
 
@@ -30,7 +30,7 @@
   name: materials-durathread
   # not exactly a sheet but its sprite suggests it cant be rolled like cloth
   unit: materials-unit-sheet
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: durathread }
+  icon: { sprite: /Textures/_QB/Objects/Materials/durathread.rsi, state: durathread } # QB
   color: "#8291a1"
   price: 0.35 # 1-1 mix of plastic and cloth.
 
@@ -38,7 +38,7 @@
   id: Paper
   stackEntity: SheetPaper1
   name: materials-paper
-  icon: { sprite: Objects/Materials/Sheets/other.rsi, state: paper }
+  icon: { sprite: _QB/Objects/Materials/paper.rsi, state: paper } # QB
   color: "#d9d9d9"
   price: 0.01 # it's paper bro what do you expect?
 
@@ -46,7 +46,7 @@
   id: Plasma
   stackEntity: SheetPlasma1
   name: materials-plasma
-  icon: { sprite: Objects/Materials/Sheets/other.rsi, state: plasma }
+  icon: { sprite: _QB/Objects/Materials/plasma.rsi, state: plasma } # QB
   color: "#7e009e"
   price: 0.35 # $35 for 1 unit
 
@@ -54,7 +54,7 @@
   id: Plastic
   stackEntity: SheetPlastic1
   name: materials-plastic
-  icon: { sprite: Objects/Materials/Sheets/other.rsi, state: plastic }
+  icon: { sprite: _QB/Objects/Materials/plastic.rsi, state: plastic } # QB
   color: "#d9d9d9"
   price: 0.20 # $20 for 1 unit
 
@@ -63,7 +63,7 @@
   stackEntity: MaterialWoodPlank1
   name: materials-wood
   unit: materials-unit-plank
-  icon: { sprite: Objects/Materials/materials.rsi, state: wood }
+  icon: { sprite: _QB/Objects/Materials/wood.rsi, state: wood } # QB
   color: "#966F33"
   price: 0.10 # $10 for 1 unit
 
@@ -71,7 +71,7 @@
   id: Uranium
   stackEntity: SheetUranium1
   name: materials-uranium
-  icon: { sprite: Objects/Materials/Sheets/other.rsi, state: uranium }
+  icon: { sprite: _QB/Objects/Materials/uranium.rsi, state: uranium } # QB
   color: "#32a852"
   price: 0.85 # $85 for 1 unit
 
@@ -138,6 +138,6 @@
   stackEntity: MaterialDiamond1
   name: materials-diamond
   unit: materials-unit-piece
-  icon: { sprite: Objects/Materials/materials.rsi, state: diamond }
+  icon: { sprite: _QB/Objects/Materials/Gems/diamond.rsi, state: diamond } # QB
   color: "#80ffff"
   price: 20 # big diamond gaslit us so hard diamonds actually became extremely rare

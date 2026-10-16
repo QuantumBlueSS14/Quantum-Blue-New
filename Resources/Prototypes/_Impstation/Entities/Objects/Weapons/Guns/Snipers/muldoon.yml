@@ -25,6 +25,7 @@
     whitelist:
       tags:
       - Dart
+      - CartridgeSyringe #qb
     capacity: 1
     proto: TranqDart
   - type: CursorOffsetRequiresWield
@@ -74,5 +75,6 @@
       tags:
       - Dart
       - CartridgeAntiMateriel
+      - CartridgeSyringe #qb
     capacity: 1
     proto: CartridgeAntiMateriel

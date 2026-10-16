@@ -63,6 +63,7 @@
   - HandHeldMassScanner
   - ClothingMaskWeldingGas
   - SignallerAdvanced
+  - ClothingShoesBootsMagSci # QB - let salvage and engi print magboots
 
 - type: latheRecipePack
   id: SalvageSecurityBoards

@@ -1,0 +1,40 @@
+# job exclusive
+
+- type: listing
+  id: uplinkPsiBreaker
+  name: uplink-psibreaker-name
+  description: uplink-psibreaker-desc
+  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi, state: icon }
+  productEntity: WeaponPistolPsiBreaker
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    makeHidden: true
+    whitelist:
+    - Chemist
+    - Botanist
+
+- type: listing
+  id: uplinkTrinity
+  name: uplink-trinity-name
+  description: uplink-trinity-desc
+  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Revolvers/faith.rsi, state: icon }
+  productEntity: WeaponRevolverTrinity
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6 # can be bought with hhg on discount :)
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    makeHidden: true
+    whitelist:
+    - Chaplain
