@@ -4,6 +4,8 @@ using Robust.Shared.Prototypes;
 using Content.Shared._Impstation.Traits; // Imp - Subcategories
 using Content.Shared.Humanoid.Prototypes; // DeltaV - Trait species hiding
 using Content.Shared.Tag; // imp traits
+using Content.Shared._DV.Traits.Conditions; // qb edit
+using Content.Shared._DV.Traits.Effects; // qb edit
 
 namespace Content.Shared.Traits;
 
@@ -91,4 +93,18 @@ public sealed partial class TraitPrototype : IPrototype
     /// </summary>
     [DataField]
     public HashSet<ProtoId<TraitSubcategoryPrototype>> Subcategories = [];
+
+    // qb edit
+    [DataField]
+    public int Priority;
+
+    [DataField]
+    public List<BaseTraitCondition> Conditions = new();
+
+    [DataField]
+    public List<BaseTraitEffect> Effects = new();
+
+    [DataField]
+    public HashSet<ProtoId<TraitPrototype>> Conflicts = new();
+    // qb edit end
 }

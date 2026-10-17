@@ -1,4 +1,5 @@
 - type: traitCategory
   id: SignatureFonts
   name: trait-category-fonts
+  accentColor: "#FCD34D" # qb edit
   maxTraitPoints: 1
