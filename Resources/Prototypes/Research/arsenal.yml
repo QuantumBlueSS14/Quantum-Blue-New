@@ -67,6 +67,7 @@
   - WeaponDisabler
   - WeaponShotgunKammererBeanbag #imp
   - WeaponShotgunEnforcerBeanbag #imp
+  - BorgModuleSecurityNonlethal # QB
 
 #- type: technology # imp - combining draconic and uranium munitions research
 #  id: UraniumMunitions
@@ -105,6 +106,7 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
+  - BorgModuleSecurityLethal # QB
 
 - type: technology
   id: ExplosiveTechnology
