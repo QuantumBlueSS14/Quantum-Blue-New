@@ -31,7 +31,7 @@
   equipment:
     ears: ClothingHeadsetBrigmedic
     id: BrigmedicPDA
-    belt: ClothingBeltMedicalEMTFilled
+    # belt: ClothingBeltMedicalEMTFilled # QB - they have options now
 
 - type: chameleonOutfit
   id: BrigmedicChameleonOutfit

@@ -18,12 +18,12 @@
                 sprite: Clothing/Eyes/Hud/sec.rsi
                 state: icon
               doAfter: 5
-            - tag: Sunglasses #imp
-              name: construction-graph-tag-sun-glasses
-              icon:
-                sprite: Clothing/Eyes/Glasses/sunglasses.rsi
-                state: icon
-              doAfter: 5
+            # - tag: Sunglasses # QB - why.
+            #   name: construction-graph-tag-sun-glasses
+            #   icon:
+            #     sprite: _QB/Clothing/Eyes/Glasses/sunglasses.rsi # QB
+            #     state: icon
+            #   doAfter: 5
             - material: Cable
               amount: 5
               doAfter: 5

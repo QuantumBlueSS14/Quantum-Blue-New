@@ -98,7 +98,7 @@
   name: secglasses box
   parent: BoxCardboard
   id: BoxSecglasses
-  description: A box of security glasses.
+  description: A box of security sunglasses. # QB - used to be glasses
   components:
   - type: EntityTableContainerFill
     containers:

@@ -1,26 +1,31 @@
 - type: vendingMachineInventory
   id: DetDrobeInventory
-  startingInventory:
-    ClothingUniformJumpsuitDetective: 2
-    ClothingUniformJumpskirtDetective: 2
-    ClothingShoesColorBrown: 2
+  startingInventory: # QB - Just a comment to explain that i reorganized this whole thing but didn't comment stuff in/out properly because it'd be a fucking nightmare to look at/sort through
+    ClothingHeadsetSecurity: 2
+    ClothingBackpackSecurity: 2
+    ClothingBackpackSatchelSecurity: 2
+    ClothingBackpackDuffelSecurity: 2
+    ClothingHandsGlovesLatex: 2
+    ClothingShoesBootsJack: 2
+    ClothingShoesBootsLaceup: 2
+    ClothingShoesLeather: 2
+    ClothingShoesHeelsBlack: 1
+    ClothingOuterCoatFieldJacket: 1 #imp
     ClothingOuterCoatDetectiveLoadout: 1
     ClothingOuterCoatDetectiveLoadoutGrey: 1
-    ClothingHeadHatFedoraBrown: 2
-    ClothingUniformJumpsuitDetectiveGrey: 2
-    ClothingUniformJumpskirtDetectiveGrey: 2
-    ClothingUniformDetectiveSuit: 2 #imp
-    ClothingUniformDetectiveSuitSkirt: 2 #imp
-    ClothingUniformMiamiVice: 2 #imp
-    ClothingUniformMiamiViceSkirt: 2 #imp
-    ClothingOuterCoatFieldJacket: 1 #imp
     ClothingOuterVestDetective: 1
-    ClothingNeckTieDet: 2
+    ClothingUniformJumpsuitDetectiveQB: 3 # QB jumpsuit additions start
+    ClothingUniformJumpskirtDetectiveQB: 3
+    ClothingUniformJumpsuitDetectiveTurtleneckQB: 3
+    ClothingUniformJumpskirtDetectiveTurtleneckQB: 3
+    ClothingUniformJumpsuitDetectiveSuitQB: 3
+    ClothingUniformJumpskirtDetectiveSuitQB: 3
+    ClothingUniformJumpsuitDetectiveMiamiQB: 3
+    ClothingUniformJumpskirtDetectiveMiamiQB: 3 # QB jumpsuit additions end
+    ClothingHeadHatFedoraBrown: 2
     ClothingHeadHatFedoraGrey: 2
-    ClothingHandsGlovesColorBlack: 2
-    ClothingHandsGlovesLatex: 2
-    ClothingHeadsetSecurity: 2
-    ClothingNeckScarfStripedBlack: 2
     ClothingHeadDeerstalker: 2 #imp
+    ClothingNeckScarfStripedBlack: 2
+    ClothingNeckScarfStripedRed: 2 # QB
   contrabandInventory:
     ToyFigurineDetective: 1

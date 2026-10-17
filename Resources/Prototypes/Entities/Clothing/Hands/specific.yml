@@ -10,9 +10,9 @@
       - ClothMade
       - Recyclable
     - type: Sprite
-      sprite: Clothing/Hands/Gloves/Color/black.rsi
+      sprite: _QB/Clothing/Hands/Gloves/Color/black.rsi # QB
     - type: Clothing
-      sprite: Clothing/Hands/Gloves/Color/black.rsi
+      sprite: _QB/Clothing/Hands/Gloves/Color/black.rsi # QB
     - type: ChameleonClothing
       slot: [gloves]
       default: ClothingHandsGlovesColorBlack

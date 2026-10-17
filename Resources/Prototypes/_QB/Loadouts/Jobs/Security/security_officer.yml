@@ -1,0 +1,76 @@
+# Uniform
+## Jumpsuit
+
+- type: loadout
+  id: SecurityOfficerJumpsuitDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: SecurityOfficerJumpsuitGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecGreyQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: SecurityOfficerJumpsuitBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlueQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: SecurityOfficerJumpsuitTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecTurtleneckQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: SecurityOfficerJumpsuitSeniorQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecSeniorQB
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: SecurityOfficerJumpsuitFormalQB
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecFormalSuitQB
+  groupBy: "jumpsuit"
+
+## Jumpskirt
+
+- type: loadout
+  id: SecurityOfficerJumpskirtDefaultQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: SecurityOfficerJumpskirtGreyQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecGreyQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: SecurityOfficerJumpskirtBlueQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecBlueQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: SecurityOfficerJumpskirtTurtleneckQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecTurtleneckQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: SecurityOfficerJumpskirtSeniorQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecSeniorQB
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: SecurityOfficerJumpskirtFormalQB
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecFormalSuitQB
+  groupBy: "jumpskirt"
