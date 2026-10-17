@@ -65,7 +65,7 @@
         mask:
         - ItemMask
   - type: RadiationSource # QB
-    intensity: 0.4
+    intensity: 0.2
     slope: 1
     # QB end
 
