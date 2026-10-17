@@ -25,6 +25,8 @@
   recipeUnlocks:
   - BorgModuleSecurityInvestigation
   - ForensicPad
+  - CrayonChalk
+  - BoxEvidenceMarkers
 
 # Tier 3
 - type: technology

@@ -62,6 +62,13 @@
     - item: SecurityWhistle
     - item: LauncherCitationator
     - item: TicketPad
+      hand:
+        emptyRepresentative: TicketPad
+        emptyLabel: borg-slot-ticket-empty
+        whitelist:
+          tags:
+          - Folder
+          - SecTicket
   - type: BorgModuleIcon
     icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: patrol-module }
 
@@ -80,7 +87,6 @@
     - item: FlashlightSecliteBorg
     - item: HoloprojectorSecurityBorg
     - item: BorgHandheldGPSBasic
-    - item: HandheldStationMapUnpowered
     - item: RadioHandheldSecurity
   - type: BorgModuleIcon
     icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: utility-module }
@@ -155,6 +161,21 @@
         whitelist:
           components:
           - ForensicPad
+    - item: CrayonChalk
+      hand:
+        emptyRepresentative: CrayonChalk
+        emptyLabel: borg-slot-forensic-chalk-empty
+        whitelist:
+          components:
+          - Crayon
+    - item: BoxEvidenceMarkers
+      hand:
+        emptyRepresentative: EvidenceMarkerOne
+        emptyLabel: borg-slot-evidence-marker-empty
+        whitelist:
+          tags:
+          - EvidenceMarker
+          - EvidenceMarkerBox
     - item: ForensicScanner
     - item: FlippoLighter
     - item: Cigar
@@ -186,7 +207,7 @@
         whitelist:
           components:
           - Sticky # c4, seismic, and breaching charge
-    - item: CableDetStack # needs more logic so it can't be a free hand when used up
+    - item: CableDetStack10 # needs more logic so it can't be a free hand when used up
       hand:
         emptyRepresentative: CableDetStack
         emptyLabel: borg-slot-detonator-cable-empty

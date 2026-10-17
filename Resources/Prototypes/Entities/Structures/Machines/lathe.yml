@@ -429,6 +429,7 @@
     - SecurityDisablers
     - SecurityAmmoQB #qb
     - SecurityBorgModules # qb
+    - Investigation # qb
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

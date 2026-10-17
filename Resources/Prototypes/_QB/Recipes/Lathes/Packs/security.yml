@@ -22,3 +22,10 @@
   - BorgModuleSecurityLethal
   - BorgModuleSecurityInvestigation
   - BorgModuleSecurityBreaching
+
+- type: latheRecipePack
+  id: Investigation
+  recipes:
+  - ForensicPad
+  - CrayonChalk
+  - BoxEvidenceMarkers

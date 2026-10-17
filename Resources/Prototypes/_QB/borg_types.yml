@@ -26,6 +26,7 @@
   addComponents:
   - type: ShowMindShieldIcons
   - type: ShowCriminalRecordIcons
+  - type: FlashImmunity
 
   # Visual
   inventoryTemplateId: borgSec
