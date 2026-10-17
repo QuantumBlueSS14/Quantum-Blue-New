@@ -54,3 +54,22 @@
       chance: 0.9
       minimumEntitiesSpawned: 3
       maximumEntitiesSpawned: 10
+
+- type: entity
+  name: Mosquito Vent Spawner (angry)
+  id: MosquitoAngryVentSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _QB/Mobs/Animals/mosquito.rsi
+          state: icon
+        - state: timed
+    - type: Timer
+    - type: ClusterSpawner
+      prototypes:
+        - MobMosquitoAngry
+      chance: 0.9
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3

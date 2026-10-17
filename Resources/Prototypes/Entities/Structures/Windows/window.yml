@@ -250,6 +250,8 @@
   - type: Icon
     sprite: _QB/Structures/Windows/directional.rsi # QB
     state: frosted_window
+  - type: Occluder # QB
+    boundingBox: "-0.5,-0.5,0.5,-0.28125"
   - type: StaticPrice
     price: 35
 
