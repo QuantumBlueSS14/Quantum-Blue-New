@@ -18,6 +18,9 @@
   - type: Access
     tags:
     - Maintenance
+  - type: Repairable
+    doAfterDelay: 5
+    fuelCost: 25
   # sounds and speech
   - type: Speech
     speechVerb: Robotic
@@ -68,21 +71,23 @@
         disableEject: true
   - type: UnpoweredFlashlight
   - type: PointLight
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
     enabled: false
     radius: 4
     softness: 1.6
     color: red
   # recycling
-  #- type: CollideMaterialReclaimer # doesn't work for whatever reason
+  - type: CollideMaterialReclaimer # doesn't work for whatever reason
   - type: MaterialReclaimer
     powered: true
     enabled: true
-    scaleProcessSpeed: false #instant!
-    minimumProcessDuration: 0
+    scaleProcessSpeed: true # not instant, he's a little guy
+    minimumProcessDuration: 1
+    reclaimMaterials: true
     whitelist:
       components:
       - PhysicalComposition
-      - MobState
       - SpaceGarbage
       tags:
       - Trash
@@ -92,13 +97,16 @@
       - Material
       - Pda
       - IdCard
+      - MobState # cannot recycle corpses
       tags:
       - HighRiskItem
     sound:
       path: /Audio/Effects/saw.ogg
       params:
-        volume: -3
-    cutOffSound: true
+        volume: -1
+    cutOffSound: false
+  - type: MaterialStorage
+    insertOnInteract: false
   - type: Body
     thermalVisibility: false
   - type: StatusEffects
