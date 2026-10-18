@@ -57,7 +57,7 @@
         emptyRepresentative: Handcuffs
         emptyLabel: borg-slot-handcuffs-empty
         whitelist:
-          components: # this either
+          components:
           - Handcuff
     - item: SecurityWhistle
     - item: LauncherCitationator
@@ -111,6 +111,13 @@
         whitelist:
           tags:
           - GrenadeFlashBang
+    - item: Handcuffs
+      hand:
+        emptyRepresentative: Handcuffs
+        emptyLabel: borg-slot-handcuffs-empty
+        whitelist:
+          components:
+          - Handcuff
   - type: BorgModuleIcon
     icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: nonlethal-module }
 
@@ -133,6 +140,13 @@
         whitelist:
           components:
           - Blocking # any shield
+    - item: Bola
+      hand:
+        emptyRepresentative: Bola
+        emptyLabel: borg-slot-bola-empty
+        whitelist:
+          components:
+          - Ensnaring # this component only exists on bola and... anomalocarid kidneys
     - item: GrenadeStinger
       hand:
         emptyRepresentative: GrenadeStinger
@@ -206,13 +220,23 @@
         emptyLabel: borg-slot-breaching-empty
         whitelist:
           components:
-          - Sticky # c4, seismic, and breaching charge
-    - item: CableDetStack10 # needs more logic so it can't be a free hand when used up
+          - Sticky # c4, seismic, and breaching charge as well as detonator cap
+    - item: CableDetStack10
       hand:
         emptyRepresentative: CableDetStack
         emptyLabel: borg-slot-detonator-cable-empty
         whitelist:
           tags:
           - Payload # the only tag the cable has
+#    - item: Null # break in case of "security cyborgs need to build grenades"
+#      hand:
+#        emptyRepresentative: WiredDetonator
+#        emptyLabel: borg-slot-detonator-empty
+#        whitelist:
+#          components:
+#          - PayloadCase
+#          - PayloadTrigger
+    - item: NetworkConfigurator
+    - item: RemoteSignaller
   - type: BorgModuleIcon
     icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: breaching-module }

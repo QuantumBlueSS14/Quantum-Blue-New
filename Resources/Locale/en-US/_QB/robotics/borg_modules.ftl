@@ -9,3 +9,4 @@ borg-slot-smokable-empty = Smokable
 borg-slot-breaching-empty = Breaching Charge
 borg-slot-detonator-cable-empty = Detonator Cord
 borg-slot-shield-empty = Shield
+borg-slot-bola-empty = Bola
