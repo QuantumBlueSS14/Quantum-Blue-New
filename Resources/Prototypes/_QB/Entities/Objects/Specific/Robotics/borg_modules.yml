@@ -228,14 +228,14 @@
         whitelist:
           tags:
           - Payload # the only tag the cable has
-#    - item: Null # break in case of "security cyborgs need to build grenades"
-#      hand:
-#        emptyRepresentative: WiredDetonator
-#        emptyLabel: borg-slot-detonator-empty
-#        whitelist:
-#          components:
-#          - PayloadCase
-#          - PayloadTrigger
+    - item: Null # if this ever goes wrong blame Matt
+      hand:
+        emptyRepresentative: WiredDetonator
+        emptyLabel: borg-slot-detonator-empty
+        whitelist:
+          components:
+          - PayloadCase
+          - PayloadTrigger
     - item: NetworkConfigurator
     - item: RemoteSignaller
   - type: BorgModuleIcon
