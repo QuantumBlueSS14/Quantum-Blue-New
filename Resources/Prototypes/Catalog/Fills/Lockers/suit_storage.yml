@@ -14,7 +14,8 @@
   id: FillSuitStorageEVA
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitEVA
     - id: ClothingHeadHelmetEVA
     - id: ClothingMaskBreath
@@ -34,7 +35,8 @@
   id: FillSuitStorageEVAAlternate
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitEVA
     - id: ClothingHeadHelmetEVALarge
     - id: ClothingMaskBreath
@@ -54,7 +56,8 @@
   id: FillSuitStorageEVAEmergency
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterSuitEmergency
     - id: ClothingMaskBreath
 
@@ -73,7 +76,8 @@
   id: FillSuitStorageEVAPrisoner
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitEVAPrisoner
     - id: ClothingHeadHelmetEVALarge
     - id: ClothingMaskBreath
@@ -93,7 +97,8 @@
   id: FillSuitStorageEVASyndicate
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterEVASuitSyndicate
     - id: ClothingHeadHelmetSyndicate
     - id: ClothingMaskGasSyndicate
@@ -113,7 +118,8 @@
   id: FillSuitStorageEVAPirate
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitPirateEVA
     - id: ClothingMaskGas
 
@@ -133,6 +139,7 @@
   table: !type:AllSelector
     children:
     - id: JetpackVoidFilled
+    - id: QuantumTankSelector # QB
     - id: ClothingOuterHardsuitAncientEVA
     - id: ClothingHeadHelmetAncient
     - id: ClothingMaskBreath
@@ -181,7 +188,8 @@
   id: FillSuitStorageSecurity
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitSecurity
     - id: ClothingMaskGasSecurity #imp
     - id: JetpackSecurityFilled #imp
@@ -294,7 +302,8 @@
   id: FillSuitStorageSyndie
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitSyndie
     - id: ClothingShoesBootsMagSyndie
     - id: ClothingMaskGasSyndicate
@@ -314,7 +323,8 @@
   id: FillSuitStoragePirateCap
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingOuterHardsuitPirateCap
     - id: ClothingMaskGas
 
@@ -333,7 +343,8 @@
   id: FillSuitStorageWizard
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingMaskBreath
     # TODO: Gone until reworked to have no space protection
     #- id: ClothingOuterHardsuitWizard

@@ -35,7 +35,8 @@
           amount: 2
         - id: ClothingOuterSuitFire
           amount: 2
-        - id: OxygenTankFilled
+      # - id: OxygenTankFilled # QB comment comment
+        - id: QuantumTankSelector # QB - replaces oxy tanks
           amount: 2
 
 - type: entity
