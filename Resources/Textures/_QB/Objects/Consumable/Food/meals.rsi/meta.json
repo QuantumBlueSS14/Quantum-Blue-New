@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "yell at me if I havent put the copyright here yet",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "buttersteak"
+        },
+        {
+            "name": "buttersteakraw"
+        }
+    ]
+}
