@@ -12,7 +12,7 @@
     flavors:
       - butter
   - type: Sprite
-    sprite: Objects/Consumable/Food/meals.rsi
+    sprite: _Wizden/Objects/Consumable/Food/meals.rsi
     state: butteronastick
   - type: SolutionContainerManager
     solutions:
