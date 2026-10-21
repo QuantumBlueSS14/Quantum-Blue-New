@@ -26,7 +26,6 @@ using Content.Server._CD.Records; // CD - Character Records
 using Content.Shared._CD.Records; // CD - Character Records
 using Content.Shared._Impstation.Notifier; // imp - notifier
 using Content.Shared.FixedPoint; // CD - Allergies
-using Content.Shared._DV.Tips; // DV - Tips
 using Content.Shared._DV.Traits; // DV - Traits
 
 namespace Content.Server.Database

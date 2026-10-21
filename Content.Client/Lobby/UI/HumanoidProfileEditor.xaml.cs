@@ -873,7 +873,6 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsFacialHair();
 
             // Begin CD - Character Records
-            UpdateHeightControls();
             UpdateCDAllergies();
             _recordsTab.Update(profile);
             // End CD - Character Records
