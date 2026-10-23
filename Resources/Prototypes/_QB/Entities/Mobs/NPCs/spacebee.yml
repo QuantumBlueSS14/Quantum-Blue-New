@@ -124,6 +124,10 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 7
+    baseWeightlessFriction: 0.2
+    baseWeightlessModifier: 1
+  - type: MovementIgnoreGravity
+    weightless: true
   - type: Fixtures
     fixtures:
       fix1:
