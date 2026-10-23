@@ -1,0 +1,361 @@
+# Security
+## Cadet
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpskirtCadetQB
+  name: cadet uniform
+  description: Standard security cadet uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/cadet.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/cadet.rsi
+
+
+## Security Officer
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtSecQB
+  name: security uniform
+  description: Standard security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtSecBlueQB
+  name: blue security uniform
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_blue.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_blue.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtSecGreyQB
+  name: grey security uniform
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_grey.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_grey.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtSecTurtleneckQB
+  name: security turtleneck
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_turt.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_turt.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtSecSeniorQB
+  name: security senior uniform
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_senior.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_senior.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtSecFormalSuitQB
+  name: security formal suit
+  description: Formal security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_formal.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/security_formal.rsi
+
+
+## Prison Guard
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtPrisonGuardQB
+  name: prison guard uniform
+  description: Standard prison guard uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtPrisonGuardDarkQB
+  name: prison guard dark uniform
+  description: Alternate prison guard uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_dark.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_dark.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtPrisonGuardTurtleneckQB
+  name: prison guard turtleneck
+  description: Alternate prison guard uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_turt.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_turt.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtPrisonGuardAttireQB
+  name: prison guard's formal attire
+  description: Alternate prison guard uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_attire.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/prisonguard_attire.rsi
+
+
+## Corpsman
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtCorpsmanQB
+  name: corpsman uniform
+  description: Standard security corpsman personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtCorpsmanWhiteQB
+  name: white corpsman uniform
+  description: Alternate security corpsman personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_white.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_white.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtCorpsmanTurtleneckQB
+  name: corpsman turtleneck
+  description: Alternate security corpsman personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_turt.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_turt.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtCorpsmanSeniorQB
+  name: corpsman senior uniform
+  description: Alternate security corpsman personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_senior.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/corpsman_senior.rsi
+
+
+## Detective
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtDetectiveQB
+  name: detective uniform
+  description: Standard station detective uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtDetectiveTurtleneckQB
+  name: detective turtleneck
+  description: Alternate station detective uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_turt.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_turt.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpskirtDetectiveProQB
+  name: professional detective outfit
+  description: Alternate station detective uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_pro.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_pro.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtDetectiveSuitQB
+  name: detective suit
+  description: Alternate station detective uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_suit.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_suit.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtDetectiveMiamiQB
+  name: miami vice suit
+  description: Alternate station detective uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_miamivice.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/detective_miamivice.rsi # QB
+
+
+## Warden
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtWardenQB
+  name: warden uniform
+  description: Standard station security warden uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtWardenBlueQB
+  name: blue warden uniform
+  description: Alternate station security warden uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_blue.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_blue.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtWardenGreyQB
+  name: grey warden uniform
+  description: Alternate station security warden uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_grey.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_grey.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtWardenTurtleneckQB
+  name: warden turtleneck
+  description: Alternate station security warden uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_turt.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_turt.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtWardenAttireQB
+  name: warden's formal attire
+  description: Formal station security warden uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_attire.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/warden_attire.rsi # QB
+
+
+## Head of Security
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtHosQB
+  name: head of security uniform
+  description: Standard head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtHosBlueQB
+  name: blue head of security uniform
+  description: Alternate head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_blue.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_blue.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtHosGreyQB
+  name: grey head of security uniform
+  description: Alternate head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_grey.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_grey.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtHosTurtleneckQB
+  name: head of security turtleneck
+  description: Alternate head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_turt.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_turt.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtHosFormalSuitQB
+  name: head of security formal suit
+  description: Formal head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_formal.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_formal.rsi # QB
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpskirtHosParadeSuitQB
+  name: head of security parade suit
+  description: Formal head of security uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_parade.rsi # QB
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpskirts/hos_parade.rsi # QB

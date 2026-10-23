@@ -38,23 +38,23 @@
   - GroupTankHarnessWithOuterwear
 
 # Security
-- type: roleLoadout
-  id: JobBrigmedic
-  groups:
-  - BrigmedicHead
-  - MedicalMask
-  - BrigmedicNeck
-  - BrigmedicJumpsuit
-  - BrigmedicOuterClothing
-  - MedicalGloves
-  - BrigmedicShoes
-  - BrigmedicBackpack
-  - SecurityEyewear
-  - SurvivalBrigmedic
-  - Trinkets
-  - GroupSpeciesBreathToolMedSec
-  - GroupBreathToolDecapoid
-  - GroupTankHarnessWithOuterwear
+# - type: roleLoadout # QB - moved to our namespace
+#   id: JobBrigmedic
+#   groups:
+#   - BrigmedicHead
+#   - MedicalMask
+#   - BrigmedicNeck
+#   - BrigmedicJumpsuit
+#   - BrigmedicOuterClothing
+#   - MedicalGloves
+#   - BrigmedicShoes
+#   - BrigmedicBackpack
+#   - SecurityEyewear
+#   - SurvivalBrigmedic
+#   - Trinkets
+#   - GroupSpeciesBreathToolMedSec
+#   - GroupBreathToolDecapoid
+#   - GroupTankHarnessWithOuterwear
 
 # Service
 - type: roleLoadout

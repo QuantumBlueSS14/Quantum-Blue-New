@@ -35,10 +35,10 @@
 - type: latheRecipePack
   id: ClothingJustice
   recipes:
-  # CJ
-  - ClothingUniformJumpsuitChiefJusticeFormal
-  - ClothingUniformJumpskirtCJFormal
-  - ClothingUniformJumpsuitChiefJusticeWhite
+  # CJ # QB - commented all these out as they're only used for Warden and we've got our own resprited versions
+  # - ClothingUniformJumpsuitChiefJusticeFormal
+  # - ClothingUniformJumpskirtCJFormal
+  # - ClothingUniformJumpsuitChiefJusticeWhite
   # Clerk
   - ClothingUniformJumpsuitClerk
   - ClothingUniformJumpskirtClerk
