@@ -1,12 +1,15 @@
 - type: traitCategory
   id: Disabilities
   name: trait-category-disabilities
+  accentColor: "#FDA4AF" # qb edit
 
 - type: traitCategory
   id: SpeechTraits
   name: trait-category-speech
+  accentColor: "#7DD3FC" # qb edit
   maxTraitPoints: 2
 
 - type: traitCategory
   id: Quirks
   name: trait-category-quirks
+  accentColor: "#FDBA74" # qb edit

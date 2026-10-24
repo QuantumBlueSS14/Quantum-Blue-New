@@ -7,6 +7,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Traits;
+using Content.Shared._QB.Traits; // qb edit
 using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -421,60 +422,25 @@ namespace Content.Shared.Preferences
             };
         }
 
+        // qb edit
         public HumanoidCharacterProfile WithTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
-            // null category is assumed to be default.
-            if (!protoManager.TryIndex(traitId, out var traitProto))
+            var traits = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences) { traitId };
+            var valid = TraitSelection.Validate(traits, protoManager);
+            if (!traits.SetEquals(valid))
                 return new(this);
 
-            var category = traitProto.Category;
+            return new(this) { _traitPreferences = traits };
+        }
 
-            // Category not found so dump it.
-            TraitCategoryPrototype? traitCategory = null;
-
-            if (category != null && !protoManager.Resolve(category, out traitCategory))
-                return new(this);
-
-            var list = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences) { traitId };
-
-            if (traitCategory == null || traitCategory.MaxTraitPoints < 0)
-            {
-                return new(this)
-                {
-                    _traitPreferences = list,
-                };
-            }
-
-            var count = 0;
-            foreach (var trait in list)
-            {
-                // If trait not found or another category don't count its points.
-                if (!protoManager.TryIndex<TraitPrototype>(trait, out var otherProto) ||
-                    otherProto.Category != traitCategory)
-                {
-                    continue;
-                }
-
-                // Begin Imp addition: If trait is one of the excluded traits for this, dump it
-                if (traitProto != otherProto && traitProto.Subcategories.Overlaps(otherProto.Subcategories))
-                {
-                    return new(this);
-                }
-                // End Imp addition
-
-                count += otherProto.Cost;
-            }
-
-            if (count > traitCategory.MaxTraitPoints && traitProto.Cost != 0)
-            {
-                return new(this);
-            }
-
+        public HumanoidCharacterProfile WithTraitPreferences(IEnumerable<ProtoId<TraitPrototype>> traits, IPrototypeManager protoManager)
+        {
             return new(this)
             {
-                _traitPreferences = list,
+                _traitPreferences = new(TraitSelection.Validate(traits, protoManager)),
             };
         }
+        // qb edit end
 
         public HumanoidCharacterProfile WithoutTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
@@ -701,38 +667,7 @@ namespace Content.Shared.Preferences
         /// </summary>
         public List<ProtoId<TraitPrototype>> GetValidTraits(IEnumerable<ProtoId<TraitPrototype>> traits, IPrototypeManager protoManager)
         {
-            // Track points count for each group.
-            var groups = new Dictionary<string, int>();
-            var result = new List<ProtoId<TraitPrototype>>();
-
-            foreach (var trait in traits)
-            {
-                if (!protoManager.TryIndex(trait, out var traitProto))
-                    continue;
-
-                // Always valid.
-                if (traitProto.Category == null)
-                {
-                    result.Add(trait);
-                    continue;
-                }
-
-                // No category so dump it.
-                if (!protoManager.Resolve(traitProto.Category, out var category))
-                    continue;
-
-                var existing = groups.GetOrNew(category.ID);
-                existing += traitProto.Cost;
-
-                // Too expensive.
-                if (existing > category.MaxTraitPoints)
-                    continue;
-
-                groups[category.ID] = existing;
-                result.Add(trait);
-            }
-
-            return result;
+            return TraitSelection.Validate(traits, protoManager); // qb edit
         }
 
         public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection)

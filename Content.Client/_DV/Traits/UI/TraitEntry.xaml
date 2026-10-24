@@ -1,0 +1,32 @@
+<PanelContainer xmlns="https://spacestation14.io"
+                StyleClasses="TraitsEntryPanel"
+                HorizontalExpand="True"
+                Margin="0 0 0 4">
+
+    <BoxContainer Orientation="Horizontal"
+                  HorizontalExpand="True"
+                  Margin="10 8">
+        <BoxContainer VerticalAlignment="Top" SetWidth="24" Margin="0 2 10 0">
+            <CheckBox Name="TraitCheckbox"
+                      StyleClasses="TraitsEntryCheckbox"
+                      VerticalAlignment="Center"/>
+            <TextureRect Name="LockIcon" SetSize="20 20" Stretch="KeepAspectCentered"
+                         TexturePath="/Textures/Interface/VerbIcons/lock.svg.192dpi.png" Visible="False"/>
+        </BoxContainer>
+        <BoxContainer Orientation="Vertical"
+                      HorizontalExpand="True"
+                      VerticalAlignment="Center"
+                      Name="TraitInfo">
+            <BoxContainer Orientation="Horizontal">
+                <Label Name="TraitNameLabel"
+                       StyleClasses="TraitsEntryNameLabel"/>
+                <Control HorizontalExpand="True"/>
+                <Label Name="TraitCostLabel"
+                       StyleClasses="TraitsEntryCostLabel"/>
+            </BoxContainer>
+            <RichTextLabel Name="TraitDescriptionLabel"
+                           StyleClasses="TraitsEntryDescriptionLabel"
+                           Margin="0 4 0 0"/>
+        </BoxContainer>
+    </BoxContainer>
+</PanelContainer>
