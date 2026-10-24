@@ -43,3 +43,5 @@
   contrabandInventory:
     ClothingNeckScarfStripedLesbianLong: 2
     ClothingUniformJumpskirtColorRainbow: 2
+  emaggedInventory: # QB add emag inventory
+    PlushieValid: 2

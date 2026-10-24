@@ -38,20 +38,20 @@
     - id: ClothingOuterArmorCaptainCarapace
     - id: BoxCaptainCircuitboards
     - id: DoorRemoteCustom
-    - id: MedalCase
+    # - id: MedalCase # QB - we place those in the vault
     - id: PinpointerNuclear
 #    - id: NukeDisk #imp edit: Nuke Disk relocated to glass_box.yml in imp namespace
     - id: PlushieNuke
       prob: 0.1
     - id: RubberStampCaptain
-    - id: SpaceCash1000
-    - id: WeaponDisabler
+    # - id: SpaceCash1000 # QB - unnecessary
+    # - id: WeaponDisabler # QB - unnecessary
     - id: ClothingEyesGlassesCommand
     - id: HeadSkeleton # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
         max: 15
-    - id: TicketPad #imp special
+    # - id: TicketPad #imp special # QB why?
     - id: PersonalAILearnerCommand #impspecial
     - id: PrinterDocFlatpack  # Corvax-Printer
 
@@ -72,7 +72,8 @@
     - id: ClothingOuterHardsuitCap
     - id: ClothingMaskGasCaptain
     - id: JetpackCaptainFilled
-    - id: OxygenTankCommandFilled
+    # - id: OxygenTankCommandFilled # QB - replaced with selector
+    - id: QuantumTankSelectorCommand # QB
 
 # No laser locker, used when the antique laser is placed in the special display crate
 - type: entity
@@ -181,7 +182,8 @@
     - id: ClothingOuterHardsuitEngineeringWhite
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
-    - id: OxygenTankCommandFilled
+    # - id: OxygenTankCommandFilled # QB - replaced with selector
+    - id: QuantumTankSelectorCommand # QB
 
 # No hardsuit locker
 - type: entity
@@ -238,7 +240,8 @@
     children:
     - id: ClothingMaskBreathMedical
     - id: ClothingOuterHardsuitMedical
-    - id: OxygenTankCommandFilled
+    # - id: OxygenTankCommandFilled # QB - replaced with selector
+    - id: QuantumTankSelectorCommand # QB
 
 # No hardsuit locker
 - type: entity
@@ -289,7 +292,8 @@
     children:
     - id: ClothingMaskBreath
     - id: ClothingOuterHardsuitRd
-    - id: OxygenTankCommandFilled
+    # - id: OxygenTankCommandFilled # QB - replaced with selector
+    - id: QuantumTankSelectorCommand # QB
 
 # No hardsuit locker
 - type: entity
@@ -356,7 +360,8 @@
     - id: ClothingMaskGasSwat
     - id: ClothingOuterHardsuitSecurityRed
     - id: JetpackSecurityFilled
-    - id: OxygenTankCommandFilled # Imp - command tanks
+    # - id: OxygenTankCommandFilled # Imp - command tanks # QB - replaced with selector
+    - id: QuantumTankSelectorCommand # QB
     - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots.
 
 # No hardsuit locker
