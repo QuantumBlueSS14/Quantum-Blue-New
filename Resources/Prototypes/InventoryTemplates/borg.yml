@@ -15,10 +15,10 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.05, -0.22
-    whitelist:
-      tags:
-      - BorgNeck #imp
+    offset: 0.03125, -0.1875 # QB
+    # whitelist: # QB comment
+    #   tags:
+    #   - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # Engineering borg
@@ -39,12 +39,12 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.05, -0.22
-    whitelist:
-      tags:
-        - Medal
-        - TeddyRibbon #imp
-        - BorgNeck #imp
+    offset: 0.03125, -0.25 # QB
+    # whitelist: # QB comment
+    #   tags:
+    #     - Medal
+    #     - TeddyRibbon #imp
+    #     - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # imp start
@@ -66,16 +66,16 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.0, -0.22
-    whitelist:
-      tags:
-      - Medal
-      - TeddyRibbon #imp
-      - BorgNeck #imp
+    offset: 0.03125, -0.3125 # QB
+    # whitelist: # QB comment
+    #   tags:
+    #   - Medal
+    #   - TeddyRibbon #imp
+    #   - BorgNeck #imp
   # 🌟Starlight🌟 end
 # imp end
 
-# salvage borg
+# salvage and cargo borg
 - type: inventoryTemplate
   id: borgTall
   slots:
@@ -93,12 +93,12 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.02, -0.125
-    whitelist:
-      tags:
-        - Medal
-        - TeddyRibbon #imp
-        - BorgNeck #imp
+    offset: 0.03125, -0.125 # QB
+    # whitelist: # QB comment
+    #   tags:
+    #     - Medal
+    #     - TeddyRibbon #imp
+    #     - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 #medical borg
@@ -120,12 +120,12 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.0, -0.125
-    whitelist:
-      tags:
-        - Medal
-        - TeddyRibbon #imp
-        - BorgNeck #imp
+    offset: 0.03125, -0.03125 # QB
+    # whitelist: # QB comment
+    #   tags:
+    #     - Medal
+    #     - TeddyRibbon #imp
+    #     - BorgNeck #imp
   # 🌟Starlight🌟 end
 
 # imp start
