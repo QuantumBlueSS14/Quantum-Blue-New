@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.1
   forkId: ""
   forkVersion: ""
-  time: 10/23/2026 05:42:31
-  entityCount: 16302
+  time: 10/24/2026 06:39:40
+  entityCount: 16303
 maps:
 - 1
 grids:
@@ -14128,9 +14128,14 @@ entities:
       fixtures: {}
   - uid: 7099
     components:
+    - type: MetaData
+      name: Old vault
     - type: Transform
       pos: -24.5,34.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
     - type: DeviceList
       devices:
       - 7706
@@ -16930,6 +16935,8 @@ entities:
       fixtures: {}
   - uid: 7098
     components:
+    - type: MetaData
+      name: Old vault
     - type: Transform
       pos: -25.5,34.5
       parent: 2
@@ -18018,7 +18025,7 @@ entities:
   - uid: 3377
     components:
     - type: Transform
-      pos: 23.229975,-12.896791
+      pos: 23.324121,-12.911767
       parent: 2
 - proto: BoxFolderYellowThreePapers
   entities:
@@ -49940,6 +49947,13 @@ entities:
     - type: Transform
       pos: 23.56364,-13.146791
       parent: 2
+- proto: DoorRemoteResearch
+  entities:
+  - uid: 10507
+    components:
+    - type: Transform
+      pos: 23.282412,-13.8076
+      parent: 2
 - proto: DresserCaptainFilled
   entities:
   - uid: 1930
@@ -81383,7 +81397,7 @@ entities:
   - uid: 14548
     components:
     - type: Transform
-      pos: 23.178759,-13.442964
+      pos: 23.198996,-13.328433
       parent: 2
 - proto: HarmonicaInstrument
   entities:
@@ -84671,7 +84685,7 @@ entities:
   - uid: 2283
     components:
     - type: Transform
-      pos: 23.31626,-14.092288
+      pos: 23.344975,-14.140933
       parent: 2
 - proto: PoppySeeds
   entities:
@@ -96499,31 +96513,43 @@ entities:
   entities:
   - uid: 1045
     components:
+    - type: MetaData
+      name: Service
     - type: Transform
       pos: -20.5,-6.5
       parent: 2
   - uid: 1142
     components:
+    - type: MetaData
+      name: Security
     - type: Transform
       pos: -4.5,-30.5
       parent: 2
   - uid: 1543
     components:
+    - type: MetaData
+      name: Supply
     - type: Transform
       pos: -7.5,-47.5
       parent: 2
   - uid: 2443
     components:
+    - type: MetaData
+      name: Bridge
     - type: Transform
       pos: 34.5,23.5
       parent: 2
   - uid: 2718
     components:
+    - type: MetaData
+      name: AI Core
     - type: Transform
       pos: 20.5,45.5
       parent: 2
   - uid: 3862
     components:
+    - type: MetaData
+      name: Engineering
     - type: Transform
       pos: -37.5,-5.5
       parent: 2
@@ -96532,11 +96558,15 @@ entities:
       - - Engineering
   - uid: 4906
     components:
+    - type: MetaData
+      name: Science
     - type: Transform
       pos: -37.5,25.5
       parent: 2
   - uid: 5794
     components:
+    - type: MetaData
+      name: Medical
     - type: Transform
       pos: 13.5,-6.5
       parent: 2
@@ -109958,16 +109988,25 @@ entities:
     - type: Transform
       pos: 32.5,42.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 1226
   - uid: 2621
     components:
     - type: Transform
       pos: 28.5,42.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 1226
   - uid: 2659
     components:
     - type: Transform
       pos: 30.5,48.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 1226
 - proto: WeaponEnergyTurretAIControlPanel
   entities:
   - uid: 1226
@@ -109976,6 +110015,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 31.5,43.5
       parent: 2
+    - type: DeviceList
+      devices:
+      - 2621
+      - 2619
+      - 2659
 - proto: WeaponEnergyTurretCommand
   entities:
   - uid: 2271
