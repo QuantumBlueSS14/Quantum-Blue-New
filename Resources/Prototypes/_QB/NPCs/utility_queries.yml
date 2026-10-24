@@ -1,0 +1,16 @@
+# for beepsky to baton wanted status
+- type: utilityQuery
+  id: NearbyWanted
+  query:
+    - !type:ComponentQuery
+      components:
+        - type: CriminalRecord
+          statusIcon: SecurityIconWanted # should be wanted but this will baton any status
+  considerations:
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistance
+    - !type:TargetAccessibleCon
+      curve: !type:BoolCurve
+    - !type:TargetInLOSOrCurrentCon
+      curve: !type:BoolCurve
