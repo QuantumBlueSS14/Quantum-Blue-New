@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Created by EmoGarbage404 (github) for Space Station 14. breaching, investigation, patrol, lethal, nonlethal, security utility icons created by rebe83 (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "security"
+        },
+        {
+            "name": "icon-breaching"
+        },
+        {
+            "name": "icon-investigation"
+        },
+        {
+            "name": "icon-patrol"
+        },
+        {
+            "name": "icon-lethal"
+        },
+        {
+            "name": "icon-nonlethal"
+        },
+        {
+            "name": "icon-security-utility"
+        }
+    ]
+
+}

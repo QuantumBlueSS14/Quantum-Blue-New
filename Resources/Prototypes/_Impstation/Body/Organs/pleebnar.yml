@@ -15,7 +15,9 @@
         maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 5
+          Quantity: 3 # QB from 5 to 3
+        - ReagentId: SpaceDrugs # QB add space drugs to organs
+          Quantity: 2
   - type: FlavorProfile
     flavors:
     - cigarettes
@@ -53,7 +55,9 @@
         maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 5
+          Quantity: 3 # QB from 5 to 3
+        - ReagentId: SpaceDrugs # QB add space drugs to organs
+          Quantity: 2
   - type: Tag # goob edit
     tags:
     - Meat
@@ -81,7 +85,9 @@
         maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 5
+          Quantity: 3 # QB from 5 to 3
+        - ReagentId: SpaceDrugs # QB add space drugs to organs
+          Quantity: 2
   - type: Stomach
   - type: Metabolizer
     maxReagents: 3
