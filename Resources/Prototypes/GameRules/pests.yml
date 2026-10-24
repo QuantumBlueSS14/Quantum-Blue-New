@@ -8,6 +8,7 @@
     - id: CockroachMigration
     - id: MouseMigration
     - id: LuggageMigration # imp special
+    - id: JunkBotMigration # qb
     - id: SingleCritter # imp special
     - id: CorpseEjectedFromVents # imp
     - id: DuctSpiderMigration # imp
