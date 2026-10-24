@@ -15,7 +15,7 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.03125, -0.1875 # QB
+    offset: 0.03125, -0.15625 # QB
     # whitelist: # QB comment
     #   tags:
     #   - BorgNeck #imp
@@ -66,7 +66,7 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.03125, -0.3125 # QB
+    offset: 0.03125, -0 # QB
     # whitelist: # QB comment
     #   tags:
     #   - Medal
@@ -93,7 +93,7 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.03125, -0.125 # QB
+    offset: 0.03125, -0.09375 # QB
     # whitelist: # QB comment
     #   tags:
     #     - Medal
@@ -120,7 +120,7 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.03125, -0.03125 # QB
+    offset: 0, -0.125 # QB
     # whitelist: # QB comment
     #   tags:
     #     - Medal
@@ -147,12 +147,11 @@
     uiWindowPos: 0,2
     strippingWindowPos: 0,1
     displayName: neck
-    offset: 0.0, 0.0
+    offset: 0, -0.0625
   # 🌟Starlight🌟 end
 # imp end
 
-#qb start
-# security borg
+# security borg # QB addition
 - type: inventoryTemplate
   id: borgSec
   slots:
@@ -170,18 +169,13 @@
     strippingWindowPos: 0,1
     displayName: neck
     offset: 0.02, -0.125
-    whitelist:
-      tags:
-        - Medal
-        - TeddyRibbon
-        - BorgNeck
   - name: mask
     slotTexture: mask
     slotFlags: MASK
     uiWindowPos: 1,2
     strippingWindowPos: 1,1
     displayName: Mask
-    offset: 0.02, -0.125
+    offset: 0.03125, -0.125 # QB
     whitelist: # yes its just for smoking
       components:
         - Smokable
