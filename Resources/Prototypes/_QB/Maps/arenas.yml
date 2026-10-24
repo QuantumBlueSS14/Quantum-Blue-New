@@ -29,7 +29,7 @@
             Passenger: [ -1, -1 ]
 
 - type: gameMap
-  id: E1M1
+  id: E1M1_QB
   mapName: Episode 1 - Mission 1
   mapPath: /Maps/_QB/Deathmatch/E1M1_QB.yml
   minPlayers: 0
