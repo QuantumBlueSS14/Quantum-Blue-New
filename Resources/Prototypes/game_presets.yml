@@ -169,7 +169,7 @@
   description: death-match-description
   maxPlayers: 15
   showInVote: true
-  supportedMaps: DeathMatchMapPoolImp #imp edit, use our map pool prototype
+  supportedMaps: DeathMatchMapPoolQB # QB edit, use our map pool prototype
   rules:
     - DeathMatch31
 
