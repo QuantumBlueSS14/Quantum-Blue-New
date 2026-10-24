@@ -70,7 +70,8 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitWarden
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingMaskGasSecurity # imp edit, replacing basic gasmask
     - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots
 

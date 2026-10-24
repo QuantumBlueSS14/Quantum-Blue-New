@@ -123,6 +123,7 @@
     - id: ClothingHeadHatParamedicSirenCap #imp
     - id: ClothingHeadHatParamedicSirenBeret #qb
     - id: ClothingOuterHardsuitVoidParamed
+    - id: QuantumTankSelector # QB
     - id: ClothingShoesBootsMag # QB
     - id: ClothingOuterCoatParamedicWB
     - id: ClothingHeadHatParamedicsoft
@@ -130,9 +131,9 @@
     - id: ClothingUniformJumpsuitParamedic
     - id: ClothingUniformJumpskirtParamedic
     - id: ClothingEyesHudMedical
-    - id: ClothingHandsGlovesLatex
+    # - id: ClothingHandsGlovesLatex # QB - go use the vendor, too much fill already
     - id: ClothingHeadsetMedical
-    - id: ClothingMaskSterile
+    # - id: ClothingMaskSterile # QB - go use the vendor, too much fill already
     - id: HandheldGPSBasic
     - id: MedkitFilled
       prob: 0.3
