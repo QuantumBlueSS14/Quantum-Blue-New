@@ -39,8 +39,19 @@
   name: butter on a stick
   result: FoodMealButterOnAStick
   time: 5
-  group: Savory
+  group: Other
   solids:
     FoodKebabSkewer: 1
+    FoodButter: 1
+  recipeType: Assembler
+
+- type: microwaveMealRecipe
+  id: RecipeButterdog
+  name: butterdog
+  result: FoodHotdogButter
+  time: 5
+  group: Other
+  solids:
+    FoodHotdogBun: 1
     FoodButter: 1
   recipeType: Assembler

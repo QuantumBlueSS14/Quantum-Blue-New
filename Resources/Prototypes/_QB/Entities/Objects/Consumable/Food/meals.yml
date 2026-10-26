@@ -82,3 +82,24 @@
     - Raw
     - Meat
 
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodHotdogButter
+  name: butterdog
+  description: Dog with the butter on 'em.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - butter
+      - bread
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meals.rsi
+    state: butterdog
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Butter
+          Quantity: 10
