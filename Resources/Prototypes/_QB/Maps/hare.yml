@@ -16,7 +16,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'QB'
         - type: StationJobs
-          availableJobs: # Total of 42 slots
+          availableJobs: # Total of 43 slots
           # command - 8
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -26,7 +26,7 @@
             HeadOfSecurity: [ 1, 1 ]
             HospitalityDirector: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
-          # service - 8
+          # service - 9
             Bartender: [ 1, 1 ]
             Botanist: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
@@ -35,6 +35,7 @@
             Musician: [ 1, 1 ]
             Janitor: [ 1, 1 ]
             Mime: [ 1, 1 ]
+            Librarian: [1,1]
           # engineering - 4
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 2, 2 ]
