@@ -100,6 +100,32 @@
       food:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 6
+          Quantity: 5
         - ReagentId: Butter
           Quantity: 10
+
+- type: entity
+  name: butter biscuit
+  parent: FoodMealBase
+  id: FoodMealButterBiscuit
+  description: Treat yourself to a little southern comfort.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - dough
+      - butter
+  - type: Sprite
+    sprite: _Wizden/Objects/Consumable/Food/meals.rsi
+    state: butterbiscuit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Butter
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Bread

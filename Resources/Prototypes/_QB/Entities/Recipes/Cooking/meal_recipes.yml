@@ -11,6 +11,17 @@
   reagents:
     FluorosulfuricAcid: 5
   recipeType: Oven
+
+- type: microwaveMealRecipe
+  id: RecipeButterBiscuit
+  name: butter biscuit
+  result: FoodMealButterBiscuit
+  time: 5
+  group: Breakfast
+  solids:
+    FoodDoughSlice: 1
+    FoodButterSlice: 1
+  recipeType: Oven
 #Assembler
 - type: microwaveMealRecipe
   id: RecipeButterSteak

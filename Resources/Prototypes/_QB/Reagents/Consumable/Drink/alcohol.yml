@@ -8,7 +8,7 @@
   color: "#b18b51"
   recognizable: true
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/aleglass.rsi
+    sprite: _QB/Objects/Consumable/Drinks/butterbrew.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
