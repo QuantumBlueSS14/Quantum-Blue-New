@@ -166,13 +166,13 @@
             Brute: 1.5
       # QB changes start
       - !type:Emote
-        emote: Yawn
-        showInChat: true
+        emote: Scream
         probability: 0.1
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectDrowsiness
-        time: 4
-        type: Add
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Arithrazine
+          min: 15
       # QB changes end
 
 - type: reagent
@@ -497,7 +497,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 1 # yes it damages you
+            Slash: 3 # yes it damages you
       # QB end
       - !type:Vomit
         conditions:
