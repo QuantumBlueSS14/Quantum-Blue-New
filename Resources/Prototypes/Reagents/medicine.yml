@@ -60,7 +60,7 @@
         - !type:ReagentCondition
           reagent: Dylovene
           min: 15 # QB 20 to 15
-        probability: 0.02
+        probability: 0.1 # QB 0.02 to 0.1
       - !type:Drunk
         conditions:
         - !type:ReagentCondition
@@ -167,12 +167,23 @@
       # QB changes start
       - !type:Emote
         emote: Scream
-        probability: 0.1
+        probability: 0.05
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
           reagent: Arithrazine
           min: 15
+      - !type:Vomit
+        probability: 0.1
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-nauseous
+        probability: 0.1
+        conditions:
+        - !type:ReagentCondition
+          reagent: Arithrazine
+          min: 1
       # QB changes end
 
 - type: reagent
@@ -298,7 +309,7 @@
           min: 10
       # QB edit start
       - !type:SatiateThirst
-        factor: -30
+        factor: -10
         conditions:
         - !type:ReagentCondition
           reagent: Dermaline
@@ -465,6 +476,21 @@
             Radiation: -1
       - !type:Vomit
         probability: 0.1 # QB from 0.02 to 0.1
+        # QB changes start
+        conditions:
+        - !type:ReagentCondition
+          reagent: Hyronalin
+          min: 15 # so medkit pills don't make you frow up
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-nauseous
+        probability: 0.1
+        conditions:
+        - !type:ReagentCondition
+          reagent: Hyronalin
+          min: 15
+        # QB changes end
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -557,7 +583,7 @@
       - !type:PopupMessage
         type: Local
         messages:
-        - generic-reagent-effect-nauseous
+        #- generic-reagent-effect-nauseous # QB
         - generic-reagent-effect-thirsty
         - generic-reagent-effect-parched
         probability: 0.1
@@ -685,6 +711,35 @@
         damage:
           types:
             Caustic: 0.3
+      # QB changes start
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Phalanximine
+          min: 11
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: Phalanximine
+          min: 11
+        probability: 0.1
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.7
+        sprintSpeedModifier: 0.7
+        conditions:
+        - !type:ReagentCondition
+          reagent: Phalanximine
+          min: 11
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-nauseous
+        probability: 0.1
+        conditions:
+        - !type:ReagentCondition
+          reagent: Phalanximine
+          min: 5
+      # QB changes end
 
 - type: reagent
   id: PolypyryliumOligomers
