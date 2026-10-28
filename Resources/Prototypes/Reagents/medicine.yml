@@ -306,7 +306,6 @@
       - !type:PopupMessage
         type: Local
         messages:
-        - generic-reagent-effect-nauseous
         - generic-reagent-effect-thirsty
         - generic-reagent-effect-parched
         probability: 0.1
@@ -465,12 +464,12 @@
           types:
             Radiation: -1
       - !type:Vomit
-        probability: 0.02
+        probability: 0.1 # QB from 0.02 to 0.1
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Hyronalin
-          min: 30
+          min: 15 # QB from 30 to 15
         damage:
           types:
            Heat: 2
@@ -478,7 +477,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: Hyronalin
-          min: 30
+          min: 15 # QB from 30 to 15
 
 - type: reagent
   id: Ipecac
@@ -494,10 +493,13 @@
     Medicine:
       effects:
       # QB changes start
-      - !type:HealthChange
-        damage:
-          types:
-            Slash: 3 # yes it damages you
+      - !type:ModifyBleed
+        amount: 0.25
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Ipecac
+          min: 1
       # QB end
       - !type:Vomit
         conditions:
