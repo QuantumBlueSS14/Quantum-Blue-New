@@ -67,7 +67,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeCamelSoup
-  name: one day blinding stew # QB name change from camel soup
+  name: One Day Blinding Stew Recipe # QB name change from camel soup
   result: FoodCamelSoup
   group: Soup
   time: 15
