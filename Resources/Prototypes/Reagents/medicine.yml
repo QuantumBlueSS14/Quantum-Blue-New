@@ -221,10 +221,6 @@
           reagent: Bicaridine
           min: 15
       - !type:Drunk
-      # QB changes start
-        time: 2.0
-        type: Add
-      # QB changes end
 
 - type: reagent
   id: Cryoxadone
