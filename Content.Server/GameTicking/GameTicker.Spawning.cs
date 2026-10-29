@@ -202,9 +202,13 @@ namespace Content.Server.GameTicking
 
             if (jobId != null)
             {
-                var ev = new IsJobAllowedEvent(player, new ProtoId<JobPrototype>(jobId));
-                RaiseLocalEvent(ref ev);
-                if (ev.Cancelled)
+                if (!_prototypeManager.TryIndex<JobPrototype>(jobId, out var requestedJob))
+                    return;
+
+                var disallowed = new HashSet<ProtoId<JobPrototype>>();
+                var disallowedEvent = new GetDisallowedJobsEvent(player, disallowed);
+                RaiseLocalEvent(ref disallowedEvent);
+                if (disallowed.Contains(new ProtoId<JobPrototype>(requestedJob.ID)))
                     return;
             }
 
@@ -314,7 +318,7 @@ namespace Content.Server.GameTicking
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false,
+                        null,
                         colorOverride: Color.Gold);
                 }
                 else
@@ -325,7 +329,7 @@ namespace Content.Server.GameTicking
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false);
+                        null);
                 }
             }
 

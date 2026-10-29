@@ -51,10 +51,12 @@ using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Shared.Administration.Logs;
+using Content.Shared.Construction.Prototypes;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
+using Content.Shared._Impstation.Notifier;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
@@ -64,8 +66,8 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Server._Funkystation.Records; // CD - Character Records
-using Content.Shared._Funkystation.Records; // CD - Character Records
+using Content.Server._CD.Records; // QB - Character Records
+using Content.Shared._CD.Records; // QB - Character Records
 
 namespace Content.Server.Database
 {
@@ -93,10 +95,10 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
-                // Begin CD - Character Records
+                // Begin QB - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.CDProfile)
-                // End CD - Character Records
+                // End QB - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -147,7 +149,7 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
-                .Include(p => p.CDProfile) // CD - Character Records
+                .Include(p => p.CDProfile) // QB - Character Records
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -268,6 +270,21 @@ namespace Content.Server.Database
 
         }
 
+        public async Task SaveConstructionFavoritesAsync(NetUserId userId, List<ProtoId<ConstructionPrototype>> constructionFavorites)
+        {
+            await using var db = await GetDb();
+            var prefs = await db.DbContext.Preference.SingleAsync(p => p.UserId == userId.UserId);
+
+            var favorites = new List<string>(constructionFavorites.Count);
+            foreach (var favorite in constructionFavorites)
+            {
+                favorites.Add(favorite.Id);
+            }
+
+            prefs.ConstructionFavorites = favorites;
+            await db.DbContext.SaveChangesAsync();
+        }
+
         private static async Task SetSelectedCharacterSlotAsync(NetUserId userId, int newSlot, ServerDbContext db)
         {
             var prefs = await db.Preference.SingleAsync(p => p.UserId == userId.UserId);
@@ -306,11 +323,11 @@ namespace Content.Server.Database
                 }
             }
 
-            // Begin CD - Chracter Records
+            // Begin QB - Character Records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
-                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords)
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
-            // End CD - Character Records
+            // End QB - Character Records
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -339,8 +356,7 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
-                // #Goobstation - Borg Preferred Name
-                profile.BorgName,
+                "Genero-Bot",
                 profile.Age,
                 sex,
                 gender,
@@ -361,7 +377,7 @@ namespace Content.Server.Database
                 traits.ToHashSet(),
                 loadouts,
                 profile.Enabled,
-                cdRecords // CD - Character Records
+                cdRecords // QB - Character Records
             );
         }
 
@@ -378,8 +394,6 @@ namespace Content.Server.Database
 
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
-            // #Goobstation - Borg Preferred Name
-            profile.BorgName = humanoid.BorgName;
             profile.Species = humanoid.Species;
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
@@ -414,11 +428,11 @@ namespace Content.Server.Database
                         .Select(t => new Trait { TraitName = t })
             );
 
-            // Begin CD - Character Records
+            // Begin QB - Character Records
             profile.CDProfile ??= new CDModel.CDProfile();
             // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
             profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
-            // End CD - Character Records
+            // End QB - Character Records
 
             profile.Loadouts.Clear();
 
@@ -1474,7 +1488,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 ban.LastEditedAt,
                 ban.ExpirationTime,
                 ban.Hidden,
-                new[] { ban.RoleId.Replace(BanManager.JobPrefix, null) },
+                new[] { ban.RoleId.Replace(BanManager.PrefixJob, null).Replace(BanManager.PrefixAntag, null) },
                 MakePlayerRecord(unbanningAdmin),
                 ban.Unban?.UnbanTime);
         }
@@ -1774,7 +1788,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                     NormalizeDatabaseTime(firstBan.LastEditedAt),
                     NormalizeDatabaseTime(firstBan.ExpirationTime),
                     firstBan.Hidden,
-                    banGroup.Select(ban => ban.RoleId.Replace(BanManager.JobPrefix, null)).ToArray(),
+                    banGroup.Select(ban => ban.RoleId.Replace(BanManager.PrefixJob, null).Replace(BanManager.PrefixAntag, null)).ToArray(),
                     MakePlayerRecord(unbanningAdmin),
                     NormalizeDatabaseTime(firstBan.Unban?.UnbanTime)));
             }
@@ -1906,6 +1920,41 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             await db.DbContext.SaveChangesAsync();
             return true;
+        }
+
+        #endregion
+
+        #region Notifier Settings
+
+        public async Task SavePlayerNotifierSettingsAsync(NetUserId userId, PlayerNotifierSettings notifierSettings)
+        {
+            await using var db = await GetDb();
+
+            var currentNotifierData = await db.DbContext.NotifierData
+                .AsSplitQuery()
+                .SingleOrDefaultAsync(p => p.UserId == userId.UserId);
+
+            if (currentNotifierData == null)
+            {
+                currentNotifierData = new NotifierData { UserId = userId };
+                db.DbContext.NotifierData.Add(currentNotifierData);
+            }
+
+            currentNotifierData.NotifierFreetext = notifierSettings.Freetext;
+            currentNotifierData.Enabled = notifierSettings.Enabled;
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<PlayerNotifierSettings> GetPlayerNotifierSettingsAsync(NetUserId userId)
+        {
+            await using var db = await GetDb();
+
+            var notifierData = await db.DbContext.NotifierData.SingleOrDefaultAsync(p => p.UserId == userId.UserId);
+            if (notifierData == null)
+                return new();
+
+            return new(notifierData.NotifierFreetext, notifierData.Enabled);
         }
 
         #endregion

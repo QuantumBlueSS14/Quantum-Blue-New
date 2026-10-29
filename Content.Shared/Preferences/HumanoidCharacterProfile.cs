@@ -63,7 +63,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._Funkystation.Records; // CD - Character Records
+using Content.Shared._CD.Records; // QB - Character Records
 
 namespace Content.Shared.Preferences
 {
@@ -161,6 +161,11 @@ namespace Content.Shared.Preferences
         /// </summary>
         public IReadOnlySet<ProtoId<JobPrototype>> JobPreferences => _jobPreferences;
 
+        // Compatibility shim for existing UI and systems that still consume per-profile priorities.
+        // Multichar queuing uses binary per-profile job enablement; non-never values map to enabled.
+        public IReadOnlyDictionary<ProtoId<JobPrototype>, JobPriority> JobPriorities =>
+            _jobPreferences.ToDictionary(x => x, _ => JobPriority.Medium);
+
         /// <summary>
         /// <see cref="_antagPreferences"/>
         /// </summary>
@@ -178,10 +183,10 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
-        // Begin CD - Character records
+        // Begin QB - Character records
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
-        // End CD - Character records
+        // End QB - Character records
 
         public HumanoidCharacterProfile(
             string name,
@@ -199,9 +204,9 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
             bool enabled,
-            // Begin CD - Character Records
+            // Begin QB - Character Records
             PlayerProvidedCharacterRecords? cdCharacterRecords
-            // End CD - Character Records
+            // End QB - Character Records
             )
 
 
@@ -221,9 +226,9 @@ namespace Content.Shared.Preferences
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
             Enabled = enabled;
-            // Begin CD - Character Records
+            // Begin QB - Character Records
             CDCharacterRecords = cdCharacterRecords;
-            // End CD - Character Records
+            // End QB - Character Records
         }
 
         /// <summary>Copy constructor</summary>
@@ -244,8 +249,7 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
                 other.Enabled,
-                new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords) // CD - Character Records
+                other.CDCharacterRecords) // QB - Character Records
         {
         }
 
@@ -263,31 +267,45 @@ namespace Content.Shared.Preferences
         /// </summary>
         /// <param name="species">The species to use in this default profile. The default species is <see cref="SharedHumanoidAppearanceSystem.DefaultSpecies"/>.</param>
         /// <returns>Humanoid character profile with default settings.</returns>
-        public static HumanoidCharacterProfile DefaultWithSpecies(string species = SharedHumanoidAppearanceSystem.DefaultSpecies)
+        public static HumanoidCharacterProfile DefaultWithSpecies(string? species = null)
         {
+            species ??= SharedHumanoidAppearanceSystem.DefaultSpecies;
+
             return new()
             {
                 Species = species,
+                Appearance = HumanoidCharacterAppearance.DefaultWithSpecies(species),
             };
         }
 
         // TODO: This should eventually not be a visual change only.
-        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null)
+        public static HumanoidCharacterProfile Random(bool characterCreation = true, HashSet<string>? ignoredSpecies = null)
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
             var species = random.Pick(prototypeManager
                 .EnumeratePrototypes<SpeciesPrototype>()
-                .Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID))
+                .Where(x =>
+                {
+                    if (ignoredSpecies != null && ignoredSpecies.Contains(x.ID))
+                        return false;
+
+                    if (characterCreation)
+                        return x.RoundStart;
+
+                    return random.NextFloat() < x.RandomChance && x.RandomViable;
+                })
                 .ToArray()
             ).ID;
 
             return RandomWithSpecies(species);
         }
 
-        public static HumanoidCharacterProfile RandomWithSpecies(string species = SharedHumanoidAppearanceSystem.DefaultSpecies)
+        public static HumanoidCharacterProfile RandomWithSpecies(string? species = null)
         {
+            species ??= SharedHumanoidAppearanceSystem.DefaultSpecies;
+
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
@@ -376,12 +394,12 @@ namespace Content.Shared.Preferences
             return new(this) { SpawnPriority = spawnPriority };
         }
 
-        // Begin CD - Character Records
+        // Begin QB - Character Records
         public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
         {
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
-        // End CD - Character Records
+        // End QB - Character Records
 
         public HumanoidCharacterProfile WithJobPreferences(IEnumerable<ProtoId<JobPrototype>> jobPreferences)
         {
@@ -389,6 +407,15 @@ namespace Content.Shared.Preferences
             {
                 _jobPreferences = new HashSet<ProtoId<JobPrototype>>(jobPreferences),
             };
+        }
+
+        public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<ProtoId<JobPrototype>, JobPriority>> jobPriorities)
+        {
+            var jobs = jobPriorities
+                .Where(x => x.Value != JobPriority.Never)
+                .Select(x => x.Key);
+
+            return WithJobPreferences(jobs);
         }
 
         public HumanoidCharacterProfile WithJob(ProtoId<JobPrototype> jobId, bool include = true)
@@ -412,6 +439,11 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithoutJob(ProtoId<JobPrototype> jobId)
         {
             return WithJob(jobId, false);
+        }
+
+        public HumanoidCharacterProfile WithJobPriority(ProtoId<JobPrototype> jobId, JobPriority priority)
+        {
+            return priority == JobPriority.Never ? WithJob(jobId, false) : WithJob(jobId, true);
         }
 
         public HumanoidCharacterProfile WithPreferenceUnavailable(PreferenceUnavailableMode mode)
@@ -529,8 +561,8 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // CD
-               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // CD
+            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // QB
+               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // QB
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -681,7 +713,7 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
 
-            // Begin CD - Character Records
+            // Begin QB - Character Records
             if (CDCharacterRecords == null)
             {
                 CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
@@ -690,7 +722,7 @@ namespace Content.Shared.Preferences
             {
                 CDCharacterRecords!.EnsureValid();
             }
-            // End CD - Character Records
+            // End QB - Character Records
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();

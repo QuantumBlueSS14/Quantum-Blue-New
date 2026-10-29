@@ -48,7 +48,6 @@ namespace Content.Server.GameTicking
 #if EXCEPTION_TOLERANCE
         [Dependency] private readonly IRuntimeLog _runtimeLog = default!;
 #endif
-        [Dependency] private readonly IServerPreferencesManager _prefsManager = default!;
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly ChatSystem _chatSystem = default!;
         [Dependency] private readonly MapLoaderSystem _loader = default!;

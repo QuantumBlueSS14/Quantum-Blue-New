@@ -9,6 +9,7 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Shared.Roles;
+using Content.Shared.Construction.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
@@ -26,12 +27,18 @@ namespace Content.Shared.Preferences
     {
         private Dictionary<int, ICharacterProfile> _characters;
 
-        public PlayerPreferences(IEnumerable<KeyValuePair<int, ICharacterProfile>> characters, int selectedCharacterIndex, Color adminOOCColor, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities)
+        public PlayerPreferences(
+            IEnumerable<KeyValuePair<int, ICharacterProfile>> characters,
+            int selectedCharacterIndex,
+            Color adminOOCColor,
+            Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
+            List<ProtoId<ConstructionPrototype>>? constructionFavorites = null)
         {
             _characters = new Dictionary<int, ICharacterProfile>(characters);
             SelectedCharacterIndex = selectedCharacterIndex;
             AdminOOCColor = adminOOCColor;
             JobPriorities = jobPriorities;
+            ConstructionFavorites = constructionFavorites ?? [];
         }
 
         /// <summary>
@@ -54,6 +61,7 @@ namespace Content.Shared.Preferences
         /// </summary>
         public ICharacterProfile SelectedCharacter => Characters[SelectedCharacterIndex];
         public Dictionary<ProtoId<JobPrototype>, JobPriority> JobPriorities { get; set; }
+        public List<ProtoId<ConstructionPrototype>> ConstructionFavorites { get; set; }
 
         public Color AdminOOCColor { get; set; }
 

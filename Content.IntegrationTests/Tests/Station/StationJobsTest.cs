@@ -259,8 +259,7 @@ internal static class JobExtensions
     {
         for (var i = 0; i < amount; i++)
         {
-            // TODO: Ensure logic is good with multislot
-            inp.Add(new NetUserId(Guid.NewGuid()), HumanoidCharacterProfile.Random().WithJob(jobId));
+            inp.Add(new NetUserId(Guid.NewGuid()), HumanoidCharacterProfile.Random().WithJobPriority(jobId, prio));
         }
 
         return inp;
@@ -269,8 +268,7 @@ internal static class JobExtensions
     public static Dictionary<NetUserId, HumanoidCharacterProfile> AddPreference(
         this Dictionary<NetUserId, HumanoidCharacterProfile> inp, string jobId, JobPriority prio = JobPriority.Medium)
     {
-        // TODO: Ensure logic is good with multislot
-        return inp.ToDictionary(x => x.Key, x => x.Value.WithJob(jobId));
+        return inp.ToDictionary(x => x.Key, x => x.Value.WithJobPriority(jobId, prio));
     }
 
     public static Dictionary<NetUserId, HumanoidCharacterProfile> WithPlayers(
