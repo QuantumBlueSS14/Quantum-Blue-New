@@ -5,7 +5,7 @@ Quantum Blue is a fork of Space Station 14, a remake of SS13 that runs on [Robus
 While we are not a server that allows sexual content, <b>we do not allow people under the age of 18 to play on Quantum Blue.</b>
 
 ## Links
-[Website](https://quantumblue.gay/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
+[Website](https://quantumblue.gay/) | [Discord](https://discord.gg/jesCmMtq64) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
 
 ## Documentation/Wiki
 

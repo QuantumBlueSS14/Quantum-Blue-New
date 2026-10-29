@@ -12,7 +12,9 @@ soft_max_players = 60
 mob_pushing = false
 
 [infolinks]
+discord = "https://discord.gg/jesCmMtq64"
 github = "https://github.com/QuantumBlueSS14/Quantum-Blue-New"
+website = "https://quantumblue.gay"
 
 [net]
 max_connections = 1024
