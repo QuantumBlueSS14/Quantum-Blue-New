@@ -8,9 +8,9 @@
   productEntity: WeaponMinigunUplink
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 25
+    Telecrystal: 26
   cost:
-    Telecrystal: 28
+    Telecrystal: 30
   categories:
   - UplinkWeaponry
 
