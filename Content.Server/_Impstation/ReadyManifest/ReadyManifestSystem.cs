@@ -126,7 +126,7 @@ public sealed class ReadyManifestSystem : EntitySystem
 
     private List<ProtoId<JobPrototype>> FilterPlayerJobs(HumanoidCharacterProfile profile)
     {
-        var jobs = profile.JobPriorities.Keys.Select(k => new ProtoId<JobPrototype>(k)).ToList();
+        var jobs = profile.JobPriorities.Keys.ToList();
         List<ProtoId<JobPrototype>> priorityJobs = new();
         foreach (var job in jobs)
         {

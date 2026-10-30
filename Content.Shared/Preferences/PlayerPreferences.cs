@@ -1,5 +1,17 @@
+// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
+using Content.Shared.Roles;
 using Content.Shared.Construction.Prototypes;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
@@ -15,12 +27,18 @@ namespace Content.Shared.Preferences
     {
         private Dictionary<int, ICharacterProfile> _characters;
 
-        public PlayerPreferences(IEnumerable<KeyValuePair<int, ICharacterProfile>> characters, int selectedCharacterIndex, Color adminOOCColor, List<ProtoId<ConstructionPrototype>> constructionFavorites)
+        public PlayerPreferences(
+            IEnumerable<KeyValuePair<int, ICharacterProfile>> characters,
+            int selectedCharacterIndex,
+            Color adminOOCColor,
+            Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
+            List<ProtoId<ConstructionPrototype>>? constructionFavorites = null)
         {
             _characters = new Dictionary<int, ICharacterProfile>(characters);
             SelectedCharacterIndex = selectedCharacterIndex;
             AdminOOCColor = adminOOCColor;
-            ConstructionFavorites = constructionFavorites;
+            JobPriorities = jobPriorities;
+            ConstructionFavorites = constructionFavorites ?? [];
         }
 
         /// <summary>
@@ -42,13 +60,10 @@ namespace Content.Shared.Preferences
         ///     The currently selected character.
         /// </summary>
         public ICharacterProfile SelectedCharacter => Characters[SelectedCharacterIndex];
+        public Dictionary<ProtoId<JobPrototype>, JobPriority> JobPriorities { get; set; }
+        public List<ProtoId<ConstructionPrototype>> ConstructionFavorites { get; set; }
 
         public Color AdminOOCColor { get; set; }
-
-        /// <summary>
-        ///    List of favorite items in the construction menu.
-        /// </summary>
-        public List<ProtoId<ConstructionPrototype>> ConstructionFavorites { get; set; } = [];
 
         public int IndexOfCharacter(ICharacterProfile profile)
         {
@@ -58,6 +73,43 @@ namespace Content.Shared.Preferences
         public bool TryIndexOfCharacter(ICharacterProfile profile, out int index)
         {
             return (index = IndexOfCharacter(profile)) != -1;
+        }
+
+        public Dictionary<ProtoId<JobPrototype>, JobPriority> JobPrioritiesFiltered()
+        {
+            var allCharacterJobs = new HashSet<ProtoId<JobPrototype>>();
+            foreach (var profile in Characters.Values)
+            {
+                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
+                    continue;
+                allCharacterJobs.UnionWith(humanoid.JobPreferences);
+            }
+
+            var filteredPlayerJobs = new Dictionary<ProtoId<JobPrototype>, JobPriority>();
+            foreach (var (job, priority) in JobPriorities)
+            {
+                if (!allCharacterJobs.Contains(job))
+                    continue;
+                filteredPlayerJobs.Add(job, priority);
+            }
+
+            return filteredPlayerJobs;
+        }
+
+        public HumanoidCharacterProfile? SelectProfileForJob(ProtoId<JobPrototype> job)
+        {
+            List<HumanoidCharacterProfile> pool = [];
+            foreach (var profile in Characters.Values)
+            {
+                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
+                    continue;
+                if (!humanoid.JobPreferences.Contains(job))
+                    continue;
+                pool.Add(humanoid);
+            }
+
+            var random = new System.Random();
+            return pool.Count == 0 ? null : random.Pick(pool);
         }
     }
 }
