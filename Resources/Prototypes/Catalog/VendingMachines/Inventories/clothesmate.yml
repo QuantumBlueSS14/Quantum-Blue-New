@@ -6,6 +6,8 @@
     ClothingBackpackDuffel: 5
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
+    ClothingTurtleneckRandomSpawner: 10 # QB
+    ClothingTurtleneckSkirtRandomSpawner: 10 # QB
     ClothingRandomSpawner: 8
     ClothingUniformRandomShorts: 4
     ClothingRandomBusinessSpawner: 10 #imp

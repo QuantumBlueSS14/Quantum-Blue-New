@@ -45,6 +45,7 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
       - ServiceEmagged
+      - SyndicateAmmoStatic # QB
   - type: MaterialStorage
     whitelist:
       tags:

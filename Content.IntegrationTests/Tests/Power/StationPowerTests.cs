@@ -44,11 +44,11 @@ public sealed class StationPowerTests
         // "Bedlam",
         // "Boat",
         // "BoxImp",
-        //"CentCommImp",
+        // "CentCommImp",
         // "Cluster",
         // "CogImp",
         // "CoreImp",
-        //"E1M1",
+        // "E1M1",
         // "ElkridgeImp",
         // "GateImp",
         // "Hummingbird",
@@ -66,6 +66,8 @@ public sealed class StationPowerTests
         // "Pathway",
         // "Whisper",
         // "Monarch",
+        // "MeteorArena",
+        // "dm01-entryway",
 
         // DEROTATED:
         //"Eclipse",
@@ -76,6 +78,7 @@ public sealed class StationPowerTests
         //"Skimmer",
 
         // QB PROTOTYPES:
+        "Archon",
         "AsteriskQB",
         "Atlas",
         "ByoinQB",
@@ -84,6 +87,11 @@ public sealed class StationPowerTests
         "ElkridgeQB",
         "Foundry",
         "PebbleQB",
+
+        // QB DEATHMATCH:
+        "MeteorArena_QB",
+        "dm01-entryway_QB",
+        "E1M1_QB",
     };
 
     [Test, TestCaseSource(nameof(GameMaps))]

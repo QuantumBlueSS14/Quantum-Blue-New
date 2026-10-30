@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/22/2026 07:20:06
+  time: 10/01/2026 15:21:13
   entityCount: 20677
 maps:
 - 1
@@ -9611,41 +9611,6 @@ entities:
     - type: Transform
       pos: -18.5,35.5
       parent: 2
-- proto: Autolathe
-  entities:
-  - uid: 16315
-    components:
-    - type: Transform
-      pos: -38.5,21.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-  - uid: 16365
-    components:
-    - type: Transform
-      pos: 41.5,6.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-  - uid: 16494
-    components:
-    - type: Transform
-      pos: 5.5,18.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
 - proto: BanjoInstrument
   entities:
   - uid: 20149
@@ -10970,6 +10935,10 @@ entities:
           occludes: True
           ents:
           - 17861
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: BookshelfFilled
   entities:
   - uid: 13954
@@ -11074,6 +11043,10 @@ entities:
           occludes: True
           ents:
           - 16582
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: BookshelfGuidebooksFilled
   entities:
   - uid: 13953
@@ -32556,6 +32529,19 @@ entities:
     - type: Transform
       pos: -46.5,14.5
       parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 16315
+    components:
+    - type: Transform
+      pos: -38.5,21.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: Carpet
   entities:
   - uid: 15826
@@ -54791,6 +54777,19 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,11.5
       parent: 2
+- proto: EngineeringTechFab
+  entities:
+  - uid: 16366
+    components:
+    - type: Transform
+      pos: 5.5,18.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: Envelope
   entities:
   - uid: 16335
@@ -97255,19 +97254,6 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
-- proto: Protolathe
-  entities:
-  - uid: 16366
-    components:
-    - type: Transform
-      pos: 45.5,9.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
 - proto: PsychBed
   entities:
   - uid: 16163
@@ -102916,6 +102902,13 @@ entities:
     - type: Transform
       pos: -63.513493,-10.670038
       parent: 2
+- proto: Roboisseur
+  entities:
+  - uid: 16365
+    components:
+    - type: Transform
+      pos: -14.5,-15.5
+      parent: 2
 - proto: RubberStampApproved
   entities:
   - uid: 15471
@@ -102969,6 +102962,19 @@ entities:
     - type: Transform
       pos: 31.5,30.5
       parent: 2
+- proto: ScienceTechFab
+  entities:
+  - uid: 16494
+    components:
+    - type: Transform
+      pos: 45.5,9.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: ScrapAirlock1
   entities:
   - uid: 14288
@@ -107717,18 +107723,6 @@ entities:
     - type: Transform
       pos: 76.5,29.5
       parent: 2
-- proto: SuitStorageAtmos
-  entities:
-  - uid: 16520
-    components:
-    - type: Transform
-      pos: -3.5,38.5
-      parent: 2
-  - uid: 16521
-    components:
-    - type: Transform
-      pos: -3.5,39.5
-      parent: 2
 - proto: SuitStorageBase
   entities:
   - uid: 14259
@@ -107804,6 +107798,16 @@ entities:
     components:
     - type: Transform
       pos: 13.5,13.5
+      parent: 2
+  - uid: 16520
+    components:
+    - type: Transform
+      pos: -3.5,38.5
+      parent: 2
+  - uid: 16521
+    components:
+    - type: Transform
+      pos: -3.5,39.5
       parent: 2
 - proto: SuitStorageEVA
   entities:

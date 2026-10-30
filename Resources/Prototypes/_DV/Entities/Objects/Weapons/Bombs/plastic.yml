@@ -1,0 +1,32 @@
+- type: entity
+  name: breaching charge
+  description: A breaching explosive for security officers to break through walls.
+  parent: SeismicCharge
+  id: BreachingCharge
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Bombs/breaching.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  # QB changes start - we don't have this component, just keep parented values from seismic charge it's functionally identical
+  #- type: OnUseTimerTrigger
+  #  delay: 10
+  #  delayOptions: [10, 15, 20, 25]
+  #  initialBeepDelay: 0
+  #  beepSound:
+  #    path: /Audio/Effects/Cargo/buzz_two.ogg
+  #    params:
+  #      volume: -6
+  #  startOnStick: true
+  #  canToggleStartOnStick: true
+  # QB changes end
+  - type: Explosive
+    explosionType: DemolitionCharge
+    # QB edit begin - make it only a 1x1 explosion
+    totalIntensity: 6 # from 10 to 6
+    intensitySlope: 15 # from 10 to 15
+    maxIntensity: 6 # from 10 to 6
+    # QB edit end
+    canCreateVacuum: false

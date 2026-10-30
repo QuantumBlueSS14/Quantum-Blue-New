@@ -1,0 +1,59 @@
+- type: entity
+  id: ClothingTurtleneckRandomSpawner
+  name: random colorful turtleneck
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color_turtle.rsi
+    layers:
+    - state: icon
+    - state: trousers-icon
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: ClothingUniformTurtleneckColorWhite
+      - id: ClothingUniformTurtleneckColorGrey
+      - id: ClothingUniformTurtleneckColorBlack
+      - id: ClothingUniformTurtleneckColorBlue
+      - id: ClothingUniformTurtleneckColorDarkBlue
+      - id: ClothingUniformTurtleneckColorTeal
+      - id: ClothingUniformTurtleneckColorGreen
+      - id: ClothingUniformTurtleneckColorDarkGreen
+      - id: ClothingUniformTurtleneckColorOrange
+      - id: ClothingUniformTurtleneckColorPink
+      - id: ClothingUniformTurtleneckColorRed
+      - id: ClothingUniformTurtleneckColorYellow
+      - id: ClothingUniformTurtleneckColorPurple
+      - id: ClothingUniformTurtleneckColorLightBrown
+      - id: ClothingUniformTurtleneckColorBrown
+      - id: ClothingUniformTurtleneckColorMaroon
+    offset: 0
+
+- type: entity
+  id: ClothingTurtleneckSkirtRandomSpawner
+  name: random colorful turtleneck skirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
+    layers:
+    - state: icon
+    - state: skirt-icon
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: ClothingUniformTurtleneckSkirtColorWhite
+      - id: ClothingUniformTurtleneckSkirtColorGrey
+      - id: ClothingUniformTurtleneckSkirtColorBlack
+      - id: ClothingUniformTurtleneckSkirtColorBlue
+      - id: ClothingUniformTurtleneckSkirtColorDarkBlue
+      - id: ClothingUniformTurtleneckSkirtColorTeal
+      - id: ClothingUniformTurtleneckSkirtColorGreen
+      - id: ClothingUniformTurtleneckSkirtColorDarkGreen
+      - id: ClothingUniformTurtleneckSkirtColorOrange
+      - id: ClothingUniformTurtleneckSkirtColorPink
+      - id: ClothingUniformTurtleneckSkirtColorRed
+      - id: ClothingUniformTurtleneckSkirtColorYellow
+      - id: ClothingUniformTurtleneckSkirtColorPurple
+      - id: ClothingUniformTurtleneckSkirtColorLightBrown
+      - id: ClothingUniformTurtleneckSkirtColorBrown
+      - id: ClothingUniformTurtleneckSkirtColorMaroon
+    offset: 0

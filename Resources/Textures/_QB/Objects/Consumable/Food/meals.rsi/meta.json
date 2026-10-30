@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "buttersteak by SeeroftheNight (Github) based on the impstation butter sprite by honeyed-lemons (Github) and the raw and cooked meat sprites originally from tgstation https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa#diff-9e75116175d90b6b9dadf325370b6773fbe5a7052087d03cf185dfc2ea6371db",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "buttersteak"
+        },
+        {
+            "name": "buttersteakraw"
+        },
+        {
+            "name": "butterdog"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+- type: gameMap
+  id: MeteorArena_QB
+  mapName: Meteor Arena
+  mapPath: /Maps/_QB/Deathmatch/meteor-arena_QB.yml
+  minPlayers: 0
+  stations:
+    MeteorArena_QB:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Meteor Arena"
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]
+
+- type: gameMap
+  id: dm01-entryway_QB
+  mapName: DM01 Entryway
+  mapPath: /Maps/_QB/Deathmatch/dm01-entryway_QB.yml
+  minPlayers: 0
+  stations:
+    dm01-entryway_QB:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "DM01 Entryway"
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]
+
+- type: gameMap
+  id: E1M1_QB
+  mapName: Episode 1 - Mission 1
+  mapPath: /Maps/_QB/Deathmatch/E1M1_QB.yml
+  minPlayers: 0
+  stations:
+    E1M1_QB:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Episode 1 - Mission 1"
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]

@@ -1,0 +1,66 @@
+- type: entity
+  abstract: true
+  parent: BaseMachineCircuitboard
+  id: BaseTechFabCircuitboardDV
+  components:
+  - type: MachineBoard
+    stackRequirements:
+      MatterBin: 2
+      Manipulator: 2
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  parent: BaseTechFabCircuitboardDV
+  id: EngineeringTechFabCircuitboard
+  name: engineering techfab machine board
+  description: A machine printed circuit board for an engineering techfab.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: EngineeringTechFab
+  - type: StealTarget
+    stealGroup: EngineeringTechFabCircuitboard
+
+- type: entity
+  parent: BaseTechFabCircuitboardDV
+  id: CargoTechFabCircuitboard # QB rename logistics to cargo
+  name: cargo techfab machine board # QB rename logistics to cargo
+  description: A machine printed circuit board for a cargo techfab. # QB rename logistics to cargo
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: CargoTechFab # QB rename logistics to cargo
+  - type: StealTarget
+    stealGroup: CargoTechFabCircuitboard # QB rename logistics to cargo
+
+#- type: entity # QB - we already have service fab from imp
+#  parent: BaseTechFabCircuitboardDV
+#  id: ServiceTechFabCircuitboard
+#  name: service techfab machine board
+#  description: A machine printed circuit board for a service techfab.
+#  components:
+#  - type: Sprite
+#    state: service
+#  - type: MachineBoard
+#    prototype: ServiceTechFab
+#  - type: StealTarget
+#    stealGroup: ServiceTechFabCircuitboard
+# QB changes end
+
+- type: entity
+  parent: BaseTechFabCircuitboardDV
+  id: ScienceTechFabCircuitboard # QB rename epistemics to science
+  name: science techfab machine board # QB rename epistemics to science
+  description: A machine printed circuit board for a science techfab. # QB rename epistemics to science
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: ScienceTechFab # QB rename epistemics to science
+  - type: StealTarget
+    stealGroup: ScienceTechFabCircuitboard # QB rename epistemics to science

@@ -24,6 +24,7 @@
         - id: AtmosMonitoringComputerCircuitboard
         - id: PowerComputerCircuitboard
         - id: SolarControlComputerCircuitboard
+        - id: EngineeringTechFabCircuitboard # qb add lathe boards to lockers
 
 - type: entity
   parent: ToteBase
@@ -93,6 +94,16 @@
         - id: MailTeleporterMachineCircuitboard
         - id: ShipyardComputerCircuitboard # imp
         - id: SalvageExpeditionsComputerCircuitboard # imp
+        - id: CargoTechFabCircuitboard # qb - add lathe boards to lockers
+  - type: Storage # QB it's too big to fit 10 boards
+    maxItemSize: Small
+    grid:
+    - 0,0,6,2
+    whitelist:
+      components:
+      - MachineBoard
+      - Circuitboard
+  # QB additions end
 
 - type: entity
   parent: BoxStamps
@@ -117,7 +128,8 @@
       storagebase: !type:AllSelector
         children:
         - id: CircuitImprinterMachineCircuitboard
-        - id: ProtolatheMachineCircuitboard
+        #- id: ProtolatheMachineCircuitboard # QB - remove autolathe and protolathe
+        - id: ScienceTechFabCircuitboard # qb - add lathe boards to lockers
         - id: ResearchComputerCircuitboard
         - id: CargoRequestScienceComputerCircuitboard
         - id: RoboticsConsoleCircuitboard

@@ -3,6 +3,7 @@
   parent: BaseMachineCircuitboard
   name: autolathe machine board
   description: A machine printed circuit board for an autolathe.
+  suffix: DO NOT MAP # DeltaV - departamental lathes
   components:
     - type: MachineBoard
       prototype: Autolathe
@@ -32,6 +33,7 @@
   parent: [ BaseMachineCircuitboard, BaseScienceContraband ]
   name: protolathe machine board
   description: A machine printed circuit board for a protolathe.
+  suffix: DO NOT MAP # DeltaV - departamental lathes
   components:
   - type: Sprite
     state: science

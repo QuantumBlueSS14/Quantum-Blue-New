@@ -1,0 +1,17 @@
+# Tools
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: CrayonChalk
+  result: CrayonChalk
+  completetime: 4
+  materials:
+    Plastic: 100 # what is chalk anyways
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: BoxEvidenceMarkers
+  result: BoxEvidenceMarkers
+  completetime: 4
+  materials:
+    Plastic: 400
+    Cardboard: 100 # same as a regular small box
