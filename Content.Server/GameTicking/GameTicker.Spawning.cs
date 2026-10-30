@@ -197,7 +197,7 @@ namespace Content.Server.GameTicking
             var character = GetPlayerProfile(player);
 
             var jobBans = _banManager.GetJobBans(player.UserId);
-            if (jobId != null && jobBans is not null && jobBans.Contains(jobId))
+            if (jobId != null && jobBans is not null && jobBans.Contains(jobId)) // QB edit: a null/empty ban set must not silently reject a valid latejoin.
                 return;
 
             if (jobId != null)
