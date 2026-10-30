@@ -794,8 +794,8 @@ namespace Content.Client.Lobby.UI
             AntagList.RemoveAllChildren();
             var items = new[]
             {
-                ("humanoid-profile-editor-antag-preference-yes-button", 0),
-                ("humanoid-profile-editor-antag-preference-no-button", 1)
+                ("humanoid-profile-editor-antag-preference-disabled-button", 1),
+                ("humanoid-profile-editor-antag-preference-enabled-button", 0) // QB edit: keep the enabled state mapped to the higher-priority selection while labeling it as enabled.
             };
 
             foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
@@ -817,7 +817,7 @@ namespace Content.Client.Lobby.UI
                 var title = Loc.GetString(antag.Name);
                 var description = Loc.GetString(antag.Objective);
                 selector.Setup(items, title, 250, description, guides: antag.Guides);
-                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
+                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 1 : 0);
 
                 if (!_requirements.IsAllowed(
                         antag,
@@ -835,7 +835,7 @@ namespace Content.Client.Lobby.UI
 
                 selector.OnSelected += preference =>
                 {
-                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 0);
+                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 1);
                     SetDirty();
                 };
 
@@ -1008,10 +1008,8 @@ namespace Content.Client.Lobby.UI
 
             var items = new[]
             {
-                ("humanoid-profile-editor-job-priority-never-button", (int) JobPriority.Never),
-                ("humanoid-profile-editor-job-priority-low-button", (int) JobPriority.Low),
-                ("humanoid-profile-editor-job-priority-medium-button", (int) JobPriority.Medium),
-                ("humanoid-profile-editor-job-priority-high-button", (int) JobPriority.High),
+                ("humanoid-profile-editor-job-preference-disabled-button", (int) JobPriority.Never), // QB edit: the per-character job selector is a simple enabled/disabled toggle, not a full priority editor.
+                ("humanoid-profile-editor-job-preference-enabled-button", (int) JobPriority.Low),
             };
 
             foreach (var department in departments)
@@ -1085,6 +1083,7 @@ namespace Content.Client.Lobby.UI
                     var jobIcon = _prototypeManager.Index(job.Icon);
                     icon.Texture = _sprite.Frame0(jobIcon.Icon);
                     selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
+                    selector.Select(Profile?.JobPreferences.Contains(job.ID) == true ? (int) JobPriority.Low : (int) JobPriority.Never);
 
                     if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
                     {

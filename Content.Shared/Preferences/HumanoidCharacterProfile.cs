@@ -181,7 +181,7 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
-            PreferenceUnavailableMode.SpawnAsOverflow;
+            PreferenceUnavailableMode.StayInLobby; // QB edit: default to stay in the lobby instead of spawning as overflow.
 
         // Begin QB - Character records
         [DataField("cosmaticDriftCharacterRecords")]
@@ -260,6 +260,7 @@ namespace Content.Shared.Preferences
         /// <returns></returns>
         public HumanoidCharacterProfile()
         {
+            PreferenceUnavailable = PreferenceUnavailableMode.StayInLobby; // QB edit: new characters default to staying in the lobby if their preferred job is unavailable.
         }
 
         /// <summary>
@@ -275,6 +276,7 @@ namespace Content.Shared.Preferences
             {
                 Species = species,
                 Appearance = HumanoidCharacterAppearance.DefaultWithSpecies(species),
+                PreferenceUnavailable = PreferenceUnavailableMode.StayInLobby,
             };
         }
 

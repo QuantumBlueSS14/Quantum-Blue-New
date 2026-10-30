@@ -66,7 +66,7 @@ namespace Content.Server.GameTicking.Commands
             {
                 var id = args[0];
 
-                if (!int.TryParse(args[1], out var sid)) // QB edit: reject non-numeric latejoin stations before continuing the spawn flow.
+                if (!int.TryParse(args[1], out var sid)) // QB edit
                 {
                     shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
                     return;
