@@ -13,12 +13,12 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+    sprite: _QB/Objects/Weapons/Guns/Pistols/desperado.rsi
   - type: Gun
     minAngle: 1
     maxAngle: 20
     angleIncrease: 8
-    angleDecay: 9
+    angleDecay: 12
     fireRate: 3 # 1984 is 4
     availableModes:
     - SemiAuto
