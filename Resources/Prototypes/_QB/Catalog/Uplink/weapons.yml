@@ -1,3 +1,19 @@
+# guns
+
+- type: listing
+  id: UplinkMinigun
+  name: uplink-minigun-name
+  description: uplink-minigun-desc
+  icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/MachineGuns/minigun.rsi, state: icon }
+  productEntity: WeaponMinigunUplink
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 25
+  cost:
+    Telecrystal: 28
+  categories:
+  - UplinkWeaponry
+
 # job exclusive
 
 - type: listing
