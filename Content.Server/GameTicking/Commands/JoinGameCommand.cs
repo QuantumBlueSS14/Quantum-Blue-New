@@ -64,16 +64,17 @@ namespace Content.Server.GameTicking.Commands
             }
             else if (ticker.RunLevel == GameRunLevel.InRound)
             {
-                string id = args[0];
+                var id = args[0];
 
                 if (!int.TryParse(args[1], out var sid))
                 {
                     shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
+                    return;
                 }
 
                 var station = _entManager.GetEntity(new NetEntity(sid));
                 var jobPrototype = _prototypeManager.Index<JobPrototype>(id);
-                if(stationJobs.TryGetJobSlot(station, jobPrototype, out var slots) == false || slots == 0)
+                if(!stationJobs.TryGetJobSlot(station, jobPrototype, out var slots) || slots == 0)
                 {
                     shell.WriteLine($"{jobPrototype.LocalizedName} has no available slots.");
                     return;

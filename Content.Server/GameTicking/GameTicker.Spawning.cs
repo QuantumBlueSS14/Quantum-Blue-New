@@ -197,7 +197,7 @@ namespace Content.Server.GameTicking
             var character = GetPlayerProfile(player);
 
             var jobBans = _banManager.GetJobBans(player.UserId);
-            if (jobBans == null || jobId != null && jobBans.Contains(jobId))
+            if (jobId != null && jobBans is not null && jobBans.Contains(jobId))
                 return;
 
             if (jobId != null)
