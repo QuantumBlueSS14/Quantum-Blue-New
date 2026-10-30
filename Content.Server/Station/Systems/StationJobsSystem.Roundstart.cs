@@ -358,7 +358,7 @@ public sealed partial class StationJobsSystem
             var roleBans = _banManager.GetJobBans(player);
             var antagBlocked = _antag.GetPreSelectedAntagSessions();
             var hasSession = _player.TryGetSessionById(player, out var session);
-            var isPreselectedAntag = hasSession && antagBlocked.Contains(session);
+            var isPreselectedAntag = hasSession && antagBlocked.Contains(session!);
             if (onlyAntags && !isPreselectedAntag)
                 continue;
             var playerPrefs = _serverPreferences.GetPreferences(player);

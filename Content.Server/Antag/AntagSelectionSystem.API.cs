@@ -195,6 +195,43 @@ public sealed partial class AntagSelectionSystem
         return valid;
     }
 
+    public bool HasPrimaryAntagPreference(ICommonSession? session, AntagSelectionDefinition def, AntagSelectionTime selectionTime)
+    {
+        if (session == null)
+            return true;
+
+        if (def.PrefRoles.Count == 0)
+            return false;
+
+        if (!_pref.TryGetCachedPreferences(session.UserId, out var pref))
+            return false;
+
+        IEnumerable<HumanoidCharacterProfile> profiles;
+        if (selectionTime == AntagSelectionTime.PostPlayerSpawn)
+        {
+            profiles = [(HumanoidCharacterProfile) pref.SelectedCharacter];
+        }
+        else
+        {
+            profiles = pref.Characters.Values
+                .OfType<HumanoidCharacterProfile>()
+                .Where(profile => profile.Enabled); // QB edit: pre-spawn preference checks should consider all enabled character profiles.
+        }
+
+        foreach (var role in def.PrefRoles)
+        {
+            var list = new List<ProtoId<AntagPrototype>> { role };
+
+            if (_ban.IsRoleBanned(session, list) || !_playTime.IsAllowed(session, list))
+                continue;
+
+            if (profiles.Any(profile => profile.AntagPreferences.Contains(role)))
+                return true;
+        }
+
+        return false;
+    }
+
     /// <summary>
     /// Returns all the antagonists for this rule who are currently alive
     /// </summary>

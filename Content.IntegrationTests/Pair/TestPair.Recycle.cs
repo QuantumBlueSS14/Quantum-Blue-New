@@ -52,7 +52,7 @@ public sealed partial class TestPair
                 prefMan.DeleteCharacter(slot);
             }
 
-            prefMan.UpdateCharacter(new HumanoidCharacterProfile().AsEnabled(), 0);
+            prefMan.UpdateCharacter(new HumanoidCharacterProfile { Enabled = true }, 0); // QB edit: this branch does not include AsEnabled() helper from upstream test utilities.
             prefMan.UpdateJobPriorities(new() { { SharedGameTicker.FallbackOverflowJob, JobPriority.High } });
         });
 
