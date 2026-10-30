@@ -712,6 +712,13 @@
         Blunt: 2
     soundHit:
       collection: WeakHit
+  # QB addition start
+  - type: Clothing # DeltaV lollipop wearing sprite stuff
+    sprite: _DV/Objects/Consumable/Food/candy.rsi
+    slots: [ mask ]
+    equippedPrefix: lollipop
+    quickEquip: false # would block eating otherwise
+  # QB addition end
 
 # Trash
 
