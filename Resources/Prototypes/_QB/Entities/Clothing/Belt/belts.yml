@@ -9,4 +9,4 @@
         children:
         - id: WeaponPistolDesperado
         - id: MagazineMagnumExtended
-          amount: 2
+          amount: 4
