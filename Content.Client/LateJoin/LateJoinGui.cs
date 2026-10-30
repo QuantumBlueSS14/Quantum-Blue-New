@@ -71,7 +71,7 @@ namespace Content.Client.LateJoin
                 var (station, jobId) = x;
                 var stationId = (int) station; // QB edit
                 _sawmill.Info($"Late joining as ID: {jobId}");
-                _consoleHost.ExecuteCommand($"joingame {CommandParsing.Escape(jobId)} {stationId}");
+                _consoleHost.ExecuteCommand($"joingame {CommandParsing.Escape(jobId)} {stationId}"); //QB Edit
                 Close();
             };
 

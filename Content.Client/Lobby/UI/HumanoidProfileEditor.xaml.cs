@@ -103,10 +103,10 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
-// Begin QB - Character Records
+// Begin CD - Character Records
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
-// End QB - Character Records
+// End CD - Character Records
 using Content.Shared._Impstation.Traits; // imp
 
 namespace Content.Client.Lobby.UI
@@ -179,9 +179,9 @@ namespace Content.Client.Lobby.UI
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
-        // Begin QB - Station Records
+        // Begin CD - Station Records
         private readonly RecordEditorGui _recordsTab;
-        // End QB - Station Records
+        // End CD - Station Records
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
@@ -505,7 +505,7 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
-            // Begin QB - Character Records
+            // Begin CD - Character Records
             #region CosmaticRecords
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
@@ -513,7 +513,7 @@ namespace Content.Client.Lobby.UI
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
             #endregion CosmaticRecords
-            // End QB - Character Records
+            // End CD - Character Records
 
             RefreshFlavorText();
 
@@ -794,8 +794,8 @@ namespace Content.Client.Lobby.UI
             AntagList.RemoveAllChildren();
             var items = new[]
             {
-                ("humanoid-profile-editor-antag-preference-disabled-button", 1),
-                ("humanoid-profile-editor-antag-preference-enabled-button", 0) // QB edit: keep the enabled state mapped to the higher-priority selection while labeling it as enabled.
+                ("humanoid-profile-editor-antag-preference-disabled-button", 1), // QB edit
+                ("humanoid-profile-editor-antag-preference-enabled-button", 0) // QB edit
             };
 
             foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
@@ -930,9 +930,9 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
 
-            // Begin QB - Character Records
+            // Begin CD - Character Records
             _recordsTab.Update(profile);
-            // End QB - Character Records
+            // End CD - Character Records
 
             RefreshAntags();
             RefreshJobs();
@@ -1008,8 +1008,8 @@ namespace Content.Client.Lobby.UI
 
             var items = new[]
             {
-                ("humanoid-profile-editor-job-preference-disabled-button", (int) JobPriority.Never), // QB edit: the per-character job selector is a simple enabled/disabled toggle, not a full priority editor.
-                ("humanoid-profile-editor-job-preference-enabled-button", (int) JobPriority.Low),
+                ("humanoid-profile-editor-job-preference-disabled-button", (int) JobPriority.Never), // QB edit
+                ("humanoid-profile-editor-job-preference-enabled-button", (int) JobPriority.Low), // QB edit
             };
 
             foreach (var department in departments)
@@ -1229,7 +1229,7 @@ namespace Content.Client.Lobby.UI
             UpdateJobPriorities();
         }
 
-        // Start QB - Character Records
+        // Start CD - Character Records
         private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
         {
             if (Profile is null)
@@ -1237,7 +1237,7 @@ namespace Content.Client.Lobby.UI
             Profile = Profile.WithCDCharacterRecords(records);
             IsDirty = true;
         }
-        // End QB - Character Records
+        // End CD - Character Records
 
         private void OnFlavorTextChange(string content)
         {

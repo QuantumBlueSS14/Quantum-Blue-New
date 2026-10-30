@@ -183,10 +183,10 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.StayInLobby; // QB edit: default to stay in the lobby instead of spawning as overflow.
 
-        // Begin QB - Character records
+        // Begin CD - Character records
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
-        // End QB - Character records
+        // End CD - Character records
 
         public HumanoidCharacterProfile(
             string name,
@@ -204,9 +204,9 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
             bool enabled,
-            // Begin QB - Character Records
+            // Begin CD - Character Records
             PlayerProvidedCharacterRecords? cdCharacterRecords
-            // End QB - Character Records
+            // End CD - Character Records
             )
 
 
@@ -226,9 +226,9 @@ namespace Content.Shared.Preferences
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
             Enabled = enabled;
-            // Begin QB - Character Records
+            // Begin CD - Character Records
             CDCharacterRecords = cdCharacterRecords;
-            // End QB - Character Records
+            // End CD - Character Records
         }
 
         /// <summary>Copy constructor</summary>
@@ -249,7 +249,7 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
                 other.Enabled,
-                other.CDCharacterRecords) // QB - Character Records
+                other.CDCharacterRecords) // CD - Character Records
         {
         }
 
@@ -563,8 +563,8 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // QB
-               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // QB
+            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // CD
+               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // CD
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -715,7 +715,7 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
 
-            // Begin QB - Character Records
+            // Begin CD - Character Records
             if (CDCharacterRecords == null)
             {
                 CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
@@ -724,7 +724,7 @@ namespace Content.Shared.Preferences
             {
                 CDCharacterRecords!.EnsureValid();
             }
-            // End QB - Character Records
+            // End CD - Character Records
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
