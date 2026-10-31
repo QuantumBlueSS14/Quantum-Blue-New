@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Role time requirements are back, sorry!
+    id: 198
+    time: '2026-10-31T17:37:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/271
   - author: rebe83
     changes:
       - type: Tweak
