@@ -1,6 +1,23 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Tweak
+        message: Dylovene gets you drunk, make ethylredoxazine instead!
+      - type: Tweak
+        message: Bicaridine also gets you drunk.
+      - type: Tweak
+        message: Dermaline OD now makes you very thirsty, beware!
+      - type: Tweak
+        message: All radiation treatment chems (hyronalin, arith, phalanx) make you vomit.
+      - type: Tweak
+        message: 30u of Diphenhydramine makes you really trip. Hat man not included.
+      - type: Tweak
+        message: Most basic chemicals have had their side effects enhanced / occur at lower quantities.
+    id: 197
+    time: '2026-10-31T17:36:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/245
+  - author: rebe83
+    changes:
       - type: Add
         message: Shotgun flare shells are now printable from the security ammo lathe.
     id: 196
