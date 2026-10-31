@@ -114,7 +114,7 @@ public sealed partial class StationJobsSystem
                     if (profiles.Count == 0)
                         goto endFunc;
 
-                    var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles.Keys, onlyAntags: antagonistPass);
+                    var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles, onlyAntags: antagonistPass); // QB edit: keep 1424 antag-priority pass while reading the explicit profile map provided to AssignJobs.
 
                     var optionsRemaining = 0;
 
@@ -349,11 +349,15 @@ public sealed partial class StationJobsSystem
     /// <param name="profiles">Profiles to look in.</param>
     /// <param name="onlyAntags">If true, only include players preselected as antagonists.</param>
     /// <returns>Players and a list of their matching jobs.</returns>
-    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(int? weight, JobPriority? selectedPriority, ICollection<NetUserId> players, bool onlyAntags = false)
+    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(
+        int? weight,
+        JobPriority? selectedPriority,
+        IReadOnlyDictionary<NetUserId, HumanoidCharacterProfile> profiles,
+        bool onlyAntags = false)
     {
-        var outputDict = new Dictionary<NetUserId, List<string>>(players.Count);
+        var outputDict = new Dictionary<NetUserId, List<string>>(profiles.Count);
 
-        foreach (var player in players)
+        foreach (var (player, profile) in profiles)
         {
             var roleBans = _banManager.GetJobBans(player);
             var antagBlocked = _antag.GetPreSelectedAntagSessions();
@@ -361,26 +365,8 @@ public sealed partial class StationJobsSystem
             var isPreselectedAntag = hasSession && antagBlocked.Contains(session!);
             if (onlyAntags && !isPreselectedAntag)
                 continue;
-            var playerPrefs = _serverPreferences.GetPreferences(player);
-            var playerJobs = playerPrefs.JobPriorities;
-            var allCharacterJobs = new HashSet<ProtoId<JobPrototype>>();
-            foreach (var profile in playerPrefs.Characters.Values)
-            {
-                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
-                    continue;
-                allCharacterJobs.UnionWith(humanoid.JobPreferences);
-            }
-            var filteredPlayerJobs = new HashSet<ProtoId<JobPrototype>>();
-            foreach (var (job, priority) in playerJobs)
-            {
-                if (!(priority == selectedPriority || selectedPriority is null))
-                    continue;
-                if (!allCharacterJobs.Contains(job))
-                    continue;
-                filteredPlayerJobs.Add(job);
-            }
-
-            var profileJobs = filteredPlayerJobs.ToList();
+            var playerJobs = profile.JobPriorities; // QB edit: tests and assignment callers in this branch provide profile/job inputs directly via AssignJobs.
+            var profileJobs = playerJobs.Keys.ToList();
             var ev = new StationJobsGetCandidatesEvent(player, profileJobs);
             RaiseLocalEvent(ref ev);
 
