@@ -2,6 +2,13 @@ Entries:
   - author: rebe83
     changes:
       - type: Add
+        message: Shotgun flare shells are now printable from the security ammo lathe.
+    id: 196
+    time: '2026-10-31T17:15:37.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/274
+  - author: rebe83
+    changes:
+      - type: Add
         message: Added a healing rainbow lollipop to the uplink with 30 bic and 10 hyperzine. Yippie!
     id: 195
     time: '2026-10-31T17:14:38.0000000+00:00'
