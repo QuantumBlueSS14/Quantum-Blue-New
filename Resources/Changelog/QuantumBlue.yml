@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Removed all the reference plushies we had carried over from imp, that we missed removing before.
+    id: 200
+    time: '2026-10-31T19:38:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/282
   - author: rebe83
     changes:
       - type: Add
