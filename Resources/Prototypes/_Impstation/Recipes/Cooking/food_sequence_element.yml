@@ -233,19 +233,19 @@
   - sprite: _Impstation/Objects/Fun/toys.rsi
     state: minor
 
-- type: foodSequenceElement
-  id: BugPlushie
-  name: food-sequence-cotton-burger-content-plushie-bug
-  sprites:
-  - sprite: _Impstation/Objects/Fun/toys.rsi
-    state: plushie_bug
+# - type: foodSequenceElement # QB - no references
+#   id: BugPlushie
+#   name: food-sequence-cotton-burger-content-plushie-bug
+#   sprites:
+#   - sprite: _Impstation/Objects/Fun/toys.rsi
+#     state: plushie_bug
 
-- type: foodSequenceElement
-  id: EvilBugPlushie
-  name: food-sequence-cotton-burger-content-plushie-evilbug
-  sprites:
-  - sprite: _Impstation/Objects/Fun/toys.rsi
-    state: plushie_evilbug
+# - type: foodSequenceElement # QB - no references
+#   id: EvilBugPlushie
+#   name: food-sequence-cotton-burger-content-plushie-evilbug
+#   sprites:
+#   - sprite: _Impstation/Objects/Fun/toys.rsi
+#     state: plushie_evilbug
 
 - type: foodSequenceElement
   id: DecapoidPlushie
@@ -261,12 +261,12 @@
   - sprite: _Impstation/Objects/Fun/toys.rsi
     state: plushie_snail
 
-- type: foodSequenceElement
-  id: ImpPlushie
-  name: food-sequence-cotton-burger-content-plushie-imp
-  sprites:
-  - sprite: _Impstation/Objects/Fun/toys.rsi
-    state: plushie_imp
+# - type: foodSequenceElement # QB - no references
+#   id: ImpPlushie
+#   name: food-sequence-cotton-burger-content-plushie-imp
+#   sprites:
+#   - sprite: _Impstation/Objects/Fun/toys.rsi
+#     state: plushie_imp
 
 - type: foodSequenceElement
   id: ThavenPlushie
@@ -310,12 +310,12 @@
   - sprite: _Impstation/Objects/Fun/toys.rsi
     state: doll_base
 
-- type: foodSequenceElement
-  id: HairDollPlushie
-  name: food-sequence-cotton-burger-content-plushie-hairdoll
-  sprites:
-  - sprite: _Impstation/Objects/Fun/toys.rsi
-    state: doll_hair
+# - type: foodSequenceElement # QB - no references
+#   id: HairDollPlushie
+#   name: food-sequence-cotton-burger-content-plushie-hairdoll
+#   sprites:
+#   - sprite: _Impstation/Objects/Fun/toys.rsi
+#     state: doll_hair
 
 - type: foodSequenceElement
   id: GriffyPlushie
@@ -324,19 +324,19 @@
   - sprite: _Impstation/Objects/Fun/toys.rsi
     state: plushie_mascotgriffy
 
-- type: foodSequenceElement
-  id: BrosPlushie
-  name: food-sequence-cotton-burger-content-plushie-bros
-  sprites:
-  - sprite: _Impstation/Mobs/Animals/bros.rsi
-    state: bros
+# - type: foodSequenceElement # QB - no references
+#   id: BrosPlushie
+#   name: food-sequence-cotton-burger-content-plushie-bros
+#   sprites:
+#   - sprite: _Impstation/Mobs/Animals/bros.rsi
+#     state: bros
 
-- type: foodSequenceElement
-  id: SorbPlushie
-  name: food-sequence-cotton-burger-content-plushie-sorb
-  sprites:
-  - sprite: _Impstation/Mobs/Animals/bros.rsi
-    state: sorb
+# - type: foodSequenceElement # QB - no references
+#   id: SorbPlushie
+#   name: food-sequence-cotton-burger-content-plushie-sorb
+#   sprites:
+#   - sprite: _Impstation/Mobs/Animals/bros.rsi
+#     state: sorb
 
 - type: foodSequenceElement
   id: StringCheese
@@ -349,7 +349,7 @@
 
 - type: foodSequenceElement
   id: Sausage
-  name: 
+  name:
   sprites:
   - sprite: _Impstation/Objects/Consumable/Food/hotdog_sequence.rsi
     state: hotdog

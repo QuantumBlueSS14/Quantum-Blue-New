@@ -156,10 +156,10 @@
   id: PlushieDoll
   result: PlushieDoll
 
-- type: latheRecipe
-  parent: PrizeCounterPlushie
-  id: PlushieDollHair
-  result: PlushieDollHair
+# - type: latheRecipe # QB - no references
+#   parent: PrizeCounterPlushie
+#   id: PlushieDollHair
+#   result: PlushieDollHair
 
 - type: latheRecipe
   parent: PrizeCounterPlushieExpensive
@@ -256,20 +256,20 @@
 
 # emagged
 
-- type: latheRecipe
-  parent: PrizeCounterPlushieExpensive
-  id: PlushieBug
-  result: PlushieBug
+# - type: latheRecipe # QB - no references
+#   parent: PrizeCounterPlushieExpensive
+#   id: PlushieBug
+#   result: PlushieBug
 
 - type: latheRecipe
   parent: PrizeCounterPlushieExpensive
   id: PlushieCaptain
   result: PlushieCaptain
 
-- type: latheRecipe
-  parent: PrizeCounterPlushieExpensive
-  id: PlushieGnomeChild
-  result: PlushieGnomeChild
+# - type: latheRecipe # QB - no references
+#   parent: PrizeCounterPlushieExpensive
+#   id: PlushieGnomeChild
+#   result: PlushieGnomeChild
 
 - type: latheRecipe
   parent: PrizeCounterPlushieExpensive
@@ -281,10 +281,10 @@
   id: PlushieHeadofPersonnel
   result: PlushieHeadofPersonnel
 
-- type: latheRecipe
-  parent: PrizeCounterPlushieExpensive
-  id: PlushieIba
-  result: PlushieIba
+# - type: latheRecipe # QB - no references
+#   parent: PrizeCounterPlushieExpensive
+#   id: PlushieIba
+#   result: PlushieIba
 
 # QB edit start - nomira
 # - type: latheRecipe
@@ -293,10 +293,10 @@
 #   result: PlushieImp
 # QB edit end
 
-- type: latheRecipe
-  parent: PrizeCounterPlushieExpensive
-  id: PlushieOdds
-  result: PlushieOdds
+# - type: latheRecipe # QB - no references
+#   parent: PrizeCounterPlushieExpensive
+#   id: PlushieOdds
+#   result: PlushieOdds
 
 - type: latheRecipe
   parent: PrizeCounterPlushie

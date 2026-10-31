@@ -183,12 +183,12 @@
     - PlushieDoll
   groupBy: "baubles"
 
-- type: loadout
-  id: PlushieDollHair
-  storage:
-    back:
-    - PlushieDollHair
-  groupBy: "baubles"
+# - type: loadout # QB - no references
+#   id: PlushieDollHair
+#   storage:
+#     back:
+#     - PlushieDollHair
+#   groupBy: "baubles"
 
 - type: loadout
   id: CardBoxBlack

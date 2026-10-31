@@ -70,11 +70,11 @@
         orGroup: Prize
       - id: GlowstickRed
         orGroup: Prize
-      - id: PlushieOdds
-        prob: 0.1
-        orGroup: Prize
-      - id: PlushieGnomeChild
-        orGroup: Prize
+      # - id: PlushieOdds # QB - no references
+      #   prob: 0.1
+      #   orGroup: Prize
+      # - id: PlushieGnomeChild # QB - no references
+      #   orGroup: Prize
       - id: ClothingBackpackDuffelSyndicatePyjamaBundle
         orGroup: Prize
       - id: ToySword
