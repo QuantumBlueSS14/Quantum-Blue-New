@@ -1,3 +1,4 @@
+# guns
 
 - type: listing
   id: uplinkDesperado
@@ -10,6 +11,20 @@
     Telecrystal: 12
   cost:
     Telecrystal: 15
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: UplinkMinigun
+  name: uplink-minigun-name
+  description: uplink-minigun-desc
+  icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/MachineGuns/minigun.rsi, state: icon }
+  productEntity: WeaponMinigunUplink
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 26
+  cost:
+    Telecrystal: 30
   categories:
   - UplinkWeaponry
 

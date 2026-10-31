@@ -1,18 +1,19 @@
 [game]
-desc = "A medium roleplay fork based around the paranormal with unique content and almost all unique art, all with a focus on lore and immersion."
+desc = "A whitelist-only MRP fork with focus on unique content, quality moderation and improv-friendly lore. Apply for whitelist on our discord!"
 lobbyenabled = true
 lobbyduration = 600
 round_restart_time = 300
 contraband_examine = false
-role_timer_override = "QBTemporaryPlaytimeReq"
 soft_max_players = 60
-#map_pool = "QuantumBlueMapPool" #TODO: Actually make this
+map_pool = "DefaultMapPoolQB"
 
 [movement]
 mob_pushing = false
 
 [infolinks]
+discord = "https://discord.gg/jesCmMtq64"
 github = "https://github.com/QuantumBlueSS14/Quantum-Blue-New"
+website = "https://quantumblue.gay"
 
 [net]
 max_connections = 1024

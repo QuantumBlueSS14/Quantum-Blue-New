@@ -1,0 +1,14 @@
+# Please list new additions in this order: by TC price in its category, and if it has the same price as another item, then by alphabetical order by ID (not name).
+
+- type: listing
+  id: UplinkLollipop
+  name: uplink-lollipop-name
+  description: uplink-lollipop-desc
+  productEntity: FoodSnackSwirlLollipopUplink
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkChemicals
