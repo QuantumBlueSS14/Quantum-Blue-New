@@ -119,48 +119,48 @@
         - RawMaterial
         - Ingot
   - type: OreSiloClient
-  - type: Lathe
-    idleState: icon
-    runningState: building
-    unlitIdleState: unlit
-    unlitRunningState: unlit-building
-    staticPacks:
-    - ToolsStatic
-    - PartsStatic
-    - AtmosStatic
-    - CablesStatic
-    - PaperworkStatic
-    - TowelsStatic
-    - CargoStatic
-    - MaterialsStatic
-    - BasicChemistryStatic
-    - RollerBedsStatic
-    - LightsStatic
-    - ServiceStatic
-    - PowerCellsStatic
-    - ElectronicsStatic
-    - ImpAutoStatic # Imp
-    - ReportingStatic # DeltaV
-    dynamicPacks:
-    - ImpAutoDynamic # Imp
-  - type: EmagLatheRecipes
-    emagStaticPacks:
-    - SecurityAmmoStatic
-    - SyndicateAmmoStatic
-    - ImpAutoEmagged # imp
-    - SecurityAmmoStaticQB #qb
-  - type: BlueprintReceiver
-    whitelist:
-      tags:
-      - BlueprintAutolathe
-  - type: ContainerContainer
-    containers:
-      machine_board: !type:Container
-      machine_parts: !type:Container
-      blueprint: !type:Container
-  - type: EmptyOnMachineDeconstruct
-    containers:
-    - blueprint
+  # - type: Lathe # QB comment
+  #   idleState: icon
+  #   runningState: building
+  #   unlitIdleState: unlit
+  #   unlitRunningState: unlit-building
+  #   staticPacks:
+  #   - ToolsStatic
+  #   - PartsStatic
+  #   - AtmosStatic
+  #   - CablesStatic
+  #   - PaperworkStatic
+  #   - TowelsStatic
+  #   - CargoStatic
+  #   - MaterialsStatic
+  #   - BasicChemistryStatic
+  #   - RollerBedsStatic
+  #   - LightsStatic
+  #   - ServiceStatic
+  #   - PowerCellsStatic
+  #   - ElectronicsStatic
+  #   - ImpAutoStatic # Imp
+  #   - ReportingStatic # DeltaV
+  #   dynamicPacks:
+  #   - ImpAutoDynamic # Imp
+  # - type: EmagLatheRecipes
+  #   emagStaticPacks:
+  #   - SecurityAmmoStatic
+  #   - SyndicateAmmoStatic
+  #   - ImpAutoEmagged # imp
+  #   - SecurityAmmoStaticQB #qb
+  # - type: BlueprintReceiver
+  #   whitelist:
+  #     tags:
+  #     - BlueprintAutolathe
+  # - type: ContainerContainer
+  #   containers:
+  #     machine_board: !type:Container
+  #     machine_parts: !type:Container
+  #     blueprint: !type:Container
+  # - type: EmptyOnMachineDeconstruct
+  #   containers:
+  #   - blueprint
 
 - type: entity
   id: AutolatheHyperConvection
@@ -198,41 +198,41 @@
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
   - type: OreSiloClient
-  - type: Lathe
-    idleState: icon
-    runningState: building
-    unlitIdleState: unlit
-    unlitRunningState: unlit-building
-    staticPacks:
-    - ChemistryStatic
-    - SurgeryStatic
-    - ImpProtoStatic # Imp
-    - ReportingStatic # DeltaV
-    - SteelBriefcaseImp # Imp
-    dynamicPacks:
-    - AdvancedTools
-    - ScienceEquipment
-    - ScienceExplosives
-    - ScienceClothing
-    - PowerCells
-    - ScienceWeapons
-    - Mining
-    - AtmosTools
-    - EngineeringWeapons
-    - Chemistry
-    - Janitor
-    - Instruments
-    - Equipment
-    - ImpProtoDynamic # Imp
-    - NFService # Frontier
-  - type: EmagLatheRecipes
-    emagDynamicPacks:
-    - SecurityAmmo
-    - SecurityAmmoQB #qb
-    - SecurityExplosives
-    - SecurityEquipment
-    - SecurityWeapons
-    - ImpProtoEmagged # Imp
+  # - type: Lathe # QB comment
+  #   idleState: icon
+  #   runningState: building
+  #   unlitIdleState: unlit
+  #   unlitRunningState: unlit-building
+  #   staticPacks:
+  #   - ChemistryStatic
+  #   - SurgeryStatic
+  #   - ImpProtoStatic # Imp
+  #   - ReportingStatic # DeltaV
+  #   - SteelBriefcaseImp # Imp
+  #   dynamicPacks:
+  #   - AdvancedTools
+  #   - ScienceEquipment
+  #   - ScienceExplosives
+  #   - ScienceClothing
+  #   - PowerCells
+  #   - ScienceWeapons
+  #   - Mining
+  #   - AtmosTools
+  #   - EngineeringWeapons
+  #   - Chemistry
+  #   - Janitor
+  #   - Instruments
+  #   - Equipment
+  #   - ImpProtoDynamic # Imp
+  #   - NFService # Frontier
+  # - type: EmagLatheRecipes
+  #   emagDynamicPacks:
+  #   - SecurityAmmo
+  #   - SecurityAmmoQB #qb
+  #   - SecurityExplosives
+  #   - SecurityEquipment
+  #   - SecurityWeapons
+  #   - ImpProtoEmagged # Imp
 
 - type: entity
   id: ProtolatheHyperConvection
