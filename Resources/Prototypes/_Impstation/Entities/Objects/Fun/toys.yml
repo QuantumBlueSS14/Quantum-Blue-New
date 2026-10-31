@@ -1109,8 +1109,8 @@
     state: plushie_ungu
   - type: Edible
     requiresSpecialDigestion: true
-  - type: StealTarget
-    stealGroup: Plushie
+  # - type: StealTarget # QB - nope
+  #   stealGroup: Plushie
   - type: Item
     inhandVisuals:
       left:
@@ -1129,8 +1129,8 @@
     state: plushie_ungu_tiny
   - type: Edible
     requiresSpecialDigestion: true
-  - type: StealTarget
-    stealGroup: Plushie
+  # - type: StealTarget # QB - nope
+    # stealGroup: Plushie
   - type: Item
     inhandVisuals:
       left:
@@ -1213,8 +1213,8 @@
     openToolQualityNeeded: Slicing
     closeToolQualityNeeded: Slicing
     name: secret-stash-plushie
-  - type: StealTarget
-    stealGroup: Plushie
+  # - type: StealTarget # QB - nope
+    # stealGroup: Plushie
   - type: DamageOtherOnHit
 
 - type: entity
