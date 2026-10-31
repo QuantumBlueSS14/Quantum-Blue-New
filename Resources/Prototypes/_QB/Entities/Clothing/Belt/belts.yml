@@ -1,0 +1,12 @@
+- type: entity
+  id: ClothingBeltHolsterSyndieDesperadoFilled
+  parent: ClothingBeltSyndieHolster
+  suffix: Syndicate, Desperado Bundle
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponPistolDesperado
+        - id: MagazineMagnumExtended
+          amount: 4

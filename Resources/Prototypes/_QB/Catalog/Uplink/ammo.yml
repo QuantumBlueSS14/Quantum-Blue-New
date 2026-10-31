@@ -19,3 +19,17 @@
     Telecrystal: 4
   categories:
   - UplinkAmmo
+
+- type: listing
+  id: uplinkPistolMagazineMagnum
+  name: uplink-magazine-magnum-name
+  description: uplink-magazine-magnum-desc
+  icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: base }
+  productEntity: MagazineMagnumExtended
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAmmo
