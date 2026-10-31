@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Syndicate agents now can purches the Jormungandr for 30tc, a minigun with 1000 bullets. Rain lead!
+    id: 199
+    time: '2026-10-31T17:43:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/276
   - author: MattFright
     changes:
       - type: Tweak
