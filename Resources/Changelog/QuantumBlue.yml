@@ -2,6 +2,15 @@ Entries:
   - author: MattFright
     changes:
       - type: Fix
+        message: You can no longer try to vote the gamemode for multiple players without multiple players
+      - type: Fix
+        message: E1M1 now has a minimum of 25 players required to roll. it's way too big
+    id: 202
+    time: '2026-10-31T20:00:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/284
+  - author: MattFright
+    changes:
+      - type: Fix
         message: 'Archon: Fixed trash not going into the disposals conveyor'
     id: 201
     time: '2026-10-31T19:52:29.0000000+00:00'
