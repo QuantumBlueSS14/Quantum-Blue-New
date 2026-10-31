@@ -126,7 +126,7 @@ public sealed class JobTest
         Assert.That(pair.Client.AttachedEntity, Is.Null);
 
         await pair.SetJobPreferences([Passenger, Engineer]);
-        await pair.SetJobPriorities(new()
+        await pair.SetJobPriorities(new Dictionary<ProtoId<JobPrototype>, JobPriority>() // QB edit: disambiguate dictionary overload.
         {
             { Passenger, JobPriority.Medium },
             { Engineer, JobPriority.High },
@@ -139,7 +139,7 @@ public sealed class JobTest
 
         await pair.Server.WaitPost(() => ticker.RestartRound());
         Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.PreRoundLobby));
-        await pair.SetJobPriorities(new()
+        await pair.SetJobPriorities(new Dictionary<ProtoId<JobPrototype>, JobPriority>() // QB edit: disambiguate dictionary overload.
         {
             { Passenger, JobPriority.High },
             { Engineer, JobPriority.Medium },
@@ -179,7 +179,7 @@ public sealed class JobTest
         Assert.That(captain.Weight, Is.GreaterThan(engineer.Weight));
         Assert.That(engineer.Weight, Is.EqualTo(passenger.Weight));
 
-        await pair.SetJobPriorities( new ()
+        await pair.SetJobPriorities(new Dictionary<ProtoId<JobPrototype>, JobPriority>() // QB edit: disambiguate dictionary overload.
         {
             {Passenger, JobPriority.Medium},
             {Engineer, JobPriority.High},

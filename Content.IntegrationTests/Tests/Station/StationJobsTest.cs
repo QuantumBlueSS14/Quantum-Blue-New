@@ -17,6 +17,7 @@ using System.Linq;
 using Content.Server.Database;
 using Content.Server.Maps;
 using Content.Server.Preferences.Managers;
+using Content.Shared.Maps;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Preferences;
@@ -152,13 +153,15 @@ public sealed class StationJobsTest
             List<Task> tasks = new();
             foreach (var session in tideSessions)
             {
-                var newProfile = HumanoidCharacterProfile.Random().WithJobPreferences(jobPrioritiesA.Keys).AsEnabled();
+                var newProfile = HumanoidCharacterProfile.Random().WithJobPreferences(jobPrioritiesA.Keys); // QB edit: keep compatibility with branch that lacks AsEnabled helper.
+                newProfile.Enabled = true; // QB edit
                 tasks.Add(prefMan.SetJobPriorities(session.UserId, jobPrioritiesA));
                 tasks.Add(prefMan.SetProfile(session.UserId, 0, newProfile));
             }
             foreach (var session in capSessions)
             {
-                var newProfile = HumanoidCharacterProfile.Random().WithJobPreferences(jobPrioritiesB.Keys).AsEnabled();
+                var newProfile = HumanoidCharacterProfile.Random().WithJobPreferences(jobPrioritiesB.Keys); // QB edit: keep compatibility with branch that lacks AsEnabled helper.
+                newProfile.Enabled = true; // QB edit
                 tasks.Add(prefMan.SetJobPriorities(session.UserId, jobPrioritiesB));
                 tasks.Add(prefMan.SetProfile(session.UserId, 0, newProfile));
             }
@@ -171,7 +174,8 @@ public sealed class StationJobsTest
 
             var start = new Stopwatch();
             start.Start();
-            var assigned = stationJobs.AssignJobs(allNetIds, stations);
+            var players = allSessions.ToDictionary(x => x.UserId, x => (HumanoidCharacterProfile) prefMan.GetPreferences(x.UserId).Characters[0]); // QB edit: this branch's AssignJobs overload accepts explicit profile dictionaries.
+            var assigned = stationJobs.AssignJobs(players, stations); // QB edit
             Assert.That(assigned, Is.Not.Empty);
             var time = start.Elapsed.TotalMilliseconds;
             logmill.Info($"Took {time} ms to distribute {TotalPlayers} players.");
@@ -206,7 +210,6 @@ public sealed class StationJobsTest
                 Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TCaptain"));
             });
         });
-        await pair.CleanReturnAsync();
     }
 
     [Test]
@@ -256,7 +259,6 @@ public sealed class StationJobsTest
                 Assert.That(stationJobs.IsJobUnlimited(station, "TChaplain"), "Could not make TChaplain unlimited.");
             });
         });
-        await pair.CleanReturnAsync();
     }
 
     [Test]
@@ -300,6 +302,5 @@ public sealed class StationJobsTest
                 }
             });
         });
-        await pair.CleanReturnAsync();
     }
 }
