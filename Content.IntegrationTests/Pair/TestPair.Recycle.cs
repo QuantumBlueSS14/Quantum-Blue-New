@@ -1,6 +1,17 @@
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Jen Pollock <jen@jenpollock.ca>
+// SPDX-FileCopyrightText: 2025 Quantum-cross <7065792+Quantum-cross@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
 #nullable enable
 using System.IO;
 using System.Linq;
+using Content.Client.Lobby;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
 using Content.Shared.CCVar;
@@ -8,7 +19,9 @@ using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Preferences;
+using Content.Shared.Roles;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Pair;
 
@@ -23,13 +36,34 @@ public sealed partial class TestPair
 
     private async Task ResetModifiedPreferences()
     {
-        var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
-        foreach (var user in _modifiedProfiles)
-        {
-            await Server.WaitPost(() => prefMan.SetProfile(user, 0, new HumanoidCharacterProfile()).Wait());
-        }
+        if (Player == null)
+            return;
 
-        _modifiedProfiles.Clear();
+        await ReallyBeIdle();
+
+        // reset through the client so that the client's cached preferences get updated
+        var prefMan = Client.ResolveDependency<IClientPreferencesManager>();
+        var prefs = prefMan.Preferences;
+
+        await Client.WaitAssertion(() =>
+        {
+            foreach (var slot in prefs!.Characters.Keys)
+            {
+                if (slot == 0)
+                    continue;
+                prefMan.DeleteCharacter(slot);
+            }
+
+            var prototypeManager = Client.ResolveDependency<IPrototypeManager>(); // QB edit
+            var defaultJobPriorities = prototypeManager.EnumeratePrototypes<JobPrototype>()
+                .ToDictionary(job => new ProtoId<JobPrototype>(job.ID), _ => JobPriority.Medium);
+            defaultJobPriorities[SharedGameTicker.FallbackOverflowJob] = JobPriority.High;
+            var defaultProfile = HumanoidCharacterProfile.Random().WithJobPreferences(defaultJobPriorities.Keys);
+            defaultProfile.Enabled = true; 
+            prefMan.UpdateJobPriorities(defaultJobPriorities); // QB edit end
+        });
+
+        await ReallyBeIdle();
     }
 
     protected override async Task Recycle(PairSettings next, TextWriter testOut)

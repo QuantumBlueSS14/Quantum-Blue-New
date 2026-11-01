@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 Quantum-cross <7065792+Quantum-cross@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
 using System.Linq;
 using Content.Server.EUI;
 using Content.Shared.CCVar;
@@ -18,7 +23,6 @@ public sealed class ReadyManifestSystem : EntitySystem
 {
     [Dependency] private readonly EuiManager _euiManager = default!;
     [Dependency] private readonly IConfigurationManager _configManager = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IServerPreferencesManager _prefsManager = default!;
 
@@ -30,6 +34,32 @@ public sealed class ReadyManifestSystem : EntitySystem
         SubscribeNetworkEvent<RequestReadyManifestMessage>(OnRequestReadyManifest);
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStarting);
         SubscribeLocalEvent<PlayerToggleReadyEvent>(OnPlayerToggleReady);
+        SubscribeLocalEvent<PlayerJobPriorityChangedEvent>(OnPlayerJobPriorityChanged);
+    }
+
+    private void OnPlayerJobPriorityChanged(PlayerJobPriorityChangedEvent ev)
+    {
+        if (!_gameTicker.PlayerGameStatuses.TryGetValue(ev.Session.UserId, out var status))
+            return;
+
+        if (status != PlayerGameStatus.ReadyToPlay)
+            return;
+
+        var allJobs = ev.OldPriorities.Keys.Union(ev.NewPriorities.Keys);
+        foreach (var job in allJobs)
+        {
+            var oldPrio = ev.OldPriorities.GetValueOrDefault(job);
+            var newPrio = ev.NewPriorities.GetValueOrDefault(job);
+            if (oldPrio != JobPriority.Never && newPrio == JobPriority.Never)
+            {
+                _jobCounts[job]--;
+            }
+            else if (oldPrio == JobPriority.Never && newPrio != JobPriority.Never)
+            {
+                _jobCounts[job]++;
+            }
+        }
+        UpdateEuis();
     }
 
     private void OnRoundStarting(RoundStartingEvent ev)
@@ -62,8 +92,7 @@ public sealed class ReadyManifestSystem : EntitySystem
             return;
         }
 
-        HumanoidCharacterProfile profile = (HumanoidCharacterProfile) preferences.SelectedCharacter;
-        var profileJobs = FilterPlayerJobs(profile);
+        var profileJobs = preferences.JobPrioritiesFiltered().Keys; // QB edit: track manifest counts from the active global job-priority set, not the selected profile only.
 
         if (_gameTicker.PlayerGameStatuses[userId] == PlayerGameStatus.ReadyToPlay)
         {
@@ -101,11 +130,9 @@ public sealed class ReadyManifestSystem : EntitySystem
         {
             if (status == PlayerGameStatus.ReadyToPlay)
             {
-                HumanoidCharacterProfile profile;
                 if (_prefsManager.TryGetCachedPreferences(userId, out var preferences))
                 {
-                    profile = (HumanoidCharacterProfile) preferences.SelectedCharacter;
-                    var profileJobs = FilterPlayerJobs(profile);
+                    var profileJobs = preferences.JobPrioritiesFiltered().Keys; // QB edit: keep full-manifest rebuild in sync with ready-toggle updates.
                     foreach (var jobId in profileJobs)
                     {
                         if (jobCounts.ContainsKey(jobId))
@@ -123,21 +150,6 @@ public sealed class ReadyManifestSystem : EntitySystem
         _jobCounts = jobCounts;
     }
 
-
-    private List<ProtoId<JobPrototype>> FilterPlayerJobs(HumanoidCharacterProfile profile)
-    {
-        var jobs = profile.JobPriorities.Keys.Select(k => new ProtoId<JobPrototype>(k)).ToList();
-        List<ProtoId<JobPrototype>> priorityJobs = new();
-        foreach (var job in jobs)
-        {
-            var priority = profile.JobPriorities[job];
-            if (priority == JobPriority.High || (_prototypeManager.Index(job).Weight >= 10 && priority > JobPriority.Never))
-            {
-                priorityJobs.Add(job);
-            }
-        }
-        return priorityJobs;
-    }
 
     public Dictionary<ProtoId<JobPrototype>, int> GetReadyManifest()
     {

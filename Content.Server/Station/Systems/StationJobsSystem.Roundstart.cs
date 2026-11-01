@@ -2,8 +2,10 @@ using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Antag;
 using Content.Server.Players.PlayTimeTracking;
+using Content.Server.Preferences.Managers;
 using Content.Server.Station.Components;
 using Content.Server.Station.Events;
+using Content.Shared.Antag;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Server.Player;
@@ -20,6 +22,7 @@ public sealed partial class StationJobsSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IBanManager _banManager = default!;
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
+    [Dependency] private readonly IServerPreferencesManager _serverPreferences = default!;
 
     private Dictionary<int, HashSet<string>> _jobsByWeight = default!;
     private List<int> _orderedWeights = default!;
@@ -102,16 +105,19 @@ public sealed partial class StationJobsSystem
         // Ok so the general algorithm:
         // We start with the highest weight jobs and work our way down. We filter jobs by weight when selecting as well.
         // Weight > Priority > Station.
-        foreach (var weight in _orderedWeights)
+        // QB edit: run an antag-only pass first so pre-selected antagonists get first assignment priority.
+        foreach (var antagonistPass in new[] { true, false })
         {
-            for (var selectedPriority = JobPriority.High; selectedPriority > JobPriority.Never; selectedPriority--)
+            foreach (var weight in _orderedWeights)
             {
-                if (profiles.Count == 0)
-                    goto endFunc;
+                for (var selectedPriority = JobPriority.High; selectedPriority > JobPriority.Never; selectedPriority--)
+                {
+                    if (profiles.Count == 0)
+                        goto endFunc;
 
-                var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles);
+                    var candidates = GetPlayersJobCandidates(weight, selectedPriority, profiles, onlyAntags: antagonistPass); // QB edit: keep 1424 antag-priority pass while reading the explicit profile map provided to AssignJobs.
 
-                var optionsRemaining = 0;
+                    var optionsRemaining = 0;
 
                 // Assigns a player to the given station, updating all the bookkeeping while at it.
                 void AssignPlayer(NetUserId player, ProtoId<JobPrototype> job, EntityUid station)
@@ -260,7 +266,8 @@ public sealed partial class StationJobsSystem
                         }
                     } while (priorCount != stationShares[station]);
                 }
-                done: ;
+                    done: ;
+                }
             }
         }
 
@@ -341,16 +348,38 @@ public sealed partial class StationJobsSystem
     /// <param name="weight">Weight to find, if any.</param>
     /// <param name="selectedPriority">Priority to find, if any.</param>
     /// <param name="profiles">Profiles to look in.</param>
+    /// <param name="onlyAntags">If true, only include players preselected as antagonists.</param>
     /// <returns>Players and a list of their matching jobs.</returns>
-    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(int? weight, JobPriority? selectedPriority, Dictionary<NetUserId, HumanoidCharacterProfile> profiles)
+    private Dictionary<NetUserId, List<string>> GetPlayersJobCandidates(
+        int? weight,
+        JobPriority? selectedPriority,
+        IReadOnlyDictionary<NetUserId, HumanoidCharacterProfile> profiles,
+        bool onlyAntags = false)
     {
         var outputDict = new Dictionary<NetUserId, List<string>>(profiles.Count);
 
         foreach (var (player, profile) in profiles)
         {
+            if (!_player.TryGetSessionById(player, out var session))
+                continue;
+
             var roleBans = _banManager.GetJobBans(player);
-            var antagBlocked = _antag.GetPreSelectedAntagSessions();
-            var profileJobs = profile.JobPriorities.Keys.Select(k => new ProtoId<JobPrototype>(k)).ToList();
+            var isPreselectedAntag = _antag.GetPreSelectedAntagSessions().Contains(session);
+            var preselectedAntags = _antag.GetPreSelectedAntagDefinitions(session);
+
+            if (onlyAntags && !isPreselectedAntag)
+                continue;
+            IReadOnlyDictionary<ProtoId<JobPrototype>, JobPriority> playerJobs;
+            if (_serverPreferences.TryGetCachedPreferences(player, out var prefs))
+            {
+                var filtered = prefs.JobPrioritiesFiltered();
+                playerJobs = filtered.Count > 0 ? filtered : profile.JobPriorities;
+            }
+            else
+            {
+                playerJobs = profile.JobPriorities;
+            }
+            var profileJobs = playerJobs.Keys.ToList();
             var ev = new StationJobsGetCandidatesEvent(player, profileJobs);
             RaiseLocalEvent(ref ev);
 
@@ -358,7 +387,7 @@ public sealed partial class StationJobsSystem
 
             foreach (var jobId in profileJobs)
             {
-                var priority = profile.JobPriorities[jobId];
+                var priority = playerJobs[jobId];
 
                 if (!(priority == selectedPriority || selectedPriority is null))
                     continue;
@@ -366,7 +395,14 @@ public sealed partial class StationJobsSystem
                 if (!_prototypeManager.Resolve(jobId, out var job))
                     continue;
 
-                if (!job.CanBeAntag && (!_player.TryGetSessionById(player, out var session) || antagBlocked.Contains(session)))
+                // If we're an antag but the job can't be an antag, don't allow this job
+                if (isPreselectedAntag && !job.CanBeAntag)
+                    continue;
+
+                // If we're an antag, make sure that we have a character that is eligible to
+                // become all of our selected antags
+                if (isPreselectedAntag && !preselectedAntags.All(antag =>
+                        _antag.HasPrimaryAntagPreference(session, antag, AntagSelectionTime.IntraPlayerSpawn, job)))
                     continue;
 
                 if (weight is not null && job.Weight != weight.Value)
@@ -375,7 +411,7 @@ public sealed partial class StationJobsSystem
                 if (!(roleBans == null || !roleBans.Contains(jobId))) //TODO: Replace with IsRoleBanned
                     continue;
 
-                availableJobs ??= new List<string>(profile.JobPriorities.Count);
+                availableJobs ??= new List<string>(playerJobs.Count);
                 availableJobs.Add(jobId);
             }
 

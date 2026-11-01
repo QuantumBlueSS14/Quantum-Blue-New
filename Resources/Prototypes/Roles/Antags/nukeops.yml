@@ -9,6 +9,7 @@
   - !type:OverallPlaytimeRequirement
     time: 5h
   guides: [ NuclearOperatives ]
+  previewStartingGear: SyndicateOperativeGearFull
 
 - type: antag
   id: NukeopsMedic
@@ -24,6 +25,7 @@
     role: JobChemist
     time: 3h
   guides: [ NuclearOperatives ]
+  previewStartingGear: SyndicateOperativeMedicFull
 
 - type: antag
   id: NukeopsCommander
@@ -44,6 +46,7 @@
     time: 4h
   # imp edit end
   guides: [ NuclearOperatives ]
+  previewStartingGear: SyndicateCommanderGearFull
 
 - type: startingGear
   id: SyndicateOperativeGearFullNoUplink
@@ -150,4 +153,3 @@
     - PinpointerSyndicateNuclear
     - DeathAcidifierImplanter
     - NukieSpectralLocator # Imp special!!
-

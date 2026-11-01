@@ -392,7 +392,7 @@ namespace Content.Server.GameTicking
 
                 readyPlayers.Add(session);
                 HumanoidCharacterProfile profile;
-                if (_prefsManager.TryGetCachedPreferences(userId, out var preferences))
+                if (_preferencesManager.TryGetCachedPreferences(userId, out var preferences))
                 {
                     profile = (HumanoidCharacterProfile)preferences.SelectedCharacter;
                 }
