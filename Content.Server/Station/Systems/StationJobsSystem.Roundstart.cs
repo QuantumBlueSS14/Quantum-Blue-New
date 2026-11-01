@@ -369,7 +369,9 @@ public sealed partial class StationJobsSystem
 
             if (onlyAntags && !isPreselectedAntag)
                 continue;
-            var playerJobs = profile.JobPriorities; // QB edit: tests and assignment callers in this branch provide profile/job inputs directly via AssignJobs.
+            var playerJobs = _serverPreferences.TryGetCachedPreferences(player, out var prefs)
+                ? prefs.JobPrioritiesFiltered()
+                : profile.JobPriorities;
             var profileJobs = playerJobs.Keys.ToList();
             var ev = new StationJobsGetCandidatesEvent(player, profileJobs);
             RaiseLocalEvent(ref ev);

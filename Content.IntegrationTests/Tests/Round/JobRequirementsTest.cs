@@ -70,114 +70,126 @@ public sealed class JobRequirementsTest
     [TestCase(30, "Twenties", false)]
     public async Task AgeRequirementsTest(int age, string wantedJob, bool expectedJob = true)
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings
+        var pair = await PoolManager.GetServerClient(new PoolSettings
         {
             DummyTicker = false,
             Connected = true,
             InLobby = true,
         });
-        pair.Server.CfgMan.SetCVar(CCVars.GameMap, _map);
-
-        // TODO: This is a work around for https://github.com/space-wizards/space-station-14/issues/37042
-        pair.Server.CfgMan.SetCVar(CCVars.GameRoleTimers, true);
-
-        var ticker = pair.Server.System<GameTicker>();
-
-        var sPref = pair.Server.ResolveDependency<IServerPreferencesManager>();
-        var cPref = pair.Client.ResolveDependency<IClientPreferencesManager>();
-
-        await pair.ReallyBeIdle();
-
-        var humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
-        Assert.That(humanoidZero, Is.Not.Null);
-
-        var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
+        try
         {
-            { wantedJob, JobPriority.High },
-            { "Passenger", JobPriority.Low },
-        };
+            pair.Server.CfgMan.SetCVar(CCVars.GameMap, _map);
 
-        await pair.Client.WaitAssertion(() =>
+            // TODO: This is a work around for https://github.com/space-wizards/space-station-14/issues/37042
+            pair.Server.CfgMan.SetCVar(CCVars.GameRoleTimers, true);
+
+            var ticker = pair.Server.System<GameTicker>();
+
+            var sPref = pair.Server.ResolveDependency<IServerPreferencesManager>();
+            var cPref = pair.Client.ResolveDependency<IClientPreferencesManager>();
+
+            await pair.ReallyBeIdle();
+
+            var humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
+            Assert.That(humanoidZero, Is.Not.Null);
+
+            var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
+            {
+                { wantedJob, JobPriority.High },
+                { "Passenger", JobPriority.Low },
+            };
+
+            await pair.Client.WaitAssertion(() =>
+            {
+                cPref.UpdateCharacter(humanoidZero.WithAge(age).WithJobPreferences(priorities.Keys), 0);
+                cPref.UpdateJobPriorities(priorities);
+            });
+
+            await pair.ReallyBeIdle();
+
+            humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
+            Assert.That(humanoidZero, Is.Not.Null);
+            Assert.That(humanoidZero.Age, Is.EqualTo(age));
+
+            Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.NotReadyToPlay));
+            ticker.ToggleReadyAll(true);
+            Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
+            await pair.Server.WaitPost(() => ticker.StartRound());
+            await pair.RunTicksSync(10);
+
+            pair.AssertJob(expectedJob ? wantedJob : "Passenger");
+
+            await pair.Server.WaitPost(() => ticker.RestartRound());
+        }
+        finally
         {
-            cPref.UpdateCharacter(humanoidZero.WithAge(age).WithJobPreferences(priorities.Keys), 0);
-            cPref.UpdateJobPriorities(priorities);
-        });
-
-        await pair.ReallyBeIdle();
-
-        humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
-        Assert.That(humanoidZero, Is.Not.Null);
-        Assert.That(humanoidZero.Age, Is.EqualTo(age));
-
-        Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.NotReadyToPlay));
-        ticker.ToggleReadyAll(true);
-        Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
-        await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(10);
-
-        pair.AssertJob(expectedJob ? wantedJob : "Passenger");
-
-        await pair.Server.WaitPost(() => ticker.RestartRound());
-        await pair.CleanReturnAsync();
+            await pair.DisposeAsync();
+        }
     }
 
     [Test]
     [TestCase]
     public async Task AgeRequirementsTestMultipleCharacters()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings
+        var pair = await PoolManager.GetServerClient(new PoolSettings
         {
             DummyTicker = false,
             Connected = true,
             InLobby = true,
         });
-        pair.Server.CfgMan.SetCVar(CCVars.GameMap, _map);
-
-        // TODO: This is a work around for https://github.com/space-wizards/space-station-14/issues/37042
-        pair.Server.CfgMan.SetCVar(CCVars.GameRoleTimers, true);
-
-        var ticker = pair.Server.System<GameTicker>();
-
-        var sPref = pair.Server.ResolveDependency<IServerPreferencesManager>();
-        var cPref = pair.Client.ResolveDependency<IClientPreferencesManager>();
-
-        await pair.ReallyBeIdle();
-
-        var humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
-        Assert.That(humanoidZero, Is.Not.Null);
-
-        var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
+        try
         {
-            { "SeniorCitizen", JobPriority.High },
-            { "Passenger", JobPriority.Low },
-        };
+            pair.Server.CfgMan.SetCVar(CCVars.GameMap, _map);
 
-        await pair.Client.WaitAssertion(() =>
-        {
-            humanoidZero = humanoidZero.WithJobPreferences(priorities.Keys);
-            cPref.UpdateCharacter(humanoidZero.WithAge(75), 0);
-            var maxSlots = cPref.Settings?.MaxCharacterSlots ?? 30;
-            for (var i = 1; i < maxSlots; i++)
+            // TODO: This is a work around for https://github.com/space-wizards/space-station-14/issues/37042
+            pair.Server.CfgMan.SetCVar(CCVars.GameRoleTimers, true);
+
+            var ticker = pair.Server.System<GameTicker>();
+
+            var sPref = pair.Server.ResolveDependency<IServerPreferencesManager>();
+            var cPref = pair.Client.ResolveDependency<IClientPreferencesManager>();
+
+            await pair.ReallyBeIdle();
+
+            var humanoidZero = cPref.Preferences!.Characters[0] as HumanoidCharacterProfile;
+            Assert.That(humanoidZero, Is.Not.Null);
+
+            var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
             {
-                cPref.UpdateCharacter(humanoidZero.WithAge(20), i);
-            }
-            cPref.UpdateJobPriorities(priorities);
-        });
+                { "SeniorCitizen", JobPriority.High },
+                { "Passenger", JobPriority.Low },
+            };
 
-        await pair.ReallyBeIdle();
+            await pair.Client.WaitAssertion(() =>
+            {
+                humanoidZero = humanoidZero.WithJobPreferences(priorities.Keys);
+                cPref.UpdateCharacter(humanoidZero.WithAge(75), 0);
+                var maxSlots = cPref.Settings?.MaxCharacterSlots ?? 30;
+                for (var i = 1; i < maxSlots; i++)
+                {
+                    cPref.UpdateCharacter(humanoidZero.WithAge(20), i);
+                }
+                cPref.UpdateJobPriorities(priorities);
+            });
 
-        ticker.ToggleReadyAll(true);
-        Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
-        await pair.Server.WaitPost(() => ticker.StartRound());
-        await pair.RunTicksSync(10);
+            await pair.ReallyBeIdle();
 
-        pair.AssertJob("SeniorCitizen");
-        Assert.That(pair.Client.AttachedEntity, Is.Not.Null);
-        pair.Server.EntMan.TryGetComponent<HumanoidAppearanceComponent>(pair.ToServerUid(pair.Client.AttachedEntity.Value), out var appearance);
-        Assert.That(appearance, Is.Not.Null);
-        Assert.That(appearance.Age, Is.EqualTo(75));
+            ticker.ToggleReadyAll(true);
+            Assert.That(ticker.PlayerGameStatuses[pair.Client.User!.Value], Is.EqualTo(PlayerGameStatus.ReadyToPlay));
+            await pair.Server.WaitPost(() => ticker.StartRound());
+            await pair.RunTicksSync(10);
 
-        await pair.Server.WaitPost(() => ticker.RestartRound());
-        await pair.CleanReturnAsync();
+            pair.AssertJob("SeniorCitizen");
+            Assert.That(pair.Client.AttachedEntity, Is.Not.Null);
+            pair.Server.EntMan.TryGetComponent<HumanoidAppearanceComponent>(pair.ToServerUid(pair.Client.AttachedEntity.Value), out var appearance);
+            Assert.That(appearance, Is.Not.Null);
+            Assert.That(appearance.Age, Is.EqualTo(75));
+
+            await pair.Server.WaitPost(() => ticker.RestartRound());
+        }
+        finally
+        {
+            await pair.DisposeAsync();
+        }
     }
 }

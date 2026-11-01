@@ -111,7 +111,7 @@ namespace Content.Server.GameTicking
         }
 
         private void SpawnPlayers(List<ICommonSession> readyPlayers,
-            HashSet<NetUserId> profiles,
+            Dictionary<NetUserId, HumanoidCharacterProfile> profiles,
             bool force)
         {
             // Allow game rules to spawn players by themselves if needed. (For example, nuke ops or wizard)
@@ -125,7 +125,7 @@ namespace Content.Server.GameTicking
             {
                 var toRemove = new RemQueue<NetUserId>();
 
-                foreach (var player in profiles)
+                foreach (var player in profiles.Keys)
                 {
                     if (playerNetIds.Contains(player))
                         continue;
@@ -182,9 +182,33 @@ namespace Content.Server.GameTicking
 
                 var finalPlayerProfiles = filteredPlayerProfiles.ToList();
                 if (finalPlayerProfiles.Count == 0)
+                {
+                    var allProfiles = playerPrefs.GetAllProfilesForJob(job.Value);
+                    finalPlayerProfiles.AddRange(allProfiles.Values.Where(profile =>
+                        JobRequirements.TryRequirementsMet(job.Value,
+                            null,
+                            out _,
+                            EntityManager,
+                            _prototypeManager,
+                            profile)));
+                }
+
+                if (finalPlayerProfiles.Count == 0 &&
+                    profiles.TryGetValue(player, out var selectedProfile) &&
+                    JobRequirements.TryRequirementsMet(job.Value,
+                        null,
+                        out _,
+                        EntityManager,
+                        _prototypeManager,
+                        selectedProfile))
+                {
+                    finalPlayerProfiles.Add(selectedProfile);
+                }
+
+                if (finalPlayerProfiles.Count == 0)
                     continue;
 
-                var profile = _robustRandom.Pick(finalPlayerProfiles.ToList());
+                var profile = _robustRandom.Pick(finalPlayerProfiles);
 
                 SpawnPlayer(_playerManager.GetSessionById(player), profile, station, job, false);
             }
@@ -210,7 +234,7 @@ namespace Content.Server.GameTicking
 
             if (jobId != null)
             {
-                var ev = new IsJobAllowedEvent(player, new ProtoId<JobPrototype>(jobId));
+                var ev = new IsRoleAllowedEvent(player, [new ProtoId<JobPrototype>(jobId)], null); // QB edit: this branch gates role eligibility through IsRoleAllowedEvent.
                 RaiseLocalEvent(ref ev);
                 if (ev.Cancelled)
                     return;
@@ -246,8 +270,22 @@ namespace Content.Server.GameTicking
                 return;
             }
 
+            var playerPreferences = _preferencesManager.GetPreferences(player.UserId);
+            var spawnEventProfile = character
+                                    ?? playerPreferences.SelectedCharacter as HumanoidCharacterProfile
+                                    ?? playerPreferences.GetRandomEnabledProfile();
+            if (spawnEventProfile == null)
+            {
+                if (!LobbyEnabled)
+                    JoinAsObserver(player);
+
+                _chatManager.DispatchServerMessage(player,
+                    Loc.GetString("game-ticker-player-no-character-for-job-available-when-joining", ("job", jobId ?? "Unknown")));
+                return;
+            }
+
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
-            var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);
+            var bev = new PlayerBeforeSpawnEvent(player, spawnEventProfile, jobId, lateJoin, station);
             RaiseLocalEvent(bev);
 
             // Do nothing, something else has handled spawning this player for us!
@@ -267,7 +305,6 @@ namespace Content.Server.GameTicking
                 restrictedRoles.UnionWith(jobBans);
 
             // Pick best job best on prefs.
-            var playerPreferences = _preferencesManager.GetPreferences(player.UserId);
             var jobPrioritiesFiltered = playerPreferences.JobPrioritiesFiltered();
             jobId ??= _stationJobs.PickBestAvailableJobWithPriority(station,
                 jobPrioritiesFiltered,
@@ -335,7 +372,6 @@ namespace Content.Server.GameTicking
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false,
                         colorOverride: Color.Gold);
                 }
                 else
@@ -345,8 +381,7 @@ namespace Content.Server.GameTicking
                             ("character", MetaData(mob).EntityName),
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
-                        Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false);
+                        Loc.GetString("latejoin-arrival-sender"));
                 }
             }
 

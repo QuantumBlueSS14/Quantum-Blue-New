@@ -1,4 +1,5 @@
 using Content.Server.Administration.Managers;
+using Content.Server.Preferences.Managers;
 using Content.Server.Station.Systems;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -18,6 +19,7 @@ namespace Content.Server.GameTicking.Commands
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
 
         private readonly ISawmill _sawmill;
 
@@ -34,7 +36,7 @@ namespace Content.Server.GameTicking.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length is not (2 or 3))
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
@@ -64,9 +66,9 @@ namespace Content.Server.GameTicking.Commands
             }
             else if (ticker.RunLevel == GameRunLevel.InRound)
             {
-                var id = args[0];
+                var id = args.Length == 3 ? args[1] : args[0];
 
-                if (!int.TryParse(args[1], out var sid)) // QB edit
+                if (!int.TryParse(args[^1], out var sid))
                 {
                     shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
                     return;
@@ -83,6 +85,24 @@ namespace Content.Server.GameTicking.Commands
                 if (_adminManager.IsAdmin(player) && _cfg.GetCVar(CCVars.AdminDeadminOnJoin))
                 {
                     _adminManager.DeAdmin(player);
+                }
+
+                if (args.Length == 3)
+                {
+                    if (!int.TryParse(args[0], out var charSlot))
+                    {
+                        shell.WriteError(Loc.GetString("shell-argument-must-be-number"));
+                        return;
+                    }
+
+                    if (!_preferencesManager.GetPreferences(player.UserId).TryGetHumanoidInSlot(charSlot, out var humanoid))
+                    {
+                        shell.WriteLine("No profile in slot.");
+                        return;
+                    }
+
+                    ticker.MakeJoinGame(player, humanoid, station, id);
+                    return;
                 }
 
                 ticker.MakeJoinGame(player, station, id);

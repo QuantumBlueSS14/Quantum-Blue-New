@@ -28,15 +28,16 @@ using Content.Server.Afk;
 using Content.Server.Afk.Events;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Events;
-using Content.Server.Mind;
 using Content.Server.Preferences.Managers;
 using Content.Server.Station.Events;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
+using Content.Shared.Antag;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -55,7 +56,6 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IAdminManager _adminManager = default!;
     [Dependency] private readonly IAfkManager _afk = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly MindSystem _minds = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
@@ -78,7 +78,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<PlayerJoinedLobbyEvent>(OnPlayerJoinedLobby);
         SubscribeLocalEvent<StationJobsGetCandidatesEvent>(OnStationJobsGetCandidates);
-        SubscribeLocalEvent<IsJobAllowedEvent>(OnIsJobAllowed);
+        SubscribeLocalEvent<IsRoleAllowedEvent>(OnIsRoleAllowed); // QB edit: this branch still raises IsRoleAllowedEvent for spawn-role gating.
         SubscribeLocalEvent<GetDisallowedJobsEvent>(OnGetDisallowedJobs);
         _adminManager.OnPermsChanged += AdminPermsChanged;
     }
@@ -145,7 +145,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
     private void OnRoleEvent(RoleEvent ev)
     {
-        if (_minds.TryGetSession(ev.Mind, out var session))
+        if (ev.Mind.UserId is { } userId && _playerManager.TryGetSessionById(userId, out var session))
             _tracking.QueueRefreshTrackers(session);
     }
 
@@ -200,9 +200,9 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         RemoveDisallowedJobs(ev.Player, ev.Jobs);
     }
 
-    private void OnIsJobAllowed(ref IsJobAllowedEvent ev)
+    private void OnIsRoleAllowed(ref IsRoleAllowedEvent ev)
     {
-        if (!IsAllowed(ev.Player, ev.JobId))
+        if (!IsAllowed(ev.Player, ev.Jobs) || !IsAllowed(ev.Player, ev.Antags))
             ev.Cancelled = true;
     }
 
@@ -229,6 +229,24 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         return playTimes;
     }
 
+    private List<HumanoidCharacterProfile> GetProfilesForJobChecks(NetUserId userId, ProtoId<JobPrototype> job)
+    {
+        var prefs = _preferencesManager.GetPreferences(userId);
+        var enabledProfiles = prefs.GetAllEnabledProfilesForJob(job).Values.ToList();
+        if (enabledProfiles.Count > 0)
+            return enabledProfiles;
+
+        return prefs.GetAllProfilesForJob(job).Values.ToList();
+    }
+
+    private List<HumanoidCharacterProfile> GetProfilesForRoleChecks(NetUserId userId)
+    {
+        var prefs = _preferencesManager.GetPreferences(userId);
+        var allProfiles = prefs.Characters.Values.OfType<HumanoidCharacterProfile>().ToList();
+        var enabledProfiles = allProfiles.Where(profile => profile.Enabled).ToList();
+        return enabledProfiles.Count > 0 ? enabledProfiles : allProfiles;
+    }
+
     public bool IsAllowed(ICommonSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job))
@@ -236,8 +254,64 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
         var playTimes = GetPlayTimesIfEnabled(player);
 
-        var allProfilesForJob = _preferencesManager.GetPreferences(player.UserId).GetAllEnabledProfilesForJob(job);
-        return allProfilesForJob.Values.Any(profile => JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile));
+        var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+        return profilesForCheck.Any(profile => JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile));
+    }
+
+    public bool IsAllowed(ICommonSession player, List<ProtoId<JobPrototype>>? jobs)
+    {
+        if (jobs is null)
+            return true;
+
+        foreach (var job in jobs)
+        {
+            if (!IsAllowed(player, job))
+                return false;
+        }
+
+        return true;
+    }
+
+    public bool IsAllowed(ICommonSession player, List<ProtoId<AntagPrototype>>? antags)
+    {
+        if (antags is null)
+            return true;
+
+        foreach (var antag in antags)
+        {
+            if (!IsAllowed(player, antag))
+                return false;
+        }
+
+        return true;
+    }
+
+    public bool IsAllowed(ICommonSession player, ProtoId<JobPrototype> job)
+    {
+        if (!_prototypes.TryIndex(job, out var jobProto))
+            return true;
+
+        var playTimes = GetPlayTimesIfEnabled(player);
+        var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+        return profilesForCheck.Any(profile => JobRequirements.TryRequirementsMet(jobProto, playTimes, out _, EntityManager, _prototypes, profile));
+    }
+
+    public bool IsAllowed(ICommonSession player, ProtoId<AntagPrototype> antag)
+    {
+        if (!_prototypes.TryIndex(antag, out var antagProto))
+            return true;
+
+        var playTimes = GetPlayTimesIfEnabled(player);
+        var profilesForCheck = GetProfilesForRoleChecks(player.UserId);
+
+        return profilesForCheck.Any(profile =>
+            JobRequirements.TryRequirementsMet(
+                _roles.GetRoleRequirements(antagProto),
+                playTimes,
+                out _,
+                EntityManager,
+                _prototypes,
+                profile));
     }
 
     public HashSet<ProtoId<JobPrototype>> GetDisallowedJobs(ICommonSession player)
@@ -248,8 +322,8 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
-            var allProfilesForJob = _preferencesManager.GetPreferences(player.UserId).GetAllEnabledProfilesForJob(job);
-            if (allProfilesForJob.Values.All(profile => !JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile)))
+            var profilesForCheck = GetProfilesForJobChecks(player.UserId, job.ID);
+            if (profilesForCheck.All(profile => !JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile)))
                 roles.Add(job.ID);
         }
 
@@ -266,8 +340,8 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         {
             if(!_prototypes.TryIndex(job, out var jobToRemove))
                 continue;
-            var allProfilesForJob = _preferencesManager.GetPreferences(player.UserId).GetAllEnabledProfilesForJob(job);
-            if (allProfilesForJob.Values.All(profile =>
+            var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+            if (profilesForCheck.All(profile =>
                     !JobRequirements.TryRequirementsMet(jobToRemove, playTimes, out _, EntityManager, _prototypes, profile)))
                 jobs.Remove(job);
         }

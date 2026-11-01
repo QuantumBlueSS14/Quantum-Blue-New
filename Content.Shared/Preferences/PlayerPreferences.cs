@@ -39,8 +39,13 @@ namespace Content.Shared.Preferences
             _characters = new Dictionary<int, ICharacterProfile>(characters);
             SelectedCharacterIndex = selectedCharacterIndex;
             AdminOOCColor = adminOOCColor;
-            JobPriorities = jobPriorities;
+            JobPriorities = SanitizeJobPriorities(jobPriorities);
             ConstructionFavorites = constructionFavorites ?? [];
+        }
+
+        private static Dictionary<ProtoId<JobPrototype>, JobPriority> SanitizeJobPriorities(Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities)
+        {
+            return jobPriorities.Where(kvp => kvp.Value != JobPriority.Never).ToDictionary();
         }
 
         /// <summary>
@@ -80,11 +85,28 @@ namespace Content.Shared.Preferences
         public Dictionary<ProtoId<JobPrototype>, JobPriority> JobPrioritiesFiltered()
         {
             var allCharacterJobs = new HashSet<ProtoId<JobPrototype>>();
+            var anyEnabled = false;
             foreach (var profile in Characters.Values)
             {
-                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
+                if (profile is not HumanoidCharacterProfile humanoid)
                     continue;
+
+                if (!humanoid.Enabled)
+                    continue;
+
+                anyEnabled = true;
                 allCharacterJobs.UnionWith(humanoid.JobPreferences);
+            }
+
+            if (!anyEnabled)
+            {
+                foreach (var profile in Characters.Values)
+                {
+                    if (profile is not HumanoidCharacterProfile humanoid)
+                        continue;
+
+                    allCharacterJobs.UnionWith(humanoid.JobPreferences);
+                }
             }
 
             var filteredPlayerJobs = new Dictionary<ProtoId<JobPrototype>, JobPriority>();

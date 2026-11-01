@@ -165,6 +165,8 @@ public sealed partial class JobPriorityEditor : BoxContainer
                 if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
                 {
                     selector.LockRequirements(reason);
+                    SelectedJobPriorities[job.ID] = JobPriority.Never;
+                    SetDirty();
                 }
                 else
                 {
@@ -280,4 +282,3 @@ public sealed partial class JobPriorityEditor : BoxContainer
         SetDirty();
     }
 }
-
