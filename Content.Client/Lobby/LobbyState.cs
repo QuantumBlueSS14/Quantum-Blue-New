@@ -339,12 +339,6 @@ namespace Content.Client.Lobby
                 return;
 
             Lobby.ReadyButton.Disabled = !_readyPossibleWithCharacters;
-
-            if (_readyPossibleWithCharacters)
-                return;
-
-            Lobby.ReadyButton.Pressed = false;
-            SetReady(false);
         }
     }
 }

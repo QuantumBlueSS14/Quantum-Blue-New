@@ -58,6 +58,7 @@ using Content.Server.GameTicking.Events;
 using Content.Server.Preferences.Managers;
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
+using Content.Shared.Ghost;
 using Content.Server.Station.Components;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
@@ -306,10 +307,17 @@ namespace Content.Server.GameTicking
 
             // Pick best job best on prefs.
             var jobPrioritiesFiltered = playerPreferences.JobPrioritiesFiltered();
+            var playerJobPriorities = jobPrioritiesFiltered.Count > 0
+                ? jobPrioritiesFiltered
+                : spawnEventProfile.JobPriorities;
             jobId ??= _stationJobs.PickBestAvailableJobWithPriority(station,
-                jobPrioritiesFiltered,
+                playerJobPriorities,
                 true,
                 restrictedRoles);
+            if (jobId is null && !LobbyEnabled)
+            {
+                jobId = _stationJobs.GetAvailableJobs(station).FirstOrDefault(job => !restrictedRoles.Contains(job));
+            }
             // If no job available, stay in lobby, or if no lobby spawn as observer
             if (jobId is null)
             {
@@ -328,6 +336,8 @@ namespace Content.Server.GameTicking
 
             // Job has been selected concretely, let's make sure the character profile is concrete
             character ??= playerPreferences.SelectProfileForJob(jobId);
+            if (character == null && !LobbyEnabled)
+                character = spawnEventProfile;
             if (character == null)
             {
                 if (!LobbyEnabled)
@@ -338,6 +348,9 @@ namespace Content.Server.GameTicking
                     Loc.GetString("game-ticker-player-no-character-for-job-available-when-joining", ("job", jobId)));
                 return;
             }
+
+            if (player.AttachedEntity is { } existing && HasComp<GhostComponent>(existing))
+                Del(existing);
 
             PlayerJoinGame(player, silent);
 

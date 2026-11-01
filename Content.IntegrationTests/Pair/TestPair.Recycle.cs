@@ -19,7 +19,9 @@ using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Preferences;
+using Content.Shared.Roles;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Pair;
 
@@ -52,8 +54,13 @@ public sealed partial class TestPair
                 prefMan.DeleteCharacter(slot);
             }
 
-            prefMan.UpdateCharacter(new HumanoidCharacterProfile { Enabled = true }, 0); // QB edit: this branch does not include AsEnabled() helper from upstream test utilities.
-            prefMan.UpdateJobPriorities(new() { { SharedGameTicker.FallbackOverflowJob, JobPriority.High } });
+            var prototypeManager = Client.ResolveDependency<IPrototypeManager>(); // QB edit
+            var defaultJobPriorities = prototypeManager.EnumeratePrototypes<JobPrototype>()
+                .ToDictionary(job => new ProtoId<JobPrototype>(job.ID), _ => JobPriority.Medium);
+            defaultJobPriorities[SharedGameTicker.FallbackOverflowJob] = JobPriority.High;
+            var defaultProfile = HumanoidCharacterProfile.Random().WithJobPreferences(defaultJobPriorities.Keys);
+            defaultProfile.Enabled = true; 
+            prefMan.UpdateJobPriorities(defaultJobPriorities); // QB edit end
         });
 
         await ReallyBeIdle();

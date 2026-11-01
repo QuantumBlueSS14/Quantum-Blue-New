@@ -369,9 +369,16 @@ public sealed partial class StationJobsSystem
 
             if (onlyAntags && !isPreselectedAntag)
                 continue;
-            var playerJobs = _serverPreferences.TryGetCachedPreferences(player, out var prefs)
-                ? prefs.JobPrioritiesFiltered()
-                : profile.JobPriorities;
+            IReadOnlyDictionary<ProtoId<JobPrototype>, JobPriority> playerJobs;
+            if (_serverPreferences.TryGetCachedPreferences(player, out var prefs))
+            {
+                var filtered = prefs.JobPrioritiesFiltered();
+                playerJobs = filtered.Count > 0 ? filtered : profile.JobPriorities;
+            }
+            else
+            {
+                playerJobs = profile.JobPriorities;
+            }
             var profileJobs = playerJobs.Keys.ToList();
             var ev = new StationJobsGetCandidatesEvent(player, profileJobs);
             RaiseLocalEvent(ref ev);
