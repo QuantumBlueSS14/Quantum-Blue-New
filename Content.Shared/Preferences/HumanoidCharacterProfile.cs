@@ -100,7 +100,7 @@ namespace Content.Shared.Preferences
         private HashSet<ProtoId<TraitPrototype>> _traitPreferences = new();
 
         [DataField]
-        public bool Enabled;
+        public bool Enabled = true;
 
         /// <summary>
         /// <see cref="_loadouts"/>
@@ -274,6 +274,7 @@ namespace Content.Shared.Preferences
 
             return new()
             {
+                Enabled = true,
                 Species = species,
                 Appearance = HumanoidCharacterAppearance.DefaultWithSpecies(species),
                 PreferenceUnavailable = PreferenceUnavailableMode.StayInLobby,
@@ -338,6 +339,7 @@ namespace Content.Shared.Preferences
 
             return new HumanoidCharacterProfile()
             {
+                Enabled = true,
                 Name = name,
                 BorgName = borgname,
                 Sex = sex,
