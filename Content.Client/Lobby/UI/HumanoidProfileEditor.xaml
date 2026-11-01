@@ -1,8 +1,10 @@
+<!-- qb edit -->
 <BoxContainer xmlns="https://spacestation14.io"
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:humanoid="clr-namespace:Content.Client.Humanoid"
          xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
          xmlns:ui="clr-namespace:Content.Client.Lobby.UI"
+         xmlns:traits="clr-namespace:Content.Client._DV.Traits.UI"
          HorizontalExpand="True">
         <!-- Left side -->
         <BoxContainer Orientation="Vertical" Margin="10 10 10 10" HorizontalExpand="True">
@@ -145,12 +147,8 @@
                         <BoxContainer Name="AntagList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" Margin="10">
-                    <!-- Traits -->
-                    <ScrollContainer VerticalExpand="True">
-                        <BoxContainer Name="TraitsList" Orientation="Vertical" />
-                    </ScrollContainer>
-                </BoxContainer>
+                <!-- qb edit -->
+                <traits:TraitsTab Name="Traits" Margin="10"/>
                 <BoxContainer Name="MarkingsTab" Orientation="Vertical" Margin="10">
                     <!-- Markings -->
                     <ScrollContainer VerticalExpand="True">
