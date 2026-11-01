@@ -176,16 +176,7 @@ namespace Content.Server.GameTicking
                 // Select a profile for the player
                 var playerPrefs = _preferencesManager.GetPreferences(player);
                 var playerProfiles = playerPrefs.GetAllEnabledProfilesForJob(job.Value);
-
-                // Filter out job requirements
-                var filteredPlayerProfiles = playerProfiles.Values.Where(profile =>
-                    JobRequirements.TryRequirementsMet(job.Value,
-                        null,
-                        out _,
-                        EntityManager,
-                        _prototypeManager,
-                        profile)
-                );
+                var filteredPlayerProfiles = playerProfiles.Values.AsEnumerable(); // QB edit: preserve branch spawn behavior while still allowing antag/profile compatibility filtering.
 
                 // If the player is preselected for antags, filter out profiles that aren't requesting these antags.
                 var antags = _antagSelection.GetPreSelectedAntags(playerSession);

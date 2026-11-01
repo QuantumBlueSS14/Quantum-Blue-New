@@ -53,6 +53,7 @@ using Content.Shared.GameTicking.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
+using Content.Shared.Preferences;
 using Content.Shared.Players;
 using Content.Shared.Roles;
 using Content.Shared.Whitelist;
@@ -95,7 +96,6 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
     [Dependency] private readonly IRobustRandom _random = default!; // imp
     [Dependency] private readonly NpcFactionSystem _faction = default!; //#IMP
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!; //imp
-    [Dependency] private readonly SharedHumanoidAppearanceSystem _appearance = default!;
 
     // arbitrary random number to give late joining some mild interest.
     public const float LateJoinRandomChance = 0.5f;
@@ -727,12 +727,14 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         if (!def.AllowNonHumans && !HasComp<HumanoidAppearanceComponent>(entity))
             return false;
 
-        // Ensure that the profile has the antag preference set, if this is a late join this hasn't been checked!
-        var baseProfile = _appearance.GetBaseProfile(entity.Value);
-        if (baseProfile is not null)
+        // Ensure that the current selected profile has relevant antag preferences set, if this is a late join this
+        // hasn't necessarily been checked yet.
+        if (_playerManager.TryGetSessionByEntity(entity.Value, out var session)
+            && _pref.TryGetCachedPreferences(session.UserId, out var preferences)
+            && preferences.SelectedCharacter is HumanoidCharacterProfile selectedProfile)
         {
-            if (!def.PrefRoles.ToHashSet().Overlaps(baseProfile.AntagPreferences) &&
-                !def.FallbackRoles.ToHashSet().Overlaps(baseProfile.AntagPreferences))
+            if (!def.PrefRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences) &&
+                !def.FallbackRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences))
                 return false;
         }
 

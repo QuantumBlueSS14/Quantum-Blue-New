@@ -202,15 +202,10 @@ public sealed partial class AntagSelectionSystem
             return true;
 
         var pref = _pref.GetPreferences(session.UserId);
-        var priorities = pref.JobPriorities.Where(kvp => kvp.Value != JobPriority.Never).ToDictionary().Keys;
 
         foreach (var profile in pref.Characters.Values)
         {
             if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
-                continue;
-
-            if (selectionTime == AntagSelectionTime.IntraPlayerSpawn
-                && !humanoid.JobPreferences.Intersect(priorities).Any(_jobs.CanBeAntag))
                 continue;
 
             foreach (var antag in antagList)
