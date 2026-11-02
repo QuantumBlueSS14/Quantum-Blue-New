@@ -9,6 +9,7 @@
 //
 // SPDX-License-Identifier: MIT
 #nullable enable
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Content.Client.Lobby;
@@ -54,13 +55,11 @@ public sealed partial class TestPair
                 prefMan.DeleteCharacter(slot);
             }
 
-            var prototypeManager = Client.ResolveDependency<IPrototypeManager>(); // QB edit
-            var defaultJobPriorities = prototypeManager.EnumeratePrototypes<JobPrototype>()
-                .ToDictionary(job => new ProtoId<JobPrototype>(job.ID), _ => JobPriority.Medium);
-            defaultJobPriorities[SharedGameTicker.FallbackOverflowJob] = JobPriority.High;
-            var defaultProfile = HumanoidCharacterProfile.Random().WithJobPreferences(defaultJobPriorities.Keys);
-            defaultProfile.Enabled = true; 
-            prefMan.UpdateJobPriorities(defaultJobPriorities); // QB edit end
+            var defaultJobPriorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>
+            {
+                [SharedGameTicker.FallbackOverflowJob] = JobPriority.High,
+            };
+            prefMan.UpdateJobPriorities(defaultJobPriorities);
         });
 
         await ReallyBeIdle();
