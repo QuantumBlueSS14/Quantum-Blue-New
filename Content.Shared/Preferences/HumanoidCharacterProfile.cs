@@ -260,6 +260,7 @@ namespace Content.Shared.Preferences
         /// <returns></returns>
         public HumanoidCharacterProfile()
         {
+            Enabled = true;
             PreferenceUnavailable = PreferenceUnavailableMode.StayInLobby; // QB edit: new characters default to staying in the lobby if their preferred job is unavailable.
         }
 
