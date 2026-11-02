@@ -127,15 +127,16 @@ public sealed class StationJobsTest
         var allSessions = tideSessions.Concat(capSessions).ToHashSet();
         var allNetIds = allSessions.Select(s => s.UserId).ToHashSet();
 
+        Task[] loadTasks = [];
         await server.WaitPost(() =>
         {
-            var tasks = allSessions.Select(s =>
+            loadTasks = allSessions.Select(s =>
             {
                 dbMan.ClientConnected(s);
                 return dbMan.WaitLoadComplete(s);
-            });
-            Task.WhenAll(tasks);
+            }).ToArray();
         });
+        await Task.WhenAll(loadTasks);
 
         var jobPrioritiesA = new Dictionary<ProtoId<JobPrototype>, JobPriority>()
         {
@@ -148,6 +149,7 @@ public sealed class StationJobsTest
             { "TCaptain", JobPriority.High },
         };
 
+        Task[] preferenceTasks = [];
         await server.WaitPost(() =>
         {
             List<Task> tasks = new();
@@ -165,8 +167,9 @@ public sealed class StationJobsTest
                 tasks.Add(prefMan.SetJobPriorities(session.UserId, jobPrioritiesB));
                 tasks.Add(prefMan.SetProfile(session.UserId, 0, newProfile));
             }
-            Task.WhenAll(tasks);
+            preferenceTasks = tasks.ToArray();
         });
+        await Task.WhenAll(preferenceTasks);
 
         await server.WaitAssertion(() =>
         {
@@ -210,6 +213,8 @@ public sealed class StationJobsTest
                 Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TCaptain"));
             });
         });
+
+        await pair.CleanReturnAsync();
     }
 
     [Test]
@@ -259,6 +264,8 @@ public sealed class StationJobsTest
                 Assert.That(stationJobs.IsJobUnlimited(station, "TChaplain"), "Could not make TChaplain unlimited.");
             });
         });
+
+        await pair.CleanReturnAsync();
     }
 
     [Test]
@@ -302,5 +309,7 @@ public sealed class StationJobsTest
                 }
             });
         });
+
+        await pair.CleanReturnAsync();
     }
 }
