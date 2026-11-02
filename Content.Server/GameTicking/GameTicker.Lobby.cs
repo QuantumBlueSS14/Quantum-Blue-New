@@ -215,10 +215,7 @@ namespace Content.Server.GameTicking
                 return;
             }
 
-            // Ensure that the player has a character enabled with a compatible job that can even join.
-            var readyPossible = (_preferencesManager.GetPreferencesOrNull(player.UserId)?.JobPrioritiesFiltered().Count ?? 0) != 0; // QB edit: preserve ready-state updates only when at least one compatible job is available.
-
-            var newStatus = ready && readyPossible
+            var newStatus = ready
                 ? PlayerGameStatus.ReadyToPlay
                 : PlayerGameStatus.NotReadyToPlay;
 
