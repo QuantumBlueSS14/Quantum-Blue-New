@@ -20,6 +20,9 @@
   - Supply
   - Science
 
+  # QB addition - cargo lawset
+  lawset: Cargo
+
   # QB additions begin - orders access
   addComponents:
   - type: Access
