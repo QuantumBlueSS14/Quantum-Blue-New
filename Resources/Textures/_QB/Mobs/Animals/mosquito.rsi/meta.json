@@ -1,10 +1,10 @@
 {
     "version": 1,
     "license": "CC-BY-SA-4.0",
-    "copyright": "by rebe83 (Github)",
+    "copyright": "by rebe83 (Github), modified by MattFright",
     "size": {
-        "x": 16,
-        "y": 16
+        "x": 32,
+        "y": 32
     },
     "states": [
         {
@@ -14,8 +14,20 @@
             "name": "dead"
         },
         {
-            "name": "mosquito",
-            "directions": 4
-        }
-    ]
+           "name": "mosquito",
+           "delays": [
+            [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+        ]
+      ]
+    }
+  ]
 }

@@ -1,0 +1,83 @@
+## Standard air tanks
+
+- type: thiefBackpackSet
+  id: SelectorOxygenTank
+  name: selector-oxygen-tank-name
+  description: selector-oxygen-tank-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/oxygen.rsi
+    state: icon
+  content:
+  - OxygenTankFilled
+
+- type: thiefBackpackSet
+  id: SelectorOxygenTankSmall
+  name: selector-oxygen-tank-small-name
+  description: selector-oxygen-tank-small-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/oxygen_engineering.rsi
+    state: icon
+  content:
+  - ExtendedEmergencyOxygenTankFilled
+
+- type: thiefBackpackSet
+  id: SelectorNitrogenTank
+  name: selector-nitrogen-tank-name
+  description: selector-nitrogen-tank-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/nitrogen.rsi
+    state: icon
+  content:
+  - NitrogenTankFilled
+
+- type: thiefBackpackSet
+  id: SelectorNitrogenTankSmall
+  name: selector-nitrogen-tank-small-name
+  description: selector-nitrogen-tank-small-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/nitrogen_engineering.rsi
+    state: icon
+  content:
+  - ExtendedEmergencyNitrogenTankFilled
+
+## Command air tanks
+
+- type: thiefBackpackSet
+  id: SelectorOxygenTankCommand
+  name: selector-oxygen-tank-command-name
+  description: selector-oxygen-tank-command-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/oxygen_command.rsi
+    state: icon
+  content:
+  - OxygenTankCommandFilled
+
+- type: thiefBackpackSet
+  id: SelectorOxygenTankCommandSmall
+  name: selector-oxygen-tank-command-small-name
+  description: selector-oxygen-tank-command-small-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/oxygen_command_engineering.rsi
+    state: icon
+  content:
+  - ExtendedEmergencyOxygenTankCommandFilled
+
+- type: thiefBackpackSet
+  id: SelectorNitrogenTankCommand
+  name: selector-nitrogen-tank-command-name
+  description: selector-nitrogen-tank-command-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/nitrogen_command.rsi
+    state: icon
+  content:
+  - NitrogenTankCommandFilled
+
+- type: thiefBackpackSet
+  id: SelectorNitrogenTankCommandSmall
+  name: selector-nitrogen-tank-command-small-name
+  description: selector-nitrogen-tank-command-small-description
+  sprite:
+    sprite: _Impstation/Objects/Tanks/nitrogen_command_engineering.rsi
+    state: icon
+  content:
+  - ExtendedEmergencyNitrogenTankCommandFilled

@@ -122,10 +122,11 @@
     - id: ClothingOuterSuitFire
     - id: ClothingHeadHelmetFire
     - id: ClothingMaskGas
-    - !type:GroupSelector
-      children:
-      - id: EmergencyOxygenTankFilled
-      - id: OxygenTankFilled
+    - id: QuantumTankSelector # QB changes start
+    # - !type:GroupSelector
+    #   children:
+    #   - id: EmergencyOxygenTankFilled
+    #   - id: OxygenTankFilled # QB changes end
     - id: CrowbarRed
     - !type:GroupSelector
       children:

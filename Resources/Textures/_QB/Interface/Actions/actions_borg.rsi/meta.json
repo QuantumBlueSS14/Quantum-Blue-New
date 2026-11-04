@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Security icons made by rebe83",
+    "states": [
+        {
+            "name": "breaching-module"
+        },
+        {
+            "name": "investigation-module"
+        },
+        {
+            "name": "lethal-module"
+        },
+        {
+            "name": "nonlethal-module"
+        },
+        {
+            "name": "patrol-module"
+        },
+        {
+            "name": "utility-module"
+        }
+    ]
+}

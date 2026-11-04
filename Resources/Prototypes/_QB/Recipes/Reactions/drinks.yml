@@ -1,0 +1,27 @@
+- type: reaction
+  id: ButterBrew
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Sugar:
+      amount: 1
+    Butter:
+      amount: 2
+    Ale:
+      amount: 3
+  products:
+    ButterBrew: 6
+
+- type: reaction
+  id: ButterTea
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    TableSalt:
+      amount: 1
+    Butter:
+      amount: 2
+    Tea:
+      amount: 3
+  products:
+    ButterTea: 6

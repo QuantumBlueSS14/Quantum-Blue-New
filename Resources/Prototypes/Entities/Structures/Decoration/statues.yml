@@ -41,6 +41,10 @@
   - type: Construction
     graph: BananiumStatueClown
     node: bananiumStatue
+  - type: RadiationSource # QB start
+    intensity: 1
+    slope: 0.9
+    # QB end
 
 # Ironsand Statues
 

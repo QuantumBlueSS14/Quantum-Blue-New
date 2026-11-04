@@ -5,6 +5,7 @@
   - MagazineMagnumEmpty
   - MagazineMagnum
   - MagazineMagnumStun
+  - BoxShotgunFlare
 
 # Dynamic
 - type: latheRecipePack
@@ -14,3 +15,18 @@
   - MagazineLightRifleIncendiary
   - SpeedLoaderMagnumHoly
   - MagazineBoxMagnumHoly
+
+- type: latheRecipePack
+  id: SecurityBorgModules
+  recipes:
+  - BorgModuleSecurityNonlethal
+  - BorgModuleSecurityLethal
+  - BorgModuleSecurityInvestigation
+  - BorgModuleSecurityBreaching
+
+- type: latheRecipePack
+  id: Investigation
+  recipes:
+  - ForensicPad
+  - CrayonChalk
+  - BoxEvidenceMarkers

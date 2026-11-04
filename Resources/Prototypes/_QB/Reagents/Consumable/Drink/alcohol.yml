@@ -1,0 +1,24 @@
+- type: reagent
+  id: ButterBrew
+  name: reagent-name-butterbrew
+  parent: BaseAlcohol
+  desc: reagent-desc-butterbrew
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: butterbrew
+  color: "#b18b51"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _QB/Objects/Consumable/Drinks/butterbrew.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  fizziness: 0.6
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.06

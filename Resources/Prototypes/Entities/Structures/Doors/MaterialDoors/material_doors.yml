@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseStructure
   id: BaseMaterialDoor
@@ -232,6 +232,10 @@
           MaterialBananium1:
             min: 1
             max: 2
+  - type: RadiationSource # QB start
+    intensity: 0.5
+    slope: 0.9
+    # QB end
 
 ### Other doors ###
 

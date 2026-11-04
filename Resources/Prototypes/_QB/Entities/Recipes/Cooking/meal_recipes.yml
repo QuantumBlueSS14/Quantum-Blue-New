@@ -11,3 +11,58 @@
   reagents:
     FluorosulfuricAcid: 5
   recipeType: Oven
+
+- type: microwaveMealRecipe
+  id: RecipeButterBiscuit
+  name: butter biscuit
+  result: FoodMealButterBiscuit
+  time: 5
+  group: Breakfast
+  solids:
+    FoodDoughSlice: 1
+    FoodButterSlice: 1
+  recipeType: Oven
+#Assembler
+- type: microwaveMealRecipe
+  id: RecipeButterSteak
+  name: butter steak
+  result: FoodMealButterSteak
+  time: 1
+  group: Savory
+  solids:
+    FoodMeatCooked: 1
+    FoodButter: 1
+  recipeType: Assembler
+
+- type: microwaveMealRecipe
+  id: RecipeRawButterSteak
+  name: raw butter steak
+  result: FoodMealRawButterSteak
+  time: 1
+  group: Savory
+  solids:
+    FoodMeat: 1
+    FoodButter: 1
+  recipeType: Assembler
+
+- type: microwaveMealRecipe
+  id: RecipeButterOnAStick
+  name: butter on a stick
+  result: FoodMealButterOnAStick
+  time: 5
+  group: Other
+  solids:
+    FoodKebabSkewer: 1
+    FoodButter: 1
+  recipeType: Assembler
+
+- type: microwaveMealRecipe
+  id: RecipeButterdog
+  name: butterdog
+  result: FoodHotdogButter
+  time: 5
+  group: Other
+  solids:
+    FoodHotdogBun: 1
+    FoodButter: 1
+  recipeType: Assembler
