@@ -35,6 +35,7 @@
 using System.Linq;
 using Content.Shared.GameTicking;
 using Content.Server.Station.Components;
+using Content.Shared.Preferences;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using System.Text;
@@ -215,7 +216,11 @@ namespace Content.Server.GameTicking
                 return;
             }
 
-            var newStatus = ready
+            var filteredJobs = _preferencesManager.GetPreferencesOrNull(player.UserId)?.JobPrioritiesFiltered();
+            // Ensure that the player has a character enabled with a compatible job that can even join.
+            var readyPossible = filteredJobs is { Count: > 0 };
+
+            var newStatus = ready && readyPossible
                 ? PlayerGameStatus.ReadyToPlay
                 : PlayerGameStatus.NotReadyToPlay;
 

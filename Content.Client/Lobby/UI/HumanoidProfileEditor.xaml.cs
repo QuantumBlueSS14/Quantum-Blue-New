@@ -1673,7 +1673,24 @@ namespace Content.Client.Lobby.UI
 
         private void RandomizeEverything()
         {
-            Profile = HumanoidCharacterProfile.Random();
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var currentProfile = Profile;
+            var randomProfile = HumanoidCharacterProfile.Random();
+            Profile = new HumanoidCharacterProfile(currentProfile)
+            {
+                Name = randomProfile.Name,
+                BorgName = randomProfile.BorgName,
+                Age = randomProfile.Age,
+                Species = randomProfile.Species,
+                Appearance = randomProfile.Appearance,
+            }
+                .WithSex(randomProfile.Sex)
+                .WithGender(randomProfile.Gender);
+
             SetProfile(Profile, CharacterSlot);
             SetDirty();
         }
@@ -1685,17 +1702,10 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-            HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex);
-            Profile = new HumanoidCharacterProfile()
-            {
-                Name = Profile.Name,
-                Age = Profile.Age,
-                Species = Profile.Species,
-                Appearance = HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex),
-            }
-                .WithSex(Profile.Sex)
-                .WithGender(Profile.Gender);
+
+            Profile = Profile.WithCharacterAppearance(HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex));
             SetProfile(Profile, CharacterSlot);
+            SetDirty();
         }
         // IMP EDIT END
 

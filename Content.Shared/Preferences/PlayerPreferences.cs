@@ -86,47 +86,20 @@ namespace Content.Shared.Preferences
         public Dictionary<ProtoId<JobPrototype>, JobPriority> JobPrioritiesFiltered()
         {
             var allCharacterJobs = new HashSet<ProtoId<JobPrototype>>();
-            var anyEnabled = false;
-            var hasExplicitJobPreferences = false;
             foreach (var profile in Characters.Values)
             {
-                if (profile is not HumanoidCharacterProfile humanoid)
+                if (profile is not HumanoidCharacterProfile { Enabled: true } humanoid)
                     continue;
 
-                if (!humanoid.Enabled)
-                    continue;
-
-                anyEnabled = true;
-                hasExplicitJobPreferences |= humanoid.JobPreferences.Any(job => job != SharedGameTicker.FallbackOverflowJob);
                 allCharacterJobs.UnionWith(humanoid.JobPreferences);
             }
-
-            if (!anyEnabled)
-            {
-                foreach (var profile in Characters.Values)
-                {
-                    if (profile is not HumanoidCharacterProfile humanoid)
-                        continue;
-
-                    hasExplicitJobPreferences |= humanoid.JobPreferences.Any(job => job != SharedGameTicker.FallbackOverflowJob);
-                    allCharacterJobs.UnionWith(humanoid.JobPreferences);
-                }
-            }
-
-            if (!hasExplicitJobPreferences)
-                return JobPriorities.ToDictionary();
 
             var filteredPlayerJobs = new Dictionary<ProtoId<JobPrototype>, JobPriority>();
             foreach (var (job, priority) in JobPriorities)
             {
-                if (job == SharedGameTicker.FallbackOverflowJob)
-                {
-                    filteredPlayerJobs[job] = priority;
-                    continue;
-                }
-
                 if (!allCharacterJobs.Contains(job))
                     continue;
+
                 filteredPlayerJobs.Add(job, priority);
             }
 

@@ -248,9 +248,9 @@ namespace Content.Server.Preferences.Managers
                 await _db.SaveCharacterSlotAsync(userId, profile, slot);
         }
 
-        public void HandleUpdateJobPrioritiesMessage(MsgUpdateJobPriorities message)
+        private async void HandleUpdateJobPrioritiesMessage(MsgUpdateJobPriorities message)
         {
-            SetJobPriorities(message.MsgChannel.UserId, message.JobPriorities).Wait(); // QB edit: use shared mutation method for net messages and test helpers.
+            await SetJobPriorities(message.MsgChannel.UserId, message.JobPriorities);
         }
 
         public async Task SetJobPriorities(NetUserId userId, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities)
