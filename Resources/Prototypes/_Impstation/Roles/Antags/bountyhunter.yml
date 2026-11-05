@@ -2,7 +2,7 @@
   id: BountyHunter
   name: roles-antag-bounty-hunter-name
   antagonist: false
-  setPreference: false
+  setPreference: true
   playTimeTracker: AntagBountyHunter # imp
   objective: roles-antag-bounty-hunter-objective
   requirements: # Requiring some sec playtime, mainly to ensure people know escalation rules

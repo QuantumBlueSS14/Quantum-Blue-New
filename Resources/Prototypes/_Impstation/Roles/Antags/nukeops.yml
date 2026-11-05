@@ -2,6 +2,7 @@
   id: NukeopsLone
   name: ghost-role-information-loneop-name
   antagonist: true
+  setPreference: true #QB, make these show up for MCQ
   playTimeTracker: AntagLoneOperative
   objective: ghost-role-information-loneop-description
   requirements:
@@ -13,6 +14,7 @@
   id: SyndicateInstigator
   name: ghost-role-information-syndicate-instigator-name
   antagonist: true
+  setPreference: true #QB, make these show up for MCQ
   playTimeTracker: AntagSyndicateInstigator
   objective: ghost-role-information-syndicate-instigator-description
   requirements:
