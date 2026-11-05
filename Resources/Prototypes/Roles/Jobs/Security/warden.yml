@@ -12,7 +12,7 @@
       time: 1h # imp add mirror of HOS requirements
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 30h # imp edit triple the security role requirement, to make sure wardens have a lot of security experience
+      time: 20h # QB - was 30h on imp
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

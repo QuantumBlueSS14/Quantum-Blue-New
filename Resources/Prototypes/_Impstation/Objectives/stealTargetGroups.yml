@@ -348,9 +348,9 @@
     sprite: Structures/Machines/seed_extractor.rsi
     state: seedextractor
 
-- type: stealTargetGroup
-  id: Plushie
-  name: steal-target-groups-plushie
-  sprite:
-    sprite: _Impstation/Objects/Fun/toys.rsi
-    state: plushie_bug
+# - type: stealTargetGroup # QB - im too lazy to just rework this to remove the specific plushies but also what
+#   id: Plushie
+#   name: steal-target-groups-plushie
+#   sprite:
+#     sprite: _Impstation/Objects/Fun/toys.rsi
+#     state: plushie_bug

@@ -1,0 +1,53 @@
+
+- type: entity
+  name: Desperado
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolDesperado
+  description: Not a sidearm, this gun works alone. A sleek metal frame and slide embellished with silver. Feeds from pistol magazines (.45 magnum).
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Weapons/Guns/Pistols/desperado.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _QB/Objects/Weapons/Guns/Pistols/desperado.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 20
+    angleIncrease: 8
+    angleDecay: 12
+    fireRate: 3 # 1984 is 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 25 #35 damage total
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineMagnumExtended
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineMagnum
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeMagnum
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeMagnum
