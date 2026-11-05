@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.1
   forkId: ""
   forkVersion: ""
-  time: 11/05/2026 21:23:01
-  entityCount: 6637
+  time: 11/05/2026 21:40:35
+  entityCount: 6638
 maps:
 - 1
 grids:
@@ -22066,6 +22066,16 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#64DAFFFF'
+- proto: GasPipeSensorTEGCold
+  entities:
+  - uid: 3552
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -1.5,-29.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#64DAFFFF'
 - proto: GasPipeSensorTEGHot
   entities:
   - uid: 3562
@@ -24593,6 +24603,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,-31.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#FF6600FF'
   - uid: 3557
     components:
     - type: Transform
@@ -24655,14 +24667,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#947507FF'
-  - uid: 3595
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-29.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#64DAFFFF'
   - uid: 3601
     components:
     - type: Transform
@@ -30171,6 +30175,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-31.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#FF6600FF'
   - uid: 3576
     components:
     - type: Transform
@@ -34332,11 +34338,6 @@ entities:
     - type: Transform
       pos: -3.5,-32.5
       parent: 2
-  - uid: 3552
-    components:
-    - type: Transform
-      pos: -0.5,-32.5
-      parent: 2
 - proto: PlasmaChemistryVial
   entities:
   - uid: 2205
@@ -35349,15 +35350,21 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-22.5
       parent: 2
-  - uid: 3998
+  - uid: 3595
     components:
     - type: Transform
-      pos: 2.5,-30.5
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-31.5
       parent: 2
   - uid: 3999
     components:
     - type: Transform
       pos: 2.5,-28.5
+      parent: 2
+  - uid: 6638
+    components:
+    - type: Transform
+      pos: 2.5,-30.5
       parent: 2
 - proto: RailingCorner
   entities:
@@ -35380,6 +35387,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -2.5,14.5
+      parent: 2
+  - uid: 3996
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,-30.5
       parent: 2
 - proto: RandomCommandCorpseSpawner
   entities:
@@ -38569,16 +38582,16 @@ entities:
       parent: 2
 - proto: Stairs
   entities:
-  - uid: 3996
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,-30.5
-      parent: 2
   - uid: 3997
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
+      rot: -1.5707963267948966 rad
+      pos: 2.5,-30.5
+      parent: 2
+  - uid: 3998
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
       pos: 2.5,-29.5
       parent: 2
   - uid: 4014
