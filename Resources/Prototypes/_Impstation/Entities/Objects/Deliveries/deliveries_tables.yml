@@ -215,7 +215,7 @@
     - id: ClothingMultipleHeadphones
     - id: ClothingHeadHatFlowerWreath
     - id: PlushieDoll
-    - id: PlushieDollHair
+    # - id: PlushieDollHair # QB - no references
     - id: HeartLocketSilver
     - id: HeartLocket
 #small creatures

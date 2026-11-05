@@ -9,7 +9,7 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
+          emergencyShuttlePath: /Maps/_QB/Shuttles/Evac/NTQB_Prism.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} "Dash" Investigator {1}'
           nameGenerator:

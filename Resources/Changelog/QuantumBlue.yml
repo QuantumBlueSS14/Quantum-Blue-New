@@ -1,6 +1,95 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Tweak
+        message: Animal organs can have their delicious raw proteins extracted in the grinder.
+    id: 204
+    time: '2026-11-05T22:27:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/289
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Camel's soup has been renamed to one day blinding stew.
+    id: 203
+    time: '2026-11-05T22:21:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/255
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: You can no longer try to vote the gamemode for multiple players without multiple players
+      - type: Fix
+        message: E1M1 now has a minimum of 25 players required to roll. it's way too big
+    id: 202
+    time: '2026-10-31T20:00:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/284
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Archon: Fixed trash not going into the disposals conveyor'
+    id: 201
+    time: '2026-10-31T19:52:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/283
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Removed all the reference plushies we had carried over from imp, that we missed removing before.
+    id: 200
+    time: '2026-10-31T19:38:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/282
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Syndicate agents now can purches the Jormungandr for 30tc, a minigun with 1000 bullets. Rain lead!
+    id: 199
+    time: '2026-10-31T17:43:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/276
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Role time requirements are back, sorry!
+    id: 198
+    time: '2026-10-31T17:37:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/271
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Dylovene gets you drunk, make ethylredoxazine instead!
+      - type: Tweak
+        message: Bicaridine also gets you drunk.
+      - type: Tweak
+        message: Dermaline OD now makes you very thirsty, beware!
+      - type: Tweak
+        message: All radiation treatment chems (hyronalin, arith, phalanx) make you vomit.
+      - type: Tweak
+        message: 30u of Diphenhydramine makes you really trip. Hat man not included.
+      - type: Tweak
+        message: Most basic chemicals have had their side effects enhanced / occur at lower quantities.
+    id: 197
+    time: '2026-10-31T17:36:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/245
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Shotgun flare shells are now printable from the security ammo lathe.
+    id: 196
+    time: '2026-10-31T17:15:37.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/274
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Added a healing rainbow lollipop to the uplink with 30 bic and 10 hyperzine. Yippie!
+    id: 195
+    time: '2026-10-31T17:14:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/275
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: cyborgs (except the cargo cyborg) no longer have orders access.
+    id: 194
+    time: '2026-10-31T17:11:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/279
+  - author: rebe83
+    changes:
       - type: Fix
         message: Added firelock access to engineering IDs. Whoopsie!
     id: 193
