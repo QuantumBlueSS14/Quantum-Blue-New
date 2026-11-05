@@ -3,13 +3,13 @@
   mapName: 'Speck'
   mapPath: /Maps/_QB/speck.yml
   minPlayers: 0
-  maxPlayers: 20
+  maxPlayers: 10
   stations:
     Speck:
       stationProto: StandardNanotrasenStation
       components:
-        # - type: StationEmergencyShuttle
-        #   emergencyShuttlePath: /Maps/_QB/Shuttles/Evac/NTQB_Link.yml
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_QB/Shuttles/Evac/NTQB_Prism.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Tiny "Speck" Station {1}'
           nameGenerator:
