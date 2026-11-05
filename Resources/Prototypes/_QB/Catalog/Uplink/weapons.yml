@@ -1,6 +1,20 @@
 # guns
 
 - type: listing
+  id: uplinkDesperado
+  name: uplink-desperado-name
+  description: uplink-desperado-desc
+  icon: { sprite: /Textures/_QB/Objects/Weapons/Guns/Pistols/desperado.rsi, state: icon }
+  productEntity: ClothingBeltHolsterSyndieDesperadoFilled
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 12
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkWeaponry
+
+- type: listing
   id: UplinkMinigun
   name: uplink-minigun-name
   description: uplink-minigun-desc

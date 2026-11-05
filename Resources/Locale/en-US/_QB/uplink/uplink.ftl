@@ -1,3 +1,6 @@
+uplink-desperado-name = Desperado Bundle
+uplink-desperado-desc = For those that are too far gone, this sidearm is their only companion. A .45 magnum with a 12 round magazine. Purchase includes a spacious holster and four spare mags.
+
 uplink-minigun-name = Jörmungandr minigun
 uplink-minigun-desc = Become one with the great serpent, slowly attritioning the enemy with suppressive fire. Carries 1,000 .10 minigun rounds.
 
