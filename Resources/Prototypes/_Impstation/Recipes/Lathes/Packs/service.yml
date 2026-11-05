@@ -126,9 +126,9 @@
   - PlushieDecapoid
   - PlushieDiona
   - PlushieDoll
-  # - PlushieDollHair # QB - no references
+  - PlushieDollHair
   - PlushieDwarf
-  # - PlushieFinfin # QB
+  # - PlushieFinfin
   - PlushieGiantBear
   - PlushieGoblin
   - PlushieGray
@@ -207,16 +207,16 @@
   recipes:
   - BalloonSyn
   - FoamBlade
-  # - PlushieBug # QB - no references
+  - PlushieBug
   - PlushieCaptain
   - PlushieGhost
-  # - PlushieGnomeChild # QB - no references
+  - PlushieGnomeChild
   - PlushieGollylad
   - PlushieHeadofPersonnel
-  # - PlushieIba # QB - no references
+  - PlushieIba
   # - PlushieImp # QB - nomira
   - PlushieNuke
-  # - PlushieOdds # QB - no references
+  - PlushieOdds
   - PlushieRainbowCarp
   - PlushieRGBee
   - PlushieThavenWeird

@@ -50,7 +50,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: Dylovene
-          min: 10 # QB 20 to 10
+          min: 20
         type: Local
         visualType: Medium
         messages: [ "generic-reagent-effect-nauseous" ]
@@ -59,18 +59,13 @@
         conditions:
         - !type:ReagentCondition
           reagent: Dylovene
-          min: 15 # QB 20 to 15
-        probability: 0.1 # QB 0.02 to 0.1
+          min: 20
+        probability: 0.02
       - !type:Drunk
         conditions:
         - !type:ReagentCondition
           reagent: Dylovene
-          min: 10 # QB 15 to 10
-      # QB changes start - slightly increases ethanol, make ethyl instead
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.06
-      # QB changes end
+          min: 15
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -10
@@ -102,19 +97,6 @@
         damage:
           types:
             Poison: -3
-      # QB changes - if there was an evil trip with spiders it would be here
-      - !type:Emote
-        emote: Yawn
-        showInChat: true
-        probability: 0.05
-      - !type:MovementSpeedModifier
-        walkSpeedModifier: 0.7
-        sprintSpeedModifier: 0.7
-        conditions:
-        - !type:ReagentCondition
-          reagent: Diphenhydramine
-          min: 30
-      # QB end
     #imp edit start
     Poison:
       effects:
@@ -164,27 +146,6 @@
             Radiation: -3
           groups:
             Brute: 1.5
-      # QB changes start
-      - !type:Emote
-        emote: Scream
-        probability: 0.05
-      - !type:Jitter
-        conditions:
-        - !type:ReagentCondition
-          reagent: Arithrazine
-          min: 15
-      - !type:Vomit
-        probability: 0.1
-      - !type:PopupMessage
-        type: Local
-        messages:
-        - generic-reagent-effect-nauseous
-        probability: 0.1
-        conditions:
-        - !type:ReagentCondition
-          reagent: Arithrazine
-          min: 1
-      # QB changes end
 
 - type: reagent
   id: Bicaridine
@@ -214,7 +175,7 @@
         - !type:ReagentCondition
           reagent: Bicaridine
           min: 30
-        probability: 0.5 # QB from 0.02 to 0.5
+        probability: 0.02
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
@@ -303,24 +264,6 @@
         - !type:ReagentCondition
           reagent: Dermaline
           min: 10
-      # QB edit start
-      - !type:SatiateThirst
-        factor: -10
-        conditions:
-        - !type:ReagentCondition
-          reagent: Dermaline
-          min: 10
-      - !type:PopupMessage
-        type: Local
-        messages:
-        - generic-reagent-effect-thirsty
-        - generic-reagent-effect-parched
-        probability: 0.1
-        conditions:
-        - !type:ReagentCondition
-          reagent: Dermaline
-          min: 10
-      # QB end
 
 - type: reagent
   id: Dexalin
@@ -471,27 +414,12 @@
           types:
             Radiation: -1
       - !type:Vomit
-        probability: 0.1 # QB from 0.02 to 0.1
-        # QB changes start
-        conditions:
-        - !type:ReagentCondition
-          reagent: Hyronalin
-          min: 15 # so medkit pills don't make you frow up
-      - !type:PopupMessage
-        type: Local
-        messages:
-        - generic-reagent-effect-nauseous
-        probability: 0.1
-        conditions:
-        - !type:ReagentCondition
-          reagent: Hyronalin
-          min: 15
-        # QB changes end
+        probability: 0.02
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Hyronalin
-          min: 15 # QB from 30 to 15
+          min: 30
         damage:
           types:
            Heat: 2
@@ -499,7 +427,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: Hyronalin
-          min: 15 # QB from 30 to 15
+          min: 30
 
 - type: reagent
   id: Ipecac
@@ -514,21 +442,12 @@
   metabolisms:
     Medicine:
       effects:
-      # QB changes start
-      - !type:ModifyBleed
-        amount: 0.25
-      - !type:Jitter
-        conditions:
-        - !type:ReagentCondition
-          reagent: Ipecac
-          min: 1
-      # QB end
       - !type:Vomit
         conditions:
         - !type:ReagentCondition
           reagent: Ipecac
           min: 4
-        probability: 0.7 # QB from 0.3 to 0.7
+        probability: 0.3
 
 - type: reagent
   id: Inaprovaline
@@ -575,18 +494,18 @@
         conditions:
         - !type:ReagentCondition
           reagent: Kelotane
-          min: 15 # QB from 30 to 15
+          min: 30
       - !type:PopupMessage
         type: Local
         messages:
-        #- generic-reagent-effect-nauseous # QB
+        - generic-reagent-effect-nauseous
         - generic-reagent-effect-thirsty
         - generic-reagent-effect-parched
         probability: 0.1
         conditions:
         - !type:ReagentCondition
           reagent: Kelotane
-          min: 15 # QB from 25 to 15
+          min: 25
 
 - type: reagent
   id: Leporazine
@@ -707,35 +626,6 @@
         damage:
           types:
             Caustic: 0.3
-      # QB changes start
-      - !type:Jitter
-        conditions:
-        - !type:ReagentCondition
-          reagent: Phalanximine
-          min: 11
-      - !type:Vomit
-        conditions:
-        - !type:ReagentCondition
-          reagent: Phalanximine
-          min: 11
-        probability: 0.1
-      - !type:MovementSpeedModifier
-        walkSpeedModifier: 0.7
-        sprintSpeedModifier: 0.7
-        conditions:
-        - !type:ReagentCondition
-          reagent: Phalanximine
-          min: 11
-      - !type:PopupMessage
-        type: Local
-        messages:
-        - generic-reagent-effect-nauseous
-        probability: 0.1
-        conditions:
-        - !type:ReagentCondition
-          reagent: Phalanximine
-          min: 5
-      # QB changes end
 
 - type: reagent
   id: PolypyryliumOligomers
@@ -1267,15 +1157,6 @@
         damage:
           types:
             Blunt: 3 # 12 per u
-      # QB start
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectSeeingRainbow
-        time: 4.0
-        conditions:
-        - !type:ReagentCondition
-          reagent: Puncturase
-          min: 12
-      # QB end
 
 - type: reagent
   id: Bruizine
@@ -1387,13 +1268,13 @@
         conditions:
         - !type:ReagentCondition
           reagent: Pyrazine
-          min: 10 # QB 15 to 10
+          min: 15
         probability: 0.1
       - !type:Emote
         conditions:
         - !type:ReagentCondition
           reagent: Pyrazine
-          min: 15 # QB 20 to 15
+          min: 20
         emote: Scream
         probability: 0.2
 
@@ -1548,13 +1429,12 @@
   color: "#07E79E"
   metabolisms:
     Medicine:
-      metabolismRate: 0.1 # QB
       effects:
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Psicodine
-          min: 25 # QB 30 to 25
+          min: 30
         damage:
           types:
             Poison: 2
@@ -1563,7 +1443,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: Psicodine
-          min: 15 # QB 30 to 15
+          min: 30
         type: Add
         time: 8
       - !type:GenericStatusEffect
@@ -1582,16 +1462,6 @@
         - "psicodine-effect-anxieties-wash-away"
         - "psicodine-effect-at-peace"
         probability: 0.2
-      # QB changes - shaking when OD
-      - !type:GenericStatusEffect
-        conditions:
-        - !type:ReagentCondition
-          reagent: Psicodine
-          min: 20
-        key: Jitter
-        time: 6.0
-        type: Add
-      # QB changes end
 
 - type: reagent
   id: PotassiumIodide

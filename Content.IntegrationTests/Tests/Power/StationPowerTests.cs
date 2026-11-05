@@ -87,7 +87,6 @@ public sealed class StationPowerTests
         "ElkridgeQB",
         "Foundry",
         "PebbleQB",
-        "Speck",
 
         // QB DEATHMATCH:
         "MeteorArena_QB",

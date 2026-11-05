@@ -31,6 +31,10 @@
     - Payload
     - ClothMade
     - Plushie # imp
+    # imp edits #
+  - type: StealTarget
+    stealGroup: Plushie
+    # end imp edits #
 
 - type: entity
   parent: BasePlushie
