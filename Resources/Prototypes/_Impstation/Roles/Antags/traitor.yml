@@ -1,6 +1,5 @@
 - type: startingGear
   id: SyndicateInfiltratorGear
-  setPreference: true #QB, make these show up for MCQ
   parent: SyndicateOperativeClothing
   equipment:
     id: AgentIDCard
