@@ -84,7 +84,7 @@
     CigaretteStealCollectionObjective: 1 #grays
     PositronicBrainStealCollectionObjective: 1 #thaven
     AILawBoardStealCollectionObjective: 1
-    PlushieStealCollectionObjective: 1
+    # PlushieStealCollectionObjective: 1 QB remove
     ClothingCommandHeadsetStealObjective: 1
 
 - type: weightedRandom
@@ -175,7 +175,7 @@
     ShivaStealObjective: 0.83 # was 1
     TropicoStealObjective: 0.56 # was 1
     #imp
-    FinFinStealObjective: 0.56
+    # FinFinStealObjective: 0.56 QB remove
     PolyStealObjective: 0.56
     PetSuppyStealObjective: 0.56
     OswaldStealObjective: 1.67
