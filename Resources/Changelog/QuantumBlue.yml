@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Camel's soup has been renamed to one day blinding stew.
+    id: 203
+    time: '2026-11-05T22:21:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/255
   - author: MattFright
     changes:
       - type: Fix
