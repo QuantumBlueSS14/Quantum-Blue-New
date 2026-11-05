@@ -128,9 +128,9 @@
     - ScienceWeapons
     - Chemistry
     - PowerCells
-    - ScienceWeapons
     - Mining # PKA and drill
     - ImpProtoDynamic
+    - Instruments
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
