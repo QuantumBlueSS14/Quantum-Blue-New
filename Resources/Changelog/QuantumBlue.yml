@@ -1,4 +1,13 @@
 Entries:
+  - author: AlinaNova21
+    changes:
+      - type: Fix
+        message: >-
+          Fixed a vulnerability that could allow a malicious client to exhaust server memory with crafted network
+          messages.
+    id: 205
+    time: '2026-11-05T22:33:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/290
   - author: rebe83
     changes:
       - type: Tweak
