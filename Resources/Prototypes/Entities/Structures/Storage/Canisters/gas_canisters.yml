@@ -683,7 +683,7 @@
           - MachineLayer
     - type: PhysicalComposition
       materialComposition:
-        Steel: 500
+        Steel: 1000 # QB - was 500
     - type: StaticPrice
       price: 125
 

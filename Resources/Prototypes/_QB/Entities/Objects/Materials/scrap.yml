@@ -1,0 +1,173 @@
+- type: entity
+  parent: ScrapSteel
+  id: ScrapSteelBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 500 # 5 sheets
+
+- type: entity
+  parent: ScrapGlass
+  id: ScrapGlassBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 500 # 5 sheets
+      Steel: 300 # 3 sheets
+
+- type: entity
+  parent: ScrapAirlock1
+  id: ScrapAirlock1Bad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 500 # 5 sheets
+
+- type: entity
+  parent: ScrapCloset
+  id: ScrapClosetBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 500 # 5 sheets
+
+- type: entity
+  parent: ScrapFaxMachine
+  id: ScrapFaxMachineBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 400 # 4 sheets
+      Steel: 100 # 1 sheet
+
+- type: entity
+  parent: ScrapFireExtinguisher
+  id: ScrapFireExtinguisherBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 300 # 3 sheets
+
+- type: entity
+  parent: ScrapFirelock1
+  id: ScrapFirelock1Bad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 700 # 7 sheets
+
+- type: entity
+  parent: ScrapFirelock2
+  id: ScrapFirelock2Bad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 700 # 7 sheets
+
+- type: entity
+  parent: ScrapFirelock3
+  id: ScrapFirelock3Bad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 400 # 4 sheets
+
+- type: entity
+  parent: ScrapJetpack
+  id: ScrapJetpackBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 500 # 5 sheets
+      Plastic: 500 # 5 sheets
+
+- type: entity
+  parent: ScrapMedkit
+  id: ScrapMedkitBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 400 # 4 sheets
+
+- type: entity
+  parent: ScrapMopBucket
+  id: ScrapMopBucketBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 700 # 7 sheets
+
+- type: entity
+  parent: ScrapPAIGold
+  id: ScrapPAIGoldBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Gold: 100 # 1 sheet
+      Plastic: 300 # 3 sheets
+
+- type: entity
+  parent: ScrapGeneratorPlasmaLeaking
+  id: ScrapGeneratorPlasmaLeakingBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1000 # 10 sheets
+      Plasma: 700 # 7 sheets
+      Plastic: 200 # 2 sheets
+
+- type: entity
+  parent: ScrapGeneratorPlasma
+  id: ScrapGeneratorPlasmaBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1000 # 10 sheets
+      Plasma: 700 # 7 sheets
+      Plastic: 200 # 2 sheets
+
+- type: entity
+  parent: ScrapGeneratorUraniumLeaking
+  id: ScrapGeneratorUraniumLeakingBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1000 # 10 sheets
+      Uranium: 700 # 7 sheets
+      Plastic: 200 # 2 sheets
+
+- type: entity
+  parent: ScrapGeneratorUranium
+  id: ScrapGeneratorUraniumBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1000 # 10 sheets
+      Uranium: 700 # 70 sheets
+      Plastic: 200 # 2 sheets
+
+- type: entity
+  parent: ScrapGeneratorFrame
+  id: ScrapGeneratorFrameBad
+  suffix: low yield
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 700 # 7 sheets
