@@ -1,6 +1,23 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Tweak
+        message: >-
+          Archon: Made all scrap spawns a little more consistent, large scrap items such as leaking generators should
+          generally show up in the same few spots now.
+      - type: Tweak
+        message: >-
+          Archon: Tweaked all scrap item pools. A few items that used to show up can't show up anymore, and a few that
+          couldn't show up before now can.
+      - type: Tweak
+        message: 'Archon: Almost all scrap yields from the recycler have been brutally reduced.'
+      - type: Fix
+        message: 'Archon: Fixed salvage having two mass scanners and two magnets.'
+    id: 209
+    time: '2026-11-06T17:12:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/297
+  - author: MattFright
+    changes:
       - type: Add
         message: Added random station scrap and random barrel spawners for mappers.
     id: 208
