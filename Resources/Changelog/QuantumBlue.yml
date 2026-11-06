@@ -1,4 +1,11 @@
 Entries:
+  - author: Soup4Food
+    changes:
+      - type: Fix
+        message: Non-player facing change to fix dev environments
+    id: 212
+    time: '2026-11-06T22:46:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/299
   - author: CrimsonAnnie
     changes:
       - type: Add
