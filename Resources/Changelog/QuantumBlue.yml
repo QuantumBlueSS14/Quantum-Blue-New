@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Tweak
+        message: Gyroscope machine boards now cost 2.5 gold and 2.5 silver to make. No more free money for free
+    id: 207
+    time: '2026-11-06T05:46:23.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/295
+  - author: MattFright
+    changes:
       - type: Fix
         message: Gaskets are now printable in the engi techfab.
       - type: Fix
