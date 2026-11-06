@@ -84,3 +84,6 @@ AutolatheMachineCircuitboard: null
 AutolatheHyperConvectionMachineCircuitboard: null
 ProtolatheMachineCircuitboard: null
 ProtolatheHyperConvectionMachineCircuitboard: null
+
+# 11/06/2026
+CryogenicSleepUnitSpawner: CryogenicSleepUnitSpawnerLateJoin
