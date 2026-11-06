@@ -1,4 +1,11 @@
 Entries:
+  - author: CrimsonAnnie
+    changes:
+      - type: Add
+        message: Cargo Borgs have laws now, you should ask them about it! (Also in ion storms.)
+    id: 211
+    time: '2026-11-06T17:29:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/286
   - author: MattFright
     changes:
       - type: Tweak
