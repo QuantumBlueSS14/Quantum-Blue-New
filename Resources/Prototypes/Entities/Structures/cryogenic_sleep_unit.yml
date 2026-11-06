@@ -3,6 +3,7 @@
   id: CryogenicSleepUnit
   name: cryogenic sleep unit
   description: A super-cooled container that keeps crewmates safe during space travel.
+  suffix: perma # QB - this is all this one should be used for
   components:
   - type: Anchorable
     flags:
@@ -67,6 +68,7 @@
 - type: entity
   parent: CryogenicSleepUnit
   id: CryogenicSleepUnitSpawner
+  categories: [ HideSpawnMenu ] # QB - this is mapper bait
   suffix: Spawner, Roundstart AllJobs
   components:
   - type: ContainerSpawnPoint
