@@ -23,7 +23,7 @@ public sealed partial class StatusEffectsSystem : EntitySystem
     private EntityQuery<StatusEffectContainerComponent> _containerQuery;
     private EntityQuery<StatusEffectComponent> _effectQuery;
 
-    public static HashSet<string> StatusEffectPrototypes = [];
+    public static IReadOnlySet<string> StatusEffectPrototypes { get; private set; } = new HashSet<string>(); // QB Edit: Part of a change to stop spamming prototype lookups
 
     public override void Initialize()
     {
@@ -78,13 +78,15 @@ public sealed partial class StatusEffectsSystem : EntitySystem
 
     private void ReloadStatusEffectsCache()
     {
-        StatusEffectPrototypes.Clear();
+        var statusEffectPrototypes = new HashSet<string>(); // QB Edit: Part of a change to stop spamming prototype lookups
 
         foreach (var ent in _proto.EnumeratePrototypes<EntityPrototype>())
         {
             if (ent.TryGetComponent<StatusEffectComponent>(out _, _factory))
-                StatusEffectPrototypes.Add(ent.ID);
+                statusEffectPrototypes.Add(ent.ID); // QB Edit: Part of a change to stop spamming prototype lookups
         }
+
+        StatusEffectPrototypes = statusEffectPrototypes; // QB Edit: Part of a change to stop spamming prototype lookups
     }
 
     private void OnStatusContainerInit(Entity<StatusEffectContainerComponent> ent, ref ComponentInit args)

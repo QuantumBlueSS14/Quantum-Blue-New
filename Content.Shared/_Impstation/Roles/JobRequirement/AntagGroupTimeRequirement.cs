@@ -30,11 +30,14 @@ public sealed partial class AntagGroupTimeRequirement : JobRequirement
     public override bool Check(IEntityManager entManager,
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile,
-        IReadOnlyDictionary<string, TimeSpan> playTimes,
+        IReadOnlyDictionary<string, TimeSpan>? playTimes,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = new FormattedMessage();
         var playtime = TimeSpan.Zero;
+
+        if (playTimes == null)
+            return true; // QB edit: keep parity with nullable playtime semantics introduced by Funky job requirement updates.
 
         // Check all antags' antag groups.
         var group = protoManager.Index(AntagGroup);
