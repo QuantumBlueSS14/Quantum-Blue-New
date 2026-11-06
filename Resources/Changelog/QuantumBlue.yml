@@ -1,4 +1,17 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Gaskets are now printable in the engi techfab.
+      - type: Fix
+        message: Beakers and jugs are now printable in the engi techfab.
+      - type: Fix
+        message: Science can now print jugs for collecting artifact and anomaly byproduct reagents.
+      - type: Fix
+        message: Synths (instrument) are now printable by both science and service.
+    id: 206
+    time: '2026-11-06T05:45:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/292
   - author: AlinaNova21
     changes:
       - type: Fix
