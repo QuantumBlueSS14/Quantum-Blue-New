@@ -685,7 +685,7 @@
       materialComposition:
         Steel: 1000 # QB - was 500
     - type: StaticPrice
-      price: 125
+      price: 150 # QB
 
 - type: entity
   parent: GasCanisterBrokenBase
