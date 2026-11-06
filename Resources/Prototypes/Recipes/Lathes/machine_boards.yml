@@ -325,6 +325,11 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
   id: GyroscopeMachineCircuitboard
+  materials: # QB start
+    Steel: 500
+    Glass: 500
+    Gold: 250
+    Silver: 250 # QB end
   result: GyroscopeMachineCircuitboard
 
 - type: latheRecipe
