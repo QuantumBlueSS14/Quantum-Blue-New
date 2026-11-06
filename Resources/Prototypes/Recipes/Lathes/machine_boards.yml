@@ -126,7 +126,7 @@
   result: HellfireFreezerMachineCircuitBoard
 
 - type: latheRecipe
-  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  parent: [ BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ] # QB - used to also have BaseGoldCircuitboardRecipe
   id: SpaceHeaterMachineCircuitBoard
   result: SpaceHeaterMachineCircuitBoard
 
