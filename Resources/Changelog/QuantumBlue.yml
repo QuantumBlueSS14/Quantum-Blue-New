@@ -3,6 +3,19 @@ Entries:
     changes:
       - type: Tweak
         message: >-
+          Dash: Added some (pretty bad) meteor shielding at the back of engineering roundstart. Don't forget to build
+          more if you expand outside!
+      - type: Tweak
+        message: 'Dash: Edited the note at Engineering to poke fun at everyone who''s had their TEG explode to meteors.'
+      - type: Fix
+        message: 'Dash: Fixed Salvage not having a job board computer.'
+    id: 210
+    time: '2026-11-06T17:16:25.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/298
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
           Archon: Made all scrap spawns a little more consistent, large scrap items such as leaking generators should
           generally show up in the same few spots now.
       - type: Tweak
