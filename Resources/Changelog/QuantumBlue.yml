@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Add
+        message: Added random station scrap and random barrel spawners for mappers.
+    id: 208
+    time: '2026-11-06T16:08:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/296
+  - author: MattFright
+    changes:
       - type: Tweak
         message: Gyroscope machine boards now cost 2.5 gold and 2.5 silver to make. No more free money for free
     id: 207
