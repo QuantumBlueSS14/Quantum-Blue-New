@@ -2,6 +2,13 @@ Entries:
   - author: MattFright
     changes:
       - type: Fix
+        message: Prism, the evac shuttle for Dash and Speck, should now actually have gravity.
+    id: 214
+    time: '2026-11-07T18:49:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/303
+  - author: MattFright
+    changes:
+      - type: Fix
         message: Players no longer spawn in a cryobed roundstart instead of their default job spawn.
     id: 213
     time: '2026-11-06T23:27:12.0000000+00:00'
