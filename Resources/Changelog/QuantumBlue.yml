@@ -1,6 +1,29 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Remove
+        message: 'Speck: Removed the passive research machine for now.'
+      - type: Tweak
+        message: 'Speck: Made solars a bit less of an eyesore.'
+      - type: Fix
+        message: 'Speck: Xenoarch analyzers are now linked roundstart.'
+      - type: Fix
+        message: 'Speck: Xenoarch now has a roundstart artifact.'
+      - type: Fix
+        message: 'Speck: Science/medbay substation is properly connected roundstart now.'
+      - type: Fix
+        message: 'Speck: Fixed a wiring issue with the Engi substation.'
+      - type: Fix
+        message: 'Speck: Fixed the APC in atmos being disconnected from any LV cables.'
+      - type: Fix
+        message: 'Speck: Fixed an unnamed camera.'
+      - type: Fix
+        message: 'Speck: Fixed both disposals and salvage recyclers being the wrong way around.'
+    id: 215
+    time: '2026-11-08T20:17:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/304
+  - author: MattFright
+    changes:
       - type: Fix
         message: Prism, the evac shuttle for Dash and Speck, should now actually have gravity.
     id: 214
