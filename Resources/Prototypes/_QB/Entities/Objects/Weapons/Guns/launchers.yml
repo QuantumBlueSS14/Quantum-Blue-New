@@ -3,13 +3,22 @@
   name: cyborg mail RPDS
   parent: [ BaseWeaponLauncher, BaseCargoContraband ]
   id: WeaponMailLakeCyborg
-  description: The Rapid Parcel Delivery System is a de-militarised piece of surplus military equipment, repurposed for throwing mail at people. Made infamous by the courier cartel known as the 'Paperboys'. # imp new description lol
+  description: The Rapid Parcel Delivery System is a de-militarised piece of surplus military equipment, repurposed for throwing mail at people.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Launchers/mail.rsi #Imp
     layers:
       - state: icon
         map: ["enum.GunVisualLayers.Base"]
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/clake.ogg
   - type: BallisticAmmoProvider
     proto: null
     whitelist:

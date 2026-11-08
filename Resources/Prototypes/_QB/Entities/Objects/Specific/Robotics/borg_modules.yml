@@ -244,7 +244,7 @@
 # Cargo modules
 
 - type: entity
-  id: BorgModuleCourierAdvanced
+  id: BorgModuleAdvancedCourier
   parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
   name: advanced courier cyborg module
   components:
@@ -255,7 +255,7 @@
     - state: icon-courier
   - type: ItemBorgModule
     hands:
-    - item: MailBagBluespace
+    - item: MailBagOfHolding
     - item: BorgHoloBellProjector
     - hand:
         emptyLabel: borg-slot-mail-empty
@@ -275,3 +275,29 @@
           - MailCapsule
   - type: BorgModuleIcon
     icon: { sprite: _Impstation/Interface/Actions/actions_borg.rsi, state: courier-module }
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-left
+        color: "#613D1D"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-left
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-left
+        color: "#593718"
+      right:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-right
+        color: "#613D1D"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-right
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-right
+        color: "#593718"
