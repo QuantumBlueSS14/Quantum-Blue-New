@@ -29,7 +29,6 @@
   - type: Clothing
     sprite: _DV/Clothing/Head/Hats/surgcap_cybersun.rsi
 
-
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatGnomeReal # QB rename to Real
