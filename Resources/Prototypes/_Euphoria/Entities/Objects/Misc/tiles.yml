@@ -1,4 +1,4 @@
-﻿# mushwood floor
+# mushwood floor
 - type: entity
   name: mushwood floor
   parent: FloorTileItemBase
@@ -29,7 +29,7 @@
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
-    collection: N14FootstepWood # gonna re-use this sound because i like it
+    collection: FootstepWood # QB - change from n14 footstep to normal wood
   friction: 1.25
   itemDrop: FloorTileItemMushWood
   thermalConductivity: 0.04
