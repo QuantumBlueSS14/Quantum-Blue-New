@@ -1,4 +1,4 @@
-﻿# mushwood
+# mushwood
 - type: entity
   parent: MaterialBase
   id: MaterialMushwoodPlank
@@ -35,7 +35,7 @@
     tags:
     - Wooden
     - RawMaterial
-    - TiderAnvilParts #SL
+    #- TiderAnvilParts #SL # QB- we don't have that
     - ConstructionMaterial
   - type: Extractable
     grindableSolutionName: wood

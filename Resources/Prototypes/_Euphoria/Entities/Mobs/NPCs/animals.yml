@@ -84,7 +84,8 @@
     enterDelay: 3
   - type: Carriable #DeltaV
   - type: Item
-    size: 0,0,0,2
+    shape:
+    - 0,0,0,1
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
@@ -103,11 +104,8 @@
   - type: Inventory
     templateId: pet
     speciesId: gnome
+    # TODO displacements the mouth floats above head
   - type: Hands
-    activeHandId: Hand
-    hands:
-      Hand:
-        location: Left
     showInHands: false # TODO: make displacement maps that just slide them down
   - type: Puller # needs hands to pull
     needsHands: true

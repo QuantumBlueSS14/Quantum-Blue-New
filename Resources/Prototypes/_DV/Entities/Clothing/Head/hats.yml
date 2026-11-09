@@ -1,4 +1,4 @@
-﻿# Head of Security
+# Head of Security
 
 - type: entity
   parent: [ ClothingHeadBase, BaseCommandContraband ]
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatGnome
+  id: ClothingHeadHatGnomeReal # QB rename to Real
   name: gnome hat
   description: For those that honor the first gnome in space, Gnome Chompsky. Still has a bit of magic that sparkles in its velvet sheen.
   components:
