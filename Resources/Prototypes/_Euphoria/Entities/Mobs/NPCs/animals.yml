@@ -48,6 +48,9 @@
       Male: GnomeSounds
       Female: GnomeSounds
       Unsexed: GnomeSounds
+# QB changes start - make them more like gnomes
+  - type: ReplacementAccent # these guys do not know English.
+    accent: mushroom
   # shroom powers
   #- type: Psionic
   #- type: MassSleepPower
@@ -62,4 +65,53 @@
   # leash because it's funny
   #- type: LeashAnchor # there's a specific person that knows who they are that this is for
   #  kind: Intrinsic
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 50
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile # pets will hate them
+  - type: HTN
+    rootTask:
+      task: IdleCompound # wander around aimlessly while not controlled
+  - type: VentCrawler
+    enterDelay: 3
+  - type: Carriable #DeltaV
+  - type: Item
+    size: 0,0,0,2
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+  - type: NoSlip
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
+    useSound:
+      path: /Audio/Effects/glass_knock.ogg # Fairy magic
+  - type: Clumsy
+    clumsySound:
+      path: /Audio/_DV/Voice/Gnome/gnomescream.ogg
+  - type: Thieving # to want is to live
+    stealthy: false
+  - type: Inventory
+    templateId: pet
+    speciesId: gnome
+  - type: Hands
+    activeHandId: Hand
+    hands:
+      Hand:
+        location: Left
+    showInHands: false # TODO: make displacement maps that just slide them down
+  - type: Puller # needs hands to pull
+    needsHands: true
+  - type: Tag
+    tags:
+    - FootstepSound
   # QB end
