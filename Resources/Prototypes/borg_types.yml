@@ -94,6 +94,8 @@
   - Supply
   - Science
 
+  lawset: Salvage # QB addition
+
   addComponents: # imp
   - type: Magboots
 
