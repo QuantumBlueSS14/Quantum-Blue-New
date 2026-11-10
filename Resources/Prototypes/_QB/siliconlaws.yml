@@ -32,3 +32,38 @@
   - Cargo4
   - Cargo5
   obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: Mosquito1
+  order: 1
+  lawString: law-mosquito-1
+
+- type: siliconLaw
+  id: Mosquito2
+  order: 2
+  lawString: law-mosquito-2
+
+- type: siliconLaw
+  id: Mosquito3
+  order: 3
+  lawString: law-mosquito-3
+
+- type: siliconLaw
+  id: Mosquito4
+  order: 4
+  lawString: law-mosquito-4
+
+- type: siliconLaw
+  id: Mosquito5
+  order: 5
+  lawString: law-mosquito-5
+
+- type: siliconLawset
+  id: Mosquito
+  laws:
+  - Mosquito1
+  - Mosquito2
+  - Mosquito3
+  - Mosquito4
+  - Mosquito5
+  obeysTo: laws-owner-crew
