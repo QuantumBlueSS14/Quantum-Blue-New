@@ -1,7 +1,4 @@
-﻿roles-antag-kill-everyon-name = Kill Everyon
-roles-antag-kill-everyon-objective = Kill Everyon
-
-# role timers
+﻿# role timers
 
 AntagNuclearAgent = Nuclear Operative Agent
 AntagNuclearOperative = Nuclear Operative
