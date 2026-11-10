@@ -331,8 +331,6 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSlime
-  - type: Rootable
-  - type: NoSlip
   - type: Clumsy
     clumsySound:
       path: /Audio/_QB/Voice/Mushroom/mush_scream.ogg
@@ -347,7 +345,7 @@
     threshold: 12
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Diona
+    #damageModifierSet: Diona # save for a mutation
   - type: Unrevivable
   - type: Appearance
   - type: PotencyVisuals

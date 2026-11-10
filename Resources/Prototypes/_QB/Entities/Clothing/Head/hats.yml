@@ -51,7 +51,6 @@
     clothingVisuals:
       head:
       - state: equipped
-        #offset: "0, 0.35"
   - type: Item
     inhandVisuals:
       left:
