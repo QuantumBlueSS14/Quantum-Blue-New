@@ -1,0 +1,15 @@
+- type: emoteSounds
+  id: MushroomSounds
+  params:
+    variation: 0.08
+  sounds:
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
+    Blink:
+      collection: WetBlinks
+    Scream:
+      path: /Audio/_QB/Voice/Mushroom/mush_scream.ogg
+    Laugh:
+      path: /Audio/_QB/Voice/Mushroom/mush_laugh.ogg
+    DefaultDeathgasp:
+      path: /Audio/_QB/Voice/Mushroom/mush_dead.ogg

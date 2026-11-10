@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ MobBaseAncestor ] # QB change from MobBaseAncestorNoShitmed
+  parent: [MobBaseAncestor] # QB change from MobBaseAncestorNoShitmed
   id: MobGnome
   name: gnome
   description: A cheery fellow. Definitely not a goblin. Or an elf.
@@ -131,6 +131,11 @@
   #  hands:
   #    Hand:
   #      location: Left
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Animals/scurret/displacement.rsi
+          state: hand
   # QB changes end
     showInHands: false # TODO: make displacement maps that just slide them down
   - type: Puller # needs hands to pull
@@ -141,9 +146,11 @@
     - GnomeStorageImplant # for trinkets
   - type: Thieving # for stealing said trinkets
     stealthy: false
+  # QB edit begin
   - type: Inventory
-    templateId: pet
-    speciesId: gnome
+    templateId: mushroom
+    speciesId: mushroom
+  # QB edit end
   - type: Butcherable
     butcheringType: knife
     spawned:
@@ -156,6 +163,12 @@
         Quantity: 60
   - type: Tag
     tags:
+    # QB edit begin
+    - VimPilot
+    - DoorBumpOpener
+    - AnomalyHost
+    - CanPilot
+    # QB edit end
     - FootstepSound
 
 - type: entity

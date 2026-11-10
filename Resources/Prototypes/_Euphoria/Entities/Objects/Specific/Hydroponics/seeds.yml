@@ -7,4 +7,4 @@
   - type: Seed
     seedId: WalkingMushrooms # need to change
   - type: Sprite
-    sprite: _Euphoria/Objects/Specific/Hydroponics/walking_mushroom.rsi
+    sprite: _QB/Objects/Specific/Hydroponics/walking_mushroom.rsi
