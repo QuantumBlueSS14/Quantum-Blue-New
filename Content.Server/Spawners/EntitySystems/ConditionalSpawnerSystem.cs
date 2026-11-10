@@ -94,21 +94,16 @@ namespace Content.Server.Spawners.EntitySystems
 
         private void Spawn(EntityUid uid, RandomSpawnerComponent component)
         {
-            var prototypes = component.Prototypes; // Imp, added prototypes var
-            var rareSpawn = false; // Imp, added to try and reduce upstream changes
-
             if (component.RarePrototypes.Count > 0 && (component.RareChance == 1.0f || _robustRandom.Prob(component.RareChance)))
             {
-                prototypes = component.RarePrototypes; // Imp, removed direct spawning on coords
-                rareSpawn = true; // Imp
-                // Spawn(_robustRandom.Pick(component.RarePrototypes), Transform(uid).Coordinates);
-                // return;
+                Spawn(_robustRandom.Pick(component.RarePrototypes), Transform(uid).Coordinates);
+                return;
             }
 
-            if (!rareSpawn && component.Chance != 1.0f && !_robustRandom.Prob(component.Chance)) // Imp, added !rareSpawn
+            if (component.Chance != 1.0f && !_robustRandom.Prob(component.Chance))
                 return;
 
-            if (!rareSpawn && component.Prototypes.Count == 0) // Imp, added !rareSpawn
+            if (component.Prototypes.Count == 0)
             {
                 Log.Warning($"Prototype list in RandomSpawnerComponent is empty! Entity: {ToPrettyString(uid)}");
                 return;
@@ -123,7 +118,7 @@ namespace Content.Server.Spawners.EntitySystems
 
             var coordinates = Transform(uid).Coordinates.Offset(new Vector2(xOffset, yOffset));
 
-            Spawn(_robustRandom.Pick(prototypes), coordinates); // Imp, switched to prototypes instead of direct component to give offset to rare prototype
+            Spawn(_robustRandom.Pick(component.Prototypes), coordinates);
         }
 
         private void Spawn(Entity<EntityTableSpawnerComponent> ent)
