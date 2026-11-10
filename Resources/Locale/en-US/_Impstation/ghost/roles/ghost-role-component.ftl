@@ -193,3 +193,11 @@ ghost-role-information-syndicate-instigator-description = You are a barely-equip
 ghost-role-information-syndicate-instigator-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-solo-antagonist-name}[/bold][/color]. Covert syndicate agents are not guaranteed to help you.
 
                                           You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
+
+ghost-role-information-space-snake-cobra-name = Space Cobra
+ghost-role-information-space-snake-adder-name = Space Adder
+ghost-role-information-space-snake-adder-small-name = Small Space Adder
+ghost-role-information-space-snake-description = You are a snake who just woke up in this station. All other non-slithering creatures threaten your home, and must die.
+ghost-role-information-space-snake-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] with all other space snakes.
+
+                                            You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
