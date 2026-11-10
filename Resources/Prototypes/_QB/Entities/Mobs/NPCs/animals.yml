@@ -242,7 +242,7 @@
     mindRoles:
     - MindRoleGhostRoleFreeAgent
     raffle:
-      settings: default
+      settings: short # doesn't need a 40 second wait for this
   - type: Butcherable
     butcheringType: knife
     spawned:
@@ -254,20 +254,30 @@
     speechSounds: Mushroom
   - type: Emoting
   - type: BodyEmotes
-    soundsId: DionaBodyEmotes
+    soundsId: MushroomSounds
+  - type: Deathgasp
+    prototype: MushroomDeathgasp
   - type: Vocal
     sounds:
-      Male: MushroomSounds
-      Female: MushroomSounds
-      Unsexed: MushroomSounds
+      Male: Mushroom
+      Female: Mushroom
+      Unsexed: Mushroom
   - type: ReplacementAccent # these guys do not know English.
     accent: mushroom
   - type: TypingIndicator
     proto: diona
+  - type: InteractionPopup
+    successChance: 0.4
+    interactSuccessString: petting-success-mushroom
+    interactFailureString: petting-failure-mushroom
+      path: /Audio/_QB/Voice/Mushroom/mush_bwoing.ogg
+      params:
+       variation: .125
+    interactSuccessSpawn: EffectHearts
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: Nutriment
+      - ReagentId: Cellulose # what wood grinds into
         Quantity: 50
   - type: MobThresholds
     thresholds:
@@ -283,6 +293,7 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
+  # AI
   - type: NPCRetaliation
     attackMemoryLength: 10
   - type: NpcFactionMember
@@ -296,6 +307,16 @@
     rootTask:
       task: KisserTomatoCompound # follow people while not controlled
   # movement / abilities
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 1
   - type: VentCrawler
     enterDelay: 3
   - type: Carriable
@@ -315,6 +336,9 @@
       path: /Audio/_QB/Voice/Mushroom/mush_scream.ogg
   - type: Thieving # to want is to live
     stealthy: false
+  - type: CanEscapeInventory
+    baseResistTime: 3
+    # plant stuff
   - type: IgnoreKudzu
   - type: IgniteOnHeatDamage
     fireStacks: 1
@@ -322,9 +346,10 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Diona
-  - type: CanEscapeInventory
-    baseResistTime: 3
+  - type: Unrevivable
   - type: PotencyVisuals
+  - type: Extractable
+    grindableSolutionName: bloodstream
   - type: Produce
     seedId: WalkingMushrooms
   - type: Reactive # copied from killer tomato
@@ -369,16 +394,6 @@
     whitelist:
       components:
       - TooShortForUIWhitelist
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-      collection: Punch
-    angle: 30
-    animation: WeaponArcFist
-    attackRate: 1
-    damage:
-      types:
-        Blunt: 1
   # inventory
   - type: ComplexInteraction
   - type: Cuffable

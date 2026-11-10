@@ -4,7 +4,7 @@
   name: seeds-walking-mushroom-name
   noun: seeds-noun-seeds
   displayName: seeds-walking-mushroom-display-name
-  plantRsi: _Euphoria/Objects/Specific/Hydroponics/walking_mushroom.rsi
+  plantRsi: _QB/Objects/Specific/Hydroponics/walking_mushroom.rsi
   plantLogImpact: High
   harvestLogImpact: High
   packetPrototype: WalkingMushroomSeeds
@@ -13,6 +13,7 @@
   harvestRepeat: NoRepeat # dont let this repeat, one and done
   lifespan: 25
   maturation: 15
+  ligneous: true # QB - need hatchet to harvest
   production: 6
   yield: 1 # only one ghost role per plant
   potency: 10

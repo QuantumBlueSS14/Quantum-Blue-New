@@ -1,29 +1,39 @@
 - files: ["mush.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
   source: ""
 
   files: ["mush_ask.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
   source: ""
 
   files: ["mush_exclaim.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
   source: ""
 
   files: ["mush_dead.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
   source: ""
 
   files: ["mush_laugh.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
   source: ""
 
   files: ["mush_scream.ogg"]
   license: "CC-BY-SA-4.0"
-  copyright: "Original sound by "
+  copyright: "Original sound by Mattfright"
+  source: ""
+
+  files: ["mush_boing.ogg"]
+  license: "CC-BY-SA-4.0"
+  copyright: "Original sound by Mattfright"
+  source: ""
+
+  files: ["mush_gasp.ogg"]
+  license: "CC-BY-SA-4.0"
+  copyright: "Original sound by Mattfright"
   source: ""
