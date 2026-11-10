@@ -259,9 +259,9 @@
     prototype: MushroomDeathgasp
   - type: Vocal
     sounds:
-      Male: Mushroom
-      Female: Mushroom
-      Unsexed: Mushroom
+      Male: MushroomSounds
+      Female: MushroomSounds
+      Unsexed: MushroomSounds
   - type: ReplacementAccent # these guys do not know English.
     accent: mushroom
   - type: TypingIndicator
@@ -270,6 +270,7 @@
     successChance: 0.4
     interactSuccessString: petting-success-mushroom
     interactFailureString: petting-failure-mushroom
+    interactSuccessSound:
       path: /Audio/_QB/Voice/Mushroom/mush_bwoing.ogg
       params:
        variation: .125
@@ -323,6 +324,7 @@
   - type: Item
     shape:
     - 0,0,1,1
+  - type: MultiHandedItem
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
@@ -347,6 +349,7 @@
     damageContainer: Biological
     damageModifierSet: Diona
   - type: Unrevivable
+  - type: Appearance
   - type: PotencyVisuals
   - type: Extractable
     grindableSolutionName: bloodstream
@@ -386,7 +389,7 @@
       - !type:HealthChange
         damage:
           types:
-            Heat: 1
+            Caustic: 1
   - type: TooShortForUI
     blacklist:
       components:
@@ -405,7 +408,7 @@
     leftHandDisplacement:
       sizeMaps:
         32:
-          sprite: _QB/Mobs/Animals/mushman/displacement.rsi
+          sprite: _QB/Mobs/Animals/mushman/displacement.rsi # this kinda sucks
           state: hand
   - type: Puller
     needsHands: true
