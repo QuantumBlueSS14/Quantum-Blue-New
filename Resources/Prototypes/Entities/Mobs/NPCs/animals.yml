@@ -1383,6 +1383,10 @@
       Male: Gorilla
       Female: Gorilla
       Unsexed: Gorilla
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
   # imp edit end
 
 - type: entity
