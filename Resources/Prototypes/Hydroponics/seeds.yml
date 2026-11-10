@@ -922,6 +922,10 @@
   packetPrototype: ChanterelleSeeds
   productPrototypes:
     - FoodMushroom
+  # Euphoria additions start
+  mutationPrototypes:
+    - WalkingMushrooms
+  # Euphoria additions end
   lifespan: 35
   maturation: 10
   production: 7

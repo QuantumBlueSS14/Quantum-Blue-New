@@ -203,3 +203,218 @@
 #  - type: HTN
 #    rootTask:
 #      task: SimpleHostileCompound
+
+# mushroom men
+- type: entity
+  parent: [MobBaseAncestor]
+  id: MobMythicalMushroom # ported from Euphoria
+  name: walking mushroom
+  description: A cheery fellow. Definitely not a goblin. Or an elf. Or a gnome.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mushboy
+      sprite: _QB/Mobs/Animals/mushman/mushman.rsi
+    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "clownedon" ]
+      sprite: "Effects/creampie.rsi"
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mushboy
+      Critical:
+        Base: mushboy
+      Dead:
+        Base: mushboy_dead
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    name: ghost-role-information-walking-mushroom-name
+    description: ghost-role-information-walking-mushroom-description
+    rules: ghost-role-information-freeagent-rules
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+    raffle:
+      settings: short # doesn't need a 40 second wait for this
+  - type: Butcherable
+    butcheringType: knife
+    spawned:
+    - id: MaterialMushwoodPlank5 # spawn five of our planks
+    - id: ClothingHeadHatMushroom
+  # Speech
+  - type: Speech
+    speechVerb: Plant
+    speechSounds: Mushroom
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: MushroomSounds
+  - type: Deathgasp
+    prototype: MushroomDeathgasp
+  - type: Vocal
+    sounds:
+      Male: MushroomSounds
+      Female: MushroomSounds
+      Unsexed: MushroomSounds
+  - type: ReplacementAccent # these guys do not know English.
+    accent: mushroom
+  - type: TypingIndicator
+    proto: diona
+  - type: InteractionPopup
+    successChance: 0.4
+    interactSuccessString: petting-success-mushroom
+    interactFailureString: petting-failure-mushroom
+    interactSuccessSound:
+      path: /Audio/_QB/Voice/Mushroom/mush_bwoing.ogg
+      params:
+       variation: .125
+    interactSuccessSpawn: EffectHearts
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Cellulose # what wood grinds into
+        Quantity: 50
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      40: Critical
+      65: Dead
+  - type: Destructible # make them not drop animal organs when butchered
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 80
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+  # AI
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: NPCImprintingOnSpawnBehaviour
+    whitelist:
+      components:
+      - HumanoidAppearance
+  - type: HTN
+    rootTask:
+      task: KisserTomatoCompound # follow people while not controlled
+  # movement / abilities
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 1
+  - type: VentCrawler
+    enterDelay: 3
+  - type: Carriable
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: MultiHandedItem
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSlime
+  - type: Clumsy
+    clumsySound:
+      path: /Audio/_QB/Voice/Mushroom/mush_scream.ogg
+  - type: Thieving # to want is to live
+    stealthy: false
+  - type: CanEscapeInventory
+    baseResistTime: 3
+    # plant stuff
+  - type: IgnoreKudzu
+  - type: IgniteOnHeatDamage
+    fireStacks: 1
+    threshold: 12
+  - type: Damageable
+    damageContainer: Biological
+    #damageModifierSet: Diona # save for a mutation
+  - type: Unrevivable
+  - type: Appearance
+  - type: PotencyVisuals
+  - type: Extractable
+    grindableSolutionName: bloodstream
+  - type: Produce
+    seedId: WalkingMushrooms
+  - type: Reactive # copied from killer tomato
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+    reactions:
+    - reagents: [ Water ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.15
+    - reagents: [ Blood ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.25
+            Burn: -0.25
+    - reagents: [ RobustHarvest ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -1
+            Burn: -1
+    - reagents: [ WeedKiller, PlantBGone ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 1
+  - type: TooShortForUI
+    blacklist:
+      components:
+      - TooShortForUIBlacklist
+    whitelist:
+      components:
+      - TooShortForUIWhitelist
+  # inventory
+  - type: ComplexInteraction
+  - type: Cuffable
+  - type: Inventory
+    templateId: mushroom
+    speciesId: mushroom
+  - type: InventorySlots
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: _QB/Mobs/Animals/mushman/displacement.rsi # this kinda sucks
+          state: hand
+  - type: Puller
+    needsHands: true
+  - type: Tag
+    tags:
+    - VimPilot
+    - DoorBumpOpener
+    - AnomalyHost
+    - CanPilot
+    - FootstepSound
+    - DionaHivemind # they get the hivemind

@@ -1,0 +1,10 @@
+- type: entity
+  parent: SeedBase
+  name: packet of walking mushroom seeds
+  description: "Woah shrooms!" # QB remove period after exclamation
+  id: WalkingMushroomSeeds
+  components:
+  - type: Seed
+    seedId: WalkingMushrooms # need to change
+  - type: Sprite
+    sprite: _QB/Objects/Specific/Hydroponics/walking_mushroom.rsi

@@ -1,0 +1,26 @@
+# Deathgasp
+- type: emote
+  id: MushroomDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: _Impstation/Interface/Emotes/deathgasp.png
+  chatMessages: ["chat-emote-msg-deathgasp-mushroom"]
+
+- type: emote
+  id: Boing
+  name: chat-emote-name-boing
+  icon: _Impstation/Interface/Emotes/squish.png # placeholder
+  category: Vocal
+  whitelist:
+    components:
+    - Produce # only REAL plants can boing
+  chatMessages: ["chat-emote-msg-boing"]
+  chatTriggers:
+    - boing
+    - boings
+    - boinged
+    - boing.
+    - boings.
+    - boinged.
+    - boing!
+    - boings!
+    - boinged!

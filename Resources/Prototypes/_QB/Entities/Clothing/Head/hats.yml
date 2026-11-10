@@ -37,3 +37,30 @@
     - CorgiWearable
     - ClothMade
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatMushroom
+  name: mushroom hat
+  description: You're a monster and proud of it.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Head/Hats/mushroom_hat.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Head/Hats/mushroom_hat.rsi
+    clothingVisuals:
+      head:
+      - state: equipped
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        shader: unshaded
+      right:
+      - state: inhand-right
+        shader: unshaded
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - WhitelistChameleon

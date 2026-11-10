@@ -1,0 +1,34 @@
+# walking mushrooms
+- type: seed
+  id: WalkingMushrooms
+  name: seeds-walking-mushroom-name
+  noun: seeds-noun-seeds
+  displayName: seeds-walking-mushroom-display-name
+  plantRsi: _QB/Objects/Specific/Hydroponics/walking_mushroom.rsi
+  plantLogImpact: High
+  harvestLogImpact: High
+  packetPrototype: WalkingMushroomSeeds
+  productPrototypes:
+  - MobMythicalMushroom # spawn our shroom
+  harvestRepeat: NoRepeat # dont let this repeat, one and done
+  lifespan: 25
+  maturation: 15
+  ligneous: true # QB - need hatchet to harvest
+  production: 6
+  yield: 1 # only one ghost role per plant
+  potency: 10
+  waterConsumption: 0.60
+  nutrientConsumption: 0.70
+  idealLight: 8
+  idealHeat: 298
+  growthStages: 3
+  splatPrototype: PuddleSplatter
+  chemicals:
+    Nothing:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Nutriment:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
