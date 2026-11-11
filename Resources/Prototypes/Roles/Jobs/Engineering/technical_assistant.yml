@@ -19,6 +19,8 @@
   - Engineering
   - External
   - Firelocks # QB
+  extendedAccess: # QB
+  - Atmospherics
 
 - type: startingGear
   id: TechnicalAssistantGear
