@@ -17,6 +17,9 @@
   - Maintenance
   - External
   - Cryogenics
+  extendedAccess: # QB start
+  - Brigmedic
+  - Detective # QB end
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
