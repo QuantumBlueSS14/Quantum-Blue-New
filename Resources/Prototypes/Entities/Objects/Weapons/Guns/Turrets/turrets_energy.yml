@@ -84,7 +84,7 @@
     fireModes:
     - proto: BulletEnergyTurretDisabler
       fireCost: 100
-    - proto: BulletEnergyTurretLaser
+    - proto: RedHeavyLaserAI # QB change from BulletEnergyTurretLaser to RedHeavyLaserAI - want it hitscan
       fireCost: 100
   - type: DeployableTurret
     retractedDamageModifierSetId: Metallic
