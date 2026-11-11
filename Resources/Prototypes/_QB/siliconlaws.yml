@@ -53,11 +53,6 @@
   order: 4
   lawString: law-mosquito-4
 
-- type: siliconLaw
-  id: Mosquito5
-  order: 5
-  lawString: law-mosquito-5
-
 - type: siliconLawset
   id: Mosquito
   laws:
@@ -65,5 +60,4 @@
   - Mosquito2
   - Mosquito3
   - Mosquito4
-  - Mosquito5
   obeysTo: laws-owner-crew
