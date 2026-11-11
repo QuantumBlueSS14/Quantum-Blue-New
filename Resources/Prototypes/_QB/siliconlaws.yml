@@ -58,6 +58,11 @@
   order: 5
   lawString: law-salvage-5
 
+- type: siliconLaw
+  id: Salvage6
+  order: 6
+  lawString: law-salvage-6
+
 - type: siliconLawset
   id: Salvage
   laws:
@@ -66,4 +71,5 @@
   - Salvage3
   - Salvage4
   - Salvage5
+  - Salvage6
   obeysTo: laws-owner-crew
