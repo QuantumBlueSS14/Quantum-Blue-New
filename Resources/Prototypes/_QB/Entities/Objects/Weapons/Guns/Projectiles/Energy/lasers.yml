@@ -1,7 +1,7 @@
 # For AI turret laser
 - type: entity
   parent: BasicHitscan
-  id: RedHeavyLaserAI # just making this so it's independent of regular heavy laser changes
+  id: RedHeavyLaserTurret # just making this so it's independent of regular heavy laser changes
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicDamage
