@@ -203,6 +203,24 @@
     recipe:
       SynthFlesh: 20
       Saline: 20
+  # QB start - damaged by pest spray
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [ PestKiller ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
+      - !type:Emote
+        emote: Cough
+        probability: 0.7
+  # QB start - damaged by pest spray
 
 - type: entity
   parent: BaseSpeciesDummy
