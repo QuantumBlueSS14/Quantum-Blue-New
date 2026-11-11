@@ -240,3 +240,64 @@
     - item: RemoteSignaller
   - type: BorgModuleIcon
     icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: breaching-module }
+
+# Cargo modules
+
+- type: entity
+  id: BorgModuleAdvancedCourier
+  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  name: advanced courier cyborg module
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Specific/Robotics/borgmodules.rsi
+    layers:
+    - state: cargo
+    - state: icon-courier
+  - type: ItemBorgModule
+    hands:
+    - item: MailBagOfHolding
+    - item: BorgHoloBellProjector
+    - hand:
+        emptyLabel: borg-slot-mail-empty
+        emptyRepresentative: Paper
+        whitelist:
+          components:
+          - Delivery
+          tags:
+          - Document
+          - Paper
+    - item:  WeaponMailLakeCyborg
+    - hand:
+        emptyLabel: borg-slot-mail-capsule-empty
+        emptyRepresentative: MailCapsulePrimed
+        whitelist:
+          tags:
+          - MailCapsule
+  - type: BorgModuleIcon
+    icon: { sprite: _Impstation/Interface/Actions/actions_borg.rsi, state: courier-module }
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-left
+        color: "#613D1D"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-left
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-left
+        color: "#593718"
+      right:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-right
+        color: "#613D1D"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-right
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-right
+        color: "#593718"

@@ -85,6 +85,7 @@
     - Mining
     - Fultons
     - SalvageSecurityWeapons # pka upgrades
+    - Mail
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

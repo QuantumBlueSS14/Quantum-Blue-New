@@ -1,0 +1,6 @@
+# cargo
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleAdvancedCourier
+  result: BorgModuleAdvancedCourier

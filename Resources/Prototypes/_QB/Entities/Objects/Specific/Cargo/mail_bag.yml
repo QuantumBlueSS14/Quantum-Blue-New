@@ -1,0 +1,29 @@
+- type: entity
+  name: mail bag of holding
+  id: MailBagOfHolding
+  parent: MailBag
+  description: A bag for carrying mail around the station. Made from tanned space bear hide and bluespace.
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Specific/Cargo/mail_bag_holding.rsi
+    state: icon
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,19,9
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      components:
+      - Paper
+      - Delivery
+      - Envelope # DeltaV - Allow handwritten mail
+      tags:
+      - Document
+      - Paper
+  - type: Clothing
+    sprite: _QB/Objects/Specific/Cargo/mail_bag_holding.rsi
+    quickEquip: false
+    slots:
+    - belt
+    - back
