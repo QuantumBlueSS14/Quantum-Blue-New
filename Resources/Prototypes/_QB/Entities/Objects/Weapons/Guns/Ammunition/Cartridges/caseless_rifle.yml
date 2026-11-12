@@ -46,6 +46,6 @@
       ammo:
         reagents:
         - ReagentId: Lexorin
-          Quantity: 1.5
+          Quantity: 1
   - type: SolutionTransfer
-    maxTransferAmount: 1.5
+    maxTransferAmount: 1

@@ -3,3 +3,6 @@ uplink-caseless-pistol-tranq-desc = A magazine with 10 rounds of tranquilizer am
 
 uplink-caseless-pistol-poison-name = pistol magazine (.25 caseless toxin)
 uplink-caseless-pistol-poison-desc = A magazine with 10 rounds of poisonous ammunition loaded with Heartbreaker Toxin. Takes four shots and a short time to kill. For use with the Cobra.
+
+uplink-magazine-magnum-name = extended pistol magazine (.45 magnum)
+uplink-magazine-magnum-desc = An extended 12 round .45 magazine intended for use with the desperado.

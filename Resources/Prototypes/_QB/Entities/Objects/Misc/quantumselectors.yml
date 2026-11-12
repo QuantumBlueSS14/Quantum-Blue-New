@@ -1,0 +1,37 @@
+- type: entity
+  parent: ToolboxThief
+  id: QuantumTankSelector
+  name: quantum air tank
+  description: Thanks to quantum technology research, these air tanks can become any desired type with a simple thought. It's not magic, it's science!
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Tanks/quantum_tank.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: quantum-tank-selector-window-title
+    toolDesc: quantum-tank-selector-window-description
+    possibleSets:
+    - SelectorOxygenTank
+    - SelectorOxygenTankSmall
+    - SelectorNitrogenTank
+    - SelectorNitrogenTankSmall
+
+- type: entity
+  parent: ToolboxThief
+  id: QuantumTankSelectorCommand
+  name: command quantum air tank
+  description: Thanks to quantum technology research, these air tanks can become any desired type with a simple thought. It's not magic, it's science!
+  components:
+  - type: Sprite
+    sprite: _QB/Objects/Tanks/quantum_tank.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: command-quantum-tank-selector-window-title
+    toolDesc: command-quantum-tank-selector-window-description
+    possibleSets:
+    - SelectorOxygenTankCommand
+    - SelectorOxygenTankCommandSmall
+    - SelectorNitrogenTankCommand
+    - SelectorNitrogenTankCommandSmall

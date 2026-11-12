@@ -6,7 +6,7 @@
   id: SecurityEquipmentStatic
   recipes:
   - ClothingEyesHudSecurity
-  - ForensicPad
+  #- ForensicPad # QB added to research
   - Handcuffs
   - TargetClown
   - TargetHuman

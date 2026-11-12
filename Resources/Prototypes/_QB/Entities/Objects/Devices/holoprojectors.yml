@@ -1,0 +1,8 @@
+- type: entity
+  id: HoloprojectorSecurityBorg
+  parent: HoloprojectorSecurity
+  name: security holoprojector
+  description: Creates a solid but fragile holographic barrier. Slowly recharges.
+  components:
+  - type: BatterySelfRecharger
+    autoRechargeRate: 0.50

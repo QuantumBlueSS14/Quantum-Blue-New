@@ -1,0 +1,6 @@
+- type: foodSequenceElement
+  id: ValidPlushie
+  name: food-sequence-cotton-burger-content-plushie-valid
+  sprites:
+  - sprite: _QB/Objects/Fun/Plushies/valid.rsi
+    state: icon

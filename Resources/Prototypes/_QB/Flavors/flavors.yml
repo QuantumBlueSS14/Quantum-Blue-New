@@ -1,0 +1,9 @@
+- type: flavor
+  id: butterbrew
+  flavorType: Complex
+  description: flavor-complex-butterbrew
+
+- type: flavor
+  id: buttertea
+  flavorType: Complex
+  description: flavor-complex-buttertea

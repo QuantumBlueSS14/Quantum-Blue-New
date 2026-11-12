@@ -149,7 +149,7 @@ namespace Content.IntegrationTests.Tests
             //"CentComm",
             //"Box",
             //"Marathon",
-            "MeteorArena",
+            // "MeteorArena",
             //"Saltern",
             //"Reach",
             //"Oasis",
@@ -157,7 +157,7 @@ namespace Content.IntegrationTests.Tests
             //"Plasma",
             //"Elkridge",
             //"Relic",
-            "dm01-entryway",
+            //"dm01-entryway",
             //"Exo",
             //"Snowball",
 
@@ -200,6 +200,11 @@ namespace Content.IntegrationTests.Tests
             "ElkridgeQB",
             "Foundry",
             "PebbleQB",
+
+            // QB DEATHMATCH:
+            "MeteorArena_QB",
+            "dm01-entryway_QB",
+            "E1M1_QB",
 
             // DEROTATED:
             //"Eclipse",

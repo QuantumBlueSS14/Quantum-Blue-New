@@ -1,0 +1,23 @@
+
+- type: entity
+  name: Jörmungandr
+  id: WeaponMinigunUplink
+  parent: WeaponMinigun
+  description: The great beast that harkens the end. Uses .10 mini ammo.
+  components:
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -20
+  - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    angleIncrease: -1 # gets more accurate as it spins up
+    angleDecay: -8
+    fireRate: 15 # 60dps
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg

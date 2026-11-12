@@ -39,6 +39,8 @@
     - ElectronicsStatic
     - LightsStatic
     - MaterialsStatic
+    - QBSimpleBeakerJugStatic
+    - QBEngiStatic
     dynamicPacks:
     - AdvancedTools
     - PowerCells
@@ -128,9 +130,9 @@
     - ScienceWeapons
     - Chemistry
     - PowerCells
-    - ScienceWeapons
     - Mining # PKA and drill
     - ImpProtoDynamic
+    - Instruments
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

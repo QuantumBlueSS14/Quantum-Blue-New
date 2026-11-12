@@ -1,5 +1,5 @@
 # THIS FILE IS BEING IGNORED
-# TO ADD MAPS TO THIS POOL, GO TO Prototypes/_Impstation/Maps/Pools/deathmatch.yml INSTEAD
+# TO ADD MAPS TO THIS POOL, GO TO Prototypes/_QB/Maps/Pools/deathmatch.yml INSTEAD
 - type: gameMapPool
   id: DeathMatchMapPool
   maps:

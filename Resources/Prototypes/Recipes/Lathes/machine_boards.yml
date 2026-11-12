@@ -126,7 +126,7 @@
   result: HellfireFreezerMachineCircuitBoard
 
 - type: latheRecipe
-  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  parent: [ BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ] # QB - used to also have BaseGoldCircuitboardRecipe
   id: SpaceHeaterMachineCircuitBoard
   result: SpaceHeaterMachineCircuitBoard
 
@@ -325,6 +325,11 @@
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
   id: GyroscopeMachineCircuitboard
+  materials: # QB start
+    Steel: 500
+    Glass: 500
+    Gold: 250
+    Silver: 250 # QB end
   result: GyroscopeMachineCircuitboard
 
 - type: latheRecipe

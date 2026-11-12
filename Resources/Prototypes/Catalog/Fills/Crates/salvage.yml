@@ -187,7 +187,8 @@
         children:
         - id: ClothingOuterHardsuitSalvage
         - id: ClothingMaskBreath
-        - id: OxygenTankFilled
+        # - id: OxygenTankFilled # QB comment comment
+        - id: QuantumTankSelector # QB - replaces oxy tanks
 
 - type: entity
   parent: CrateGenericSteel

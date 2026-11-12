@@ -1,4 +1,427 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: 'Speck: Removed the passive research machine for now.'
+      - type: Tweak
+        message: 'Speck: Made solars a bit less of an eyesore.'
+      - type: Fix
+        message: 'Speck: Xenoarch analyzers are now linked roundstart.'
+      - type: Fix
+        message: 'Speck: Xenoarch now has a roundstart artifact.'
+      - type: Fix
+        message: 'Speck: Science/medbay substation is properly connected roundstart now.'
+      - type: Fix
+        message: 'Speck: Fixed a wiring issue with the Engi substation.'
+      - type: Fix
+        message: 'Speck: Fixed the APC in atmos being disconnected from any LV cables.'
+      - type: Fix
+        message: 'Speck: Fixed an unnamed camera.'
+      - type: Fix
+        message: 'Speck: Fixed both disposals and salvage recyclers being the wrong way around.'
+    id: 215
+    time: '2026-11-08T20:17:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/304
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Prism, the evac shuttle for Dash and Speck, should now actually have gravity.
+    id: 214
+    time: '2026-11-07T18:49:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/303
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Players no longer spawn in a cryobed roundstart instead of their default job spawn.
+    id: 213
+    time: '2026-11-06T23:27:12.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/300
+  - author: Soup4Food
+    changes:
+      - type: Fix
+        message: Non-player facing change to fix dev environments
+    id: 212
+    time: '2026-11-06T22:46:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/299
+  - author: CrimsonAnnie
+    changes:
+      - type: Add
+        message: Cargo Borgs have laws now, you should ask them about it! (Also in ion storms.)
+    id: 211
+    time: '2026-11-06T17:29:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/286
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Dash: Added some (pretty bad) meteor shielding at the back of engineering roundstart. Don't forget to build
+          more if you expand outside!
+      - type: Tweak
+        message: 'Dash: Edited the note at Engineering to poke fun at everyone who''s had their TEG explode to meteors.'
+      - type: Fix
+        message: 'Dash: Fixed Salvage not having a job board computer.'
+    id: 210
+    time: '2026-11-06T17:16:25.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/298
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Archon: Made all scrap spawns a little more consistent, large scrap items such as leaking generators should
+          generally show up in the same few spots now.
+      - type: Tweak
+        message: >-
+          Archon: Tweaked all scrap item pools. A few items that used to show up can't show up anymore, and a few that
+          couldn't show up before now can.
+      - type: Tweak
+        message: 'Archon: Almost all scrap yields from the recycler have been brutally reduced.'
+      - type: Fix
+        message: 'Archon: Fixed salvage having two mass scanners and two magnets.'
+    id: 209
+    time: '2026-11-06T17:12:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/297
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Added random station scrap and random barrel spawners for mappers.
+    id: 208
+    time: '2026-11-06T16:08:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/296
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Gyroscope machine boards now cost 2.5 gold and 2.5 silver to make. No more free money for free
+    id: 207
+    time: '2026-11-06T05:46:23.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/295
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Gaskets are now printable in the engi techfab.
+      - type: Fix
+        message: Beakers and jugs are now printable in the engi techfab.
+      - type: Fix
+        message: Science can now print jugs for collecting artifact and anomaly byproduct reagents.
+      - type: Fix
+        message: Synths (instrument) are now printable by both science and service.
+    id: 206
+    time: '2026-11-06T05:45:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/292
+  - author: AlinaNova21
+    changes:
+      - type: Fix
+        message: >-
+          Fixed a vulnerability that could allow a malicious client to exhaust server memory with crafted network
+          messages.
+    id: 205
+    time: '2026-11-05T22:33:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/290
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Animal organs can have their delicious raw proteins extracted in the grinder.
+    id: 204
+    time: '2026-11-05T22:27:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/289
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Camel's soup has been renamed to one day blinding stew.
+    id: 203
+    time: '2026-11-05T22:21:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/255
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: You can no longer try to vote the gamemode for multiple players without multiple players
+      - type: Fix
+        message: E1M1 now has a minimum of 25 players required to roll. it's way too big
+    id: 202
+    time: '2026-10-31T20:00:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/284
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Archon: Fixed trash not going into the disposals conveyor'
+    id: 201
+    time: '2026-10-31T19:52:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/283
+  - author: MattFright
+    changes:
+      - type: Remove
+        message: Removed all the reference plushies we had carried over from imp, that we missed removing before.
+    id: 200
+    time: '2026-10-31T19:38:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/282
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Syndicate agents now can purches the Jormungandr for 30tc, a minigun with 1000 bullets. Rain lead!
+    id: 199
+    time: '2026-10-31T17:43:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/276
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Role time requirements are back, sorry!
+    id: 198
+    time: '2026-10-31T17:37:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/271
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Dylovene gets you drunk, make ethylredoxazine instead!
+      - type: Tweak
+        message: Bicaridine also gets you drunk.
+      - type: Tweak
+        message: Dermaline OD now makes you very thirsty, beware!
+      - type: Tweak
+        message: All radiation treatment chems (hyronalin, arith, phalanx) make you vomit.
+      - type: Tweak
+        message: 30u of Diphenhydramine makes you really trip. Hat man not included.
+      - type: Tweak
+        message: Most basic chemicals have had their side effects enhanced / occur at lower quantities.
+    id: 197
+    time: '2026-10-31T17:36:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/245
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Shotgun flare shells are now printable from the security ammo lathe.
+    id: 196
+    time: '2026-10-31T17:15:37.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/274
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Added a healing rainbow lollipop to the uplink with 30 bic and 10 hyperzine. Yippie!
+    id: 195
+    time: '2026-10-31T17:14:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/275
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: cyborgs (except the cargo cyborg) no longer have orders access.
+    id: 194
+    time: '2026-10-31T17:11:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/279
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Added firelock access to engineering IDs. Whoopsie!
+    id: 193
+    time: '2026-10-28T18:22:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/269
+  - author: staryoshi06
+    changes:
+      - type: Tweak
+        message: Vulpkanin can now have more colourful fur.
+    id: 192
+    time: '2026-10-28T18:13:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/268
+  - author: SeeroftheNight
+    changes:
+      - type: Add
+        message: >-
+          Added butter steak, raw butter steak, butter on a stick, butterdog, butter buscuit, butter tea, and
+          butterbrew.
+    id: 191
+    time: '2026-10-28T18:04:32.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/270
+  - author: MattFright
+    changes:
+      - type: Add
+        message: 'Archon: Added a space heater to cargo.'
+      - type: Add
+        message: 'Archon: Added two freezer boards to atmos.'
+      - type: Tweak
+        message: 'Archon: Connected the maints area from evac and around command to actually have a public exit at the end.'
+      - type: Fix
+        message: 'Archon: Fixed the captain''s airlock not being locked.'
+      - type: Fix
+        message: 'Archon: Added materials next to the cargo techfab that i just forgot to before.'
+      - type: Fix
+        message: 'Archon: Artifact analyzers are now linked.'
+    id: 190
+    time: '2026-10-26T06:45:44.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/267
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Archon: Moved the jukebox to the center of the lounge for maximum enjoyment'
+      - type: Fix
+        message: 'Archon: Fixes some missing floors under airlocks'
+      - type: Fix
+        message: 'Archon: Added a missing space cleaner dispenser to janitor closet'
+      - type: Fix
+        message: 'Archon: Added a missing welding fuel dispenser to engineering'
+      - type: Fix
+        message: 'Archon: Fixed power issues with the evac shuttle'
+    id: 189
+    time: '2026-10-25T20:54:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/266
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Deathmatch is back!
+    id: 188
+    time: '2026-10-24T17:43:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/265
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Borgs can now wear any neck slot items, hurray!
+    id: 187
+    time: '2026-10-24T15:09:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/262
+  - author: MattFright
+    changes:
+      - type: Add
+        message: >-
+          Quantum Blue is now hiring personnel for the Derelict "Archon" Grid station! A new micropop station for 1-15
+          pop, featuring labyrinthean maints and the filthiest hallways you've seen.
+    id: 186
+    time: '2026-10-24T07:20:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/258
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Fire alarms are actually gone now.
+    id: 185
+    time: '2026-10-24T07:19:42.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/261
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Mosquitoes, bees, space bees and butterflies now move more like they're flying and less like they're on two
+          legs, hurray!
+      - type: Tweak
+        message: Mosquitoes now have an idle animation.
+      - type: Fix
+        message: Fixed bees still making a bite animation when attacking.
+    id: 184
+    time: '2026-10-23T22:22:56.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/260
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Pleebnar organs are now slightly hallucinogenic.
+    id: 183
+    time: '2026-10-23T22:19:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/254
+  - author: soup4food
+    changes:
+      - type: Remove
+        message: A slasher spawner that did nothing
+    id: 182
+    time: '2026-10-23T22:14:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/252
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Cobra toxic and tranq ammo do slightly less damage.
+    id: 181
+    time: '2026-10-23T22:12:11.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/251
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Bananium crabs and refined bananium is now radioactive, much more than uranium.
+    id: 180
+    time: '2026-10-23T22:06:17.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/249
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Security cyborgs / eggs have arrived, as well as 6 security-exclusive modules for them.
+      - type: Add
+        message: Investigation research has been added, making forensic chalk and evidence marker boxes printable.
+    id: 179
+    time: '2026-10-23T21:47:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/242
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: RCD can no longer build lightbulbs. Replace lightbulbs or build new ones with 2 steel!
+    id: 178
+    time: '2026-10-01T20:06:45.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/236
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Some mosquitos are now hostile and will attack on their own.
+    id: 177
+    time: '2026-10-01T20:05:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/218
+  - author: AlinaNova21
+    changes:
+      - type: Fix
+        message: Fixed a bug that could allow a remote attacker to crash the server with a malformed network packet.
+    id: 176
+    time: '2026-10-01T18:50:44.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/240
+  - author: MattFright
+    changes:
+      - type: Add
+        message: >-
+          Departmental techfabs are here! Save for a few exceptions, you should be able to use all available research
+          right from your own department's techfab.
+      - type: Add
+        message: Butlertron is back! Complete his bounties for cash, available in front of every station's kitchen
+      - type: Tweak
+        message: 'Asterisk: Gave the HoP a funding allocation computer'
+      - type: Tweak
+        message: 'Asterisk: The minotaur is here.'
+      - type: Tweak
+        message: 'Asterisk: Fixed up some of the meteor shielding'
+      - type: Tweak
+        message: 'Asterisk: Added a mass scanner computer to EVA'
+      - type: Tweak
+        message: 'Asterisk: Added a pride-o-mat'
+      - type: Fix
+        message: 'Asterisk: Fixed some missing supply directional signs that were missing'
+      - type: Tweak
+        message: 'Atlas: Added two chem shelves to medbay'
+      - type: Tweak
+        message: 'Atlas: Gave the detective''s office shutters'
+      - type: Tweak
+        message: >-
+          Atlas: Added reinforced girders to maints. Chemists can partially deconstruct these for their plasteel if they
+          need the plasma
+      - type: Tweak
+        message: 'Byoin: Cleaned up the artifact chamber'
+      - type: Tweak
+        message: 'Byoin: Cleaned up atmos'
+      - type: Tweak
+        message: 'Byoin: Fixed up solars'
+      - type: Tweak
+        message: 'Byoin: Did some tidying up of the service bar/kitchen area'
+      - type: Tweak
+        message: >-
+          Chibi: Removed all hallway airlocks and replaced them with firelocks. This should hopefully help make the map
+          feel less claustrophobic
+      - type: Tweak
+        message: 'Chibi: Completely redone arrivals'
+      - type: Tweak
+        message: 'Chibi: Redone the look of cryosleep'
+      - type: Tweak
+        message: 'Dash: The station is a whole lot dirtier now. Janitors get to work!'
+      - type: Tweak
+        message: 'Dash: Due to many sussy baka incidents, detectives have also been enrolled into the Dash transport program'
+      - type: Tweak
+        message: 'Dash: Added SciDrobe and RoboDrobe to science'
+      - type: Tweak
+        message: 'Dash: Got rid of the wall genpop lockers and replaced them with 2 regular ones'
+      - type: Tweak
+        message: 'Elkridge: Did some tidying up of science''s lathes room'
+      - type: Tweak
+        message: 'Elkridge: Fixed some floor inconsistencies'
+      - type: Tweak
+        message: 'Pebble: Central area had some tidying up'
+    id: 175
+    time: '2026-10-01T17:39:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/241
   - author: rebe83
     changes:
       - type: Fix
