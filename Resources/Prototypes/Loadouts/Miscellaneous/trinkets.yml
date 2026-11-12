@@ -339,11 +339,6 @@
     back:
     - TowelColorWhite
   groupBy: "towels"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 2a3e36b0a6 (Remove loadout time towels (#42536))
 
 - type: loadout
   id: TowelColorGray
