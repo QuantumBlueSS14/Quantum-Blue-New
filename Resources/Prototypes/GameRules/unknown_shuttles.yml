@@ -19,7 +19,7 @@
     - id: UnknownShuttleMeatZone
     - id: UnknownShuttleMicroshuttle
     - id: UnknownShuttleSpacebus
-    - id: UnknownShuttleFood4you # imp
+    # - id: UnknownShuttleFood4you # Causing a linter error - QB
 
 - type: entityTable
   id: UnknownShuttlesFreelanceTable
