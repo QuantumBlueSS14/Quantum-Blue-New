@@ -230,8 +230,8 @@
         32:
           sprite: _Impstation/Mobs/Species/Visitor/Ants/displacement.rsi #imp edit, waiting on proper macro merge to migrate files
           state: inhand_right
-  # imp edit start
-  - type: StrongAsFuckAnt
+  # imp edit start Go away - QB
+  #- type: StrongAsFuckAnt 
   # imp edit end
 
 - type: entity
