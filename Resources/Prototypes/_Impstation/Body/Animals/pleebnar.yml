@@ -34,7 +34,7 @@
         maxVol: 20
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 20
+          Quantity: 18 # QB | Prev Value: 20
         - ReagentId: SpaceDrugs # QB Add
           Quantity: 2
 
