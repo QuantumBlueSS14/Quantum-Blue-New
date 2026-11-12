@@ -91,27 +91,20 @@
   id: LockerFillChemistry
   table: !type:AllSelector
     children:
-    - id: ClothingEyesGlassesChemical
+    - id: BoxSyringe
+    - id: BoxBeaker
+    - id: BoxBeaker
+      prob: 0.3
+    - id: BoxPillCanister
+    - id: BoxBottle
+    - id: BoxVial
+    # - id: PlasmaChemistryVial # imp
     - id: ChemBag
     - id: ClothingHandsGlovesLatex
     - id: ClothingHeadsetMedical
     - id: ClothingMaskSterile
     - id: HandLabeler
-    - id: BarSpoon # Should be replaced by a stirring tool with medical theming, like a glass rod
-    # - id: PlasmaChemistryVial # imp
-    - !type:AllSelector # The wonderful world of chemical storage
-      children:
-      - id: BoxSyringe
-      - id: BoxBottle
-      - id: BoxVial
-      - id: BoxBeaker
-      - id: BoxPillCanister
-      - !type:GroupSelector # Remind chemists once in a while of alternate storage options
-        prob: 0.2
-        children:
-        - id: SprayBottle
-        - id: Bucket
-        - id: DrinkCartonMilk
+      prob: 0.5
 
 - type: entity
   parent: LockerChemistry
@@ -130,6 +123,7 @@
     - id: ClothingHeadHatParamedicSirenCap #imp
     - id: ClothingHeadHatParamedicSirenBeret #qb
     - id: ClothingOuterHardsuitVoidParamed
+    - id: QuantumTankSelector # QB
     - id: ClothingShoesBootsMag # QB
     - id: ClothingOuterCoatParamedicWB
     - id: ClothingHeadHatParamedicsoft
@@ -137,16 +131,9 @@
     - id: ClothingUniformJumpsuitParamedic
     - id: ClothingUniformJumpskirtParamedic
     - id: ClothingEyesHudMedical
-    - id: ClothingOuterHardsuitVoidParamed
-    - id: ClothingOuterCoatParamedicWB
-    - id: ClothingHeadHatParamedicsoft
-    - id: ClothingOuterWinterPara
-    - id: ClothingUniformJumpsuitParamedic
-    - id: ClothingUniformJumpskirtParamedic
-    - id: ClothingEyesHudMedical
-    - id: ClothingHandsGlovesLatex
+    # - id: ClothingHandsGlovesLatex # QB - go use the vendor, too much fill already
     - id: ClothingHeadsetMedical
-    - id: ClothingMaskSterile
+    # - id: ClothingMaskSterile # QB - go use the vendor, too much fill already
     - id: HandheldGPSBasic
     - id: MedkitFilled
       prob: 0.3

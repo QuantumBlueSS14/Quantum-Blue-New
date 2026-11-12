@@ -6,11 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefMedicalOfficer
-<<<<<<< HEAD
       time: 10h # imp, was 20h
-=======
-      time: 20h
->>>>>>> parent of 820fdca6ef (Round-start equipment rebalance: Medical (#42423))
 
 # Jumpsuit
 - type: loadout
@@ -57,6 +53,11 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterCMO
+
+- type: startingGear
+  id: ChiefMedicalOfficerMantle
+  equipment:
+    neck: ClothingNeckMantleCMO
 
 # Outer clothing
 - type: loadout
