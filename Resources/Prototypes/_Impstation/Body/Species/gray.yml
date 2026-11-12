@@ -174,13 +174,6 @@
   suffix: Gray
 
 - type: entity
-  id: OrganGrayMetabolizer
-  abstract: true
-  components:
-  - type: Metabolizer
-    metabolizerTypes: [ Gray ] #imp edit, gray metabolism not ported to macro yet, primarily used for immunity to rad damage from chems
-
-- type: entity
   parent: OrganGray
   id: OrganGrayInternal
   abstract: true
@@ -295,7 +288,7 @@
   description: "You think maybe this is like, their ears."
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganGrayInternal, OrganGrayMetabolizer, BaseHandheldInstrument ]
+  parent: [ OrganBaseLungs, OrganGrayInternal, BaseHandheldInstrument ]
   id: OrganGrayLungs
   name: cupod
   description: "Eugh..."
@@ -308,13 +301,13 @@
     - WoodwindInstrument
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganGrayInternal, OrganGrayMetabolizer ]
+  parent: [ OrganBaseHeart, OrganGrayInternal]
   id: OrganGrayHeart
   name: tumpii
   description: "You honestly have no idea what this does."
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganGrayInternal, OrganGrayMetabolizer ]
+  parent: [ OrganBaseStomach, OrganGrayInternal ]
   id: OrganGrayStomach
   name: fuubu
   description: "Looks kind of appetizing."
@@ -327,13 +320,13 @@
         maxVol: 15
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganGrayInternal, OrganGrayMetabolizer ]
+  parent: [ OrganBaseLiver, OrganGrayInternal]
   id: OrganGrayLiver
   name: beobu
   description: "Jazee sipsun alcohol."
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganGrayInternal, OrganGrayMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganGrayInternal]
   id: OrganGrayKidneys
   name: cube
   description: "A small, hard cube of an unidentifiable metal. It's warm to the touch, and pulsates faintly."

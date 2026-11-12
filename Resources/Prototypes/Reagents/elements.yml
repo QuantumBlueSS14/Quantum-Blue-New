@@ -263,15 +263,6 @@
         damage:
           types:
             Radiation: 2
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ] # gray radiation immunity
-          inverted: true
-      - !type:SatiateThirst
-        factor: 2
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ]
 #imp edit end
 
 - type: reagent
@@ -359,17 +350,6 @@
         damage:
           types:
             Radiation: 2
-        # imp edit start
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ] # gray radiation immunity
-          inverted: true
-      - !type:SatiateHunger
-        factor: 1
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ]
-        # imp edit end
 
 - type: reagent
   id: Zinc

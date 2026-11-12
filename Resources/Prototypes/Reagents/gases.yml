@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Apid, Thaven, Dinosaur, Anomalocarid, Gray, Goblin ] #imp, added types after Moth
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Apid, Thaven, Dinosaur, Anomalocarid, Goblin ] #imp, added types after Moth
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
