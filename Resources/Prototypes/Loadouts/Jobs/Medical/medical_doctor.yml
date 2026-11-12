@@ -17,6 +17,7 @@
       !type:DepartmentTimeRequirement
       department: Medical
       time: 30h # imp, was 60
+
 # Other Timers
 
 - type: loadoutEffectGroup
