@@ -1,7 +1,7 @@
 # For snipers that hold their bullets inside the gun, like the Mosin
 - type: entity
   name: BaseWeaponSniper
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponSniper
   description: A rooty tooty point and shooty.
   abstract: true
@@ -46,7 +46,7 @@
 # For snipers that reload using a magazine.
 - type: entity
   name: BaseMagazineSniper
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponMagazineSniper
   description: A rooty tooty point and shooty.
   abstract: true

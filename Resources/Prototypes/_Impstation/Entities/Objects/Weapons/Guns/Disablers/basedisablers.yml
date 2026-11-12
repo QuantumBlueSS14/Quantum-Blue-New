@@ -1,7 +1,7 @@
 # Larger sized disablers with an internal battery. For power-cell energy weapons see basebatteryguns.yml.
 - type: entity
   name: BaseWeaponDisaberRifle
-  parent: [BaseObjectVerbsCommon, BaseWeaponBattery] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseWeaponBattery
   id: BaseDisablerRifle
   description: A rooty tooty point and shooty.
   abstract: true
@@ -37,7 +37,7 @@
 # Pistol-sized disablers. Most disablers will fall into this category of weapon.
 - type: entity
   name: BaseWeaponDisablerPistol
-  parent: [BaseObjectVerbsCommon, BaseWeaponBatterySmall] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseWeaponBatterySmall
   id: BaseDisablerPistol
   description: A rooty tooty point and shooty.
   abstract: true

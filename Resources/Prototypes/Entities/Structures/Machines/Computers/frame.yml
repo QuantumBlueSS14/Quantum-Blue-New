@@ -40,12 +40,6 @@
         node: monitorBroken
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: InteractionVerbs # EE
-    allowedVerbs:
-    - KnockOn
-    - HugObject
-    - PetObject
-    - KissObject
 
 - type: entity
   id: ComputerFrame

@@ -1,6 +1,6 @@
 - type: entity
   id: Mannequin
-  parent: [BaseStructureDynamic, StripableInventoryBase, BaseObjectVerbsCuteness] # DEN: Add interaction verb parent
+  parent: [BaseStructureDynamic, StripableInventoryBase]
   name: mannequin
   description: It can wear any clothing with style.
   components:
