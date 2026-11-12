@@ -32,3 +32,44 @@
   - Cargo4
   - Cargo5
   obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: Salvage1
+  order: 1
+  lawString: law-salvage-1
+
+- type: siliconLaw
+  id: Salvage2
+  order: 2
+  lawString: law-salvage-2
+
+- type: siliconLaw
+  id: Salvage3
+  order: 3
+  lawString: law-salvage-3
+
+- type: siliconLaw
+  id: Salvage4
+  order: 4
+  lawString: law-salvage-4
+
+- type: siliconLaw
+  id: Salvage5
+  order: 5
+  lawString: law-salvage-5
+
+- type: siliconLaw
+  id: Salvage6
+  order: 6
+  lawString: law-salvage-6
+
+- type: siliconLawset
+  id: Salvage
+  laws:
+  - Salvage1
+  - Salvage2
+  - Salvage3
+  - Salvage4
+  - Salvage5
+  - Salvage6
+  obeysTo: laws-owner-crew
