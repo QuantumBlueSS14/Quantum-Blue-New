@@ -228,6 +228,3 @@
         children:
         - id: FoodShakerSalt
         - id: FoodShakerPepper
-        - id: TinyMeasuringSpoon #imp
-        - id: SmallMeasuringSpoon #imp
-        - id: Whisk #imp
