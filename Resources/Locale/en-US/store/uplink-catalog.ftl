@@ -42,8 +42,9 @@ uplink-c20r-desc = Old faithful: The classic Gorgon Submachine Gun.
 uplink-bulldog-name = Hydra
 uplink-bulldog-desc = Lean and mean: Contains the popular Hydra Shotgun.
 
-uplink-estoc-name = Estoc DMR
-uplink-estoc-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat.
+# QB Comment out
+# uplink-estoc-name = Estoc DMR
+# uplink-estoc-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat.
 
 uplink-grenade-launcher-name = China-Lake
 uplink-grenade-launcher-desc = An old China-Lake grenade launcher bundled with 5 rounds of anti-personnel ammo.
