@@ -1,4 +1,7 @@
-<!-- Guidelines: Working on that, sorry! -->
+<!-- Guidelines: -->
+<!-- Don't be rude to others. This is a collaborative project and nobody should be made feel bad over their contributions, no matter how much you disagree with them. -->
+<!-- Keep things on topic. Comments to show excitement and hype for a PR are allowed within reason, but please do not comment just to make jokes. Remember that commenting on others' PRs sends them e-mails. -->
+<!-- Constructive criticism is always welcome, but frequent comments only to display disagreement without consideration for the author's intent will not be tolerated. -->
 
 ## About the PR
 <!-- What did you change? -->
@@ -14,6 +17,7 @@
 
 ## Requirements
 <!-- Confirm the following by placing an X in the brackets without spaces inside (for example: [X] ): -->
+- [ ] I have read and am following the Impstation [Coding Standards](https://github.com/QuantumBlueSS14/Quantum-Blue-New/wiki/Coding-Standards) and [Map Contribution Guidelines](https://github.com/QuantumBlueSS14/Quantum-Blue-New/wiki/Map-Contribution-Guidelines).
 - [ ] I have added media to this PR or it does not require an in-game showcase.
 <!-- You should understand that not following the above may get your PR closed at maintainer’s discretion -->
 
@@ -28,6 +32,10 @@ Make sure to read the guidelines and take this Changelog template out of the com
 Changelog must have a :cl: symbol, so the bot recognizes the changes and adds them to the game's changelog.
 The name that appears on the changelog will be your GitHub usernabe by default. If you wish for a different name to appear, format the symbol like so:
 :cl: My Name -->
+<!-- If the map contains map changes, make sure to be thorough and specify what map is being changed in every listing. For example:
+- remove: Dash: Removed the Frank engine.
+- remove: Dash: Removed all thrusters, no more shuttle for you.
+- tweak: Dash: Entangled all cables in engineering for fun. -->
 <!--
 :cl:
 - add: Added fun!
