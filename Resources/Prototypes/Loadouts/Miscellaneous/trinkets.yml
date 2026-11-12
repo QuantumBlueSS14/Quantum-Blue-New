@@ -340,7 +340,10 @@
     - TowelColorWhite
   groupBy: "towels"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2a3e36b0a6 (Remove loadout time towels (#42536))
 
 - type: loadout
   id: TowelColorGray
@@ -449,11 +452,16 @@
 - type: loadout
   id: TowelColorLightBlue
   effects:
+<<<<<<< HEAD
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
       time: 100h
+=======
+  - !type:GroupLoadoutEffect
+    proto: MedicalExpertTimer
+>>>>>>> parent of 2a3e36b0a6 (Remove loadout time towels (#42536))
   storage:
     back:
     - TowelColorLightBlue
@@ -534,4 +542,3 @@
     back:
     - TowelColorGold
   groupBy: "towels"
->>>>>>> parent of 6127d30e53 (Round-start equipment rebalance: Medical (#42423))
