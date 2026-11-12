@@ -305,6 +305,16 @@
 #      tags:
 #      - NukeOpsUplink
 
+- type: listing # QB Readd
+  id: UplinkExplosiveGrenadeFlash
+  name: uplink-flash-grenade-name
+  description: uplink-flash-grenade-desc
+  productEntity: GrenadeFlashBang
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkExplosives
+
 - type: listing
   id: UplinkGrenadeLauncherBundle
   name: uplink-grenade-launcher-bundle-name
@@ -416,7 +426,7 @@
   discountDownTo:
     Telecrystal: 3
   cost:
-    Telecrystal: 4
+    Telecrystal: 5 #QB
   categories:
     - UplinkExplosives
   conditions:
@@ -456,6 +466,19 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing # QB Readd
+  id: UplinkClusterGrenade
+  name: uplink-cluster-grenade-name
+  description: uplink-cluster-grenade-desc
+  productEntity: ClusterGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkExplosives
 
 - type: listing
   id: UplinkC4Bundle
@@ -569,7 +592,7 @@
   categories:
     - UplinkExplosives
 
-#- type: listing
+#- type: listing QB
 #  id: UplinkBrosGrenade
 #  name: uplink-bros-grenade-name
 #  description: uplink-bros-grenade-desc
