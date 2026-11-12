@@ -158,9 +158,9 @@ JermovCircuitBoard: null
 #removes painting "the sleeping gypsy"
 PaintingSleepingGypsy: RandomPainting
 
-# 2026-06-14
-# changed mapped bug plushies with imp plushies
-PlushieBug: PlushieImp
+# 2026-06-14 QB comment out, might be causing a fail on map renderer
+# # changed mapped bug plushies with imp plushies
+# PlushieBug: PlushieImp
 
 # 2026-07-06
 # changed spelling in entities
