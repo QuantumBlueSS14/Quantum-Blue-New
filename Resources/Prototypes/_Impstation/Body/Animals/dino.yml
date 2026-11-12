@@ -3,9 +3,9 @@
   parent: OrganAnimalLungs
   name: dinosaur lungs
   categories: [ HideSpawnMenu ]
-  components:
-  - type: Metabolizer
-    metabolizerTypes: [ Dinosaur ]
+  # components: QB edit -maybe linter will love me now
+  # - type: Metabolizer
+  #   metabolizerTypes: [ Dinosaur ]
 
 - type: entity
   id: BaseMobDinosaurBody
