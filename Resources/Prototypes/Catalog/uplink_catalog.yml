@@ -14,18 +14,18 @@
   categories:
   - UplinkWeaponry
 
-- type: listing # QB readd
-  id: UplinkRevolverPython
-  name: uplink-revolver-python-name
-  description: uplink-revolver-python-desc
-  productEntity: WeaponRevolverPythonAP
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 2
-  cost:
-    Telecrystal: 4 # Originally was 13 and then 8 TC but was not used due to high cost
-  categories:
-  - UplinkWeaponry
+# - type: listing QB Comment out
+#   id: UplinkRevolverPython
+#   name: uplink-revolver-python-name
+#   description: uplink-revolver-python-desc
+#   productEntity: WeaponRevolverPythonAP
+#   discountCategory: rareDiscounts
+#   discountDownTo:
+#     Telecrystal: 2
+#   cost:
+#     Telecrystal: 4 # Originally was 13 and then 8 TC but was not used due to high cost
+#   categories:
+#   - UplinkWeaponry
 
 # Inbuilt suppressor so it's sneaky + more expensive.
 - type: listing
