@@ -1,7 +1,7 @@
 # Flamethrowers that specifically want welding fuel and only want to refuel at Welding Fuel sources
 - type: entity
   name: BaseWeaponFlamer
-  parent: [ BaseObjectVerbsCommon, BaseItem, BaseGunWieldable ] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: [ BaseItem, BaseGunWieldable ]
   id: BaseWeaponFlamer
   abstract: true
   description: A rooty tooty point and shooty.
@@ -76,7 +76,7 @@
 # Echion weapons that specifically want to only use Echion and refuel from those sources
 - type: entity
   name: BaseWeaponEchion
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponEchion
   description: A rooty tooty point and shooty.
   abstract: true
@@ -150,7 +150,7 @@
 # Fuel guns that refuel by "eating" solid objects such as food
 - type: entity
   name: BaseWeaponMuncherGun
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponMuncherGun
   description: A rooty tooty point and shooty.
   abstract: true

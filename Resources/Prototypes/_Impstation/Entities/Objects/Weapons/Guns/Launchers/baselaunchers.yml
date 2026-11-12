@@ -1,7 +1,7 @@
 # For the PKA and weapons of its ilk
 - type: entity
   name: BaseWeaponPKA
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: WeaponProtoKineticAcceleratorBase
   description: A rooty tooty point and shooty.
   abstract: true
@@ -91,7 +91,7 @@
 # Grenade Launchers and Rocket Launchers
 - type: entity
   name: BaseWeaponLauncher
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponLauncher
   description: A rooty tooty point and shooty.
   abstract: true

@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMeleeWeaponEnergy # more generic naming in case someone makes like, idk, an energy axe
-  parent: [BaseObjectVerbsCommon, BaseItem] # DEN: Add interaction verb parent
+  parent: BaseItem
   abstract: true
   components:
   - type: EnergySword

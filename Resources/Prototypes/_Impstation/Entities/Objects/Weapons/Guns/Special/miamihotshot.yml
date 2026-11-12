@@ -1,7 +1,7 @@
 - type: entity
   name: Miami Hotshot
   id: WeaponMiamiHotshot
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   description: An ornate and prestigious weapon. You can feel the might behind every kill marked in its impeccable engravings.
   components:
   - type: Sprite
