@@ -14,7 +14,7 @@
   categories:
   - UplinkWeaponry
 
-- type: listing
+- type: listing # QB readd
   id: UplinkRevolverPython
   name: uplink-revolver-python-name
   description: uplink-revolver-python-desc
@@ -131,9 +131,9 @@
   productEntity: ClothingHandsKnuckleDustersSyndicate
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 3 # QB Return price
   cost:
-    Telecrystal: 6
+    Telecrystal: 6 # QB Return price
   categories:
   - UplinkWeaponry
 
@@ -186,7 +186,7 @@
   discountDownTo:
     Telecrystal: 6
   cost:
-    Telecrystal: 12
+    Telecrystal: 12 # QB Return price
   categories:
   - UplinkWeaponry
 
@@ -574,6 +574,18 @@
   categories:
   - UplinkAmmo
 
+# For the Python
+- type: listing
+  id: UplinkSpeedLoaderMagnumAP
+  name: uplink-speedloader-magnum-name
+  description: uplink-speedloader-magnu-desc
+  icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
+  productEntity: SpeedLoaderMagnumAP
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAmmo
+
 # For the C20R
 - type: listing
   id: UplinkMagazinePistolSubMachineGun
@@ -605,7 +617,7 @@
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: slug } # imp
   productEntity: MagazineShotgunSlug
   cost:
-    Telecrystal: 3
+    Telecrystal: 3 # QB Return price
   categories:
   - UplinkAmmo
 

@@ -35,7 +35,22 @@ uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that l
 
 # Imp edit rename
 uplink-hushpup-name = Hypnalis
-uplink-hushpup-desc = A powerful silenced shotgun with a low magazine capacity. Comes with a spare box of buckshot. Uses .50 shotgun ammo.
+uplink-hushpup-desc = A powerful silenced shotgun with a low magazine capacity. Uses .50 shotgun ammo.
+
+# Imp edit rename
+uplink-c20r-name = C-20R Gorgon
+uplink-c20r-desc = Old faithful: The classic Gorgon Submachine Gun.
+
+# Imp edit rename
+uplink-bulldog-name = Hydra
+uplink-bulldog-desc = Lean and mean: Contains the popular Hydra Shotgun.
+
+# QB Comment out
+# uplink-estoc-name = Estoc DMR
+# uplink-estoc-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat.
+
+uplink-grenade-launcher-name = China-Lake
+uplink-grenade-launcher-desc = An old China-Lake grenade launcher bundled with 5 rounds of anti-personnel ammo.
 
 # Explosives
 uplink-explosive-grenade-name = Explosive Grenade
