@@ -138,7 +138,18 @@
     - id: ClothingUniformJumpskirtParamedic
     - id: ClothingEyesHudMedical
     - id: ClothingOuterHardsuitVoidParamed
-    - id: ClothingBeltMedicalEMTFilled
+    - id: ClothingOuterCoatParamedicWB
+    - id: ClothingHeadHatParamedicsoft
+    - id: ClothingOuterWinterPara
+    - id: ClothingUniformJumpsuitParamedic
+    - id: ClothingUniformJumpskirtParamedic
+    - id: ClothingEyesHudMedical
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - id: ClothingMaskSterile
+    - id: HandheldGPSBasic
+    - id: MedkitFilled
+      prob: 0.3
     - id: JetInjector
 
 - type: entity
