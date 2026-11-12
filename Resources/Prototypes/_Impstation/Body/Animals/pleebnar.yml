@@ -13,7 +13,9 @@
         maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 5
+          Quantity: 3 # QB | Prev Value: 5
+        - ReagentId: SpaceDrugs # QB Add
+          Quantity: 2 
   - type: FlavorProfile
     flavors:
     - cigarettes
@@ -33,6 +35,8 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 20
+        - ReagentId: SpaceDrugs # QB Add
+          Quantity: 2
 
 - type: entity
   parent: [ OrganPleebnarInternal, OrganAnimalStomach ]
@@ -45,6 +49,11 @@
           maxVol: 50
       food:
         maxVol: 15
+        reagents: # QB add
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: SpaceDrugs
+          Quantity: 2
 
 - type: entity
   parent: [ OrganPleebnarInternal, OrganAnimalLiver ]
