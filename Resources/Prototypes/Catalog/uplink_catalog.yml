@@ -1837,7 +1837,7 @@
   discountDownTo:
     Telecrystal: 4
   cost:
-    Telecrystal: 8
+    Telecrystal: 8 #QB Return price
   categories:
   - UplinkWearables
 
