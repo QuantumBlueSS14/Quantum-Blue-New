@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.7
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 11/08/2026 19:40:49
-  entityCount: 6521
+  time: 11/12/2026 20:48:24
+  entityCount: 6525
 maps:
 - 1
 grids:
@@ -34879,6 +34879,11 @@ entities:
     - type: Transform
       pos: 23.5,-24.5
       parent: 2
+  - uid: 4875
+    components:
+    - type: Transform
+      pos: 19.5,-15.5
+      parent: 2
 - proto: RadioHandheld
   entities:
   - uid: 1898
@@ -36284,6 +36289,11 @@ entities:
     - type: Transform
       pos: 7.542337,-20.609999
       parent: 2
+  - uid: 4877
+    components:
+    - type: Transform
+      pos: 19.746359,-15.377623
+      parent: 2
 - proto: SheetGlass10
   entities:
   - uid: 25
@@ -36348,6 +36358,11 @@ entities:
     - type: Transform
       pos: 7.7143397,-20.359999
       parent: 2
+  - uid: 4878
+    components:
+    - type: Transform
+      pos: 19.537819,-15.627623
+      parent: 2
 - proto: SheetPlastic10
   entities:
   - uid: 1979
@@ -36392,6 +36407,11 @@ entities:
     components:
     - type: Transform
       pos: 7.3546968,-20.359999
+      parent: 2
+  - uid: 4876
+    components:
+    - type: Transform
+      pos: 19.308424,-15.377623
       parent: 2
 - proto: SheetSteel10
   entities:
