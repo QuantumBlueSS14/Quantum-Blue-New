@@ -57,9 +57,6 @@ rcd-component-vents = Vents
 rcd-component-atmospheric-utility = Atmospheric Utility
 rcd-component-sensors-monitors = Sensors & Monitors
 
-# imp janitorial rcd
-rcd-component-janitorial = Miscellaneous Janitorial
-
 
 ### Prototype names (note: constructable items will be puralized)
 
