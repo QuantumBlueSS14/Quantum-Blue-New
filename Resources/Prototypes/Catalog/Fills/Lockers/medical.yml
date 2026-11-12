@@ -1,20 +1,19 @@
-# Medical supply lockers
-
 - type: entityTable
   id: LockerFillMedicine
   table: !type:AllSelector
     children:
-    - !type:NestedSelector
-      tableId: CoreMedicineReagentBottleTable
-      rolls: 2
-    - !type:GroupSelector # Basic topicals
-      rolls: 7
-      children:
-      - id: Brutepack
-      - id: Ointment
-      - id: Bloodpack
-      - id: Gauze
-        weight: 0.5
+    - id: BoxSyringe
+    - id: ChemistryBottleEpinephrine
+    - id: Brutepack
+      amount: !type:ConstantNumberSelector
+        value: 2
+    - id: Ointment
+      amount: !type:ConstantNumberSelector
+        value: 2
+    - id: Bloodpack
+      amount: !type:ConstantNumberSelector
+        value: 2
+    - id: Gauze
 
 - type: entity
   parent: LockerMedicine
@@ -37,18 +36,35 @@
       entity_storage: !type:NestedSelector
         tableId: LockerFillMedicine
 
-# Medical role lockers
-
 - type: entityTable
   id: LockerFillMedicalDoctor
   table: !type:AllSelector
     children:
-    - id: ClothingEyesHudMedical
-    - id: ClothingBeltMedicalFilled
-    - id: JetInjector
     - id: HandheldHealthAnalyzer
-    - id: ChemistryBottleLaughter # Widely recognized as the best medicine :o)
-      prob: 0.01
+      prob: 0.6
+    - id: ClothingHeadMirror
+      prob: 0.1
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - id: ClothingEyesHudMedical
+    - !type:GroupSelector
+      children:
+      - id: ClothingHeadHatSurgcapGreen
+        weight: 0.1
+      - id: ClothingHeadHatSurgcapPurple
+        weight: 0.05
+      - id: ClothingHeadHatSurgcapBlue
+        weight: 0.90
+    - !type:GroupSelector
+      children:
+      - id: UniformScrubsColorBlue
+        weight: 0.5
+      - id: UniformScrubsColorGreen
+        weight: 0.1
+      - id: UniformScrubsColorPurple
+        weight: 0.05
+    - id: ClothingMaskSterile
+    - id: JetInjector
 
 - type: entity
   parent: LockerMedical
@@ -77,7 +93,9 @@
     children:
     - id: ClothingEyesGlassesChemical
     - id: ChemBag
-    - id: Dropper
+    - id: ClothingHandsGlovesLatex
+    - id: ClothingHeadsetMedical
+    - id: ClothingMaskSterile
     - id: HandLabeler
     - id: BarSpoon # Should be replaced by a stirring tool with medical theming, like a glass rod
     # - id: PlasmaChemistryVial # imp
@@ -122,13 +140,6 @@
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingBeltMedicalEMTFilled
     - id: JetInjector
-    - id: HandheldHealthAnalyzer
-    - id: BoxBodyBag
-    - !type:GroupSelector
-      children:
-      - id: RollerBedSpawnFolded
-      - id: CheapRollerBedSpawnFolded
-      - id: EmergencyRollerBedSpawnFolded
 
 - type: entity
   parent: LockerParamedic

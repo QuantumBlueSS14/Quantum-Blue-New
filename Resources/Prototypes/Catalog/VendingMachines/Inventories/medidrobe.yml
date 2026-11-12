@@ -30,9 +30,17 @@
     ClothingOuterWinterPara: 1
     ClothingHandsGlovesLatex: 2
     ClothingHandsGlovesNitrile: 2
-    ClothingShoesColorBlue: 2
-    ClothingShoesColorWhite: 2
+    ClothingHeadsetMedical: 4
+    ClothingOuterWinterMed: 2
+    ClothingOuterHospitalGown: 5
     ClothingNeckCloakBlanketShock: 3 # imp
+    UniformScrubsColorGreen: 4
+    UniformScrubsColorBlue: 4
+    UniformScrubsColorPurple: 4
+    ClothingHeadHatSurgcapGreen: 4
+    ClothingHeadHatSurgcapBlue: 4
+    ClothingHeadHatSurgcapPurple: 4
+    ClothingHeadNurseHat: 4 # imp
     ClothingUniformJumpskirtNurse: 4 # imp
     ClothingOuterApronNurse: 4 # imp
     ClothingOuterCoatBomberMedical: 2 # imp
