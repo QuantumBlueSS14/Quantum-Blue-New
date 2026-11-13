@@ -832,12 +832,12 @@
     - WhitelistChameleon
     - ClownMaskSecurity
 
-# - type: entity
-#   parent: ClothingMaskClownChameleonSecurity
-#   id: ClothingMaskClownSecurity
-#   components:
-#   - type: ChameleonClothing
-#     default: ClothingMaskClownSecurity
+- type: entity
+  parent: ClothingMaskClownChameleonSecurity
+  id: ClothingMaskClownSecurity
+  components:
+  - type: ChameleonClothing
+    default: ClothingMaskClownSecurity
 
 # - type: entity
 #   parent: ClothingMaskClownChameleonSecurity
