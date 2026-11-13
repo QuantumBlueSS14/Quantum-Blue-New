@@ -19,9 +19,11 @@ tips-dataset-17 = Every other player in game is a real person, too.
 tips-dataset-18 = When running the Singularity, make sure to check on it periodically. If sabotaged, it could put the entire station at risk.
 tips-dataset-19 = If the Singularity is up, make sure to refuel the radiation collectors once in a while.
 tips-dataset-20 = Chemicals don't react while inside the ChemMaster's buffer.
-tips-dataset-21 = Don't anger the bartender by throwing their glasses! Politely place them on the table by tapping Q.
+# QB rewrite for tip 21 because seriously who figures out how to throw items before how you set items down.
+tips-dataset-21 = You can place objects down by pressing Q, and you can throw items in any direction by pressing Shift+Q.
 tips-dataset-22 = You can hold SPACE by default to slow the movement of the shuttle when piloting, to allow for precise movements--or even coming to a complete stop.
-tips-dataset-23 = Dexalin, Dexalin Plus, and Epinephrine will all purge heartbreaker toxin from your bloodstream while metabolizing.
+# QB edit for tip 23 since Dexalin Plus was removed and replaced with Salbutamol
+tips-dataset-23 = Dexalin, Salbutamol, and Epinephrine will all purge heartbreaker toxin from your bloodstream while metabolizing.
 tips-dataset-24 = Every crewmember comes with an emergency medipen in their survival box containing epinephrine and tranexamic acid.
 tips-dataset-25 = The AME is a high-priority target and is easily sabotaged. Make sure to set up the Singularity or Solars so that you don't run out of power if it blows.
 tips-dataset-26 = If the tesla is loose, it will chase any people, stationary machines and computers. Turning off your electronics does not make you less of a target. Your best bet is not being close to it.
