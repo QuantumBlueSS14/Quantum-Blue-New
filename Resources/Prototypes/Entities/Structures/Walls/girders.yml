@@ -54,11 +54,6 @@
           collection: MetalBreak
   - type: StaticPrice
     price: 30
-    # Impstation Edit Start
-  - type: IconSmooth
-    key: walls
-    base: girder
-    # Impstation Edit End
 
 - type: entity
   id: ReinforcedGirder
