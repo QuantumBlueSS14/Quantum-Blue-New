@@ -799,38 +799,38 @@
 
 # # security clown mask
 
-# - type: entity
-#   parent: ClothingMaskClownBase
-#   id: ClothingMaskClownChameleonSecurity
-#   abstract: true
-#   name: security clown mask and wig
-#   description: A security-themed clown mask and wig. Discombobulate.
-#   components:
-#   - type: Sprite
-#     sprite: _Impstation/Clothing/Mask/clown_security.rsi
-#   - type: Clothing
-#     sprite: _Impstation/Clothing/Mask/clown_security.rsi
-#   - type: ChameleonClothing
-#     slot: mask
-#     requireTag: ClownMaskSecurity
-#     AffectedByEmp: False
-#   - type: UserInterface
-#     interfaces:
-#       enum.ChameleonUiKey.Key:
-#         type: ChameleonBoundUserInterface
-#   - type: Armor
-#     modifiers:
-#       coefficients:
-#         Blunt: 0.95
-#         Slash: 0.95
-#         Piercing: 0.95
-#         Heat: 0.95
-#   - type: Tag
-#     tags:
-#     - ClownMask
-#     - HamsterWearable
-#     - WhitelistChameleon
-#     - ClownMaskSecurity
+- type: entity
+  parent: ClothingMaskClownBase
+  id: ClothingMaskClownChameleonSecurity
+  abstract: true
+  name: security clown mask and wig
+  description: A security-themed clown mask and wig. Discombobulate.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/Mask/clown_security.rsi
+  - type: Clothing
+    sprite: _Impstation/Clothing/Mask/clown_security.rsi
+  - type: ChameleonClothing
+    slot: mask
+    requireTag: ClownMaskSecurity
+    AffectedByEmp: False
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: Tag
+    tags:
+    - ClownMask
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClownMaskSecurity
 
 # - type: entity
 #   parent: ClothingMaskClownChameleonSecurity

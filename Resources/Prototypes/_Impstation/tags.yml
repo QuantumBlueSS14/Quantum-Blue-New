@@ -112,8 +112,8 @@
 # - type: Tag
 #   id: ClownMaskScience
 
-# - type: Tag
-#   id: ClownMaskSecurity
+- type: Tag
+  id: ClownMaskSecurity
 
 # - type: Tag
 #   id: ClownMaskService
