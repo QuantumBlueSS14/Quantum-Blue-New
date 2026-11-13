@@ -20,7 +20,7 @@ tips-dataset-18 = When running the Singularity, make sure to check on it periodi
 tips-dataset-19 = If the Singularity is up, make sure to refuel the radiation collectors once in a while.
 tips-dataset-20 = Chemicals don't react while inside the ChemMaster's buffer.
 # QB rewrite for tip 21 because seriously who figures out how to throw items before how you set items down.
-tips-dataset-21 = You can place objects down by pressing Q and you can throw items in any direction by pressing Shift+Q.
+tips-dataset-21 = You can place objects down by pressing Q, and you can throw items in any direction by pressing Shift+Q.
 tips-dataset-22 = You can hold SPACE by default to slow the movement of the shuttle when piloting, to allow for precise movements--or even coming to a complete stop.
 # QB edit for tip 23 since Dexalin Plus was removed and replaced with Salbutamol
 tips-dataset-23 = Dexalin, Salbutamol, and Epinephrine will all purge heartbreaker toxin from your bloodstream while metabolizing.
