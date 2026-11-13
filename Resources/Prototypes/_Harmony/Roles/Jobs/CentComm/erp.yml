@@ -37,7 +37,7 @@
     jumpsuit: ClothingUniformJumpsuitClownBanana
     back: ClothingBackpackERTClown
     shoes: ClothingShoesClownLarge
-    mask: ClothingMaskClownSecurity
+    mask: ClothingMaskClown
     eyes: ClothingEyesGlassesSunglasses
     id: ERPLeaderPDA
     ears: ClothingHeadsetAltCentCom
