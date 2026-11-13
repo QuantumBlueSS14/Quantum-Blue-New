@@ -1233,7 +1233,7 @@ entities:
     - type: Transform
       pos: -6.568604,1.7640634
       parent: 1
-- proto: ClothingMaskClownSecurity
+- proto: ClothingMaskClown
   entities:
   - uid: 46
     components:
