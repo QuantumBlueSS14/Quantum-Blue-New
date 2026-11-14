@@ -5,3 +5,9 @@
   recipes:
   - Fulton
   - FultonBeacon
+
+- type: latheRecipePack
+  id: Mail
+  recipes:
+  - MailBagOfHolding
+  - MailCapsule

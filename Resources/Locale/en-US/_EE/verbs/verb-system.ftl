@@ -1,1 +1,0 @@
-﻿verb-categories-interaction = Interact

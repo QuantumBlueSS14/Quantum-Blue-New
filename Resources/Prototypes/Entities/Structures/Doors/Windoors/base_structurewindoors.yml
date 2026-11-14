@@ -1,7 +1,7 @@
 #Normal windoors
 - type: entity
   id: BaseWindoor
-  parent: [BaseObjectVerbsStructure, BaseDeltaPressureGlassQuarter, BaseStructure] # DEN: Add interaction verb parent
+  parent: [BaseDeltaPressureGlassQuarter, BaseStructure]
   abstract: true
   placement:
     mode: SnapgridCenter

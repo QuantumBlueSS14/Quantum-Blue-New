@@ -1,7 +1,7 @@
 <Document>
 # Glossary
 
-This page contains most slang terms you might encounter on the station and throughout the community !
+This page contains many terms you might encounter on the station and throughout the community !
 
 # In-Character Slang
 
@@ -25,17 +25,11 @@ An airlock that will never change states. It will stay permanently open or perma
 ## Borg
 Short for cyborgs, player-controlled robots.
 
-## Braindead
-Refers to a user who has disconnected from the game. Disconnected users may still reconnect to the server and assume control of their character again.
-
 ## Brig
 The main area of the security department. This is where prisoners are brought and held for their punishment. The Warden is in charge of the brig's smooth operation.
 
 ## Cap
 Short for Captain.
-
-## Cargonia
-Reference to cargo declaring independence. Against the rules.
 
 ## CE
 Short for Chief Engineer, the head of the Engineering Department.
@@ -50,25 +44,22 @@ Short for Chief Medical Officer, the head of the Medical Department.
 Refers to the health state at which you fall unconscious and unable to move. While in critical, your health slowly decays until you die, unless you happen to get outside assistance.
 
 ## Emag
-  Refers to the Syndicate cryptographic sequencer. "Emagged" usually refers to airlocks or lockers that are bolted open, but also any other device hacked into by an Emag.
+Refers to the Syndicate cryptographic sequencer. "Emagged" usually refers to airlocks or lockers that are bolted open, but also any other device hacked into by an Emag.
 
 ## Emergency Access/EA
-  An airlock that can be opened by anyone, even without access or an ID at all. Airlocks that are set to emergency access have blinking yellow lights.
+An airlock that can be opened by anyone, even without access or an ID at all. Airlocks that are set to emergency access have blinking yellow lights.
 
 ## ERT
 An Emergency Response Team. These may be dispatched by Central Command for a number of purposes.
 
-## Flukie
-A portmanteau of "Fluke" and "Nukie" used to (usually derogatorily) refer to a team of Nuclear Operatives who fail their objective. May also appear as "Fluke Ops".
-
-## God(s)
-An IC term representing a Server Administrator. CentComm is also sometimes used in this manner.
-
 ## Greytide/Greyshirt/Tider/Assistant
 Typically utilized to refer to a Passenger due to the color of their standard uniform, though this may be used to negatively refer to other crew members (not only passengers) who act unruly or commit various minor crimes.
 
+## HD
+Short for Hospitality Director, head of the Service Department.
+
 ## HoP
-Short for Head of Personnel, head of the Service Department. Can also refer to the HoP's office, where IDs are given or changed.
+Short for Head of Personnel, who is second in command to the Captain. Can also refer to the HoP's office, where IDs are given or changed.
 
 ## HoS
 Short for Head of Security, head of the Security Department.
@@ -88,23 +79,23 @@ Materials. Usually steel, plastic, plasteel, glass, silver and gold.
 ## Nanotrasen/NT
 Nanotrasen is the company which owns the space station you inhabit.
 
-## Newkie
-A portmanteau of "New" and "Nukie" used to refer to an inexperienced player in the role of a Nuclear Operative.
-
-## Nukie
-A slang/shorthand term of a Nuclear Operative. May sometimes also appear as "Nuke Op".
-
 ## Perma
 Short for Permanent Brig. This is for the most serious crime and means that a prisoner will never be released. Most stations have a dedicated, separate area of security for the permanent brig.
+
+## Point Blue
+An anomalous region of space enveloped in a mysterious blue nebula of unknown origin. This is where all shifts take place.
 
 ## QM
 Short for Quartermaster, the head of the Cargo department.
 
+## Quantum Blue/QB
+A subsidiary of Nanotrasen that operates in the Point Blue region of space.
+
+## Redshell
+A term for Nuclear Operatives, referring to their red outfits.
+
 ## RD
 Short for Research Director, the head of the Science Department.
-
-## Robust
-A word used to describe someone who is particularly adept in combat, or endured through a tough fight.
 
 ## Salv
 Short for Salvage tech.
@@ -124,8 +115,8 @@ In-Character way to refer to rounds.
 ## Singulo
 A shortening of the Singularity Engine. A Singulo can create infinite power for the station but is very dangerous.
 
-## Singuloose
-A Singularity that has grown too much and breached its containment. It will rip through the station causing massive damage.
+## Singuloose/Tesloose
+A Singularity/Tesla that breached its containment. It will rip through the station causing massive damage.
 
 ## Spacing
 An event which causes an area to lose air pressure, i.e. a hull breach.
@@ -141,9 +132,6 @@ A catch-all reference to anyone employed by the Syndicate. This ranges from (sus
 
 ## TC
 A telecrystal, which is a currency used by Syndicate Agents to purchase restricted contraband such as weapons and other illegal equipment.
-
-## Wardenloose
-A joke term referencing a Singuloose. A wardenloose is when the Warden is seen outside of the brig.
 
 ## Xenoarchaeology
 Study of artifacts, usually performed by science.
@@ -179,8 +167,14 @@ Medium Roleplay. Servers marked MRP usually have a decent basis of roleplaying r
 ## HRP
 High Roleplay. Servers marked HRP generally have extensive rules on what is and is not constituted while playing a character. You are generally required to act as your character would, have a character backstory, and follow protocol on the station. Some HRP servers may create their own lore or settings to further facilitate the type of server they wish to host.
 
+## Nukie
+A slang/shorthand term of a Nuclear Operative. May sometimes also appear as "Nuke Op".
+
+## Robust
+A word used to describe someone who is particularly adept in combat, or endured through a tough fight.
+
 ## Self-Antag
-A term for a player who engages in antagonist-like activity without actually being an antagonist. This encompasses a wide variety of behavior, but is typically used to describe annoying behavior or actions which are greatly detrimental to other players for no purpose. Self-antagonism is a bannable offense. Sometimes used in IC. DO NOT DO THIS.
+A term for a player who engages in antagonist-like activity without actually being an antagonist. This encompasses a wide variety of behavior, but is typically used to describe annoying behavior or actions which are greatly detrimental to other players for no purpose. Self-antagonism is a bannable offense. DO NOT DO THIS.
 
 ## Upstream
 The baseline version of the game. Any changes to Upstream will "flow" down to all other forks of the game. All official Wizard's Den servers work off of Upstream.

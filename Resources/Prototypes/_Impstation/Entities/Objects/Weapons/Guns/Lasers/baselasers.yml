@@ -1,7 +1,7 @@
 # For large, 2-handed laser guns that have a built-in battery. For power-cell energy weapons see basebatteryguns.yml.
 - type: entity
   name: BaseWeaponLaserRifle
-  parent: [BaseObjectVerbsCommon, BaseWeaponBattery, BaseGunWieldable] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: BaseLaserRifle
   description: A rooty tooty point and shooty.
   abstract: true
@@ -39,7 +39,7 @@
 # For small laser pistols with an internal battery
 - type: entity
   name: BaseWeaponLaserPistol
-  parent: [BaseObjectVerbsCommon, BaseWeaponBatterySmall] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseWeaponBatterySmall
   id: BaseLaserPistol
   description: A rooty tooty point and shooty.
   abstract: true

@@ -2,7 +2,6 @@
 # Catchall file for toys which don't have a strong grouping (only 1 or 2 prototypes)
 
 - type: entity
-  parent: [BaseObjectVerbsCuteness, BaseItem] # DEN: Add interaction verb parent
   id: BaseStash
   abstract: true
   components:

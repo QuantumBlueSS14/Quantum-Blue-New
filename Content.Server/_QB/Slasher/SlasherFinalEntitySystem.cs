@@ -1,6 +1,6 @@
 using Content.Server.QB.Slasher.Components;
-using Content.Server.Body.Systems;
 using Content.Server.Physics.Components;
+using Content.Shared.Gibbing;
 using Content.Shared.QB.Slasher.Components;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
@@ -18,7 +18,7 @@ namespace Content.Server.QB.Slasher;
 /// </summary>
 public sealed class SlasherFinalEntitySystem : EntitySystem
 {
-    [Dependency] private readonly BodySystem _body = default!;
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
 
     /// <summary>
     /// Subscribes local events and prepares dependencies for this system.
@@ -75,6 +75,6 @@ public sealed class SlasherFinalEntitySystem : EntitySystem
             && mobState.CurrentState == MobState.Dead)
             return;
 
-        _body.GibBody(other, true);
+        _gibbing.Gib(other, true);
     }
 }

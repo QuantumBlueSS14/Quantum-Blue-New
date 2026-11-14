@@ -1263,6 +1263,7 @@
   - HeadofSecurityGreatcoat #imp
   - ScarfBlack # imp
   - ScarfRed # imp
+  - Bodycam # Goobstation - Body cameras
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1385,6 +1386,7 @@
   loadouts:
   - DetectiveTie
   - ScarfBlack # imp
+  - Bodycam # Goobstation - Body cameras
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
