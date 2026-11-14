@@ -1012,6 +1012,7 @@
   loadouts:
   - ScarfRed
   - ScarfBlue
+  - Bodycam # Goobstation - Body cameras
 
 - type: loadoutGroup
   id: WardenPDA
@@ -1035,6 +1036,7 @@
   loadouts:
   - ScarfRed
   - SecPoncho
+  - Bodycam # Goobstation - Body cameras
 
 - type: loadoutGroup
   id: UpperSecurityShoes

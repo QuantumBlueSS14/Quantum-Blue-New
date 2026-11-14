@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2025 Goobstation
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goobstation
+# https://github.com/Goob-Station/Goob-Station
+
+- type: entity
+  parent: ClothingOuterBase
+  id: SurveillanceWirelessCameraBodyEntertainment
+  name: nopro camera
+  description: A body mounted camera. It's watching you.
+  components:
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: SurveillanceCameraEntertainment
+      transmitFrequencyId: SurveillanceCamera
+    - type: SurveillanceCamera
+      networkSet: true
+      nameSet: True
+      id: NoPro Camera
+    - type: Eye
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: SurveillanceCameraMicrophone
+      blacklist:
+        components:
+          - SurveillanceCamera
+          - SurveillanceCameraMonitor
+          - RadioSpeaker
+    - type: ActiveListener
+      range: 10
+    - type: ClothingGrantComponent
+      component:
+      - type: StationAiVision
+        range: 4
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Misc/nopro.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Misc/nopro.rsi
+      quickEquip: true
