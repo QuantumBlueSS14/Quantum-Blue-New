@@ -263,8 +263,8 @@
 
 - type: listing
   id: UplinkBulldogBundle
-  name: uplink-buldog-bundle-name
-  description: uplink-buldog-bundle-desc
+  name: uplink-bulldog-bundle-name #BULL DOG NOT BULDOG, this held up an upmerge QB
+  description: uplink-bulldog-bundle-desc #BULL DOG NOT BULDOG, this held up an upmerge QB
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon } #imp
   productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
   discountCategory: veryRareDiscounts
