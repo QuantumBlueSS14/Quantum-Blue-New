@@ -1,5 +1,4 @@
 - type: entity
-  parent: BaseObjectVerbsCuteness # DEN: Add interaction verb parent
   id: SolarPanelBasePhysSprite
   categories: [ HideSpawnMenu ]
   name: solar panel

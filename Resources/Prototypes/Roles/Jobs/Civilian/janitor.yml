@@ -19,6 +19,9 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay
     prototype: WeaponRevolverInspector
+  - !type:AddComponentSpecial # imp addition
+    components:
+    - type: PerfectThrower
 
 - type: startingGear
   id: JanitorGear

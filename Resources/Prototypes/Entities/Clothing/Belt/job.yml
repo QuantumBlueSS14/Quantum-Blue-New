@@ -332,6 +332,7 @@
       - MonkeyCube
       - Mayo
       - DampRag #imp edit
+      - ChefBeltItem #imp edit
       components:
       - Mousetrap
       - Smokable

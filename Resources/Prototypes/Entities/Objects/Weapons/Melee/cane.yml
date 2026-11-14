@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseObjectVerbsCommon, BaseItem] # DEN: Add interaction verb parent
+  parent: BaseItem
   id: Cane
   name: cane
   description: A wooden cane.
@@ -30,7 +30,7 @@
 
 - type: entity
   name: cane blade
-  parent: [BaseObjectVerbsCommon, BaseSword, Tier2Contraband] #imp, contraband, DEN: Add interaction verb parent
+  parent: [BaseSword, Tier2Contraband] #imp, contraband
   id: CaneBlade
   description: A sharp blade with a cane shaped hilt.
   components:

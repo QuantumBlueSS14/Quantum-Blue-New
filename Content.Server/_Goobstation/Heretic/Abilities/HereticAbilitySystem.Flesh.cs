@@ -1,5 +1,5 @@
 using Content.Server._Goobstation.Heretic.Components;
-using Content.Server.Body.Components;
+using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Reagent; // imp
 using Content.Shared.Damage.Components; // imp
@@ -46,7 +46,7 @@ public sealed partial class HereticAbilitySystem : EntitySystem
         // temporarily disable a random organ
         // the fucking goob coders were literally just deleting organ components. who thought that was okay
         // TODO: change this to actually remove/disable organs once newmed comes out next week
-        if (TryComp<BodyComponent>(args.Target, out var body))
+        if (HasComp<BodyComponent>(args.Target))
         {
             //i should really make these their own methods. but i dont want to
             switch (_random.Next(0, 3))

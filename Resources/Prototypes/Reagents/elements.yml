@@ -255,6 +255,15 @@
   color: "#00ff04"
   meltingPoint: 700.0
   boilingPoint: 1737.0
+# imp edit start
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 2
+#imp edit end
 
 - type: reagent
   id: Silicon

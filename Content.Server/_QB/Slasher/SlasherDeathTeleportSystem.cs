@@ -5,10 +5,10 @@ using Content.Server.QB.GameTicking.Rules.Components;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
 using Content.Server.QB.Slasher.Components;
-using Content.Server.Body.Systems;
 using Content.Shared.QB.Slasher.Components;
 using Content.Shared.Roles;
 using Content.Shared.Gibbing.Events;
+using Content.Shared.Gibbing;
 using Content.Shared.Nuke;
 using Content.Shared.Physics;
 using Robust.Shared.EntitySerialization.Systems;
@@ -63,7 +63,7 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
 
     [Dependency] private readonly MapLoaderSystem _mapLoader = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly BodySystem _body = default!;
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly RejuvenateSystem _rejuvenate = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
@@ -232,7 +232,7 @@ public sealed class SlasherDeathTeleportSystem : EntitySystem
             if (hasMind && TryGetDeathMazeSpawn(out var failureTarget))
                 ReclaimOwnedItems(ent.Owner, existingMind, failureTarget);
 
-            _body.GibBody(ent.Owner, true);
+            _gibbing.Gib(ent.Owner, true);
 
             var ev = new SlasherFailedDeathProcessedEvent();
             RaiseLocalEvent(ent.Owner, ref ev);

@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Apid, Thaven, Anomalocarid ] #imp, added apid, thaven TODO: thaven should have their own waste reaction for all gases
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Apid, Thaven, Anomalocarid, Goblin] #imp, added types after Moth
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:

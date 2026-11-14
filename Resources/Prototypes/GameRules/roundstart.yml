@@ -698,3 +698,7 @@
     - id: BasicDecalDirtMonospaceVariationPass
       prob: 0.50
       orGroup: monospaceDecals
+    # QB start
+    # - id: GhostMediumVariationPass
+    #   prob: 0.10
+    # QB end

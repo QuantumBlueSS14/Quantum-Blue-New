@@ -26,6 +26,9 @@ using Robust.Shared.Utility;
 using System.Linq;
 using Content.Shared.Gibbing;
 using Content.Shared.Humanoid;
+using Content.Shared.Body; // imp
+using Content.Shared.Damage.Systems; // imp
+using Content.Shared.StatusEffectNew; // imp
 
 namespace Content.Server.Materials;
 

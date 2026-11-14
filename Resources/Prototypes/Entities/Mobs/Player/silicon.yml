@@ -7,6 +7,7 @@
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
+    - AI # imp
     - Binary
     - Common
     - Command
@@ -18,6 +19,7 @@
     - Supply
   - type: ActiveRadio
     channels:
+    - AI # imp
     - Binary
     - Common
     - Command
@@ -80,7 +82,8 @@
     stealGroup: AICore
   - type: CharacterRecordConsole # give the Ai the new cd records console. only employment because they're nominally a civilian role, but they can still use the sec & med consoles.
     consoleType: Employment
-
+  - type: Emoting #imp
+  # imp edit end
 
 - type: entity
   id: AiHeldIntellicard
@@ -454,6 +457,7 @@
     - HideContextMenu
     - StationAi
     - NoConsoleSound
+    - SiliconEmotes #imp
   - type: StartingMindRole
     mindRole: "MindRoleSiliconBrain"
     silent: true
@@ -478,7 +482,21 @@
   - type: Grammar
     attributes:
       proper: true
-  - type: SkipLoadingCharacterRecords #imp edit - make it so the AI doesn't show up in the character records list
+  - type: SkipLoadingCharacterRecords #make it so the AI doesn't show up in the character records list
+  - type: Emoting #imp edit start
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+  - type: AnimatedEmotes
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+    - Silicon
+  - type: ShowHealthIcons
+  #- type: ShowMindShieldIcons
+  #- type: ShowCriminalRecordIcons
+  - type: ShowAccessReaderSettings #imp edit end
 
 # Hologram projection that the AI's eye tracks.
 - type: entity
@@ -504,8 +522,9 @@
       - GhostOnlyWarp
   - type: Eye
     pvsScale: 1.5
+    visMask: 5 #imp
   - type: Visibility
-    layer: 2
+    layer: 4 #imp, so borgs can see the ai eye
   - type: Sprite
     sprite: Mobs/Silicon/station_ai.rsi
     layers:
