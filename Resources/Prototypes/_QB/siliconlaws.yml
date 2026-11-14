@@ -60,7 +60,8 @@
   - Mosquito2
   - Mosquito3
   - Mosquito4
-  
+
+- type: siliconLaw
   id: Salvage1
   order: 1
   lawString: law-salvage-1
