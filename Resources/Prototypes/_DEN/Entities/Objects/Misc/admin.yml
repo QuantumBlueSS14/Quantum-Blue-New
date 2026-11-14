@@ -1,0 +1,109 @@
+# SPDX-FileCopyrightText: 2025 BlitzTheSquishy
+# SPDX-FileCopyrightText: 2025 MajorMoth
+# SPDX-FileCopyrightText: 2025 AlinaNova21 <alina@alinanova.dev>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: BoxFolderAdmin
+  parent: [ BoxBase, ContentsExplosionResistanceBase ]
+  name: admin folder
+  description: A special folder for more than just paper.
+  categories: [ AdminTools ]
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/folders.rsi
+    layers:
+    - state: folder-colormap
+      color: "#702963"
+    - state: folder-base
+  - type: Item
+    sprite: Objects/Misc/folders.rsi
+    size: Small
+    shape: null
+  - type: Storage
+    maxItemSize: Small # QB: was Normal; must not exceed the folder's own size (StorageSizeArbitrageTest)
+    grid:
+    - 0,0,9,3
+  - type: ItemMapper
+    mapLayers:
+      folder-overlay-paper:
+        whitelist:
+          tags:
+          - Document
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Folder
+  - type: StorageFill
+    contents:
+    - id: Paper
+      amount: 6
+    - id: FoodSnackSwirlLollipop # QB: TheDen's FoodLollipop does not exist on this base
+  - type: ExplosionResistance
+    damageCoefficient: 0
+
+- type: entity
+  id: AdminToolbelt
+  # QB: parented to the base belt and not ClothingBeltChiefEngineer, so it is not a thief steal target.
+  parent: [ BaseClothingBeltEngineering, ContentsExplosionResistanceBase ]
+  name: admin toolbelt
+  description: A magical toolbelt that is NOT a bigger chief engineer's toolbelt.
+  categories: [ AdminTools ]
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/ce.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/ce.rsi
+  - type: Item
+    size: Normal # QB: was Small; must not be smaller than what it can hold (StorageSizeArbitrageTest)
+  # QB: the old port's AdminRCD is replaced by the existing RCDExperimental, OmnimedTool does not exist on this base,
+  # and Omnitool, RPDExperimental and SprayPainterRecharging come from the imp aghost satchel.
+  - type: StorageFill
+    contents:
+    - id: RCDExperimental
+    - id: RPDExperimental
+    - id: Omnitool
+    - id: ToolDebug
+    - id: WelderExperimental
+    - id: Multitool
+    - id: HolofanProjector
+    - id: GasAnalyzer
+    - id: trayScanner
+    - id: BaseUplinkRadioDebug
+    - id: LightReplacer
+    - id: SprayPainterRecharging
+    - id: GeigerCounter
+    - id: AccessConfiguratorUniversal
+  - type: Storage
+    grid:
+    - 0,0,9,3
+    whitelist: null
+  - type: ExplosionResistance
+    damageCoefficient: 0
+
+- type: entity
+  id: AdminMaterialBox
+  parent: [ BoxCardboard, ContentsExplosionResistanceBase ]
+  name: admin material box
+  description: A box of basic materials.
+  categories: [ AdminTools ]
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+  - type: StorageFill
+    contents:
+    - id: SheetSteel
+    - id: SheetGlass
+    - id: SheetPlastic
+    - id: MaterialWoodPlank
+    - id: MaterialCloth
+    - id: PartRodMetal
+  - type: ExplosionResistance
+    damageCoefficient: 0
