@@ -13,6 +13,8 @@
   mindRoleBlacklist:
     components:
     - SlasherMindRole
+    - GoobChangelingRole
+    - NukeOpsRole #To do - split this into separate roles for different types of nukies
 
 - type: trait
   id: LightweightDrunk
