@@ -1,20 +1,4 @@
 - type: entity
-  id: SpawnPointSlasher
-  parent: MarkerBase
-  name: slasher antag spawn point
-  suffix: Slasher
-  components:
-  - type: Sprite
-    sprite: Markers/jobs.rsi
-    layers:
-    - state: green
-    - state: prisoner
-  - type: AntagSpawner
-    prototype: MobHuman
-  - type: SpawnPoint
-    job_id: Passenger
-
-- type: entity
   id: SpawnPointLocationSlasherShuttle
   name: slasher shuttle spawn location
   suffix: Slasher

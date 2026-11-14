@@ -1,7 +1,7 @@
 - type: entity
   id: SpawnPointLocationMidRoundAntag
   name: mid-round antag spawn location
-  suffix: Fugitive, Paradox Anomaly
+#  suffix: Fugitive, Paradox Anomaly #QB comment
   parent: MarkerBase
   components:
   - type: Sprite

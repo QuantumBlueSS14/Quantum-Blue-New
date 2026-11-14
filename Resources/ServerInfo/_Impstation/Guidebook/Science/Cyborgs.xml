@@ -31,6 +31,7 @@
     <GuideEntityEmbed Entity="BorgChassisJanitor" Caption="Janitor"/>
     <GuideEntityEmbed Entity="BorgChassisService" Caption="Service"/>
     <GuideEntityEmbed Entity="BorgChassisMedical" Caption="Medical"/>
+    <GuideEntityEmbed Entity="BorgChassisSecurity" Caption="Security"/>
   </Box>
   <Box>
     [italic]Examples of various cyborg types[/italic]
@@ -60,6 +61,7 @@
     <GuideEntityEmbed Entity="BorgModuleCleaning" Caption="Cleaning"/>
     <GuideEntityEmbed Entity="BorgModuleService" Caption="Service"/>
     <GuideEntityEmbed Entity="BorgModuleChemical" Caption="Chemical"/>
+    <GuideEntityEmbed Entity="BorgModuleSecurityPatrol" Caption="Patrol"/>
   </Box>
   <Box>
     [italic]Examples of specialized modules. Note the housing and circuit board colors.

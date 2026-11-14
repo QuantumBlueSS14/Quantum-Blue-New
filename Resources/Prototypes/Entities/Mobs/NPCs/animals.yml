@@ -100,9 +100,19 @@
   description: Nice to have, but you can't build a civilization on a foundation of honey alone.
   components:
   - type: CombatMode
+  - type: MeleeWeapon # QB start
+    angle: 0
+    animation: WeaponArcStatic
+    damage:
+      types:
+        Piercing: 1 # QB end
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 7
+    baseWeightlessFriction: 0.2 # QB start
+    baseWeightlessModifier: 1
+  - type: MovementIgnoreGravity
+    weightless: true # QB end
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -195,7 +205,7 @@
   - type: CombatMode
   - type: MeleeWeapon
     angle: 0
-    animation: WeaponArcStatic # QB, changed from WeaponArcBite because why is a bee attacking by biting
+    animation: WeaponArcStatic # QB, changed from WeaponArcBite
     damage:
       types:
         # Poison: 2 # QB removed because of the addition of Apitoxin
@@ -869,6 +879,10 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 6
+    baseWeightlessFriction: 0.2 # QB start
+    baseWeightlessModifier: 1
+  - type: MovementIgnoreGravity
+    weightless: true # QB end
   - type: Sprite
     drawdepth: Mobs
     layers:

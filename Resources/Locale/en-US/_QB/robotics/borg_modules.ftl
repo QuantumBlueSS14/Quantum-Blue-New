@@ -1,0 +1,13 @@
+borg-slot-handcuffs-empty = Handcuffs
+borg-slot-ticket-empty = Ticket
+borg-slot-grenade-flashbang-empty = Flashbang
+borg-slot-shield-empty = Shield
+borg-slot-bola-empty = Bola
+borg-slot-grenade-empty = Grenade
+borg-slot-forensic-pad-empty = Forensic Pad
+borg-slot-forensic-chalk-empty = Forensic Chalk
+borg-slot-evidence-marker-empty = Evidence Marker
+borg-slot-smokable-empty = Smokable
+borg-slot-breaching-empty = Breaching Charge
+borg-slot-detonator-cable-empty = Detonator Cord
+borg-slot-detonator-empty = Detonator Cap

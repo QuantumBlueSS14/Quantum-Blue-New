@@ -1,0 +1,242 @@
+- type: entity
+  id: BaseBorgModuleSecurity
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSecurity
+  - type: BorgModule
+    borgFitTypes:
+    - borg-type-security
+  - type: Sprite
+    sprite: _QB/Objects/Specific/Robotics/borgmodule.rsi
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-left
+        color: "#FF0000"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-left
+        color: "#891417"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-left
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-left
+        color: "#7B0F12"
+      right:
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-icon-inhand-right
+        color: "#FF0000"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-module-inhand-right
+        color: "#891417"
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-part-inhand-right
+      - sprite: Objects/Specific/Robotics/borgmodule.rsi
+        state: base-stripes-inhand-right
+        color: "#7B0F12"
+
+# Security Modules
+- type: entity
+  id: BorgModuleSecurityPatrol # roundstart
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: patrol cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-patrol
+  - type: ItemBorgModule
+    hands:
+    - item: FlashlightSecliteBorg
+    - item: WeaponBorgStunBaton # why yes this IS the only time StunBaton is capitalized like that
+    - item: Handcuffs
+      hand:
+        emptyRepresentative: Handcuffs
+        emptyLabel: borg-slot-handcuffs-empty
+        whitelist:
+          components:
+          - Handcuff
+    - item: SecurityWhistle
+    - item: LauncherCitationator
+    - item: TicketPad
+      hand:
+        emptyRepresentative: TicketPad
+        emptyLabel: borg-slot-ticket-empty
+        whitelist:
+          tags:
+          - Folder
+          - SecTicket
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: patrol-module }
+
+- type: entity
+  id: BorgModuleSecurityUtility # roundstart
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: security utility cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-security-utility
+  - type: ItemBorgModule
+    hands:
+    - item: Pribar
+    - item: FlashlightSecliteBorg
+    - item: HoloprojectorSecurityBorg
+    - item: BorgHandheldGPSBasic
+    - item: RadioHandheldSecurity
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: utility-module }
+
+- type: entity
+  id: BorgModuleSecurityNonlethal # T1 research
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: nonlethal cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-nonlethal
+  - type: ItemBorgModule
+    hands:
+    - item: WeaponBorgDisabler
+    - item: Flash
+    - item: GrenadeFlashBang
+      hand:
+        emptyRepresentative: GrenadeFlashBang
+        emptyLabel: borg-slot-grenade-flashbang-empty
+        whitelist:
+          tags:
+          - GrenadeFlashBang
+    - item: Handcuffs
+      hand:
+        emptyRepresentative: Handcuffs
+        emptyLabel: borg-slot-handcuffs-empty
+        whitelist:
+          components:
+          - Handcuff
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: nonlethal-module }
+
+- type: entity
+  id: BorgModuleSecurityLethal # T2 research. Would like it to have bola but it seems to be unable to throw
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: lethal cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-lethal
+  - type: ItemBorgModule
+    hands:
+    - item: Truncheon
+    - item: RiotShield 
+      hand:
+        emptyRepresentative: RiotShield
+        emptyLabel: borg-slot-shield-empty
+        whitelist:
+          components:
+          - Blocking # any shield
+    - item: Bola
+      hand:
+        emptyRepresentative: Bola
+        emptyLabel: borg-slot-bola-empty
+        whitelist:
+          components:
+          - Ensnaring # this component only exists on bola and... anomalocarid kidneys
+    - item: GrenadeStinger
+      hand:
+        emptyRepresentative: GrenadeStinger
+        emptyLabel: borg-slot-grenade-empty
+        whitelist:
+          tags:
+          - HandGrenade
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: lethal-module }
+
+- type: entity
+  id: BorgModuleSecurityInvestigation # T2 research
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: investigation cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-investigation
+  - type: ItemBorgModule
+    hands:
+    - item: ForensicPad
+      hand:
+        emptyRepresentative: ForensicPad
+        emptyLabel: borg-slot-forensic-pad-empty
+        whitelist:
+          components:
+          - ForensicPad
+    - item: CrayonChalk
+      hand:
+        emptyRepresentative: CrayonChalk
+        emptyLabel: borg-slot-forensic-chalk-empty
+        whitelist:
+          components:
+          - Crayon
+    - item: BoxEvidenceMarkers
+      hand:
+        emptyRepresentative: EvidenceMarkerOne
+        emptyLabel: borg-slot-evidence-marker-empty
+        whitelist:
+          tags:
+          - EvidenceMarker
+          - EvidenceMarkerBox
+    - item: ForensicScanner
+    - item: FlippoLighter
+    - item: Cigar
+      hand:
+        emptyRepresentative: Cigar
+        emptyLabel: borg-slot-smokable-empty
+        whitelist:
+          components:
+          - Smokable
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: investigation-module }
+
+- type: entity
+  id: BorgModuleSecurityBreaching # T3 research. Truly the superweapon of QB
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: breaching cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-breaching
+  - type: ItemBorgModule
+    hands:
+    - item: BreachingHammerBorg
+    - item: BreachingCharge
+      hand:
+        emptyRepresentative: BreachingCharge
+        emptyLabel: borg-slot-breaching-empty
+        whitelist:
+          components:
+          - Sticky # c4, seismic, and breaching charge as well as detonator cap
+    - item: CableDetStack10
+      hand:
+        emptyRepresentative: CableDetStack
+        emptyLabel: borg-slot-detonator-cable-empty
+        whitelist:
+          tags:
+          - Payload # the only tag the cable has
+    - item: Null # if this ever goes wrong blame Matt
+      hand:
+        emptyRepresentative: WiredDetonator
+        emptyLabel: borg-slot-detonator-empty
+        whitelist:
+          components:
+          - PayloadCase
+          - PayloadTrigger
+    - item: NetworkConfigurator
+    - item: RemoteSignaller
+  - type: BorgModuleIcon
+    icon: { sprite: _QB/Interface/Actions/actions_borg.rsi, state: breaching-module }

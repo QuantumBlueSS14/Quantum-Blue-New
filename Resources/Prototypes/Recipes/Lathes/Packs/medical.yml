@@ -22,12 +22,13 @@
   - LargeConicalFlask #Imp
   - ChemSampleTube #Imp
   - Dropper
+  - Jug # QB
 
 - type: latheRecipePack
   parent: [ BasicChemistryStatic, ImpChemistryStatic ] #imp edit
   id: ChemistryStatic
   recipes:
-  - Jug
+  # - Jug # QB - moved to basic
   - ChemistryEmptyBottle01
   - ClothingEyesGlassesChemical
 

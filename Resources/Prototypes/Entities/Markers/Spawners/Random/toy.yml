@@ -81,7 +81,7 @@
       - id: PlushieThrongler
       - id: PlushieGhostRevenant # You got the god roll, and failed
     # imp edit start
-    - id: PlushieBug
+    # - id: PlushieBug # QB - no references
     - id: PlushieDecapoid
     - id: PlushieGray
     - id: PlushieGriffy
@@ -100,12 +100,12 @@
     - !type:GroupSelector
       weight: 0.1 # rare
       children:
-#      - id: PlushieBros
+#      - id: PlushieBros # QB - no bros
       - id: PlushieCaptain
       - id: PlushieDwarf
       - id: PlushieEeepy
-      - id: PlushieEvilBug
-      - id: PlushieGnomeChild
+      # - id: PlushieEvilBug # QB - no references
+      # - id: PlushieGnomeChild # QB - no references
       - id: PlushieGollylad
       - id: PlushieHeadofPersonnel
       # - id: PlushieImp # QB - nomira

@@ -1,6 +1,8 @@
-- type: gameMapPool
-  id: DeathMatchMapPoolImp
-  maps:
-  - MeteorArena
-  - E1M1
-  - dm01-entryway
+# THIS FILE IS BEING IGNORED
+# TO ADD MAPS TO THIS POOL, GO TO Prototypes/_QB/Maps/Pools/deathmatch.yml INSTEAD
+# - type: gameMapPool
+#   id: DeathMatchMapPoolImp
+#   maps:
+#   - MeteorArena
+#   - E1M1
+#   - dm01-entryway

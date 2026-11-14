@@ -29,7 +29,48 @@
   - Clown
   - Courier
   - Librarian
-  - Logistics
+  #- Logistics # no borg shopping
+  - Mime
+  - Musician
+  - Reporter
+  - Vault
+  - Brigmedic
+  - Paramedic
+  - Psychologist
+  - Zoo
+
+- type: accessGroup
+  id: MostAccessCargo # for cargo borg to have orders access
+  tags:
+  - Command
+  - Cryogenics
+  - Security
+  - Detective
+  - Brig
+  - Lawyer
+  - Engineering
+  - Firelocks
+  - Medical
+  - Salvage
+  - Cargo
+  - Research
+  - Service
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - Atmospherics
+  - GenpopEnter
+  - GenpopLeave
+  - Clown
+  - Courier
+  - Librarian
+  - Logistics # yes cargo borg shopping
   - Mime
   - Musician
   - Reporter

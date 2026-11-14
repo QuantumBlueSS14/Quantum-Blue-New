@@ -112,3 +112,6 @@
     layers:
       - state: box_security_tiny # Imp edit
       - state: evidence_markers
+  - type: Tag # QB addition
+    tags:
+    - EvidenceMarkerBox

@@ -1,4 +1,4 @@
-﻿- type: borgType
+- type: borgType
   id: cargo
 
   # Description
@@ -19,6 +19,17 @@
   radioChannels:
   - Supply
   - Science
+
+  lawset: Cargo # QB addition - cargo lawset
+
+  # QB additions begin - orders access
+  addComponents:
+  - type: Access
+    groups:
+    - MostAccessCargo
+    tags:
+    - Borg
+  # QB additions begin - orders access
 
   # Visual
   inventoryTemplateId: borgTall
