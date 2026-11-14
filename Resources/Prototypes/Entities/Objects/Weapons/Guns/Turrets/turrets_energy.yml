@@ -82,9 +82,9 @@
     fireCost: 100
   - type: BatteryWeaponFireModes
     fireModes:
-    - proto: BulletEnergyTurretDisabler
+    - proto: HitscanDisablerTurret # QB change from BulletEnergyTurretDisabler - hitscan visuals
       fireCost: 100
-    - proto: BulletEnergyTurretLaser
+    - proto: RedHeavyLaserTurret # QB change from BulletEnergyTurretLaser - hitscan visuals
       fireCost: 100
   - type: DeployableTurret
     retractedDamageModifierSetId: Metallic
