@@ -1,0 +1,37 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                     xmlns:controls="using:Content.Client.UserInterface.Controls"
+                     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                     xmlns:nav="clr-namespace:Content.Client.Pinpointer.UI"
+                     Title="{Loc ai-cam-warp-ui-menu-title}"
+                     Resizable="False"
+                     MinSize="1000 700"
+                     SetSize="1000 700">
+    <!-- QB: station map with clickable camera blips added next to the Goobstation camera list -->
+    <BoxContainer Orientation="Horizontal"
+                  HorizontalExpand="True"
+                  VerticalExpand="True">
+        <nav:NavMapControl Name="NavMap" HorizontalExpand="True" VerticalExpand="True" Margin="5 5"/>
+        <BoxContainer Orientation="Vertical"
+                      SetWidth="300"
+                      VerticalExpand="True">
+            <Button Name="RefreshButton" StyleClasses="chatSelectorOptionButton" Text="{Loc ai-camera-ui-menu-refresh}"/>
+            <LineEdit Name="SearchBar" PlaceHolder="{Loc ai-cam-warp-ui-menu-search}" HorizontalExpand="True" Margin="0 4" />
+            <PanelContainer VerticalExpand="True" Margin="10 10 10 10">
+                <PanelContainer.PanelOverride>
+                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
+                </PanelContainer.PanelOverride>
+                <ScrollContainer
+                    HScrollEnabled="False"
+                    HorizontalExpand="True"
+                    VerticalExpand="True">
+                    <BoxContainer
+                        Name="CameraWarpsDisplayContainer"
+                        Orientation="Vertical"
+                        VerticalExpand="True"
+                        Margin="10 10 10 0">
+                    </BoxContainer>
+                </ScrollContainer>
+            </PanelContainer>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>
