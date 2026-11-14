@@ -14,6 +14,7 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
     [Dependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IServerPreferencesManager _prefs = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!; // QB add
 
     public override void Initialize()
     {
@@ -61,5 +62,9 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
 
         args.Entity = Spawn(species.Prototype);
         _humanoid.LoadProfile(args.Entity.Value, profile?.WithSpecies(species.ID));
+
+        // QB add: set entity name based on profile if available
+        if (profile != null)
+            _metaData.SetEntityName(args.Entity.Value, profile.Name);
     }
 }
