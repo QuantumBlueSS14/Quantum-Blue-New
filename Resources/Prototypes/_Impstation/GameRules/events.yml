@@ -53,6 +53,8 @@
     agentName: bounty-hunter-roundend-name
     definitions:
     - spawnerPrototype: SpawnPointGhostBountyHunter
+      prefRoles: # Make MCQ grab the right profile QB
+      - BountyHunter
       min: 1
       max: 1
       pickPlayer: false
@@ -66,14 +68,14 @@
         # sound: /Audio/Misc/ninja_greeting.ogg
       mindRoles:
       - MindRoleBountyHunter
-      components:
-      - type: RandomMetadata
-        nameSegments:
-        - NamesBountyHunterTitle
-        - NamesBountyHunter
-        nameFormat: name-format-bounty-hunter
-      - type: RandomHumanoidAppearance
-        randomizeName: false
+      # components: QB comment out
+      # - type: RandomMetadata 
+      #   nameSegments:
+      #   - NamesBountyHunterTitle
+      #   - NamesBountyHunter
+      #   nameFormat: name-format-bounty-hunter
+      # - type: RandomHumanoidAppearance
+      #   randomizeName: false
 
 #vrex
 - type: entity

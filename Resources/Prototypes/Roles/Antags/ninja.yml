@@ -6,9 +6,10 @@
   requirements:
   - !type:OverallPlaytimeRequirement # Imp
     time: 1h
-  setPreference: false
+  setPreference: true #QB, make these show up for MCQ
   objective: roles-antag-space-ninja-objective
   guides: [ SpaceNinja ]
+  previewStartingGear: SpaceNinjaGear
 
 #Ninja Gear
 - type: startingGear

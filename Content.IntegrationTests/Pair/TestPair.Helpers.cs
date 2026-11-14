@@ -1,14 +1,34 @@
-﻿#nullable enable
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
+#nullable enable
 using System.Collections.Generic;
 using System.Linq;
+using Content.Server.GameTicking;
+using Content.Server.Database;
 using Content.Server.Preferences.Managers;
+using Content.Shared.GameTicking;
+using Content.Shared.Mind;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
+using Content.Shared.Roles.Jobs;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -77,6 +97,24 @@ public sealed partial class TestPair
         await Server.WaitPost(() => prefMan.SetProfile(userId, 0, newProfile).Wait());
     }
 
+    public Task SetAntagPreferences(HashSet<ProtoId<AntagPrototype>> antagPreferences) // QB edit: add hashset-based antag preference helper expected by MCQ follow-up tests.
+    {
+        return SetAntagPreferences(Player!, antagPreferences);
+    }
+
+    public async Task SetAntagPreferences(ICommonSession player, HashSet<ProtoId<AntagPrototype>> antagPreferences) // QB edit: support setting antag preferences for specific sessions in integration tests.
+    {
+        var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
+        await Server.WaitPost(() =>
+        {
+            var profile = prefMan.GetPreferences(player.UserId).Characters[0] as HumanoidCharacterProfile;
+            var updated = profile!.WithAntagPreferences(antagPreferences);
+            updated.Enabled = true;
+            prefMan.SetProfile(player.UserId, 0, updated).Wait();
+        });
+        await RunTicksSync(5);
+    }
+
     /// <summary>
     /// Set a user's job preferences.  Modified preferences are automatically reset at the end of the test.
     /// </summary>
@@ -125,5 +163,92 @@ public sealed partial class TestPair
         var newProfile = profile.WithJobPriorities(dictionary);
         _modifiedProfiles.Add(user);
         await Server.WaitPost(() => prefMan.SetProfile(user, 0, newProfile).Wait());
+    }
+
+    public async Task SetJobPriorities(ICommonSession player, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities) // QB edit: add dictionary-based overload used by updated MCQ job tests.
+    {
+        var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
+        await Server.WaitPost(() => prefMan.SetJobPriorities(player.UserId, jobPriorities).Wait());
+        await RunTicksSync(5);
+    }
+
+    public Task SetJobPriorities(Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities) // QB edit: convenience overload for local player dictionary priorities.
+    {
+        return SetJobPriorities(Player!, jobPriorities);
+    }
+
+    public async Task SetJobPreferences(HashSet<ProtoId<JobPrototype>> jobPreferences) // QB edit: allow tests to explicitly set per-character enabled job list before round start.
+    {
+        var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
+        await Server.WaitPost(() =>
+        {
+            var profile = prefMan.GetPreferences(Player!.UserId).Characters[0] as HumanoidCharacterProfile;
+            var updated = profile!.WithJobPreferences(jobPreferences);
+            updated.Enabled = true;
+            prefMan.SetProfile(Player!.UserId, 0, updated).Wait();
+        });
+        await RunTicksSync(5);
+    }
+
+    public void AssertJob(
+        ProtoId<JobPrototype> job,
+        ICommonSession session,
+        bool isAntag = false)
+    {
+        AssertJob(job, session.UserId, isAntag);
+    }
+
+    public void AssertJob(ProtoId<JobPrototype> job, NetUserId? user = null, bool isAntag = false)
+    {
+        var jobSys = Server.System<SharedJobSystem>();
+        var mindSys = Server.System<SharedMindSystem>();
+        var roleSys = Server.System<SharedRoleSystem>();
+        var ticker = Server.System<GameTicker>();
+
+        user ??= Client.User!.Value;
+
+        Assert.That(ticker.RunLevel, Is.EqualTo(GameRunLevel.InRound));
+        Assert.That(ticker.PlayerGameStatuses[user.Value], Is.EqualTo(PlayerGameStatus.JoinedGame));
+
+        var uid = Server.PlayerMan.SessionsDict.GetValueOrDefault(user.Value)?.AttachedEntity;
+        Assert.That(Server.EntMan.EntityExists(uid));
+        var mind = mindSys.GetMind(uid!.Value);
+        Assert.That(Server.EntMan.EntityExists(mind));
+        Assert.That(jobSys.MindTryGetJobId(mind, out var actualJob));
+        Assert.That(actualJob, Is.EqualTo(job));
+        Assert.That(roleSys.MindIsAntagonist(mind), Is.EqualTo(isAntag));
+    }
+
+    public Task<IEnumerable<ICommonSession>> AddDummyPlayers(Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities, int count = 1) // QB edit: helper for creating and preconfiguring dummy sessions with job priorities.
+    {
+        return AddDummyPlayers(jobPriorities, jobPriorities.Keys, count);
+    }
+
+    public async Task<IEnumerable<ICommonSession>> AddDummyPlayers(
+        Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
+        IEnumerable<ProtoId<JobPrototype>> jobPreferences,
+        int count = 1) // QB edit: helper for creating and preconfiguring dummy sessions with explicit preference lists.
+    {
+        var prefMan = Server.ResolveDependency<IServerPreferencesManager>();
+        var dbMan = Server.ResolveDependency<UserDbDataManager>();
+
+        var sessions = await Server.AddDummySessions(count);
+        await RunTicksSync(5);
+        await Server.WaitPost(() =>
+        {
+            var tasks = sessions.Select(s =>
+            {
+                dbMan.WaitLoadComplete(s).Wait();
+                var newProfile = HumanoidCharacterProfile.Random().WithJobPreferences(jobPreferences); // QB edit: branch-compatible replacement for missing AsEnabled helper.
+                newProfile.Enabled = true; // QB edit
+                return Task.WhenAll(
+                    prefMan.SetJobPriorities(s.UserId, jobPriorities),
+                    prefMan.SetProfile(s.UserId, 0, newProfile));
+            });
+            Task.WhenAll(tasks).Wait();
+        });
+        await RunTicksSync(5);
+
+        return sessions;
     }
 }

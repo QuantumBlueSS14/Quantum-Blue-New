@@ -33,7 +33,6 @@ namespace Content.Server.QB.GameTicking.Rules;
 public sealed class SlasherRuleSystem : GameRuleSystem<SlasherRuleComponent>
 {
     private static readonly ProtoId<StartingGearPrototype> SlasherGearPrototypeId = "SlasherGear";
-    private static readonly ProtoId<LocalizedDatasetPrototype> SlasherNameDatasetId = "NamesSlasher";
 
     /// >:(
     private static readonly HashSet<string> NonReclaimableStarterKitPrototypes =
@@ -155,8 +154,6 @@ public sealed class SlasherRuleSystem : GameRuleSystem<SlasherRuleComponent>
             TagStarterKitOwnership(args.EntityUid, ownerMindId);
         }
 
-        AssignRandomSlasherName(args.EntityUid, mindId);
-
         // Some characters can spawn with pacifist; Slasher must always be able to fight.
         RemComp<PacifiedComponent>(args.EntityUid);
 
@@ -187,26 +184,6 @@ public sealed class SlasherRuleSystem : GameRuleSystem<SlasherRuleComponent>
         }
 
         return false;
-    }
-
-    /// <summary>
-    /// Assigns a random slasher name to both entity metadata and the player's mind character name.
-    /// </summary>
-    /// <param name="slasher">Slasher entity UID.</param>
-    /// <param name="mindId">Optional owner mind UID when already resolved.</param>
-    private void AssignRandomSlasherName(EntityUid slasher, EntityUid? mindId)
-    {
-        if (!_proto.TryIndex(SlasherNameDatasetId, out var dataset))
-            return;
-
-        var randomName = _random.Pick(dataset);
-        _metaData.SetEntityName(slasher, randomName);
-
-        if (mindId == null || !TryComp<MindComponent>(mindId, out var mind))
-            return;
-
-        mind.CharacterName = randomName;
-        Dirty(mindId.Value, mind);
     }
 
     /// <summary>
