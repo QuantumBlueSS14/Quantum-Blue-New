@@ -7,6 +7,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Content.Server.Body.Systems; // imp
 using Content.Shared.Tag; // imp
+using Content.Shared.Preferences; // QB
 
 namespace Content.Server.Traits;
 
@@ -25,10 +26,73 @@ public sealed class TraitSystem : EntitySystem
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
     }
 
-    // When the player is spawned in, add all trait components selected during character creation
+    // // When the player is spawned in, add all trait components selected during character creation
+    // private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
+    // {
+    //     // Check if player's job allows to apply traits
+    //     if (args.JobId == null ||
+    //         !_prototypeManager.Resolve<JobPrototype>(args.JobId, out var protoJob) ||
+    //         !protoJob.ApplyTraits)
+    //     {
+    //         return;
+    //     }
+
+    //     foreach (var traitId in args.Profile.TraitPreferences)
+    //     {
+    //         if (!_prototypeManager.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
+    //         {
+    //             Log.Error($"No trait found with ID {traitId}!");
+    //             return;
+    //         }
+
+    //         if (_whitelistSystem.IsWhitelistFail(traitPrototype.Whitelist, args.Mob) ||
+    //             _whitelistSystem.IsWhitelistPass(traitPrototype.Blacklist, args.Mob))
+    //             continue;
+
+    //         // Add all components required by the prototype IMP: to the body or specified organ
+    //         // imp start
+    //         if (traitPrototype.Organ != null)
+    //         {
+    //             foreach (var organ in _bodySystem.GetBodyOrgans(args.Mob))
+    //             {
+    //                 if (traitPrototype.Organ is { } organTag && _tagSystem.HasTag(organ.Id, organTag))
+    //                 {
+    //                     EntityManager.AddComponents(organ.Id, traitPrototype.Components);
+    //                 }
+    //             }
+    //         }
+    //         else // imp end
+    //         {
+    //             if (traitPrototype.Components.Count > 0)
+    //             EntityManager.AddComponents(args.Mob, traitPrototype.Components, false);
+    //         }
+
+    //         // Add all JobSpecials required by the prototype
+    //         foreach (var special in traitPrototype.Specials)
+    //         {
+    //             special.AfterEquip(args.Mob);
+    //         }
+
+    //         // Add item required by the trait
+    //         if (traitPrototype.TraitGear == null)
+    //             continue;
+
+    //         if (!TryComp(args.Mob, out HandsComponent? handsComponent))
+    //             continue;
+
+    //         var coords = Transform(args.Mob).Coordinates;
+    //         var inhandEntity = Spawn(traitPrototype.TraitGear, coords);
+    //         _sharedHandsSystem.TryPickup(args.Mob,
+    //             inhandEntity,
+    //             checkActionBlocker: false,
+    //             handsComp: handsComponent);
+    //     }
+    // }
+
+
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
     {
-        // Check if player's job allows to apply traits
+        // Check if player's job allows traits to be applied.
         if (args.JobId == null ||
             !_prototypeManager.Resolve<JobPrototype>(args.JobId, out var protoJob) ||
             !protoJob.ApplyTraits)
@@ -36,52 +100,61 @@ public sealed class TraitSystem : EntitySystem
             return;
         }
 
-        foreach (var traitId in args.Profile.TraitPreferences)
+        ApplyTraits(args.Mob, args.Profile);
+    }
+
+    /// <summary>
+    /// Applies the traits selected in a character profile to a spawned humanoid.
+    /// </summary>
+    public void ApplyTraits(EntityUid mob, HumanoidCharacterProfile profile)
+    {
+        foreach (var traitId in profile.TraitPreferences)
         {
             if (!_prototypeManager.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
             {
                 Log.Error($"No trait found with ID {traitId}!");
-                return;
+                continue;
             }
 
-            if (_whitelistSystem.IsWhitelistFail(traitPrototype.Whitelist, args.Mob) ||
-                _whitelistSystem.IsWhitelistPass(traitPrototype.Blacklist, args.Mob))
+            if (_whitelistSystem.IsWhitelistFail(traitPrototype.Whitelist, mob) ||
+                _whitelistSystem.IsWhitelistPass(traitPrototype.Blacklist, mob))
                 continue;
 
-            // Add all components required by the prototype IMP: to the body or specified organ
-            // imp start
+            // Add components to the body or specified organ.
             if (traitPrototype.Organ != null)
             {
-                foreach (var organ in _bodySystem.GetBodyOrgans(args.Mob))
+                foreach (var organ in _bodySystem.GetBodyOrgans(mob))
                 {
-                    if (traitPrototype.Organ is { } organTag && _tagSystem.HasTag(organ.Id, organTag))
+                    if (traitPrototype.Organ is { } organTag &&
+                        _tagSystem.HasTag(organ.Id, organTag))
                     {
                         EntityManager.AddComponents(organ.Id, traitPrototype.Components);
                     }
                 }
             }
-            else // imp end
+            else
             {
                 if (traitPrototype.Components.Count > 0)
-                EntityManager.AddComponents(args.Mob, traitPrototype.Components, false);
+                    EntityManager.AddComponents(mob, traitPrototype.Components, false);
             }
 
-            // Add all JobSpecials required by the prototype
+            // Apply trait specials.
             foreach (var special in traitPrototype.Specials)
             {
-                special.AfterEquip(args.Mob);
+                special.AfterEquip(mob);
             }
 
-            // Add item required by the trait
+            // Give trait gear.
             if (traitPrototype.TraitGear == null)
                 continue;
 
-            if (!TryComp(args.Mob, out HandsComponent? handsComponent))
+            if (!TryComp(mob, out HandsComponent? handsComponent))
                 continue;
 
-            var coords = Transform(args.Mob).Coordinates;
+            var coords = Transform(mob).Coordinates;
             var inhandEntity = Spawn(traitPrototype.TraitGear, coords);
-            _sharedHandsSystem.TryPickup(args.Mob,
+
+            _sharedHandsSystem.TryPickup(mob,
                 inhandEntity,
                 checkActionBlocker: false,
                 handsComp: handsComponent);

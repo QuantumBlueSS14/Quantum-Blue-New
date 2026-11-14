@@ -6,6 +6,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
+using Content.Server.Traits;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -15,6 +16,7 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IServerPreferencesManager _prefs = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!; // QB add
+    [Dependency] private readonly TraitSystem _traitSystem = default!; // QB add
 
     public override void Initialize()
     {
@@ -65,6 +67,9 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
 
         // QB add: set entity name based on profile if available
         if (profile != null)
+        {
             _metaData.SetEntityName(args.Entity.Value, profile.Name);
+            _traitSystem.ApplyTraits(args.Entity.Value, profile);
+        }
     }
 }
