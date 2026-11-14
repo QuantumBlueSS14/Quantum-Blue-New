@@ -27,8 +27,20 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
         if (args.Handled)
             return;
 
-        var profile = args.Session != null
-            ? _prefs.GetPreferences(args.Session.UserId).SelectedCharacter as HumanoidCharacterProfile
+        // var profile = args.Session != null
+        //     ? _prefs.GetPreferences(args.Session.UserId).SelectedCharacter as HumanoidCharacterProfile
+        //     : HumanoidCharacterProfile.RandomWithSpecies();
+
+        //QB edit: load profile from preferences if available
+        var preferences = args.Session != null
+            ? _prefs.GetPreferences(args.Session.UserId)
+            : null;
+
+        //QB select profile for antagonist roles if available
+        var profile = preferences != null
+            ? preferences.SelectProfileForAntag(args.AntagRoles)
+                ?? preferences.SelectProfileForAntag(args.FallbackRoles)
+                ?? preferences.SelectedCharacter as HumanoidCharacterProfile
             : HumanoidCharacterProfile.RandomWithSpecies();
 
         // imp edit start, add random profile generation

@@ -277,6 +277,46 @@ public sealed partial class AntagSelectionSystem
             : HasAntagPreferenceWithJob(session, def.PrefRoles, selectionTime, job.Value);
     }
 
+    // QB add
+    /// <summary>
+    /// Checks if a given humanoid character profile is eligible for any of the provided antag definitions with the specified job.
+    /// </summary>
+    public bool IsProfileEligibleForAntags(
+        HumanoidCharacterProfile profile,
+        List<AntagSelectionDefinition> definitions,
+        ProtoId<JobPrototype> job)
+    {
+        if (!profile.Enabled || !profile.JobPreferences.Contains(job))
+            return false;
+
+        foreach (var def in definitions)
+        {
+            var hasPrimary = def.PrefRoles.Any(profile.AntagPreferences.Contains);
+            var hasFallback = def.FallbackRoles.Any(profile.AntagPreferences.Contains);
+
+            if (!hasPrimary && !hasFallback)
+                return false;
+        }
+
+        return true;
+    }
+
+    /// <summary> QB
+    /// Gets all enabled character profiles that can take every preselected antag
+    /// definition while requesting the specified job.
+    /// </summary>
+    public IEnumerable<HumanoidCharacterProfile> GetEligibleAntagProfiles(
+        ICommonSession session,
+        List<AntagSelectionDefinition> definitions,
+        ProtoId<JobPrototype> job)
+    {
+        var pref = _pref.GetPreferences(session.UserId);
+
+        return pref.Characters.Values
+            .OfType<HumanoidCharacterProfile>()
+            .Where(profile => IsProfileEligibleForAntags(profile, definitions, job));
+    }
+
     /// <summary>
     /// Check if a player's session has any character that can become a fallback antag in <paramref name="def"/>.
     /// </summary>

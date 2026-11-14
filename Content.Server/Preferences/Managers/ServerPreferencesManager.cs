@@ -165,9 +165,9 @@ namespace Content.Server.Preferences.Managers
                 await _db.SaveConstructionFavoritesAsync(userId, favorites);
         }
 
-        private void HandleDeleteCharacterMessage(MsgDeleteCharacter message)
+        private async void HandleDeleteCharacterMessage(MsgDeleteCharacter message)
         {
-            DeleteProfile(message.MsgChannel.UserId, message.Slot).Wait(); // QB edit: route message handling through shared async method used by tests and cleanup logic.
+            await DeleteProfile(message.MsgChannel.UserId, message.Slot); // I FORGOT ANOTHER ASYNC/AWAIT!!! QB
         }
 
         public async Task DeleteProfile(NetUserId userId, int slot)

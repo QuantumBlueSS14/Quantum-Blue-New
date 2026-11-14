@@ -401,8 +401,11 @@ public sealed partial class StationJobsSystem
 
                 // If we're an antag, make sure that we have a character that is eligible to
                 // become all of our selected antags
-                if (isPreselectedAntag && !preselectedAntags.All(antag =>
-                        _antag.HasPrimaryAntagPreference(session, antag, AntagSelectionTime.IntraPlayerSpawn, job)))
+                // if (isPreselectedAntag && !preselectedAntags.All(antag =>
+                //         _antag.HasPrimaryAntagPreference(session, antag, AntagSelectionTime.IntraPlayerSpawn, job)))
+                //     continue;
+                if (isPreselectedAntag &&
+                    !_antag.GetEligibleAntagProfiles(session, preselectedAntags, jobId).Any())
                     continue;
 
                 if (weight is not null && job.Weight != weight.Value)

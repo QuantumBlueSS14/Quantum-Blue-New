@@ -528,7 +528,9 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         if (!antagEnt.HasValue)
         {
-            var getEntEv = new AntagSelectEntityEvent(session, ent, def.PrefRoles);
+            //var getEntEv = new AntagSelectEntityEvent(session, ent, def.PrefRoles);
+            // QB edit: include fallback roles in the event
+            var getEntEv = new AntagSelectEntityEvent(session, ent, def.PrefRoles, def.FallbackRoles);
 
             RaiseLocalEvent(ent, ref getEntEv, true);
             antagEnt = getEntEv.Entity;
@@ -728,13 +730,27 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
             return false;
 
         // Ensure that the current selected profile has relevant antag preferences set, if this is a late join this
-        // hasn't necessarily been checked yet.
-        if (_playerManager.TryGetSessionByEntity(entity.Value, out var session)
-            && _pref.TryGetCachedPreferences(session.UserId, out var preferences)
-            && preferences.SelectedCharacter is HumanoidCharacterProfile selectedProfile)
+        // hasn't necessarily been checked yet. QB Comment out, see below for reimplimentation
+        // if (_playerManager.TryGetSessionByEntity(entity.Value, out var session)
+        //     && _pref.TryGetCachedPreferences(session.UserId, out var preferences)
+        //     && preferences.SelectedCharacter is HumanoidCharacterProfile selectedProfile)
+        // {
+        //     if (!def.PrefRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences) &&
+        //         !def.FallbackRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences))
+        //         return false;
+        // }
+
+        if (_playerManager.TryGetSessionByEntity(entity.Value, out var session) // QB method rewrite
+            && _pref.TryGetCachedPreferences(session.UserId, out var preferences))
         {
-            if (!def.PrefRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences) &&
-                !def.FallbackRoles.ToHashSet().Overlaps(selectedProfile.AntagPreferences))
+            var hasAntagPreference = preferences.Characters.Values
+                .OfType<HumanoidCharacterProfile>()
+                .Any(profile =>
+                    profile.Enabled &&
+                    (def.PrefRoles.Any(profile.AntagPreferences.Contains) ||
+                    def.FallbackRoles.Any(profile.AntagPreferences.Contains)));
+
+            if (!hasAntagPreference)
                 return false;
         }
 
@@ -768,12 +784,24 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 /// Only raised if the selected player's current entity is invalid.
 /// </summary>
 [ByRefEvent]
-public record struct AntagSelectEntityEvent(ICommonSession? Session, Entity<AntagSelectionComponent> GameRule, List<ProtoId<AntagPrototype>> AntagRoles)
+public record struct AntagSelectEntityEvent( //QB Method rewrite
+    ICommonSession? Session,
+    Entity<AntagSelectionComponent> GameRule,
+    List<ProtoId<AntagPrototype>> AntagRoles,
+    List<ProtoId<AntagPrototype>> FallbackRoles)
 {
     public readonly ICommonSession? Session = Session;
 
-    /// list of antag role prototypes associated with a entity. used by the <see cref="AntagMultipleRoleSpawnerComponent"/>
+    /// <summary>
+    /// Preferred antagonist roles associated with this entity. 
+    /// Used by AntagMultipleRoleSpawnerComponent.
+    /// </summary>
     public readonly List<ProtoId<AntagPrototype>> AntagRoles = AntagRoles;
+
+    /// <summary>
+    /// Fallback antagonist roles associated with this entity.
+    /// </summary>
+    public readonly List<ProtoId<AntagPrototype>> FallbackRoles = FallbackRoles;
 
     public bool Handled => Entity != null;
 
