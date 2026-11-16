@@ -379,8 +379,8 @@
       - !type:HealthChange
         probability: 0.1
         damage:
-          groups:
-            Brute: 1
+          #groups: # QB - remove brute
+          #  Brute: 1
           types:
             Poison: 1
       # todo: cough, sneeze
@@ -390,19 +390,40 @@
           reagent: Histamine
           min: 45
         damage:
-          groups:
-            Brute: 1
-            Airloss: 2
+          #groups: # QB remove brute and airloss group
+            #Brute: 1 
+            #Airloss: 2
           types:
+            Asphyxiation: 2 # QB add asphyx type
             Poison: 2
       - !type:Emote
         conditions:
         - !type:ReagentCondition # Start Change
           reagent: Histamine
-          max: 45
+          min: 45 # QB change- max to minimum
         emote: Gasp
         force: true
         probability: 0.1 # End Change
+        # QB change start
+      - !type:Emote
+        conditions:
+        - !type:ReagentCondition # Start Change
+          reagent: Histamine
+          min: 20
+          max: 45 # after this they are choking
+        emote: Cough
+        force: true
+        probability: 0.1 # End Change
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Histamine
+          min: 60
+        key: Muted
+        component: Muted
+        type: Add
+        time: 5
+        # QB change end
       - !type:PopupMessage
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
@@ -416,6 +437,16 @@
         visualType: Medium
         messages: [ "histamine-effect-heavy-itchiness" ]
         probability: 0.2
+        # QB change begin - add choking
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Histamine
+          min: 60
+        type: Local
+        visualType: Large
+        messages: [ "histamine-effect-choking" ]
+        probability: 0.5
 
 - type: reagent
   id: Theobromine
