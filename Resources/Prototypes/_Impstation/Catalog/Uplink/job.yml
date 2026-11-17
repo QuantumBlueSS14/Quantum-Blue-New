@@ -154,24 +154,24 @@
 #      components:
 #      - SurplusBundle
 
-- type: listing
-  id: uplinkReverseBeartrap
-  name: uplink-bear-trap-name
-  description: uplink-bear-trap-desc
-  icon: { sprite: _Impstation/Clothing/Head/Misc/reversebeartrap.rsi, state: icon }
-  productEntity: ReverseBeartrap
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 6
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    makeHidden: true
-    whitelist:
-    - Clown
+# - type: listing QB comment out
+#   id: uplinkReverseBeartrap
+#   name: uplink-bear-trap-name
+#   description: uplink-bear-trap-desc
+#   icon: { sprite: _Impstation/Clothing/Head/Misc/reversebeartrap.rsi, state: icon }
+#   productEntity: ReverseBeartrap
+#   discountCategory: rareDiscounts
+#   discountDownTo:
+#     Telecrystal: 6
+#   cost:
+#     Telecrystal: 8
+#   categories:
+#   - UplinkJob
+#   conditions:
+#   - !type:BuyerJobCondition
+#     makeHidden: true
+#     whitelist:
+#     - Clown
 
 - type: listing
   id: uplinkCleanerGrenadeBleach
