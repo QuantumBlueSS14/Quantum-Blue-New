@@ -619,6 +619,10 @@
         tableId: UnknownShuttlesFreelanceTable
       - !type:NestedSelector
         tableId: UnknownShuttlesHostileTable
+      # imp start
+      - !type:NestedSelector
+        tableId: UnknownShuttlesPossibleHostileTable
+      # imp end
 
 - type: entity
   id: BasicStationEventScheduler

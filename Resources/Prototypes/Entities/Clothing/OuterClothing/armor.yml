@@ -108,9 +108,9 @@
   - type: StaminaResistance # QB
     damageCoefficient: 0.8 # QB
   - type: Sprite
-    sprite: Clothing/OuterClothing/Vests/detvest.rsi
+    sprite: _Impstation/Clothing/OuterClothing/Armor/detvest.rsi #imp edit: resprite
   - type: Clothing
-    sprite: Clothing/OuterClothing/Vests/detvest.rsi
+    sprite: _Impstation/Clothing/OuterClothing/Armor/detvest.rsi #imp edit: resprite
 
 - type: entity
   parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing ]
