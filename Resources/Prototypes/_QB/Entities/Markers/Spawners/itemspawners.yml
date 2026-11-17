@@ -1,0 +1,176 @@
+- type: entityTable
+  id: QBStationScrapSpawnerCommon
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 70
+      children:
+      - !type:NestedSelector
+        tableId: QBSalvageScrapLowValueBad
+        weight: 60
+      - !type:NestedSelector
+        tableId: QBSalvageScrapHighValueBad
+        weight: 30
+      - !type:NestedSelector
+        tableId: QBSalvageScrapLargeBad
+        weight: 10
+    - !type:NestedSelector
+      tableId: GenericTrashItems
+      weight: 10
+    - !type:NestedSelector
+      weight: 5
+      tableId: MaintToolsTable
+
+- type: entityTable
+  id: QBStationScrapSpawnerValuable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 70
+      children:
+      - !type:NestedSelector
+        tableId: QBSalvageScrapLowValueBad
+        weight: 10
+      - !type:NestedSelector
+        tableId: QBSalvageScrapHighValueBad
+        weight: 60
+      - !type:NestedSelector
+        tableId: QBSalvageScrapLargeBad
+        weight: 30
+    - !type:NestedSelector
+      tableId: GenericTrashItems
+      weight: 5
+    - !type:NestedSelector
+      weight: 10
+      tableId: MaintToolsTable
+
+- type: entity
+  parent: MarkerBase
+  id: QBStationSpawnerScrapCommon
+  name: Station Scrap Spawner
+  suffix: low value
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+    - sprite: Objects/Materials/Scrap/generic.rsi
+      state: metal-1
+  - type: EntityTableSpawner
+    offset: 0.4
+    table: !type:NestedSelector
+      tableId: QBStationScrapSpawnerCommon
+
+- type: entity
+  parent: MarkerBase
+  id: QBStationSpawnerScrapValuable
+  name: Station Scrap Spawner
+  suffix: valuable
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+    - sprite: Objects/Materials/Scrap/generic.rsi
+      state: junk-airlock-1
+  - type: EntityTableSpawner
+    offset: 0.4
+    table: !type:NestedSelector
+      tableId: QBStationScrapSpawnerValuable
+
+- type: entity
+  parent: MarkerBase
+  id: QBStationSpawnerScrapLarge
+  name: Station Scrap Spawner
+  suffix: large
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+    - sprite: _Impstation/Structures/Storage/canister.rsi
+      state: grey-1
+  - type: EntityTableSpawner
+    offset: 0.4
+    table: !type:NestedSelector
+      tableId: QBSalvageScrapLargestBad
+
+# Barrels
+
+- type: entityTable
+  id: QBBarrelSafeSpawner
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      weight: 0.8
+      tableId: RandomChemicalBarrelCondiments
+    - !type:NestedSelector
+      weight: 0.8
+      tableId: RandomChemicalBarrelDrinks
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelCleaning
+    - !type:NestedSelector
+      weight: 0.2
+      tableId: RandomChemicalBarrelBiological
+    - !type:NestedSelector
+      weight: 0.1
+      tableId: RandomChemicalBarrelFunny
+    - !type:NestedSelector
+      weight: 0.05
+      tableId: RandomChemicalBarrel
+
+- type: entityTable
+  id: QBBarrelUnsafeSpawner
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      weight: 1
+      tableId: RandomChemicalBarrel
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelCondiments
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelDrinks
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelBiological
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelCleaning
+    - !type:NestedSelector
+      weight: 0.8
+      tableId: RandomChemicalBarrelFunny
+    - !type:NestedSelector
+      weight: 0.4
+      tableId: RandomChemicalBarrelRadioactive
+
+- type: entity
+  parent: MarkerBase
+  id: QBSpawnerBarrelSafe
+  name: Random Barrel Spawner
+  suffix: safe
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+    - sprite: _Impstation/Structures/Storage/barrels.rsi
+      state: gray
+  - type: EntityTableSpawner
+    offset: 0.4
+    table: !type:NestedSelector
+      tableId: QBBarrelSafeSpawner
+
+- type: entity
+  parent: MarkerBase
+  id: QBSpawnerBarrelUnsafe
+  name: Random Barrel Spawner
+  suffix: unsafe
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+    - sprite: _Impstation/Structures/Storage/barrels.rsi
+      state: radioactive
+  - type: EntityTableSpawner
+    offset: 0.4
+    table: !type:NestedSelector
+      tableId: QBBarrelUnsafeSpawner

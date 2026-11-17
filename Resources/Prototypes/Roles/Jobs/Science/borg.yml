@@ -25,7 +25,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 40h # imp, was 10h
+      time: 20h # QB - imp's was 40h
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-ai # imp edit, lawsync

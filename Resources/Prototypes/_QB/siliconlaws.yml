@@ -1,0 +1,75 @@
+- type: siliconLaw
+  id: Cargo1
+  order: 1
+  lawString: law-cargo-1
+
+- type: siliconLaw
+  id: Cargo2
+  order: 2
+  lawString: law-cargo-2
+
+- type: siliconLaw
+  id: Cargo3
+  order: 3
+  lawString: law-cargo-3
+
+- type: siliconLaw
+  id: Cargo4
+  order: 4
+  lawString: law-cargo-4
+
+- type: siliconLaw
+  id: Cargo5
+  order: 5
+  lawString: law-cargo-5
+
+- type: siliconLawset
+  id: Cargo
+  laws:
+  - Cargo1
+  - Cargo2
+  - Cargo3
+  - Cargo4
+  - Cargo5
+  obeysTo: laws-owner-crew
+
+- type: siliconLaw
+  id: Salvage1
+  order: 1
+  lawString: law-salvage-1
+
+- type: siliconLaw
+  id: Salvage2
+  order: 2
+  lawString: law-salvage-2
+
+- type: siliconLaw
+  id: Salvage3
+  order: 3
+  lawString: law-salvage-3
+
+- type: siliconLaw
+  id: Salvage4
+  order: 4
+  lawString: law-salvage-4
+
+- type: siliconLaw
+  id: Salvage5
+  order: 5
+  lawString: law-salvage-5
+
+- type: siliconLaw
+  id: Salvage6
+  order: 6
+  lawString: law-salvage-6
+
+- type: siliconLawset
+  id: Salvage
+  laws:
+  - Salvage1
+  - Salvage2
+  - Salvage3
+  - Salvage4
+  - Salvage5
+  - Salvage6
+  obeysTo: laws-owner-crew

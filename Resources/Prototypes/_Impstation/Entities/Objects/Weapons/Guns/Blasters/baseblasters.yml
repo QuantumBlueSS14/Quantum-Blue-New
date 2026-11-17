@@ -1,7 +1,7 @@
 # For large, 2-handed blasters that have a built-in battery. For power-cell energy weapons see basebatteryguns.yml.
 - type: entity
   name: BaseWeaponBlasterRifle
-  parent: [BaseObjectVerbsCommon, BaseWeaponBattery, BaseGunWieldable] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: BaseBlasterRifle
   description: A rooty tooty point and shooty.
   abstract: true
@@ -37,7 +37,7 @@
 # For smaller blaster pistols that have a built-in battery.
 - type: entity
   name: BaseWeaponBlasterPistol
-  parent: [BaseObjectVerbsCommon, BaseWeaponBatterySmall] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseWeaponBatterySmall
   id: BaseBlasterPistol
   description: A rooty tooty point and shooty.
   abstract: true

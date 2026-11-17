@@ -605,3 +605,14 @@
     sprite: _Impstation/Clothing/Uniforms/Jumpsuit/atmos_flightsuit.rsi
   - type: Clothing
     sprite: _Impstation/Clothing/Uniforms/Jumpsuit/atmos_flightsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformGnomeCostume
+  name: gnome costume
+  description: A blue tunic and red leggings, fit for a gnome. Belt included, beard not included.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/Uniforms/Jumpsuit/gnomecostume.rsi
+  - type: Clothing
+    sprite: _Impstation/Clothing/Uniforms/Jumpsuit/gnomecostume.rsi

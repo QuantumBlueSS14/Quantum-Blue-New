@@ -42,6 +42,7 @@
       # - ServiceMiscPackDynamic # disabled until there is something to fish
       - FauxTiles #TODO: this should be removed consistent with this being moved to cutter machine, possibly add LatheAnnouncing to the Common channel for cutter machine
       - NFService # Frontier
+      - Instruments # QB
   - type: EmagLatheRecipes
     emagStaticPacks:
       - ServiceEmagged

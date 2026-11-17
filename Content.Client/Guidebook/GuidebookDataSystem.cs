@@ -1,4 +1,5 @@
 using Content.Shared.Guidebook;
+using Robust.Shared.Network; //QB add
 
 namespace Content.Client.Guidebook;
 
@@ -10,6 +11,8 @@ namespace Content.Client.Guidebook;
 /// </summary>
 public sealed class GuidebookDataSystem : EntitySystem
 {
+    [Dependency] private readonly INetManager _net = default!; //QB add
+
     private GuidebookData? _data;
 
     public override void Initialize()
@@ -18,6 +21,11 @@ public sealed class GuidebookDataSystem : EntitySystem
 
         SubscribeNetworkEvent<UpdateGuidebookDataEvent>(OnServerUpdated);
 
+        // QB edit start - RT can call Initialize before the client is connected;
+        // don't send a request while the net connection is still absent.
+        if (!_net.IsConnected)
+            return;
+        // QB edit end
         // Request data from the server
         RaiseNetworkEvent(new RequestGuidebookDataEvent());
     }

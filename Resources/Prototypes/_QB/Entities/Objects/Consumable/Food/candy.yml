@@ -1,0 +1,24 @@
+# lolipop
+
+- type: entity
+  parent: FoodSnackSwirlLollipop
+  id: FoodSnackSwirlLollipopUplink  # "stealth item" lolipop with chemicals
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Stimulants # zoomies
+          Quantity: 10
+        - ReagentId: Bicaridine
+          Quantity: 30
+  - type: MeleeWeapon # more dangerous than normal!
+    hidden: true
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 5
+        Slashing: 2
+    soundHit:
+      collection: WeakHit
