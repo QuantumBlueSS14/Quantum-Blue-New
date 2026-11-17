@@ -25,16 +25,16 @@
     Bloodpack: 3
     ChemistryBottleEpinephrine: 3
     PillCanisterTricordrazine: 2
-  contrabandInventory:
-    PillCanisterRandom: 1
-    PowerCellSmall: 2
-    PillCanisterIron: 1
-    PillCanisterCopper: 1
-    PillCanisterPotassiumIodide: 1
-    SyringeIpecac: 1
-    ClothingEyesHudMedical: 2
-    ClothingEyesEyepatchHudMedical: 2
-    ClothingEyesGlassesHudMedical: 2
+  # contrabandInventory: QB fix build fail
+  #   PillCanisterRandom: 1
+  #   PowerCellSmall: 2
+  #   PillCanisterIron: 1
+  #   PillCanisterCopper: 1
+  #   PillCanisterPotassiumIodide: 1
+  #   SyringeIpecac: 1
+  #   ClothingEyesHudMedical: 2
+  #   ClothingEyesEyepatchHudMedical: 2
+  #   ClothingEyesGlassesHudMedical: 2
   contrabandInventory:
     PillCanisterRandom: 3
     PillSpaceDrugs: 3

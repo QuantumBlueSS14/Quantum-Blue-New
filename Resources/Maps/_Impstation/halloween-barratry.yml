@@ -135900,13 +135900,13 @@ entities:
     - type: Transform
       pos: -15.5,-18.5
       parent: 1
-- proto: RomerolMicroInjectorUsed
-  entities:
-  - uid: 23842
-    components:
-    - type: Transform
-      pos: 4.7003126,28.378609
-      parent: 1
+# - proto: RomerolMicroInjectorUsed
+#   entities:
+#   - uid: 23842
+#     components:
+#     - type: Transform
+#       pos: 4.7003126,28.378609
+#       parent: 1
 - proto: RubberChicken
   entities:
   - uid: 13338
