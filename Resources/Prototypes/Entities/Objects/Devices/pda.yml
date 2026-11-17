@@ -1585,7 +1585,7 @@
   - type: Icon
     state: pda-seniorofficer
 
-- type: entity
+- type: entity # QB version
   parent: BasePDA
   id: SeniorCourierPDA
   name: senior courier PDA
@@ -1596,26 +1596,13 @@
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
-      !type:String
-       pda-senior-courier
+       !type:String
+       pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
   - type: PdaBorderColor
-    borderColor: "#8d6747"
-    accentVColor: "#3d58a5"
+    borderColor: "#e39751"
+    accentVColor: "#DFDFDF"
   - type: Icon
-    sprite: _Impstation/Objects/Devices/senior_courier_pda.rsi
-    state: pda-senior-courier
-  - type: Sprite
-    sprite: _Impstation/Objects/Devices/senior_courier_pda.rsi
-    layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
-      state: "pda-senior-courier"
-    - state: "light_overlay"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
-      shader: "unshaded"
-      visible: false
-    - state: "id-overlay-senior-courier"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
-      visible: false
+    state: pda-mailcarrier # QB - Use non senior sprite until implemented. Was "pda-seniorcourier"
 
 - type: entity
   parent: [ BaseHighlyIllegalContraband, BasePDA ]

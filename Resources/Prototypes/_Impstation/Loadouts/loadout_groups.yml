@@ -850,9 +850,9 @@
   id: CourierBackpack
   name: loadout-group-courier-backpack
   loadouts:
-  - CourierBackpack
-  - CourierDuffle
-  - CourierSatchel
+  - CargoTechnicianBackpack #QB change
+  - CargoTechnicianSatchel #QB change
+  - CargoTechnicianDuffel #QB change
 
 - type: loadoutGroup
   id: CourierNeck

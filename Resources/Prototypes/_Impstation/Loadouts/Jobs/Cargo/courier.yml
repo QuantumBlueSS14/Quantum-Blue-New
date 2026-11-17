@@ -77,18 +77,18 @@
   equipment:
     id: CourierPDA
 
-# Back
-- type: loadout
-  id: CourierBackpack
-  equipment:
-    back: ClothingBackpackCourier
+# # Back QB Comment out
+# - type: loadout
+#   id: CourierBackpack
+#   equipment:
+#     back: ClothingBackpackCourier
 
-- type: loadout
-  id: CourierDuffle
-  equipment:
-    back: ClothingBackpackDuffleCourier
+# - type: loadout
+#   id: CourierDuffle
+#   equipment:
+#     back: ClothingBackpackDuffleCourier
 
-- type: loadout
-  id: CourierSatchel
-  equipment:
-    back: ClothingBackpackSatchelCourier
+# - type: loadout
+#   id: CourierSatchel
+#   equipment:
+#     back: ClothingBackpackSatchelCourier
