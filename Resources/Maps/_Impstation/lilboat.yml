@@ -46848,9 +46848,10 @@ entities:
       gridUid: 2
   - uid: 1857
     components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 48.5,0.5
       parent: 2
-    - type: DeltaPressure
-      gridUid: 2
   - uid: 1860
     components:
     - type: Transform
