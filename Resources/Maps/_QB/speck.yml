@@ -16,6 +16,10 @@ tilemap:
   1: Space
   20: FloorBar
   14: FloorChapelNE
+  13: FloorChapelNW
+  16: FloorChapelSE
+  15: FloorChapelSW
+  3: FloorDark
   31: FloorDarkDirty
   25: FloorDarkMono
   11: FloorFreezer
@@ -34104,6 +34108,13 @@ entities:
 - proto: PlasmaReinforcedWindowDirectional
   entities:
   - uid: 1166
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 15.5,2.5
+      parent: 2
+  - uid: 1167
+    components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,0.5
