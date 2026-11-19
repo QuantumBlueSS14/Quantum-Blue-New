@@ -924,7 +924,7 @@
     - FoodMushroom
   # Euphoria additions start
   mutationPrototypes:
-    - WalkingMushrooms
+    - LivingMooncaps # QB rename walking mushroom to living mooncap
   # Euphoria additions end
   lifespan: 35
   maturation: 10

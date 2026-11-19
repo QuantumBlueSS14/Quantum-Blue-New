@@ -207,8 +207,8 @@
 # mushroom men
 - type: entity
   parent: [MobBaseAncestor]
-  id: MobMythicalMushroom # ported from Euphoria
-  name: walking mushroom
+  id: MobLivingMooncap # "Mythical Mushrooms" ported from Euphoria
+  name: living mooncap
   description: A cheery fellow. Definitely not a goblin. Or an elf. Or a gnome.
   components:
   - type: Sprite
@@ -233,8 +233,8 @@
         Base: mushboy_dead
   - type: GhostTakeoverAvailable
   - type: GhostRole
-    name: ghost-role-information-walking-mushroom-name
-    description: ghost-role-information-walking-mushroom-description
+    name: ghost-role-information-living-mooncap-name
+    description: ghost-role-information-living-mooncap-description
     rules: ghost-role-information-freeagent-rules
     makeSentient: true
     allowSpeech: true
@@ -352,7 +352,7 @@
   - type: Extractable
     grindableSolutionName: bloodstream
   - type: Produce
-    seedId: WalkingMushrooms
+    seedId: LivingMooncaps
   - type: Reactive # copied from killer tomato
     groups:
       Flammable: [ Touch ]

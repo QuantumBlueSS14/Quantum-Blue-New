@@ -1,15 +1,15 @@
 # walking mushrooms
 - type: seed
-  id: WalkingMushrooms
-  name: seeds-walking-mushroom-name
+  id: LivingMooncaps # QB rename walking mushroom
+  name: seeds-living-mooncap-name # QB rename walking mushroom
   noun: seeds-noun-seeds
-  displayName: seeds-walking-mushroom-display-name
+  displayName: seeds-living-mooncap-display-name # QB rename walking mushroom
   plantRsi: _QB/Objects/Specific/Hydroponics/walking_mushroom.rsi
   plantLogImpact: High
   harvestLogImpact: High
-  packetPrototype: WalkingMushroomSeeds
+  packetPrototype: LivingMooncapSeeds # QB rename walking mushroom
   productPrototypes:
-  - MobMythicalMushroom # spawn our shroom
+  - MobMLivingMooncap # QB rename walking mushroom
   harvestRepeat: NoRepeat # dont let this repeat, one and done
   lifespan: 25
   maturation: 15
