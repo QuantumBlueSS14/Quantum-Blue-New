@@ -1,0 +1,17 @@
+- type: reagent
+  id: Mosquitol
+  name: reagent-name-mosquitol
+  group: Toxins
+  desc: reagent-desc-mosquital
+  physicalDesc: reagent-physical-desc-sickly
+  contrabandSeverity: Minor
+  flavor: itchy
+  color: "#807A31" # similar to insect blood but darker
+  tileReactions:
+  - !type:CreateEntityTileReaction
+    entity: MobMosquitoAngry
+    usage: 2
+    maxOnTile: 2
+    randomOffsetMax: 0.3
+    maxOnTileWhitelist:
+      components: [ Injector ] # desperately avoiding making mosquito tag
