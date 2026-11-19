@@ -60,6 +60,7 @@
   - Mosquito2
   - Mosquito3
   - Mosquito4
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Salvage1
