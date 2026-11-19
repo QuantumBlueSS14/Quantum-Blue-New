@@ -236,6 +236,7 @@
     - id: ChemSampleTubePhlogiston
     - id: ChemSampleTubeFluorosulfuricAcid
     - id: ChemSampleTubePhilosophersJuice
+    - id: ChemSampleTubeMosquitol # QB
 
 # Chems
 
@@ -2284,3 +2285,20 @@
           Quantity: 10
   - type: Label
     currentLabel: Matter Alteringing Substance, Handle With Caution
+
+  # QB add
+- type: entity
+  parent: ChemSampleTube
+  id: ChemSampleTubeMosquitol
+  suffix: Mosquitol
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 10
+        reagents:
+        - ReagentId: Mosquitol
+          Quantity: 10
+  - type: Label
+    currentLabel: Biological Sample, Handle With Care
+    # QB end
