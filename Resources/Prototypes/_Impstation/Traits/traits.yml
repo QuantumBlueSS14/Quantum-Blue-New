@@ -58,7 +58,7 @@
     components:
     - SlasherMindRole
     - GoobChangelingRole
-    - NukeOpsRole #To do - split
+    - NukeopsRole #To do - split
 
 - type: trait
   id: ImperfectCloneAccents
@@ -103,7 +103,7 @@
     components:
     - SlasherMindRole
     - GoobChangelingRole
-    - NukeOpsRole #To do - split 
+    - NukeopsRole #To do - split 
 
 - type: trait
   id: RandomCharacter

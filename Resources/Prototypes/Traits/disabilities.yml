@@ -16,11 +16,11 @@
     - Visual
   cost: -16
   # imp addition end
-  mindRoleBlacklist:
+  mindRoleBlacklist: #QB Add
     components:
     - SlasherMindRole
     - GoobChangelingRole
-    - NukeOpsRole #To do - split
+    - NukeopsRole #To do - split
 
 - type: trait
   id: PoorVision
@@ -68,11 +68,11 @@
     - Unrevivability
   cost: -3
   # imp addition ends
-  mindRoleBlacklist:
+  mindRoleBlacklist: #QB Add
     components:
     - SlasherMindRole
     - GoobChangelingRole
-    - NukeOpsRole #To do - split
+    - NukeopsRole #To do - split
 
 - type: trait
   id: Monochromacy
@@ -160,4 +160,4 @@
   mindRoleBlacklist: #QB Add
     components:
     - SlasherMindRole
-    - NukeOpsRole #To do - split
+    - NukeopsRole #To do - split
