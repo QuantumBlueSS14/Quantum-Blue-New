@@ -4,8 +4,7 @@
   group: Toxins
   desc: reagent-desc-mosquital
   physicalDesc: reagent-physical-desc-sickly
-  contrabandSeverity: Minor
-  flavor: itchy
+  flavor: bitter
   color: "#807A31" # similar to insect blood but darker
   tileReactions:
   - !type:CreateEntityTileReaction
