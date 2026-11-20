@@ -1,4 +1,13 @@
 Entries:
+  - author: SeeroftheNight
+    changes:
+      - type: Add
+        message: You can now save labels between rounds (cherry pick from DV/Starlight)
+      - type: Tweak
+        message: The original item name and label are now swapped (cherry pick from DV/Starlight)
+    id: 222
+    time: '2026-11-20T02:08:34.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/315
   - author: AlinaNova21
     changes:
       - type: Add
