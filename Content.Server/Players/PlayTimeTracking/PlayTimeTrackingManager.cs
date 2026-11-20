@@ -123,7 +123,8 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager, IPostInjec
             if (!_playTimeData.TryGetValue(player, out var data))
                 continue;
 
-            DebugTools.Assert(data.IsDirty);
+            if (!data.IsDirty)
+                continue;
 
             if (data.NeedRefreshTackers)
             {

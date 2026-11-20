@@ -1,3 +1,26 @@
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+//
+// SPDX-License-Identifier: MIT
+
 using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
@@ -9,6 +32,7 @@ using Content.Server.Preferences.Managers;
 using Content.Server.Station.Events;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
+using Content.Shared.Antag;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Players;
@@ -54,7 +78,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<PlayerJoinedLobbyEvent>(OnPlayerJoinedLobby);
         SubscribeLocalEvent<StationJobsGetCandidatesEvent>(OnStationJobsGetCandidates);
-        SubscribeLocalEvent<IsRoleAllowedEvent>(OnIsRoleAllowed);
+        SubscribeLocalEvent<IsRoleAllowedEvent>(OnIsRoleAllowed); // QB edit: this branch still raises IsRoleAllowedEvent for spawn-role gating.
         SubscribeLocalEvent<GetDisallowedJobsEvent>(OnGetDisallowedJobs);
         _adminManager.OnPermsChanged += AdminPermsChanged;
     }
@@ -76,9 +100,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         {
             trackers.Add(PlayTimeTrackingShared.TrackerAdmin);
             trackers.Add(PlayTimeTrackingShared.TrackerOverall);
-
-            if (!_cfg.GetCVar(CCVars.GameAdminJobTracking))
-                return;
+            return;
         }
 
         if (!IsPlayerAlive(player))
@@ -88,9 +110,6 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         trackers.UnionWith(GetTimedRoles(player));
     }
 
-    /// <summary>
-    /// Returns true if the player has an attached mob and it is alive (even if in critical).
-    /// </summary>
     private bool IsPlayerAlive(ICommonSession session)
     {
         var attached = session.AttachedEntity;
@@ -126,7 +145,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
     private void OnRoleEvent(RoleEvent ev)
     {
-        if (_playerManager.TryGetSessionById(ev.Mind.UserId, out var session))
+        if (ev.Mind.UserId is { } userId && _playerManager.TryGetSessionById(userId, out var session))
             _tracking.QueueRefreshTrackers(session);
     }
 
@@ -192,12 +211,53 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         ev.Jobs.UnionWith(GetDisallowedJobs(ev.Player));
     }
 
-    /// <summary>
-    /// Checks if the player meets role requirements.
-    /// </summary>
-    /// <param name="player">The player.</param>
-    /// <param name="jobs">A list of role prototype IDs</param>
-    /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
+    private Dictionary<string, TimeSpan>? GetPlayTimesIfEnabled(ICommonSession player)
+    {
+        Dictionary<string, TimeSpan>? playTimes = null;
+        if (_cfg.GetCVar(CCVars.GameRoleTimers))
+        {
+            if (!_tracking.TryGetTrackerTimes(player, out var outPlayTimes))
+            {
+                Log.Error($"Unable to check playtimes {Environment.StackTrace}");
+                playTimes = new Dictionary<string, TimeSpan>();
+            }
+            else
+            {
+                playTimes = outPlayTimes;
+            }
+        }
+        return playTimes;
+    }
+
+    private List<HumanoidCharacterProfile> GetProfilesForJobChecks(NetUserId userId, ProtoId<JobPrototype> job)
+    {
+        var prefs = _preferencesManager.GetPreferences(userId);
+        var enabledProfiles = prefs.GetAllEnabledProfilesForJob(job).Values.ToList();
+        if (enabledProfiles.Count > 0)
+            return enabledProfiles;
+
+        return prefs.GetAllProfilesForJob(job).Values.ToList();
+    }
+
+    private List<HumanoidCharacterProfile> GetProfilesForRoleChecks(NetUserId userId)
+    {
+        var prefs = _preferencesManager.GetPreferences(userId);
+        var allProfiles = prefs.Characters.Values.OfType<HumanoidCharacterProfile>().ToList();
+        var enabledProfiles = allProfiles.Where(profile => profile.Enabled).ToList();
+        return enabledProfiles.Count > 0 ? enabledProfiles : allProfiles;
+    }
+
+    public bool IsAllowed(ICommonSession player, string role)
+    {
+        if (!_prototypes.TryIndex<JobPrototype>(role, out var job))
+            return true;
+
+        var playTimes = GetPlayTimesIfEnabled(player);
+
+        var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+        return profilesForCheck.Any(profile => JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile));
+    }
+
     public bool IsAllowed(ICommonSession player, List<ProtoId<JobPrototype>>? jobs)
     {
         if (jobs is null)
@@ -212,12 +272,6 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         return true;
     }
 
-    /// <summary>
-    /// Checks if the player meets role requirements.
-    /// </summary>
-    /// <param name="player">The player.</param>
-    /// <param name="antags">A list of role prototype IDs</param>
-    /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
     public bool IsAllowed(ICommonSession player, List<ProtoId<AntagPrototype>>? antags)
     {
         if (antags is null)
@@ -232,77 +286,44 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         return true;
     }
 
-    /// <summary>
-    /// Checks if the player meets role requirements.
-    /// </summary>
-    /// <param name="player">The player.</param>
-    /// <param name="job">A list of role prototype IDs</param>
-    /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
     public bool IsAllowed(ICommonSession player, ProtoId<JobPrototype> job)
     {
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
+        if (!_prototypes.TryIndex(job, out var jobProto))
             return true;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
-
-        var requirements = _roles.GetRoleRequirements(job);
-        return JobRequirements.TryRequirementsMet(
-            requirements,
-            playTimes,
-            out _,
-            EntityManager,
-            _prototypes,
-            (HumanoidCharacterProfile?)
-            _preferencesManager.GetPreferences(player.UserId).SelectedCharacter);
+        var playTimes = GetPlayTimesIfEnabled(player);
+        var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+        return profilesForCheck.Any(profile => JobRequirements.TryRequirementsMet(jobProto, playTimes, out _, EntityManager, _prototypes, profile));
     }
 
-    /// <summary>
-    /// Checks if the player meets role requirements.
-    /// </summary>
-    /// <param name="player">The player.</param>
-    /// <param name="antag">A list of role prototype IDs</param>
-    /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
     public bool IsAllowed(ICommonSession player, ProtoId<AntagPrototype> antag)
     {
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
+        if (!_prototypes.TryIndex(antag, out var antagProto))
             return true;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
+        var playTimes = GetPlayTimesIfEnabled(player);
+        var profilesForCheck = GetProfilesForRoleChecks(player.UserId);
 
-        var requirements = _roles.GetRoleRequirements(antag);
-        return JobRequirements.TryRequirementsMet(
-            requirements,
-            playTimes,
-            out _,
-            EntityManager,
-            _prototypes,
-            (HumanoidCharacterProfile?)
-            _preferencesManager.GetPreferences(player.UserId).SelectedCharacter);
+        return profilesForCheck.Any(profile =>
+            JobRequirements.TryRequirementsMet(
+                _roles.GetRoleRequirements(antagProto),
+                playTimes,
+                out _,
+                EntityManager,
+                _prototypes,
+                profile));
     }
 
     public HashSet<ProtoId<JobPrototype>> GetDisallowedJobs(ICommonSession player)
     {
         var roles = new HashSet<ProtoId<JobPrototype>>();
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
-            return roles;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
+        var playTimes = GetPlayTimesIfEnabled(player);
 
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
-            if (JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, (HumanoidCharacterProfile?) _preferencesManager.GetPreferences(player.UserId).SelectedCharacter))
+            var profilesForCheck = GetProfilesForJobChecks(player.UserId, job.ID);
+            if (profilesForCheck.All(profile => !JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, profile)))
                 roles.Add(job.ID);
         }
 
@@ -311,27 +332,18 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
     public void RemoveDisallowedJobs(NetUserId userId, List<ProtoId<JobPrototype>> jobs)
     {
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
-            return;
-
         var player = _playerManager.GetSessionById(userId);
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            // Sorry mate but your playtimes haven't loaded.
-            Log.Error($"Playtimes weren't ready yet for {player} on roundstart!");
-            playTimes ??= new Dictionary<string, TimeSpan>();
-        }
 
-        for (var i = 0; i < jobs.Count; i++)
+        var playTimes = GetPlayTimesIfEnabled(player);
+
+        foreach (var job in jobs.ShallowClone())
         {
-            if (_prototypes.Resolve(jobs[i], out var job)
-                && JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, (HumanoidCharacterProfile?) _preferencesManager.GetPreferences(userId).SelectedCharacter))
-            {
+            if(!_prototypes.TryIndex(job, out var jobToRemove))
                 continue;
-            }
-
-            jobs.RemoveSwap(i);
-            i--;
+            var profilesForCheck = GetProfilesForJobChecks(player.UserId, job);
+            if (profilesForCheck.All(profile =>
+                    !JobRequirements.TryRequirementsMet(jobToRemove, playTimes, out _, EntityManager, _prototypes, profile)))
+                jobs.Remove(job);
         }
     }
 

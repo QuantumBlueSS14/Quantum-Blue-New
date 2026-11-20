@@ -31,6 +31,7 @@ public sealed partial class TestPair : RobustIntegrationTest.TestPair
 
         // Prevent info log spam in some tests (particularly SpawnAndDeleteAllEntitiesOnDifferentMaps)
         Server.System<SharedMapSystem>().Log.Level = LogLevel.Warning;
+        Client.ResolveDependency<ILogManager>().GetSawmill("ui").Level = LogLevel.Error;
         Client.EntMan.EntitySysManager.SystemLoaded += (_, e) =>
         {
             if (e.System is SharedMapSystem map)
@@ -40,6 +41,8 @@ public sealed partial class TestPair : RobustIntegrationTest.TestPair
         var settings = (PoolSettings)Settings;
         if (!settings.DummyTicker)
         {
+            await Server.WaitPost(() => Server.CfgMan.SetCVar(CCVars.GameDummyTicker, false)); // QB edit
+            await Server.WaitPost(() => Server.CfgMan.SetCVar(CCVars.GameLobbyEnabled, settings.InLobby)); // QB edit
             var gameTicker = Server.System<GameTicker>();
             await Server.WaitPost(() => gameTicker.RestartRound());
         }

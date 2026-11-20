@@ -41,6 +41,12 @@ public sealed partial class TraitPrototype : IPrototype
     [DataField]
     public EntityWhitelist? Blacklist;
 
+    /// <summary> QB Add
+    /// Don't apply this trait to entities whose minds have a role matching this whitelist.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? MindRoleBlacklist;
+
     /// <summary>
     /// The components that get added to the player, when they pick this trait.
     /// NOTE: When implementing a new trait, it's preferable to add it as a status effect instead if possible.

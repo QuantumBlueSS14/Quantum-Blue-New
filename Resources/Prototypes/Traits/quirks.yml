@@ -10,6 +10,11 @@
   # imp addition starts
   cost: -12
   # imp addition ends
+  mindRoleBlacklist:
+    components:
+    - SlasherMindRole
+    - GoobChangelingRole
+    - NukeopsRole #To do - split this into separate roles for different types of nukies
 
 - type: trait
   id: LightweightDrunk

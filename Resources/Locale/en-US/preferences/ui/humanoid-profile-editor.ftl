@@ -25,6 +25,7 @@ humanoid-profile-editor-reset-button = Reset
 humanoid-profile-editor-spawn-priority-label = Spawn priority:
 humanoid-profile-editor-eyes-label = Eye color:
 humanoid-profile-editor-jobs-tab = Jobs
+# QB edit: the default unavailable behavior now stays in the lobby, and the antag preference labels are binary enabled-state toggles.
 humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Stay in lobby if preference unavailable.
 humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Be {INDEFINITE($overflowJob)} {$overflowJob} if preference unavailable.
 humanoid-profile-editor-preference-jumpsuit = Jumpsuit
@@ -42,8 +43,10 @@ humanoid-profile-editor-preference-spawn-priority-cryosleep = Cryosleep
 humanoid-profile-editor-jobs-amount-in-department-tooltip = Jobs in the {$departmentName} department
 humanoid-profile-editor-department-jobs-label = {$departmentName} jobs
 humanoid-profile-editor-antags-tab = Antags
-humanoid-profile-editor-antag-preference-yes-button = Yes
-humanoid-profile-editor-antag-preference-no-button = No
+humanoid-profile-editor-antag-preference-disabled-button = Disabled
+humanoid-profile-editor-antag-preference-enabled-button = Enabled
+humanoid-profile-editor-job-preference-disabled-button = Disabled
+humanoid-profile-editor-job-preference-enabled-button = Enabled
 
 humanoid-profile-editor-job-priority-high-button = High
 humanoid-profile-editor-job-priority-medium-button = Medium

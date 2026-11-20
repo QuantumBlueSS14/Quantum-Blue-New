@@ -6,6 +6,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
+using Content.Server.Traits;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -14,6 +15,8 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
     [Dependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IServerPreferencesManager _prefs = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!; // QB add
+    [Dependency] private readonly TraitSystem _traitSystem = default!; // QB add
 
     public override void Initialize()
     {
@@ -27,8 +30,20 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
         if (args.Handled)
             return;
 
-        var profile = args.Session != null
-            ? _prefs.GetPreferences(args.Session.UserId).SelectedCharacter as HumanoidCharacterProfile
+        // var profile = args.Session != null
+        //     ? _prefs.GetPreferences(args.Session.UserId).SelectedCharacter as HumanoidCharacterProfile
+        //     : HumanoidCharacterProfile.RandomWithSpecies();
+
+        //QB edit: load profile from preferences if available
+        var preferences = args.Session != null
+            ? _prefs.GetPreferences(args.Session.UserId)
+            : null;
+
+        //QB select profile for antagonist roles if available
+        var profile = preferences != null
+            ? preferences.SelectProfileForAntag(args.AntagRoles)
+                ?? preferences.SelectProfileForAntag(args.FallbackRoles)
+                ?? preferences.SelectedCharacter as HumanoidCharacterProfile
             : HumanoidCharacterProfile.RandomWithSpecies();
 
         // imp edit start, add random profile generation
@@ -49,5 +64,12 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
 
         args.Entity = Spawn(species.Prototype);
         _humanoid.LoadProfile(args.Entity.Value, profile?.WithSpecies(species.ID));
+
+        // QB add: set entity name based on profile if available
+        if (profile != null)
+        {
+            _metaData.SetEntityName(args.Entity.Value, profile.Name);
+            _traitSystem.ApplyTraits(args.Entity.Value, profile);
+        }
     }
 }

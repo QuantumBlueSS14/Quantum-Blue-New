@@ -2,12 +2,14 @@
   id: NukeopsLone
   name: ghost-role-information-loneop-name
   antagonist: true
+  setPreference: true #QB, make these show up for MCQ
   playTimeTracker: AntagLoneOperative
   objective: ghost-role-information-loneop-description
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 5h
   guides: [ NuclearOperatives ]
+  previewStartingGear: SyndicateOperativeGearFull
 
 - type: antag
   id: SyndicateInstigator

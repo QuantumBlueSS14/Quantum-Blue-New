@@ -48,9 +48,9 @@ public sealed class XAEScrambleDNASystem : BaseXAESystem<XAEScrambleDNAComponent
         // TODO: Implement cross-species transformation (requires de-transforms from all species and transforms to all species)
         if (TryComp<HumanoidAppearanceComponent>(target, out var humanoid))
         {
-            var newProfile = HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species);
-            newProfile.Gender = humanoid.Gender; // No Gender dysphoria please
-            newProfile.Sex = humanoid.Sex; // No Sex dysphoria either
+            var newProfile = HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species)
+                .WithGender(humanoid.Gender) // No Gender dysphoria please
+                .WithSex(humanoid.Sex); // No Sex dysphoria either
             _humanoidAppearance.LoadProfile(target, newProfile, humanoid);
             _metaData.SetEntityName(target, newProfile.Name, raiseEvents: false); //NT systems recognise you as someone else
             if (HasComp<DnaComponent>(target))
