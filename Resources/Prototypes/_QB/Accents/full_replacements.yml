@@ -1,0 +1,13 @@
+#mushroom accent
+- type: accent
+  id: mushroom
+  fullReplacements:
+  - accent-words-mushroom-1
+  - accent-words-mushroom-2
+  - accent-words-mushroom-3
+  - accent-words-mushroom-4
+  - accent-words-mushroom-5
+  - accent-words-mushroom-6
+  - accent-words-mushroom-7
+  - accent-words-mushroom-8
+  - accent-words-mushroom-9
