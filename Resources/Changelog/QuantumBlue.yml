@@ -1,4 +1,11 @@
 Entries:
+  - author: CrimsonAnnie
+    changes:
+      - type: Add
+        message: Mosquito Lawset added to ion storm pool EeeeEeeeEE
+    id: 223
+    time: '2026-11-21T09:41:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/308
   - author: SeeroftheNight
     changes:
       - type: Add
