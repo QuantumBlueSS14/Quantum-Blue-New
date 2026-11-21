@@ -13,6 +13,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
 using Content.Shared.Guidebook;
+using Content.Client._CD.Humanoid;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -37,6 +38,8 @@ using Direction = Robust.Shared.Maths.Direction;
 // Begin CD - Character Records
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 // End CD - Character Records
 using Content.Shared._Impstation.Traits; // imp
 
@@ -112,6 +115,10 @@ namespace Content.Client.Lobby.UI
 
         // Begin CD - Station Records
         private readonly RecordEditorGui _recordsTab;
+
+        // CD: Allergies editor
+        private readonly AllergyPicker _allergiesTab;
+
         // End CD - Station Records
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
@@ -438,6 +445,10 @@ namespace Content.Client.Lobby.UI
 
             // Begin CD - Character Records
             #region CosmaticRecords
+
+            _allergiesTab = new AllergyPicker(UpdateAllergies);
+            TabContainer.AddChild(_allergiesTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-allergies-tab"));
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
             TabContainer.AddChild(_recordsTab);
@@ -862,6 +873,7 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsFacialHair();
 
             // Begin CD - Character Records
+            UpdateCDAllergies();
             _recordsTab.Update(profile);
             // End CD - Character Records
 
@@ -1169,6 +1181,15 @@ namespace Content.Client.Lobby.UI
             Profile = Profile.WithCDCharacterRecords(records);
             IsDirty = true;
         }
+
+        // CD: Allergies editor
+        private void UpdateAllergies(Dictionary<ReagentPrototype, FixedPoint2> allergies)
+        {
+            Profile = Profile?.WithCDAllergies(allergies.Select(allergy => (allergy.Key.ID, allergy.Value))
+                .ToDictionary());
+            SetDirty();
+        }
+
         // End CD - Character Records
 
         private void OnFlavorTextChange(string content)
@@ -1475,6 +1496,25 @@ namespace Content.Client.Lobby.UI
 
             PronounsButton.SelectId((int) Profile.Gender);
         }
+// Begin CD character records
+        private void UpdateCDAllergies()
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            var allergies = new Dictionary<ReagentPrototype, FixedPoint2>();
+            foreach (var entry in (Dictionary<string, FixedPoint2>) Profile.CDAllergies)
+            {
+                if (!_prototypeManager.TryIndex(entry.Key, out ReagentPrototype? reagent))
+                    continue;
+                allergies.Add(reagent, entry.Value);
+            }
+            _allergiesTab.SetData(allergies);
+        }
+
+        // End CD - Character Records
 
         private void UpdateSpawnPriorityControls()
         {

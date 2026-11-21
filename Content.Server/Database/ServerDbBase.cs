@@ -25,6 +25,8 @@ using Robust.Shared.Utility;
 using Content.Server._CD.Records; // CD - Character Records
 using Content.Shared._CD.Records; // CD - Character Records
 using Content.Shared._Impstation.Notifier; // imp - notifier
+using Content.Shared.FixedPoint; // CD - Allergies
+using Content.Shared._DV.Traits; // DV - Traits
 
 namespace Content.Server.Database
 {
@@ -53,8 +55,11 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
                 // Begin CD - Character Records
                 .Include(p => p.Profiles)
-                .ThenInclude(h => h.CDProfile)
-                .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 // End CD - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
@@ -109,6 +114,8 @@ namespace Content.Server.Database
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.CDProfile) // CD - Character Records
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
+                .Include(p => p.CDProfile)
+                    .ThenInclude(cd => cd != null ? cd.CharacterAllergies : null)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -248,6 +255,12 @@ namespace Content.Server.Database
             var cdRecords = profile.CDProfile?.CharacterRecords != null
                 ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
+
+            var cdAllergies = profile.CDProfile?.CharacterAllergies != null
+                ? profile.CDProfile.CharacterAllergies
+                    .Select(allergy => (allergy.Allergen, FixedPoint2.FromCents(allergy.Intensity)))
+                    .ToDictionary()
+                : new();
             // End CD - Character Records
             var loadouts = new Dictionary<string, RoleLoadout>();
 
@@ -296,7 +309,8 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                cdRecords // CD - Character Records
+                cdRecords, // CD - Character Records
+                cdAllergies // CD - Allergies
             );
         }
 
@@ -356,6 +370,15 @@ namespace Content.Server.Database
                 profile.CDProfile.CharacterRecordEntries.Clear();
                 profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
             }
+
+            profile.CDProfile.CharacterAllergies.Clear();
+            profile.CDProfile.CharacterAllergies.AddRange(humanoid.CDAllergies.Select(entry =>
+                new CDModel.CharacterAllergy
+                {
+                    Allergen = entry.Key,
+                    Intensity = entry.Value.Value,
+                }));
+
             // End CD - Character Records
 
             profile.Loadouts.Clear();

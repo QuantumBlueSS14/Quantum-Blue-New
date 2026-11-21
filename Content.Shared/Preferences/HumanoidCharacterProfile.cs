@@ -16,6 +16,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using Content.Shared._CD.Records; // CD - Character Records
+using Content.Shared.FixedPoint; // CD - Allergies
 
 namespace Content.Shared.Preferences
 {
@@ -126,6 +127,9 @@ namespace Content.Shared.Preferences
         // Begin CD - Character records
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
+
+        [DataField("cosmaticDriftAllergies")]
+        public Dictionary<string, FixedPoint2> CDAllergies = new();
         // End CD - Character records
 
         public HumanoidCharacterProfile(
@@ -142,9 +146,10 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-        // Begin CD - Character Records
-            PlayerProvidedCharacterRecords? cdCharacterRecords
-        // End CD - Character Records
+            // Begin CD - Character Records
+            PlayerProvidedCharacterRecords? cdCharacterRecords,
+            Dictionary<string, FixedPoint2> cdAllergies
+            // End CD - Character Records
         )
         {
             Name = name;
@@ -162,6 +167,7 @@ namespace Content.Shared.Preferences
             _loadouts = loadouts;
             // Begin CD - Character Records
             CDCharacterRecords = cdCharacterRecords;
+            CDAllergies = cdAllergies;
             // End CD - Character Records
 
             var hasHighPrority = false;
@@ -194,7 +200,8 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords) // CD - Character Records
+                other.CDCharacterRecords, // CD - Character Records
+                other.CDAllergies) // CD - Allergies
         {
         }
 
@@ -335,6 +342,11 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
         {
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
+        }
+
+        public HumanoidCharacterProfile WithCDAllergies(Dictionary<string, FixedPoint2> allergies)
+        {
+            return new HumanoidCharacterProfile(this) { CDAllergies = allergies };
         }
         // End CD - Character Records
 
@@ -513,6 +525,7 @@ namespace Content.Shared.Preferences
             if (FlavorText != other.FlavorText) return false;
             if (CDCharacterRecords != null && other.CDCharacterRecords != null && // CD
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // CD
+            if (!CDAllergies.SequenceEqual(other.CDAllergies)) return false; // CD
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
