@@ -1,0 +1,77 @@
+- type: htnCompound
+  id: BeepskyCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: ArrestTargetCompound # baton criminals
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound # attack vent pests
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound # TODO: eat donuts
+
+- type: htnCompound
+  id: ArrestTargetCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask # track nearby criminal statuses
+          operator: !type:UtilityOperator
+            proto: NearbyWanted
+
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: !type:SingleSpeakOperatorSpeech
+              line: firebot-fire-detected
+            hidden: true
+
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: InteractRange
+
+        - !type:HTNPrimitiveTask
+          operator: !type:SetFloatOperator
+            targetKey: WaitTime
+            amount: 1
+
+        - !type:HTNPrimitiveTask # begin baton application
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: NearbyMeleeTargets
+              key: Target
+
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: WaitTime
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: WaitTime
+
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: InteractRange
+          operator: !type:InteractWithOperator
+            targetKey: Target
+          services:
+            - !type:UtilityService
+              id: FireService # cuff service
+              proto: NearbyWanted
+              key: Target
