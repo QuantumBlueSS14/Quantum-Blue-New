@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 10/01/2026 00:35:04
-  entityCount: 14515
+  time: 11/21/2026 09:11:04
+  entityCount: 14511
 maps:
 - 7928
 grids:
@@ -5121,7 +5121,7 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
-      parallax: BagelStation
+      parallax: GenericNebulaQB
   - uid: 14511
     components:
     - type: MetaData
@@ -9575,13 +9575,6 @@ entities:
     components:
     - type: Transform
       pos: 40.32887,-0.43040797
-      parent: 2
-- proto: AutolatheMachineCircuitboard
-  entities:
-  - uid: 13750
-    components:
-    - type: Transform
-      pos: 40.38877,0.59770185
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -70797,13 +70790,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 33.5,6.5
       parent: 2
-- proto: ProtolatheMachineCircuitboard
-  entities:
-  - uid: 13749
-    components:
-    - type: Transform
-      pos: 40.623146,0.34770185
-      parent: 2
 - proto: Rack
   entities:
   - uid: 165
@@ -78214,18 +78200,6 @@ entities:
     components:
     - type: Transform
       pos: -30.5,7.5
-      parent: 2
-- proto: SpawnPointServiceWorker
-  entities:
-  - uid: 11207
-    components:
-    - type: Transform
-      pos: 2.5,-15.5
-      parent: 2
-  - uid: 11208
-    components:
-    - type: Transform
-      pos: 7.5,-18.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:

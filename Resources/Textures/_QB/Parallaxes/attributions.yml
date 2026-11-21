@@ -1,0 +1,4 @@
+- files: [ "GenericOverlayBG1", "GenericOverlayBG2", "GenericOverlayBG3", "GenericOverlayBG4", "ArchonOverlayBG1", "ArchonOverlayBG2", "ArchonOverlayBG3", "GenericSpaceBG1", "GenericSpaceBG2", "GenericSpaceBG3", "GenericStarsBG1", "GenericStarsBG2", "ArchonGridBG1", "ArchonGridBG2", "ArchonGridBG3" ]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Original artwork by MattFright for Quantum Blue"
+  source: "https://github.com/QuantumBlueSS14/Quantum-Blue-New"

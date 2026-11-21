@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 09/30/2026 20:46:33
-  entityCount: 17436
+  time: 11/21/2026 09:11:53
+  entityCount: 17434
 maps:
 - 1
 grids:
@@ -89,6 +89,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: GenericNebulaQB
   - uid: 2
     components:
     - type: MetaData
@@ -13193,16 +13195,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 17557
-- proto: AutolatheMachineCircuitboard
-  entities:
-  - uid: 16432
-    components:
-    - type: Transform
-      parent: 17556
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-      storage: 17556
 - proto: BananaPhoneInstrument
   entities:
   - uid: 9063
@@ -84936,14 +84928,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 16432
           - 16434
           - 16431
           - 16430
           - 16429
           - 16428
           - 16427
-          - 16433
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -91715,16 +91705,6 @@ entities:
     - type: Transform
       pos: 17.5,20.5
       parent: 2
-- proto: ProtolatheMachineCircuitboard
-  entities:
-  - uid: 16433
-    components:
-    - type: Transform
-      parent: 17556
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-      storage: 17556
 - proto: PsychBed
   entities:
   - uid: 444
