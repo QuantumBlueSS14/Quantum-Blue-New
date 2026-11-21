@@ -1,4 +1,4 @@
-﻿- type: entityTable
+- type: entityTable
   id: XenoArtifactEffectsNaturalOnlyTable #30 total weight
   table: !type:GroupSelector
     children:
@@ -243,6 +243,7 @@
     - Lead
     - ForeverWeed
     - UAP
+    - Mosquitol # QB
 
 - type: entity
   id: XenoArtifactFoamRomerol

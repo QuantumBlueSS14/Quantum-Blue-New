@@ -1,0 +1,12 @@
+- type: reaction
+  id: Mosquitol
+  impact: Medium
+  reactants:
+    Vestine:
+      amount: 1
+    InsectBlood:
+      amount: 2
+    BuzzochloricBees:
+      amount: 1
+  products:
+    Mosquitol: 2
