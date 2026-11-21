@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 11/13/2026 08:10:28
+  time: 11/21/2026 09:10:06
   entityCount: 6552
 maps:
 - 1
@@ -62,6 +62,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: GenericNebulaQB
   - uid: 2
     components:
     - type: MetaData
