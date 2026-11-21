@@ -554,6 +554,15 @@
       - id: Handcuffs
       - id: ClothingMaskMuzzle
       - id: ClothingEyesBlindfold
+    # QB addition begin
+    - !type:AllSelector
+      children:
+      - !type:NestedSelector # idk if this is legal lol
+        tableId: FillHydroCoJuiceMix
+      - id: SpoonPlastic
+      - id: PaperMailHydroCoTrial
+    # QB addition end
+
 # friends! i'm impatient for tcktck to come back and i dont wanna wait for departmental mail
 - type: entityTable
   id: PackageImpFriendsEntityTable
