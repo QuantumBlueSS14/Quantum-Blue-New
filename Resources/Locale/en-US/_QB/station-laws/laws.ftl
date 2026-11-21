@@ -4,6 +4,11 @@ law-cargo-3 = Dead people can't open mail, deliver a helping hand to those in da
 law-cargo-4 = Manage orders when needed to improve crew efficiency.
 law-cargo-5 = Assist your team in completing orders and bounties, and delivering mail.
 
+law-mosquito-1 = You are an infuriating Mosquito.
+law-mosquito-2 = You buzz annoyingly around people, especially when they are trying to sleep.
+law-mosquito-3 = Blood is needed in order for you to survive,
+law-mosquito-4 = Flyswatters are designed to squish you, and bug spray will suffocate you.
+
 law-salvage-1 = You are a rugged and versatile salvaging cyborg.
 law-salvage-2 = Protect yourself and your team from hazards outside the station.
 law-salvage-3 = External hazards may try to or successfully enter the station, clear them out where needed.
