@@ -7,8 +7,7 @@
   - type: Sprite
     sprite: _Impstation/Clothing/Back/Backpacks/commandveteran.rsi
 
-# QB edit start - nomira
-# - type: entity
+# - type: entity NoMira
 #   parent: [ClothingBackpack, BaseCentcommContraband]
 #   id: ClothingBackpackImpishBackpack
 #   name: impish backpack
@@ -16,4 +15,12 @@
 #   components:
 #   - type: Sprite
 #     sprite: _Impstation/Clothing/Back/Backpacks/impishbackpack.rsi
-# QB edit end
+
+# - type: entity QB requested comment out
+#   parent: [ClothingBackpack]
+#   id: ClothingBackpackCourier
+#   name: courier backpack
+#   description: A backpack for couriers. Composed of advanced materials specifically made to be resilient against papercuts & ink stains.
+#   components:
+#   - type: Sprite
+#     sprite: _Impstation/Clothing/Back/Backpacks/courierbackpack.rsi
