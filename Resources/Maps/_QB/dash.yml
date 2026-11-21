@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 11/11/2026 23:48:24
+  time: 11/21/2026 09:08:37
   entityCount: 6684
 maps:
 - 1
@@ -84,6 +84,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: GenericSpaceQB
   - uid: 3
     components:
     - type: MetaData
@@ -6139,7 +6141,7 @@ entities:
       pos: -34.5,-13.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -96280.836
+      secondsUntilStateChange: -96332.21
       state: Opening
     - type: DeviceLinkSource
       lastSignals:

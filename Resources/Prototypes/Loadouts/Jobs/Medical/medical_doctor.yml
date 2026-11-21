@@ -164,7 +164,7 @@
   equipment:
     id: SeniorPhysicianPDA
 
-# Gloves
+# Gloves, Imp
 - type: loadout
   id: NitrileGloves
   equipment:
@@ -176,15 +176,13 @@
   equipment:
     mask: ClothingMaskSterile
 
-#Eyewear
+#Eyewear, Imp
 - type: loadout
   id: MedicalHud
   equipment:
     eyes: ClothingEyesHudMedical
-  groupBy: "job" # imp
 
 - type: loadout
   id: MedicalEyePatchHud
   equipment:
     eyes: ClothingEyesEyepatchHudMedical
-  groupBy: "job" # imp
