@@ -149,14 +149,7 @@ public abstract partial class SharedStunSystem : EntitySystem
     {
         var ev = new StunnedEvent(); // todo: rename event or change how it is raised - this event is raised each time duration of stun was externally changed
         RaiseLocalEvent(uid, ref ev);
-
-        if (drop) // QuantumBlue - only drops hand items if drop is true
-        {
-
-        var evDropHands = new DropHandItemsEvent();
-        RaiseLocalEvent(uid, ref evDropHands);
-        
-        }
+       
         var timeForLogs = duration.HasValue
             ? duration.Value.Seconds.ToString()
             : "Infinite";
