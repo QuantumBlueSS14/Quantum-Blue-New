@@ -145,7 +145,7 @@ public abstract partial class SharedStunSystem : EntitySystem
         return true;
     }
 
-    private void OnStunnedSuccessfully(EntityUid uid, TimeSpan? duration, bool drop = true) // QuantumBlue - sets drop using an argument
+    private void OnStunnedSuccessfully(EntityUid uid, TimeSpan? duration, bool drop = true) // QB - sets drop using an argument
     {
         var ev = new StunnedEvent(); // todo: rename event or change how it is raised - this event is raised each time duration of stun was externally changed
         RaiseLocalEvent(uid, ref ev);
@@ -303,14 +303,14 @@ public abstract partial class SharedStunSystem : EntitySystem
         return true;
     }
 
-    public bool TryUpdateParalyzeDuration(EntityUid uid, TimeSpan? duration, bool drop = true) // QuantumBlue - let drop be set by argument
+    public bool TryUpdateParalyzeDuration(EntityUid uid, TimeSpan? duration, bool drop = true) // QB - let drop be set by argument
     {
         if (!_status.TryUpdateStatusEffectDuration(uid, StunId, duration))
             return false;
 
         // We can't exit knockdown when we're stunned, so this prevents knockdown lasting longer than the stun.
-        Knockdown(uid, null, false, true, drop); // QuantumBlue - sets drop using an argument
-        OnStunnedSuccessfully(uid, duration, drop); // QuantumBlue - sets drop using an argument
+        Knockdown(uid, null, false, true, drop); // QB - sets drop using an argument
+        OnStunnedSuccessfully(uid, duration, drop); // QB - sets drop using an argument
 
         return true;
     }
