@@ -3,7 +3,7 @@
 - type: latheRecipePack
   id: ImpCircuitStatic
   recipes:
-  - ServiceTechFabCircuitboard
+  #- ServiceTechFabCircuitboard # QB no printing lathes
   - ShipyardComputerCircuitboard # dv doesnt have this craftable but we did so whatever
   - SupermatterComputerCircuitboard
   - ImpCoffeeMachineCircuitboard
