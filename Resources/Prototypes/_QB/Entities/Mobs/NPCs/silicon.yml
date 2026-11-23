@@ -49,8 +49,6 @@
   - type: ContainerContainer
     containers:
       cell_slot: !type:ContainerSlot { }
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
   - type: ActiveRadio
     channels:
     - Binary
