@@ -1,10 +1,28 @@
-#- type: entity
-#  id: UnknownShuttlePartyUFO
-#  parent: BaseUnknownShuttleRule
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: true #!!
-#    weight: 8 #slightly less common
-#  - type: LoadMapRule
-#    preloadedGrid: PartyUFO
-# qb
+- type: entityTable
+  id: UnknownShuttlesPossibleHostileTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: UnknownShuttleCryptid
+    - id: UnknownShuttleEternal
+    - id: UnknownShuttleFlatline
+
+- type: entity
+  id: UnknownShuttlePartyUFO
+  parent: BaseUnknownShuttleRule
+  components:
+  - type: StationEvent
+    startAnnouncement: true #!!
+    weight: 8 #slightly less common
+  - type: LoadMapRule
+    preloadedGrid: PartyUFO
+
+- type: entity
+  id: UnknownShuttleFood4you
+  parent: BaseUnknownShuttleRule
+  components:
+  - type: StationEvent
+    startAnnouncement: true #!!
+    maxOccurrences: 1
+    weight: 10
+  - type: LoadMapRule
+    preloadedGrid: Food4you

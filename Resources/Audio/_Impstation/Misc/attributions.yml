@@ -19,3 +19,13 @@
   license: "CC-BY-SA-3.0"
   copyright: "Made by Widgetbeck (github) for Impstation."
   source: "NA"
+
+- files: ["tomscream.ogg"]
+  license: "Custom"
+  copyright: "William Hanna for MGM Cartoon Studio, Turner Entertainment, Warner Bros."
+  source: "https://www.youtube.com/watch?v=l6eR3ZZGGu4"
+
+- files: ["Flesh_Break_2.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "goonstation"
+  source: "https://github.com/goonstation/goonstation/blob/master/sound/impact_sounds/Flesh_Break_2.ogg"

@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 10/01/2026 15:18:34
-  entityCount: 15550
+  time: 11/21/2026 09:14:58
+  entityCount: 15548
 maps:
 - 1
 grids:
@@ -104,7 +104,7 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
-      parallax: AmberStation
+      parallax: GenericNebulaQB
   - uid: 2
     components:
     - type: MetaData
@@ -8600,7 +8600,7 @@ entities:
       pos: -9.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -114373.44
+      secondsUntilStateChange: -114423.49
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -44406,30 +44406,6 @@ entities:
 
 
         Sorry about that.
-- proto: FireAlarm
-  entities:
-  - uid: 5252
-    components:
-    - type: Transform
-      pos: -3.5,-13.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 305
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5255
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,20.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 307
-      - 5416
-    - type: Fixtures
-      fixtures: {}
 - proto: FireAxeCabinetFilled
   entities:
   - uid: 5262

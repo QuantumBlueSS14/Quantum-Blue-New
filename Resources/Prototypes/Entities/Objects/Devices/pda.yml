@@ -1585,7 +1585,7 @@
   - type: Icon
     state: pda-seniorofficer
 
-- type: entity
+- type: entity # QB version
   parent: BasePDA
   id: SeniorCourierPDA
   name: senior courier PDA

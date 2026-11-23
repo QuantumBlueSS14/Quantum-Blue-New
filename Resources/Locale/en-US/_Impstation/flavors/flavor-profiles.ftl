@@ -28,7 +28,7 @@ flavor-complex-betweenthesheets = like a wonderful evening
 flavor-complex-sidecar = tart and dry
 flavor-complex-sazerac = sweet, herbal, and strong
 flavor-complex-oldfashioned = like the good ol' days
-
+flavor-complex-slabspecial = like watching submarine hunt
 
 flavor-complex-cigarettes = like cigarettes
 flavor-complex-radiation = like radiation
@@ -134,5 +134,6 @@ flavor-complex-allulalo = like hand sanitizer
 flavor-complex-pear = like pear
 flavor-complex-concerning = Concerning
 flavor-complex-magic = like your head is swirling and spinning
+flavor-complex-blind = like your vision is fading
 
 flavor-complex-vanilla-cafe-latte = like a creamy vanilla morning
