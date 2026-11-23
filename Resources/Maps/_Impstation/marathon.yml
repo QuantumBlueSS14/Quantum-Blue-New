@@ -11969,6 +11969,8 @@ entities:
     - type: Transform
       pos: -43.5,21.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 488
     components:
     - type: Transform
@@ -16546,6 +16548,19 @@ entities:
     components:
     - type: Transform
       pos: -58.35984,-63.50458
+      parent: 2
+- proto: BookCart
+  entities:
+  - uid: 23397
+    components:
+    - type: Transform
+      pos: -77.5,-64.5
+      parent: 2
+  - uid: 23398
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -53.5,-46.5
       parent: 2
 - proto: BookRandomStory
   entities:
@@ -45729,13 +45744,6 @@ entities:
     - type: Transform
       pos: -44.664345,67.56039
       parent: 2
-- proto: CaptainIDCard
-  entities:
-  - uid: 16072
-    components:
-    - type: Transform
-      pos: -20.479635,30.59708
-      parent: 2
 - proto: CarbonDioxideCanister
   entities:
   - uid: 6936
@@ -57314,12 +57322,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -41.5,32.5
       parent: 2
-  - uid: 8882
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -35.5,43.5
-      parent: 2
   - uid: 8883
     components:
     - type: Transform
@@ -57666,6 +57668,17 @@ entities:
     components:
     - type: Transform
       pos: 31.5,26.5
+      parent: 2
+  - uid: 16049
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -40.5,44.5
+      parent: 2
+  - uid: 16072
+    components:
+    - type: Transform
+      pos: -35.5,44.5
       parent: 2
   - uid: 22970
     components:
@@ -58016,6 +58029,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 19.5,-6.5
+      parent: 2
+  - uid: 10474
+    components:
+    - type: Transform
+      pos: -35.5,43.5
       parent: 2
   - uid: 22324
     components:
@@ -62001,6 +62019,35 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -24.5,-46.5
       parent: 2
+  - uid: 16000
+    components:
+    - type: Transform
+      pos: -40.5,45.5
+      parent: 2
+  - uid: 17908
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -39.5,44.5
+      parent: 2
+  - uid: 18218
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -38.5,44.5
+      parent: 2
+  - uid: 18803
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -37.5,44.5
+      parent: 2
+  - uid: 18806
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.5,44.5
+      parent: 2
   - uid: 22319
     components:
     - type: Transform
@@ -63067,6 +63114,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -25.5,-46.5
+      parent: 2
+  - uid: 15998
+    components:
+    - type: Transform
+      pos: -40.5,46.5
       parent: 2
   - uid: 23144
     components:
@@ -68143,10 +68195,10 @@ entities:
     - type: Transform
       pos: 5.4311085,-26.280409
       parent: 2
-  - uid: 23416
+  - uid: 23399
     components:
     - type: Transform
-      pos: 21.510431,-9.32284
+      pos: 21.435026,-11.4389
       parent: 2
 - proto: FlashlightSeclite
   entities:
@@ -106731,6 +106783,13 @@ entities:
     - type: Transform
       pos: -12.374289,-54.52426
       parent: 2
+- proto: MailCart
+  entities:
+  - uid: 15798
+    components:
+    - type: Transform
+      pos: 21.5,-9.5
+      parent: 2
 - proto: MaintenanceFluffSpawner
   entities:
   - uid: 15880
@@ -114372,11 +114431,6 @@ entities:
     components:
     - type: Transform
       pos: 43.5,47.5
-      parent: 2
-  - uid: 23148
-    components:
-    - type: Transform
-      pos: 21.5,-9.5
       parent: 2
 - proto: RadiationCollectorFlatpack
   entities:

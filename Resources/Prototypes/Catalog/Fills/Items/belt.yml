@@ -104,6 +104,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
+  #imp edit start
         - id: Brutepack
           amount: 2
         - id: Ointment

@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 10/01/2026 15:10:48
-  entityCount: 17760
+  time: 11/21/2026 09:13:52
+  entityCount: 17754
 maps:
 - 1
 grids:
@@ -79,6 +79,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: GenericNebulaQB
   - uid: 2
     components:
     - type: MetaData
@@ -14161,7 +14163,7 @@ entities:
       pos: 9.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -31387.129
+      secondsUntilStateChange: -31423.695
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14562,7 +14564,7 @@ entities:
       pos: 47.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -493391.1
+      secondsUntilStateChange: -493427.66
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18064,13 +18066,6 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-37.5
-      parent: 2
-- proto: AutolatheMachineCircuitboard
-  entities:
-  - uid: 17247
-    components:
-    - type: Transform
-      pos: 35.460583,-1.3665128
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -57929,34 +57924,6 @@ entities:
     - type: Transform
       pos: -19.5,-26.5
       parent: 2
-- proto: FireAlarm
-  entities:
-  - uid: 14683
-    components:
-    - type: MetaData
-      name: fire alarm (Medical Reception)
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 26.5,3.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 13810
-    - type: Fixtures
-      fixtures: {}
-  - uid: 15796
-    components:
-    - type: MetaData
-      name: fire alarm (Law Office)
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -20.5,-44.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 357
-    - type: Fixtures
-      fixtures: {}
 - proto: FireAlarmElectronics
   entities:
   - uid: 2284
@@ -58461,7 +58428,6 @@ entities:
       deviceLists:
       - 13811
       - 13812
-      - 14683
   - uid: 13850
     components:
     - type: Transform
@@ -58613,7 +58579,6 @@ entities:
       parent: 2
     - type: DeviceNetwork
       deviceLists:
-      - 15796
       - 11357
       - 13789
   - uid: 1028
@@ -90368,13 +90333,6 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
-- proto: ProtolatheMachineCircuitboard
-  entities:
-  - uid: 5438
-    components:
-    - type: Transform
-      pos: 35.601208,-1.4915128
-      parent: 2
 - proto: PsychBed
   entities:
   - uid: 14031
@@ -98988,18 +98946,6 @@ entities:
     components:
     - type: Transform
       pos: -0.5,-32.5
-      parent: 2
-- proto: SpawnPointServiceWorker
-  entities:
-  - uid: 1022
-    components:
-    - type: Transform
-      pos: 1.5,1.5
-      parent: 2
-  - uid: 1023
-    components:
-    - type: Transform
-      pos: 1.5,-0.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:

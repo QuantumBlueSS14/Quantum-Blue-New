@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 270.1.8
   forkId: ""
   forkVersion: ""
-  time: 10/01/2026 02:08:00
+  time: 11/21/2026 09:12:54
   entityCount: 18888
 maps:
 - 1
@@ -87,6 +87,7 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
+      parallax: GenericNebulaQB
   - uid: 2
     components:
     - type: MetaData
@@ -100468,6 +100469,12 @@ entities:
     - type: Transform
       pos: 25.5,25.5
       parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: SecurityTechFabCircuitboard
   entities:
   - uid: 10756
@@ -100509,6 +100516,12 @@ entities:
     - type: Transform
       pos: 20.5,35.5
       parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: ServiceTechFabCircuitboard
   entities:
   - uid: 11747
@@ -110560,6 +110573,12 @@ entities:
     - type: Transform
       pos: 6.5,10.5
       parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: UniformPrinterMachineCircuitboard
   entities:
   - uid: 11164
