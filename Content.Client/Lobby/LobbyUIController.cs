@@ -28,6 +28,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Client.Lobby;
 
+// Funky Rewrite
+
 public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState>, IOnStateExited<LobbyState>
 {
     [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;

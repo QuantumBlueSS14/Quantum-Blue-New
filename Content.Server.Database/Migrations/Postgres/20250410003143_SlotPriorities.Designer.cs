@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using NpgsqlTypes;
 
+//Funky add
+
 #nullable disable
 
 namespace Content.Server.Database.Migrations.Postgres

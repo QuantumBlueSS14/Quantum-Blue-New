@@ -13,6 +13,7 @@
 //
 // SPDX-License-Identifier: MIT
 
+// Funky Rewrite
 using System.Linq;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Preferences;

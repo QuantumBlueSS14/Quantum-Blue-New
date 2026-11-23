@@ -9,7 +9,7 @@
   - !type:OverallPlaytimeRequirement
     time: 5h
   guides: [ NuclearOperatives ]
-  previewStartingGear: SyndicateOperativeGearFull
+  previewStartingGear: SyndicateOperativeGearFull # QB add
 
 - type: antag
   id: SyndicateInstigator

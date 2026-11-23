@@ -72,6 +72,8 @@ using Content.Shared.NPC.Systems; // imp
 using Robust.Shared.Configuration; //imp
 using Robust.Shared.Network; // imp
 
+// Funky rewrite
+
 namespace Content.Server.Antag;
 
 public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelectionComponent>

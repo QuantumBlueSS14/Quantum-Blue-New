@@ -92,7 +92,7 @@ public sealed class TraitSystem : EntitySystem
     //     }
     // }
 
-
+    // QB rewrite starts below, above is old system
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
     {
         // Check if player's job allows traits to be applied.

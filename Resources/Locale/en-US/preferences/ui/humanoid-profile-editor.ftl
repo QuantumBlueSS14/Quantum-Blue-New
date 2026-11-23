@@ -43,6 +43,7 @@ humanoid-profile-editor-preference-spawn-priority-cryosleep = Cryosleep
 humanoid-profile-editor-jobs-amount-in-department-tooltip = Jobs in the {$departmentName} department
 humanoid-profile-editor-department-jobs-label = {$departmentName} jobs
 humanoid-profile-editor-antags-tab = Antags
+# QB add
 humanoid-profile-editor-antag-preference-disabled-button = Disabled
 humanoid-profile-editor-antag-preference-enabled-button = Enabled
 humanoid-profile-editor-job-preference-disabled-button = Disabled

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
+//Funky add
 #nullable disable
 
 namespace Content.Server.Database.Migrations.Postgres

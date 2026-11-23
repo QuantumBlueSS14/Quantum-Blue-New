@@ -13,6 +13,8 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
+// Funky Rewrite, PLEASE Doublecheck changes, you're more than likely going to select "Keep Current Change" if you have a merge conflict
+
 namespace Content.Client.Lobby.UI
 {
     /// <summary>

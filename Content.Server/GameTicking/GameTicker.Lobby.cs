@@ -40,6 +40,8 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using System.Text;
 
+// Funky rewrite
+
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker

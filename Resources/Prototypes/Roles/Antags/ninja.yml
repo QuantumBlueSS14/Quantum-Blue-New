@@ -9,7 +9,7 @@
   setPreference: true #QB, make these show up for MCQ
   objective: roles-antag-space-ninja-objective
   guides: [ SpaceNinja ]
-  previewStartingGear: SpaceNinjaGear
+  previewStartingGear: SpaceNinjaGear # Funky add
 
 #Ninja Gear
 - type: startingGear

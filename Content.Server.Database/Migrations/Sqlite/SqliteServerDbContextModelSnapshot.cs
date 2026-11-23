@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+// Funky rewrite. You should really know what you're doing if you're messing with this
+
 #nullable disable
 
 namespace Content.Server.Database.Migrations.Sqlite

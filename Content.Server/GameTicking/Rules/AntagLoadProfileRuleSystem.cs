@@ -8,6 +8,8 @@ using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
 using Content.Server.Traits;
 
+// Funky rewrite
+
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfileRuleComponent>

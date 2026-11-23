@@ -30,7 +30,7 @@ namespace Content.Server.Preferences.Managers
         Task DeleteProfile(NetUserId userId, int slot); // QB edit: expose profile deletion for integration test cleanup paths.
     }
 
-    public sealed class PlayerJobPriorityChangedEvent : EntityEventArgs
+    public sealed class PlayerJobPriorityChangedEvent : EntityEventArgs // Funky add start
     {
         public readonly ICommonSession Session;
         public readonly Dictionary<ProtoId<JobPrototype>, JobPriority> OldPriorities;
@@ -45,5 +45,5 @@ namespace Content.Server.Preferences.Managers
             OldPriorities = oldPriorities;
             NewPriorities = newPriorities;
         }
-    }
+    } // Funky add end
 }

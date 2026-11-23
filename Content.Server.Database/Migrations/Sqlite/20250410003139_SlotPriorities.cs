@@ -2,6 +2,8 @@
 
 #nullable disable
 
+//Funky add
+
 namespace Content.Server.Database.Migrations.Sqlite
 {
     /// <inheritdoc />

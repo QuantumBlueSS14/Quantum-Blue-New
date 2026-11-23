@@ -182,7 +182,7 @@ public sealed partial class AntagSelectionSystem
 
         foreach (var role in roles)
         {
-            var list = new List<ProtoId<AntagPrototype>> { role };
+            var list = new List<ProtoId<AntagPrototype>> { role }; // Funky edit
 
             if (character.AntagPreferences.Contains(role)
                 && !_ban.IsRoleBanned(session, list)
@@ -193,7 +193,7 @@ public sealed partial class AntagSelectionSystem
         return valid;
     }
 
-    /// <summary>
+    /// <summary> Funky add start - this is a long one! Right now it's line 332
     /// Return true if a player has any character that could take any antagonist in antagList.
     /// </summary>
     private bool HasAntagPreference(ICommonSession? session, ICollection<ProtoId<AntagPrototype>> antagList, AntagSelectionTime selectionTime)
@@ -329,7 +329,7 @@ public sealed partial class AntagSelectionSystem
             return false;
 
         return HasAntagPreference(session, def.FallbackRoles, selectionTime);
-    }
+    } // Funky add end
 
     /// <summary>
     /// Returns all the antagonists for this rule who are currently alive
@@ -558,7 +558,7 @@ public sealed partial class AntagSelectionSystem
         return result;
     }
 
-    /// <summary>
+    /// <summary> Funky add
     /// Returns a list of AntagSelectionDefinitions that this session has been preselected for
     /// </summary>
     public List<AntagSelectionDefinition> GetPreSelectedAntagDefinitions(ICommonSession session)
@@ -580,7 +580,7 @@ public sealed partial class AntagSelectionSystem
         return result;
     }
 
-    /// <summary>
+    /// <summary> Funky add
     /// Returns a list, each item being a set of AntagPrototype IDs for each Antag definition the session has been
     /// preselected for. These entries can be compared to a HumanoidCharacterProfile's AntagPreferences.
     /// </summary>

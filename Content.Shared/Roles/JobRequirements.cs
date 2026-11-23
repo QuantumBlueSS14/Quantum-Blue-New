@@ -37,7 +37,7 @@ public static class JobRequirements
     /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
     public static bool TryRequirementsMet(
         HashSet<JobRequirement>? requirements,
-        IReadOnlyDictionary<string, TimeSpan>? playTimes,
+        IReadOnlyDictionary<string, TimeSpan>? playTimes, // Funky edit, nullable
         [NotNullWhen(false)] out FormattedMessage? reason,
         IEntityManager entManager,
         IPrototypeManager protoManager,
@@ -56,7 +56,7 @@ public static class JobRequirements
         return true;
     }
 
-    public static bool TryRequirementsMet(
+    public static bool TryRequirementsMet( // Funky add
         ProtoId<JobPrototype> job,
         IReadOnlyDictionary<string, TimeSpan>? playTimes,
         [NotNullWhen(false)] out FormattedMessage? reason,
@@ -69,7 +69,7 @@ public static class JobRequirements
 
         reason = FormattedMessage.FromUnformatted("Failed to get job prototype");
         return false;
-    }
+    } // Funky add end
 }
 
 /// <summary>
@@ -86,6 +86,6 @@ public abstract partial class JobRequirement
         IEntityManager entManager,
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile,
-        IReadOnlyDictionary<string, TimeSpan>? playTimes,
+        IReadOnlyDictionary<string, TimeSpan>? playTimes, // Funky edit, nullable
         [NotNullWhen(false)] out FormattedMessage? reason);
 }

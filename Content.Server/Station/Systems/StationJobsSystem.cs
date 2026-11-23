@@ -430,7 +430,7 @@ public sealed partial class StationJobsSystem : EntitySystem
             var filtered = jobPriorities
                 .Where(p =>
                             p.Value == priority
-                            && (disallowedJobs == null || !disallowedJobs.Contains(p.Key))
+                            && (disallowedJobs == null || !disallowedJobs.Contains(p.Key)) // QB fix test fail
                             && available.Contains(p.Key))
                 .Select(p => p.Key)
                 .ToList();

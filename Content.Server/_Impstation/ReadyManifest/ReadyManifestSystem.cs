@@ -3,6 +3,8 @@
 // SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
 //
 // SPDX-License-Identifier: MIT
+
+//Funky rewrite
 using System.Linq;
 using Content.Server.EUI;
 using Content.Shared.CCVar;

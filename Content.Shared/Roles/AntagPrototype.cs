@@ -70,6 +70,6 @@ public sealed partial class AntagPrototype : IPrototype
     [DataField]
     public List<ProtoId<GuideEntryPrototype>>? Guides;
 
-    [DataField(readOnly: true)]
+    [DataField(readOnly: true)] // Funky add
     public ProtoId<StartingGearPrototype>? PreviewStartingGear;
 }

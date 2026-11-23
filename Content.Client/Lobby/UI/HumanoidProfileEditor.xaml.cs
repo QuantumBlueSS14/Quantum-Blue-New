@@ -817,7 +817,7 @@ namespace Content.Client.Lobby.UI
                 var title = Loc.GetString(antag.Name);
                 var description = Loc.GetString(antag.Objective);
                 selector.Setup(items, title, 250, description, guides: antag.Guides);
-                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 1 : 0);
+                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 1 : 0); // QB Edit 0 : 1 to 1 : 0
 
                 if (!_requirements.IsAllowed(
                         antag,
@@ -835,7 +835,7 @@ namespace Content.Client.Lobby.UI
 
                 selector.OnSelected += preference =>
                 {
-                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 1);
+                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 1); // QB Edit 0 to 1
                     SetDirty();
                 };
 
@@ -1083,13 +1083,13 @@ namespace Content.Client.Lobby.UI
                     var jobIcon = _prototypeManager.Index(job.Icon);
                     icon.Texture = _sprite.Frame0(jobIcon.Icon);
                     selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
-                    selector.Select(Profile?.JobPreferences.Contains(job.ID) == true ? (int) JobPriority.Low : (int) JobPriority.Never);
+                    selector.Select(Profile?.JobPreferences.Contains(job.ID) == true ? (int) JobPriority.Low : (int) JobPriority.Never); // QB edit funky add
 
                     if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
                     {
                         selector.LockRequirements(reason);
-                        Profile = Profile?.WithoutJob(job.ID);
-                        SetDirty();
+                        Profile = Profile?.WithoutJob(job.ID); // QB edit funky add
+                        SetDirty(); // QB edit funky add
                     }
                     else
                     {
@@ -1673,14 +1673,14 @@ namespace Content.Client.Lobby.UI
 
         private void RandomizeEverything()
         {
-            if (Profile == null)
+            if (Profile == null) // QB edit start
             {
                 return;
             }
 
             var currentProfile = Profile;
             var randomProfile = HumanoidCharacterProfile.Random();
-            Profile = new HumanoidCharacterProfile(currentProfile)
+            Profile = new HumanoidCharacterProfile(currentProfile) 
             {
                 Name = randomProfile.Name,
                 BorgName = randomProfile.BorgName,
@@ -1689,7 +1689,7 @@ namespace Content.Client.Lobby.UI
                 Appearance = randomProfile.Appearance,
             }
                 .WithSex(randomProfile.Sex)
-                .WithGender(randomProfile.Gender);
+                .WithGender(randomProfile.Gender); // QB edit end
 
             SetProfile(Profile, CharacterSlot);
             SetDirty();
@@ -1703,9 +1703,9 @@ namespace Content.Client.Lobby.UI
                 return;
             }
 
-            Profile = Profile.WithCharacterAppearance(HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex));
+            Profile = Profile.WithCharacterAppearance(HumanoidCharacterAppearance.Random(Profile.Species, Profile.Sex)); //QB edit 
             SetProfile(Profile, CharacterSlot);
-            SetDirty();
+            SetDirty(); // QB edit
         }
         // IMP EDIT END
 
@@ -1716,7 +1716,7 @@ namespace Content.Client.Lobby.UI
             SetName(name);
             UpdateNameEdit();
 
-            _recordsTab.Update(Profile); // QB - Character Records
+            _recordsTab.Update(Profile); // CD - Character Records
         }
 
         private async void ExportImage()

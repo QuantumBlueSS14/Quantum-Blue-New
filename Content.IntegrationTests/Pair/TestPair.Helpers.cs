@@ -164,7 +164,7 @@ public sealed partial class TestPair
         _modifiedProfiles.Add(user);
         await Server.WaitPost(() => prefMan.SetProfile(user, 0, newProfile).Wait());
     }
-
+    // EVERYTHING BELOW HERE IS QB EDITS FOR JOB PRIORITIES AND PREFERENCES
     public async Task SetJobPriorities(ICommonSession player, Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities) // QB edit: add dictionary-based overload used by updated MCQ job tests.
     {
         var prefMan = Server.ResolveDependency<IServerPreferencesManager>();

@@ -10,6 +10,8 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Lobby.UI;
 
+// Funky Add, PLEASE Doublecheck changes, you're more than likely going to select "Keep Current Change" if you have a merge conflict
+
 public sealed class DraggableJobIcon : TextureRect
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;

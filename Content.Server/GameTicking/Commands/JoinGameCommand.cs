@@ -9,6 +9,8 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
 
+//Funky rewrite
+
 namespace Content.Server.GameTicking.Commands
 {
     [AnyCommand]

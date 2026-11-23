@@ -17,6 +17,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Client._Impstation.ReadyManifest; // imp
 
+// Funky Rewrite
 namespace Content.Client.Lobby
 {
     public sealed class LobbyState : Robust.Client.State.State

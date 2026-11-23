@@ -25,6 +25,8 @@
 //
 // SPDX-License-Identifier: MIT
 
+// Funky rewrite
+
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;

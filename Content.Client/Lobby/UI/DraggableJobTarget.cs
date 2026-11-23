@@ -11,6 +11,8 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby.UI;
 
+// Funky Add, PLEASE Doublecheck changes, you're more than likely going to select "Keep Current Change" if you have a merge conflict
+
 public sealed class DraggableJobTarget : Control
 {
     private static readonly List<JobPrototype> OrderedJobsInternal = new();

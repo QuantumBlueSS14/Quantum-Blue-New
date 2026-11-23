@@ -9,7 +9,7 @@
   - !type:OverallPlaytimeRequirement
     time: 5h
   guides: [ NuclearOperatives ]
-  previewStartingGear: SyndicateOperativeGearFull
+  previewStartingGear: SyndicateOperativeGearFull # Funky add
 
 - type: antag
   id: NukeopsMedic
@@ -25,7 +25,7 @@
     role: JobChemist
     time: 3h
   guides: [ NuclearOperatives ]
-  previewStartingGear: SyndicateOperativeMedicFull
+  previewStartingGear: SyndicateOperativeMedicFull # Funky add
 
 - type: antag
   id: NukeopsCommander

@@ -40,6 +40,8 @@
 //
 // SPDX-License-Identifier: MIT
 
+// Funky rewrite. If you don't know what you're doing in here, turn back.
+
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;

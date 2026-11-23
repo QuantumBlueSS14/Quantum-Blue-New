@@ -8,6 +8,8 @@
 //
 // SPDX-License-Identifier: MIT
 
+//Funnky rewrite
+
 using System.Diagnostics.CodeAnalysis; // QB edit: required for TryGetHumanoidInSlot nullability annotation added by MCQ antag/job compatibility patch.
 using System.Linq; // QB edit: required for profile filtering helpers added by MCQ antag/job compatibility patch.
 using Content.Shared.GameTicking;

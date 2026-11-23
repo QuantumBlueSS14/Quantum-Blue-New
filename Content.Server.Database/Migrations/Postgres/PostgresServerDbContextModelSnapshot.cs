@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using NpgsqlTypes;
 
+// Funky rewrite. You should really know what you're doing if you're messing with this
 #nullable disable
 
 namespace Content.Server.Database.Migrations.Postgres

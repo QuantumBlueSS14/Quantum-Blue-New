@@ -11,6 +11,8 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby.UI;
 
+// Funky Rewrite, PLEASE Doublecheck changes, you're more than likely going to select "Keep Current Change" if you have a merge conflict
+
 /// <summary>
 /// Holds character data on the side of the setup GUI.
 /// </summary>
