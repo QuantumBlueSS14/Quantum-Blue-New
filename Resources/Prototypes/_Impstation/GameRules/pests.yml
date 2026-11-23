@@ -207,9 +207,9 @@
 #- type: entity #QB - Matt don't want it
 #  id: TurtleMigration
 #  parent: BaseStationEventShortDelay
-# components:
+#  components:
 #  - type: StationEvent
-#   earliestStart: 20
+#    earliestStart: 20
 #    weight: 4
 #    duration: 60
 #  - type: VentCrittersRule
