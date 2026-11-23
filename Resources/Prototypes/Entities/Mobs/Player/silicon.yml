@@ -223,7 +223,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 1600 #QB - Quadrupled damage threshold, was 400
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -232,7 +232,7 @@
         acts: [ "Breakage" ]
     - trigger:
         !type:DamageTrigger
-        damage: 2000
+        damage: 8000 #QB - Quadrupled damage threshold for ai to break, was 2000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -248,7 +248,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: DamageVisuals
-    thresholds: [25, 50, 75, 100, 200, 300, 400]
+    thresholds: [100, 200, 300, 400, 800, 1200, 1600] #QB - Quadrupled all damage values to match new AI core damage threshold,  was [25, 50, 75, 100, 200, 300, 400]
     damageDivisor: 4
     trackAllDamage: true
     damageOverlay:
