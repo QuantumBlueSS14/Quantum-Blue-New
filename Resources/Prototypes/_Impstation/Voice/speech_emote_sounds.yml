@@ -42,7 +42,7 @@
     DefaultDeathgasp:
       collection: UnisexDeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: UnisexReptilian
@@ -82,7 +82,7 @@
     DefaultDeathgasp:
       collection: DeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: UnisexSlime
@@ -131,10 +131,10 @@
       collection: UnisexSlimeGasp
     DefaultDeathgasp:
       collection: UnisexSlimeDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
-    Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
 
 - type: emoteSounds
   id: MaleVox
@@ -187,10 +187,10 @@
         volume: -5
     Caw:
       collection: KodepiiaCaws
-  params:
-    variation: 0.125
     Gulp: # Goob
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+  params:
+    variation: 0.125
 
 - type: emoteSounds
   id: FemaleVox
@@ -241,10 +241,10 @@
         volume: -5
     Caw:
       collection: KodepiiaCaws
-  params:
-    variation: 0.125
     Gulp: # Goob
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+  params:
+    variation: 0.125
 
 - type: emoteSounds
   id: MaleDiona
@@ -281,10 +281,10 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
-    Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
 
 - type: emoteSounds
   id: FemaleDiona
@@ -325,8 +325,6 @@
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
   params:
     variation: 0.125
-    Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
 
 - type: emoteSounds
   id: MaleArachnid
@@ -368,7 +366,7 @@
     DefaultDeathgasp:
       collection: DeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: FemaleArachnid
@@ -410,7 +408,7 @@
     DefaultDeathgasp:
       collection: DeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: MaleDwarf
@@ -501,7 +499,7 @@
     DefaultDeathgasp:
       collection: MothDeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: FemaleMoth
@@ -543,7 +541,7 @@
     DefaultDeathgasp:
       collection: MothDeathGasp
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: Raccoon
@@ -687,7 +685,7 @@
     DefaultDeathgasp:
       path: /Audio/_Impstation/Animals/bros_hurt.ogg
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: Kodepiia
@@ -991,7 +989,7 @@
     DefaultDeathgasp:
       /Audio/_Impstation/Allulalo/allulalo_deathgasp.ogg
     Gulp: # Goob
-      path: /Audio/_Goobstation/Voice/gulp.ogg
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
 
 #body emotes
 - type: emoteSounds
