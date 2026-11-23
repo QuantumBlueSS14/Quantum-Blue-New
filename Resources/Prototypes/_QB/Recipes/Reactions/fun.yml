@@ -6,5 +6,7 @@
       amount: 1
     InsectBlood:
       amount: 2
+    PestKiller:
+      amount: 2
   products:
-    Mosquitol: 2
+    Mosquitol: 5
