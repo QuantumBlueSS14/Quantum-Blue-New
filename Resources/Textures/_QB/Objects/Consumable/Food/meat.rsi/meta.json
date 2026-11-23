@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "roast diona taken from https://github.com/ParadiseSS13/Paradise/commit/d1dad9a63980a2ec17664be63d82008b14a00435",
+    "copyright": "roast diona taken from https://github.com/ParadiseSS13/Paradise/commit/d1dad9a63980a2ec17664be63d82008b14a00435. TEGsteak by Seersage (discord)",
     "size": {
         "x": 32,
         "y": 32
@@ -9,6 +9,9 @@
     "states": [
         {
             "name": "roastdiona"
+        },
+        {
+            "name": "tegsteak"
         }
     ]
 }
