@@ -4,13 +4,13 @@
   name: scrimpering whimperlet
   description: A pitiful creature. It loses a lot of salt through its tears.
   components:
-  - type: Body
-    prototype: Animal
+  #- type: Body # QB - redundant with mouse
+  #  prototype: Animal
   - type: GhostRole
     name: ghost-role-information-whimperlet-name
     description: ghost-role-information-whimperlet-description
-  - type: Speech
-    allowedEmotes: ['Whine', 'Mew']
+  #- type: Speech # QB just make mouse noises
+  #  allowedEmotes: ['Whine', 'Mew']
   - type: Vocal
     sounds:
       Male: Mouse # QB change from Whimperletsounds
