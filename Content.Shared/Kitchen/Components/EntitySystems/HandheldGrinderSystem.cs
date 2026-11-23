@@ -67,8 +67,9 @@ internal sealed class HandheldGrinderSystem : EntitySystem
         if (!_solution.ResolveSolution(ent.Owner, ent.Comp.SolutionName, ref ent.Comp.GrinderSolution))
             return;
 
-        if (_net.IsServer) // Cannot cancel predicted audio.
-            ent.Comp.AudioStream = _audio.PlayPvs(ent.Comp.Sound, ent)?.Entity;
+        // QB comment out we're moving this lower
+        // if (_net.IsServer) // Cannot cancel predicted audio.
+        //     ent.Comp.AudioStream = _audio.PlayPvs(ent.Comp.Sound, ent)?.Entity;
 
         var doAfter = new DoAfterArgs(EntityManager, args.User, ent.Comp.DoAfterDuration, new HandheldGrinderDoAfterEvent(), ent, ent, item)
         {
@@ -79,7 +80,14 @@ internal sealed class HandheldGrinderSystem : EntitySystem
             BreakOnMove = true
         };
 
-        _doAfter.TryStartDoAfter(doAfter);
+        if (!_doAfter.TryStartDoAfter(doAfter))
+            return;
+
+        if (_net.IsServer) //Cannot cancel predicted audio.
+        {
+            ent.Comp.AudioStream = _audio.Stop(ent.Comp.AudioStream);
+            ent.Comp.AudioStream = _audio.PlayPvs(ent.Comp.Sound, ent)?.Entity;
+        }
     }
 
     private void OnHandheldDoAfter(Entity<HandheldGrinderComponent> ent, ref HandheldGrinderDoAfterEvent args)
