@@ -21,7 +21,7 @@
   - Science
 
   # Visual
-  inventoryTemplateId: borgShort
+  inventoryTemplateId: borgSec
   spriteBodyState: robot
   spriteHasMindState: robot_e
   spriteNoMindState: robot_e_r
@@ -93,6 +93,8 @@
   radioChannels:
   - Supply
   - Science
+
+  lawset: Salvage # QB addition
 
   addComponents: # imp
   - type: Magboots

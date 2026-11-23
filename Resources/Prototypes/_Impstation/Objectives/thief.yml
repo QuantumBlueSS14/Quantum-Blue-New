@@ -564,13 +564,13 @@
   - type: Objective
     difficulty: 0.5
 
-- type: entity
-  parent: BaseThiefStealCollectionObjective
-  id: PlushieStealCollectionObjective
-  components:
-  - type: StealCondition
-    stealGroup: Plushie
-    minCollectionSize: 12
-    maxCollectionSize: 50
-  - type: Objective
-    difficulty: 1.2
+# - type: entity # QB - no point
+#   parent: BaseThiefStealCollectionObjective
+#   id: PlushieStealCollectionObjective
+#   components:
+#   - type: StealCondition
+#     stealGroup: Plushie
+#     minCollectionSize: 12
+#     maxCollectionSize: 50
+#   - type: Objective
+#     difficulty: 1.2

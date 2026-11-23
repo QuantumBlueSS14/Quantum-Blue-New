@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized, BaseObjectVerbsCuteness ] # DEN: Add interaction verb parent
+  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
   id: GasCanister
   name: gas canister
   description: A canister that can contain any type of gas. It can be attached to connector ports using a wrench.
@@ -683,9 +683,9 @@
           - MachineLayer
     - type: PhysicalComposition
       materialComposition:
-        Steel: 500
+        Steel: 1000 # QB - was 500
     - type: StaticPrice
-      price: 125
+      price: 150 # QB
 
 - type: entity
   parent: GasCanisterBrokenBase

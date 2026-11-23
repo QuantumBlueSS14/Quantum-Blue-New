@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 5
+        Piercing: 0
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -33,17 +33,17 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 0
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 1.5
+        maxVol: 1
   - type: RefillableSolution
     solution: ammo
   - type: DrainableSolution
     solution: ammo
   - type: SolutionInjectOnProjectileHit
-    transferAmount: 1.5
+    transferAmount: 1
     blockSlots: NONE
     solution: ammo
   - type: InjectableSolution

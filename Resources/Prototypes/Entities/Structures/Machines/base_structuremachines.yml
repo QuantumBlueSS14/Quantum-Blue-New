@@ -44,12 +44,6 @@
           collection: MetalBreak
   - type: AcousticData # VDS
     absorption: 15
-  - type: InteractionVerbs # DEN: Add interaction verbs
-    allowedVerbs:
-    - KnockOn
-    - HugObject
-    - PetObject
-    - KissObject
 
 - type: entity
   abstract: true

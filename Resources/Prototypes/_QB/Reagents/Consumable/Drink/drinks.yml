@@ -1,0 +1,23 @@
+- type: reagent
+  id: ButterTea
+  name: reagent-name-buttertea
+  parent: BaseDrink
+  desc: reagent-desc-buttertea
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: buttertea
+  color: "#EDC181"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Theobromine
+        amount: 0.05
+  metamorphicSprite:
+    sprite: _QB/Objects/Consumable/Drinks/buttertea.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false

@@ -719,6 +719,7 @@
         whitelist:
           components:
           - Circuitboard
+          - UpgradeKit # QB let them upgrade
         blacklist:
           components:
           - SiliconLawProvider

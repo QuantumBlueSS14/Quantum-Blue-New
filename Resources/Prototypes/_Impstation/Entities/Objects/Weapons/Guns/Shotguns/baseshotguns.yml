@@ -1,7 +1,7 @@
 # The classic shotgun you know and love-- does not use magazines.
 - type: entity
   name: BaseWeaponShotgun
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponShotgun
   description: A rooty tooty point and shooty.
   abstract: true
@@ -66,7 +66,7 @@
 # Magazine shotguns, such as the Hydra/Bulldog.
 - type: entity
   name: BaseWeaponMagazineShotgun
-  parent: [BaseObjectVerbsCommon, BaseItem] # Quantum Blue, add BaseObjectVerbsCommon
+  parent: BaseItem
   id: BaseWeaponMagazineShotgun
   description: A rooty tooty point and shooty.
   abstract: true
@@ -77,8 +77,6 @@
       map: [ "enum.GunVisualLayers.Base" ]
   - type: Item
     size: Large
-    shape:
-    - 0,0,4,0
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
     quickEquip: false

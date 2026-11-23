@@ -1,0 +1,6 @@
+- type: gameMapPool
+  id: DeathMatchMapPoolQB
+  maps:
+  - MeteorArena_QB
+  - E1M1_QB
+  - dm01-entryway_QB

@@ -164,6 +164,7 @@
     - id: RPD # Funky RPD
     - id: AirGrenade
     - id: ClothingHandsGlovesColorYellow # QB
+    - id: DoorRemoteFirefighting # QB
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
@@ -171,7 +172,8 @@
     children:
     # - id: ClothingOuterHardsuitAtmos # QB - i hate this thing
     - id: ClothingShoesBootsMag # QB
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingMaskBreath
 
 - type: entity
@@ -214,7 +216,8 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitEngineering
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingShoesBootsMag
     - id: ClothingMaskBreath
 

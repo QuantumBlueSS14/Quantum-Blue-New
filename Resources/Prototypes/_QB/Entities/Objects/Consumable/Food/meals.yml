@@ -1,0 +1,131 @@
+
+- type: entity
+  name: butter on a stick
+  parent: FoodMealBase
+  id: FoodMealButterOnAStick
+  description: For those refined clientele that like to eat butter without getting their hands greasy.
+  components:
+  - type: Edible
+    trash:
+    - FoodKebabSkewer
+  - type: FlavorProfile
+    flavors:
+      - butter
+  - type: Sprite
+    sprite: _Wizden/Objects/Consumable/Food/meals.rsi
+    state: butteronastick
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Butter
+          Quantity: 15
+  - type: Tag
+    tags:
+    - FoodSnack
+
+- type: entity
+  name: butter steak
+  parent: FoodMealBase
+  id: FoodMealButterSteak
+  description: You are 100% certain this is how steak is served on Earth. Do not listen to anyone trying to correct you.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - butter
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meals.rsi
+    state: buttersteak
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Butter
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: raw butter steak
+  parent: FoodMealBase
+  id: FoodMealRawButterSteak
+  description: The Kodepiia version of the classic Earth meal!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - butter
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meals.rsi
+    state: buttersteakraw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: Butter
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodHotdogButter
+  name: butterdog
+  description: Dog with the butter on 'em.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - butter
+      - bread
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meals.rsi
+    state: butterdog
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Butter
+          Quantity: 10
+
+- type: entity
+  name: butter biscuit
+  parent: FoodMealBase
+  id: FoodMealButterBiscuit
+  description: Treat yourself to a little southern comfort.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - dough
+      - butter
+  - type: Sprite
+    sprite: _Wizden/Objects/Consumable/Food/meals.rsi
+    state: butterbiscuit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Butter
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Bread

@@ -145,6 +145,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: red
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: red-inhand-left
+      right:
+      - state: red-inhand-right
 
 - type: entity
   parent: NanoBoyBlockGame
@@ -155,6 +161,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: blue
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: blue-inhand-left
+      right:
+      - state: blue-inhand-right
 
 - type: entity
   parent: NanoBoyBlockGame
@@ -165,6 +177,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: green
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: green-inhand-left
+      right:
+      - state: green-inhand-right
 
 - type: entity
   parent: NanoBoyBlockGame
@@ -175,6 +193,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: purple
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: purple-inhand-left
+      right:
+      - state: purple-inhand-right
 
 - type: entity
   parent: NanoBoyBlockGame
@@ -185,6 +209,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: white
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: white-inhand-left
+      right:
+      - state: white-inhand-right
 
 - type: entity
   parent: NanoBoyBlockGame
@@ -195,6 +225,12 @@
     sprite: _QB/Objects/Fun/nanoboy.rsi
     layers:
     - state: yellow
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: yellow-inhand-left
+      right:
+      - state: yellow-inhand-right
 
 - type: entityTable
   id: RandomNanoBoy

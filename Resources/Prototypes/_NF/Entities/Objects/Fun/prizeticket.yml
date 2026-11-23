@@ -125,18 +125,18 @@
     - id: PlushieDoll
       prob: 0.15
       orGroup: Prize
-    - id: PlushieDollHair
-      prob: 0.15
-      orGroup: Prize
+    # - id: PlushieDollHair # QB - no references
+    #   prob: 0.15
+    #   orGroup: Prize
     - id: PlushieAnomalocarid
       prob: 0.15
       orGroup: Prize
     - id: PlushieGhostRevenant
       prob: 0.15
       orGroup: Prize
-    - id: PlushieGnomeChild
-      prob: 0.15
-      orGroup: Prize
+    # - id: PlushieGnomeChild # QB - no references
+    #   prob: 0.15
+    #   orGroup: Prize
     - id: PlushieGollylad
       prob: 0.15
       orGroup: Prize
@@ -191,18 +191,18 @@
     - id: DehydratedSpaceCarp
       prob: 0.03
       orGroup: Prize
-    - id: PlushieBug
-      prob: 0.03
-      orGroup: Prize
+    # - id: PlushieBug # QB - no references
+    #   prob: 0.03
+    #   orGroup: Prize
     - id: PlushieCaptain
       prob: 0.03
       orGroup: Prize
     - id: PlushieDwarf
       prob: 0.03
       orGroup: Prize
-    - id: PlushieEvilBug
-      prob: 0.03
-      orGroup: Prize
+    # - id: PlushieEvilBug # QB - no references
+    #   prob: 0.03
+    #   orGroup: Prize
     # - id: PlushieFinfin
     #   prob: 0.03
     #   orGroup: Prize
@@ -230,9 +230,9 @@
     - id: PlushieNuke
       prob: 0.03
       orGroup: Prize
-    - id: PlushieOdds
-      prob: 0.03
-      orGroup: Prize
+    # - id: PlushieOdds # QB - no references
+    #   prob: 0.03
+    #   orGroup: Prize
     - id: PlushieThrongler
       prob: 0.03
       orGroup: Prize

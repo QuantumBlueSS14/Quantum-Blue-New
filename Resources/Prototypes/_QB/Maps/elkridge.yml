@@ -1,7 +1,7 @@
 - type: gameMap
   id: ElkridgeQB
   mapName: 'Elkridge Depot'
-  mapPath: /Maps/_QB/elkridge.yml
+  mapPath: /Maps/_Impstation/halloween-elkridge.yml
   minPlayers: 8
   maxPlayers: 50
   stations:

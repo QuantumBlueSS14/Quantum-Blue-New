@@ -15,7 +15,7 @@
       time: 10h # imp, was 5h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 90h # imp, was 10h
+      time: 35h # QB - was 90h on imp
     - !type:OverallPlaytimeRequirement # imp add
       time: 40h
   weight: 10

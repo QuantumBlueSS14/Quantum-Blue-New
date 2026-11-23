@@ -20,8 +20,12 @@
   - Brig
   - Brigmedic # QB
   - Paramedic # QB
+  - Firelocks # QB
   - Maintenance
   - External
+  extendedAccess: # QB start
+  - Chemistry
+  - Psychologist # QB end
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

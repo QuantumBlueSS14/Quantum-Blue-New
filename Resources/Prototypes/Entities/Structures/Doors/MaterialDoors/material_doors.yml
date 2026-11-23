@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseStructure
   id: BaseMaterialDoor
@@ -75,9 +75,6 @@
   - type: ContainerContainer # Imp - If you're gonna add slots pls add a containercontainer so tests dont die
     containers:
       bucket: !type:ContainerSlot
-  - type: InteractionVerbs # EE
-    allowedVerbs:
-    - KnockOn
 
 - type: entity
   abstract: true
@@ -232,6 +229,10 @@
           MaterialBananium1:
             min: 1
             max: 2
+  - type: RadiationSource # QB start
+    intensity: 0.5
+    slope: 0.9
+    # QB end
 
 ### Other doors ###
 

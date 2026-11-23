@@ -4,7 +4,6 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
 using Content.Shared.Popups;
 using Robust.Shared.Serialization;
-using Content.Shared._EE.InteractionVerbs.Events; // EE
 
 namespace Content.Shared.Ghost
 {
@@ -24,7 +23,6 @@ namespace Content.Shared.Ghost
             SubscribeLocalEvent<GhostComponent, EmoteAttemptEvent>(OnAttempt);
             SubscribeLocalEvent<GhostComponent, DropAttemptEvent>(OnAttempt);
             SubscribeLocalEvent<GhostComponent, PickupAttemptEvent>(OnAttempt);
-            SubscribeLocalEvent<GhostComponent, InteractionVerbAttemptEvent>(OnAttempt); // EE
         }
 
         private void OnAttemptInteract(Entity<GhostComponent> ent, ref InteractionAttemptEvent args)

@@ -1,0 +1,14 @@
+# tier 2
+- type: technology
+  id: AdvancedDelivery
+  name: research-technology-delivery
+  icon:
+    sprite: _QB/Objects/Specific/Cargo/mail_bag_holding.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 8000
+  recipeUnlocks:
+  - MailCapsule
+  - BorgModuleAdvancedCourier
+  - MailBagOfHolding

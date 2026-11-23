@@ -67,7 +67,7 @@
 
 - type: entity
   name: unholy halberd
-  parent: [BaseObjectVerbsCommon, BaseItem] # DEN: Add interaction verb parent
+  parent: BaseItem
   id: UnholyHalberd
   description: A poleaxe that seems to be linked to its wielder.
   components:

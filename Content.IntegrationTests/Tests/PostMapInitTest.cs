@@ -98,15 +98,8 @@ namespace Content.IntegrationTests.Tests
 
 
             // Shuttles
-            "/Maps/Shuttles/ShuttleEvent/cruiser.yml", // Contains LSE-1200c "Perforator"
-            "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
-            "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
-            "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
-            "/Maps/Shuttles/ShuttleEvent/recruiter.yml", // Contains syndicate rubber stamp
-            "/Maps/_DV/Shuttles/listening_post.yml", // Contains captain's rubber stamp, chief engineer's rubber stamp, chaplain's rubber stamp, clown's rubber stamp, blablabla you get the picture
-            "/Maps/_Impstation/Shuttles/listening_post.yml", // No, I'm not gonna list out all these stamps again lol
-            "/Maps/_QB/Shuttles/listening_post.yml" // Same as above but for QB
-
+            "/Maps/_Impstation/Shuttles/listening_post.yml", // // Contains captain's rubber stamp, chief engineer's rubber stamp, chaplain's rubber stamp, clown's rubber stamp, blablabla you get the picture
+            "/Maps/_Harmony/Shuttles/ShuttleEvent/ERPSmall.yml" // Harmony map
         };
 
         // Imp - While fixing these tests I didn't want to edit any of the maps in-game because that would mess up any possible wip stuff.
@@ -149,7 +142,7 @@ namespace Content.IntegrationTests.Tests
             //"CentComm",
             //"Box",
             //"Marathon",
-            "MeteorArena",
+            // "MeteorArena",
             //"Saltern",
             //"Reach",
             //"Oasis",
@@ -157,7 +150,7 @@ namespace Content.IntegrationTests.Tests
             //"Plasma",
             //"Elkridge",
             //"Relic",
-            "dm01-entryway",
+            //"dm01-entryway",
             //"Exo",
             //"Snowball",
 
@@ -200,6 +193,11 @@ namespace Content.IntegrationTests.Tests
             "ElkridgeQB",
             "Foundry",
             "PebbleQB",
+
+            // QB DEATHMATCH:
+            "MeteorArena_QB",
+            "dm01-entryway_QB",
+            "E1M1_QB",
 
             // DEROTATED:
             //"Eclipse",

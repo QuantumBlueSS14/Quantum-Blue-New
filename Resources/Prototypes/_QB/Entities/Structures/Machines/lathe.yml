@@ -39,6 +39,8 @@
     - ElectronicsStatic
     - LightsStatic
     - MaterialsStatic
+    - QBSimpleBeakerJugStatic
+    - QBEngiStatic
     dynamicPacks:
     - AdvancedTools
     - PowerCells
@@ -83,6 +85,7 @@
     - Mining
     - Fultons
     - SalvageSecurityWeapons # pka upgrades
+    - Mail
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -128,9 +131,9 @@
     - ScienceWeapons
     - Chemistry
     - PowerCells
-    - ScienceWeapons
     - Mining # PKA and drill
     - ImpProtoDynamic
+    - Instruments
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

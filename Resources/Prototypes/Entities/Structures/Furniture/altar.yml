@@ -431,3 +431,7 @@
   - type: Construction
     graph: BananiumAltarGraph
     node: bananiumAltar
+  - type: RadiationSource # QB start
+    intensity: 1
+    slope: 0.9
+    # QB end

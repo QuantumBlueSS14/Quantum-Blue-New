@@ -15,6 +15,7 @@
   - Engineering
   - External
   - Atmospherics
+  - Firelocks # QB
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: FirefighterDay

@@ -3,7 +3,7 @@
   name: gasket
   parent: BaseStockPart
   description: A basic gasket used in the construction of some atmospheric devices.
-  suffix: Rating 1
+  # suffix: Rating 1 # QB
   components:
   - type: Sprite
     sprite: /Textures/_Impstation/Objects/Misc/manifold_gasket.rsi

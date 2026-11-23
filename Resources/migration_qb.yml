@@ -62,3 +62,31 @@ MascotCindySuit: null
 MascotCindyHead: null
 PaperSyndicateMascotCindyManual: null
 ClothingBackpackDuffelSyndicateFilledMascotCindy: null
+
+# 10/23/2026
+FireAlarm: null
+
+# 10/31/2026
+PlushieBug: null
+PlushieEvilBug: null
+PlushieBros: null
+PlushieSorb: null
+PlushieDollHair: PlushieDoll
+PlushieOdds: null
+PlushieIba: null
+PlushieGnomeChild: null
+
+Autolathe: null
+AutolatheHyperConvection: null
+Protolathe: null
+ProtolatheHyperConvection: null
+AutolatheMachineCircuitboard: null
+AutolatheHyperConvectionMachineCircuitboard: null
+ProtolatheMachineCircuitboard: null
+ProtolatheHyperConvectionMachineCircuitboard: null
+
+# 11/06/2026
+CryogenicSleepUnitSpawner: CryogenicSleepUnitSpawnerLateJoin
+
+# 11/12/2026
+SpawnPointServiceWorker: null

@@ -821,29 +821,30 @@
     prototype: DawInstrument
     stackRequirements:
       Glass: 1
-      Cable: 1
-    tagRequirements:
-#      One instrument to bring them all and in the darkness bind them...
-       KeyedInstrument:
-          amount: 1
-          defaultPrototype: SynthesizerInstrument
-          examineName: construction-insert-info-examine-name-instrument-keyed
-       StringInstrument:
-          amount: 1
-          defaultPrototype: AcousticGuitarInstrument
-          examineName: construction-insert-info-examine-name-instrument-string
-       PercussionInstrument:
-          amount: 1
-          defaultPrototype: GlockenspielInstrument
-          examineName: construction-insert-info-examine-name-instrument-percussion
-       BrassInstrument:
-          amount: 1
-          defaultPrototype: TrumpetInstrument
-          examineName: construction-insert-info-examine-name-instrument-brass
-       WoodwindInstrument:
-          amount: 1
-          defaultPrototype: SaxophoneInstrument
-          examineName: construction-insert-info-examine-name-instrument-woodwind
+      Cable: 5 # QB - was 1
+      Capacitor: 2 # QB
+#     tagRequirements: # QB - no more instrument requirements. fuck that
+# #      One instrument to bring them all and in the darkness bind them...
+#        KeyedInstrument:
+#           amount: 1
+#           defaultPrototype: SynthesizerInstrument
+#           examineName: construction-insert-info-examine-name-instrument-keyed
+#        StringInstrument:
+#           amount: 1
+#           defaultPrototype: AcousticGuitarInstrument
+#           examineName: construction-insert-info-examine-name-instrument-string
+#        PercussionInstrument:
+#           amount: 1
+#           defaultPrototype: GlockenspielInstrument
+#           examineName: construction-insert-info-examine-name-instrument-percussion
+#        BrassInstrument:
+#           amount: 1
+#           defaultPrototype: TrumpetInstrument
+#           examineName: construction-insert-info-examine-name-instrument-brass
+#        WoodwindInstrument:
+#           amount: 1
+#           defaultPrototype: SaxophoneInstrument
+#           examineName: construction-insert-info-examine-name-instrument-woodwind
 
 - type: entity
   id: PortableGeneratorPacmanMachineCircuitboard
@@ -952,7 +953,7 @@
   id: HotplateMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: hotplate machine board
-  description: A machine printed circuit board for a hotplate.
+  description: A machine printed circuit board for a hotplate. It looks like you can use a screwdriver on it! # imp, originally just "A machine printed circuit board for a hotplate."
   components:
   - type: Sprite
     state: medical
@@ -961,6 +962,12 @@
     stackRequirements:
       Capacitor: 2 # imp Manipulator>Capacitor
       Glass: 1
+  # imp edit start- can be deconstructed into a coldplate board
+  - type: Construction
+    deconstructionTarget: null
+    graph: ChemPlateBoard
+    node: hotplate
+  # imp edit end
 
 - type: entity
   parent: BaseMachineCircuitboard

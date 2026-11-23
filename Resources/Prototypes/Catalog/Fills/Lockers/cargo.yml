@@ -2,18 +2,20 @@
   id: FillSalvageSpecialistHardsuitSpatio
   table: !type:AllSelector
     children:
-    - id: OxygenTankFilled
+  # - id: OxygenTankFilled # QB comment comment
+    - id: QuantumTankSelector # QB - replaces oxy tanks
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitSpatio
     - id: ClothingMaskGasExplorer
-    - !type:GroupSelector # Random jetpack
-      children:
-      - id: JetpackSalvageFilled
-        weight: 80
-      - id: FireExtinguisher
-        weight: 18
-      - id: JetpackMini
-        weight: 2
+    - id: JetpackSalvageFilled # QB start
+    # - !type:GroupSelector # Random jetpack
+    #   children:
+    #   - id: JetpackSalvageFilled
+    #     weight: 80
+    #   - id: FireExtinguisher
+    #     weight: 18
+    #   - id: JetpackMini
+    #     weight: 2 # QB end
 
 - type: entityTable
   id: LockerFillSalvageSpecialist

@@ -1,0 +1,11 @@
+- type: latheRecipePack
+  id: QBSimpleBeakerJugStatic
+  recipes:
+  - Beaker
+  - LargeBeaker
+  - Jug
+
+- type: latheRecipePack
+  id: QBEngiStatic
+  recipes:
+  - Gasket

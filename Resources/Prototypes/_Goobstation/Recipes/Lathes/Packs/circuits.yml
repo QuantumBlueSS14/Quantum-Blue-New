@@ -9,3 +9,4 @@
   recipes:
   - RoboticArmCircuitboard
   - StorageBinCircuitboard
+  - UpgradeKitAutomation # QB
