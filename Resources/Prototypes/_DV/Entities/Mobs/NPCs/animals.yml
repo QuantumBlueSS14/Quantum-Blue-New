@@ -67,7 +67,7 @@
     interactFailureString: petting-failure-whimperlet
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
-      path: /Audio/_DV/Voice/Kitsune/fox_squeal1.ogg
+      collection: Fox # QB change from kitsune noise to fox collection
   - type: SolutionContainerManager # Ready for implementing planned desired behaviour
     solutions:
       tearducts:
