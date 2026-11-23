@@ -3627,6 +3627,14 @@
     deactivateSound: null
   - type: AlwaysRevolutionaryConvertible
   # imp edit end
+  # QB start - hunt pests
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  # QB end
 
 - type: entity
   name: calico cat
