@@ -729,6 +729,7 @@
         whitelist:
           tags:
           - ConstructionMaterial
+          - PowerCell # QB let them build with battery
     - hand:
         emptyRepresentative: SpaceHeaterFlatpack
         emptyLabel: borg-slot-flatpacks-empty
