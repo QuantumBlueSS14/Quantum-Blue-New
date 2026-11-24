@@ -13,3 +13,5 @@ borg-slot-detonator-cable-empty = Detonator Cord
 borg-slot-detonator-empty = Detonator Cap
 
 borg-slot-mail-capsule-empty = Mail Capsule
+
+borg-slot-restock-empty = Restock
