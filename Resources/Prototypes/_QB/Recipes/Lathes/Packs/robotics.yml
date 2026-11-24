@@ -2,3 +2,8 @@
   id: Drone
   recipes:
   - Drone
+
+- type: latheRecipePack
+  id: BorgModulesQB
+  recipes:
+  - BorgModuleAdvancedCourier

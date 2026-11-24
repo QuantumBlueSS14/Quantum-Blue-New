@@ -33,7 +33,7 @@
           Janitor: [ 1, 2 ]
           Chaplain: [ 1, 1 ]
           Librarian: [ 1, 1 ]
-          ServiceWorker: [ 2, 2 ]
+          # ServiceWorker: [ 2, 2 ]
           #engineering (6)
           AtmosphericTechnician: [ 2, 2 ]
           StationEngineer: [ 4, 4 ]

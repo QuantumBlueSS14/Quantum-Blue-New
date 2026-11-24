@@ -15,6 +15,10 @@
   access:
   - Medical
   - Maintenance
+  extendedAccess: # QB end
+  - Chemistry
+  - Paramedic
+  - Psychologist # QB end
 
 - type: startingGear
   id: MedicalInternGear
@@ -23,7 +27,7 @@
     id: MedicalInternPDA
     neck: ClothingNeckNoviceMark # imp
     ears: ClothingHeadsetMedical
-    belt: ClothingBeltMedicalFilled
+    belt: ClothingBeltMedicalFilled #imp
     pocket1: TutorialPersonalAI #imp
     pocket2: BookMedicalReferenceBook
   # storage:

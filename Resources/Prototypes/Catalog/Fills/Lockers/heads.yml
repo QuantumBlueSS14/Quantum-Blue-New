@@ -47,7 +47,7 @@
     # - id: SpaceCash1000 # QB - unnecessary
     # - id: WeaponDisabler # QB - unnecessary
     - id: ClothingEyesGlassesCommand
-    - id: HeadSkeleton # A skull to accompany your skeleton crew
+    - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
         max: 15

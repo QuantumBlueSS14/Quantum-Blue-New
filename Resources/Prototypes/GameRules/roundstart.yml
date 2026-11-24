@@ -619,6 +619,10 @@
         tableId: UnknownShuttlesFreelanceTable
       - !type:NestedSelector
         tableId: UnknownShuttlesHostileTable
+      # imp start
+      - !type:NestedSelector
+        tableId: UnknownShuttlesPossibleHostileTable
+      # imp end
 
 - type: entity
   id: BasicStationEventScheduler
@@ -698,3 +702,7 @@
     - id: BasicDecalDirtMonospaceVariationPass
       prob: 0.50
       orGroup: monospaceDecals
+    # QB start
+    # - id: GhostMediumVariationPass
+    #   prob: 0.10
+    # QB end

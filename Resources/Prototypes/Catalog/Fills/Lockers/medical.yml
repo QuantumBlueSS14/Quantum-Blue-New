@@ -137,7 +137,6 @@
     - id: HandheldGPSBasic
     - id: MedkitFilled
       prob: 0.3
-    - id: JetInjector
 
 - type: entity
   parent: LockerParamedic

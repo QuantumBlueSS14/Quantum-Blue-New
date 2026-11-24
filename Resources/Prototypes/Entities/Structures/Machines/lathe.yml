@@ -336,6 +336,7 @@
     - Robotics
     - Drone # qb
     - BorgModules
+    - BorgModulesQB # QB
     - MechParts
     - MechEquipment
   - type: MaterialStorage

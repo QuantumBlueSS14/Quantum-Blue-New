@@ -152,12 +152,6 @@
     walkModifier: 0.7
     sprintModifier: 0.7
   - type: DamageExaminable
-  - type: InteractionVerbs # DEN: Add interaction verbs
-    allowedVerbs:
-    - KnockOn
-    - HugObject
-    - PetObject
-    - KissObject
 
 - type: entity
   id: SyndicateMicrowave

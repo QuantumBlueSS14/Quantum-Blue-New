@@ -87,3 +87,6 @@ ProtolatheHyperConvectionMachineCircuitboard: null
 
 # 11/06/2026
 CryogenicSleepUnitSpawner: CryogenicSleepUnitSpawnerLateJoin
+
+# 11/12/2026
+SpawnPointServiceWorker: null

@@ -2,7 +2,7 @@
 
 - type: entity
   id: WeldingFuelTank
-  parent: [StorageTank, StructureWheeled, BaseObjectVerbsCuteness] # DEN: Add interaction verb parent
+  parent: [StorageTank, StructureWheeled]
   name: fuel tank
   description: A fuel tank. It's used to store high amounts of fuel.
   suffix: Empty
@@ -83,7 +83,7 @@
 
 - type: entity
   id: WaterTank
-  parent: [StorageTank, StructureWheeled, BaseObjectVerbsCuteness] # DEN: Add interaction verb parent
+  parent: [StorageTank, StructureWheeled]
   name: water tank
   description: A water tank. It's used to store high amounts of water.
   suffix: Empty
@@ -120,7 +120,7 @@
           Quantity: 1500
 
 - type: entity
-  parent: [StorageTank, BaseObjectVerbsCuteness] # DEN: Add interaction verb parent
+  parent: StorageTank
   id: WaterCooler
   name: water cooler
   description: Seems like a good place to stand and waste time. It has a stock of paper cups on the side.
@@ -207,7 +207,7 @@
 
 - type: entity
   id: GenericTank
-  parent: [StorageTank, StructureWheeled, BaseObjectVerbsCuteness] # DEN: Add interaction verb parent
+  parent: [StorageTank, StructureWheeled]
   suffix: Empty
   components:
     - type: StaticPrice

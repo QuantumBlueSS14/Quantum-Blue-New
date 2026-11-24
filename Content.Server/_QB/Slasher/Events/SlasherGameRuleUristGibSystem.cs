@@ -1,6 +1,6 @@
-using Content.Server.Body.Systems;
 using Content.Server.Chat.Systems;
 using Content.Server.GameTicking.Rules;
+using Content.Shared.Gibbing;
 using Content.Shared.QB.Slasher.Components;
 using Content.Shared.Coordinates.Helpers;
 using Content.Shared.GameTicking.Components;
@@ -19,7 +19,7 @@ namespace Content.Server.QB.Slasher.Events;
 /// </summary>
 public sealed class SlasherGameRuleUristGibSystem : GameRuleSystem<SlasherGameRuleUristGibComponent>
 {
-    [Dependency] private readonly BodySystem _body = default!;
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
@@ -68,7 +68,7 @@ public sealed class SlasherGameRuleUristGibSystem : GameRuleSystem<SlasherGameRu
             if (Deleted(urist))
                 return;
 
-            _body.GibBody(urist, true);
+            _gibbing.Gib(urist, true);
         });
     }
 

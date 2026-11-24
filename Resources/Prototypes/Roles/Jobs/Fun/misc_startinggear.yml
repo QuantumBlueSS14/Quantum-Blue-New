@@ -150,22 +150,23 @@
   equipment:
     back: ClothingBackpackSatchelAdmin
     id: AdminPDA
+    # QB: tools live in the admin toolbelt (ported from TheDen via old QB)
+    belt: AdminToolbelt
+    pocket1: BoxFolderAdmin
   storage:
     back:
-    - GasAnalyzer
-    - trayScanner
-    - AccessConfiguratorUniversal
-    - Multitool
     # imp edit start
-    - Omnitool
-    - WelderExperimental
-    - GeigerCounter
-    - SprayPainterRecharging
     - CrayonInfinite
     - ClothingEyesHudOmni
-    - RCDExperimental
-    - RPDExperimental
     # imp edit end
+    # QB: GasAnalyzer, trayScanner, AccessConfiguratorUniversal, Multitool, Omnitool, WelderExperimental,
+    # GeigerCounter, SprayPainterRecharging, RCDExperimental and RPDExperimental moved to AdminToolbelt
+    - AdminMaterialBox
+    - PowerCellMicroreactor
+    - PowerCellMicroreactor
+    - DrinkGlass
+    - TrashBananaPeel
+    # End QB
 
 #Gladiator with spear
 - type: startingGear

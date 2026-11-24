@@ -1,6 +1,6 @@
 - type: entity
   name: pickaxe
-  parent: [BaseItem, BaseObjectVerbsCommon] # DEN: Add interaction verb parent
+  parent: BaseItem
   id: Pickaxe
   description: Notched to perfection, for jamming it into rocks.
   components:
@@ -44,7 +44,7 @@
 
 - type: entity
   name: mining drill
-  parent: [BaseItem, BaseObjectVerbsCommon] # DEN: Add interaction verb parent
+  parent: BaseItem
   id: MiningDrill
   description: Powerful tool used to quickly drill through rocks.
   components:
@@ -100,7 +100,7 @@
 
 - type: entity
   abstract: true
-  parent: [BaseItem, BaseObjectVerbsCommon] # DEN: Add interaction verb parent
+  parent: BaseItem
   id: BaseWeaponCrusher # Crusher? But I...
   name: crusher
   description: An early design of the proto-kinetic accelerator.

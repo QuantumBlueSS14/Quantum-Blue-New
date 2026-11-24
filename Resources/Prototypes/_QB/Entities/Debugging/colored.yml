@@ -1,0 +1,11 @@
+- type: entity
+  id: TestColoredEntity
+  name: test colored entity
+  description: A test entity for ColoredComponent functionality.
+  suffix: DEBUG
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/flashlight.rsi
+    state: flashlight
+  - type: Colored
+    color: "#50c878"

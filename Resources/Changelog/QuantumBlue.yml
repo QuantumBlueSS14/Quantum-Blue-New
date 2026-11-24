@@ -1,6 +1,89 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Add
+        message: Point blue at last! Most stations have a new parallax depicting the Point Blue nebula.
+      - type: Add
+        message: Archon's titular grid is finally visible in its parallax, in all its haunting glory.
+      - type: Add
+        message: Dash still only travels to and from Point Blue, but it still has a new parallax!
+    id: 224
+    time: '2026-11-21T10:11:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/330
+  - author: CrimsonAnnie
+    changes:
+      - type: Add
+        message: Mosquito Lawset added to ion storm pool EeeeEeeeEE
+    id: 223
+    time: '2026-11-21T09:41:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/308
+  - author: SeeroftheNight
+    changes:
+      - type: Add
+        message: You can now save labels between rounds (cherry pick from DV/Starlight)
+      - type: Tweak
+        message: The original item name and label are now swapped (cherry pick from DV/Starlight)
+    id: 222
+    time: '2026-11-20T02:08:34.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/315
+  - author: AlinaNova21
+    changes:
+      - type: Add
+        message: >-
+          The station AI has a "Jump to camera" action with a searchable camera list and a station map; click a camera
+          to jump to it.
+      - type: Add
+        message: >-
+          Security bodycams, available in the SecDrobe and as a neck loadout for security roles. The AI can see through
+          them.
+      - type: Add
+        message: NoPro camera, which gives the wearer AI vision while worn.
+      - type: Tweak
+        message: pAIs now give the station AI a small area of vision. Syndicate pAIs do not.
+    id: 221
+    time: '2026-11-14T19:10:05.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/322
+  - author: soup4food
+    changes:
+      - type: Add
+        message: Slowdowns on chem puddles are back! Woo
+      - type: Fix
+        message: A client stutter bug
+    id: 220
+    time: '2026-11-14T19:08:00.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/321
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Speck: Cargo now actually has roundstart materials.'
+      - type: Fix
+        message: 'Speck: Emergency lights are an actual thing now, oops'
+    id: 219
+    time: '2026-11-14T19:03:15.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/318
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Dash: Fixed the cables in engi, but now you only get 1 SMES.'
+    id: 218
+    time: '2026-11-14T19:01:57.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/314
+  - author: CrimsonAnnie
+    changes:
+      - type: Add
+        message: Salvage cyborgs have received a set of unique laws, go pester them about it!
+    id: 217
+    time: '2026-11-14T18:56:10.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/306
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Add advanced delivery research, mail bags of holding, and advanced courier cyborg module
+    id: 216
+    time: '2026-11-14T18:54:38.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/305
+  - author: MattFright
+    changes:
       - type: Remove
         message: 'Speck: Removed the passive research machine for now.'
       - type: Tweak

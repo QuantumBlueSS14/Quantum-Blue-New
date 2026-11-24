@@ -23,6 +23,6 @@
     ClothingOuterApronChemist: 2 # Realistic PPE apron for chemistry
     ClothingEyesGlassesChemist: 2 # Safety glasses
     ClothingHandsGlovesChemist: 2 # Heavy duty chemistry gloves
-    # End of modified code
+  # End of modified code
   contrabandInventory:
     ToyFigurineChemist: 1
