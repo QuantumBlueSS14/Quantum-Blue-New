@@ -1,5 +1,5 @@
 - type: entity
-  parent: GunSafe
+  parent: GunSafeBaseSecureSuperweapon # QB new superweapon safe
   id: GunSafeBeamDevastator
   name: Devastator safe
   components:
@@ -8,7 +8,7 @@
     - id: WeaponBeamDevastator
 
 - type: entity
-  parent: GunSafeBaseSecure
+  parent: GunSafeBaseSecureSuperweapon # QB new superweapon safe
   id: GunSafeGamblagator
   name: Gamblagator safe
   components:
