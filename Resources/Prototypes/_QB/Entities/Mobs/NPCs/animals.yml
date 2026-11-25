@@ -19,7 +19,7 @@
 
 - type: entity
   name: mosquito
-  parent: [ SimpleMobBase, FlyingMobBase]
+  parent: [ SimpleMobBasePest, FlyingMobBase]
   id: MobMosquito
   description: EEEEeeeeEEEEEEEEeeEEE
   components:

@@ -95,7 +95,7 @@
 
 - type: entity
   name: bee
-  parent: [ SimpleMobBase, FlyingMobBase ]
+  parent: [ SimpleMobBasePest, FlyingMobBase] # QB replace simplemobbase with base pest
   id: MobBee
   description: Nice to have, but you can't build a civilization on a foundation of honey alone.
   components:
@@ -400,7 +400,7 @@
 
 - type: entity
   name: cockroach
-  parent: SimpleMobBase
+  parent: SimpleMobBasePest # QB add base pest
   id: MobCockroach
   description: This station is just crawling with bugs.
   components:

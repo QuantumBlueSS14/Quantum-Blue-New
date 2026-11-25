@@ -1,0 +1,19 @@
+- type: entity
+  abstract: true
+  save: false
+  parent: SimpleMobBase
+  id: SimpleMobBasePest # just for things that go ouch to pest spray
+  components:
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [ PestKiller ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
