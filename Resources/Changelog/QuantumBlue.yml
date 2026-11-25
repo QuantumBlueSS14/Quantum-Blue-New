@@ -1,6 +1,13 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Add
+        message: Pest spray can now be used to kill pests. It also slightly poisons moth people.
+    id: 235
+    time: '2026-11-25T18:06:40.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/311
+  - author: rebe83
+    changes:
       - type: Fix
         message: Diona are once again FTL knockdown immune and move at their normal elderly pace.
     id: 234
