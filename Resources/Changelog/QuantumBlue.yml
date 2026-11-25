@@ -1,6 +1,13 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Fix
+        message: Diona are once again FTL knockdown immune and move at their normal elderly pace.
+    id: 234
+    time: '2026-11-25T17:57:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/331
+  - author: rebe83
+    changes:
       - type: Tweak
         message: Cargo telepads are now industrial research
     id: 233
