@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Service lathe circuitboards are no longer printable.
+    id: 227
+    time: '2026-11-25T14:47:14.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/339
   - author: soup4food
     changes:
       - type: Fix
