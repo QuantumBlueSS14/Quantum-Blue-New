@@ -1,6 +1,13 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Tweak
+        message: Engineering cyborgs can now hold batteries. Don't go crazy from power.
+    id: 228
+    time: '2026-11-25T14:48:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/341
+  - author: rebe83
+    changes:
       - type: Remove
         message: Service lathe circuitboards are no longer printable.
     id: 227
