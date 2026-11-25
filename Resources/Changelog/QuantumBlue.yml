@@ -1,4 +1,11 @@
 Entries:
+  - author: Skunkybutt
+    changes:
+      - type: Tweak
+        message: Pies no longer stun or knock down Pie Victims, sorry clowns
+    id: 229
+    time: '2026-11-25T14:50:55.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/343
   - author: rebe83
     changes:
       - type: Tweak
