@@ -14,48 +14,6 @@
 
 - type: entity
   parent: BaseGunSafeSpawner
-  id: ShotgunSafeSpawner
-  suffix: Shotgun
-  components:
-  - type: EntityTableSpawner
-    table: !type:GroupSelector
-      children:
-      - id: GunSafeShotgunEnforcer
-      - id: GunSafeShotgunKammerer
-      - id: GunSafeAdjutantShotgun
-
-- type: entity
-  parent: BaseGunSafeSpawner
-  id: RifleSafeSpawner
-  suffix: Rifle
-  components:
-  - type: EntityTableSpawner
-    table: !type:GroupSelector
-      children:
-      - id: GunSafeVulcanRifle
-      - id: GunSafeSubMachineGunDrozd
-      - id: GunSafeRifleLecter
-      - id: GunSafeM90Rifle
-
-- type: entity
-  parent: BaseGunSafeSpawner
-  id: HandgunSafeSpawner
-  suffix: Handgun
-  components:
-  - type: EntityTableSpawner
-    table: !type:GroupSelector
-      children:
-      - id: GunSafePistolMk58
-        weight: 0.85
-      - !type:GroupSelector
-        weight: 0.15
-        children:
-        - id: GunSafeEnergyGunMini
-        - id: GunSafePistolUniversal
-        - id: GunSafeSubMachineGunWt550
-
-- type: entity
-  parent: BaseGunSafeSpawner
   id: SuperweaponSafeSpawner
   suffix: Superweapon
   components:
@@ -63,5 +21,5 @@
     table: !type:GroupSelector
       children:
       - id: GunSafeBeamDevastator
-      - id: GunSafeRocketLauncher
+      #- id: GunSafeRocketLauncher # QB no boom boom
       - id: GunSafeGamblagator
