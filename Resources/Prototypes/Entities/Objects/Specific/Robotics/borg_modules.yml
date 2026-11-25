@@ -800,6 +800,14 @@
         whitelist:
           tags:
           - Soap
+    # QB changes start - restock hand
+    - item:
+      hand:
+        emptyLabel: borg-slot-restock-empty
+        emptyRepresentative: VendingMachineRestockDonut
+        whitelist:
+          components:
+          - VendingMachineRestock
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: light-replacer-module }
 
