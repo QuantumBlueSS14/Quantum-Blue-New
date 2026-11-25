@@ -48,11 +48,11 @@
         maxVol: 20
         reagents:
         - ReagentId: Nutriment
-          Quantity: 10
-        - ReagentId: Protein
-          Quantity: 5
-        - ReagentId: Plasma
           Quantity: 2
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Plasma
+          Quantity: 1
         - ReagentId: Charcoal
           Quantity: 5
   - type: Construction
