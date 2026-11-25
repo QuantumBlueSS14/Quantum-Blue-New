@@ -1,4 +1,11 @@
 Entries:
+  - author: Skunkybutt
+    changes:
+      - type: Remove
+        message: Removed turtles from the vent critter spawn pool, the great pacific garbage patch claims another victim
+    id: 231
+    time: '2026-11-25T17:00:54.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/347
   - author: rebe83
     changes:
       - type: Tweak
