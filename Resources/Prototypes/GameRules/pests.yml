@@ -12,7 +12,7 @@
     - id: CorpseEjectedFromVents # imp
     - id: DuctSpiderMigration # imp
     - id: PleebnarMigration #imp
-    - id: TurtleMigration #imp
+   #- id: TurtleMigration # QB - Matt don't want it
 
 - type: entityTable
   id: SpicyPestEventsTable
