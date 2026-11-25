@@ -1,0 +1,11 @@
+- type: latheRecipePack
+  id: QBCommandBedsheets
+  recipes:
+  - BedsheetCaptain
+  - BedsheetHOP
+  - BedsheetHD
+  - BedsheetCMO
+  - BedsheetHOS
+  - BedsheetQM
+  - BedsheetCE
+  - BedsheetRD
