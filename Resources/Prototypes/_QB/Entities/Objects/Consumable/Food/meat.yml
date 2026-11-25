@@ -31,7 +31,7 @@
 - type: entity
   parent: FoodMeatBase
   id: FoodMeatCookedTEG
-  name: steak
+  name: TEG steak
   description: A extremely cooked piece of meat. Smells like phoron.
   components:
   - type: Tag

@@ -22,7 +22,7 @@
       - !type:PlaySound
         sound: /Audio/Effects/sizzle.ogg
       steps:
-      - minTemperature: 2000
+      - minTemperature: 4000
 
   - node: teg steak
     entity: FoodMeatCookedTEG
