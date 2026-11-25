@@ -6,7 +6,7 @@
       amount: 1
     InsectBlood:
       amount: 2
-    PestKiller:
+    UncookedAnimalProteins:
       amount: 2
   products:
     Mosquitol: 5
