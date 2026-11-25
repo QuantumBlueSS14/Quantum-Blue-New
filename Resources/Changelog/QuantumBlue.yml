@@ -1,4 +1,11 @@
 Entries:
+  - author: soup4food
+    changes:
+      - type: Fix
+        message: Little Guys Car can no longer fly freely in space.
+    id: 226
+    time: '2026-11-25T14:38:45.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/335
   - author: Soup4Food
     changes:
       - type: Add
