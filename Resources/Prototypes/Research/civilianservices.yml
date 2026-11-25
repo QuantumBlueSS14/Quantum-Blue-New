@@ -187,17 +187,17 @@
   - WeaponSprayNozzle
   - ClothingBackpackWaterTank
 
-- type: technology
-  id: BluespaceCargoTransport
-  name: research-technology-bluespace-cargo-transport
-  icon:
-    sprite: _Impstation/Structures/cargo_telepad.rsi #imp
-    state: display
-  discipline: CivilianServices
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-  - CargoTelepadMachineCircuitboard
+#- type: technology # QB - move to industrial
+#  id: BluespaceCargoTransport
+#  name: research-technology-bluespace-cargo-transport
+#  icon:
+#    sprite: _Impstation/Structures/cargo_telepad.rsi #imp
+#    state: display
+#  discipline: CivilianServices
+#  tier: 2
+#  cost: 15000
+#  recipeUnlocks:
+#  - CargoTelepadMachineCircuitboard
 
 - type: technology
   id: PushHorn

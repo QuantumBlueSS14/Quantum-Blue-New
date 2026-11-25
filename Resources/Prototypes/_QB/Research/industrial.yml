@@ -12,3 +12,15 @@
   - MailCapsule
   - BorgModuleAdvancedCourier
   - MailBagOfHolding
+
+- type: technology # moved from service to industrial
+  id: BluespaceCargoTransport
+  name: research-technology-bluespace-cargo-transport
+  icon:
+    sprite: _Impstation/Structures/cargo_telepad.rsi #imp
+    state: display
+  discipline: Industrial
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - CargoTelepadMachineCircuitboard
