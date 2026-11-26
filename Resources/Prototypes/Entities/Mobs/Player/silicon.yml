@@ -216,6 +216,8 @@
     container: station_ai_mind_slot
   - type: Damageable
     damageModifierSet: StrongMetallic
+  - type: ExplosionResistance #QB - AI gets 60% explosion resistance so they don't get destroyed by a single C4, you're welcome Matt
+    damageCoefficient: 0.4
   - type: Repairable
     doAfterDelay: 10
     allowSelfRepair: false
@@ -390,6 +392,8 @@
         density: 200
   - type: Damageable
     damageModifierSet: StrongMetallic
+  - type: ExplosionResistance #QB - AI gets 60% explosion resistance so they don't get destroyed by a single C4, you're welcome Matt
+    damageCoefficient: 0.4
   - type: Destructible
     thresholds:
     - trigger:
