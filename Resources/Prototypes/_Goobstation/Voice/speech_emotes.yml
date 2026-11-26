@@ -1,0 +1,16 @@
+- type: emote
+  id: Gulp
+  name: chat-emote-name-gulp
+  category: Vocal
+  #icon: _Goobstation/Interface/Emotes/gulp.png # QB comment - make custom one later
+  available: true # QB
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+   components:
+   - BorgChassis
+  chatMessages: ["chat-emote-msg-gulp"]
+  chatTriggers:
+    - gulps
+    - gulp

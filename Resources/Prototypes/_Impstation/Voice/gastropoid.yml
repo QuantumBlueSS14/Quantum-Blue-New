@@ -52,3 +52,5 @@
       path: /Audio/_Impstation/Voice/Gastropoid/snail_gasp.ogg
     DefaultDeathgasp:
       path: /Audio/_Impstation/Voice/Gastropoid/snail_deathgasp.ogg
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg

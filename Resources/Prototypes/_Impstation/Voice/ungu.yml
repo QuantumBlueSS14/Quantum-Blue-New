@@ -57,7 +57,9 @@
       params:
         variation: 0.2
     Jump:
-      path: /Audio/_Impstation/Effects/Emotes/jumpthud.ogg        
+      path: /Audio/_Impstation/Effects/Emotes/jumpthud.ogg
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
 
 # body emotes
 - type: emoteSounds

@@ -1,4 +1,4 @@
-﻿- type: emoteSounds
+- type: emoteSounds
   id: MaleThaven
   sounds:
     Scream:
@@ -41,6 +41,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.05
     pitch: 1.25
@@ -88,6 +90,8 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.05
     pitch: 1.25
@@ -135,6 +139,8 @@
       collection: UnisexGasp
     DefaultDeathgasp:
       collection: UnisexDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.05
     pitch: 1.25

@@ -40,6 +40,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: FemaleHuman
@@ -82,6 +84,8 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: MaleReptilian
@@ -120,6 +124,8 @@
     Sigh:
       collection: MaleSigh #placeholder
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: FemaleReptilian
@@ -158,6 +164,8 @@
     Sigh:
       collection: FemaleSigh #placeholder
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: MaleSlime
@@ -204,6 +212,8 @@
       collection: MaleSlimeGasp # imp
     DefaultDeathgasp:
       collection: MaleSlimeDeathGasp # imp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
 
@@ -252,6 +262,8 @@
     Pop:
       collection: Pops
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
 
@@ -304,6 +316,8 @@
     Yawn:
       collection: UnisexYawn #placeholder
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
     # TODO: We need vox sounds for the other emotes
@@ -343,6 +357,8 @@
     Whistle:
       collection: Whistles
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
 
@@ -385,6 +401,8 @@
     Whistle:
       collection: Whistles
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: UnisexDwarf
@@ -425,6 +443,8 @@
       collection: UnisexGasp # imp
     DefaultDeathgasp:
       collection: UnisexDeathGasp # imp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
   params:
     variation: 0.125
     pitch: 0.75
@@ -511,6 +531,8 @@
     Whistle:
       collection: Whistles
     # imp edit end
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: UnisexSilicon
@@ -618,6 +640,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 - type: emoteSounds
   id: FemaleVulpkanin
@@ -658,6 +682,8 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg
 
 # body emotes
 - type: emoteSounds
@@ -845,3 +871,5 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: WawaDeath
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/Human/gulp.ogg

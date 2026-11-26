@@ -56,3 +56,5 @@
       path: /Audio/_Impstation/Voice/Decapoid/decapoid_gasp.ogg
     DefaultDeathgasp:
       path: /Audio/_Impstation/Voice/Decapoid/decapoid_deathgasp.ogg
+    Gulp: # Goob
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
