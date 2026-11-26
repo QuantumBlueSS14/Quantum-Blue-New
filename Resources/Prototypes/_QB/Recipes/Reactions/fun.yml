@@ -1,0 +1,12 @@
+- type: reaction
+  id: Mosquitol
+  impact: Medium
+  reactants:
+    Vestine:
+      amount: 1
+    InsectBlood:
+      amount: 2
+    UncookedAnimalProteins:
+      amount: 2
+  products:
+    Mosquitol: 5
