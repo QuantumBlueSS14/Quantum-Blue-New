@@ -1,6 +1,57 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Tweak
+        message: 'Archon: Hopefully fixed the power setup in engineering'
+      - type: Tweak
+        message: 'Archon: Fixed a few trash items in maints using the wrong prototypes'
+      - type: Tweak
+        message: 'Archon: Fixed the science silo detecting the anomaly generator as part of "escape pod"'
+      - type: Tweak
+        message: 'Archon: Got rid of an accidentally placed second bong spawner at the bar.'
+      - type: Tweak
+        message: 'Archon: Added a beachdrobe!'
+      - type: Tweak
+        message: 'Archon: Fixed the pipes setup in xenoarch.'
+      - type: Tweak
+        message: 'Atlas: Fixed the disposals unit north of botany not being connected'
+      - type: Tweak
+        message: 'Atlas: Fixed the CMO disposals unit not being connected either'
+      - type: Tweak
+        message: 'Atlas: Fixed a few missing decals'
+      - type: Tweak
+        message: 'Atlas: Added a beachdrobe!'
+      - type: Tweak
+        message: 'Atlas: Fixed supermatter chamber being a vaccuum roundstart'
+      - type: Tweak
+        message: 'Atlas: The roundstart filters setup in atmos is a little more complete now'
+      - type: Tweak
+        message: 'Atlas: The bridge zoos now have turtles!'
+      - type: Tweak
+        message: 'Atlas: Added animals to the evac shuttle zoo'
+      - type: Tweak
+        message: 'Dash: Added a secdrobe to sec'
+      - type: Tweak
+        message: 'Dash: Added reinforced floors underneath all windows'
+      - type: Tweak
+        message: 'Dash: Tidied up medbay a little'
+      - type: Tweak
+        message: 'Dash: Removed an extra lever in salvage that might be able to break things'
+      - type: Tweak
+        message: 'Dash: Added a beachdrobe!'
+      - type: Tweak
+        message: 'Dash: The evac shuttle now actually has screens to display the travel time until centcomm'
+      - type: Tweak
+        message: 'Speck: Fixed the maints safe being wrongly named "gun safe" (even if partially correct)'
+      - type: Tweak
+        message: 'Speck: Fixed a camera being slightly in the way of hydroponic trays'
+      - type: Tweak
+        message: 'Speck: Fixed distro by default being set to 70/30 (it was messing up air alarms)'
+    id: 237
+    time: '2026-11-26T19:48:14.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/353
+  - author: MattFright
+    changes:
       - type: Fix
         message: Fixed cryo pod rotations not working. This currently was only a problem on Speck roundstart
     id: 236
