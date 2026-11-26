@@ -1,4 +1,11 @@
 Entries:
+  - author: Skunkybutt
+    changes:
+      - type: Tweak
+        message: AI Core now has 60% explosion resistance, it is now Harder to blow up the AI, fun times await
+    id: 238
+    time: '2026-11-26T19:49:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/352
   - author: MattFright
     changes:
       - type: Tweak
