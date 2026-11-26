@@ -24,7 +24,7 @@
         visible: false
   - type: InteractionOutline
   - type: Transform
-    noRot: true
+    # noRot: true # QB comment - WHY IS THIS SET
   - type: Fixtures
     fixtures:
       fix1:
