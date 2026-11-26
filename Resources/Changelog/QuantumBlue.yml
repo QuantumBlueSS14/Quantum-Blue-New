@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: Fixed cryo pod rotations not working. This currently was only a problem on Speck roundstart
+    id: 236
+    time: '2026-11-26T19:47:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/354
   - author: rebe83
     changes:
       - type: Add
