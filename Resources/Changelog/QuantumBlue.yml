@@ -2,6 +2,15 @@ Entries:
   - author: rebe83
     changes:
       - type: Add
+        message: Added a vestine-derived chemical that creates angry mosquitoes, Mosquitol.
+      - type: Add
+        message: Added mosquitol to botany vestine mutation pool and chemical anomalies.
+    id: 240
+    time: '2026-11-26T19:59:42.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/329
+  - author: rebe83
+    changes:
+      - type: Add
         message: Added gulp emote.
     id: 239
     time: '2026-11-26T19:56:21.0000000+00:00'
