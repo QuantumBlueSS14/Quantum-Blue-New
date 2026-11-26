@@ -1,4 +1,81 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Pest spray can now be used to kill pests. It also slightly poisons moth people.
+    id: 235
+    time: '2026-11-25T18:06:40.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/311
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Diona are once again FTL knockdown immune and move at their normal elderly pace.
+    id: 234
+    time: '2026-11-25T17:57:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/331
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Cargo telepads are now industrial research
+    id: 233
+    time: '2026-11-25T17:27:47.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/350
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Janitor cyborgs now can carry vending machine restocks.
+    id: 232
+    time: '2026-11-25T17:01:59.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/348
+  - author: Skunkybutt
+    changes:
+      - type: Remove
+        message: Removed turtles from the vent critter spawn pool, the great pacific garbage patch claims another victim
+    id: 231
+    time: '2026-11-25T17:00:54.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/347
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Floodlights can be printed in the cargo and engineering techfabs.
+    id: 230
+    time: '2026-11-25T16:57:47.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/345
+  - author: Skunkybutt
+    changes:
+      - type: Tweak
+        message: Pies no longer stun or knock down Pie Victims, sorry clowns
+    id: 229
+    time: '2026-11-25T14:50:55.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/343
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Engineering cyborgs can now hold batteries. Don't go crazy from power.
+    id: 228
+    time: '2026-11-25T14:48:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/341
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Service lathe circuitboards are no longer printable.
+    id: 227
+    time: '2026-11-25T14:47:14.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/339
+  - author: soup4food
+    changes:
+      - type: Fix
+        message: Little Guys Car can no longer fly freely in space.
+    id: 226
+    time: '2026-11-25T14:38:45.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/335
+  - author: Soup4Food
+    changes:
+      - type: Add
+        message: Added command bedsheets to the uniform printer
+    id: 225
+    time: '2026-11-25T14:37:34.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/334
   - author: MattFright
     changes:
       - type: Add

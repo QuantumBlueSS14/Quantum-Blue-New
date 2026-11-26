@@ -57,3 +57,4 @@
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepSkates
+    - type: GravityAffected #QB

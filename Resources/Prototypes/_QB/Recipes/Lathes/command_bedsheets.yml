@@ -1,0 +1,39 @@
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetCaptain
+  result: BedsheetCaptain
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetHOP
+  result: BedsheetHOP
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetHD
+  result: BedsheetHD
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetCMO
+  result: BedsheetCMO
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetHOS
+  result: BedsheetHOS
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetQM
+  result: BedsheetQM
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetCE
+  result: BedsheetCE
+
+- type: latheRecipe
+  parent: BaseSpecifiedBedsheetRecipe
+  id: BedsheetRD
+  result: BedsheetRD

@@ -41,6 +41,7 @@
     - MaterialsStatic
     - QBSimpleBeakerJugStatic
     - QBEngiStatic
+    - Floodlight
     dynamicPacks:
     - AdvancedTools
     - PowerCells
@@ -80,6 +81,7 @@
     - PartsStatic
     - CablesStatic
     - CargoStatic
+    - Floodlight
     dynamicPacks:
     - Equipment
     - Mining

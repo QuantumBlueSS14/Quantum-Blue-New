@@ -33,7 +33,7 @@
   - type: Sprite
     sprite: _Impstation/Clothing/OuterClothing/Misc/apronnurse.rsi
   - type: Clothing
-    sprite: _Harmony/Clothing/OuterClothing/Misc/apronnurse.rsi
+    sprite: _Impstation/Clothing/OuterClothing/Misc/apronnurse.rsi
 
   #Wizard Armored robes
 - type: entity

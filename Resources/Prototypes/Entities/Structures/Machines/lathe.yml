@@ -560,6 +560,7 @@
     - PrideFlags # imp
     - BeltsDeltaV # DeltaV
     - ClothingJustice # DeltaV
+    - QBCommandBedsheets #QB
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm

@@ -1,6 +1,6 @@
 - type: entity
   name: Oomycite
-  parent: [ MobCombat, SimpleMobBase ]
+  parent: [ MobCombat, SimpleMobBasePest ]
   id: MobOomycite
   description: A slimy, simple-minded motile fungus on a relentless hunt for food, or maybe violence.
   components:
