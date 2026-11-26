@@ -1,0 +1,102 @@
+- type: entity
+  parent: MobMouse
+  id: MobWhimperlet
+  name: scrimpering whimperlet
+  description: A pitiful creature. It loses a lot of salt through its tears.
+  components:
+  #- type: Body # QB - redundant with mouse
+  #  prototype: Animal
+  - type: GhostRole
+    name: ghost-role-information-whimperlet-name
+    description: ghost-role-information-whimperlet-description
+  #- type: Speech # QB just make mouse noises
+  #  allowedEmotes: ['Whine', 'Mew']
+  - type: Vocal
+    sounds:
+      Male: Mouse # QB change from Whimperletsounds
+      Female: Mouse # QB change from Whimperletsounds
+      Unsexed: Mouse # QB change from Whimperletsounds
+    wilhelmProbability: 0.001 # QB add
+  - type: TypingIndicator
+    proto: slime
+  - type: Sprite
+    sprite: _DV/Mobs/Animals/whimperlet/whimperlet.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: whimperlet
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: whimperlet-moving
+    noMovementLayers:
+      movement:
+        state: whimperlet-whimpering
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    sprite: _DV/Mobs/Animals/whimperlet/whimperlet.rsi
+    equippedPrefix: 0
+    slots:
+    - HEAD
+  - type: FaxableObject
+    insertingState: inserting
+  - type: Appearance
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: whimperlet-whimpering
+      Critical:
+        Base: whimperlet-dead
+      Dead:
+        Base: whimperlet-dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Critical # Whimpier than mothroaches (40/60)
+      50: Dead
+  - type: Hunger
+    baseDecayRate: 0.15 # slower than mouse (0.5), even if they will act similarly
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-whimperlet
+    interactFailureString: petting-failure-whimperlet
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      collection: Fox # QB change from kitsune noise to fox collection
+  - type: SolutionContainerManager # Ready for implementing planned desired behaviour
+    solutions:
+      tearducts:
+        reagents:
+        - ReagentId: Saline
+          Quantity: 16
+        maxVol: 16
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.7
+    baseSprintSpeed : 4.5
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 0.5
+    damageRecovery:
+      types:
+        Asphyxiation: -0.5
+  - type: MobPrice
+    price: 150
+  - type: Tag
+    tags:
+    - Trash
+    - CannotSuicide
+    - VimPilot
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 0.5 # Minimal damage, 'mostly harmless'.
