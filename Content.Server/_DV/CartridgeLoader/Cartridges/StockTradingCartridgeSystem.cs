@@ -1,14 +1,14 @@
 using System.Linq;
 using Content.Server.Cargo.Components;
-using Content.Server.DeltaV.Cargo.Components;
-using Content.Server.DeltaV.Cargo.Systems;
+using Content.Server._DV.Cargo.Components;
+using Content.Server._DV.Cargo.Systems;
 using Content.Server.Station.Systems;
 using Content.Server.CartridgeLoader;
 using Content.Shared.Cargo.Components;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
 
-namespace Content.Server.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
 public sealed class StockTradingCartridgeSystem : EntitySystem
 {
@@ -22,10 +22,10 @@ public sealed class StockTradingCartridgeSystem : EntitySystem
         SubscribeLocalEvent<StockTradingCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<StockMarketUpdatedEvent>(OnStockMarketUpdated);
         SubscribeLocalEvent<StationStockMarketComponent, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<StockTradingCartridgeComponent, BankBalanceUpdatedEvent>(OnBalanceUpdated);
+        SubscribeLocalEvent<BankBalanceUpdatedEvent>(OnBalanceUpdated);
     }
 
-    private void OnBalanceUpdated(Entity<StockTradingCartridgeComponent> ent, ref BankBalanceUpdatedEvent args)
+    private void OnBalanceUpdated(ref BankBalanceUpdatedEvent args)
     {
         UpdateAllCartridges(args.Station);
     }
@@ -85,7 +85,7 @@ public sealed class StockTradingCartridgeSystem : EntitySystem
         var state = new StockTradingUiState(
             entries: stockMarket.Companies,
             ownedStocks: stockMarket.StockOwnership,
-            balance: bankAccount.Balance
+            balance: bankAccount.Accounts[bankAccount.PrimaryAccount]
         );
 
         _cartridgeLoader.UpdateCartridgeUiState(loader, state);

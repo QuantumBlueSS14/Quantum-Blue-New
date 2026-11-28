@@ -6,7 +6,7 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 
-namespace Content.Client.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Client._DV.CartridgeLoader.Cartridges;
 
 [GenerateTypedNameReferences]
 public sealed partial class StockTradingUiFragment : BoxContainer

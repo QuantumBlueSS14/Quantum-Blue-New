@@ -3,7 +3,7 @@ using Content.Client.UserInterface.Fragments;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
 
-namespace Content.Client.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Client._DV.CartridgeLoader.Cartridges;
 
 public sealed partial class StockTradingUi : UIFragment
 {

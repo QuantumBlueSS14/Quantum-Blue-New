@@ -1,4 +1,4 @@
-namespace Content.Server.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
 [RegisterComponent, Access(typeof(StockTradingCartridgeSystem))]
 public sealed partial class StockTradingCartridgeComponent : Component
