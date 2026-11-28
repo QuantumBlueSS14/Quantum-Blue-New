@@ -27,3 +27,34 @@
   - type: Tag
     tags:
     - Meat
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodMeatCookedTEG
+  name: TEG steak
+  description: A extremely cooked piece of meat. Smells like phoron.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    sprite: _QB/Objects/Consumable/Food/meat.rsi
+    state: tegsteak
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Plasma
+          Quantity: 1
+        - ReagentId: Charcoal
+          Quantity: 5
+  - type: Construction
+    graph: MeatSteak
+    node: teg steak
