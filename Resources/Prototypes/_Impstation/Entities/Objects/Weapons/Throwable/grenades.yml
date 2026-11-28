@@ -20,6 +20,7 @@
     keysIn:
     - timer
 
+# QB comment
 #- type: entity
 #  parent: SmokeGrenade
 #  id: BrosGrenade
@@ -54,6 +55,7 @@
 #  - type: TimerTriggerVisuals
 #    primingSound:
 #      path: /Audio/_Impstation/Items/bros_grenade_prime.ogg
+# QB comment end
 
 - type: entity
   name: tomato grenade

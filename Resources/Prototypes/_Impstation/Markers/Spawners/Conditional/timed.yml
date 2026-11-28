@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: Boar Vent Spawner
   id: BoarVentSpawner
   parent: MarkerBase
@@ -17,6 +17,7 @@
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 4
 
+# QB comment
 #- type: entity
 #  name: BROS Vent Spawner
 #  id: BrosVentSpawner
@@ -36,3 +37,4 @@
 #      chance: 0.9
 #      minimumEntitiesSpawned: 10
 #      maximumEntitiesSpawned: 15
+# QB comment end

@@ -43,6 +43,7 @@
   - type: Loadout
     prototypes: [ MobMagicMonkeyGear ]
 
+# QB comment
 #- type: entity
 #  name: wizspore
 #  parent: MobSorb
@@ -97,6 +98,7 @@
 #    damage:
 #      types:
 #        Blunt: 0.11
+# QB comment end
 
 - type: entity
   name: Grotesque
