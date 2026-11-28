@@ -2,6 +2,10 @@
   parent: BaseGameRule
   id: Thief
   components:
+  # QB start
+  - type: GameRule
+    minPlayers: 5
+  # QB end
   - type: ThiefRule
   - type: AntagObjectives
     objectives:
