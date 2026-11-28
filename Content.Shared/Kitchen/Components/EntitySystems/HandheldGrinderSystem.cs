@@ -1,3 +1,4 @@
+
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Destructible;
@@ -80,6 +81,7 @@ internal sealed class HandheldGrinderSystem : EntitySystem
             BreakOnMove = true
         };
 
+        // QB edit start
         if (!_doAfter.TryStartDoAfter(doAfter))
             return;
 
@@ -87,7 +89,7 @@ internal sealed class HandheldGrinderSystem : EntitySystem
         {
             ent.Comp.AudioStream = _audio.Stop(ent.Comp.AudioStream);
             ent.Comp.AudioStream = _audio.PlayPvs(ent.Comp.Sound, ent)?.Entity;
-        }
+        } // QB edit end
     }
 
     private void OnHandheldDoAfter(Entity<HandheldGrinderComponent> ent, ref HandheldGrinderDoAfterEvent args)
