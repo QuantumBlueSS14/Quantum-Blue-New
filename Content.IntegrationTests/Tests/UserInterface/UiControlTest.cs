@@ -1,5 +1,6 @@
 using System.Linq;
-using Content.Client.LateJoin;
+//using Content.Client.LateJoin; Funky edit
+using Content.Client.Lobby.UI; // Funky edit
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.ContentPack;
 using Robust.Shared.IoC;

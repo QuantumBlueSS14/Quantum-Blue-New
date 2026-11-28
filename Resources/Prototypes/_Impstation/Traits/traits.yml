@@ -54,6 +54,11 @@
       maxTraits: 3
       categories:
       - Traits
+  mindRoleBlacklist: #QB add
+    components:
+    - SlasherMindRole
+    - GoobChangelingRole
+    - NukeopsRole #To do - split
 
 - type: trait
   id: ImperfectCloneAccents
@@ -94,6 +99,11 @@
       categories:
       - Traits
       - SpeechTraits
+  mindRoleBlacklist: #QB add
+    components:
+    - SlasherMindRole
+    - GoobChangelingRole
+    - NukeopsRole #To do - split 
 
 - type: trait
   id: RandomCharacter
@@ -150,6 +160,9 @@
   components:
   - type: UnableToWield
   cost: -3
+  mindRoleBlacklist: #Slasher gets this one specifically because it breaks the gameplay loop pretty bad to not be able to use the chainsaw. QB
+    components:
+    - SlasherMindRole
 
 - type: trait
   id: HatedByDogs

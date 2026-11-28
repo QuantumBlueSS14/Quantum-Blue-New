@@ -277,6 +277,7 @@
     agentName: ninja-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointGhostSpaceNinja
+      prefRoles: [ SpaceNinja ] # QB add
       min: 1
       max: 1
       pickPlayer: false
@@ -373,6 +374,7 @@
     agentName: wizard-round-end-name
     definitions:
     - spawnerPrototype: SpawnPointGhostWizard
+      prefRoles: [ Wizard ] # QB aDD
       min: 1
       max: 1
       playerRatio: 1
@@ -536,6 +538,8 @@
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointLoneNukeOperative
+      prefRoles: # Make MCQ grab the right profile QB
+      - NukeopsLone
       min: 1
       max: 1
       pickPlayer: false

@@ -98,13 +98,16 @@ namespace Content.Server.Database
                 .HasForeignKey(e => e.ProfileLoadoutGroupId)
                 .IsRequired();
 
-            modelBuilder.Entity<Job>()
-                .HasIndex(j => j.ProfileId);
+            modelBuilder.Entity<JobPreference>() // Funky edit
+                .HasIndex(j => j.PreferenceId); // Funky edit
 
-            modelBuilder.Entity<Job>()
-                .HasIndex(j => j.ProfileId, "IX_job_one_high_priority")
+            modelBuilder.Entity<JobPreference>() // Funky edit
+                .HasIndex(j => j.PreferenceId, "IX_job_one_high_priority") // Funky edit
                 .IsUnique()
                 .HasFilter("priority = 3");
+
+            modelBuilder.Entity<Job>() // Funky add
+                .HasIndex(j => j.ProfileId); // Funky add
 
             modelBuilder.Entity<Job>()
                 .HasIndex(j => new { j.ProfileId, j.JobName })
@@ -414,6 +417,7 @@ namespace Content.Server.Database
         public string AdminOOCColor { get; set; } = null!;
         public List<string> ConstructionFavorites { get; set; } = new();
         public List<Profile> Profiles { get; } = new();
+        public List<JobPreference> JobPreferences { get; set; } = new(); // Funky add
     }
 
     public class Profile
@@ -442,6 +446,8 @@ namespace Content.Server.Database
 
         [Column("pref_unavailable")] public DbPreferenceUnavailableMode PreferenceUnavailable { get; set; }
 
+        public bool Enabled { get; set; } // Funky add
+
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
 
@@ -453,6 +459,15 @@ namespace Content.Server.Database
         public int Id { get; set; }
         public Profile Profile { get; set; } = null!;
         public int ProfileId { get; set; }
+
+        public string JobName { get; set; } = null!; // Funky add start
+    }
+
+    public class JobPreference
+    {
+        public int Id { get; set; }
+        public Preference Preference { get; set; } = null!;
+        public int PreferenceId { get; set; } // Funky add end
 
         public string JobName { get; set; } = null!;
         public DbJobPriority Priority { get; set; }

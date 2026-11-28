@@ -10,7 +10,10 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Configuration;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+
+// Funky Rewrite, PLEASE Doublecheck changes, you're more than likely going to select "Keep Current Change" if you have a merge conflict
 
 namespace Content.Client.Lobby.UI
 {
@@ -21,8 +24,8 @@ namespace Content.Client.Lobby.UI
     public sealed partial class CharacterSetupGui : Control
     {
         [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;
-        [Dependency] private readonly IEntityManager _entManager = default!;
         [Dependency] private readonly IPrototypeManager _protomanager = default!;
+        [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
         [Dependency] private readonly IResourceCache _resourceCache = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
 
@@ -30,8 +33,9 @@ namespace Content.Client.Lobby.UI
 
         public event Action<int>? SelectCharacter;
         public event Action<int>? DeleteCharacter;
+        public event Action<(int, bool)>? SetCharacterEnable;
 
-        public CharacterSetupGui(HumanoidProfileEditor profileEditor)
+        public CharacterSetupGui(HumanoidProfileEditor profileEditor, JobPriorityEditor jobPriorityEditor)
         {
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
@@ -59,11 +63,19 @@ namespace Content.Client.Lobby.UI
             };
 
             CharEditor.AddChild(profileEditor);
+            JobPriorityEditor.AddChild(jobPriorityEditor);
             RulesButton.OnPressed += _ => new RulesAndInfoWindow().Open();
 
             StatsButton.OnPressed += _ => new PlaytimeStatsWindow().OpenCentered();
 
             _cfg.OnValueChanged(CCVars.SeeOwnNotes, p => AdminRemarksButton.Visible = p, true);
+
+            JobPrioritiesButton.OnPressed += args =>
+            {
+                jobPriorityEditor.LoadJobPriorities();
+                CharEditor.Visible = false;
+                JobPriorityEditor.Visible = true;
+            };
         }
 
         /// <summary>
@@ -77,10 +89,15 @@ namespace Content.Client.Lobby.UI
             var numberOfFullSlots = 0;
             var characterButtonsGroup = new ButtonGroup();
 
+            JobPrioritiesButton.Group = characterButtonsGroup;
+
             if (!_preferencesManager.ServerDataLoaded)
             {
                 return;
             }
+
+            CharEditor.Visible = true;
+            JobPriorityEditor.Visible = false;
 
             _createNewCharacterButton.ToolTip =
                 Loc.GetString("character-setup-gui-create-new-character-button-tooltip",
@@ -91,10 +108,15 @@ namespace Content.Client.Lobby.UI
             foreach (var (slot, character) in _preferencesManager.Preferences!.Characters)
             {
                 numberOfFullSlots++;
-                var characterPickerButton = new CharacterPickerButton(_entManager,
+                if (character is not HumanoidCharacterProfile humanoid)
+                    continue;
+
+                var characterPickerButton = new CharacterPickerButton(
+                    _preferencesManager,
                     _protomanager,
+                    _playerManager,
                     characterButtonsGroup,
-                    character,
+                    humanoid,
                     slot == selectedSlot);
 
                 Characters.AddChild(characterPickerButton);
@@ -102,11 +124,18 @@ namespace Content.Client.Lobby.UI
                 characterPickerButton.OnPressed += args =>
                 {
                     SelectCharacter?.Invoke(slot);
+                    CharEditor.Visible = true;
+                    JobPriorityEditor.Visible = false;
                 };
 
                 characterPickerButton.OnDeletePressed += () =>
                 {
                     DeleteCharacter?.Invoke(slot);
+                };
+
+                characterPickerButton.OnEnableToggled += pressed =>
+                {
+                    SetCharacterEnable?.Invoke((slot, pressed));
                 };
             }
 
