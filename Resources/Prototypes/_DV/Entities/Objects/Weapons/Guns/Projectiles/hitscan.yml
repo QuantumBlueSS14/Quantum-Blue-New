@@ -1,0 +1,69 @@
+# QB addition
+- type: entity
+  parent: BasicHitscan
+  id: BaseBeam
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 2
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+# QB addition end
+
+- type: entity
+  parent: BaseBeam # QB
+  id: BeamLaser
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent: BaseBeam # QB
+  id: BeamDev
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 5
+        Structural: 15 # QB from 20 to 15
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+    
+- type: entity
+  parent: BaseBeam # QB
+  id: GamblagatorLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 100
+        Radiation: 20
+        Structural: 100
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/evil_projectile.rsi
+      state: evil_muzzle_flash
+    travelFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/evil_projectile.rsi
+      state: evil_laser
+    impactFlash:
+      sprite: _DV/Objects/Weapons/Guns/Projectiles/evil_projectile.rsi
+      state: evil_impact

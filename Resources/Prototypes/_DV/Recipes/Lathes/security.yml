@@ -22,3 +22,26 @@
   parent: ClothingShoesBootsMagSci
   id: ClothingShoesBootsSecurityMagboots
   result: ClothingShoesBootsSecurityMagboots
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponBeamCannon
+  result: WeaponBeamCannon
+  materials:
+    Steel: 2000
+    Glass: 1000
+    Plastic: 500
+    Gold: 250
+    Plasma: 500
+
+#- type: latheRecipe # QB - no thanks
+#  parent: BaseAmmoRecipe
+#  id: GamblagatorCapacitor
+#  result: GamblagatorCapacitor
+#  materials:
+#    Steel: 400
+#    Glass: 200
+#    Plastic: 200
+#    Gold: 200
+#    Plasma: 500
+#    Bluespace: 100

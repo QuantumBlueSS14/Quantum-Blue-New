@@ -136,19 +136,22 @@
     color: "#03fc4e"
     energy: 0.7
   - type: Charger
-    chargeRate: 50
+    chargeRate: 400 # DeltaV - Raised from 50 to 400
   - type: Sprite
     sprite: Structures/Power/cage_recharger.rsi
-  - type: PowerCellSlot
-    cellSlotId: charger_slot
-  - type: ItemSlots
+  - type: ItemSlots # DeltaV - Removed PowerCellSlot
     slots:
       charger_slot:
         ejectOnInteract: true
-        name: Power cage
         whitelist:
           tags:
           - PowerCage
+          components:
+          - HitscanBatteryAmmoProvider # DeltaV - allows hitscan guns to be charged
+        blacklist:
+          tags:
+          - PowerCell
+          - GamblagatorCartridge # DeltaV - Disallows recharging of superweapon
   - type: Machine
     board: PowerCageRechargerCircuitboard
   - type: StaticPrice
@@ -176,6 +179,7 @@
         blacklist:
           tags:
           - PotatoBattery
+          - GamblagatorCartridge # DeltaV
 
 - type: entity
   parent: BaseItemRecharger
@@ -201,6 +205,7 @@
         blacklist:
           tags:
           - PotatoBattery
+          - GamblagatorCartridge # DeltaV - Disallows recharging of superweapon
 
 - type: entity
   parent: [ BaseItemRecharger, BaseWallmount ]
@@ -236,6 +241,7 @@
         blacklist:
           tags:
           - PotatoBattery
+          - GamblagatorCartridge # DeltaV
   # imp start
   - type: Machine
     board: WeaponCapacitorRechargerCircuitboard

@@ -1,0 +1,8 @@
+# Base Superweapon safe
+- type: entity
+  id: GunSafeBaseSecureSuperweapon
+  parent: GunSafe
+  suffix: Superweapon, Locked
+  components:
+  - type: AccessReader
+    access: [["CentralCommand"]]
