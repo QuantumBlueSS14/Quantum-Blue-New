@@ -2,3 +2,8 @@
   id: Floodlight
   recipes:
   - Floodlight
+
+- type: latheRecipePack
+  id: HoloflarePistol
+  recipes:
+  - NFWeaponHoloflareGun
