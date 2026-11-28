@@ -922,6 +922,10 @@
   packetPrototype: ChanterelleSeeds
   productPrototypes:
     - FoodMushroom
+  # Euphoria additions start
+  mutationPrototypes:
+    - LivingMooncaps # QB rename walking mushroom to living mooncap
+  # Euphoria additions end
   lifespan: 35
   maturation: 10
   production: 7

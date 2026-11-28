@@ -1,0 +1,8 @@
+- type: speechSounds
+  id: Mushroom
+  saySound:
+    path: /Audio/_QB/Voice/Mushroom/mush.ogg
+  askSound:
+    path: /Audio/_QB/Voice/Mushroom/mush_ask.ogg
+  exclaimSound:
+    path: /Audio/_QB/Voice/Mushroom/mush_exclaim.ogg

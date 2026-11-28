@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original artwork by MattFright",
+  "states": [
+    {
+      "name": "mushboy_dead",
+      "delays": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "mushboy",
+      "directions": 4
+    }
+  ]
+}
