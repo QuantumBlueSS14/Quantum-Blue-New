@@ -49,6 +49,7 @@
     - EngineeringWeapons
     - FauxTiles
     - Equipment
+    - HoloflarePistol
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -88,6 +89,7 @@
     - Fultons
     - SalvageSecurityWeapons # pka upgrades
     - Mail
+    - HoloflarePistol
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

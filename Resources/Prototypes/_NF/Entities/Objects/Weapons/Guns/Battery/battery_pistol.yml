@@ -44,20 +44,29 @@
   - type: BatteryAmmoProvider # DeltaV - ProjectileBatteryAmmoProvider was refactored.
     proto: HoloFlareCyan
     fireCost: 240
-  - type: EnergyGun
+  #- type: EnergyGun # QB- we don't have energygun component
+  #  fireModes:
+  #  - proto: HoloFlareCyan
+  #    fireCost: 240
+  #    name: cyan
+  #    state: cyan
+  #  - proto: HoloFlareRed
+  #    fireCost: 240
+  #    name: red
+  #    state: red
+  #  - proto: HoloFlareYellow
+  #    fireCost: 240
+  #    name: yellow
+  #    state: yellow
+  - type: BatteryWeaponFireModes
     fireModes:
     - proto: HoloFlareCyan
       fireCost: 240
-      name: cyan
-      state: cyan
     - proto: HoloFlareRed
       fireCost: 240
-      name: red
-      state: red
     - proto: HoloFlareYellow
       fireCost: 240
-      name: yellow
-      state: yellow
+  # QB changes end
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -65,7 +74,7 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.EnergyGunFireModeVisuals.State:
+      enum.BatteryWeaponFireModeVisuals.State: # QB from energygunfirevisuals to batteryweapon
         Firemode:
           Cyan: { state: mode-cyan }
           Red: { state: mode-red }

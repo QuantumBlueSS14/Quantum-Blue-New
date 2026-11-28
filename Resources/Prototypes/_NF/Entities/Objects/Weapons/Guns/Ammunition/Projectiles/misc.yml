@@ -41,7 +41,7 @@
     damage:
       types:
         Heat: 0
-  - type: FlareGunPellet # DeltaV - Added to whitelist against Skia.
+  #- type: FlareGunPellet # DeltaV - Added to whitelist against Skia. # QB we don't have this
 
 - type: entity
   id: HoloFlareRed
