@@ -1185,13 +1185,13 @@
           weight: 0.51
         - id: ClownSpiderTippyTrumpcardSyndicate
           weight: 0.51
-#        - id: SEOFTippyTrumpcardSyndicate
+#        - id: SEOFTippyTrumpcardSyndicate # QB
 #          weight: 0.51
-#        - id: FOESTippyTrumpcardSyndicate
+#        - id: FOESTippyTrumpcardSyndicate # QB
 #          weight: 0.51
-#        - id: SORBTippyTrumpcardSyndicate
+#        - id: SORBTippyTrumpcardSyndicate # QB
 #          weight: 0.82
-#        - id: BROSTippyTrumpcardSyndicate
+#        - id: BROSTippyTrumpcardSyndicate # QB
 #          weight: 0.82
         - id: BombadilidiidaeTippyTrumpcardSyndicate
           weight: 0.51
@@ -1276,7 +1276,7 @@
         children:
         - id: AnomaliteTippyTrumpcard
           weight: 0.51
-        # - id: PipiTippyTrumpcard
+        # - id: PipiTippyTrumpcard # QB 
         #   weight: 0.82
         - id: TarantulaTippyTrumpcard
           weight: 0.62
@@ -1308,12 +1308,12 @@
           weight: 1
         - id: GriffyTippyTrumpcard
           weight: 0.15
-        # - id: FinfinTippyTrumpcard
+        # - id: FinfinTippyTrumpcard # QB
         #   weight: 0.51
         - id: HamletTippyTrumpcard
           weight: 0.62
-        - id: LuggageTippyTrumpcard
-          weight: 0.62
+        #- id: LuggageTippyTrumpcard # QB
+        #  weight: 0.62
         - id: PleebnarTippyTrumpcard
           weight: 0.62
         - id: SnailTippyTrumpcard
@@ -1338,7 +1338,7 @@
           weight: 0.62
         - id: TcktckTippyTrumpcard
           weight: 0.51
-        # - id: DolbyTippyTrumpcard
+        # - id: DolbyTippyTrumpcard # QB
         #   weight: 0.15
         - id: SpaceTickTippyTrumpcard
           weight: 0.62
@@ -1350,8 +1350,8 @@
           weight: 0.62
         - id: RenaultTippyTrumpcard
           weight: 0.62
-        - id: GollyladTippyTrumpcard
-          weight: 0.18
+        #- id: GollyladTippyTrumpcard # QB
+        #  weight: 0.18
         - id: HonkBotTippyTrumpcard
           weight: 0.18
         - id: PunTippyTrumpcard
@@ -1362,13 +1362,13 @@
           weight: 0.18
         - id: ClownSpiderTippyTrumpcard
           weight: 0.03
-#        - id: SEOFTippyTrumpcard
+#        - id: SEOFTippyTrumpcard # QB
 #          weight: 0.51
-#        - id: FOESTippyTrumpcard
+#        - id: FOESTippyTrumpcard # QB
 #          weight: 0.51
-#        - id: SORBTippyTrumpcard
+#        - id: SORBTippyTrumpcard # QB
 #          weight: 0.82
-#        - id: BROSTippyTrumpcard
+#        - id: BROSTippyTrumpcard # QB
 #          weight: 0.82
         - id: WillowTippyTrumpcard
           weight: 0.18
@@ -1438,8 +1438,8 @@
           weight: 0.18
         - id: EeepletTippyTrumpcard
           weight: 0.18
-        - id: YumYumTippyTrumpcard
-          weight: 0.01
+        #- id: YumYumTippyTrumpcard # QB
+        #  weight: 0.01
 
 
 - type: entity
@@ -1492,19 +1492,20 @@
     positional: true
   - type: DeleteOnTrigger
 
-- type: entity
-  parent: CardBaseTippyTrump
-  id: YumYumTippyTrumpcard
-  suffix: Yum-Yum
-  components:
-  - type: Card
-    name: Yum-Yum card. "Oh, shit! It's Yum-Yum!" Robustness - 10, Validity - 10, Whimsy 10
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: yumyum
-  - type: StaticPrice # to do, make announceOnSale or something
-    price: 10000
-
+# QB comment begin
+#- type: entity
+#  parent: CardBaseTippyTrump
+#  id: YumYumTippyTrumpcard
+#  suffix: Yum-Yum
+#  components:
+#  - type: Card
+#    name: Yum-Yum card. "Oh, shit! It's Yum-Yum!" Robustness - 10, Validity - 10, Whimsy 10
+# - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: yumyum
+#  - type: StaticPrice # to do, make announceOnSale or something
+#    price: 10000
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityLegendary ]
@@ -1953,7 +1954,8 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_roo
 
-#- type: entity
+# QB comment begin
+#- type: entity 
 #  parent: CardBaseTippyTrump
 #  id: BROSTippyTrumpcard
 #  suffix: BROS
@@ -2028,6 +2030,7 @@
 #  components:
 #  - type: SpawnOnTrigger
 #    proto: MobSeof
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRaritySuperRare ]
@@ -2116,16 +2119,18 @@
   - type: SpawnOnTrigger
     proto: MobHonkBot
 
-- type: entity
-  parent: [ CardBaseTippyTrump, TippyTrumpRarityRare ]
-  id: GollyladTippyTrumpcard
-  suffix: Gollylad
-  components:
-  - type: Card
-    name: Rare Gollylad card. Robustness - 4, Validity - 3, Whimsy 10
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_golly
+# QB comment begin
+#- type: entity
+#  parent: [ CardBaseTippyTrump, TippyTrumpRarityRare ]
+#  id: GollyladTippyTrumpcard
+#  suffix: Gollylad
+#  components:
+#  - type: Card
+#    name: Rare Gollylad card. Robustness - 4, Validity - 3, Whimsy 10
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_golly
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]
@@ -2209,6 +2214,7 @@
   - type: SpawnOnTrigger
     proto: MobTickSalvage
 
+# QB comment begin
 # - type: entity
 #   parent: CardBaseTippyTrump
 #   id: DolbyTippyTrumpcard
@@ -2219,6 +2225,7 @@
 #   - type: Sprite
 #     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
 #     state: tt_dolby
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]
@@ -2371,16 +2378,18 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_pleeb
 
-- type: entity
-  parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]
-  id: LuggageTippyTrumpcard
-  suffix: Luggage
-  components:
-  - type: Card
-    name: UnCommon Luggage card. Robustness - 6, Validity - 2, Whimsy 6
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_box
+# QB comment begin
+#- type: entity
+#  parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]
+#  id: LuggageTippyTrumpcard
+#  suffix: Luggage
+#  components:
+#  - type: Card
+#    name: UnCommon Luggage card. Robustness - 6, Validity - 2, Whimsy 6
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_box
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]
@@ -2393,6 +2402,7 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_hamlet
 
+# QB comment begin
 # - type: entity
 #   parent: CardBaseTippyTrump
 #   id: FinfinTippyTrumpcard
@@ -2403,6 +2413,7 @@
 #   - type: Sprite
 #     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
 #     state: tt_finfin
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityRare ]
@@ -2577,6 +2588,7 @@
   - type: SpawnOnTrigger
     proto: MobGiantSpider
 
+# QB comment begin
 # - type: entity
 #   parent: CardBaseTippyTrump
 #   id: PipiTippyTrumpcard
@@ -2587,6 +2599,7 @@
 #   - type: Sprite
 #     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
 #     state: tt_pipi
+# QB comment end
 
 - type: entity
   parent: [ CardBaseTippyTrump, TippyTrumpRarityUnCommon ]

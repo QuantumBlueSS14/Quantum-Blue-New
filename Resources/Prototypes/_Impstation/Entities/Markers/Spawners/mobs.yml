@@ -40,6 +40,7 @@
     prototypes:
     - MobRaptor
 
+# QB comment begin
 #- type: entity
 #  name: BROS/SORB Spawner
 #  id: BrosSorbSpawner
@@ -54,6 +55,7 @@
 #      prototypes:
 #        - MobBros
 #        - MobSorb
+# QB comment end
 
 - type: entity
   name: Duck Duck Goose Spawner
@@ -71,6 +73,7 @@
         maxAmount: 2
       - id: MobGoose
 
+# QB comment begin
 # - type: entity
 #   name: Space Bear Major Spawner
 #   id: SpawnMobBearMajor
@@ -84,6 +87,7 @@
 #   - type: ConditionalSpawner
 #     prototypes:
 #     - MobBearSpaceMajor
+# QB comment end
 
 - type: entity
   name: ray spawner
@@ -126,6 +130,7 @@
       prototypes:
         - MobTckTck
 
+# QB comment begin
 # - type: entity
 #   name: Pipi Spawner
 #   id: SpawnMobCatKittenPipi
@@ -183,6 +188,7 @@
 #      prototypes:
 #        - MobFoes
 #        - MobSeof
+# QB end
 
 - type: entity
   name: Eeeplet Spawner
