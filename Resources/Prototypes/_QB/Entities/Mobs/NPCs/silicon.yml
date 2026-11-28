@@ -1,0 +1,38 @@
+- type: entity
+  parent: MobSiliconBase
+  id: MobBeepsky
+  name: Officer Beepsky
+  description: The creep of automation now threatening security.
+  components:
+  - type: CombatMode
+  - type: MeleeWeapon # ye gods... an infinite stun baton
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 3.5
+    bluntStaminaDamageFactor: 2.0
+    angle: 60
+    animation: WeaponArcThrust
+  - type: StaminaDamageOnHit
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: Sprite
+    sprite: Mobs/Silicon/Bots/securitron.rsi
+    state: securitron1
+  - type: Construction
+    graph: Beepsky
+    node: bot
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 3
+  - type: HTN
+    rootTask:
+      task: BeepskyCompound
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen # FOR NANOTRASEN!!!!
+  - type: InteractionPopup
+    interactSuccessString: petting-success-cleanbot
+    interactFailureString: petting-failure-cleanbot
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
