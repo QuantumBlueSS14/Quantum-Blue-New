@@ -100,7 +100,7 @@
       weight: 23
       children:
       - id: ClothingNeckCloakHerald
-      #- id: ClothingHeadHelmetTemplar #imp edit, kill this thing
+      - id: ClothingHeadHelmetTemplar
       # Cloaks
       - !type:GroupSelector
         children:
