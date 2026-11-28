@@ -1,3 +1,16 @@
+## StockTrading
+
+# General
+stock-trading-program-name = StockTrading
+stock-trading-title = Intergalactic Stock Market
+stock-trading-balance = Balance: {$balance} spesos
+stock-trading-no-entries = No entries
+stock-trading-owned-shares = Owned: {$shares}
+stock-trading-buy-button = Buy
+stock-trading-sell-button = Sell
+stock-trading-amount-placeholder = Amount
+stock-trading-price-history = Price History
+
 ## NanoChat
 nano-chat-program-name = NanoChat
 nano-chat-title = NanoChat

@@ -14,6 +14,7 @@
     - id: ClothingHandsKnuckleDustersQM
     - id: PrinterDocFlatpack  # Corvax-Printer
     - id: PersonalAILearnerCargo #impspecial
+    - id: StockTradingCartridge # DeltaV
 
 - type: entity
   id: LockerQuarterMasterFilled

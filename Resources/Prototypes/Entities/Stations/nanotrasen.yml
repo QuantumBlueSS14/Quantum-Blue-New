@@ -28,6 +28,7 @@
     - BaseStationNanotrasen
     - BaseStationDeliveries
     - BaseStationServiceJobs # imp
+    - BaseStationStockMarket # DeltaV
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
